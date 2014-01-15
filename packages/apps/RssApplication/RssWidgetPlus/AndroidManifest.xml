@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.motorola.mmsp.rss"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   	<!-- wdmk68 add for IronprimeCT new version crash -->
+    <uses-permission  android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:icon="@drawable/rss"
+        android:label="@string/app_name" >
+        <receiver android:name=".widget.RssWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />       
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_UPDATE_FINISHED"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_SUBSCRIBE_FINISHED"/>
+                <action android:name="com.motorola.mmsp.rss.RSSWIDGET_START_RFRESH"/>
+                <action android:name="com.motorola.mmsp.rss.RSSWIDGET_UPDATE"/>
+                <action android:name="com.motorola.mmsp.rss.intent.UPDATE_ITEM"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_FEED_ADDED_FROM_EMPTY_FINISHED"/>
+                <action android:name="com.motorola.mmsp.rss.intent.NOTIFY_WIDGET_UPDATE"/>                
+                <action android:name="com.motorola.mmsp.rss.intent.INSTALL_EMPTY_VIEW"/>                
+                <action android:name="com.android.rss.intent.action.CLEAR_NOTIFICATION"/>                
+                <action android:name="com.android.rss.intent.action.UPDATE_WIDGET_NAME"/>                
+                <action android:name="com.android.rss.intent.action.UPDATE_WIDGET_FOR_EXCEPTION"/>                
+                <action android:name="com.android.rss.intent.action.SERVICE_RESTART"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/rsswidgetinfo"
+                />
+                	    
+        </receiver>
+        
+        <service android:name=".widget.RssWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:exported="false" />
+        
+        <service android:name=".service.RssService">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.rss.RSSSERVICE_BOOT_COMPLETED"/>
+                <action android:name="com.motorola.mmsp.rss.RSSSERVICE_VALIDITY_CHECKING"/>
+                <action android:name="com.motorola.mmsp.rss.RSSSERVICE_STARTREFRESH"/>
+                <action android:name="com.motorola.mmsp.rss.RSSSERVICE_ADDFEED"/>
+                <action android:name="com.motorola.mmsp.rss.RSSWIDGET_DELETE"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_UPDATE_ALARM"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_ADD_ALARM"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_DELETE_ALARM"/>
+                <action android:name="com.motorola.mmsp.rss.intent.action.CHECK_URL"/>                
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_UPDATE_FINISHED"/>                
+                <action android:name="com.motorola.mmsp.rss.intent.STOP_UPDATING"/>                
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_DELETE_FEED"/>                
+                <action android:name="com.motorola.mmsp.rss.intent.action.RSSAPP_EXITED"/> 
+                <action android:name="com.motorola.mmsp.rss.intent.action.START_ARTICLE_ACTIVITY"/>               
+            </intent-filter>
+        </service>
+        <receiver android:name=".service.receiver.RssBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.motorola.mmsp.rss.NETWORK_NOTAVAILABLE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+
+         <provider
+            android:name=".service.database.RssContentProvider"
+            android:authorities="com.motorola.mmsp.rssservice.database.RssContentProvider"
+            android:multiprocess="false"
+            />
+         <activity android:name=".widget.config.RssConfigActivity" >
+             <intent-filter>
+                 <action android:name="com.motolara.mmsp.rss.intent.action.CONFIG_ACTIVITY"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+         </activity>
+         <activity android:name=".app.activity.RssSettingActivity" 
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:label="@string/nullstring"
+           >
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.rss.intent.action.APPWIDGET_CONFIGURE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.rss.intent.action.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".app.activity.FeedAddActivity" 
+            android:theme="@style/setting_relative_title"
+            >
+            <intent-filter >
+                <action android:name="com.android.rss.intent.action.OPEN_FEEDADDACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".app.activity.FeedBundleListActivity" 
+            android:theme="@style/setting_relative_title">
+            <intent-filter >
+                <action android:name="com.android.rss.intent.action.OPEN_FEEDBUNDLELISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".app.activity.FeedCustomAddedActivity" 
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            >
+            <intent-filter >
+                <action android:name="com.android.rss.intent.action.OPEN_FEEDCUSTOMCONFIRMACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".app.activity.FeedCustomConfirmActivity"  
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/setting_relative_title"          
+            >
+            <intent-filter >
+                <action android:name="com.android.rss.intent.action.OPEN_FEEDCUSTOMADDEDACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".app.activity.FeedHistoryListActivity"
+            android:theme="@style/setting_relative_title" >
+            <intent-filter >
+                <action android:name="com.android.rss.intent.action.OPEN_FEEDHISTORYLISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".app.activity.RssArticleListActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@style/article_list_title"
+                >
+            <intent-filter>
+                <action android:name="com.android.rss.intent.action.OPEN_ARTICLE_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>  
+        </activity>
+        
+        <activity android:name=".app.activity.RssArticleDetailActivity" 
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/article_detail_title"
+            >
+            <intent-filter>
+                <action android:name="com.android.rss.intent.action.OPEN_ARTICLE_DETAIL"/>
+                <action android:name="com.android.rss.intent.action.OPEN_ARTICLE_DETAIL_FROMLIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".app.activity.RssNewItemsListActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@style/article_list_title"
+                >
+            <intent-filter>
+                <action android:name="com.android.rss.intent.action.NEW_ITEMS_DISPLAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>  
+        </activity>
+    </application>
+    
+
+</manifest>

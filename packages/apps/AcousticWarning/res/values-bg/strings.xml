@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Сила на звука за мултимедия</string>
+  <string name="warning_text">Продължителното слушане с висока сила на звука може да е вредно за вашия слух.\n\nСилата на звука на вашата музика беше регулирана под препоръчваното ниво.</string>
+</resources>

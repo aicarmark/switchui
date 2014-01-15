@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (C) 2009, Motorola, Inc,
+ * All Rights Reserved
+ * Description: Contains array resources for the Battery Manager app
+ *
+ * Modification History:
+ **********************************************************
+ * Date           Author       Comments
+ * 11-11-09       A24178       Created file
+ * 02-15-10       A24178       String changes for smart mode default
+ **********************************************************
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batt_manager_mode">배터리 모드</string>
+    <string name="preset_title">기본 설정</string>
+    <string name="customs_title">사용자 설정</string>
+
+    <string name="preset_maxbatt_title">최대 배터리 절전 모드</string>
+    <string name="preset_maxbatt_shortdesc">배터리 절전이 최대화되고 자동 데이터 업데이트는 최소화됩니다.</string>
+
+    <string name="preset_nighttime_title">최적화 모드</string>
+    <string name="preset_nighttime_shortdesc">낮에는 정상적으로 작동하고 밤에는 배터리 절전 기능이 작동합니다.</string>
+
+    <string name="preset_perfmode_title">성능 모드</string>
+    <string name="preset_perfmode_shortdesc">제한 없이 기기가 동기화됩니다. 배터리 절전 기능이 작동하지 않습니다.</string>
+
+    <string name="customs_mode_title">사용자 설정 배터리 절전 모드</string>
+    <string name="customs_mode_shortdesc">자신만의 배터리 절전 프로필을 생성하세요</string>
+
+    <string name="moreinfo_text">자세한 정보</string>
+
+    <string name="presets_perfmode_desc">하루 중 제한 없이 휴대전화가 동기화됩니다.</string>
+    <string name="presets_maxsaver_desc">"휴대전화가 충전기에 연결되어 있지 않은 경우:\n\n<li>낮이나 밤이나 15분간 기기를 사용하지 않으면 데이터 동기화가 중지됩니다.</li>\n\n<li>화면이 흐려집니다.</li>"</string>
+    <string name="presets_nighttime_desc">"휴대전화가 충전기에 연결되어 있지 않은 경우:\n\n<li>사용량이 적은 오후 10시부터 오전 5시 사이에 15분간 기기를 사용하지 않으면 데이터 동기화가 중지됩니다. 아무 버튼이나 누르면 동기화가 다시 시작됩니다.</li>\n\n<li>사용량이 많은 시간에는 제한 없이 동기화됩니다.</li>"</string>
+    <string name="presets_nighttime_desc_24">"휴대전화가 충전기에 연결되어 있지 않은 경우:\n\n<li>사용량이 적은 22시부터 05시 사이에 15분간 기기를 사용하지 않으면 데이터 동기화가 중지됩니다. 아무 버튼이나 누르면 동기화가 다시 시작됩니다.</li>\n\n<li>사용량이 많은 시간에는 제한 없이 동기화됩니다.</li>"</string>
+
+    <string name="customs_description">사용자 설정 모드에서는 휴대전화의 배터리 절전 기능을 완벽하게 제어할 수 있습니다. 이러한 설정은 기기가 충전 중이 아닐 때만 적용됩니다.</string>
+
+    <string name="customs_offpeak_title"><bold>사용량이 적은 시간</bold></string>
+    <string name="customs_start_text">시작:</string>
+    <string name="customs_end_text">종료:</string>
+    <string name="customs_data_text">다음 시간 후 데이터 해제:</string>
+    <string name="customs_peak_title"><bold>사용량이 많은 시간</bold></string>
+    <string name="customs_displayopt_title"><bold>화면 밝기</bold></string>
+    <string name="customs_disp_text">배터리 수준이 30% 미만일 경우의 화면 밝기:</string>
+
+    <string name="but_ok_text">확인</string>
+    <string name="but_cancel_text">취소</string>
+
+    <string name="time_unit_minutes">분</string>
+    <string name="time_unit_hour">시간</string>
+    <string name="never_timeout">항상 켜기</string>
+    <string name="disp_text_min">최소</string>
+    <string name="disp_text_max">최대</string>
+    <string name="disp_text_curr">현재 화면 밝기</string>
+
+    <string name="battery_manager_setting">배터리 관리자</string>
+    <string name="battery_manager_settings_summary">배터리 절전을 위한 설정</string>
+
+    <!-- Generic -->
+    <string name="powerprofile_app_name">배터리 프로필</string>
+    <string name="powerprofile_svc_name">전원 프로필 서비스</string>
+    <string name="powerprofile_rcv_name">전원 프로필 수신기</string>
+    
+    <!-- Logging -->
+    <string name="logtitle">데이터 해제 시간: \n</string>
+    <string name="logs">로그 보기</string>
+  
+    <string name="pref_user_max_timeout">다음 시간 후 데이터 해제</string> 
+    <string name="remote_mgmt_text">이 모드에서는 휴대전화에서 일정 시간 데이터를 사용하지 않아 데이터가 동기화되지 않으면 데이터 연결이 끊어집니다.\n\n연결이 끊어지면 스트리밍 미디어 재생이 중단됩니다.\n</string>
+    <string name="remote_mgmt_title">주의</string>
+    <string name="lightsensorctrl">화면 밝기는 빛 감지 센서에 의해 자동 조절됩니다.</string>
+
+    <!-- Fuel Gauge string --><!-- Activity title for App Fuel Gauge summary -->
+    <string name="power_usage_summary_title">배터리 사용</string>
+    <!-- Activity title summary for App Fuel Gauge summary -->
+    <string name="power_usage_summary">배터리를 사용한 항목</string>
+
+    <string name="notice_profile_select">배터리 수명을 늘리기 위해 오후 10시부터 오전 5시까지는 사용량이 적은 시간으로 설정되어 있습니다.</string>
+    <string name="configure_text">구성</string>
+
+    <!-- New prompts -->
+    <string name="pwrup_notice_title">배터리 관리자가 최적화 모드로 설정됨</string>
+    <string name="pwrup_notice_subtext">세부사항을 보려면 클릭하세요.</string>
+    <string name="pwrup_notice_desc">배터리 절약을 위해 배터리 관리자가 최적화 모드로 설정되어 있습니다.\n\n 최적화 모드에서는 기기가 충전기에 연결되어 있지 않은 상태에서 오후 10시부터 오전 5시 사이에 15분간 기기를 사용하지 않으면 데이터 연결이 끊어집니다.\n\n데이터 연결이 끊어지면 기기에서 스트리밍 미디어를 동기화하거나 재생할 수 없습니다.\n\n이 동작을 변경하려면 \"구성\"을 누르거나 설정의 배터리 관리자로 이동합니다.\n</string>
+
+    <string name="battery_setting">배터리 설정</string>
+    <string name="bu_level_label">배터리 잔량:</string>
+    <string name="bu_entry_label">배터리 사용 통계를 보려면 터치하세요.</string>
+    <string name="bu_pct_text" translatable="false"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+</resources>

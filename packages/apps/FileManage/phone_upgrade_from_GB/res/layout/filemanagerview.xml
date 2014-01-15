@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+   <com.mot.FileManager.FileManagerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+        
+        <ListView android:id="@+id/list"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:persistentDrawingCache="animation|scrolling"/>
+            
+        <IconView android:id="@+id/grid"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+    		android:padding="10dp"
+    		android:verticalSpacing="10dp"   
+    		android:horizontalSpacing="10dp"
+    		android:numColumns="auto_fit"
+    		android:columnWidth="60dp"
+    		android:stretchMode="columnWidth"
+    		android:gravity="center"
+            android:visibility="gone"/> 
+            
+        <IconView android:id="@+id/thumbnail"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+    		android:padding="10dp"
+    		android:verticalSpacing="10dp"   
+    		android:horizontalSpacing="10dp"
+    		android:numColumns="auto_fit"
+    		android:columnWidth="60dp"
+    		android:stretchMode="columnWidth"
+    		android:gravity="center"
+            android:visibility="gone"/>
+            
+        
+        <TextView android:id="@+id/empty"
+            	android:layout_width="fill_parent" 
+            	android:layout_height="fill_parent"
+            	android:text="@string/empty_folder"
+        	android:textAppearance="?android:attr/textAppearanceMedium"
+        	android:visibility="gone"/>
+        
+            
+    </com.mot.FileManager.FileManagerView>

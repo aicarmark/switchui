@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Activer les widgets</string>
+  <string name="gps_app_name">Bouton GPS</string>
+  <string name="airplane_app_name">Bouton mode Avion</string>
+  <string name="wifi_app_name">Bouton Wi-Fi</string>
+  <string name="bluetooth_app_name">Bouton Bluetooth</string>
+  <string name="apn_app_name">Bouton APN</string>
+  <string name="data_app_name">Bouton Données</string>
+  <string name="widget_description">Afficher et contrôler l\'état du mode Avion</string>
+  <string name="widget_description_bt">Afficher et contrôler l\'état du Bluetooth</string>
+  <string name="widget_description_wifi">Afficher et contrôler l\'état du Wi-Fi</string>
+  <string name="widget_description_gps">Afficher et contrôler l\'état du GPS</string>
+  <string name="StatusOn">ON</string>
+  <string name="StatusOff">OFF</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Le mode avion n\'est pas disponible</string>
+  <string name="BluetoothtoastText">Le Bluetooth n\'est pas disponible</string>
+  <string name="GPStoastText">Le GPS n\'est pas disponible</string>
+  <string name="WifitoastText">Wi-Fi indisponible</string>
+  <string name="location_restriction_enabled">La restriction de localisation est activée.</string>
+  <string name="apncontrol_app_name">Contrôle APN</string>
+  <string name="no_apn">Aucun APN disponible</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+	android:paddingBottom="4dip" 
+    android:paddingLeft="6dip" android:paddingRight="6dip" android:paddingTop="4dip" >         
+
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:text="@string/prompt_input_name"
+		android:paddingBottom="6dip" 
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollHorizontally="true"
+        android:gravity="fill_horizontal"
+        android:maxLength="64"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:singleLine="true"/>
+
+</LinearLayout>

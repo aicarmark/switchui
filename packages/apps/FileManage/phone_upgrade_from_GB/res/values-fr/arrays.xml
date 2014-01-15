@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="sort_type">
+    <item>"Nom"</item>
+    <item>Date</item>
+    <item>Taille</item>
+    <item>Type</item>
+  </string-array>
+  <string-array name="network_type">
+    <item>Réseau CDMA</item>
+    <item>Réseau GSM</item>
+  </string-array>
+  <string-array name="search_storage_selector">
+    <item>Mémoire interne du tél.</item>
+    <item>Carte SD</item>
+  </string-array>
+</resources>

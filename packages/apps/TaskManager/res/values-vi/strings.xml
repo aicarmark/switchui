@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >"Quản lý công việc"</string>
+ <string name="tabTasks" >"Ứng dụng"</string>
+ <string name="tabProcesses" >"Tiến trình"</string>
+ <string name="buttonEnd" >"Kết thúc"</string>
+ <string name="buttonRefresh" >"Cập nhật"</string>
+ <string name="menuSwitch" >"Chuyển sang"</string>
+ <string name="menuEndTask" >"Kết thúc"</string>
+ <string name="menuCancel" >"Hủy"</string>
+ <string name="textAvailableMemory" >"Bộ nhớ trống:"</string>
+ <string name="textAvailableMemoryUnit" >"M"</string>
+ <string name="textNumOfApplications" >"Số lượng ứng dụng:"</string>
+ <string name="loading" >Đang tải\u2026</string>
+</resources>

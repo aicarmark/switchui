@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Contacts app resources that may need to be customized
+    for different hardware or product builds.
+-->
+<resources>
+    <!--  Flag indcating if should show dark ui -->
+    <bool name="contacts_dark_ui">true</bool>
+</resources>

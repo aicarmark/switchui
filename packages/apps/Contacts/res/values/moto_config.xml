@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Turn on/off 33270 multiparty calling -->
+    <bool name="ftr_33270_multiparty_conference">true</bool>
+    <!-- Max participant allowed in 33270 -->
+    <integer name="maxMultiPartyCallParticipant">5</integer>
+
+    <!-- Turn on/off 34621 189 email -->
+    <bool name="ftr_34621_189email">false</bool>
+
+    <!-- Carrier Name: CMCC, CT, CU -->
+    <string name="carrier_name"></string>
+
+    <!-- Set true if it's a dual mode product -->
+    <bool name="dual_mode_product">false</bool>
+
+    <!-- UI Style: empty as default, "DARK" for OLED Dark UI -->
+    <string name="ui_style"></string>
+
+    <!-- Has Internal SD card: true / false -->
+    <bool name="has_internal_sdcard">true</bool>
+
+</resources>

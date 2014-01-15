@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.motorola.mmsp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/bu_root"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColor="@color/black" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textColor="@color/black" >
+
+                    <FrameLayout
+                        android:layout_width="100.0dp"
+                        android:layout_height="100.0dp"
+                        android:layout_marginLeft="40.0dp"
+                        android:layout_marginTop="11.0dp"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/oneclick"
+                            style="@style/oneclick_select"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="19.0dp"
+                        android:layout_marginLeft="16.0dp"
+                        android:layout_marginTop="7.0dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/raminfo_title"
+                            android:textColor="@color/mem_titaltext_color"
+                            android:textSize="14.0dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29.0dp"
+                    android:layout_marginRight="11.0dp"
+                    android:layout_marginTop="23.0dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/sysclear_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dp"
+                            android:layout_gravity="left"
+                            android:text="@string/clickcleaner"
+                            android:textColor="@color/mem_titaltext_color"
+                            android:textSize="14.0dp"
+                            android:textStyle="bold" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/backgroudapps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="5.0dp"
+                            android:textColor="@color/text_small_color"
+                            android:textSize="14.0dp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/ramclick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dp"
+                            android:layout_gravity="left"
+                            android:textColor="@color/text_small_color"
+                            android:textSize="14.0dp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/romclick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dp"
+                            android:layout_gravity="left"
+
+                            android:textColor="@color/text_small_color"
+                            android:textSize="14.0dp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sysclear_progressbar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="9.0dp"
+                android:background="@drawable/title_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/listramview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="115.0dp"
+                        android:layout_height="115.0dp"
+                        android:layout_marginLeft="32.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:orientation="vertical" >
+
+                        <com.motorola.mmsp.performancemaster.ui.PercentView
+                            android:id="@+id/ramview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23.0dip"
+                        android:layout_marginTop="24.0dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13dip"
+                                android:layout_height="13dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/blue" />
+
+                            <TextView
+                                android:id="@+id/idramused"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/ramused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13dip"
+                                android:layout_height="13dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/gray" />
+
+                            <TextView
+                                android:id="@+id/idramfree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/ramused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/idramtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:text="@string/ramtotal"
+                            android:textColor="@color/white"
+                            android:textSize="14.0dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="43.0dip"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/ramselect"
+                            style="@style/mem_select"
+                            android:layout_width="25dp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="19.0dp"
+                    android:layout_marginLeft="16.0dp"
+                    android:layout_marginTop="7.0dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rominfo_title"
+                        android:textColor="@color/text_hilight_color"
+                        android:textSize="14.0dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="9.0dp"
+                android:background="@drawable/title_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/listromview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="115.0dp"
+                        android:layout_height="115.0dp"
+                        android:layout_marginLeft="32.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:orientation="vertical" >
+
+                        <com.motorola.mmsp.performancemaster.ui.PercentView
+                            android:id="@+id/romview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23.0dip"
+                        android:layout_marginTop="24.0dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13.0dip"
+                                android:layout_height="13.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/cambridge_blue" />
+
+                            <TextView
+                                android:id="@+id/idromused"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/romused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13.0dip"
+                                android:layout_height="13.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/gray" />
+
+                            <TextView
+                                android:id="@+id/idromfree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/romused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/idromtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:text="@string/romtotal"
+                            android:textColor="@color/white"
+                            android:textSize="14.0dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="43.0dip"
+                        android:gravity="right"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/romselect"
+                            style="@style/mem_select"
+                            android:layout_width="25dp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="19.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="7.0dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sdinfo_title"
+                        android:textColor="@color/text_hilight_color"
+                        android:textSize="14.0dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="9.0dp"
+                android:background="@drawable/title_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="115.0dp"
+                        android:layout_height="115.0dp"
+                        android:layout_marginLeft="32.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:orientation="vertical" >
+
+                        <com.motorola.mmsp.performancemaster.ui.PercentView
+                            android:id="@+id/sdview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23.0dip"
+                        android:layout_marginTop="24.0dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13.0dip"
+                                android:layout_height="13.0dip"
+                                android:layout_gravity="center"
+                                android:background="@color/percentview_yellow_color" />
+
+                            <TextView
+                                android:id="@+id/idsdused"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/sdused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9.0dip"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="13.0dip"
+                                android:layout_height="13.0dip"
+                                android:layout_gravity="center"
+                                android:background="@drawable/gray" />
+
+                            <TextView
+                                android:id="@+id/idsdfree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="19.0dip"
+                                android:layout_marginLeft="8.0dip"
+                                android:text="@string/sdused"
+                                android:textColor="@color/white"
+                                android:textSize="14.0dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/idsdtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="19.0dip"
+                            android:layout_marginTop="10.0dip"
+                            android:text="@string/sdtotal"
+                            android:textColor="@color/white"
+                            android:textSize="14.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

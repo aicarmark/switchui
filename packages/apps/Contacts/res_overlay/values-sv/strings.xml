@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Skyddat nummer</string>
+    <string name="visual_voicemail">Visuell röstbrevlåda</string>
+    <string name="Data_roaming_msg">Observera att detta kan leda till ytterligare avgifter för användning av visuell röstbrevlåda.\n\nVill du använda visuell röstbrevlåda eller röstbrevlåda?</string>
+
+</resources>

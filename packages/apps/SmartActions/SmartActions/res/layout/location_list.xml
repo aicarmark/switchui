@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+                
+    <!--  Failed View -->
+    <include android:id="@+id/ml_error_view" layout="@layout/list_fail_message"/>
+
+	<TextView android:layout_width="fill_parent"
+              android:layout_height="30dip"
+              android:text="@string/loc_secondary_text"
+              android:textSize="14sp"
+              android:textColor="@color/ics_blue"
+              android:gravity="center_vertical"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textStyle="bold"
+              android:textAllCaps="true"
+              android:layout_marginRight="10dip"
+              android:layout_marginLeft="18dip"
+              android:layout_marginTop="10dip"/>
+
+    <View android:id="@+id/account_filter_header_bottom_divider"
+          android:layout_height="1dip"
+          android:layout_marginRight="7dip"
+          android:layout_marginLeft="7dip"
+          style="@style/SectionDivider" />
+                  
+
+    <ListView android:id="@android:id/list"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:scrollbarStyle="outsideOverlay"
+	          android:longClickable="true"
+	          android:layout_weight="1"/>
+    
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    
+</LinearLayout>

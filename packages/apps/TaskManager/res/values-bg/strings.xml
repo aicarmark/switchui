@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Задачи"</string>
+  <string name="tabTasks">"Приложения"</string>
+  <string name="tabProcesses">"Процеси"</string>
+  <string name="buttonEnd">"Край"</string>
+  <string name="buttonRefresh">"Опресняване"</string>
+  <string name="menuSwitch">"Превключи на"</string>
+  <string name="menuEndTask">"Край на задачата"</string>
+  <string name="menuCancel">"Отказ"</string>
+  <string name="textAvailableMemory">"Достъпна памет:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Брой приложения:"</string>
+  <string name="loading">Зареждане\u2026</string>
+</resources>

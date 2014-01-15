@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/settings_prefs">
+        <CheckBoxPreference android:key="@string/rule_status_notifications"
+            android:title="@string/rule_status_notifications" 
+            android:summary="@string/rule_status_notifications_summary" />
+
+        <CheckBoxPreference android:key="@string/suggestion_notifications"
+            android:title="@string/suggestion_notifications" 
+            android:summary="@string/suggestion_notifications_summary" />
+
+        <CheckBoxPreference android:key="@string/mot_loc_services"
+            android:title="@string/mot_loc_services"
+            android:summary="@string/mot_loc_services_summary" />
+
+<!-- Not supported in v4.6 flows
+        <CheckBoxPreference android:key="@string/popup_suggestions"
+                			android:title="@string/popup_suggestions" 
+                			android:summary="@string/popup_suggestions_summary" />
+
+        <CheckBoxPreference android:key="@string/ca_enabled"
+                			android:title="@string/ca_enabled" />        
+-->
+</PreferenceScreen>

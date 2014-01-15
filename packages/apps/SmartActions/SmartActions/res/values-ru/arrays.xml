@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минута</item>
+        <item>2 минуты</item>
+        <item>10 минут</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Вызовы и сообщения</item>
+        <item>Только вызовы</item>
+        <item>Только сообщения</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Все номера</item>
+        <item>Все контакты телефонной книги</item>
+        <item>Выбранные контакты</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Сообщение будет отправлено на все телефонные номера.</item>
+        <item>Сообщение будет отправлено на все номера, сохраненные в телефонной книге.</item>
+        <item>Сообщение будет отправлено только на выбранные номера.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Максимальная</item>
+        <item>Высокая</item>
+        <item>Средняя</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Имя отправителя текстового сообщения</item>
+        <item>Имя звонящего абонента</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Дом</item>
+        <item>Работа</item>
+        <item>Школа</item>
+        <item>Пользовательский</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <!--
+    <item android:drawable="@drawable/black_10" android:duration="40" />
+      <item android:drawable="@drawable/black_60" android:duration="40" />
+    <item android:drawable="@drawable/black_120" android:duration="40" />
+     <item android:drawable="@drawable/black_180" android:duration="40" />
+    <item android:drawable="@drawable/black_240" android:duration="40" />
+   
+    <item android:drawable="@drawable/black_360" android:duration="40" />
+    -->
+
+    <item
+        android:drawable="@drawable/memory_ani0000"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0001"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0002"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0003"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0004"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0005"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0006"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0007"
+        android:duration="40"/>
+    <item
+        android:drawable="@drawable/memory_ani0008"
+        android:duration="40"/>
+
+</animation-list>

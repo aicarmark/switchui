@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- A special String indicated in AccuWeather tecnology Spec document,Translate by software team -->
+	<string name="langid">13</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:previewImage="@drawable/widget_preview"
+    android:configure="com.motorola.mmsp.socialGraph.socialwidget2D.SocialWidget2DConfigActivity"
+    android:initialLayout="@layout/init_layout"
+    android:minHeight="300px"
+    android:minWidth="400px" >
+
+</appwidget-provider>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */-->
+
+<resources>
+  <style name="MyTheme" parent="android:Theme.Black">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:textSize">17sp</item>
+  </style>
+  <!-- BEGIN Motorola, mtkg67, 2010/10/26, /IKMAIN-5994 -->
+  <style name="Interactive_Titlebar">
+    <item name="android:height">42dp</item>
+  </style>
+  <style name="Interactive_Titlebar.Button">
+    <item name="android:textStyle">normal</item>
+    <item name="android:textColor">#FFFFFFFF</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:shadowColor">#FF000000</item>
+    <item name="android:shadowDy">-2</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+  <style name="Interactive_Titlebar.Button.Two_Lines">
+    <item name="android:textSize">14sp</item>
+    <item name="android:singleLine">false</item>
+    <item name="android:lines">2</item>
+  </style>
+  <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar" />
+
+  <style name="ActionBar.Light" parent="@style/ActionBar">
+    <item name="android:background">@color/app_background</item>
+  </style>
+
+  <style name="ActionBar.Dark" parent="@style/ActionBar">
+    <item name="android:background">@color/app_background</item>
+  </style>
+
+  <!-- Holo.Dialog Theme for dialog but hide the activity itself-->
+  <style name="FileTransferTheme" parent="@android:style/Theme.Holo.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowBackground">@null</item>
+  </style>
+
+  <!-- END IKMAIN-5994 -->
+</resources>

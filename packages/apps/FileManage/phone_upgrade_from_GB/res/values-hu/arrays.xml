@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="sort_type">
+    <item>Név</item>
+    <item>Dátum</item>
+    <item>Méret</item>
+    <item>Típus</item>
+  </string-array>
+  <string-array name="network_type">
+    <item>CDMA-hálózat</item>
+    <item>GSM-hálózat</item>
+  </string-array>
+  <string-array name="search_storage_selector">
+    <item>A telefon belső tárhelye</item>
+    <item>SD-kártya</item>
+  </string-array>
+</resources>

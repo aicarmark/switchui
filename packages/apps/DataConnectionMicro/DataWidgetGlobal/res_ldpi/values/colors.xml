@@ -1,0 +1,9 @@
+<resources>
+    <color name="offColor">#000000</color>
+    <color name="airplaneOnColor">#000000</color>
+    <color name="gpsOnColor">#000000</color>
+    <color name="wifiOnColor">#000000</color>
+    <color name="bluetoothOnColor">#000000</color>
+    <color name="appwidget_text">#ffffffff</color>
+    <color name="appwidget_text_disabled">#ff888888</color>
+</resources>

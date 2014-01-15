@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="app_theme">
+    </style>
+
+<!-- Move from Styles.xml -->
+
+    <style name="DialtactsTheme">
+    </style>
+
+    <style name="MinusButton">
+    </style>
+
+    <style name="PlusButton">
+    </style>
+
+    <style name="MoreButton">
+    </style>
+
+    <style name="LessButton">
+    </style>
+
+    <style name="TallTitleBarTheme">
+    </style>
+
+    <style name="Contacts.TxtListItemB">
+    </style>
+
+    <style name="Contacts.SpeedDialNumberSingleLine">
+    </style>
+
+    <style name="Contacts.SpeedDialNameEditSingleLine">
+    </style>
+
+    <style name="Contacts.SpeedDialNumberEditSingleLine">
+    </style>
+
+<!-- Move from Styles.xml END -->
+
+    <style name="listview_overScrollFooter">
+    </style>
+    <style name="kind_title">
+    </style>
+    <style name="call_detail_text_color">
+    </style>
+    <style name="contacts_list_search_result_for">
+    </style>
+    <style name="contacts_list_search_result_found">
+    </style>
+    <style name="contacts_search_content_pinned_header_list">
+    </style>
+    <style name="contacts_search_content_list">
+    </style>
+    <style name="list_section_text_color">
+    </style>
+    <style name="phone_disambig_text1_color">
+    </style>
+    <style name="phone_disambig_text2_color">
+    </style>
+    <style name="tab_account_name_text_color">
+    </style>
+    <style name="tab_indicator_text_color">
+    </style>
+
+<!-- For Multiparty call -->
+    <drawable name="layoutBg">#EFEFEF</drawable>
+    <drawable name="mpcPickerBg">#ffffffff</drawable>
+    <style name="mpc_list">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+</resources>

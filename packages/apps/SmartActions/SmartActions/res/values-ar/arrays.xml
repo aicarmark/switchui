@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>"15 ثانية"</item>
+        <item>"30 ثانية"</item>
+        <item>"دقيقة واحدة"</item>
+        <item>دقيقتان</item>
+        <item>"10 دقائق"</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>المكالمات والرسائل النصية</item>
+        <item>المكالمات فقط</item>
+        <item>الرسائل النصية فقط</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>كل الأرقام</item>
+        <item>كل جهات الاتصال في دفتر الهاتف</item>
+        <item>جهات الاتصال المحددة</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>سيتم إرسال الرسالة إلى كل أرقام الهاتف.</item>
+        <item>سيتم إرسال الرسالة إلى كل الأرقام المحفوظة في دفتر الهاتف الخاص بك.</item>
+        <item>سيتم إرسال الرسالة إلى الأرقام المحددة فقط.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>حد أقصى</item>
+        <item>مرتفع</item>
+        <item>متوسط</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>اسم مرسل الرسالة النصيّة</item>
+        <item>اسم المتصل الوارد</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>منزل</item>
+        <item>عمل</item>
+        <item>مدرسة</item>
+        <item>مخصص</item>
+    </string-array>
+
+</resources>

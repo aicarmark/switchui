@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">אזהרה אקוסטית</string>
+  <string name="title">עוצמת קול של מדיה</string>
+  <string name="warning_text">האזנה לעוצמת קול גבוהה למשך פרקי זמן ארוכים עלולה לפגוע בשמיעה שלך.\n\nעוצמת הקול של המוסיקה שונתה לעוצמה נמוכה מהרמה המומלצת.</string>
+</resources>

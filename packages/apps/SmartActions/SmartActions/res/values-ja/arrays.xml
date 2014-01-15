@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>10分</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>通話とテキスト</item>
+        <item>通話のみ</item>
+        <item>テキストのみ</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>すべての番号</item>
+        <item>すべてのアドレス帳の連絡先</item>
+        <item>選択された連絡先</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>メッセージがすべての電話番号に送信されます。</item>
+        <item>メッセージがアドレス帳に保存されているすべての電話番号に送信されます。</item>
+        <item>メッセージが選択された電話番号にのみ送信されます。</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>最大</item>
+        <item>大</item>
+        <item>中</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>テキスト メッセージ送信者名</item>
+        <item>発信者名</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>自宅</item>
+        <item>勤務先</item>
+        <item>学校</item>
+        <item>カスタム</item>
+    </string-array>
+
+</resources>

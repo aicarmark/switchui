@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_auto"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="37px"
+                > </TextView>
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_info1"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="37px"
+                android:layout_marginRight="37px"
+                android:layout_marginTop="37px"
+                android:gravity="center"
+                > </TextView>
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_info2"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="37px"
+                android:layout_marginRight="37px"
+                android:layout_marginTop="37px"
+                android:gravity="center"
+                > </TextView>
+
+     <LinearLayout android:id="@+id/buttonPanel"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:gravity="bottom"
+	  android:orientation="vertical"
+	  android:divider="?android:attr/dividerHorizontal"
+	  android:showDividers="beginning"
+	  android:dividerPadding="0dip">
+	  
+         <LinearLayout
+	      style="?android:attr/buttonBarStyle"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:measureWithLargestChild="true">
+						
+             <Button
+		   android:id="@+id/back"
+		   android:text="@string/back"
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content"								
+		   android:layout_weight="1"								
+		   style="?android:attr/buttonBarButtonStyle"							
+		/>
+		<Button
+		   android:id="@+id/finish"
+		   android:text="@android:string/ok"
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content"
+		   android:layout_weight="1"
+		   style="?android:attr/buttonBarButtonStyle"
+              />
+	   </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

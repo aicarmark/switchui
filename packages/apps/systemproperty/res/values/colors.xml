@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="banner_text_color" type="color">@android:color/black</item>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey_normal">#ff303030</color>
+    <color name="btn_shadow">#ffddff79</color>
+    <color name="text_small_color">#ff8A8A8A</color>
+    <color name="text_hilight_color">#ff0099CC</color>
+    <color name="percentview_blue_color">#ff0d95d9</color>
+    <color name="percentview_cambridge_blue_color">#ff0dc2f9</color>
+    <color name="percentview_yellow_color">#fffff13c</color>
+    <color name="percentview_gray_color">#ff8c8a8c</color>
+    <color name="mem_titaltext_color">#ff33b5e5</color>
+
+</resources>

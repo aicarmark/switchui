@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:baselineAligned="false"
+              android:clipChildren="true"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+    <LinearLayout android:id="@+id/home_page"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+      <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:moto.res="http://schemas.android.com/apk/res/com.motorola.android.widget"
+                   android:layout_width="fill_parent"
+                   android:layout_height="?android:attr/windowTitleSize"
+                   android:stretchColumns="0"
+                   style="?android:attr/windowTitleBackgroundStyle" >
+          <TextView android:id="@+id/home_page_title"
+                    style="?android:attr/windowTitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:fadingEdge="horizontal"
+                    android:text="@string/file_manager" />
+          <TextView android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+      </TableLayout>
+      <!-- IKSTABLEFIVE-2633 - Start -->
+      <ListView android:id="@+id/home_page_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:drawSelectorOnTop="false" />
+      <!-- IKSTABLEFIVE-2633 - End -->
+    </LinearLayout>
+
+  <LinearLayout android:id="@+id/file_chooser_panel"
+                android:orientation="horizontal"
+                android:background="@color/filechooser_panel_backgroud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+    <Button android:id="@+id/file_chooser_cancel"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/filechooser_panel_margintop"
+            android:text="@android:string/cancel"
+            android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

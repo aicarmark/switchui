@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingLeft="6dip"
+    android:paddingRight="?android:attr/scrollbarSize"
+    >
+    <TextView
+        android:id="@+id/confcall_ctx_dlg_item_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left|center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/confcall_ctx_dlg_item_summary"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:visibility="gone"/>
+</LinearLayout>

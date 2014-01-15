@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:render="http://schemas.android.com/apk/res/com.motorola.mmsp.weather">
+	<PlayerConfigInfo render:fps="20" />
+
+	<AnimationTag>
+		<MotoAnimationSet render:id="@+id/animation_sand1"
+			render:ordering="together" render:repeat_count="-1">
+
+			<MotoAccelerationAnimation render:type="rotate"
+				render:affect_type="set" render:from="90" render:to="20"
+				render:acceleration="0.2" render:duration="5000" />
+
+			<MotoLinearAnimation render:type="translate_x"
+				render:affect_type="set" render:from="-250" render:to="560"
+				render:duration="5000" />
+			<MotoAccelerationAnimation render:type="translate_y"
+				render:affect_type="set" render:from="400" render:to="-200"
+				render:duration="5000" render:acceleration="-100" />
+		</MotoAnimationSet>
+
+
+		<MotoAnimationSet render:id="@+id/animation_sand21"
+			render:ordering="together" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+					render:type="alpha" render:affect_type="set" render:from="150"
+					render:to="255" render:duration="4000" />
+			<MotoAccelerationAnimation render:type="translate_x" render:acceleration="15"
+				render:affect_type="set" render:from="80" render:to="-200"
+				render:duration="4000" />
+			<MotoLinearAnimation render:type="translate_y"
+				render:affect_type="set" render:from="80" render:to="-160"
+				render:duration="4000" />
+		</MotoAnimationSet>
+		
+		<MotoAnimationSet render:id="@+id/animation_sand22"
+			render:ordering="together" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+					render:type="alpha" render:affect_type="set" render:from="50"
+					render:to="200" render:duration="2000" />
+			<MotoLinearAnimation render:type="translate_x"
+				render:affect_type="set" render:from="240" render:to="70"
+				render:duration="2000" />
+			<MotoLinearAnimation render:type="translate_y"
+				render:affect_type="set" render:from="40" render:to="-200"
+				render:duration="2000" />
+		</MotoAnimationSet>
+		
+		 
+
+		<MotoAnimationSet render:id="@+id/animation_sand3"
+			render:ordering="together" render:repeat_count="-1">
+			<MotoLinearAnimation render:type="rotate"
+				render:affect_type="set" render:from="80" render:to="35"
+				render:duration="7000" />
+			<MotoLinearAnimation render:type="translate_x"
+				render:affect_type="set" render:from="-300" render:to="540"
+				render:duration="7000" />
+			<MotoAccelerationAnimation render:type="translate_y"
+				render:affect_type="set" render:from="660" render:to="100"
+				render:duration="7000" render:acceleration="-48" />
+		</MotoAnimationSet>
+
+
+	</AnimationTag>
+	
+	<Texture render:id="@+id/sand3" render:bitmap="@drawable/sandstorm_sand"
+		render:x="0" render:y="0" render:width="207" render:height="381" />
+
+	<Texture render:id="@+id/sand1" render:bitmap="@drawable/sandstorm_sand"
+		render:x="0" render:y="381" render:width="194" render:height="304" />
+
+	<Texture render:id="@+id/sand2" render:bitmap="@drawable/sandstorm_sand"
+		render:x="0" render:y="685" render:width="184" render:height="289" />
+
+	<Texture render:id="@+id/sandstorm_mountain_bg"
+		render:bitmap="@drawable/sandstorm_background" render:x="0" render:y="0"
+		render:width="480" render:height="645" />
+
+	<Texture render:id="@+id/sandstorm_bg_head" render:bitmap="@drawable/sandstorm_background"
+		render:x="0" render:y="645" render:width="480" render:height="209" />
+
+	<Texture render:id="@+id/sand_mountain" render:bitmap="@drawable/sandstorm_hill"
+		render:x="0" render:y="0" render:width="480" render:height="82" />
+
+
+	<PictureTag>
+		<MotoPictureGroup>
+			
+			<MotoPicture render:bitmap="@id/sand1"
+				render:animation_set="@id/animation_sand1" render:level="4"
+				render:scale_x="1.6" render:scale_y="1.5" render:alpha="140" />
+			<MotoPicture render:bitmap="@id/sand1"
+				render:animation_set="@id/animation_sand1" render:level="4"
+				render:scale_x="1.6" render:scale_y="1.5" render:alpha="140"
+				render:seek_animation_to="0.25" />
+			<MotoPicture render:bitmap="@id/sand1"
+				render:animation_set="@id/animation_sand1" render:level="4"
+				render:scale_x="1.6" render:scale_y="1.5" render:alpha="140"
+				render:seek_animation_to="0.5" />
+			<MotoPicture render:bitmap="@id/sand1"
+				render:animation_set="@id/animation_sand1" render:level="4"
+				render:scale_x="1.6" render:scale_y="1.5" render:alpha="140"
+				render:seek_animation_to="0.75" />
+
+		
+
+			<MotoPicture render:bitmap="@id/sand3" render:x="0" render:level="3"
+				render:animation_set="@id/animation_sand3" render:y="0" render:alpha="220"
+				render:scale_x="1.7" render:scale_y="1.4" />
+
+			<MotoPicture render:bitmap="@id/sand3"
+				render:animation_set="@id/animation_sand3" render:level="3" render:alpha="220"
+				render:seek_animation_to="0.25" render:scale_x="1.7" render:scale_y="1.4" />
+				
+			<MotoPicture render:bitmap="@id/sand3"
+				render:animation_set="@id/animation_sand3" render:level="3" render:alpha="220"
+				render:seek_animation_to="0.5" render:scale_x="1.7" render:scale_y="1.4" />
+			  	
+			<MotoPicture render:bitmap="@id/sand3"
+				render:animation_set="@id/animation_sand3" render:level="3" render:alpha="220"
+				render:seek_animation_to="0.75" render:scale_x="1.7" render:scale_y="1.4" />
+				
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand21" render:level="1"
+				render:scale_x="1.2" render:scale_y="1.5" />				
+				
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand21" render:level="1"
+				render:seek_animation_to="0.25" render:scale_x="1.2" render:scale_y="1.5" />
+			
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand21" render:level="1"
+				render:seek_animation_to="0.5" render:scale_x="1.2" render:scale_y="1.5" />
+			
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand21" render:level="1"
+				render:seek_animation_to="0.75" render:scale_x="1.2" render:scale_y="1.5" />
+				
+				
+				
+				
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand22" render:level="1"
+				render:scale_x="1.2" render:scale_y="1.5" />				
+				
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand22" render:level="1"
+				render:seek_animation_to="0.25" render:scale_x="1.2" render:scale_y="1.5" />
+			
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand22" render:level="1"
+				render:seek_animation_to="0.5" render:scale_x="1.2" render:scale_y="1.5" />
+			
+			<MotoPicture render:bitmap="@id/sand2"
+				render:animation_set="@id/animation_sand22" render:level="1"
+				render:seek_animation_to="0.75" render:scale_x="1.2" render:scale_y="1.5" />	
+			
+			<MotoPicture render:x="180" render:y="180" render:id="@+id/pic_text" render:level="3"/>
+			<MotoPicture render:bitmap="@id/sandstorm_bg_head" render:x="0" render:level="0"
+				render:y="0" />
+			<MotoPicture render:bitmap="@id/sandstorm_mountain_bg" render:x="0" render:level="2"
+				render:y="208.5"/>				
+			<MotoPicture render:bitmap="@id/sand_mountain" render:x="0" render:level="2"
+				render:y="127.5"/>	
+				
+		</MotoPictureGroup>
+	</PictureTag>
+</Config>

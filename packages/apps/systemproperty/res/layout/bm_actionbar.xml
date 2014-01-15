@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/bm_edit_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="?android:attr/dividerVertical"
+        android:dividerPadding="12dip"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <!-- <LinearLayout
+            android:id="@+id/bm_edit_cancel_btn"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="3dp"
+                android:description="@string/str_action_bar_title"
+                android:src="@drawable/cancel" />
+
+            <TextView
+                style="@android:style/Widget.Holo.ActionBar.TabText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="29dp"
+                android:text="@string/bm_cancel"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13dp" />
+        </LinearLayout> -->
+        
+        <LinearLayout
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="3dp"
+                android:description="@string/str_action_bar_title"
+                android:src="@drawable/system_property_main" />
+
+            <TextView
+                style="@android:style/Widget.Holo.ActionBar.TabText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="29dp"
+                android:text="@string/bm_setting_mode"
+                android:textColor="#FFFFFFFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

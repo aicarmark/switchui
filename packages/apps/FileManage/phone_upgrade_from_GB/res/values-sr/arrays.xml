@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="sort_type">
+    <item>Име</item>
+    <item>Датум</item>
+    <item>Величина</item>
+    <item>Тип</item>
+  </string-array>
+  <string-array name="network_type">
+    <item>CDMA мрежа</item>
+    <item>GSM мрежа</item>
+  </string-array>
+  <string-array name="search_storage_selector">
+    <item>Унутрашња меморија телефона</item>
+    <item>SD картица</item>
+  </string-array>
+</resources>

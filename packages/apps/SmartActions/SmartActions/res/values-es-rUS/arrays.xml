@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>10 minutos</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Llamadas y msjs SMS</item>
+        <item>Sólo llamadas</item>
+        <item>Sólo msjs SMS</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Todos los números</item>
+        <item>Todos los contactos de la agenda</item>
+        <item>Contactos seleccionados</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>El mensaje se enviará a todos los números de teléfono.</item>
+        <item>El mensaje se enviará a todos los números guardados en tu agenda.</item>
+        <item>El mensaje sólo se enviará a los números seleccionados.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Máx.</item>
+        <item>Alto</item>
+        <item>Medio</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Nombre del remitente del mensaje de texto</item>
+        <item>Identificador de llamadas entrantes</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Casa</item>
+        <item>Trabajo</item>
+        <item>Escuela</item>
+        <item>Personalizado</item>
+    </string-array>
+
+</resources>

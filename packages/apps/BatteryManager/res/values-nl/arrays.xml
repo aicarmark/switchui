@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Voorinstellingen voor energiebesparing</item>
+    <item>Aangepaste instellingen</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>"15 minuten"</item>
+    <item>"30 minuten"</item>
+    <item>45 minuten</item>
+    <item>60 minuten</item>
+    <item>Altijd aan laten</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>"15 minuten"</item>
+    <item>30 minuten</item>
+    <item>45 minuten</item>
+    <item>60 minuten</item>
+  </string-array>
+</resources>

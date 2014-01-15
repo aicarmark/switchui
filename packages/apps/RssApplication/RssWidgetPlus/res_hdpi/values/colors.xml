@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="semi_white">#ff888888</color>
+    <color name="semi_blue">#fff88888</color>
+    <color name="blue">#7f009fff</color>
+    <color name="dark_gray">#2fffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="list_date_separator_color">#ff0099cc</color>
+    <color name="list_separator_color">#2fffffff</color>
+    <color name="rss_label_color">#ff9b9c9c</color>
+    <color name="pure_blue">#ff0000ff</color>
+    <color name="light_grey">#ff9d9d9d</color>
+</resources>

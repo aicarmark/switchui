@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Χρησιμοποιήστε το παρακάτω γράφημα για να επιλέξετε 7 επαφές για τη συμπλήρωση του γραφικού σας στοιχείου. Θα έχετε εύκολη πρόσβαση στις επαφές αυτές απευθείας από την αρχική οθόνη.</string>
+</resources>

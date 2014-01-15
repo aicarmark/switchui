@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/bg_transparency_landscape">
+  
+  
+  <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="302px"
+        >        
+     <include layout="@layout/activitylayout_landscape_nine"/>
+  
+     <AbsoluteLayout
+        android:layout_width="fill_parent"
+        android:layout_height="299px">
+       <TextView  android:id="@+id/pro_text"
+                android:layout_width="fill_parent"           
+                android:layout_height="fill_parent"   
+                android:layout_x="0px"
+                android:layout_y="6px"
+                android:text="@string/manageshortcuts_hint"
+                android:textSize="20px"
+                android:textColor="#ff000000" 
+                android:scrollbars="vertical"    
+                android:gravity="left">          
+     > </TextView>
+     </AbsoluteLayout>
+  </LinearLayout>    
+  
+ <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        
+        <Button android:text="@string/cancel" 
+            android:id="@+id/buttonCancel" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+        <Button android:text="@string/ok" 
+            android:id="@+id/buttonOk" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+    </LinearLayout>
+     
+</LinearLayout>

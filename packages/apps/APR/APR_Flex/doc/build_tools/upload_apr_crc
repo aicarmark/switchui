@@ -1,0 +1,328 @@
+#!/bin/bash
+
+################################################################################################
+# Original Implementation by Stephen Dickey
+#  This is a wrapper script for Map_Upload.pl, which is otherwise relatively unmodified.
+################################################################################################
+
+################################################################################################
+# Setup the defaults.  Enter all global Variables Here
+################################################################################################
+# The account name of the person running the script.
+whoiam=`whoami`
+
+# The name of this script
+script_name=$0
+
+# Whether or not debugging of the script is enabled
+debug=false
+testbuild=false
+
+# Default sbf_filename
+sbf_filename=uninitialized
+
+# Defaults for grabbing fields from sbf file
+username_field=ro.build.user=
+utc_field=ro.build.date.utc=
+build_id_field=ro.build.id=
+build_type_field=ro.build.type=
+
+# Various Software Version Extension Strings
+build_extensions="2HR FUL PKG ATT"
+
+################################################################################################
+# Parse the Input to the script.
+################################################################################################
+let counter=1
+# For each input paramter, examine the parameter
+for parameter in `echo $*`
+do
+    # pre increment the counter (to allow us to refer to the following command line parameter)
+    let counter=$counter+1
+
+    # load up the next parameter
+    next_parameter=`echo $* | cut  -f$counter -d' '`
+
+################################################################################################
+# support -s option for providing sbf
+################################################################################################
+ 
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-s" ]; then
+	if [ $next_parameter ]; then
+	  sbf_filename=$next_parameter
+	else
+	  echo "Please Specify an sbf file."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+################################################################################################
+# support -usr option for providing new username field
+################################################################################################
+ 
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-usr" ]; then
+	if [ $next_parameter ]; then
+	  username_field=$next_parameter
+	else
+	  echo "Please Specify the username field."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+################################################################################################
+# support -utc option for providing new utc field 
+################################################################################################
+ 
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-utc" ]; then
+	if [ $next_parameter ]; then
+	  utc_field=$next_parameter
+	else
+	  echo "Please Specify an sbf file."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+################################################################################################
+# support -bid option for providing new build id field
+################################################################################################
+ 
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-bid" ]; then
+	if [ $next_parameter ]; then
+	  build_id_field=$next_parameter
+	else
+	  echo "Please Specify an sbf file."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+    
+################################################################################################
+# support -btp option for providing new build type field
+################################################################################################
+ 
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-btp" ]; then
+	if [ $next_parameter ]; then
+	  build_id_field=$next_parameter
+	else
+	  echo "Please Specify an sbf file."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+
+
+################################################################################################
+# support -d option for debug 
+################################################################################################
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-d" ]; then
+	debug=true
+    fi
+
+################################################################################################
+# support -t option for testbuild
+################################################################################################
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-t" ]; then
+	testbuild=true
+    fi
+
+    # Check for (and execute) the help information
+    if [ $parameter = "-h" ]; then
+	echo "Usage: $script_name [-h] <options> -s <sbf file name>"
+	echo " "
+	echo " Description: This is a description of the script's purpose."
+	echo ""
+	echo "  Unix Prompt> $script_name [-h] <options> -s <sbf file name>"
+	echo ""
+	echo "Options:"
+	echo "                 -h: print this help file"
+	echo "                 -d: debug only, no upload"
+	echo "                 -t: testbuild upload only"
+	echo "                 -s: provide the sbf file name"
+	echo "                 -utc: provide the utc field text"
+        echo "                    e.g. -utc $utc_field"
+	echo "                 -usr: provide the username field text"
+        echo "                    e.g. -usr $username_field"
+	echo "                 -bid: provide the build id field text"
+        echo "                    e.g. -bid $build_id_field"
+	echo "                 -btp: provide the build type field text"
+        echo "                    e.g. -btp $build_type_field"
+        echo " "
+        echo " "	
+        exit 0
+    fi
+done
+
+if [ $sbf_filename == uninitialized ]; then
+    echo "You Must Provide an SBF Filename"
+    $script_name -h | more
+    exit 0
+fi
+
+if [ $debug == true ]; then
+    echo --------------------------------------------------------
+    echo Parameters Specified to Execute Script $script_name
+    echo --------------------------------------------------------
+    echo Debugging Enabled: $debug
+    echo Sbf File:          $sbf_filename
+    echo Username Field:    $username_field
+    echo Utc Field:         $utc_field
+    echo Build Id Field:    $build_id_field
+    echo Build Type Field:  $build_type_field
+    echo TestUploadOnly:    $testbuild
+    echo --------------------------------------------------------
+fi
+
+echo "========================================"
+echo " Uploading CRC for Official Build"
+echo " $sbf_filename"
+echo "========================================"
+
+if [ $debug == true ]; then
+    echo "debug is enabled... no upload will happen."
+fi
+
+if [ $REPO_ROOT ]; then
+   if [ $debug == true ]; then
+      echo "repo root is $REPO_ROOT"
+   fi
+else
+   if [ $debug == true ]; then
+      echo "assuming repo root is current dir"
+   fi
+      export REPO_ROOT=./
+fi
+
+test_sbf_name=`echo $sbf_filename | sed -e 's/.*\.gz/gzipped/'`
+
+# unzip a zippped sbf file
+if [ $test_sbf_name == gzipped ]; then
+   cp $sbf_filename temp_unzip_${sbf_filename}
+   
+   # this is used below to tell us to delete the unzipped file.
+   unzip_sbf_filename=`echo temp_unzip_$sbf_filename | sed -e 's/\.gz//'`
+   
+   if [ $debug == true ]; then
+      echo "Unzipping $sbf_filename"
+   fi
+   
+   gunzip -f temp_unzip_$sbf_filename
+   sbf_filename=$unzip_sbf_filename
+fi
+
+if [ $sbf_filename ]; then 
+
+    if [ $debug == true ]; then
+       echo "Searching .sbf file for relevant data:" $sbf_filename
+    fi
+
+    #################################################################################
+    # Find Inputs
+    #################################################################################
+
+    user=`/usr/bin/strings $sbf_filename | grep $username_field`
+    user=`echo $user | sed -e 's/.*=//'`
+    
+    if [ $debug == true ]; then
+       echo "USERNAME"
+       echo $user
+    fi
+
+    date=`/usr/bin/strings $sbf_filename | grep $utc_field`
+    date=`echo $date | sed -e 's/.*=//'`
+    if [ $debug == true ]; then
+       echo "DATE IN UTC"
+       echo $date
+    fi
+
+    baselabel=`/usr/bin/strings $sbf_filename | grep $build_id_field`
+    baselabel=`echo $baselabel | sed -e 's/.*=//'`
+    if [ $debug == true ]; then
+       echo "BASELABEL"
+       echo $baselabel
+    fi
+    
+    build_type=`/usr/bin/strings $sbf_filename | grep $build_type_field`
+    build_type=`echo $build_type | sed -e 's/.*=//'`
+    if [ $debug == true ]; then
+       echo "BUILDTYPE"
+       echo $build_type
+    fi
+    
+    if [ $build_type == "userdebug" ]; then
+       baselabel=`echo $baselabel"D"`
+       
+       if [ $debug == true ]; then
+          echo $baselabel"D"
+          echo "New BASELABEL:" $baselabel
+       fi
+    fi
+
+
+    ### Generate the CRC using an external program.
+    ### Matches Android APR code precisely.
+
+	crc=`${REPO_ROOT}/out/host/linux-x86/bin/gen_apr_crc $user $date $baselabel`
+
+	echo " "
+	echo APR CRC Calculated: $user $date $baselabel: $crc
+	echo " "
+
+        if [ $debug == false ]; then
+
+   	   if [ $testbuild == true ]; then
+	      # echo "Uploading testbuild."
+
+              perl ${REPO_ROOT}/mot/bin/Map_Upload.pl -crc=$crc -testbuild -baselabel=$baselabel -checkCRC
+           else
+
+	      # echo "Uploading Official Version Now."
+
+   	      # Upload!!!
+	      perl ${REPO_ROOT}/mot/bin/Map_Upload.pl -official -baselabel=$baselabel -crc=$crc 
+           fi
+        else
+           echo "No Upload Performed."
+        fi
+
+        for extension in `echo $build_extensions`
+	do
+	   crc=`${REPO_ROOT}/out/host/linux-x86/bin/gen_apr_crc $user $date $baselabel$extension`
+
+	   echo " "
+	   echo APR CRC Calculated: $user $date $baselabel$extension: $crc
+	   echo " "
+
+           if [ $debug == false ]; then
+
+   	      if [ $testbuild == true ]; then
+	         # echo "Uploading testbuild."
+
+                 perl ${REPO_ROOT}/mot/bin/Map_Upload.pl -crc=$crc -testbuild -baselabel=$baselabel$extension -checkCRC
+              else
+
+	         # echo "Uploading Official Version Now."
+
+   	         # Upload!!!
+	         perl ${REPO_ROOT}/mot/bin/Map_Upload.pl -official -baselabel=$baselabel$extension -crc=$crc 
+              fi
+           else
+              echo "No Upload Performed."
+           fi
+        done
+
+else
+    echo "ERROR: Please provide .sbf file"
+fi
+
+rm -f temp_unzip_*.sbf

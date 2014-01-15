@@ -1,0 +1,13 @@
+
+
+-keep class com.motorola.contextual.smartprofile.**
+
+-keep class com.motorola.contextual.actions.**
+
+-keep class com.motorola.contextual.pickers.**
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+
+-keep class **.R$*

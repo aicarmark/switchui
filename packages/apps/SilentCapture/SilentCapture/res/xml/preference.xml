@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<PreferenceScreen   
+    xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:title="@string/title">  
+    <CheckBoxPreference  
+        android:key="auto_launch"
+        android:title="@string/auto_launch"   
+        android:summaryOn="@string/launch_summary_on"  
+        android:summaryOff="@string/launch_summary_off"
+        android:defaultValue="true">  
+    </CheckBoxPreference> 
+
+    <!--
+    <CheckBoxPreference
+        android:key="screen_on_exit"
+        android:title="@string/screen_on_exit"   
+        android:summaryOn="@string/screen_summary_on"  
+        android:summaryOff="@string/screen_summary_off"
+        android:defaultValue="true"
+        android:dependency="auto_launch">  
+    </CheckBoxPreference>
+    -->
+</PreferenceScreen>  

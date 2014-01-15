@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- modified by amt_sunli 2012-09-20 SWITCHUITWOV-209 begin -->
+   <!-- <item android:id="@+id/action_save_group" android:title="@string/save_group"/> -->
+   <!-- modified by amt_sunli 2012-09-20 SWITCHUITWOV-209 end -->
+    <item android:id="@+id/action_create_event" android:title="@string/create_email"/>
+    <item android:id="@+id/action_create_email" android:title="@string/create_event"/>
+
+</menu>

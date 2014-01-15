@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Schalter-Widgets</string>
+  <string name="gps_app_name">GPS ein/aus</string>
+  <string name="airplane_app_name">Flugmodus ein/aus</string>
+  <string name="wifi_app_name">WLAN ein/aus</string>
+  <string name="bluetooth_app_name">Bluetooth ein/aus</string>
+  <string name="apn_app_name">APN ein/aus</string>
+  <string name="data_app_name">Daten ein/aus</string>
+  <string name="widget_description">Flugmodus-Status ansehen und kontrollieren</string>
+  <string name="widget_description_bt">Bluetooth-Status ansehen und kontrollieren</string>
+  <string name="widget_description_wifi">WLAN -Status ansehen und kontrollieren</string>
+  <string name="widget_description_gps">GPS-Status ansehen und kontrollieren</string>
+  <string name="StatusOn">EIN</string>
+  <string name="StatusOff">AUS</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Flugmodus nicht verfügbar</string>
+  <string name="BluetoothtoastText">Bluetooth nicht verfügbar</string>
+  <string name="GPStoastText">GPS nicht verfügbar</string>
+  <string name="WifitoastText">WLAN nicht verfügbar</string>
+  <string name="location_restriction_enabled">Standortbeschränkung ist aktiviert.</string>
+  <string name="apncontrol_app_name">APN-Kontrolle</string>
+  <string name="no_apn">Kein APN verfügbar</string>
+</resources>

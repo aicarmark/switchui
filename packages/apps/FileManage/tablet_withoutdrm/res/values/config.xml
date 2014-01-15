@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--
+    Begin Motorola, jbq364, 11/18/2010, IKSTABLETWOV-5457 / Protected
+    Content should be available in the Files app for ATT
+  -->
+  <!-- Flex version. "" indicates that Flex version is not set -->
+  <bool name="config_protectedcontent_attdrmContent_flexVersion">false</bool>
+  <!-- END IKSTABLETWOV-5457 -->
+</resources>

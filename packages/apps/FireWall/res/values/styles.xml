@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FirewallTheme" parent="@android:style/Theme.Holo">
+    </style>
+
+    <style name="FirewallList">
+        <item name="android:overScrollFooter">@*android:color/black</item>
+        <item name="android:divider">@drawable/divider_horizontal_dark</item>
+    </style>
+    <!--2012/08/22 DJHV83 add for IKCBSMMCPPRC-1757  -->
+     <style name="Theme.FirewallTab" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarTabTextStyle">@style/Larger_Text</item>
+    </style>
+
+    <style name="Larger_Text" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--IKCBSMMCPPRC-1757 end  -->
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="screen_timeout_entries">
+		<item>15 seconds</item>
+		<item>30 seconds</item>
+		<item>1 minute</item>
+		<item>2 minutes</item>
+		<item>10 minutes</item>
+	</string-array>
+
+    <!-- Do not translate. -->
+    <integer-array name="screen_timeout_values">
+		<item>15000</item>
+		<item>30000</item>
+		<item>60000</item>
+		<item>120000</item>
+		<item>600000</item>
+	</integer-array>
+
+    <string-array name="auto_sms_respond_to_event">
+        <item>Calls and texts</item>
+        <item>Calls only</item>
+        <item>Texts only</item>
+    </string-array>
+
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>All numbers</item>
+        <item>All phonebook contacts</item>
+        <item>Selected contacts</item>
+    </string-array>
+
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Message will be sent to all phone numbers.</item>
+        <item>Message will be sent to all numbers saved in your phonebook.</item>
+        <item>Message will be sent to selected numbers only.</item>
+    </string-array>
+
+    <string-array name="volume_levels">
+        <item>Max</item>
+        <item>High</item>
+        <item>Medium</item>
+    </string-array>
+
+    <!-- Voice Announce -->
+    <string-array name="voice_announce_items">
+        <item>Text message sender name</item>
+        <item>Incoming caller name</item>
+    </string-array>
+    
+    <string-array name="location_names">
+        <item>Home</item>
+        <item>Work</item>
+        <item>School</item>
+        <item>Custom</item>
+    </string-array>
+    
+    <!--  *** Don't change the settings below for language translation **** -->
+    <!-- Rule Icons -->
+    <string-array name="rule_icon_items" translatable="false">
+        <item>ic_default_w</item>
+        <item>ic_home_w</item>
+        <item>ic_work_w</item>
+        <item>ic_sleep_w</item>
+        <item>ic_driving_w</item>
+        <item>ic_evening_w</item>
+        <item>ic_morning_w</item>
+        <item>ic_settings_w</item>
+        <item>ic_workout_w</item>
+        <item>ic_time_w</item>
+        <item>ic_location_w</item>
+        <item>ic_battery_w</item>
+        <item>ic_music_w</item>
+        <item>ic_quiet_zone_w</item>
+        <item>ic_calendar_w</item>
+        <item>ic_school</item>
+        <item>ic_phone_w</item>
+    </string-array>
+    
+    <!-- Legacy Rule Icons -->
+    <string-array name="legacy_rule_icons_items" translatable="false">
+        <item>ic_charging_w</item>
+        <item>ic_battery_status_w</item>
+    </string-array>
+    <!-- *** don't change the above settings for language translation *** -->
+</resources>

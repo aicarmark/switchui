@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rules_row_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal" >
+
+    <!-- Rule Icon Wrapper -->
+    <LinearLayout
+        android:id="@+id/rule_icon_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:orientation="vertical" >
+
+        <!-- Rule Icon -->
+        <ImageView
+            android:id="@+id/rule_icon"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:contentDescription="@string/rule_icon_image_desc"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- Text Layout -->
+    <LinearLayout
+        android:id="@+id/right_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="8dp" >
+
+        <!-- First Line -->
+        <TextView
+            android:id="@+id/first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/first_line"
+            android:textSize="22sp" />
+
+        <!-- Second Line -->
+        <TextView
+            android:id="@+id/second_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <!-- Status Line -->
+        <TextView
+            android:id="@+id/status_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

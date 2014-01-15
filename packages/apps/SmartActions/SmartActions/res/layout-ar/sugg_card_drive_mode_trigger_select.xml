@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parent_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/sg_drivemode_triggerSelect" 
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:paddingTop="10dp" />
+
+        <View android:id="@+id/separator1" 
+			 android:background="@color/gray" 
+			 android:layout_width = "fill_parent"
+			 android:layout_height="1dip"
+			 android:layout_centerVertical ="true"/>
+        
+            <!-- BULLETPOINT 1 -->
+		      
+        <LinearLayout
+            android:id="@+id/bulletpoint_wrapper_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/bulletpoint_image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/bt_image_desc"
+                android:src="@drawable/ic_bluetooth_w" />
+
+            <TextView
+                android:id="@+id/bulletpoint_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="@string/sg_drivemode_triggerBT" 
+                android:textColor="@color/white"/>
+            
+            <RadioButton
+                android:checked="false"
+                android:id="@+id/radioButton_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"/>
+        </LinearLayout>
+        <TextView 
+                android:id="@+id/btLink"
+                android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:textSize="16sp"
+				android:layout_marginLeft="60dp"
+				android:layout_marginRight="40dp"
+				android:layout_marginBottom="20dp"/>
+
+        <View android:id="@+id/separator2" 
+			 android:background="@color/gray" 
+			 android:layout_width = "fill_parent"
+			 android:layout_height="1dip"
+			 android:layout_centerVertical ="true"/>
+            
+       <!-- BULLETPOINT 2 -->
+
+       <LinearLayout
+           android:id="@+id/bulletpoint_wrapper_2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical" 
+           android:layout_marginTop="10dp"
+           android:clickable="true">
+
+           <ImageView
+               android:id="@+id/bulletpoint_image_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:contentDescription="@string/dock_image_desc"
+               android:src="@drawable/ic_dock_w" />
+
+           <TextView
+               android:id="@+id/bulletpoint_text_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:layout_weight="1"
+               android:textSize="16sp"
+               android:text="@string/sg_drivemode_triggerDock"
+               android:textColor="@color/white"/>
+       
+       <RadioButton
+           	android:checked="false"
+               android:id="@+id/radioButton_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:onClick="onRadioButtonClicked"/>
+       
+       </LinearLayout>
+       
+      <TextView 
+               android:id="@+id/dockLink"
+               android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textSize="16sp"
+			android:layout_marginLeft="60dp"
+			android:layout_marginRight="40dp"
+			android:layout_marginBottom="20dp"/>
+
+       <View android:id="@+id/separator3" 
+			 android:background="@color/gray" 
+			 android:layout_width = "fill_parent"
+			 android:layout_height="1dip"
+			 android:layout_centerVertical ="true"/>
+           
+       <!-- BULLETPOINT 3 -->
+
+       <LinearLayout
+           android:id="@+id/bulletpoint_wrapper_3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:clickable="true" >
+
+           <TextView
+               android:id="@+id/bulletpoint_text_3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:paddingLeft="10dp"
+               android:layout_weight="1"
+               android:textSize="16sp"
+               android:text="@string/sg_drivemode_triggerManual"
+               android:textColor="@color/white"/>
+       
+       <RadioButton
+           	android:checked="false"
+               android:id="@+id/radioButton_3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:onClick="onRadioButtonClicked"/>
+       
+       </LinearLayout>
+   </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Task Manager</string>
+  <string name="tabTasks">Anwendungen</string>
+  <string name="tabProcesses">Prozesse</string>
+  <string name="buttonEnd">Ende</string>
+  <string name="buttonRefresh">Aktualisieren</string>
+  <string name="menuSwitch">Wechseln zu</string>
+  <string name="menuEndTask">Aufgabe beenden</string>
+  <string name="menuCancel">Abbrechen</string>
+  <string name="textAvailableMemory">Verfügbarer Speicher:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Anz. Anwendungen:</string>
+  <string name="loading">Laden\u2026</string>
+</resources>

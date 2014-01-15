@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date       CR                Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/remote_frame" android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <LinearLayout android:id="@+id/remote_server_list"
+    android:orientation="vertical" android:visibility="visible"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <include layout="@layout/samba_server" />
+  </LinearLayout>
+
+  <include layout="@layout/samba_explore_file_left" />
+  <include layout="@layout/samba_group" />
+</FrameLayout>

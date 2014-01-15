@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="batt_manager_mode" >Chế độ pin</string>
+ <string name="preset_title" >Sẵn có</string>
+ <string name="customs_title" >Tùy chỉnh</string>
+ <string name="preset_maxbatt_title" >Tiết kiệm pin tối đa</string>
+ <string name="preset_maxbatt_shortdesc" >Tiết kiệm pin nhất. Ít tự động cập nhật dữ liệu nhất.</string>
+ <string name="preset_nighttime_title" >Tiết kiệm pin vào buổi tối</string>
+ <string name="preset_nighttime_shortdesc" >Hoạt động bình thường ban ngày. Tiết kiệm pin vào buổi tối</string>
+ <string name="preset_perfmode_title" >Chế độ hiệu suất</string>
+ <string name="preset_perfmode_shortdesc" >Đồng bộ không hạn chế. Không tiết kiệm pin.</string>
+ <string name="customs_mode_title" >Tùy chỉnh tiết kiệm pin</string>
+ <string name="customs_mode_shortdesc" >Tự tạo cấu hình tiết kiệmpin</string>
+ <string name="moreinfo_text" >Thêm thông tin</string>
+ <string name="presets_perfmode_desc" >Đồng bộ không hạn chế suốt cả ngày.</string>
+ <string name="presets_maxsaver_desc" >Trong thời gian điện thoại không kết nối sạc:\n\n<li >Ngừng đồng bộ dữ liệu sau 15 phút không hoạt động lúc ban ngày và đêm.</li>\n\n<li >Mờ màn hình.</li>"</string>
+ <string name="presets_nighttime_desc" >"Trong thời gian điện thoại không kết nối sạc:\n\n<li >Ngừng đồng bộ dữ liệu sau 15 phút không hoạt động từ 10:00 PM đến 05:00 AM. Bắt đầu đồng bộ lại khi bấm phím bất kỳ.</li>\n\n<li >Đồng bộ không hạn chế trong giờ làm việc.</li>"</string>
+ <string name="presets_nighttime_desc_24" >"Trong thời gian điện thoại không kết nối sạc:\n\n<li >Ngừng đồng bộ dữ liệu sau 15 phút không hoạt động từ 22:00 đến 05:00. Bắt đầu đồng bộ lại khi bấm phím bất kỳ.</li>\n\n<li >Đồng bộ không hạn chế trong giờ làm việc.</li>"</string>
+ <string name="customs_description" >Chế độ tùy chỉnh sẽ giúp bạn chủ động trong việc sử dụng tiết kiệm pin\. Cài đặt này chỉ có tác dụng khi điện thoại không sạc pin.</string>
+ <string name="customs_offpeak_title" ><bold >Giờ cao điểm</bold></string>
+ <string name="customs_start_text" >Bắt đầu:</string>
+ <string name="customs_end_text" >Kết thúc:</string>
+ <string name="customs_data_text" >Tắt dữ liệu sau:</string>
+ <string name="customs_peak_title" ><bold >Giờ thấp điểm</bold></string>
+ <string name="customs_displayopt_title" ><bold >Độ sáng màn hình</bold></string>
+ <string name="customs_disp_text" >Nếu mức pin &lt; 30%, cài độ sáng MH là:</string>
+ <string name="but_ok_text" >Ok</string>
+ <string name="but_cancel_text" >Hủy</string>
+ <string name="time_unit_minutes" >phút</string>
+ <string name="time_unit_hour" >giờ</string>
+ <string name="never_timeout" >Luôn mở</string>
+ <string name="disp_text_min" >tối thiểu</string>
+ <string name="disp_text_max" >tối đa</string>
+ <string name="disp_text_curr" >Độ sáng MH hiện tại</string>
+ <string name="battery_manager_setting" >Quản lý pin</string>
+ <string name="battery_manager_settings_summary" >Cài đặt để tiết kiệm pin</string>
+ <string name="powerprofile_app_name" >Cấu hình pin</string>
+ <string name="powerprofile_svc_name" >Dịch vụ cấu hình nguồn</string>
+ <string name="powerprofile_rcv_name" >Nhận cấu hình nguồn</string>
+ <string name="logtitle" >Thời gian tắt dữ liệu:\n</string>
+ <string name="logs" >Xem thông tin  </string>
+ <string name="pref_user_max_timeout" >Tắt dữ liệu sau</string>
+ <string name="remote_mgmt_text" >Chế độ này có thể ngừng kết nối dữ liệu sau khoảng thời gian không hoạt động, trong suốt thời gian này điện thoại sẽ không đồng bộ dữ liệu.\n\nKhi kết nối bị ngừng, việc phát lại giải trí trực tuyến sẽ bị gián đoạn.</string>
+ <string name="remote_mgmt_title" >Thông báo</string>
+ <string name="lightsensorctrl" >Độ sáng MH hiện được tự điều chỉnh bởi cảm biến ánh sáng</string>
+ <string name="power_usage_summary_title" >Sử dụng pin</string>
+ <string name="power_usage_summary" >Sử dụng pin cho</string>
+ <string name="notice_profile_select" >Có thể cài giờ từ 10:00 PM đến 5:00 AM để kéo dài thời gian sử dụng pin</string>
+ <string name="configure_text" >Cấu hình</string>
+ <string name="pwrup_notice_title" >Quản lý pin cài sang chế độ tiết kiệm ban đêm</string>
+ <string name="pwrup_notice_subtext" >Chọn để xem chi tiết</string>
+ <string name="pwrup_notice_desc" >Quản lý pin được cài sang chế độ tiết kiệm vào ban đêm để kéo dài thời gian sử dụng pin.\n\n\
+Tiết kiệm pin ban đêm sẽ tắt kết nối dữ liệu sau 15 phút không sử dụng từ 10:00 PM \đến 5:00 AM, trong thời gian này không kết nối điện thoại với sạc.\n\nKhi tắt kết nối dữ liệu, điện thoại \ sẽ không đồng bộ hoặc phát giải trí trực tuyến.\n\nĐể thay đổi chọn\"Cấu hình\" hoặc vào \
+Quản lý pin trong menu ứng dụng.\n</string>
+ <string name="battery_setting" >Cài đặt pin</string>
+ <string name="bu_level_label" >Pin còn lại:</string>
+ <string name="bu_entry_label" >Chạm để xem thống kê sử dụng</string>
+ <string name="bu_pct_text" ><xliff:g id ="number" >%d</xliff:g><xliff:g id ="percent" >%%</xliff:g></string>
+</resources>

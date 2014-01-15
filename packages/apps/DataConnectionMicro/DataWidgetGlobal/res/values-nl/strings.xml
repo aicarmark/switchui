@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Aan/uit-widgets</string>
+  <string name="gps_app_name">GPS aan/uit</string>
+  <string name="airplane_app_name">Vliegmodus aan/uit</string>
+  <string name="wifi_app_name">Wi-Fi aan/uit</string>
+  <string name="bluetooth_app_name">Bluetooth aan/uit</string>
+  <string name="apn_app_name">APN aan/uit</string>
+  <string name="data_app_name">Gegevens aan/uit</string>
+  <string name="widget_description">Status van vliegmodus weergeven en beheren</string>
+  <string name="widget_description_bt">Bluetooth-status weergeven en beheren</string>
+  <string name="widget_description_wifi">Wi-Fi-status weergeven en beheren</string>
+  <string name="widget_description_gps">GPS-status weergeven en beheren</string>
+  <string name="StatusOn">"AAN"</string>
+  <string name="StatusOff">"UIT"</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Vliegmodus is niet beschikbaar</string>
+  <string name="BluetoothtoastText">Bluetooth is niet beschikbaar</string>
+  <string name="GPStoastText">GPS is niet beschikbaar</string>
+  <string name="WifitoastText">Wi-Fi is niet beschikbaar</string>
+  <string name="location_restriction_enabled">Locatiebeperking is ingeschakeld.</string>
+  <string name="apncontrol_app_name">APN-beheer</string>
+  <string name="no_apn">Geen APN beschikbaar</string>
+</resources>

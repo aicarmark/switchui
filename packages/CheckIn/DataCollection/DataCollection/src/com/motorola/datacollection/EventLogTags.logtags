@@ -1,0 +1,7 @@
+# See system/core/logcat/event.logtags for a description of the format of this file.
+
+option java_package com.motorola.datacollection
+
+# For multimedia logs reading event log buffer
+1000301 dc_mm (media_info|3)
+1000302 dc_mmlog (log|3)

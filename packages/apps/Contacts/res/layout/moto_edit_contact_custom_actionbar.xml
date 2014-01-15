@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:divider="?android:attr/dividerVertical"
+    android:dividerPadding="12dp"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:id="@+id/cancel_menu_item"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="?android:attr/actionBarItemBackground">
+        <ImageView
+            android:id="@+id/cancel_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ab_cancel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/action_bar_button_text_color"
+            android:text="@string/menu_doNotSave"
+            style="@android:style/Widget.Holo.ActionBar.TabText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save_menu_item"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="?android:attr/actionBarItemBackground">
+        <ImageView
+            android:id="@+id/save_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ab_done"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/action_bar_button_text_color"
+            android:text="@string/menu_save"
+            style="@android:style/Widget.Holo.ActionBar.TabText" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for sketcher -->
+    <dimen name="preview_bar_width">52px</dimen>
+    <dimen name="preview_bar_margin_left">8px</dimen>
+    <dimen name="preview_bar_margin_top">57px</dimen>
+    <dimen name="thickness_margin_top">11dip</dimen>
+    <dimen name="thick2_margin_left">30dip</dimen>
+    <dimen name="thick3_margin_left">30dip</dimen>
+    <dimen name="pen_color_margin_top">6dip</dimen>
+
+
+    <dimen name="thumb_ationbar_height">68px</dimen>
+    <dimen name="gridview_vertical_spacing">7px</dimen>
+
+    <dimen name="thumb_layout_width">141px</dimen>
+    <dimen name="thumb_layout_height">212px</dimen>
+    <dimen name="delete_layout_width">149px</dimen>
+    <dimen name="delete_layout_height">219px</dimen>
+    <dimen name="note_title_linespace">0px</dimen>
+
+</resources>

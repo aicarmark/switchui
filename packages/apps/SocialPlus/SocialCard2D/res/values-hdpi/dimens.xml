@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="l_size">119dp</dimen>
+    <dimen name="m_size">91dp</dimen>
+    <dimen name="s_size">67dp</dimen>
+    <dimen name="size2">91dp</dimen>
+    <dimen name="size7">67dp</dimen>
+    <dimen name="size8">67dp</dimen>
+
+
+<!-- ==================================================== -->
+
+    <dimen name="x0">91dp</dimen>
+    <dimen name="y0">92.5dp</dimen>
+    
+    <dimen name="x1">119dp</dimen>
+    <dimen name="y1">1dp</dimen>
+    
+    <dimen name="x2">28dp</dimen>
+    <dimen name="y2">1dp</dimen>
+    
+    <dimen name="x3">0dp</dimen>
+    <dimen name="y3">92.5dp</dimen>
+    
+    <dimen name="x4">24dp</dimen>
+    <dimen name="y4">183.75dp</dimen>
+    
+    <dimen name="x5">91.3dp</dimen>
+    <dimen name="y5">212.3dp</dimen>
+    
+    <dimen name="x6">158.5dp</dimen>
+    <dimen name="y6">212.3dp</dimen>
+
+    <dimen name="x7">210.5dp</dimen>
+    <dimen name="y7">144.5dp</dimen>
+
+    <dimen name="x8">210.5dp</dimen>
+    <dimen name="y8">77dp</dimen>
+
+    <dimen name="x9">72dp</dimen>
+    <dimen name="y9">72dp</dimen>
+
+<!-- ==================================================== -->
+    
+    <dimen name="shadow_l_size">123dp</dimen>
+    <dimen name="shadow_m_size">97dp</dimen>
+    <dimen name="shadow_s_size">82dp</dimen>
+    <dimen name="shadow_size7">97dp</dimen>
+    <dimen name="shadow_size8">82dp</dimen>
+    <dimen name="shadow_setting_w">67dp</dimen>
+    <dimen name="shadow_setting_h">31dp</dimen>
+    
+<!-- ==================================================== -->
+    <dimen name="shadow_x0">107dp</dimen>
+    <dimen name="shadow_y0">89dp</dimen>
+
+    <dimen name="shadow_x1">128dp</dimen>
+    <dimen name="shadow_y1">0dp</dimen>
+    
+    <dimen name="shadow_x2">44dp</dimen>
+    <dimen name="shadow_y2">0dp</dimen>
+    
+    <dimen name="shadow_x3">20dp</dimen>
+    <dimen name="shadow_y3">83dp</dimen>
+    
+    <dimen name="shadow_x4">35dp</dimen>
+    <dimen name="shadow_y4">168dp</dimen>
+    
+    <dimen name="shadow_x5">103dp</dimen>
+    <dimen name="shadow_y5">193dp</dimen>
+    
+    <dimen name="shadow_x6">172dp</dimen>
+    <dimen name="shadow_y6">193dp</dimen>
+
+    <dimen name="shadow_x7">213dp</dimen>
+    <dimen name="shadow_y7">124dp</dimen>
+
+    <dimen name="shadow_x8">213dp</dimen>
+    <dimen name="shadow_y8">56dp</dimen>
+    
+    <dimen name="shadow_x9">210.5dp</dimen>
+    <dimen name="shadow_y9">46dp</dimen>
+    
+    <dimen name="playX">51dp</dimen>
+    <dimen name="playY">59dp</dimen>
+</resources>
+

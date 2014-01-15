@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent" 
+	android:layout_width="wrap_content" 
+        android:padding="5dip"
+	android:descendantFocusability="blocksDescendants" >
+	
+	<!--  	
+	<ImageView 
+		android:layout_width="33dp"
+		android:layout_height="33dp" 
+		android:id="@+id/cityRearrange" 
+		android:background="@drawable/icon_rearrange"
+		android:layout_gravity="center_vertical" 
+		android:layout_marginLeft="10dp"
+		android:layout_centerVertical="true"/>
+	-->	
+			
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/text_city_name" 
+		android:textSize="16sp"
+		android:layout_marginLeft="10dp" 
+		android:id="@+id/item_city_name"
+		android:layout_toRightOf="@+id/cityRearrange" 
+		android:layout_centerVertical="true" 
+		android:maxEms="15"
+		android:singleLine="true"/>
+		
+	<RadioButton 
+		android:id="@+id/radioButton" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginRight="10dp" 
+		android:layout_marginLeft="10dp"
+		android:layout_alignParentRight="true"		
+		android:layout_centerVertical="true"/>
+		
+</RelativeLayout>

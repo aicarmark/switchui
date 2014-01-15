@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="3dip"
+                  android:paddingTop="10dip"
+                  android:paddingBottom="10dip"
+                  >
+        <EditText android:id="@+id/addlocation_term"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:singleLine="true"
+                  android:inputType="textCapSentences|textNoSuggestions"
+                  android:imeOptions="actionDone"
+                  android:hint="@string/addLocationHint"/>
+    </LinearLayout>
+    <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="2dip"
+             android:paddingBottom="2dip"
+             android:paddingLeft="5dip"
+             android:visibility="invisible"
+             android:id="@+id/result_string_view"
+    />
+    <ListView android:id="@android:id/list"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:drawSelectorOnTop="false"
+              android:focusable="false"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/ContextMenuOpen" android:title="@string/menu_open"/>
+  <item android:id="@+id/ContextMenuCopy" android:title="@string/menu_copy"/>
+
+  <item android:id="@+id/ContextMenuDelete" android:title="@string/menu_delete"/>
+  <item android:id="@+id/ContextMenuCompress" android:title="@string/menu_compress"/>
+  <item android:id="@+id/ContextMenuMove" android:title="@string/menu_move"/>
+  <item android:id="@+id/ContextMenuRename" android:title="@string/menu_rename"/>
+  <item android:id="@+id/ContextMenuPrint" android:title="@string/menu_print"/>
+  <item android:id="@+id/ContextMenuInfo" android:title="@string/menu_info"/>
+  <item android:id="@+id/ContextMenuAddShortcut" android:title="@string/menu_add_shortcut"/>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SMART RULES -->
+    <!-- Title bar dimensions -->
+    <dimen name="title_bar_control_size">65dip</dimen>
+
+    <!-- Minimum height used with @drawable/list_section_divider_holo_custom.
+         Right now the drawable has implicit 32dip minimal height, which is confusing.
+         This value is for making the hidden configuration explicit in xml. -->
+    <dimen name="list_section_divider_min_height">32dip</dimen>
+        
+    <!-- Chip dimensions -->
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+    
+    <!-- Guided picker related dimensions -->
+    <dimen name="list_item_desc_text_size">14sp</dimen>
+
+    <!-- Welcome screen button layout dimens -->
+    <dimen name="welcome_screen_button_height">48dp</dimen>
+    <dimen name="welcome_screen_learn_more_button_width">142dp</dimen>
+    <dimen name="welcome_screen_get_started_button_width">156dp</dimen>
+    <dimen name="welcome_screen_get_started_button_2_width">190dp</dimen>
+    <dimen name="welcome_screen_button_margin">10dp</dimen>
+    <dimen name="welcome_screen_info_text_margin">4dp</dimen>
+    <dimen name="welcome_screen_info_layout_margin">12dp</dimen>
+    <dimen name="welcome_screen_button_font_size_mutable">18sp</dimen>
+    <dimen name="welcome_screen_button_font_size_immutable">18dp</dimen>
+
+    <!-- Welcome screen title dimens -->
+    <dimen name="welcome_screen_title_margin_top">66dp</dimen>
+    <dimen name="welcome_screen_title_stripe_width">8dp</dimen>
+
+    <!-- Agenda window matching events dialog -->
+    <dimen name="agenda_window_adapter_list_item_padding_right">10dp</dimen>
+
+    <!-- List item tap text (picker list items) -->
+    <dimen name="list_item_tap_text_checked_text_view_marginLeft">16dp</dimen>
+    <dimen name="list_item_tap_text_checked_text_view_marginRight">5dp</dimen>
+    <dimen name="list_item_tap_text_divider_width">2dp</dimen>
+    <dimen name="list_item_tap_text_list_item_text_area_min_height">64dp</dimen>
+    <dimen name="list_item_tap_text_list_item_text_area_padding">5dp</dimen>
+    <dimen name="list_item_tap_text_list_item_desc_font_size">14sp</dimen>
+    <dimen name="list_item_tap_text_list_item_color_chip_width">10dp</dimen>
+    <dimen name="list_item_tap_text_list_item_color_chip_marginRight">3dp</dimen>
+
+</resources>

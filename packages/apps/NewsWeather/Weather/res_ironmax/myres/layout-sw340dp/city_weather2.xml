@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_weather"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/weather_bg_02"
+    android:focusable="false" >
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="25dp"
+        android:paddingTop="11dp" >
+
+        <TextView
+            android:id="@+id/todaytime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/more_weather_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todaytime"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="5"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rangelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more_weather_status" >
+
+            <TextView
+                android:id="@+id/current_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="3"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/temperatureImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/current_range"
+                android:src="@drawable/thermometer" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/current_low_range"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rangelayout"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="3"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/current_temperature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_low_range"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="6"
+            android:textColor="@android:color/white"
+            android:textSize="65dp"/>
+
+        <TextView
+            android:id="@+id/realfeel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_temperature"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="5"
+            android:text="@string/realfeel"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/current_condition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realfeel"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|right"
+            android:shadowColor="#3d3d3d"
+            android:shadowDy="1.0"
+            android:shadowRadius="3"
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+        <RelativeLayout
+            android:id="@+id/current_citylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_condition" >
+
+            <TextView
+                android:id="@+id/current_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="83dp"
+                android:ellipsize="end"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="3"
+                android:singleLine="true"
+                android:maxEms="10"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"/>
+
+            <ImageView
+                android:id="@+id/selectCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@id/current_city"
+                android:background="@drawable/city_home_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/city_weather_list"
+        android:layout_width="fill_parent"
+        android:layout_height="100.25dp"
+        android:layout_alignParentBottom="true"
+        android:cacheColorHint="#00000000"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="21dp"
+        android:layout_marginTop="9dp" >
+
+        <RelativeLayout
+            android:layout_width="79.25dp"
+            android:layout_height="79.25dp"
+            android:layout_marginLeft="17dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cell_range_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cell_day_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/cell_range_1"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="2"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cell_icon_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:scaleType="fitXY" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="79.25dp"
+            android:layout_height="79.25dp"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cell_range_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cell_day_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/cell_range_2"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="2"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cell_icon_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:scaleType="fitXY"  >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="79.25dp"
+            android:layout_height="79.25dp"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cell_range_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cell_day_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/cell_range_3"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="2"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cell_icon_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:scaleType="fitXY"  >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="79.25dp"
+            android:layout_height="79.25dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cell_range_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cell_day_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/cell_range_4"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:shadowColor="#3d3d3d"
+                android:shadowDy="1.0"
+                android:shadowRadius="2"
+                android:textColor="#ffffff"
+                android:textSize="16dp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cell_icon_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:scaleType="fitXY" >
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout>

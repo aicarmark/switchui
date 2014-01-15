@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Переключить виджеты</string>
+  <string name="gps_app_name">Переключить GPS</string>
+  <string name="airplane_app_name">Переключить режим полета</string>
+  <string name="wifi_app_name">Переключить Wi-Fi</string>
+  <string name="bluetooth_app_name">Переключить Bluetooth</string>
+  <string name="apn_app_name">Переключить APN</string>
+  <string name="data_app_name">Переключить данные</string>
+  <string name="widget_description">Просмотр и управление статусом режима полета</string>
+  <string name="widget_description_bt">Просмотр и управление статусом режима Bluetooth</string>
+  <string name="widget_description_wifi">Просмотр и управление статусом режима Wi-Fi</string>
+  <string name="widget_description_gps">Просмотр и управление статусом режима GPS</string>
+  <string name="StatusOn">ВКЛ</string>
+  <string name="StatusOff">ВЫКЛ</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Режим полета недоступен</string>
+  <string name="BluetoothtoastText">Bluetooth недоступен</string>
+  <string name="GPStoastText">GPS недоступен</string>
+  <string name="WifitoastText">Wi-Fi недоступен</string>
+  <string name="location_restriction_enabled">Включено ограничение службы определения местоположения.</string>
+  <string name="apncontrol_app_name">Управление APN</string>
+  <string name="no_apn">Нет доступной APN</string>
+</resources>

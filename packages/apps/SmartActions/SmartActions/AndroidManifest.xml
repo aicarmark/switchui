@@ -1,0 +1,2071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.motorola.contextual.smartrules"
+      android:versionCode="254" android:versionName="4.2.2.5.3-1" >
+
+    <!-- Installable only on devices for which this application is preloaded as a system app -->
+    <uses-feature android:name="com.motorola.smartaction" />
+
+      <!-- android:allowClearUserData="false" (IM) -->
+
+    <!-- PERMISSIONS START -->
+    <!--  ========================= SMART RULES PERMS ============================ -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="com.motorola.virtualsensor.MEANINGFUL_LOCATION" />
+
+    <uses-permission android:name="com.motorola.contextual.permission.FW.QUICKACTION" />
+    <uses-permission android:name="com.motorola.contextual.permission.SMARTRULES" />
+    <uses-permission android:name="com.motorola.smartactions.permission.RULES_VALIDATOR" />
+    <uses-permission android:name="com.motorola.smartactions.permission.RECEIVE_PUBLISHER_UPDATES" />
+    <uses-permission android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER_USER"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.ACTION_PUBLISHER"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.RULE_PUBLISHER"/>
+    <uses-permission android:name="com.motorola.smartactions.permission.RULE_PUBLISHER_ADMIN"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!--  ======================== SMART PROFILE PERMS =========================== -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- calendareventsensor changes start> -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <!-- calendareventsensor changes end> -->
+
+    <!--  ======================== ACTION PERMS =========================== -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- There is a bug in Google base code which causes FC at times when Wifi state is changed.
+    This permission is temporarily added to avoid the crash. -->
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+
+    <!--  ======================== LocationSensor PERMS =========================== -->
+    <!--   uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"  Dave Boldt asked to remove - no such permission in Android-->
+    <uses-permission android:name="com.motorola.permission.ACCESS_WIFI_AUTONOMOUS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--  ======================== PLUGIN FW PERMS =========================== -->
+    <uses-permission android:name="com.motorola.contextual.permission.FW.PLUGINSERVER"/>
+
+   <permission
+        android:description="@string/perm_triggerpublisher_desc"
+        android:label="@string/perm_triggerpublisher_label"
+        android:name="com.motorola.contextual.permission.TRIGGERPUBLISTENER"
+        android:protectionLevel="signatureOrSystem" />
+
+    <!-- Permission definition for LocationSensor -->
+    <permission android:description="@string/perm_location_desc"
+                android:label="@string/perm_location_label"
+                android:name="com.motorola.virtualsensor.MEANINGFUL_LOCATION"
+                android:protectionLevel="signatureOrSystem" />
+
+    <!-- Added for Phoenix -->
+    <permission
+        android:description="@string/perm_smartrules_desc"
+        android:label="@string/perm_smartrules_label"
+        android:name="com.motorola.contextual.permission.SMARTRULES"
+        android:protectionLevel="signature" />
+
+    <!-- Permission definition for Rules Validator -->
+        <permission
+        android:description="@string/perm_rv_desc"
+        android:label="@string/perm_rv_label"
+        android:name="com.motorola.smartactions.permission.RULES_VALIDATOR"
+        android:protectionLevel="signature" />
+
+    <!-- Permission definition for PAF -->
+        <permission
+        android:description="@string/perm_paf_desc"
+        android:label="@string/perm_paf_label"
+        android:name="com.motorola.smartactions.permission.RECEIVE_PUBLISHER_UPDATES"
+        android:protectionLevel="signature" />
+
+        <permission
+            android:description="@string/perm_cp_user_desc"
+            android:label="@string/perm_cp_user_label"
+            android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER_USER"
+            android:protectionLevel="signature" />
+
+        <permission
+            android:description="@string/perm_cp_desc"
+            android:label="@string/perm_cp_label"
+            android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER"
+            android:protectionLevel="signature" />
+
+        <permission
+            android:description="@string/perm_cp_admin_desc"
+            android:label="@string/perm_cp_admin_label"
+            android:name="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:protectionLevel="signature" />
+
+        <permission
+            android:description="@string/perm_action_publisher_admin_desc"
+            android:label="@string/perm_action_publisher_admin_label"
+            android:name="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+            android:protectionLevel="signature" />
+
+        <permission
+            android:description="@string/perm_action_publisher_desc"
+            android:label="@string/perm_action_publisher_label"
+            android:name="com.motorola.smartactions.permission.ACTION_PUBLISHER"
+            android:protectionLevel="signature" />
+
+        <!-- Permission definition for Smart Rules -->
+        <permission
+          android:description="@string/perm_rulesimporter_desc"
+          android:label="@string/perm_rulesimporter_label"
+          android:name="com.motorola.smartactions.permission.RULE_PUBLISHER"
+          android:protectionLevel="signatureOrSystem" />
+
+        <permission
+            android:description="@string/perm_rule_publisher_admin_desc"
+            android:label="@string/perm_rule_publisher_admin_label"
+            android:name="com.motorola.smartactions.permission.RULE_PUBLISHER_ADMIN"
+            android:protectionLevel="signatureOrSystem" />
+
+    <!-- PERMISSIONS END -->
+    <uses-sdk android:minSdkVersion="14"
+      android:targetSdkVersion="15"
+    />
+
+    <application
+        android:backupAgent=".rulesimporter.SmartActionsBackupRestoreAgent"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_smartrules"
+        android:killAfterRestore="false"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="true" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIbeMx-Ha4xVSnlS45Sl2i0jbkX3BZNsD6SqLmRw" />
+
+        <!-- =============================== SMART RULES =============================== -->
+        <provider
+            android:authorities="com.motorola.contextual.smartrules"
+            android:initOrder="2"
+            android:multiprocess="true"
+            android:name=".db.provider.Provider"
+            android:permission="com.motorola.contextual.permission.SMARTRULES" />
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/help"
+            android:name=".app.WebViewActivity" />
+        <activity
+            android:label="@string/about"
+            android:name=".app.AboutActivity" />
+        <activity android:name=".app.WelcomeScreenActivity"
+                  android:label="@string/about"
+                  android:screenOrientation="portrait"/>
+        <activity
+            android:label="@string/settings_title"
+            android:name=".app.SettingsActivity" />
+        <activity
+            android:label="@string/profile"
+            android:name=".app.ProfileActivity" />
+        <activity
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:name=".app.LandingPageActivity"
+            android:taskAffinity=".app.LandingPageActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app2.LandingPageActivity"
+              android:launchMode="singleTask"
+              android:taskAffinity=".app2.LandingPageActivity"
+                  android:clearTaskOnLaunch="true"
+              android:label="@string/app_name"
+              android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app.AddRuleListActivity"
+                  android:label="@string/add_rule_title"
+                  android:configChanges="orientation|keyboardHidden|screenSize" />
+
+    <activity android:name=".app.CheckStatusActivity"
+          android:label="@string/check_status_title"
+          android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name=".app.CopyExisitingRuleActivity"
+        android:label="@string/copy_rule_title"
+        android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name=".app.DisplayRulesActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:permission="com.motorola.contextual.permission.SMARTRULES" >
+    <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.motorola.contextual.suggestionslaunch"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".service.InitCompleteBroadcastReceiver"
+                android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".service.WidgetUpdateBroadcastReceiver"
+                  android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.motorola.contextual.smartrules.WIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".service.jarfileOnLoadBroadcastReceiver"
+                  android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.motorola.contextual.fw.CLASS_LOADED" />
+            </intent-filter>
+        </receiver>
+
+
+  <service android:name=".service.WidgetUpdateService" />
+        <service android:name=".homescreen.DriveModeService" />
+
+
+        <service android:name=".service.JarFileService" />
+
+        <service android:name=".service.DumpDbService" />
+
+        <service android:name=".service.WidgetUpdateService" />
+
+        <receiver android:name=".service.SmartRulesBroadcastReceiver"
+                android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.motorola.contextual.smartrules.intent.action.RULE_STATE_CHANGED" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.contextual.smartrules.rulestate" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.SmartRulesService" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+    <receiver android:name=".service.QuickActionsBroadcastReceiver"
+          android:enabled="true"
+          android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER" >
+      <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.ACTION_PUBLISHER_EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.QuickActionsService" />
+
+
+        <!-- Service & Receiver for Rules importer -->
+        <service android:name=".rulesimporter.RulesImporterService" />
+
+        <receiver android:name=".rulesimporter.RulesImporterBroadcastReceiver"
+                  android:enabled="true"
+                  android:permission="com.motorola.smartactions.permission.RULE_PUBLISHER">
+            <intent-filter>
+                <action android:name="com.motorola.rules.launch.CANNED_RULES" />
+                <action android:name="com.motorola.smartactions.PUBLISH_RULE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".db.table.view.RulePersistence$Conflicts"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.motorola.contextual.FIRE_RULE"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Service & Receiver for RulesExporterOrImporter -->
+        <activity android:name=".rulesimporter.RulesExporterImporterActivity"
+                  android:label="@string/app_name_exp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Rules Builder Related Activities -->
+        <activity android:name=".rulesbuilder.EditRuleActivity"
+                  android:label="@string/empty_string"
+                  android:taskAffinity=".rulesbuilder.EditRuleActivity"
+                  android:finishOnTaskLaunch="true"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboard|keyboardHidden|screenSize|fontScale|locale">
+       </activity>
+
+       <activity android:name=".rulesbuilder.DisplayActionsActivity"
+                  android:label="@string/actions"
+                  android:theme="@style/Pickers"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+          <activity android:name=".rulesbuilder.DisplayConditionsActivity"
+                  android:label="@string/triggers"
+                  android:theme="@style/Pickers"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <!-- Suggestion START -->
+        <activity android:name=".suggestions.SuggestionsInboxActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".suggestions.SuggestionsBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.motorola.contextual.RULES_VALIDATED" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".suggestions.SuggestionsNotificationService" />
+
+        <activity android:name=".drivingmode.DrivingModeSuggestionDialog"
+            android:theme="@*android:style/Theme.Holo.Dialog"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:taskAffinity="com.motorola.contextual.drivemode">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.motorola.contextual.smartrules.drivingmode.activity"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".homescreen.SmartActionWidgetProvider" android:label="@string/sg_drivemode_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.motorola.contextual.smartrules.RULE_PROCESSED_RESPONSE"/>
+                <action android:name="com.motorola.contextual.smartrules.RULE_DELETED_MESSAGE"/>
+                <action android:name="com.motorola.contextual.smartrules.RULE_ADDED_ACTION"/>
+                <action android:name="com.motorola.contextual.smartrules.INIT_COMPLETE"/>
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE"/>
+                <action android:name="com.motorola.contextual.smartrules.WIDGET_UPDATE_RESPONSE"/>
+                <action android:name="com.motorola.contextual.smartrules.RULE_MODIFIED_MESSAGE"/>
+                <action android:name="com.motorola.contextual.INFERRED_RULES_ADDED"/>
+                <action android:name="com.motorola.contextual.smartrules.DATA_CLEAR"/>
+                <action android:name="com.motorola.contextual.smartrules.RULE_ATTACHED_ACTION"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/appwidget_info" />
+        </receiver>
+
+        <!--  Suggestions END -->
+
+        <activity android:name="com.motorola.contextual.smartrules.suggestions.PublisherUiController"
+            android:excludeFromRecents="true"
+      android:theme="@*android:style/Theme.Holo.Dialog"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+        <!-- Service & Receiver for RulesExporter -->
+        <service android:name=".rulesimporter.RulesExporterService" />
+
+        <receiver android:name=".rulesimporter.RulesExporterBroadcastReceiver"
+        android:enabled="true" >
+      <intent-filter>
+          <action android:name="com.motorola.contextual.launch.rulesexporter" />
+          <action android:name="com.motorola.contextual.notify.DATA_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+
+<!-- ========================= SMART PROFILE =========================== -->
+         <!-- Smart Profile Related Activities -->
+        <receiver
+            android:enabled="true"
+            android:name="com.motorola.contextual.smartprofile.SmartProfileLocChangeReceiver" >
+            <intent-filter >
+                <action android:name="com.motorola.intent.action.LOCATION_CHANGE" />
+                <action android:name="com.motorola.contextual.smartprofile.sensors.locationsensor.IMPORT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.motorola.contextual.smartprofile.SmartProfileLocChangeService" />
+        <service android:name="com.motorola.contextual.smartprofile.ExportPrefService" />
+
+        <!-- Location List Related Activities -->
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_pin_w"
+            android:label="@string/locations"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.location.LocationActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.motorola.contextual.smartprofilelaunch" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.location" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="Location" />
+            <meta-data
+                android:name="com.motorola.smartactions.new_state_mode"
+                android:value="true" />
+            <meta-data
+                android:name="com.motorola.contextual.preconditiontype"
+                android:value="stateful" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="medium" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="medium" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="medium" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                android:value="@string/loc_action"/>
+        </activity>
+        <activity
+            android:label="@string/locations"
+            android:name="com.motorola.contextual.pickers.conditions.location.EditLocationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sensor Related Activities -->
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_clock_w"
+            android:label="@string/time_frames_heading"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.timeframe.TimeFrameActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.motorola.contextual.timeframeslist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.timeframes" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="TimeFrames" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/time_dev_action"/>
+        </activity>
+
+        <receiver
+            android:enabled="true"
+            android:name="com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameBroadcastReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartprofile.sensors.timesensor.ALARM" />
+
+                <data android:mimeType="com.motorola.contextual.smartprofile.sensors.timesensor/*" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.motorola.contextual.RULES_IMPORTED" />
+                <action android:name="com.motorola.contextual.smartprofile.sensors.timesensor.SETALARM" />
+                <action android:name="com.motorola.contextual.smartprofile.sensors.timesensor.TF_MODIFY" />
+                <action android:name="com.motorola.contextual.smartprofile.sensors.timesensor.IMPORT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:label="@string/time_dev"
+            android:name="com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameService"
+            android:exported="false">
+            <intent-filter >
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_clock_w"
+            android:label="@string/time_frames_heading"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:name="com.motorola.contextual.pickers.conditions.timeframe.TimeFrameEditActivity"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="android.intent.action.TIME_MODE_EDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Battery Sensor -->
+        <activity
+            android:icon="@drawable/ic_battery_sensor_w"
+            android:label="@string/battery_level"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.battery.BatteryLevelActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.battery" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="BatteryLevel" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/battery_level_action"/>
+        </activity>
+
+        <!-- Charging Sensor -->
+        <activity
+            android:icon="@drawable/ic_charging_sensor_w"
+            android:label="@string/chargingstatus"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:name="com.motorola.contextual.pickers.conditions.charging.ChargingActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.charging" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="Charging" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/chargingstatus_action"/>
+        </activity>
+
+        <!-- Display Sensor -->
+        <activity
+            android:icon="@drawable/ic_display_w"
+            android:label="@string/display"
+            android:name="com.motorola.contextual.pickers.conditions.display.Display"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.display" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="Display" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/display_action"/>
+        </activity>
+
+        <!-- Dock Sensor -->
+        <activity
+            android:icon="@drawable/ic_dock_w"
+            android:label="@string/dock"
+            android:name="com.motorola.contextual.pickers.conditions.dock.DockActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.dock" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="Dock" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/dock_action"/>
+        </activity>
+
+        <!-- Headset Sensor -->
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_headset_w"
+            android:label="@string/headset"
+            android:name="com.motorola.contextual.pickers.conditions.headset.HeadSetActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.headset" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="HeadSet" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/headset_action"/>
+        </activity>
+
+        <!-- Motion Sensor -->
+        <activity android:name="com.motorola.contextual.smartprofile.sensors.motiondetectoradapter.MotionDetectorAdapterActivity"
+                  android:label="@string/motion"
+                  android:icon="@drawable/ic_motion_detect_w"
+                  android:theme="@*android:style/Theme.Holo.Dialog"
+                  android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+                  android:exported="false">
+             <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+            <meta-data android:name="com.motorola.smartactions.publisher_key"
+                       android:value="com.motorola.contextual.Motion"/>
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="MotionDetectorAdapter" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="medium" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+        </activity>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_missed_calls_w"
+            android:label="@string/MissedCall"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.missedcall.MissedCallActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.missedcallsensor" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="MissedCall" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/MissedCall_action"/>
+        </activity>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_wifi_w"
+            android:label="@string/wificonnectionwithaddress"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:name="com.motorola.contextual.pickers.conditions.wificonnect.WifiConnectionChooserActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.wificonnectionwithaddresssensor" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="WiFiConnection" />
+            <meta-data
+                android:name="com.motorola.smartactions.new_state_mode"
+                android:value="true" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/wificonnection_action"/>
+        </activity>
+
+        <receiver android:name="com.motorola.contextual.smartprofile.sensors.wificonnectionwithaddresssensor.WiFiConnectionReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_bluetooth_w"
+            android:label="@string/btconnectionwithaddress"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.bluetooth.BTDeviceActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.btconnectionwithaddresssensor" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="BTDevice" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/bt_action"/>
+        </activity>
+
+  <receiver android:name="com.motorola.contextual.pickers.conditions.bluetooth.BTDeviceReceiver"
+           android:exported="false">
+           <intent-filter >
+                  <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                  <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+                  <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+                  <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                  <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+           </intent-filter>
+  </receiver>
+
+        <!-- calendareventsensor changes start> -->
+        <activity
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize|locale|fontScale"
+            android:icon="@drawable/ic_calendar_sensor_w"
+            android:label="@string/calendareventsensor"
+            android:logo="@drawable/ic_launcher_smartrules"
+            android:theme="@style/Pickers"
+            android:name="com.motorola.contextual.pickers.conditions.calendar.CalendarActivity"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+
+                <category android:name="com.motorola.smartactions.intent.category.CONDITION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.smartprofile.calendareventsensor" />
+            <meta-data
+                android:name="com.motorola.contextual.smartrules.conditionkey"
+                android:value="CalendarEvent" />
+            <meta-data
+                android:name="com.motorola.smartactions.new_state_mode"
+                android:value="true" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                android:value="@string/calendar_events_action"/>
+
+        </activity>
+
+        <receiver android:name="com.motorola.contextual.pickers.conditions.calendar.CalendarEventReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                <action android:name="com.motorola.smartactions.calendarevents.action.SCHEDULE_EVENT_AWARE" />
+                <action android:name="com.motorola.contextual.smartprofile.sensors.calendareventsensor.IMPORT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.motorola.contextual.pickers.conditions.calendar.CalendarEventService" />
+        <!-- calendareventsensor changes end> -->
+
+        <service android:name="com.motorola.contextual.smartprofile.CommandInvokerIntentService" />
+
+        <receiver android:name="com.motorola.contextual.smartprofile.CommandReceiver"
+                  android:exported="false"
+                  android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                <action android:name="com.motorola.contextual.smartprofile.charging" />
+                <action android:name="com.motorola.contextual.smartprofile.battery" />
+                <action android:name="com.motorola.contextual.smartprofile.display" />
+                <action android:name="com.motorola.contextual.smartprofile.headset" />
+                <action android:name="com.motorola.contextual.smartprofile.timeframes" />
+                <action android:name="com.motorola.contextual.smartprofile.btconnectionwithaddresssensor" />
+                <action android:name="com.motorola.contextual.smartprofile.dock" />
+                <action android:name="com.motorola.contextual.smartprofile.calendareventsensor" />
+                <action android:name="com.motorola.contextual.Motion" />
+                <action android:name="com.motorola.contextual.smartprofile.missedcallsensor" />
+                <action android:name="com.motorola.contextual.smartprofile.wificonnectionwithaddresssensor" />
+                <action android:name="com.motorola.contextual.smartprofile.location" />
+            </intent-filter>
+        </receiver>
+
+        <!--  ========================= ACTIONS =========================== -->
+        <activity android:name="com.motorola.contextual.pickers.actions.SendTextActivity"
+              android:icon="@drawable/ic_sms_w"
+              android:logo="@drawable/ic_launcher_smartrules"
+                android:label="@string/send_a_text_message"
+                android:windowSoftInputMode="adjustResize"
+                android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                android:theme="@style/Pickers"
+                android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.sendmessage" />
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.SendMessage" />
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateless" />
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/send_a_text_message_action"/>
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.ReminderActivity"
+              android:icon="@drawable/ic_notification_w"
+              android:logo="@drawable/ic_launcher_smartrules"
+              android:label="@string/notif_label"
+              android:theme="@style/Pickers"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+              android:windowSoftInputMode="adjustResize"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.notification" />
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.SetNotification" />
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateless" />
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/notif_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.PlayMusicActivity"
+              android:icon="@drawable/ic_play_w"
+              android:theme="@style/Pickers"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+              android:label="@string/play_music_title"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.playlist" />
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.PlayPlaylist" />
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateless" />
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/play_playlist_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.actions.PlayPlaylistActivity"
+              android:icon="@drawable/ic_play_w"
+              android:logo="@drawable/ic_launcher_smartrules"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+              android:label="@string/play_playlist"
+              android:exported="false">
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.RingerActivity"
+              android:icon="@drawable/ic_volume_w"
+              android:logo="@drawable/ic_launcher_smartrules"
+              android:label="@string/ringer_volume"
+              android:theme="@style/Pickers"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Ringer"/>
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.Volumes"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.SOUND_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/ringer_volume_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.actions.VibrateSettingActivity"
+              android:label="@string/volumes"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.RingtoneActivity"
+              android:icon="@drawable/ic_ringtone_w"
+              android:label="@string/ringtone"
+              android:theme="@style/Pickers"
+              android:configChanges="orientation|keyboardHidden|uiMode|screenSize|locale|fontScale"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Ringtone"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.SOUND_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.new_state_mode"
+              android:value="true" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/ringtone_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.RingtoneChooserActivity"
+                android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+                  android:theme="@style/Pickers"
+                  android:icon="@drawable/ic_ringtone_w"
+                  android:label="@string/ringtone">
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity
+            android:name="com.motorola.contextual.pickers.actions.SetWallpaperPickerActivity"
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_wallpaper_w"
+            android:label="@string/change_wallpaper"
+            android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.actions.setwallpaper" />
+            <meta-data android:name="com.motorola.smartactions.action_type"
+                android:value="stateful" />
+            <meta-data android:name="com.motorola.smartactions.settings_intent"
+                android:value="android.settings.DISPLAY_SETTINGS" />
+            <meta-data android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.new_state_mode"
+                android:value="true" />
+            <meta-data
+                android:name="com.motorola.smartactions.description"
+                android:value="@string/change_wp_action"/>
+            <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity
+            android:name="com.motorola.contextual.pickers.actions.SetVoiceAnnounceActivity"
+            android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+            android:icon="@drawable/ic_voice_announce_w"
+            android:label="@string/voice_announce"
+            android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.actions.SetVoiceAnnounce" />
+            <meta-data android:name="com.motorola.smartactions.action_type"
+                android:value="stateful" />
+            <meta-data android:name="com.motorola.smartactions.settings_intent"
+                android:value="android.provider.Settings.ACTION_SETTINGS" />
+            <meta-data android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.description"
+                android:value="@string/voice_announce_action"/>
+            <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.LaunchAppPickerActivity"
+                    android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+                    android:icon="@drawable/ic_launch_app_w"
+                    android:label="@string/launch_an_application"
+                    android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                    android:theme="@style/Pickers"
+                    android:exported="false">
+                    <intent-filter>
+                        <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                        <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+                    </intent-filter>
+
+                    <meta-data android:name="com.motorola.smartactions.publisher_key"
+                        android:value="com.motorola.contextual.actions.launchapp" />
+                    <meta-data android:name="com.motorola.smartactions.action_key"
+                        android:value="com.motorola.contextual.actions.LaunchApp" />
+                    <meta-data android:name="com.motorola.smartactions.action_type"
+                        android:value="stateless" />
+                    <meta-data android:name="com.motorola.smartactions.battery_drain"
+                        android:value="low" />
+                    <meta-data android:name="com.motorola.smartactions.latency"
+                        android:value="low" />
+                    <meta-data android:name="com.motorola.smartactions.data_use"
+                        android:value="low" />
+                    <meta-data
+                        android:name="com.motorola.smartactions.description"
+                        android:value="@string/launch_an_application_action"/>
+                   <meta-data android:name="com.motorola.smartactions.interface_version"
+                        android:value="1.0" />
+                   <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.LaunchWebsiteActivity"
+                  android:icon="@drawable/ic_browser_w"
+                  android:logo="@drawable/ic_launcher_smartrules"
+                  android:label="@string/open_website"
+                  android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+                  android:theme="@style/Pickers"
+                  android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                  android:exported="false">
+                  <intent-filter>
+                      <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                      <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+                  </intent-filter>
+
+                  <meta-data android:name="com.motorola.smartactions.publisher_key"
+                      android:value="com.motorola.contextual.actions.launchwebsite" />
+                  <meta-data android:name="com.motorola.smartactions.action_key"
+                      android:value="com.motorola.contextual.actions.WebsiteLaunch" />
+                  <meta-data android:name="com.motorola.smartactions.action_type"
+                      android:value="stateless" />
+                  <meta-data android:name="com.motorola.smartactions.battery_drain"
+                      android:value="low" />
+                  <meta-data android:name="com.motorola.smartactions.latency"
+                      android:value="low" />
+                  <meta-data android:name="com.motorola.smartactions.data_use"
+                      android:value="low" />
+                  <meta-data
+                      android:name="com.motorola.smartactions.description"
+                      android:value="@string/open_website_action"/>
+                 <meta-data android:name="com.motorola.smartactions.interface_version"
+                      android:value="1.0" />
+                 <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity
+            android:name="com.motorola.contextual.pickers.actions.ScreenTimeoutActivity"
+            android:icon="@drawable/ic_screen_timeout_w"
+            android:label="@string/screen_timeout"
+            android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+            android:theme="@style/Pickers"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+                <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+            </intent-filter>
+
+            <meta-data android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.contextual.actions.ScreenTimeout" />
+            <meta-data android:name="com.motorola.smartactions.action_type"
+                android:value="stateful" />
+            <meta-data android:name="com.motorola.smartactions.settings_intent"
+                android:value="android.settings.DISPLAY_SETTINGS" />
+            <meta-data android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.latency"
+                android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.description"
+                android:value="@string/screen_timeout_action"/>
+            <meta-data android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.GpsActivity"
+              android:icon="@drawable/ic_gps_w"
+              android:label="@string/gps"
+              android:theme="@style/Pickers"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Gps"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.LOCATION_SOURCE_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/gps_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+              android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.WifiActivity"
+              android:icon="@drawable/ic_wifi_w"
+              android:label="@string/wifi"
+              android:theme="@style/Pickers"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false" >
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Wifi"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.WIFI_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/wifi_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+              android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.BluetoothActivity"
+              android:icon="@drawable/ic_bluetooth_w"
+              android:label="@string/bluetooth"
+              android:theme="@style/Pickers"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Bluetooth"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.BLUETOOTH_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/bluetooth_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+              android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.AirplaneActivity"
+              android:icon="@drawable/ic_airplane_w"
+              android:label="@string/ap"
+              android:theme="@style/Pickers"
+              android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+              android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Airplane"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.AIRPLANE_MODE_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/ap_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+              android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.AutoReplyTextActivity"
+          android:icon="@drawable/ic_auto_text_reply_w"
+          android:logo="@drawable/ic_launcher_smartrules"
+          android:label="@string/auto_reply_text"
+          android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+          android:theme="@style/Pickers"
+          android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+          android:exported="false" >
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.autosms" />
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.AutoSms" />
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateless" />
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/auto_reply_text_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.VipRingerActivity"
+          android:icon="@drawable/ic_vip_caller_w"
+          android:logo="@drawable/ic_launcher_smartrules"
+          android:label="@string/vip_ringer"
+          android:configChanges="orientation|keyboardHidden|uiMode|screenSize"
+          android:theme="@style/Pickers"
+          android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+          android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.VipRinger"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.SOUND_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+              android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+              android:value="low" />
+          <meta-data
+              android:name="com.motorola.smartactions.description"
+              android:value="@string/vip_ringer_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+              android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.1" />
+        </activity>
+
+        <!-- Turning off hw acceleration to allow webview to be rendered correctly -->
+        <activity android:name="com.motorola.contextual.pickers.actions.BrightnessActivity"
+                android:icon="@drawable/ic_display_brightness_w"
+                android:label="@string/brightness"
+                android:theme="@style/Pickers"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.Brightness"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.DISPLAY_SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/brightness_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+
+         <activity android:name="com.motorola.contextual.pickers.actions.ProcessorSpeedActivity"
+                android:icon="@drawable/ic_processor_w"
+                android:label="@string/processor_speed"
+                android:theme="@style/Pickers"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                android:exported="false" >
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.ProcessorSpeed"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/processor_speed_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <activity android:name="com.motorola.contextual.pickers.actions.CellularDataActivity"
+                  android:icon="@drawable/ic_cellular_data_w"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/toggle_data"
+                  android:theme="@style/Pickers"
+                  android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+            </intent-filter>
+            <meta-data android:name="com.motorola.smartactions.publisher_key"
+                       android:value="com.motorola.contextual.actions.CellularData"/>
+            <meta-data android:name="com.motorola.smartactions.action_type"
+                       android:value="stateful"/>
+            <meta-data android:name="com.motorola.smartactions.settings_intent"
+                       android:value="android.settings.DATA_ROAMING_SETTINGS"/>
+            <meta-data android:name="com.motorola.smartactions.battery_drain"
+                        android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.latency"
+                       android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.data_use"
+                       android:value="low" />
+            <meta-data android:name="com.motorola.smartactions.description"
+                       android:value="@string/toggle_data_action"/>
+            <meta-data android:name="com.motorola.smartactions.interface_version"
+                       android:value="1.0" />
+            <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <!-- Turning off hw acceleration to allow webview to be rendered correctly -->
+        <activity android:name="com.motorola.contextual.pickers.actions.BackgroundDataActivity"
+                  android:icon="@drawable/ic_sync_w"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/backgrounddata"
+                  android:theme="@style/Pickers"
+                  android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                  android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.GET_CONFIG" />
+              <category android:name="com.motorola.smartactions.intent.category.ACTION_PUBLISHER" />
+          </intent-filter>
+          <meta-data android:name="com.motorola.smartactions.publisher_key"
+                     android:value="com.motorola.contextual.actions.BackgroundData"/>
+          <meta-data android:name="com.motorola.smartactions.action_key"
+                     android:value="com.motorola.contextual.actions.BackgroundData"/>
+          <meta-data android:name="com.motorola.smartactions.action_type"
+                     android:value="stateful"/>
+          <meta-data android:name="com.motorola.smartactions.settings_intent"
+                     android:value="android.settings.SETTINGS"/>
+          <meta-data android:name="com.motorola.smartactions.battery_drain"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.latency"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.data_use"
+                     android:value="low" />
+          <meta-data android:name="com.motorola.smartactions.description"
+                     android:value="@string/sync_action"/>
+          <meta-data android:name="com.motorola.smartactions.interface_version"
+                     android:value="1.0" />
+          <meta-data android:name="com.motorola.smartactions.publisher_version"
+                     android:value="1.0" />
+        </activity>
+
+        <receiver android:name="com.motorola.contextual.actions.ActionReceiver"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN"
+                android:exported="false">
+          <intent-filter>
+              <action android:name="com.motorola.contextual.actions.Gps" />
+              <action android:name="com.motorola.contextual.actions.launchapp" />
+              <action android:name="com.motorola.contextual.actions.Wifi" />
+              <action android:name="com.motorola.contextual.actions.Bluetooth" />
+              <action android:name="com.motorola.contextual.actions.Airplane" />
+              <action android:name="com.motorola.contextual.actions.sendmessage" />
+              <action android:name="com.motorola.contextual.actions.autosms" />
+              <action android:name="com.motorola.contextual.actions.VipRinger" />
+              <action android:name="com.motorola.contextual.actions.setwallpaper" />
+              <action android:name="com.motorola.contextual.actions.launchwebsite" />
+              <action android:name="com.motorola.contextual.actions.SetVoiceAnnounce" />
+              <action android:name="com.motorola.contextual.actions.ScreenTimeout" />
+              <action android:name="com.motorola.contextual.actions.Ringtone" />
+              <action android:name="com.motorola.contextual.actions.Ringer" />
+              <action android:name="com.motorola.contextual.actions.playlist" />
+              <action android:name="com.motorola.contextual.actions.notification" />
+              <action android:name="com.motorola.contextual.actions.BackgroundData" />
+          </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.actions.ActionReceiver"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER" >
+          <intent-filter>
+              <action android:name="com.motorola.smartactions.intent.action.ACTION_PUBLISHER_EVENT" />
+          </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.actions.ActionReceiver"
+                android:permission="com.motorola.contextual.permission.FW.QUICKACTION" >
+          <intent-filter>
+              <action android:name="com.motorola.contextual.powersetting" />
+          </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.actions.FrameworkActionReceiver"
+                android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER_ADMIN" >
+          <intent-filter>
+              <action android:name="com.motorola.contextual.actions.Brightness" />
+              <action android:name="com.motorola.contextual.actions.CellularData" />
+              <action android:name="com.motorola.contextual.actions.Sync" />
+          </intent-filter>
+        </receiver>
+
+        <receiver android:name ="com.motorola.contextual.actions.FrameworkResponseReceiver">
+            <intent-filter>
+                <action android:name="com.motorola.intent.action.EXEC_STATUS" />
+                <action android:name="com.motorola.intent.action.SETTING_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.actions.SettingsReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.media.VIBRATE_SETTING_CHANGED"/>
+           </intent-filter>
+    </receiver>
+
+        <receiver android:name ="com.motorola.contextual.SmartActionsBootCompleteReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name ="com.motorola.contextual.actions.BootCompleteReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.motorola.intent.action.BOOT_COMPLETE_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name ="com.motorola.contextual.actions.CallSmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="com.android.phone.intent.action.CALLS_ADD_ENTRY" />
+                <action android:name="com.motorola.dummy.MissedCall" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_CALL_END_EVENT" />
+            </intent-filter>
+       </receiver>
+
+        <!-- The proxy itself, a stateless BroadcastReceiver -->
+        <receiver android:name ="com.motorola.contextual.proxy.ApplicationProxy"
+        android:permission="com.motorola.situation.permission.PROXY"
+                 android:label="@string/app_name">
+            <intent-filter>
+                 <action android:name="com.motorola.situation.PROXY" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.motorola.contextual.actions.SettingsService"/>
+
+        <service android:name="com.motorola.contextual.actions.WallpaperService"/>
+
+        <service android:name="com.motorola.contextual.actions.DatabaseUtilityService"/>
+
+        <service android:name="com.motorola.contextual.actions.VoiceAnnounceService" />
+
+        <service android:name="com.motorola.contextual.actions.FWSettingChangeService" />
+
+        <service android:name="com.motorola.contextual.actions.SettingsUtilityService"/>
+
+        <!--  ========================= LocationSensor =========================== -->
+        <service android:name="com.motorola.contextual.virtualsensor.locationsensor.LocationSensorManager"
+                 android:label="Smart Actions Service">
+        </service>
+
+        <provider android:name="com.motorola.contextual.virtualsensor.locationsensor.LocationSensorProvider"
+                  android:authorities="com.motorola.contextual.virtualsensor.locationsensor"
+                  android:syncable="false"
+                  android:multiprocess="false"
+                  android:writePermission="com.motorola.virtualsensor.MEANINGFUL_LOCATION"
+                  android:readPermission="com.motorola.virtualsensor.MEANINGFUL_LOCATION">
+        </provider>
+
+        <receiver android:name="com.motorola.contextual.virtualsensor.locationsensor.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.motorola.intent.action.BOOT_COMPLETE_RECEIVED" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                <action android:name="com.motorola.analytics.ada_accepted" />
+                <action android:name="com.motorola.contextual.locationconsent" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.virtualsensor.locationsensor.AirplaneModeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <!--  ========================= Common =========================== -->
+        <service android:name="com.motorola.contextual.debug.DebugTable$DebugService"/>
+
+        <!--  ========================= Rules Updator and Validator  =========================== -->
+
+    <receiver android:name=".publishermanager.PublisherManagerReceiver"
+        android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.ACTION_PUBLISHER_EVENT" />
+            </intent-filter>
+        </receiver>
+
+    <receiver android:name=".publishermanager.PublisherManagerReceiver"
+        android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_USER">
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartrules.sacore" />
+           </intent-filter>
+        </receiver>
+
+    <receiver android:name=".publishermanager.PublisherManagerReceiver"
+        android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartrules.intent.action.PUBLISHER_UPDATER" />
+                <action android:name="com.motorola.contextual.smartrules.intent.action.RULE_PUBLISHER_EVENT" />
+                <action android:name="com.motorola.contextual.smartrules.intent.action.LAUNCH_RULES_VALIDATOR_ONUPGRADE" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                <action android:name="com.motorola.smartactions.intent.action.ACTION_PUBLISHER_UPDATED" />
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_UPDATED" />
+                <action android:name="com.motorola.smartactions.intent.action.RULE_PUBLISHER_UPDATED" />
+           </intent-filter>
+        </receiver>
+
+    <receiver android:name=".publishermanager.RuleValidatorReceiver"
+        android:permission="com.motorola.smartactions.permission.RULES_VALIDATOR"
+        android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.RULES_VALIDATE_REQUEST" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".publishermanager.PublisherManagerService" />
+
+        <service android:name=".publishermanager.RulesValidatorService"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.RULE_VALIDATED" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".rulesvalidator.RulesValidatorReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartrules.intent.action.VALIDATE_RULE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- ============================ PSF ============================= -->
+
+        <receiver android:name=".psf.PsfReceiver"
+            android:permission="com.motorola.smartactions.permission.ACTION_PUBLISHER">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.ACTION_PUBLISHER_EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".psf.PsfReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartrules.intent.action.PSF_INIT" />
+                <action android:name="com.motorola.contextual.smartrules.intent.action.PSR_INIT" />
+                <action android:name="com.motorola.contextual.smartrules.intent.action.RULE_PUBLISHER_EVENT" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".psf.PsfService" />
+
+        <provider
+            android:authorities="com.motorola.contextual.smartrules.psf"
+            android:exported="false"
+            android:initOrder="3"
+            android:multiprocess="true"
+            android:name=".psf.PsfProvider"
+            android:permission="com.motorola.contextual.permission.SMARTRULES" />
+
+        <!-- ============================ Mediator ============================= -->
+
+        <receiver android:name=".psf.mediator.MediatorReceiver"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_UPDATED" />
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_DATA_RESET" />
+                <action android:name="com.motorola.contextual.smartrules.intent.action.MEDIATOR_INIT" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".psf.mediator.MediatorReceiver"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".psf.mediator.MediatorReceiver"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_USER">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_REQUEST" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".psf.mediator.MediatorService" />
+
+        <provider
+            android:authorities="com.motorola.contextual.smartrules.psf.mediator"
+            android:exported="false"
+            android:initOrder="3"
+            android:multiprocess="true"
+            android:name=".psf.mediator.MediatorProvider"
+            android:permission="com.motorola.contextual.permission.SMARTRULES"
+            />
+
+        <!-- =================== Rules Publisher ================================== -->
+        <receiver android:name="com.motorola.contextual.rule.receivers.BaseReceiver"
+                  android:permission="com.motorola.smartactions.permission.RULE_PUBLISHER_ADMIN"
+                  android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.publisher.rule" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.smartactions.intent.action.GET_INFO" />
+                <category android:name="com.motorola.smartactions.intent.category.RULE_PUBLISHER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_key"
+                android:value="com.motorola.smartactions.publisher.rule" />
+            <meta-data
+                android:name="com.motorola.smartactions.battery_drain"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.data_use"
+                android:value="low" />
+            <meta-data
+                android:name="com.motorola.smartactions.interface_version"
+                android:value="1.0" />
+            <meta-data
+                android:name="com.motorola.smartactions.publisher_version"
+                android:value="1.0" />
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.rule.receivers.BaseReceiver"
+                  android:exported="false"
+                  android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN">
+            <intent-filter >
+                <action android:name="com.motorola.smartactions.publisher.rule" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.motorola.contextual.rule.publisher.PublisherIntentService" />
+        <activity
+            android:name="com.motorola.contextual.rule.ui.SuggestionCardActivity"
+            android:theme="@*android:style/Theme.Holo.Dialog"
+            android:permission="com.motorola.smartactions.permission.RULE_PUBLISHER_ADMIN"
+            android:exported="false">
+        </activity>
+
+       <!-- =================== Mode AD ================================== -->
+        <service android:name="com.motorola.contextual.smartrules.modead.ModeAdService" />
+
+        <receiver android:name="com.motorola.contextual.smartrules.modead.ModeAdBroadcastReceiver"
+            android:permission="com.motorola.smartactions.permission.CONDITION_PUBLISHER_ADMIN"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.motorola.contextual.smartrules.intent.action.LAUNCH_MODEAD" />
+                <action android:name="com.motorola.contextual.smartrules.sacore" />
+                <action android:name="com.motorola.smartactions.intent.action.CONDITION_PUBLISHER_DATA_RESET" />
+                <action android:name="com.motorola.smartactions.intent.action.SA_CORE_INIT_COMPLETE" />
+                </intent-filter>
+        </receiver>
+
+        <service android:name="com.motorola.contextual.smartrules.monitorservice.CommonMonitorService" />
+
+        <!-- =================== Smart Network ================================== -->
+        <service android:name="com.motorola.contextual.smartnetwork.SmartNetworkService">
+            <intent-filter>
+                <action android:name="com.motorola.contextual.smartnetwork.INTENT_MANAGE_SMART_NETWORK" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.motorola.contextual.smartnetwork.NetworkMonitorService">
+            <intent-filter>
+                <action android:name="com.motorola.contextual.smartnetwork.INTENT_START_NETWORK_MONITOR" />
+                <action android:name="com.motorola.contextual.smartnetwork.INTENT_STOP_NETWORK_MONITOR" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.motorola.contextual.smartnetwork.PoiHandler">
+        </service>
+
+        <receiver android:name="com.motorola.contextual.smartnetwork.PoiReceiver" >
+            <intent-filter>
+                <action android:name="com.motorola.contextual.virtualsensor.locationsensor.POI_EVENT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.motorola.contextual.smartnetwork.ChargerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- APPLICATION END -->
+        <!--  =========================== SMART PROFILE LIBS =========================== -->
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+
+    </application>
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:id="@+id/MENU_VIEW_SWITCH"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_list_view"
+        android:title="@string/menu_view_switch">
+        <menu>
+            <item android:id="@+id/MENU_LIST_VIEW" 
+                  android:icon = "@drawable/ic_menu_list_view" 
+                  android:title="@string/menu_view_list">
+            </item>
+            <item android:id="@+id/MENU_GRID_VIEW" 
+                  android:icon = "@drawable/ic_menu_grid_view" 
+                  android:title="@string/menu_view_grid">
+            </item>
+        </menu>
+   </item> 
+   
+   
+   <item android:id="@+id/MENU_SORTING"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_sort"
+        android:title="@string/menu_sorting"/>
+   
+   
+</menu>

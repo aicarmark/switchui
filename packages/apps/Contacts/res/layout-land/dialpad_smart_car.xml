@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Dialpad in the Phone app. -->
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialer_drawer_dialpad_car_height"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginRight="@dimen/smart_dialpad_outside_margin" >
+    <TableRow
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:layout_marginTop="@dimen/smart_dialpad_vertical_margin">
+        <ImageButton android:id="@+id/one" style="@style/DialtactsDialpadButtonStyle"
+            android:layout_marginLeft="@dimen/smart_dialpad_horz_edge_margin"
+            android:background="@drawable/dial_btn_smart_pad_bg_1_car"
+            android:contentDescription="@string/description_image_button_one" />
+        <ImageButton android:id="@+id/two" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_2_car"
+            android:contentDescription="@string/description_image_button_two" />
+        <ImageButton android:id="@+id/three" style="@style/DialtactsDialpadButtonStyle"
+            android:layout_marginRight="@dimen/smart_dialpad_horz_edge_margin"
+            android:background="@drawable/dial_btn_smart_pad_bg_3_car"
+            android:contentDescription="@string/description_image_button_three" />
+    </TableRow>
+
+    <TableRow
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:paddingTop="@dimen/smart_dialpad_row_padding">
+        <ImageButton android:id="@+id/four" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_4_car"
+            android:contentDescription="@string/description_image_button_four" />
+        <ImageButton android:id="@+id/five" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_5_car"
+            android:contentDescription="@string/description_image_button_five" />
+        <ImageButton android:id="@+id/six" style="@style/DialtactsDialpadButtonStyle"
+            android:layout_marginRight="@dimen/smart_dialpad_horz_edge_margin"
+            android:background="@drawable/dial_btn_smart_pad_bg_6_car"
+            android:contentDescription="@string/description_image_button_six" />
+    </TableRow>
+
+    <TableRow
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:paddingTop="@dimen/smart_dialpad_row_padding">
+        <ImageButton android:id="@+id/seven" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_7_car"
+            android:contentDescription="@string/description_image_button_seven" />
+        <ImageButton android:id="@+id/eight" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_8_car"
+            android:contentDescription="@string/description_image_button_eight" />
+        <ImageButton android:id="@+id/nine" style="@style/DialtactsDialpadButtonStyle"
+            android:layout_marginRight="@dimen/smart_dialpad_horz_edge_margin"
+            android:background="@drawable/dial_btn_smart_pad_bg_9_car"
+            android:contentDescription="@string/description_image_button_nine" />
+    </TableRow>
+
+    <TableRow
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:paddingTop="@dimen/smart_dialpad_row_padding"
+         android:layout_marginBottom="@dimen/smart_dialpad_vertical_margin">
+        <ImageButton android:id="@+id/star" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_star_car"
+            android:contentDescription="@string/description_image_button_star" />
+        <ImageButton android:id="@+id/zero" style="@style/DialtactsDialpadButtonStyle"
+            android:background="@drawable/dial_btn_smart_pad_bg_0_car"
+            android:contentDescription="@string/description_image_button_zero" />
+        <ImageButton android:id="@+id/pound" style="@style/DialtactsDialpadButtonStyle"
+            android:layout_marginRight="@dimen/smart_dialpad_horz_edge_margin"
+            android:background="@drawable/dial_btn_smart_pad_bg_pound_car"
+            android:contentDescription="@string/description_image_button_pound" />
+    </TableRow>
+</TableLayout>

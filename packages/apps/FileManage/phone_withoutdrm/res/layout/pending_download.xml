@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/down_layout_padding_bottom"
+                android:paddingLeft="@dimen/down_layout_padding_left"
+                android:paddingRight="@dimen/down_layout_padding_right" >
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingLeft="@dimen/lin_layout1_padd_left" >
+
+      <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="@dimen/textview_padding_top"
+                android:paddingLeft="@dimen/textview_padding_left"
+                android:paddingRight="@dimen/textview_padding_right"
+                android:id="@+id/destination_folder" />
+      <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/lin_layout_padding_top"
+                    android:paddingLeft="@dimen/lin_layout_padding_left"
+                    android:paddingRight="@dimen/lin_layout_padding_right" >
+
+        <ImageView android:layout_height="@dimen/file_mime_icon_dimen"
+                   android:layout_width="@dimen/file_mime_icon_dimen"
+                   android:scaleType="centerInside"
+                   android:gravity="center_vertical"
+                   android:layout_alignParentLeft="true"
+                   android:id="@+id/file_mime_icon" />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/filename"
+                  android:layout_gravity="center_vertical"
+                  android:gravity="center_vertical"/>
+
+      </LinearLayout>
+
+      <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/textview_padding_top"
+                android:paddingLeft="@dimen/textview_padding_left"
+                android:paddingRight="@dimen/textview_padding_right"
+                android:id="@+id/filesize" />
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/transfer_status"
+              android:paddingTop="@dimen/trans_status_padding_top"
+              android:text="@string/transfer_complete"
+              android:layout_gravity="center" />
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center"
+                  android:paddingBottom="@dimen/lin_layout_prog_padding_bottom"
+                  android:paddingTop="@dimen/lin_layout_prog_padding_top" >
+      <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/transfer_percentage"
+                android:text="@string/hundred_percent" />
+
+      <ProgressBar android:id="@+id/ProgressBar01"
+                   style="?android:attr/progressBarStyleHorizontal"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/label"
+                   android:max="100"
+                   android:paddingLeft="@dimen/prog_bar_padding_left"
+                   android:layout_width="@dimen/prog_bar_width_result" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buttonPanel"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:minHeight="@dimen/button_panel_min_height"
+                  android:orientation="vertical" >
+      <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/lin_layout_padding_top"
+                    android:paddingLeft="@dimen/lin_layout_padding_left"
+                    android:paddingRight="@dimen/lin_layout_padding_right" >
+        <LinearLayout android:id="@+id/leftSpacer"
+                      android:layout_weight="@fraction/spacer_weight"
+                      android:layout_width="@dimen/spacer_width"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" />
+        <Button android:layout_height="wrap_content"
+                android:text="@android:string/ok"
+                android:onClick="onOk"
+                android:gravity="center"
+                android:layout_width="@dimen/spacer_width"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="@fraction/weight_one" />
+        <LinearLayout android:id="@+id/rightSpacer"
+                      android:layout_width="@dimen/spacer_width"
+                      android:layout_weight="@fraction/spacer_weight"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

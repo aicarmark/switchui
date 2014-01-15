@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--  Speed Dialer -->
+    <dimen name="sd_edit_grid_child_width">192dip</dimen>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Açma/Kapama Widget\'ları</string>
+  <string name="gps_app_name">GPS\'i aç/kapa</string>
+  <string name="airplane_app_name">Uçak modunu aç/kapa</string>
+  <string name="wifi_app_name">Kablosuzu aç/kapa</string>
+  <string name="bluetooth_app_name">Bluetooth\'u aç/kapa</string>
+  <string name="apn_app_name">APN\'yi aç/kapa</string>
+  <string name="data_app_name">Data\'yı aç/kapa</string>
+  <string name="widget_description">Uçak modu durumunu görüntüle ve denetle</string>
+  <string name="widget_description_bt">Bluetooth durumunu görüntüle ve denetle</string>
+  <string name="widget_description_wifi">Kablosuz durumunu görüntüle ve denetle</string>
+  <string name="widget_description_gps">GPS durumunu görüntüle ve denetle</string>
+  <string name="StatusOn">"Açık"</string>
+  <string name="StatusOff">Kapa.</string>
+  <string name="StatusIntermediate">" "</string>
+  <string name="AirplanetoastText">Uçak modu kullanılamıyor</string>
+  <string name="BluetoothtoastText">Bluetooth kullanılamıyor</string>
+  <string name="GPStoastText">GPS kullanılamıyor</string>
+  <string name="WifitoastText">Kablosuz kullanılamıyor</string>
+  <string name="location_restriction_enabled">Konum kısıtlama etkinleştirildi.</string>
+  <string name="apncontrol_app_name">APN kontrolü</string>
+  <string name="no_apn">Kullanılabilir APN yok</string>
+</resources>

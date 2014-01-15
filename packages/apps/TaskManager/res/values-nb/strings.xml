@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Oppgavebehandling"</string>
+  <string name="tabTasks">"Programmer"</string>
+  <string name="tabProcesses">"Prosesser"</string>
+  <string name="buttonEnd">"Avslutt"</string>
+  <string name="buttonRefresh">"Oppdater"</string>
+  <string name="menuSwitch">"Bytt til"</string>
+  <string name="menuEndTask">"Avslutt oppgave"</string>
+  <string name="menuCancel">Avbryt</string>
+  <string name="textAvailableMemory">"Tilgjengelig minne:"</string>
+  <string name="textAvailableMemoryUnit">"MB"</string>
+  <string name="textNumOfApplications">"Antall programmer:"</string>
+  <string name="loading">Laster inn \u2026</string>
+</resources>

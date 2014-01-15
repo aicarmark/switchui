@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="launcherDialer" msgid="8636288196618486553">"Telefon"</string>
+    <string name="people" msgid="1048457247435785074">"Kiiler"</string>
+    <string name="contactsList" msgid="8661624236494819731">"Kiiler"</string>
+    <string name="shortcutContact" msgid="749243779392912958">"Kii"</string>
+    <string name="shortcutDialContact" msgid="746622101599186779">"Dorudan evirme"</string>
+    <!-- Motorola qhpn87 <string name="shortcutMessageContact" msgid="2460337253595976198">Motorola Localization change to Google string</string> -->
+    <string name="shortcutMessageContact" msgid="2460337253595976198">"Dorudan mesaj"</string>
+    <string name="shortcutActivityTitle" msgid="6642877210643565436">"Bir kii ksayolu sein"</string>
+    <string name="callShortcutActivityTitle" msgid="6065749861423648991">"Aranacak numaray sein"</string>
+    <string name="messageShortcutActivityTitle" msgid="3084542316620335911">"leti gnderilecek bir numara sein"</string>
+    <!-- Motorola qhpn87 <string name="contactPickerActivityTitle">Motorola Localization change to Google string</string> -->
+    <string name="contactPickerActivityTitle">"Bir kii sein"</string>
+    <string name="contactMultiplePickerActivityTitle">Kiiler se</string>
+    <string name="starredList" msgid="4817256136413959463">"Yldzl"</string>
+    <!-- Motorola qhpn87 <string name="frequentList" msgid="7154768136473953056">Motorola Localization change to Google string</string> -->
+    <string name="frequentList" msgid="7154768136473953056">"Sk kullanlanlar"</string>
+    <!-- Motorola qhpn87 <string name="strequentList" msgid="5640192862059373511">Motorola Localization change to Google string</string> -->
+    <string name="strequentList" msgid="5640192862059373511">"Favoriler"</string>
+    <string name="viewContactTitle" msgid="7989394521836644384">"Kii ayrntlar"</string>
+    <string name="viewContactDesription" msgid="214186610887547860">"Kiiyi grntle"</string>
+    <string name="editContactDescription" msgid="2947202828256214947">"Kiiyi dzenle"</string>
+    <string name="insertContactDescription" msgid="4709878105452681987">"Kii olutur"</string>
+    <string name="editGroupDescription" msgid="6321161304201540561">"Grubu dzenle"</string>
+    <string name="insertGroupDescription" msgid="5658512271662210139">"Grup olutur"</string>
+    <string name="contactDetailAbout" msgid="5430408883907061400">"Hakknda"</string>
+    <!-- Motorola kqvw87 <string name="contactDetailUpdates" msgid="3780588624763446941">Motorola Localization change to Google string</string> -->
+    <string name="contactDetailUpdates" msgid="3780588624763446941">"Gncellemeler"</string>
+    <string name="searchHint" msgid="8482945356247760701">"Kiileri ara"</string>
+    <string name="menu_search" msgid="9147752853603483719">"Ara"</string>
+    <string name="menu_newContact" msgid="1209922412763274638">"Yeni kii"</string>
+    <string name="menu_viewContact" msgid="2795575601596468581">"Kiiyi grntle"</string>
+    <!-- Motorola qhpn87 <string name="menu_callNumber" msgid="5142851348489387516">Motorola Localization change to Google string</string> -->
+    <string name="menu_callNumber" msgid="5142851348489387516">"ar yap (<xliff:g id="NAME">%s</xliff:g>)"</string>
+    <string name="menu_addStar" msgid="2908478235715404876">"Sk kullanlanlara ekle"</string>
+    <string name="menu_removeStar" msgid="5844227078364227030">"Sk kullanlanlardan kaldr"</string>
+    <string name="menu_editContact" msgid="9042415603857662633">"Dzenle"</string>
+    <string name="menu_deleteContact" msgid="6788644058868189393">"Sil"</string>
+    <string name="menu_call" msgid="3992595586042260618">"ar yap"</string>
+    <string name="menu_sendSMS" msgid="5535886767547006515">"Ksa mesaj gnder"</string>
+    <string name="menu_splitAggregate" msgid="8368636463748691868">"Ayr"</string>
+    <string name="menu_editGroup" msgid="5062005185370983720">"Dzenle"</string>
+    <string name="menu_sendSms">Mesaj Gnder</string>
+    <string name="menu_sendEmail">E-posta Gnder</string>
+    <string name="menu_createEvent">Etkinlik Olutur</string>
+    <string name="menu_deleteGroup" msgid="3486380004411482874">"Sil"</string>
+    <string name="menu_new_contact_action_bar" msgid="8887818026717394343">"Yeni"</string>
+    <string name="menu_new_group_action_bar" msgid="5055346725617932394">"Yeni"</string>
+    <!-- Motorola qhpn87 <string name="splitConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="splitConfirmation_title">"Kii ayrlsn m?"</string>
+    <!-- Motorola qhpn87 <string name="splitConfirmation">Motorola Localization change to Google string</string> -->
+    <string name="splitConfirmation">"Bu kii, birden ok kiiye ayrlacak."</string>
+    <string name="menu_joinAggregate" msgid="5027981918265667970">"Birletir"</string>
+    <string name="titleJoinContactDataWith" msgid="7684875775798635354">"Kiileri birletir"</string>
+    <!-- Motorola qhpn87 <string name="blurbJoinContactDataWith">Motorola Localization change to Google string</string> -->
+    <string name="blurbJoinContactDataWith">"<xliff:g id="name">%s</xliff:g> ile birletirmek istediiniz kiiyi sein:"</string>
+    <string name="showAllContactsJoinItem" msgid="2189695051430392383">"Tm kiileri gster"</string>
+    <string name="separatorJoinAggregateSuggestions" msgid="2831414448851313345">"nerilen kiiler"</string>
+    <string name="separatorJoinAggregateAll" msgid="7939932265026181043">"Tm kiiler"</string>
+    <string name="contactsJoinedMessage" msgid="7208148163607047389">"Kiiler birletirildi"</string>
+    <!-- Motorola qhpn87 <string name="deleteConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="deleteConfirmation_title">"Kii silinsin mi?"</string>
+    <string name="menu_set_ring_tone" msgid="8728345772068064946">"Zil sesi ayarla"</string>
+    <!-- Motorola kqvw87 <string name="menu_redirect_calls_to_vm" msgid="4181789196416396656">Motorola Localization change to Google string</string> -->
+    <string name="menu_redirect_calls_to_vm" msgid="4181789196416396656">"arlar sesli mesaja"</string>
+    <!-- Motorola qhpn87 <string name="readOnlyContactWarning">Motorola Localization change to Google string</string> -->
+    <string name="readOnlyContactWarning">"Kiileri salt okunur hesaplardan silemezsiniz, ancak bu kiileri kiiler listenizde gizleyebilirsiniz."</string>
+    <string name="readOnlyContactDeleteConfirmation" msgid="2137170726670196909">"Bu kii birden fazla hesaptan bilgiler ieriyor. Salt okunur hesaplardaki bilgiler silinmez, kiiler listelerinizde gizlenir."</string>
+    <string name="multipleContactDeleteConfirmation" msgid="938900978442960800">"Bu kiiyi silmek, birden fazla hesaba ait bilgileri de siler."</string>
+    <string name="deleteConfirmation" msgid="811706994761610640">"Bu kii silinecek."</string>
+    <string name="menu_done" msgid="796017761764190697">"Bitti"</string>
+    <string name="menu_doNotSave" msgid="58593876893538465">"ptal"</string>
+    <string name="menu_discard" msgid="6456087569315685632">"Sil"</string>
+    <string name="label_notes" msgid="8337354953278341042">"Notlar"</string>
+    <string name="label_sip_address" msgid="124073911714324974">"nternet ars"</string>
+    <string name="ghostData_company" msgid="5414421120553765775">"irket"</string>
+    <!-- Motorola qhpn87 <string name="ghostData_title" msgid="7496735200318496110">Motorola Localization change to Google string</string> -->
+    <string name="ghostData_title" msgid="7496735200318496110">"Unvan"</string>
+    <!-- Motorola qhpn87 <string name="invalidContactMessage">Motorola Localization change to Google string</string> -->
+    <string name="invalidContactMessage">"Kii yok."</string>
+    <string name="pickerNewContactHeader" msgid="7750705279843568147">"Yeni kii olutur"</string>
+    <!-- Motorola qhpn87 <string name="pickerNewContactText" msgid="6166997164401048211">Motorola Localization change to Google string</string> -->
+    <string name="pickerNewContactText" msgid="6166997164401048211">"Yeni kii olutur"</string>
+    <string name="phoneLabelsGroup" msgid="6468091477851199285">"Telefon"</string>
+    <string name="emailLabelsGroup" msgid="8389931313045344406">"E-posta"</string>
+    <string name="imLabelsGroup" msgid="3898238486262614027">"IM"</string>
+    <string name="postalLabelsGroup" msgid="3487738141112589324">"Adres"</string>
+  <string-array name="otherLabels">
+    <item msgid="8287841928119937597">"Kurulu"</item>
+    <item msgid="7196592230748086755">"Not"</item>
+  </string-array>
+    <string name="photoPickerNotFoundText" product="tablet" msgid="6247290728908599701">"Tablette kullanlabilir resim yok."</string>
+    <string name="photoPickerNotFoundText" product="default" msgid="431331662154342581">"Telefonda hibir resim yok."</string>
+    <string name="attach_photo_dialog_title" msgid="5599827035558557169">"Kii fotoraf"</string>
+    <string name="customLabelPickerTitle" msgid="1081475101983255212">"zel etiket ad"</string>
+    <string name="send_to_voicemail_checkbox" msgid="9001686764070676353">"arlar dorudan sesli mesaja gnder"</string>
+    <string name="removePhoto" msgid="4898105274130284565">"Fotoraf kaldr"</string>
+    <!-- Motorola qhpn87 <string name="noContacts">Motorola Localization change to Google string</string> -->
+    <string name="noContacts">"Hibir kii yok."</string>
+    <!-- Motorola qhpn87 <string name="noGroups">Motorola Localization change to Google string</string> -->
+    <string name="noGroups">"Hibir grup yok."</string>
+    <!-- Motorola qhpn87 <string name="noAccounts">Motorola Localization change to Google string</string> -->
+    <string name="noAccounts">"Grup oluturmak iin bir hesabnzn olmas gerekir."</string>
+    <string name="noMatchingContacts" msgid="4266283206853990471">"Eleen kii bulunamad."</string>
+    <string name="noContactsWithPhoneNumbers" msgid="1605457050218824269">"Telefon numaras olan hibir kii yok."</string>
+    <!-- Motorola qhpn87 <string name="emptyGroup" msgid="7502116218697177370">Motorola Localization change to Google string</string> -->
+    <string name="emptyGroup" msgid="7502116218697177370">"Bu grupta hibir ye yok."</string>
+    <!-- Motorola qhpn87 <string name="addPeopleToGroup" msgid="7879585947222263516">Motorola Localization change to Google string</string> -->
+    <string name="addPeopleToGroup" msgid="7879585947222263516">"Birka ye eklemek iin grubu dzenleyin."</string>
+    <string name="savingContact" msgid="4075751076741924939">"Kii kaydediliyor..."</string>
+    <string name="savingDisplayGroups" msgid="2133152192716475939">"Grntleme seenekleri kaydediliyor..."</string>
+    <!-- Motorola qhpn87 <string name="contactSavedToast">Motorola Localization change to Google string</string> -->
+    <string name="contactSavedToast">"Kii kaydedildi."</string>
+    <!-- Motorola qhpn87 <string name="contactSavedErrorToast">Motorola Localization change to Google string</string> -->
+    <string name="contactSavedErrorToast">"Kii deiiklikleri kaydedilemedi."</string>
+    <!-- Motorola qhpn87 <string name="groupSavedToast">Motorola Localization change to Google string</string> -->
+    <string name="groupSavedToast">"Grup kaydedildi."</string>
+    <!-- Motorola qhpn87 <string name="groupSavedErrorToast">Motorola Localization change to Google string</string> -->
+    <string name="groupSavedErrorToast">"Grup deiiklikleri kaydedilemedi."</string>
+    <string name="moto_group_confirm_assignment">Atamalar onaylayn:</string>
+    <string name="moto_group_select_number">Ltfen bir numara sein:</string>
+    <string name="moto_group_select_email">Ltfen bir e-posta sein:</string>
+    <string name="noNumbers">Numara yok</string>
+    <string name="noEmails">E-posta yok</string>
+    <string name="moto_do_not_send_message">leti gnderme</string>
+    <string name="moto_do_not_email">E-posta gnderme</string>
+    <string name="give_name_to_new_group">Yeni grubunuza bir ad verin:</string>
+    <string name="new_group">Grup ad</string>
+    <string name="group_exist">Grup ad zaten var!</string>
+    <string name="group_name_cant_empty">Grup ad bo olamaz!</string>
+    <string name="group_message_limit">Yalnzca 300\'den az alcs olan gruplar iin mesajlar oluturulabilir!</string>
+    <string name="item_contact_id">itemContactId</string>
+    <string name="view_holder">viewHolder</string>
+  <plurals name="listTotalPhoneContacts">
+    <item quantity="one" msgid="3015357862286673986">"Telefon numaras olan 1 kii"</item>
+    <item quantity="other" msgid="3299954047880968205">"Telefon numaras olan <xliff:g id="COUNT">%d</xliff:g> kii"</item>
+  </plurals>
+    <string name="listTotalPhoneContactsZero" msgid="6968813857632984319">"Telefon numaras olan hibir kii yok"</string>
+  <plurals name="listTotalAllContacts">
+    <item quantity="one" msgid="3405747744700823280">"1 kii"</item>
+    <item quantity="other" msgid="3578469907265375314">"<xliff:g id="COUNT">%d</xliff:g> kii"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZero">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZero">"Kii yok."</string>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZeroCustom">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZeroCustom">"Grlebilir kii yok."</string>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZeroStarred">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZeroStarred">"Sk kullanlan yok."</string>
+    <string name="listTotalAllContactsZeroGroup" msgid="5448979458248027615">"<xliff:g id="NAME">%s</xliff:g> iinde hibir kii yok"</string>
+    <string name="listAllContactsInAccount" msgid="7496143179265311758">"<xliff:g id="NAME">%s</xliff:g> alan adndaki kiiler"</string>
+    <string name="listSingleContact" msgid="6067813698903535563">"Tek kii"</string>
+    <string name="listCustomView" msgid="6950713892532194050">"zel grnmdeki kiiler"</string>
+  <plurals name="listFoundAllContacts">
+    <item quantity="one" msgid="5517063038754171134">"1 kii bulundu"</item>
+    <item quantity="other" msgid="3852668542926965042">"<xliff:g id="COUNT">%d</xliff:g> kii bulundu"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="foundTooManyContacts">Motorola Localization change to Google string</string> -->
+    <string name="foundTooManyContacts">"<xliff:g id="count">%d</xliff:g> kiiden fazla sonu bulundu."</string>
+    <!-- Motorola qhpn87 <string name="listFoundAllContactsZero">Motorola Localization change to Google string</string> -->
+    <string name="listFoundAllContactsZero">"Hibir kii bulunamad."</string>
+  <plurals name="searchFoundContacts">
+    <item quantity="one" msgid="4826918429708286628">"1 kii bulundu"</item>
+    <item quantity="other" msgid="7988132539476575389">"<xliff:g id="COUNT">%d</xliff:g> kii bulundu"</item>
+  </plurals>
+    <string name="contactsAllLabel">Kiiler</string>
+    <string name="contactsGroupsLabel" msgid="2841971472518003524">"Gruplar"</string>
+    <string name="contactsFavoritesLabel" msgid="8417039765586853670">"Sk Kullanlanlar"</string>
+    <string name="menu_sendTextMessage" msgid="6937343460284499306">"Ksa mesaj gnder"</string>
+    <!-- Motorola qhpn87 <string name="recentCalls_callNumber" msgid="1756372533999226126">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_callNumber" msgid="1756372533999226126">"ar yap (<xliff:g id="NAME">%s</xliff:g>)"</string>
+    <string name="recentCalls_editNumberBeforeCall" msgid="7756171675833267857">"nce numaray dzenle"</string>
+    <string name="recentCalls_addToContact" msgid="1429899535546487008">"Kiilere ekle"</string>
+    <string name="recentCalls_removeFromRecentList" msgid="401662244636511330">"ar kaydndan kaldr"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_deleteAll" msgid="6352364392762163704">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_deleteAll">Listeyi temizle</string>
+    <string name="recentCalls_trashVoicemail" msgid="7604696960787435655">"Sesli mesaj sil"</string>
+    <string name="recentCalls_shareVoicemail" msgid="1416112847592942840">"Sesli mesaj payla"</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogConfirmation_title">"ar kayd temizlensin mi?"</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogConfirmation">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogConfirmation">"Tm ar kaytlarnz silinecek."</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogProgress_title">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogProgress_title">"ar kayd temizleniyor\u2026"</string>
+    <string name="imei" msgid="3045126336951684285">"IMEI"</string>
+    <string name="meid" msgid="6210568493746275750">"MEID"</string>
+    <string name="voicemail" msgid="3851469869202611441">"Sesli Mesaj"</string>
+    <string name="unknown" msgid="740067747858270469">"Bilinmiyor"</string>
+    <string name="private_num" msgid="6374339738119166953">"zel numara"</string>
+    <string name="payphone" msgid="4864313342828942922">"Ankesrl telefon"</string>
+    <string name="dialerKeyboardHintText" msgid="5401660096579787344">"evirmek iin klavyeyi kullan"</string>
+    <!-- Motorola qhpn87 <string name="dialerDialpadHintText" msgid="5824490365898349041">Motorola Localization change to Google string</string> -->
+    <string name="dialerDialpadHintText" msgid="5824490365898349041">"Numara girin"</string>
+    <string name="simContacts_emptyLoading" msgid="6700035985448642408">"SIM karttan ykleniyor..."</string>
+    <string name="simContacts_title" msgid="27341688347689769">"SIM kart kiileri"</string>
+    <string name="noContactsHelpTextWithSyncForCreateShortcut" msgid="801504710275614594">"Grntlenecek kiiniz yok. (Hesab yeni eklediyseniz, kiilerin senkronize edilmesi birka dakika srebilir.)"</string>
+    <string name="noContactsHelpTextForCreateShortcut" msgid="3081286388667108335">"Grntlenecek kiiniz yok."</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpText" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpText" product="tablet">"Grntlenecek hibir kiiniz yok.\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (tablet ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>" "\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da aktar</b></font> (SIM veya SD kartnzdaki kiileri aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpText" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpText" product="default">"Grntlenecek hibir kiiniz yok.\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (telefon ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpTextWithSync" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpTextWithSync" product="tablet">"Grntlenecek hibir kiiniz yok. (Ksa sre nce bir hesap eklediyseniz, kiileri senkronize etmek birka dakika srebilir.)\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (tablet ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Grntleme seenekleri</b></font> (grlebilir kiileri deitirmek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpTextWithSync" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpTextWithSync" product="default">"Grntlenecek hibir kiiniz yok. (Ksa sre nce bir hesap eklediyseniz, kiileri senkronize etmek birka dakika srebilir.)\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (telefon ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Grntleme seenekleri</b></font> (grlebilir kiileri deitirmek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpText" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpText" product="tablet">"Grntlenecek hibir kiiniz yok.\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (tablet ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri ie aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpText" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpText" product="default">"Grntlenecek hibir kiiniz yok.\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (telefon ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri ie aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpTextWithSync" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpTextWithSync" product="tablet">"Grntlenecek hibir kiiniz yok. (Ksa sre nce bir hesap eklediyseniz, kiileri senkronize etmek birka dakika srebilir.)\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (tablet ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Grntleme seenekleri</b></font> (grlebilir kiileri deitirmek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri ie aktarmak iin)\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpTextWithSync" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpTextWithSync" product="default">"Grntlenecek hibir kiiniz yok. (Ksa sre nce bir hesap eklediyseniz, kiileri senkronize etmek birka dakika srebilir.)\n\nKii eklemek iin, <font fgcolor="#ffffffff"><b>Men</b></font>esine ve ardndan u seeneklerden birine dokunun:\n \n<li><font fgcolor="#ffffffff"><b>Hesaplar</b></font> (telefon ile senkronize edebileceiniz kiilere sahip bir hesap eklemek veya ayarlamak iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Grntleme seenekleri</b></font> (grlebilir kiileri deitirmek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>Yeni kii</b></font> (en batan yeni bir kii eklemek iin)\n</li>\n<li><font fgcolor="#ffffffff"><b>e/Da Aktar</b></font> (SIM veya SD kartnzdaki kiileri ie aktarmak iin)\n</li>"</string>
+    <string name="noFavoritesHelpText" msgid="3744655776704833277">"Favoriniz bulunmuyor."\n\n"Favoriler listenize kii eklemek iin:"\n\n"        "<li><b>"Kiiler"</b>" sekmesine dokunun"\n</li>" "\n<li>"Favorilerinize eklemek istediiniz kiiye dokunun"\n</li>" "\n<li>"Kii adnn yanndaki yldz simgesine dokunun"\n</li></string>
+    <string name="dialer_useDtmfDialpad" msgid="1707548397435075040">"Telefon tu takmn kullan"</string>
+    <string name="dialer_returnToInCallScreen" msgid="3719386377550913067">"arya dn"</string>
+    <string name="dialer_addAnotherCall" msgid="4205688819890074468">"ar ekle"</string>
+    <string name="callDetailTitle" msgid="5340227785196217938">"ar ayrntlar"</string>
+    <string name="toast_call_detail_error" msgid="7200975244804730096">"stenen ar iin ayrntlar okunamad."</string>
+    <string name="type_incoming" msgid="6502076603836088532">"Gelen ar"</string>
+    <string name="type_outgoing" msgid="343108709599392641">"Giden ar"</string>
+    <string name="type_missed" msgid="2720502601640509542">"Cevapsz ar"</string>
+    <string name="type_voicemail" msgid="5153139450668549908">"Sesli mesaj"</string>
+    <string name="actionIncomingCall" msgid="6028930669817038600">"Gelen arlar"</string>
+    <string name="callBack" msgid="5498224409038809224">"Geri ara"</string>
+    <string name="callAgain" msgid="3197312117049874778">"Tekrar ar yap"</string>
+    <string name="returnCall" msgid="8171961914203617813">"Geri ara"</string>
+    <string name="favoritesFrequentContacted" msgid="6184232487472425690">"Sk iletiim kurulanlar"</string>
+    <string name="favoritesFrequentCalled" msgid="6128306889600696124">"Sk arananlar"</string>
+    <string name="add_contact_dlg_title" msgid="2896685845822146494">"Kii ekle"</string>
+    <!-- Motorola qhpn87 <string name="add_contact_dlg_message_fmt" msgid="7986472669444326576">Motorola Localization change to Google string</string> -->
+    <string name="add_contact_dlg_message_fmt" msgid="7986472669444326576">"\"<xliff:g id="EMAIL">%s</xliff:g>\" kiilere eklensin mi?"</string>
+    <string name="description_image_button_one" msgid="1740638037139856139">"bir"</string>
+    <string name="description_image_button_two" msgid="5882638439003731308">"iki"</string>
+    <string name="description_image_button_three" msgid="8709731759376015180">""</string>
+    <string name="description_image_button_four" msgid="3530239685642246130">"drt"</string>
+    <string name="description_image_button_five" msgid="1182465427501188413">"be"</string>
+    <string name="description_image_button_six" msgid="2093656269261415475">"alt"</string>
+    <string name="description_image_button_seven" msgid="2450357020447676481">"yedi"</string>
+    <string name="description_image_button_eight" msgid="6969435115163287801">"sekiz"</string>
+    <string name="description_image_button_nine" msgid="7857248695662558323">"dokuz"</string>
+    <string name="description_image_button_star" msgid="3365919907520767866">"yldz"</string>
+    <string name="description_image_button_zero" msgid="4133108949401820710">"sfr"</string>
+    <string name="description_image_button_pound" msgid="3039765597595889230">"pound"</string>
+    <string name="description_voicemail_button" msgid="3402506823655455591">"Sesli mesaj"</string>
+    <string name="description_search_button" msgid="3660807558587384889">"ara"</string>
+    <string name="description_dial_button" msgid="1274091017188142646">"evir"</string>
+    <string name="description_delete_button" msgid="6263102114033407382">"geri tuu"</string>
+    <string name="description_digits_edittext" msgid="8760207516497016437">"evrilecek numara"</string>
+    <string name="description_contact_photo" msgid="3387458082667894062">"kii fotoraf"</string>
+    <string name="description_minus_button" msgid="387136707700230172">"eksi"</string>
+    <string name="description_plus_button" msgid="515164827856229880">"art"</string>
+    <string name="description_view_contact_detail" msgid="9133251213656414807">"Kiiyi grntle"</string>
+    <string name="no_sdcard_title" product="nosdcard" msgid="8543619259870877473">"Depolama birimi yok"</string>
+    <string name="no_sdcard_title" product="tablet">SD kart yok</string>
+    <string name="no_sdcard_title" product="default" msgid="5911758680339949273">"SD kart yok"</string>
+    <string name="no_sdcard_message" product="tablet">Hibir SD kart tespit edilmedi</string>
+    <!-- Motorola qhpn87 <string name="no_sdcard_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="no_sdcard_message" product="default">"SD kart bulunamad."</string>
+    <string name="searching_vcard_title" msgid="4970508055399376813">"vCard aranyor"</string>
+    <string name="import_from_sim" msgid="3859272228033941659">"SIM karttan ie aktar"</string>
+    <string name="export_to_sim">SIM karta da aktar</string>
+    <string name="delete_from_sim">SIM kiilerini sil</string>
+    <string name="import_from_sdcard" product="tablet">Depolamadan ie aktar</string>
+    <!-- Motorola kqvw87 <string name="import_from_sdcard" product="default" msgid="8668347930577565175">Motorola Localization change to Google string</string> -->
+    <string name="import_from_sdcard" product="default" msgid="8668347930577565175">"Dep. biriminden ie aktar"</string>
+    <string name="export_to_sdcard" product="tablet">Depolamadan da aktar</string>
+    <string name="export_to_sdcard" product="default" msgid="6092815580965201089">"Depolama birimine aktar"</string>
+    <string name="share_visible_contacts" msgid="890150378880783797">"Grlebilir kiileri payla"</string>
+    <string name="import_one_vcard_string" msgid="9059163467020328433">"Bir vCard dosyasn ie aktar"</string>
+    <string name="import_multiple_vcard_string" msgid="3810226492811062392">"Birden fazla vCard dosyasn ie aktar"</string>
+    <string name="import_all_vcard_string" msgid="5518136113853448474">"Tm vCard dosyalarn ie aktar"</string>
+    <string name="searching_vcard_message" product="tablet">SD kartta vCard verileri aranyor</string>
+    <!-- Motorola qhpn87 <string name="searching_vcard_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="searching_vcard_message" product="default">"SD kartta vCard verileri aranyor\u2026"</string>
+    <string name="scanning_sdcard_failed_title" product="nosdcard" msgid="4944932641334764942">"Depolama birimi taranamad"</string>
+    <string name="scanning_sdcard_failed_title" product="tablet">SD kart taranamad</string>
+    <string name="scanning_sdcard_failed_title" product="default" msgid="6664940444476572612">"SD kart taranamad"</string>
+    <string name="scanning_sdcard_failed_message" product="tablet">SD kart taramas baarsz oldu (Neden: \"<xliff:g id="fail_reason">%s</xliff:g>\")</string>
+    <!-- Motorola qhpn87 <string name="scanning_sdcard_failed_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="scanning_sdcard_failed_message" product="default">"SD kart taranamad. (Neden: \"<xliff:g id="fail_reason">%s</xliff:g>\")"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_io_error">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_io_error">"G/ hatas"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_low_memory_during_import">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_low_memory_during_import">"Hafza yetersiz. Dosya ok byk."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_vcard_parse_error">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_vcard_parse_error">"vCard beklenmedik bir nedenden dolay ayrtrlamad."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_not_supported">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_not_supported">"Biim desteklenmiyor."</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_failed">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_failed">"vCard ie aktarlamad."</string>
+    <!-- Motorola qhpn87 <string name="import_failure_no_vcard_file" product="nosdcard">Motorola Localization change to Google string</string> -->
+    <string name="import_failure_no_vcard_file" product="nosdcard">"Depolama biriminde hibir vCard dosyas bulunamad."</string>
+    <string name="import_failure_no_vcard_file" product="tablet">SD kartta hibir vCard dosyas bulunamad</string>
+    <!-- Motorola qhpn87 <string name="import_failure_no_vcard_file" product="default">Motorola Localization change to Google string</string> -->
+    <string name="import_failure_no_vcard_file" product="default">"SD kartta hibir vCard dosyas bulunamad."</string>
+    <string name="fail_reason_failed_to_collect_vcard_meta_info" msgid="6427931733267328564">"Belirtilen vCard dosyalarnn meta bilgileri toplanamad."</string>
+    <string name="fail_reason_failed_to_read_files" msgid="5823434810622484922">"Bir veya daha fazla dosya ie aktarlamad (%s)."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_unknown">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_unknown">"Bilinmeyen hata."</string>
+    <!-- Motorola qhpn87 <string name="select_vcard_title">Motorola Localization change to Google string</string> -->
+    <string name="select_vcard_title">"vCard dosyas se"</string>
+    <!-- Motorola qhpn87 <string name="caching_vcard_title">Motorola Localization change to Google string</string> -->
+    <string name="caching_vcard_title">"nbellee alnyor"</string>
+    <!-- Motorola qhpn87 <string name="caching_vcard_message">Motorola Localization change to Google string</string> -->
+    <string name="caching_vcard_message">"vCard\'lar yerel geici depolama alan nbelleine kaydediliyor. Asl ie aktarma ilemi ksa sre iinde balayacak."</string>
+    <!-- Motorola kqvw87 <string name="progress_notifier_message" msgid="2311011466908220528">Motorola Localization change to Google string</string> -->
+    <string name="progress_notifier_message" msgid="2311011466908220528">"<xliff:g id="CURRENT_NUMBER">%s</xliff:g>/<xliff:g id="TOTAL_NUMBER">%s</xliff:g> ie aktarlyor: <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="importing_vcard_description" msgid="4245275224298571351">"<xliff:g id="NAME">%s</xliff:g> ie aktarlyor"</string>
+    <string name="reading_vcard_failed_title" msgid="4251647443358422855">"vCard verileri okunamad"</string>
+    <!-- Motorola qhpn87 <string name="reading_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="reading_vcard_canceled_title">"vCard verilerini okuma iptal edildi"</string>
+    <!-- Motorola kqvw87 <string name="importing_vcard_finished_title" msgid="3341541727268747967">Motorola Localization change to Google string</string> -->
+    <string name="importing_vcard_finished_title" msgid="3341541727268747967">"vCard <xliff:g id="FILENAME">%s</xliff:g> ie aktarld"</string>
+    <!-- Motorola qhpn87 <string name="importing_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="importing_vcard_canceled_title">"<xliff:g example="import.vcf" id="filename">%s</xliff:g> esinin ie aktarm iptal edildi"</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_will_start_message" msgid="2804911199145873396">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_will_start_message" msgid="2804911199145873396">"<xliff:g id="FILENAME">%s</xliff:g> ksa bir sre sonra ie aktarlacak."</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_will_start_message_with_default_name" msgid="1022969530654129470">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_will_start_message_with_default_name" msgid="1022969530654129470">"Dosya ksa bir sre sonra ie aktarlacak."</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_request_rejected_message">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_request_rejected_message">"vCard ie aktarma istei reddedildi. Daha sonra tekrar deneyin."</string>
+    <!-- Motorola qhpn87 <string name="vcard_export_will_start_message" msgid="2210241345252081463">Motorola Localization change to Google string</string> -->
+    <string name="vcard_export_will_start_message" msgid="2210241345252081463">"<xliff:g id="FILENAME">%s</xliff:g> ksa bir sre sonra da aktarlacak."</string>
+    <!-- Motorola qhpn87 <string name="vcard_export_request_rejected_message">Motorola Localization change to Google string</string> -->
+    <string name="vcard_export_request_rejected_message">"vCard da aktarma istei reddedildi. Daha sonra tekrar deneyin."</string>
+    <string name="vcard_unknown_filename" msgid="7171709890959915954">"kii"</string>
+    <!-- Motorola kqvw87 <string name="percentage" msgid="34897865327092209">Motorola Localization change to Google string</string> -->
+    <string name="percentage" msgid="34897865327092209">"%%%s"</string>
+    <!-- Motorola qhpn87 <string name="confirm_export_title">Motorola Localization change to Google string</string> -->
+    <string name="confirm_export_title">"Kiiler da aktarlsn m?"</string>
+    <!-- Motorola qhpn87 <string name="confirm_export_message">Motorola Localization change to Google string</string> -->
+    <string name="confirm_export_message">"Kii listeniz u dosyaya da aktarlacak: <xliff:g id="vcard_filename">%s</xliff:g>."</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_failed_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_failed_title">"Da aktarlamad"</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_failed_message">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_failed_message">"Kii verileri da aktarlmad.\nNeden: \"<xliff:g id="fail_reason">%s</xliff:g>\"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_no_exportable_contact">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_no_exportable_contact">"Da aktarlabilecek hibir kii yok."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_many_vcard" product="nosdcard">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_many_vcard" product="nosdcard">"Depolama biriminde ok fazla vCard dosyas var."</string>
+    <string name="fail_reason_too_many_vcard" product="tablet">SD kartta ok fazla vCard dosyas var</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_many_vcard" product="default">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_many_vcard" product="default">"SD kartta ok fazla vCard dosyas var."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_long_filename">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_long_filename">"Gereken dosya ad ok uzun (\"<xliff:g id="filename">%s</xliff:g>\")."</string>
+    <!-- Motorola qhpn87 <string name="exporting_vcard_finished_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_vcard_finished_title">"<xliff:g example="export.vcf" id="filename">%s</xliff:g> esinin da aktarm tamamland."</string>
+    <!-- Motorola qhpn87 <string name="exporting_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_vcard_canceled_title">"<xliff:g example="export.vcf" id="filename">%s</xliff:g> esinin da aktarm iptal edildi."</string>
+    <string name="exporting_contact_list_title" msgid="9072240631534457415">"Kii verileri da aktarlyor"</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_list_message">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_list_message">"Kii verilerinizi u konuma da aktarlyor: <xliff:g id="file_name">%s</xliff:g>."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_could_not_initialize_exporter">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_could_not_initialize_exporter">"Da aktarc balatlamad: \"<xliff:g id="exact_reason">%s</xliff:g>\"."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_error_occurred_during_export">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_error_occurred_during_export">"Da aktarma srasnda bir hata olutu: \"<xliff:g id="exact_reason">%s</xliff:g>\"."</string>
+    <!-- Motorola qhpn87 <string name="composer_failed_to_get_database_infomation">Motorola Localization change to Google string</string> -->
+    <string name="composer_failed_to_get_database_infomation">"Veritaban bilgileri alnamad."</string>
+    <!-- Motorola qhpn87 <string name="composer_has_no_exportable_contact" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="composer_has_no_exportable_contact" product="tablet">"Da aktarlabilir hibir kii yok. Kiiler tabletinizdeyse, baz veri salayclar kiilerin tabletten da aktarlmasna izin vermeyebilir."</string>
+    <!-- Motorola qhpn87 <string name="composer_has_no_exportable_contact" product="default">Motorola Localization change to Google string</string> -->
+    <string name="composer_has_no_exportable_contact" product="default">"Da aktarlabilir hibir kii yok. Kiiler telefonunuzdaysa, baz veri salayclar kiilerin telefondan da aktarlmasna izin vermeyebilir."</string>
+    <!-- Motorola qhpn87 <string name="composer_not_initialized">Motorola Localization change to Google string</string> -->
+    <string name="composer_not_initialized">"vCard oluturucu dzgn bir ekilde balatlamad."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_could_not_open_file">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_could_not_open_file">"\"<xliff:g id="file_name">%s</xliff:g>\" alamad: <xliff:g id="exact_reason">%s</xliff:g>."</string>
+    <string name="exporting_contact_list_progress" msgid="560522409559101193">"Toplam <xliff:g id="TOTAL_NUMBER">%s</xliff:g> kiiden <xliff:g id="CURRENT_NUMBER">%s</xliff:g> kii"</string>
+    <string name="cancel_import_confirmation_title" msgid="5578683596010294836">"vCard ie aktarmay iptal etme"</string>
+    <!-- Motorola qhpn87 <string name="cancel_import_confirmation_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_import_confirmation_message">"<xliff:g example="import.vcf" id="filename">%s</xliff:g> esinin ie aktarm iptal edilsin mi?"</string>
+    <string name="cancel_export_confirmation_title" msgid="6516467140276768528">"vCard da aktarmay iptal etme"</string>
+    <!-- Motorola qhpn87 <string name="cancel_export_confirmation_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_export_confirmation_message">"<xliff:g example="export.vcf" id="filename">%s</xliff:g> esinin da aktarm iptal edilsin mi?"</string>
+    <!-- Motorola kqvw87 <string name="cancel_vcard_import_or_export_failed" msgid="6139900383366166706">Motorola Localization change to Google string</string> -->
+    <string name="cancel_vcard_import_or_export_failed" msgid="6139900383366166706">"e/da aktarma ilemi iptal edilemedi"</string>
+    <string name="search_settings_description" msgid="2675223022992445813">"Kiilerinizin adlar"</string>
+    <string name="add_2sec_pause" msgid="9214012315201040129">"2 saniyelik duraklama ekle"</string>
+    <string name="add_wait" msgid="3360818652790319634">"Bekleme ekle"</string>
+    <string name="call_disambig_title" msgid="1911302597959335178">"unu kullanarak ar yap"</string>
+    <string name="call_settings" msgid="7666474782093693667">"Ayarlar"</string>
+    <string name="sms_disambig_title" msgid="4675399294513152364">"unu kullanarak SMS gnder:"</string>
+    <string name="make_primary" msgid="5829291915305113983">"Bu tercihi anmsa"</string>
+    <!-- Motorola qhpn87 <string name="quickcontact_missing_app">Motorola Localization change to Google string</string> -->
+    <string name="quickcontact_missing_app">"Bu ilemi gerekletirecek uygulama bulunamad."</string>
+    <!-- Motorola qhpn87 <string name="missing_name">Motorola Localization change to Google string</string> -->
+    <string name="missing_name">"(Ad yok)"</string>
+    <string name="menu_accounts" msgid="8499114602017077970">"Hesaplar"</string>
+    <string name="menu_contacts_filter" msgid="2165153460860262501">"Grntlenecek kiiler"</string>
+    <!-- Motorola qhpn87 <string name="menu_import_export">Motorola Localization change to Google string</string> -->
+    <string name="menu_import_export">"e/Da aktar"</string>
+    <!-- Motorola qhpn87 <string name="dialog_import_export">Motorola Localization change to Google string</string> -->
+    <string name="dialog_import_export">"Kiileri ie/da aktar"</string>
+    <string name="menu_share" msgid="943789700636542260">"Payla"</string>
+    <string name="menu_all_contacts" msgid="5101735431586050711">"Tm kiiler"</string>
+    <string name="share_via" msgid="563121028023030093">"unu kullanarak kii payla:"</string>
+    <!-- Motorola qhpn87 <string name="share_error">Motorola Localization change to Google string</string> -->
+    <string name="share_error">"Bu kii paylalamaz."</string>
+    <string name="nameLabelsGroup" msgid="2034640839640477827">"Ad"</string>
+    <string name="nicknameLabelsGroup" msgid="2891682101053358010">"Takma ad"</string>
+    <string name="organizationLabelsGroup" msgid="2478611760751832035">"Kurulu"</string>
+    <string name="websiteLabelsGroup" msgid="4202998982804009261">"Web sitesi"</string>
+    <string name="eventLabelsGroup" msgid="3695433812142818803">"Etkinlikler"</string>
+    <string name="relationLabelsGroup" msgid="1854373894284572781">"liki"</string>
+    <string name="groupsLabel" msgid="8573535366319059326">"Gruplar"</string>
+    <!-- Motorola qhpn87 <string name="dialog_new_contact_account" msgid="9044704073286262197">Motorola Localization change to Google string</string> -->
+    <string name="dialog_new_contact_account" msgid="9044704073286262197">"Kiiyi u hesapta olutur"</string>
+    <!-- Motorola kqvw87 <string name="dialog_new_group_account" msgid="2318032089273496830">Motorola Localization change to Google string</string> -->
+    <string name="dialog_new_group_account" msgid="2318032089273496830">"Grubu u hesapta olutur"</string>
+    <string name="menu_sync_remove" msgid="3266725887008450161">"Senkronize grubu kaldr"</string>
+    <string name="dialog_sync_add" msgid="8267045393119375803">"Senk. grup ekle"</string>
+    <string name="display_more_groups" msgid="2682547080423434170">"Dier gruplar..."</string>
+    <!-- Motorola qhpn87 <string name="display_ungrouped">Motorola Localization change to Google string</string> -->
+    <string name="display_ungrouped">"Dier tm kiiler"</string>
+    <!-- Motorola qhpn87 <string name="display_all_contacts">Motorola Localization change to Google string</string> -->
+    <string name="display_all_contacts">"Tm kiiler"</string>
+    <!-- Motorola qhpn87 <string name="display_warn_remove_ungrouped">Motorola Localization change to Google string</string> -->
+    <string name="display_warn_remove_ungrouped">"\"<xliff:g example="Starred" id="group">%s</xliff:g>\" esini senkronizasyondan kaldrmak, gruplandrlmam tm kiileri de senkronizasyondan kaldrr."</string>
+    <string name="account_phone" product="tablet" msgid="7946049152658522054">"Yalnzca tablette, senkronize deil"</string>
+    <!-- Motorola kqvw87 <string name="account_phone" product="default" msgid="3682950835276226870">Motorola Localization change to Google string</string> -->
+    <string name="account_phone" product="default" msgid="3682950835276226870">"Yalnzca tel. (senk. yok)"</string>
+    <!-- Motorola qhpn87 <string name="call_custom" msgid="7756571794763171802">Motorola Localization change to Google string</string> -->
+    <string name="call_custom" msgid="7756571794763171802">"ar yap (<xliff:g id="CUSTOM">%s</xliff:g>)"</string>
+    <string name="call_home" msgid="1990519474420545392">"ar yap (ev)"</string>
+    <string name="call_mobile" msgid="7502236805487609178">"ar yap (mobil)"</string>
+    <string name="call_work" msgid="5328785911463744028">"ar yap (i)"</string>
+    <string name="call_fax_work" msgid="7467763592359059243">"ar yap (i faks)"</string>
+    <string name="call_fax_home" msgid="8342175628887571876">"ar yap (ev faks)"</string>
+    <string name="call_pager" msgid="9003902812293983281">"ar yap (ar cihaz)"</string>
+    <!-- Motorola qhpn87 <string name="call_other" msgid="8563753966926932052">Motorola Localization change to Google string</string> -->
+    <string name="call_other" msgid="8563753966926932052">"ar yap"</string>
+    <string name="call_callback" msgid="1910165691349426858">"ar yap (geri arama)"</string>
+    <string name="call_car" msgid="3280537320306436445">"ar yap (ara)"</string>
+    <string name="call_company_main" msgid="6105120947138711257">"ar yap (irket ana hatt)"</string>
+    <string name="call_isdn" msgid="1541590690193403411">"ar yap (ISDN)"</string>
+    <string name="call_main" msgid="6082900571803441339">"ar yap (ana hat)"</string>
+    <!-- Motorola qhpn87 <string name="call_other_fax" msgid="5745314124619636674">Motorola Localization change to Google string</string> -->
+    <string name="call_other_fax" msgid="5745314124619636674">"ar yap (Faks)"</string>
+    <string name="call_radio" msgid="8296755876398357063">"ar yap (telsiz)"</string>
+    <string name="call_telex" msgid="2223170774548648114">"ar yap (teleks)"</string>
+    <string name="call_tty_tdd" msgid="8951266948204379604">"ar yap (TTY/TDD)"</string>
+    <string name="call_work_mobile" msgid="8707874281430105394">"ar yap (i cep telefonu)"</string>
+    <string name="call_work_pager" msgid="3419348514157949008">"ar yap (i ar cihaz)"</string>
+    <string name="call_assistant" msgid="2141641383068514308">"ar: <xliff:g id="ASSISTANT">%s</xliff:g>"</string>
+    <string name="call_mms" msgid="6274041545876221437">"ar yap (MMS)"</string>
+    <!-- Motorola qhpn87 <string name="sms_custom" msgid="5932736853732191825">Motorola Localization change to Google string</string> -->
+    <string name="sms_custom" msgid="5932736853732191825">"SMS gnder (<xliff:g id="CUSTOM">%s</xliff:g>)"</string>
+    <string name="sms_home" msgid="7524332261493162995">"SMS gnder (ev)"</string>
+    <string name="sms_mobile" msgid="5200107250451030769">"SMS gnder (mobil)"</string>
+    <string name="sms_work" msgid="2269624156655267740">"SMS gnder (i)"</string>
+    <string name="sms_fax_work" msgid="8028189067816907075">"SMS gnder (i faks)"</string>
+    <string name="sms_fax_home" msgid="9204042076306809634">"SMS gnder (ev faks)"</string>
+    <string name="sms_pager" msgid="7730404569637015192">"SMS gnder (ar cihaz)"</string>
+    <!-- Motorola qhpn87 <string name="sms_other" msgid="806127844607642331">Motorola Localization change to Google string</string> -->
+    <string name="sms_other" msgid="806127844607642331">"SMS gnder"</string>
+    <string name="sms_callback" msgid="5004824430094288752">"SMS Gnder (geri arama)"</string>
+    <string name="sms_car" msgid="7444227058437359641">"SMS gnder (ara)"</string>
+    <string name="sms_company_main" msgid="118970873419678087">"SMS gnder (irket merkezi)"</string>
+    <string name="sms_isdn" msgid="8153785037515047845">"SMS Gnder (ISDN)"</string>
+    <string name="sms_main" msgid="8621625784504541679">"SMS Gnder (ana hat)"</string>
+    <string name="sms_other_fax" msgid="3888842199855843152">"Faksa SMS gnder"</string>
+    <string name="sms_radio" msgid="3329166673433967820">"SMS gnder (telsiz)"</string>
+    <string name="sms_telex" msgid="9034802430065267848">"SMS Gnder (teleks)"</string>
+    <string name="sms_tty_tdd" msgid="6782284969132531532">"SMS Gnder (TTY/TDD)"</string>
+    <!-- Motorola qhpn87 <string name="sms_work_mobile" msgid="2459939960512702560">Motorola Localization change to Google string</string> -->
+    <string name="sms_work_mobile" msgid="2459939960512702560">"SMS Gnder (i cep telefonu)"</string>
+    <!-- Motorola qhpn87 <string name="sms_work_pager" msgid="5566924423316960597">Motorola Localization change to Google string</string> -->
+    <string name="sms_work_pager" msgid="5566924423316960597">"SMS Gnder (i ar cihaz)"</string>
+    <string name="sms_assistant" msgid="2773424339923116234">"SMS Gnder (<xliff:g id="ASSISTANT">%s</xliff:g>)"</string>
+    <string name="sms_mms" msgid="4069352461380762677">"SMS gnder (MMS)"</string>
+    <string name="sms" msgid="1756857139634224222">"Ksa mesaj"</string>
+    <string name="email_home" msgid="8573740658148184279">"E-posta gnder (ev)"</string>
+    <string name="email_mobile" msgid="2042889209787989814">"E-posta gnder (mobil)"</string>
+    <string name="email_work" msgid="2807430017302722689">"E-posta gnder (i)"</string>
+    <string name="email_other" msgid="3454004077967657109">"E-posta"</string>
+    <string name="email_custom" msgid="7548003991586214105">"E-posta <xliff:g id="CUSTOM">%s</xliff:g>"</string>
+    <string name="email" msgid="5668400997660065897">"E-posta"</string>
+    <string name="map_home" msgid="1243547733423343982">"Ev adresini grntle"</string>
+    <string name="map_work" msgid="1360474076921878088">" adresini grntle"</string>
+    <string name="map_other" msgid="3817820803587012641">"Adresi grntle"</string>
+    <string name="map_custom" msgid="6184363799976265281">"<xliff:g id="CUSTOM">%s</xliff:g> adresini grntle"</string>
+    <string name="chat_aim" msgid="2588492205291249142">"AIM kullanarak sohbet et"</string>
+    <string name="chat_msn" msgid="8041633440091073484">"Windows Live kullanarak sohbet et"</string>
+    <string name="chat_yahoo" msgid="6629211142719943666">"Yahoo kullanarak sohbet et"</string>
+    <string name="chat_skype" msgid="1210045020427480566">"Skype kullanarak sohbet et"</string>
+    <string name="chat_qq" msgid="4294637812847719693">"QQ kullanarak sohbet et"</string>
+    <string name="chat_gtalk" msgid="981575737258117697">"Google Talk kullanarak sohbet et"</string>
+    <string name="chat_icq" msgid="8438405386153745775">"ICQ kullanarak sohbet et"</string>
+    <string name="chat_jabber" msgid="7561444230307829609">"Jabber kullanarak sohbet et"</string>
+    <string name="chat" msgid="9025361898797412245">"Sohbet"</string>
+    <!-- Motorola qhpn87 <string name="audio_chat">Motorola Localization change to Google string</string> -->
+    <string name="audio_chat">"Sesli sohbet"</string>
+    <string name="video_chat" msgid="1872255818640336072">"Grntl sohbet"</string>
+    <string name="postal_address" msgid="8765560217149624536">"Adres"</string>
+    <string name="postal_street" msgid="8133143961580058972">"Cadde"</string>
+    <string name="postal_pobox" msgid="4431938829180269821">"Posta kutusu"</string>
+    <string name="postal_neighborhood" msgid="1450783874558956739">"Mahalle"</string>
+    <string name="postal_city" msgid="6597491300084895548">"ehir"</string>
+    <string name="postal_region" msgid="6045263193478437672">"Eyalet"</string>
+    <string name="postal_postcode" msgid="572136414136673751">"Alan kodu"</string>
+    <string name="postal_country" msgid="7638264508416368690">"lke"</string>
+    <string name="full_name" msgid="6602579550613988977">"Ad"</string>
+    <string name="name_given" msgid="1687286314106019813">"Ad"</string>
+    <string name="name_family" msgid="3416695586119999058">"Soyad"</string>
+    <string name="name_prefix" msgid="59756378548779822">"Ad neki"</string>
+    <string name="name_middle" msgid="8467433655992690326">"kinci ad"</string>
+    <string name="name_suffix" msgid="3855278445375651441">"Ad soneki"</string>
+    <!-- Motorola qhpn87 <string name="name_phonetic_given" msgid="6853570431394449191">Motorola Localization change to Google string</string> -->
+    <string name="name_phonetic_given" msgid="6853570431394449191">"Fonetik ad"</string>
+    <string name="name_phonetic_middle" msgid="8643721493320405200">"Fonetik ikinci ad"</string>
+    <string name="name_phonetic_family" msgid="462095502140180305">"Fonetik soyad"</string>
+    <string name="name_phonetic" msgid="4259595234312430484">"Fonetik ad"</string>
+    <string name="connections" msgid="8098440723172028350">"Balantlar"</string>
+    <string name="add_connection_button" msgid="4861308615789601727">"Balant ekle"</string>
+    <!-- Motorola qhpn87 <string name="recent" msgid="2659189233141493004">Motorola Localization change to Google string</string> -->
+    <string name="recent" msgid="2659189233141493004">"En Son Grevler"</string>
+    <!-- Motorola qhpn87 <string name="recent_updates">Motorola Localization change to Google string</string> -->
+    <string name="recent_updates">"En son gncellemeler"</string>
+    <!-- Motorola qhpn87 <string name="account_type_format" msgid="718948015590343010">Motorola Localization change to Google string</string> -->
+    <string name="account_type_format" msgid="718948015590343010">"<xliff:g id="SOURCE">%1$s</xliff:g> kiisi"</string>
+    <string name="from_account_format">"<xliff:g example="user@gmail.com" id="source">%1$s</xliff:g>"</string>
+    <string name="use_photo_as_primary" msgid="8807110122951157246">"Bu fotoraf kullan"</string>
+    <!-- Motorola qhpn87 <string name="contact_read_only">Motorola Localization change to Google string</string> -->
+    <string name="contact_read_only">"Bu uygulamadan dzenlenemez."</string>
+    <!-- Motorola qhpn87 <string name="no_contact_details">Motorola Localization change to Google string</string> -->
+    <string name="no_contact_details">"Bu kii iin ek bilgi yok."</string>
+    <!-- Motorola qhpn87 <string name="group_read_only">Motorola Localization change to Google string</string> -->
+    <string name="group_read_only">"Bu cihazda dzenlenemez."</string>
+    <!-- Motorola qhpn87 <string name="display_options_sort_list_by" msgid="6080091755852211076">Motorola Localization change to Google string</string> -->
+    <string name="display_options_sort_list_by" msgid="6080091755852211076">"Liste sralama lt"</string>
+    <string name="display_options_sort_by_given_name" msgid="184916793466387067">"Ad"</string>
+    <string name="display_options_sort_by_family_name" msgid="7857986975275712622">"Soyad"</string>
+    <!-- Motorola qhpn87 <string name="display_options_view_names_as" msgid="18022868169627979">Motorola Localization change to Google string</string> -->
+    <string name="display_options_view_names_as" msgid="18022868169627979">"Kii adlarn grntleme ekli"</string>
+    <string name="display_options_view_given_name_first" msgid="6968288511197363292">"nce ad"</string>
+    <string name="display_options_view_family_name_first" msgid="1447288164951453714">"nce soyad"</string>
+    <string name="search_bar_hint" msgid="1012756309632856553">"Kiileri ara"</string>
+    <string name="take_photo" msgid="7496128293167402354">"Fotoraf ek"</string>
+    <string name="take_new_photo" msgid="7341354729436576304">"Yeni fotoraf ek"</string>
+    <!-- Motorola qhpn87 <string name="pick_photo">Motorola Localization change to Google string</string> -->
+    <string name="pick_photo">"Galeri\'den fotoraf se"</string>
+    <string name="pick_new_photo" msgid="7962368009197147617">"Galeri\'den yeni fotoraf se"</string>
+    <string name="locale_change_in_progress" msgid="7583992153091537467">"Kii listesi, dil deiikliini yanstmak zere gncelleniyor."</string>
+    <string name="upgrade_in_progress" msgid="474511436863451061">"Kii listesi gncelleniyor."</string>
+    <!-- Motorola qhpn87 <string name="upgrade_out_of_memory">Motorola Localization change to Google string</string> -->
+    <string name="upgrade_out_of_memory">"Kiilerin yeni srme geirilmesi devam ediyor. \n\nYeni srme geirme ilemi yaklak <xliff:g id="size_in_megabytes">%s</xliff:g>MB dahili depolama alan gerektirir.\n\nAadaki seeneklerden birini belirleyin:"</string>
+    <string name="upgrade_out_of_memory_uninstall" msgid="1721798828992091432">"Baz uygulamalar kaldrn"</string>
+    <string name="upgrade_out_of_memory_retry" msgid="8431289830472724609">"Yeni srme gemeyi tekrar dene"</string>
+    <!-- Motorola qhpn87 <string name="search_results_searching">Motorola Localization change to Google string</string> -->
+    <string name="search_results_searching">"Aryor\u2026"</string>
+    <string name="menu_display_selected" msgid="6470001164297969034">"Seileni gster"</string>
+    <string name="menu_display_all" msgid="8887488642609786198">"Tmn gster"</string>
+    <string name="menu_select_all" msgid="621719255150713545">"Tmn se"</string>
+    <!-- Motorola kqvw87 <string name="menu_select_none" msgid="7093222469852132345">Motorola Localization change to Google string</string> -->
+    <string name="menu_select_none" msgid="7093222469852132345">"Tm seimleri kaldr"</string>
+    <string name="no_contacts_selected" msgid="5877803471037324613">"Seili kii yok."</string>
+    <string name="add_field" msgid="2384260056674995230">"Baka alan ekle"</string>
+    <string name="add_new_entry_for_section" msgid="5223080690667565044">"Yeni ekle"</string>
+    <string name="add_organization" msgid="7311893231158291197">"Kurulu ekle"</string>
+    <string name="event_edit_field_hint_text" msgid="5794424930242630477">"Tarih"</string>
+    <string name="group_edit_field_hint_text" msgid="3966441850870457808">"Grup ad"</string>
+    <string name="contact_status_update_attribution" msgid="752179367353018597">"<xliff:g id="SOURCE">%1$s</xliff:g> araclyla"</string>
+    <string name="contact_status_update_attribution_with_date" msgid="7358045508107825068">"<xliff:g id="SOURCE">%2$s</xliff:g> zerinden u saatte: <xliff:g id="DATE">%1$s</xliff:g>"</string>
+    <string name="description_star" msgid="2605854427360036550">"favori"</string>
+    <string name="edit_contact" msgid="7529281274005689512">"Kiiyi dzenle"</string>
+  <plurals name="merge_info">
+    <item quantity="one" msgid="148365587896371969">"birletirilmemi"</item>
+    <item quantity="other" msgid="425683718017380845">"<xliff:g id="COUNT">%0$d</xliff:g> kaynaktan birletirildi"</item>
+  </plurals>
+    <string name="local_invisible_directory" msgid="6046691709127661065">"Dier"</string>
+    <string name="aggregation_suggestion_join_dialog_title" msgid="5276699501316246253">"Kiileri birletir"</string>
+    <string name="aggregation_suggestion_join_dialog_message" msgid="3842757977671434836">"Mevcut kii, seili kiiyle birletirilsin mi?"</string>
+    <string name="aggregation_suggestion_edit_dialog_title" msgid="1064042382692091314">"Seili kiileri dzenle"</string>
+    <string name="aggregation_suggestion_edit_dialog_message" msgid="6549585283910518095">"Seili kiiyi dzenlemeye geilsin mi? imdiye kadar girdiiniz bilgiler kopyalanacak."</string>
+    <!-- Motorola qhpn87 <string name="menu_copyContact">Motorola Localization change to Google string</string> -->
+    <string name="menu_copyContact">"Kiilerime Kopyala"</string>
+    <!-- Motorola qhpn87 <string name="add_to_my_contacts">Motorola Localization change to Google string</string> -->
+    <string name="add_to_my_contacts">"Kiilerime Ekle"</string>
+    <string name="contact_directory_description" msgid="683398073603909119">"<xliff:g id="TYPE">%1$s</xliff:g> dizini"</string>
+    <string name="directory_search_label" msgid="1887759056597975053">"Dizin"</string>
+    <string name="local_search_label" msgid="2551177578246113614">"Tm kiiler"</string>
+    <!-- Motorola qhpn87 <string name="toast_making_personal_copy">Motorola Localization change to Google string</string> -->
+    <string name="toast_making_personal_copy">"Kiisel kopya oluturuluyor\u2026"</string>
+    <string name="list_filter_all_accounts" msgid="8908683398914322369">"Tm kiiler"</string>
+    <string name="list_filter_all_starred" msgid="5031734941601931356">"Yldzl"</string>
+    <string name="list_filter_custom" msgid="8910173055702057002">"zel"</string>
+    <!-- Motorola qhpn87 <string name="list_filter_customize">Motorola Localization change to Google string</string> -->
+    <string name="list_filter_customize">"zelletir"</string>
+    <string name="list_filter_phones" msgid="735313795643493365">"Telefon numaras olan tm kiiler"</string>
+    <string name="list_filter_single" msgid="5871400283515893087">"Kii"</string>
+    <string name="custom_list_filter" msgid="7836035257402013957">"zel grnm tanmla"</string>
+    <!-- Motorola qhpn87 <string name="contact_list_loading">Motorola Localization change to Google string</string> -->
+    <string name="contact_list_loading">"Ykleniyor\u2026"</string>
+    <string name="activity_title_settings" msgid="5464130076132770781">"Ayarlar"</string>
+    <string name="activity_title_contacts_filter" msgid="8275542497615516969">"Grntlenecek kiiler"</string>
+    <string name="menu_settings" msgid="377929915873428211">"Ayarlar"</string>
+    <string name="preference_displayOptions" msgid="1341720270148252393">"Grntleme seenekleri"</string>
+    <string name="organization_company_and_title" msgid="6718207751363732025">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="hint_findContacts" msgid="1808681193458772072">"Kiileri bul"</string>
+    <string name="non_phone_caption" msgid="1541655052330027380">"Telefon numaras"</string>
+    <string name="non_phone_add_to_contacts" msgid="6590985286250471169">"Kiilere ekle"</string>
+    <string name="activity_title_confirm_add_detail" msgid="4065089866210730616">"Kiiye ekle"</string>
+    <string name="non_phone_close" msgid="7608506439725515667">"Kapat"</string>
+    <string name="widget_name_and_phonetic" msgid="8739586586600099979">"<xliff:g id="DISPLAY_NAME">%1$s</xliff:g> (<xliff:g id="PHONETIC_NAME">%2$s</xliff:g>)"</string>
+    <string name="date_year_toggle" msgid="7356532842767854606">"Yl girin"</string>
+    <string name="social_widget_label" msgid="6378905543028924592">"Kii"</string>
+    <!-- Motorola qhpn87 <string name="social_widget_loading">Motorola Localization change to Google string</string> -->
+    <string name="social_widget_loading">"Ykleniyor\u2026"</string>
+    <string name="contacts_unavailable_create_contact" msgid="7014525713871959208">"Yeni kii olutur"</string>
+    <string name="contacts_unavailable_add_account" msgid="7911101713860139754">"Bir hesapta oturum an"</string>
+    <string name="contacts_unavailable_import_contacts" msgid="4456440183590517471">"Bir dosyadaki kiileri ie aktar"</string>
+    <string name="create_group_dialog_title" msgid="6874527142828424475">"Yeni grup olutur"</string>
+    <string name="create_group_item_label" msgid="5218022006186243310">"[Yeni grup olutur]"</string>
+    <string name="delete_group_dialog_title" msgid="7368429698398624427">"Grubu sil"</string>
+  <plurals name="num_groups_in_account">
+    <item quantity="one" msgid="2944819210288517794">"1 grup"</item>
+    <item quantity="other" msgid="1276758425904917367">"<xliff:g id="COUNT">%0$d</xliff:g> grup"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="delete_group_dialog_message">Motorola Localization change to Google string</string> -->
+    <string name="delete_group_dialog_message">"\"<xliff:g example="Friends" id="group_label">%1$s</xliff:g>\" grubu silinsin mi? (Kiiler silinmez.)"</string>
+  <plurals name="num_contacts_in_group">
+    <item quantity="one" msgid="1352418549951013448">"<xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g> trnde <xliff:g id="COUNT_0">%1$d</xliff:g> kii"</item>
+    <item quantity="other" msgid="8146027769011086349">"<xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g> trnde <xliff:g id="COUNT_0">%1$d</xliff:g> kii"</item>
+  </plurals>
+  <plurals name="group_list_num_contacts_in_group">
+    <item quantity="one" msgid="3323065321661972446">"<xliff:g id="COUNT">%1$d</xliff:g> kii"</item>
+    <item quantity="other" msgid="6251996206137048525">"<xliff:g id="COUNT">%1$d</xliff:g> kullanc"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="toast_join_with_empty_contact">Motorola Localization change to Google string</string> -->
+    <string name="toast_join_with_empty_contact">"Baka biriyle birletirmeden nce kii adn yazn."</string>
+    <string name="copy_text" msgid="3257145021583508761">"Panoya kopyala"</string>
+    <string name="set_default" msgid="4417505153468300351">"Varsaylan olarak ayarla"</string>
+    <string name="clear_default" msgid="7193185801596678067">"Varsaylanlar temizle"</string>
+    <string name="toast_text_copied" msgid="5143776250008541719">"Metin kopyaland"</string>
+    <string name="cancel_confirmation_dialog_title" msgid="3950463632415908534">"Deiiklikleri sil"</string>
+    <!-- Motorola qhpn87 <string name="cancel_confirmation_dialog_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_confirmation_dialog_message">"Deiiklikleriniz silinsin mi?"</string>
+    <string name="call_type_and_date" msgid="1766269584078149149">"<xliff:g id="CALL_TYPE">%1$s</xliff:g> <xliff:g id="CALL_SHORT_DATE">%2$s</xliff:g>"</string>
+    <string name="profile_display_name" msgid="4127389543625918771">"Profilimi ayarla"</string>
+    <string name="ice_display_title">ACL</string>
+    <string name="enter_contact_name" msgid="1738391320566349924">"Kiinin adn yazn"</string>
+    <!-- Motorola kqvw87 <string name="view_updates_from_group" msgid="1782685984905600034">Motorola Localization change to Google string</string> -->
+    <string name="view_updates_from_group" msgid="1782685984905600034">"Gncellemeleri gster"</string>
+  <plurals name="notification_voicemail_title">
+    <item quantity="one" msgid="1746619685488504230">"Sesli mesaj"</item>
+    <item quantity="other" msgid="5513481419205061254">"<xliff:g id="COUNT">%1$d</xliff:g> Sesli mesaj"</item>
+  </plurals>
+    <string name="notification_voicemail_callers_list" msgid="1153954809339404149">"<xliff:g id="NEWER_CALLERS">%1$s</xliff:g>, <xliff:g id="OLDER_CALLER">%2$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="notification_new_voicemail_ticker" msgid="895342132049452081">Motorola Localization change to Google string</string> -->
+    <string name="notification_new_voicemail_ticker" msgid="895342132049452081">"Yeni sesli msj, gnderen: <xliff:g id="CALLER">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="voicemail_playback_error" msgid="1811242131549854624">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_playback_error" msgid="1811242131549854624">"Sesli mesaj dinletilemedi."</string>
+    <string name="voicemail_buffering" msgid="738287747618697097">"Arabellee alnyor..."</string>
+    <!-- Motorola kqvw87 <string name="voicemail_fetching_content" msgid="877911315738258780">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_fetching_content" msgid="877911315738258780">"Sesli mesaj alnyor..."</string>
+    <!-- Motorola kqvw87 <string name="voicemail_fetching_timout" msgid="6691792377574905201">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_fetching_timout" msgid="6691792377574905201">"Sesli mesaj alnamad."</string>
+    <string name="call_log_new_header" msgid="846546437517724715">"Yeni"</string>
+    <string name="call_log_old_header" msgid="6262205894314263629">"Daha eski"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_voicemail_not_available">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_voicemail_not_available">"Sesli mesaj sunucusuna balanlamyor."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_messages_waiting">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_messages_waiting">"Sesli msj sunucusuna balanlamyor. Yeni sesli msjlar bekliyor."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_configure_voicemail">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_configure_voicemail">"Sesli mesajnz ayarlayn."</string>
+    <string name="voicemail_status_audio_not_available" msgid="3369618334553341626">"Ses kullanlamyor."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_action_configure">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_action_configure">"Ayarla"</string>
+    <!-- Motorola kqvw87 <string name="voicemail_status_action_call_server" msgid="1824816252288551794">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_action_call_server" msgid="1824816252288551794">"Sesli mesaj ara"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_slowest">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_slowest">"En yava"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_slower">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_slower">"Yava"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_normal">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_normal">"Normal"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_faster">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_faster">"Hzl"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_fastest">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_fastest">"En hzl"</string>
+    <string name="call_log_item_count_and_date" msgid="7641933305703520787">"(<xliff:g id="COUNT">%1$d</xliff:g>) <xliff:g id="DATE">%2$s</xliff:g>"</string>
+    <!-- Motorola qhpn87 <string name="group_name_hint">Motorola Localization change to Google string</string> -->
+    <string name="group_name_hint">"Grubun ad"</string>
+    <string name="nfc_vcard_file_name" msgid="2823095213265993609">"Kii NFC ile alnd"</string>
+    <!-- Motorola kqvw87 <string name="menu_show_voicemails_only" msgid="1898421289561435703">Motorola Localization change to Google string</string> -->
+    <string name="menu_show_voicemails_only" msgid="1898421289561435703">"Yalnz sesli mesajlar gster"</string>
+    <string name="menu_show_all_calls" msgid="7560347482073345885">"Tm arlar gster"</string>
+    <!-- Motorola kqvw87 <string name="status_available" msgid="5586870015822828392">Motorola Localization change to Google string</string> -->
+    <string name="status_available" msgid="5586870015822828392">"Msait"</string>
+    <string name="status_away" msgid="1838861100379804730">"Darda"</string>
+    <string name="status_busy" msgid="9147992455450257136">"Megul"</string>
+    <!-- Motorola kqvw87 <string name="description_call_log_play_button" msgid="651182125650429846">Motorola Localization change to Google string</string> -->
+    <string name="description_call_log_play_button" msgid="651182125650429846">"Sesli mesaj dinlet"</string>
+    <string name="description_call_log_incoming_call" msgid="4485427487637250143">"Gelen ar"</string>
+    <string name="description_call_log_outgoing_call" msgid="604831756853471658">"Giden ar"</string>
+    <string name="description_call_log_missed_call" msgid="2242805209983708825">"Cevapsz ar"</string>
+    <string name="description_call_log_voicemail" msgid="4600798771975158948">"Sesli mesaj"</string>
+    <string name="description_add_contact" msgid="3103414772502485851">"Kii ekle"</string>
+    <string name="description_view_contact" msgid="5205669345700598415">"Kiiyi grntle: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="description_call" msgid="3443678121983852666">Motorola Localization change to Google string</string> -->
+    <string name="description_call" msgid="3443678121983852666">"ar yap: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="description_send_text_message" msgid="7803126439934046891">Motorola Localization change to Google string</string> -->
+    <string name="description_send_text_message" msgid="7803126439934046891">"Ksa mesaj gnder: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="description_call_log_unheard_voicemail" msgid="118101684236996786">"Dinlenilmemi sesli mesaj"</string>
+    <!-- Motorola kqvw87 <string name="description_send_message" msgid="6046623392322890962">Motorola Localization change to Google string</string> -->
+    <string name="description_send_message" msgid="6046623392322890962">"Mesaj gnder: <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="description_dial_phone_number" msgid="8831647331642648637">"<xliff:g id="NAME">%1$s</xliff:g> iin evrilecek telefon numaras"</string>
+    <string name="description_quick_contact_for" msgid="6737516415168327789">"<xliff:g id="NAME">%1$s</xliff:g> iin hzl kii"</string>
+    <string name="call_log_empty_gecode" msgid="5588904744812100846">"-"</string>
+    <string name="user_profile_contacts_list_header" msgid="5582421742835006940">"Ben"</string>
+    <string name="local_profile_title" msgid="2021416826991393684">"Yerel profilim"</string>
+    <string name="external_profile_title" msgid="8034998767621359438">"<xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g> profilim"</string>
+    <string name="toast_displaying_all_contacts" msgid="2737388783898593875">"Tm ierik grntleniyor"</string>
+    <!-- Motorola kqvw87 <string name="no_account_prompt" msgid="7061052512446855192">Motorola Localization change to Google string</string> -->
+    <string name="no_account_prompt" msgid="7061052512446855192">"Kii Arama uygulamas bir Google hesabyla daha iyi alr."\n\n" Kii Arama\'ya Herhangi bir taraycdan eriin."\n" Kiilerinizi gvenli bir ekilde yedekleyin."</string>
+    <string name="generic_no_account_prompt" msgid="7218827704367325460">"Telefonunuzu kaybetseniz dahi kiilerinizi gvenle saklayn: evrimii bir hizmetle senkronize edin."</string>
+    <string name="generic_no_account_prompt_title" msgid="753783911899054860">"Hesap ekleyin"</string>
+    <string name="contact_editor_prompt_zero_accounts" msgid="1785345895691886499">"Yeni kiiniz yedeklenmeyecek. Kiileri evrimii olarak yedekleyen bir hesap eklensin mi?"</string>
+    <string name="contact_editor_prompt_one_account" msgid="8669032699767375976">"Yeni kiiniz <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g> ile senkronize edilecek."</string>
+    <string name="contact_editor_prompt_multiple_accounts" msgid="611828200100438242">"Yeni kiinizi aadaki hesaplardan biriyle senkronize edebilirsiniz. Hangisini kullanmak istersiniz?"</string>
+    <string name="keep_local" msgid="1258761699192993322">"Yerel olarak sakla"</string>
+    <string name="add_account" msgid="8201790677994503186">"Hesap ekle"</string>
+    <string name="add_new_account" msgid="5748627740680940264">"Yeni hesap ekle"</string>
+    <string name="dialog_phone_call_prohibited_title" msgid="2111395432187079579">"ar yaplamad"</string>
+    <!-- Motorola qhpn87 <string name="dialog_voicemail_not_ready_title" msgid="7258109862329777060">Motorola Localization change to Google string</string> -->
+    <string name="dialog_voicemail_not_ready_title" msgid="7258109862329777060">"Sesli mesaj numaras yok"</string>
+    <!-- Motorola qhpn87 <string name="dialog_voicemail_not_ready_message">Motorola Localization change to Google string</string> -->
+    <string name="dialog_voicemail_not_ready_message">"Sesli mesaj ayarlamak iin Men &gt; Ayarlar seeneine gidin."</string>
+    <string name="option_select_all">"Tmn se"</string>
+    <string name="option_unselect_all">Tm seimleri kaldr</string>
+    <string name="option_share">Payla</string>
+    <string name="toast_please_wait">Ltfen Bekleyin...</string>
+    <string name="preference_contactstorage">Kii deposu</string>
+    <string name="contact_storage_account_to_store">Kii depolama hesab</string>
+    <string name="contact_storage_choose_account">Yeni kiileri depolamak iin bir hesap sein</string>
+    <string name="contact_storage_remember_choice">"Bu tercihi anmsa"</string>
+    <string name="contact_storage_remember_choice_summary">Bu seenei Kii ayarlar -&gt; Kii deposu\'nda deitirebilirsiniz</string>
+    <string name="add_favorite_text">Favoriler Widget\'nza eklemek iin bir kiiyi sein ve sa st kedeki yldza dokunun.</string>
+    <string name="do_not_remind_again">Bir daha hatrlatma</string>
+    <string name="previewVCardDesription">vCard\' Grntle</string>
+    <string name="importVCardDesription">vCard\' e Aktar</string>
+    <string name="reading_vcard_message">vCard dosyas okunuyor</string>
+    <string name="not_able_view_save_vcf">vCard dosyas okunurken hata olutu. VCard grntlenemiyor veya kaydedilemiyor</string>
+    <string name="menu_back">"Geri"</string>
+    <string name="menu_next">"leri"</string>
+    <string name="previewVCardTitle">vCard ayrntlar</string>
+    <string name="menu_save">"Kaydet"</string>
+    <string name="menu_share_contacts">Kiileri payla</string>
+    <string name="share_contacts_error">Kiiler paylalamyor.</string>
+    <string name="no_account_dispaly">Uygun hesap yok. Kii(ler) yalnzca tablette depolanacak ve senkronize edilmeyecek.</string>
+    <string name="menu_launch_dialpad">eviriciyi Balat</string>
+    <string name="speedDial_setup">Hzl arama ayar</string>
+    <string name="speedDialPickerLabel">Hzl arama ekle</string>
+    <string name="speedial_provider_label">Hzl Arama</string>
+    <string name="shortcutDialerApp">Telefon</string>
+    <string name="cancelButton">ptal</string>
+    <string name="menu_addToSpeedDial">Hzl arama ekle</string>
+    <string name="menu_deleteFromSpeedDial">Hzl aramadan kaldr</string>
+    <string name="ok">"Tamam"</string>
+    <string name="speedDial_add">"Ekle"</string>
+    <string name="speedDialAssignSpeedDial">Hzl arama ata</string>
+    <string name="speedDialAssignmentFromDialer">%1$s numaraya hzl arama kiisi eklemek istiyor musunuz?</string>
+    <string name="speedDialVoiceDialRewriteMessage">Sesli mesaj numaranz hzl arama listesinden deitiremezsiniz</string>
+    <string name="speedDialAddAvailable">Hzl arama ekle</string>
+    <string name="speedDialSpinner">Hzl arama numaras</string>
+    <string name="speedDial_numberAlreadyExists">\"%1$s\" numaral telefon Hzl arama listesinde zaten var.</string>
+    <string name="speedDialRewrite">%1$s numaral hzl aramay %2$s iin yeniden atamak zeresiniz</string>
+    <string name="speedDialOverwrite">"zerine yaz"</string>
+    <string name="speedDial_addConfirmation">%1$s, %2$s numaral hzl aramaya atand</string>
+    <string name="speedDial_deleteConfirmation">%2$s, %1$s numaral hzl aramadan silindi</string>
+    <string name="delete">Sil</string>
+    <string name="select_conversations">Se</string>
+    <!-- Motorola kqvw87 <string name="callDetailsDurationFormat" msgid="8157706382818184268">Motorola Localization change to Google string</string> -->
+    <string name="callDetailsDurationFormat"><xliff:g example="42" id="minutes">%1$s</xliff:g> %2$s <xliff:g example="28" id="seconds">%3$s</xliff:g> %4$s</string>
+    <plurals name="mins">
+        <item quantity="one">dak</item>
+        <item quantity="other">"dakika"</item>
+    </plurals>
+    <plurals name="secs">
+        <item quantity="one">san</item>
+        <item quantity="other">"saniye"</item>
+    </plurals>
+    <string name="call_log_item_count">(<xliff:g id="count">%1$d</xliff:g>) </string>
+    <string name="remember_choice">"Bu tercihi anmsa"</string>
+    <string name="cancel">ptal</string>
+    <string name="recent_calls_filter_prompt">"Gster"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_empty" msgid="247053222448663107">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_empty">Son arlar listesi bo\nimdi bir ar yapmak ister misiniz?</string>
+    <string name="missedCalls_empty">Cevapsz ar yok</string>
+    <string name="receivedCalls_empty">Gelen ar yok</string>
+    <string name="outgoingCalls_empty">Giden ar yok</string>
+    <string name="speedDialRewriteMessage">Numaranz hzl arama listesinden deitiremezsiniz</string>
+    <string name="call">ar yap (%1$s)</string>
+    <string name="task_failed">Grev baarsz oldu</string>
+    <string name="failed_to_add_tasks">%1$s grevi Grevler uygulamasna eklenemedi.</string>
+    <string name="add_to_the_tasks_application">Geri ara %1$s grevi Grevler uygulamasna eklendi.</string>
+    <string name="menu_addcallbackremindertotasks">Grevlere ekle</string>
+    <string name="speedDial_availableSlot">"Msait"</string>
+    <string name="sw_version_dialog_title">Yazlm srm</string>
+    <string name="hw_version_dialog_title">Donanm srm</string>
+    <string name="voice_dial">Sesli evirici</string>
+    <string name="search_contacts">"Kiileri ara"</string>
+    <string name="addToContactsTitle">KLERE EKLE</string>
+    <string name="addToContactsDialog">\"%1$s\" numaral telefonu mevcut veya yeni bir kiiye ekle.</string>
+    <string name="newContact">"Yeni"</string>
+    <string name="existingContact">Mevcut</string>
+    <string name="dp_star">*</string>
+    <string name="dp_pound">#</string>
+    <string name="dp_two_alpha">"ABC"</string>
+    <string name="dp_three_alpha">DEF</string>
+    <string name="dp_four_alpha">GHI</string>
+    <string name="dp_five_alpha">JKL</string>
+    <string name="dp_six_alpha">MNO</string>
+    <string name="dp_seven_alpha">PQRS</string>
+    <string name="dp_eight_alpha">TUV</string>
+    <string name="dp_nine_alpha">WXYZ</string>
+    <string name="dp_zero_alpha">+</string>
+    <string name="shortcutDialer">"evirici"</string>
+    <string name="shortcutRecCallsList">Son arlar Listesi</string>
+    <string name="ad_assisted_dialing">Destekli evirme</string>
+    <string name="voicemail_choose_type_title">Sesli Mesaj Sein</string>
+    <string name="visual_voicemail">Grsel Sesli Mesaj</string>
+    <string name="Data_roaming_title">"Veri dolam"</string>
+    <string name="Data_roaming_msg">Grsel sesli mesaj kullanma nedeniyle ek cret demeniz gerekebilir.\n\nGrsel sesli mesaj m, sesli mesaj m kullanmak istiyorsunuz?</string>
+    <string name="sd_most_recent">En son</string>
+    <string name="sd_matches">eleme</string>
+    <string name="sd_match">eleme</string>
+    <string name="sd_empty_recent">Aramak iin yazn</string>
+    <string name="sd_no_result">"Eleme yok"</string>
+    <string name="recentCalls_deleteDialog">Son arlar listesi temizlensin mi?</string>
+    <string name="recentCalls_confirmdelete">"Temizle"</string>
+    <string name="message">Ksa mesaj gnder</string>
+    <string name="addtocontact">Kiiye ekle</string>
+    <string name="viewcontact">Kiiyi grntle</string>
+    <string name="editbeforecall">Aramadan nce numaray dzenle</string>
+    <string name="addtotask">Grevlere ekle</string>
+    <string name="dialerLabel">evirici</string>
+    <string name="recentCallsLabel">En Son</string>
+    <string name="callvoicemail">Ara</string>
+    <string name="phonebookLabel">Telefon Rehberi</string>
+    <string name="description_voiceCommands_button">sesli komutlar</string>
+    <string name="description_message_button">mesaj</string>
+</resources>

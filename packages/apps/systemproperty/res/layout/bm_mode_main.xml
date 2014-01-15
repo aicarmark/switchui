@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- battery information section -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="16dp"
+        android:longClickable="true" >
+
+        <!-- battery level animation -->
+
+        <FrameLayout
+            android:id="@+id/bm_batt_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/bm_batt_bg"
+                android:layout_width="97dp"
+                android:layout_height="196dp"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/bm_power_bg" />
+
+            <ImageView
+                android:id="@+id/bm_batt_percent"
+                android:layout_width="97dp"
+                android:layout_height="176dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bm_power_green" />
+
+            <ImageView
+                android:id="@+id/bm_batt_charing"
+                android:layout_width="31dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/charging" />
+        </FrameLayout>
+
+        <!-- battery text info -->
+
+        <TextView
+            android:id="@+id/bm_usage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:text="@string/str_battery_usage"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <!-- Battery usage: percent | temperature -->
+
+        <LinearLayout
+            android:id="@+id/bm_usage_group"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/bm_usage_title"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:orientation="horizontal" >
+
+            <!-- android:gravity=="left|center" -->
+
+            <TextView
+                android:id="@+id/bm_usage_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center"
+                android:text="@string/str_battery_percent"
+                android:textColor="#ffffff"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="17dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bm_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text="@string/str_battery_temperature"
+                    android:textColor="#8a8a8a"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/bm_voltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/str_battery_voltage"
+                    android:textColor="#8a8a8a"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/bm_remaining_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@+id/bm_usage_group"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:text="@string/str_battery_remaining"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/bm_remaining_time"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/bm_remaining_time_title"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:text="@string/str_battery_remaining_time"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/bm_mode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_below="@+id/bm_remaining_time"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:text="@string/str_battery_current_mode"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/bm_mode_switch_btn"
+            android:layout_width="196dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/bm_mode_title"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bm_batt_animator"
+            android:background="@drawable/bm_button_bg"
+            android:singleLine="true"
+            android:text="@string/str_battery_general_mode"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />       
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/bm_optimize_tv"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:longClickable="true"
+        android:text="@string/str_battery_mode_optimize"
+        android:textColor="#33B5E5"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/title_line" />
+         
+        <GridView
+        android:id="@+id/bm_mode_optimize_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"   
+        android:numColumns="3" />
+</LinearLayout>

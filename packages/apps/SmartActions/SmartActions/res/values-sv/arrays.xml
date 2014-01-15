@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>10 minuter</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Samtal och SMS</item>
+        <item>Endast samtal</item>
+        <item>Endast SMS</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Alla nummer</item>
+        <item>Alla kontakter i telefonboken</item>
+        <item>Valda kontakter</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Meddelandet skickas till alla telefonnummer.</item>
+        <item>Meddelandet skickas till alla nummer som sparats i telefonboken.</item>
+        <item>Meddelandet skickas endast till valda nummer.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Max</item>
+        <item>Hög</item>
+        <item>Mellan</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Namn på SMS-avsändare</item>
+        <item>Namn på den som ringer upp</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Hem</item>
+        <item>Arbete</item>
+        <item>Skola</item>
+        <item>Anpassad</item>
+    </string-array>
+
+</resources>

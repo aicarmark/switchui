@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">การรวบรวมข้อมูล</string>
+    <string name="permission_perf_stats_write_label">เขียนการตั้งค่าสถิติด้านประสิทธิภาพ</string>
+    <string name="permission_perf_stats_write_desc">อนุญาตให้แอปพลิเคชันเขียนการตั้งค่าสถิติด้านประสิทธิภาพ</string>
+
+</resources>

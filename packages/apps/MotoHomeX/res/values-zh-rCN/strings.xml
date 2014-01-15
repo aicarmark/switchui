@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="application_name">"主屏幕"</string>
+    <string name="home" msgid="5921706419368316758">"主屏幕"</string>
+    <string name="uid_name" msgid="3371120195364560632">"Android 核心应用"</string>
+    <string name="folder_name" msgid="8551881338202938211"></string>
+    <string name="chooser_wallpaper" msgid="6063168087625352235">"选择壁纸来源"</string>
+    <string name="wallpaper_instructions" msgid="4215640646180727542">"设置壁纸"</string>
+    <string name="pick_wallpaper" msgid="5630222540525626723">"壁纸"</string>
+    <string name="activity_not_found" msgid="217823393239365967">"未安装该应用。"</string>
+    <string name="widgets_tab_label" msgid="9145860100000983599">"窗口小部件"</string>
+    <string name="long_press_widget_to_add" msgid="7395697462851217506">"触摸并按住可选取窗口小部件。"</string>
+    <string name="market" msgid="2652226429823445833">"购买"</string>
+    <string name="external_drop_widget_error" msgid="2285187188524172774">"无法将项拖放到此主屏幕上。"</string>
+    <string name="external_drop_widget_pick_title" msgid="7040647073452295370">"选择要处理拖放操作的窗口小部件"</string>
+    <string name="rename_folder_label" msgid="5646236631298452787">"文件夹名称"</string>
+    <string name="rename_folder_title" msgid="4544573104191526550">"重命名文件夹"</string>
+    <string name="rename_action" msgid="6016003384693240896">"确定"</string>
+    <string name="cancel_action" msgid="3811860427489435048">"取消"</string>
+    <string name="menu_item_add_item" msgid="6233177331075781114">"添加到主屏幕"</string>
+    <string name="group_applications" msgid="2103752818818161976">"应用"</string>
+    <string name="group_shortcuts" msgid="9133529424900391877">"快捷方式"</string>
+    <string name="group_widgets" msgid="6704978494073105844">"窗口小部件"</string>
+    <string name="group_wallpapers" msgid="1568191644272224858">"壁纸"</string>
+    <string name="completely_out_of_space" msgid="1759078539443491182">"您的主屏幕上没有空间了。"</string>
+    <string name="out_of_space" msgid="8365249326091984698">"此主屏幕上已没有空间。"</string>
+    <string name="hotseat_out_of_space" msgid="6304886797358479361">"底部区域已无空间。"</string>
+    <string name="invalid_hotseat_item" msgid="6545340627805449250">"该窗口小部件太大，超出基座区域可用空间。"</string>
+    <string name="shortcut_installed" msgid="7071557296331322355">"已创建“<xliff:g id="NAME">%s</xliff:g>”快捷方式。"</string>
+    <string name="shortcut_uninstalled" msgid="2129499669449749995">"已删除“<xliff:g id="NAME">%s</xliff:g>”快捷方式。"</string>
+    <string name="shortcut_duplicate" msgid="4757756326465060694">"“<xliff:g id="NAME">%s</xliff:g>”快捷方式已存在。"</string>
+    <string name="title_select_shortcut" msgid="1873670208166882222">"选择快捷方式"</string>
+    <string name="title_select_application" msgid="1793455815754848652">"选择应用"</string>
+    <string name="all_apps_button_label" msgid="2578400570124163469">"应用"</string>
+    <string name="all_apps_home_button_label" msgid="1022222300329398558">"主屏幕"</string>
+    <string name="delete_zone_label_workspace" msgid="7153615831493049150">"删除"</string>
+    <string name="delete_zone_label_all_apps" msgid="6664588234817475108">"卸载"</string>
+    <string name="delete_target_label" msgid="665300185123139530">"删除"</string>
+    <string name="delete_target_uninstall_label" msgid="748894921183769150">"卸载"</string>
+    <string name="info_target_label" msgid="4019495079517426980">"应用信息"</string>
+    <string name="accessibility_search_button" msgid="816822994629942611">"搜索"</string>
+    <string name="accessibility_voice_search_button" msgid="3938249215065842475">"语音搜索"</string>
+    <string name="accessibility_all_apps_button" msgid="8803738611398979849">"应用"</string>
+    <string name="accessibility_delete_button" msgid="3628162007991023603">"删除"</string>
+    <string name="delete_zone_label_all_apps_system_app" msgid="3683920959591819044">"卸载更新"</string>
+    <string name="menu_add" msgid="3065046628354640854">"添加"</string>
+    <string name="menu_manage_apps" msgid="2308685199463588895">"管理应用"</string>
+    <!-- added by amt_wangpeipei 2012/07/12 for switchui-2126 -->
+    <string name="menu_search_app_and_widget">"搜索应用/小部件"</string>
+    <string name="menu_wallpaper" msgid="5837429080911269832">"壁纸"</string>
+    <string name="menu_search" msgid="4826514464423239041">"搜索"</string>
+    <string name="menu_notifications" msgid="6424587053194766192">"通知"</string>
+    <string name="menu_settings" msgid="3946232973327980394">"系统设置"</string>
+    <string name="menu_help" msgid="4901160661634590633">"帮助"</string>
+    <string name="cab_menu_delete_app" msgid="4089398025537640349">"卸载该应用"</string>
+    <string name="cab_menu_app_info" msgid="914548323652698884">"应用详情"</string>
+    <string name="cab_app_selection_text" msgid="6378522164293415735">"选中了 1 个应用"</string>
+    <string name="cab_widget_selection_text" msgid="962527270506951955">"已选中 1 个窗口小部件"</string>
+    <string name="cab_folder_selection_text" msgid="8916111874189565067">"已选中 1 个文件夹"</string>
+    <string name="cab_shortcut_selection_text" msgid="8115847384500412878">"已选中 1 个快捷方式"</string>
+    <string name="permlab_install_shortcut" msgid="1201690825493376489">"安装快捷方式"</string>
+    <string name="permdesc_install_shortcut" msgid="8634424803272077038">"允许应用自行添加快捷方式。"</string>
+    <string name="permlab_uninstall_shortcut" msgid="7696645932555926449">"卸载快捷方式"</string>
+    <string name="permdesc_uninstall_shortcut" msgid="274355570620220977">"允许应用自行删除快捷方式，而无需用户干预。"</string>
+    <string name="permlab_read_settings" msgid="3452408290738106747">"读取主屏幕的设置和快捷方式"</string>
+    <string name="permdesc_read_settings" msgid="5788109303585403679">"允许应用读取主屏幕中的设置和快捷方式。"</string>
+    <string name="permlab_write_settings" msgid="1360567537236705628">"写入主屏幕的设置和快捷方式"</string>
+    <string name="permdesc_write_settings" msgid="8530105489115785531">"允许应用更改主屏幕中的设置和快捷方式。"</string>
+    <string name="gadget_error_text" msgid="8359351016167075858">"载入窗口小部件时出现问题"</string>
+    <string name="uninstall_system_app_text" msgid="6429814133777046491">"这是系统应用，无法卸载。"</string>
+    <string name="dream_name" msgid="2847171357608437154">"Rocket Launcher"</string>
+    <string name="folder_hint_text" msgid="8633351560105748141">"未命名文件夹"</string>
+    <string name="workspace_description_format" msgid="2968608205939373034">"主屏幕 %1$d"</string>
+    <string name="default_scroll_format" msgid="4057140866420001240">"第 %1$d 页，共 %2$d 页"</string>
+    <string name="workspace_scroll_format" msgid="1704767047951143301">"主屏幕 %1$d（共 %2$d 个）"</string>
+    <string name="apps_customize_apps_scroll_format" msgid="5494241912377704885">"应用：第 %1$d 页，共 %2$d 页"</string>
+    <string name="apps_customize_widgets_scroll_format" msgid="5383009742241717437">"窗口小部件：第 %1$d 页，共 %2$d 页"</string>
+    <string name="workspace_cling_title" msgid="738396473989890567">"您的主屏幕您做主"</string>
+    <string name="workspace_cling_move_item" msgid="791013895761065070">"您可以在此处放置自己喜爱的应用。"</string>
+    <string name="workspace_cling_open_all_apps" msgid="2459977609848572588">"要查看您的所有应用，请触摸该圆圈。"</string>
+    <string name="all_apps_cling_title" msgid="2559734712581447107">"选择一些应用"</string>
+    <string name="all_apps_cling_add_item" msgid="5665035103260318891">"要将某个应用添加到主屏幕，请触摸并按住该应用。"</string>
+    <string name="folder_cling_title" msgid="4308949882377840953">"使用文件夹整理应用"</string>
+    <string name="folder_cling_move_item" msgid="270598675060435169">"要移动应用，请触摸并按住该应用。"</string>
+    <string name="folder_cling_create_folder" msgid="8352867485656129478">"要在主屏幕上创建新文件夹，请将一个应用叠放到另一个上。"</string>
+    <string name="cling_dismiss" msgid="2780907108735868381">"确定"</string>
+    <string name="folder_opened" msgid="1262064100943801533">"文件夹已打开，尺寸为 <xliff:g id="WIDTH">%1$d</xliff:g> × <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
+    <string name="folder_tap_to_close" msgid="1335478160661137579">"触摸可关闭文件夹"</string>
+    <string name="folder_tap_to_rename" msgid="5201612989905472442">"触摸可保存重命名"</string>
+    <string name="folder_closed" msgid="3130534551370511932">"文件夹已关闭"</string>
+    <string name="folder_renamed" msgid="7951233572858053642">"已将文件夹重命名为“<xliff:g id="NAME">%1$s</xliff:g>”"</string>
+    <string name="folder_name_format" msgid="3051680259794759037">"文件夹：<xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="custom_workspace_cling_title_1" msgid="1433009175359948587"></string>
+    <string name="custom_workspace_cling_description_1" msgid="6875529190849858047"></string>
+    <string name="custom_workspace_cling_title_2" msgid="5516006164661020362"></string>
+    <string name="custom_workspace_cling_description_2" msgid="2758258454975288377"></string>
+    <!-- 2010-3-7, add by rjg678 for IKSWITCHUI-98 for email -->
+    <string name="no_email_account">"请添加电子邮件账户。"</string>
+    <!-- hnd734 Home Transition start -->
+    <string name="menu_transition_effect">切换效果</string>
+    <string name="home_transition_effect">主屏幕切换效果</string>
+    <string name="main_menu_transition_effect">主菜单切换效果</string>
+    <string name="preference_setting">首选项设置</string>
+    <!-- hnd734 Home Transition end -->
+    <!--Added by Chen Yidong at 2012-05-08 for SWITCHUI-1035, transition-->
+    <string name="transition_reset">重置为默认设置</string> 
+    <string name="transition_set">设置切换</string> 
+    <string name="transition_setting">切换设置</string>
+    <!--added by Chen Yidong-->
+    <!-- 2010-3-7, add end -->
+    <!-- 2012-6-25, add by bvq783 for switchui-1580 -->
+    <string name="transition_done">设置</string>
+    <string name="set_transition">设置切换</string>
+    <string name="transition">切换</string>
+    <!-- 2012-6-25, add end -->
+
+    <!--Added by Chen Yidong at 2012-04-10 for SWITCHUI-500, wallpaper reset-->
+    <string name="wallpaper_default">"重置为默认设置"</string>
+    <string name="wallpaper_default_restored">"已恢复默认壁纸"</string>
+    <!--added by Chen Yidong-->
+    <string name="app_menu_search_hint">搜索</string>
+<!-- Added by e13775 at 19 June 2012 for organize apps' group start -->
+    <string name="done">完成</string>
+    <string name="add_to_group">添加到分组</string>
+    <string name="add_to_home">添加到主屏幕</string>
+    <string name="add_rm_apps">添加/删除应用程序</string>
+    <string name="delete_group">删除分组</string>
+    <string name="edit_group_name">编辑分组名称</string>
+    <string name="edit_group">编辑分组</string>
+    <string name="edit_name">编辑名称：</string>
+    <string name="select_icon">选择图标：</string>
+    <string name="all_apps">全部应用</string>
+    <string name="frequent">经常使用</string>
+    <string name="app_added_to_group">{0}已添加到分组\"{1}\"</string>
+    <string name="app_group">应用程序分组</string>
+    <string name="app_groups">应用程序分组</string>
+    <string name="app_hide_info">{0} 已隐藏。</string>
+    <string name="app_removed_from_group">{0}已从该分组中删除</string>
+    <string name="app_unhide_info">{0} 现在已取消隐藏。</string>
+    <string name="downloaded">已下载</string>
+    <string name="duplicate_name_title">重复的名称</string>
+    <string name="duplicate_name_message">此操作将添加一个同名为\"{0}\"的分组。</string>
+    <string name="edit_group_icon">编辑分组图标</string>
+    <string name="empty_group">\n空分组。\n选择\"菜单\"图标以添加应用程序。</string>
+    <string name="empty_group_name">请输入分组名称</string>
+    <string name="hidden_apps">隐藏应用程序</string>
+    <string name="hide">隐藏</string>
+    <string name="hide_hidden_apps">退出隐藏的应用程序</string>
+    <string name="group_icon">分组图标</string>
+    <string name="group_name">"组名称"</string>
+    <string name="loading_apps">\n正在加载应用程序...</string>
+    <string name="menu_running_services">正在运行的服务</string>
+    <string name="menu_sort_group">排序</string>
+    <string name="create_group">新建分组</string>
+    <string name="no_available_apps">无可用应用程序</string>
+    <string name="no_downloaded_apps">\n无下载的应用程序</string>
+    <string name="no_frequents_apps">\n无常用应用程序</string>
+    <string name="no_recent_tasks">\n无最近使用的应用程序</string>
+    <string name="no_way_to_share_app">无法共享应用程序</string>
+    <string name="non_editable_group">{0}分组可能无法编辑</string>
+    <string name="open">打开</string>
+    <string name="recent">最近使用</string>
+    <string name="remove">"删除"</string>
+    <string name="remove_from_group">从分组中删除</string>
+    <string name="remove_group">删除分组</string>
+    <string name="remove_group_confirm">此操作将删除\"{0}\"分组。应用程序仍在手机中。</string>
+    <string name="remove_group_toast">已删除\"{0}\"分组</string>
+    <string name="save">"保存"</string>
+    <string name="select_apps">选择应用程序</string>
+    <string name="select_group">选择分组</string>
+    <string name="share">共享</string>
+    <string name="share_message_app">更多信息：{0}\n</string>
+    <string name="share_message">Android 应用程序名称：{0}\n\n</string>
+    <string name="share_subject">与 {0} 玩得开心</string>
+    <string name="share_via">分享方式</string>
+    <string name="show_hidden_apps">隐藏应用程序</string>
+    <string name="sort_group">对分组进行排序</string>
+    <string name="unhide">取消隐藏</string>
+    <string name="uninstall">卸载</string>
+    <string name="hidden_count">（{0} 已隐藏）</string>
+    <string name="apps_sort_carrier">默认</string>
+    <string name="apps_sort_alphabetically">按字母顺序</string>
+    <string name="apps_sort_frequently">经常使用</string>
+    <string name="apps_sort_recently">最近使用</string>
+    <string name="disable">停用</string>
+    <string name="disable_dlg_title">停用内置应用程序？</string>
+    <string name="disable_dlg_text">如果停用内置应用程序，其他应用程序可能会出现异常。</string>
+    <string name="one_instance_only_error">只能添加一个常用联系人小部件。</string>
+    <string name="change_icon">更改图标</string>
+    <string name="restore_icon">恢复图标</string>
+    <string name="whichApplication">"使用以下程序完成操作"</string>
+    <!-- Added by e13775 at 19 June 2012 for organize apps' group end -->
+</resources>

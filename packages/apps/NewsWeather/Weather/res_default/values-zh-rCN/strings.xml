@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="widget_name">天气</string>
+    <string name="setting_frequences">频率</string>
+    <string name="widgetname">天气小工具</string>
+    <string name="second">秒</string>
+    <string name="add_city">城市名称</string>
+    <string name="del_city">删除城市</string>
+    <string name="add_one_city">添加一个城市</string>
+    <string name="del_this_city">删除此城市</string>
+    <string name="details_menu_cities">城市</string>
+    <string name="details_menu_refresh">刷新</string>
+    <string name="details_menu_setting">设置</string>
+    <string name="details_menu_share">分享</string>
+    <string name="city_exists">此城市已经存在</string>
+    <string name="no_city_found">未找到城市</string>
+    <string name="search_city_title">搜索</string>
+    <string name="search_city_msg">寻找匹配的位置</string>
+    <string name="updated_at">更新</string>
+    <string name="loading">载入中……</string>
+    <string name="error">错误</string>
+    <string name="weather_null">无天气信息</string>
+    <string name="weather_error">获取天气信息失败</string>
+    <string name="input_city_hint">键入城市名称</string>
+    <string name="date_and_time">日期和时间</string>
+    <string name="city_and_country">国家及城市</string>
+    <string name="temperature_uint">温度单位</string>
+    <string name="update_frequency">更新频率</string>
+    <string name="roaming_setting">漫游时更新</string>
+    <string name="choose_prefer_cities">选择喜爱的城市</string>
+    <string name="allow_roaming_network">更新开启</string>
+    <string name="forbid_roaming_network">更新关闭</string>
+    <string name="centigrade">摄氏</string>
+    <string name="fahrenheit">华氏</string>
+    <string name="manual">手动</string>
+    <string name="every">每个</string>
+    <string name="close">关闭</string>
+    <string name="set_city_1">选择城市</string>
+    <string name="my_city">我的城市</string>
+    <string name="current_city">当前城市</string>
+    <string name="current_amin_area">当前管理地区</string>
+    <string name="title_weather_city">天气城市</string>
+    <string name="title_weather_settings">天气设置</string>
+    <string name="title_add_city">新增城市</string>
+    <string name="update_partly_failed">部分更新失败</string>
+    <string name="update_failed">更新失败，请检查网络。</string>
+    <string name="update_success">更新成功</string>
+    <string name="continue_string">继续</string>
+    <string name="title_discliamer">注意</string>
+    <string name="comment_discliamer">说明\n\t 该应用在使用过程中会产生数据流量，由流量产生的费用请参见运营商公布的收费标准。本服务目前只面向已开通互联网服务的用户。\n\n\t点击“继续”表示您已查看并确认以上说明。</string>
+    <string name="about">关于</string>
+    <string name="branding_info">品牌信息</string>
+    <string name="details_branding_info">品牌信息详情\n</string>
+    <string name="locate_failed">定位失败，请稍后重试。</string>
+    <string name="too_most_cities">最多只能添加9个城市。</string>
+    <string name="hour_1">1 小时</string>
+    <string name="hour_3">3 小时</string>
+    <string name="hour_6">6 小时</string>
+    <string name="hour_12">12 小时</string>
+    <string name="hour_24">24 小时</string>
+    <string name="high">最高温度 </string>
+    <string name="realfeel">体感</string>
+    <string name="low">最低温度 </string>
+    <string name="updateago">%1$s 小时前更新 </string>
+    <string name="currenttemperature">当前温度</string>
+    <string name="mcity">城市</string>
+    <string name="mDate">日期</string>
+    <string name="mWeatherCondition">天气情况</string>
+    <string name="mHighTemperature">最高温度</string>
+    <string name="mLowTemperature">最低温度</string>
+    <string name="weather_get_error">无天气信息</string>
+    <string name="updatetimeago">更新</string>
+    <string name="weatherdetails">天气详情</string>
+    <string name="city_name">城市名称</string>
+    <string name="comment_discliamer_new">运行此应用程序时可能会产生较大数据流量，请参照电信运营商的收费标准了解更多详情。该服务仅适用于连接互联网的用户。点击\"继续\"，即表示您确认已阅读并同意以上条款。</string>
+    <string name="set_default_city">已将当前城市设为默认城市</string>
+
+    <!--  -->
+    <string name="app_name2">位置服务（大）</string>
+    <string name="app_name2_small">位置服务（小）</string>
+    <string name="add_a_city">添加城市</string>
+    <string name="no_weather_information">无天气信息</string>
+    <string name="no_news">无新闻</string>
+    <string name="no_network">无法连接到网络，请检查你的网络配置</string>
+    <string name="apm_am">上午</string>
+    <string name="apm_pm">下午</string>
+    <string name="app_name_original">位置服务</string>
+
+    <!-- new string, apply on 2012-02-09 -->
+    <string name="app_name_weather">天气</string>
+    <string name="app_name_widget">天气小部件</string>
+    <!-- new string, apply on 2012-02-27 -->
+    <string name="weather_big">天气 (大)</string>
+    <string name="weather_small">天气 (小)</string>
+    <string name="initial_news_title">""</string>
+    <string name="initial_news_content">""</string>
+    <string name="initial_news_date">""</string>
+    <string name="initial_time">12:05</string>
+    <string name="initial_apm">上午</string>
+    <string name="initial_date">星期五,01/01/2000</string>
+    <string name="initial_temperature">30C</string>
+    <string name="initial_city">北京</string>
+
+    <!--  -->
+    <string name="hello">Hello World, LiveWallpaper!</string>
+    <string name="app_name3">天气</string>
+    <string name="wallpaper_cube1">天气</string>
+    <string name="description">显示设定城市的天气信息。</string>
+    <string name="no_res">无资源</string>
+    <string name="no_weather_info">无天气信息</string>
+    <string name="no_city">（无城市）</string>
+    <string name="add_city_tip">请添加城市</string>
+    <string name="livewallpaper_settings">动态壁纸设置</string>
+    <string name="select_location">选择位置</string>
+    <string name="text_display">文本显示</string>
+    <string name="text_size">"文字大小"</string>
+    <string name="location_key">location_key</string>
+    <string name="display_key">display_key</string>
+    <string name="size_key">size_key</string>
+    <string name="location_title">选择位置</string>
+    <string name="tip_city_name">城市列表</string>
+    <string name="tip_current_city">当前城市</string>
+    <string name="close_current_city">关闭</string>
+    <string name="loading_current_city">当前城市（正在加载…）</string>
+
+</resources>

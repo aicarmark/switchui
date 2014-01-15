@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- For this locale, the SMS character limit should account for 2byte chars-->
+    <integer name="SMS_picker_character_limit">70</integer>
+</resources>

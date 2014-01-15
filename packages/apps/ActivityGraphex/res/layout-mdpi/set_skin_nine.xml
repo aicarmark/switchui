@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"     
+ android:orientation="vertical"
+ 
+     android:background="@drawable/bg_transparency">   
+        
+<AbsoluteLayout 
+        
+        android:layout_width="480px"
+        android:layout_height="476px"     >
+        
+        <ImageView android:id="@+id/empty" 
+                android:layout_width="480px"             
+                android:layout_height="476px"
+                android:layout_x="0px"
+                android:layout_y="0px"
+                android:src="@drawable/bg_empty_nine" >
+        </ImageView>
+       <ImageView android:id="@+id/shadow1" 
+                android:layout_width="241px"             
+                android:layout_height="241px"
+                android:layout_x="134px"
+                android:layout_y="134px"
+                android:src="@drawable/shadow_big" >
+        </ImageView>
+        <ImageView android:id="@+id/shadow2" 
+                android:layout_width="178px"             
+                android:layout_height="178px"
+                android:layout_x="187px"
+                android:layout_y="9px"
+                android:src="@drawable/shadow_medium" >
+        </ImageView>
+        
+         <ImageView android:id="@+id/shadow3" 
+                android:layout_width="178px"             
+                android:layout_height="178px"
+                android:layout_x="52px"
+                android:layout_y="9px"
+                android:src="@drawable/shadow_medium" >
+        </ImageView>
+     <ImageView android:id="@+id/shadow4" 
+                android:layout_width="178px"             
+                android:layout_height="178px"
+                android:layout_x="8px"
+                android:layout_y="144px"
+                android:src="@drawable/shadow_medium" >
+        </ImageView>
+        
+        <ImageView android:id="@+id/shadow5" 
+                android:layout_width="139px"             
+                android:layout_height="139px"
+                android:layout_x="47px"
+                android:layout_y="278px"
+                android:src="@drawable/shadow_small" >
+        </ImageView>
+        
+        <ImageView android:id="@+id/shadow6" 
+                android:layout_width="139px"             
+                android:layout_height="139px"
+                android:layout_x="144px"
+                android:layout_y="322px"
+                android:src="@drawable/shadow_small" >
+        </ImageView>
+        
+        <ImageView android:id="@+id/shadow7" 
+                android:layout_width="139px"             
+                android:layout_height="139px"
+                android:layout_x="245px"
+                android:layout_y="322px"
+                android:src="@drawable/shadow_small" >
+        </ImageView>
+        
+        <ImageView android:id="@+id/shadow8" 
+                android:layout_width="139px"             
+                android:layout_height="139px"
+                android:layout_x="324px"
+                android:layout_y="222px"
+                android:src="@drawable/shadow_small" >
+        </ImageView>
+        
+        <ImageView android:id="@+id/shadow9" 
+                android:layout_width="139px"             
+                android:layout_height="139px"
+                android:layout_x="324px"
+                android:layout_y="124px"
+                android:src="@drawable/shadow_small" >
+        </ImageView>
+        
+        
+  <RelativeLayout 
+      
+        android:layout_width="fill_parent"
+        android:layout_height="476px"
+        android:layout_x="0dip"
+        android:layout_y="0dip"        
+      >
+        <RelativeLayout  android:id="@+id/shortcut3"
+            android:layout_width="135px"
+            android:layout_height="135px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="73px">
+            
+            <ImageView  android:id="@+id/skin3"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                >
+            </ImageView>
+            <ImageView  android:id="@+id/label3"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px" 
+                android:layout_alignBottom="@id/skin3"
+                >
+            </ImageView>
+            
+        </RelativeLayout>   
+        
+         <RelativeLayout   android:id="@+id/shortcut2"
+           android:layout_width="135px"
+           android:layout_height="135px"
+           android:layout_toRightOf="@+id/shortcut3"
+           android:layout_alignBottom="@id/shortcut3">
+            
+            <ImageView  android:id="@+id/skin2"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label2"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin2"
+                 >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+        <RelativeLayout   android:id="@+id/shortcut1"
+           android:layout_width="179px"
+           android:layout_height="179px"
+           android:layout_below="@+id/shortcut2"
+           android:layout_alignRight="@id/shortcut2" >
+            
+            <ImageView android:id="@+id/skin1"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label1"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin1"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+         <RelativeLayout   android:id="@+id/shortcut4"
+            android:layout_width="135px"
+        android:layout_height="135px"
+        android:layout_toLeftOf="@+id/shortcut1"
+        android:layout_alignTop="@id/shortcut1">
+            
+            <ImageView android:id="@+id/skin4"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label4"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin4"
+                 >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+       <RelativeLayout   android:id="@+id/shortcut5"
+         android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/shortcut4"
+        android:layout_alignRight="@id/shortcut4">
+            
+            <ImageView android:id="@+id/skin5"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label5"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin5"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+         <RelativeLayout   android:id="@+id/shortcut6"
+         android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/shortcut1"
+        android:layout_alignLeft="@id/shortcut1">
+            
+            <ImageView android:id="@+id/skin6"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label6"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin6"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+       <RelativeLayout   android:id="@+id/shortcut7"
+         android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_toRightOf="@+id/shortcut6"
+        android:layout_alignTop="@id/shortcut6">
+            
+            <ImageView android:id="@+id/skin7"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label7"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin7"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+        
+        
+       <RelativeLayout   android:id="@+id/shortcut8"
+         android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_toRightOf="@+id/shortcut1"
+        android:layout_alignBottom="@id/shortcut1">
+            
+            <ImageView android:id="@+id/skin8"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                >
+            </ImageView>
+            <ImageView  android:id="@+id/label8"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin8"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+        
+     <RelativeLayout   android:id="@+id/shortcut9"
+         android:layout_width="100px"
+        android:layout_height="100px"
+         android:layout_above="@+id/shortcut8"
+        android:layout_alignLeft="@id/shortcut8">
+            
+            <ImageView android:id="@+id/skin9"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+            </ImageView>
+            <ImageView  android:id="@+id/label9"
+                android:layout_width="wrap_content"             
+                android:layout_height="30px"  
+                android:layout_alignBottom="@id/skin9"
+                  >
+            </ImageView>
+            
+        </RelativeLayout> 
+    </RelativeLayout>        
+ </AbsoluteLayout>  
+ 
+
+<Gallery android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:spacing="20px"/>  
+         
+  <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">        
+       <Button android:id="@+id/set"
+            
+            android:text="@string/set_skin_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:textSize="24px"
+            android:textColor="#ff000000"
+            
+            ></Button>
+            </LinearLayout>
+</LinearLayout>
+ 

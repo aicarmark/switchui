@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/grid_layout_margin_left"
+              android:layout_marginRight="@dimen/grid_layout_margin_right"
+              android:minHeight="?android:attr/listPreferredItemHeight" >
+  <RelativeLayout android:layout_width="@dimen/rel_layout_width"
+                  android:layout_height="@dimen/rel_layout_height"
+                  android:layout_gravity="center" >
+    <ImageView android:id="@+id/icon"
+               android:layout_height="@dimen/grid_icon_dimen"
+               android:layout_width="@dimen/grid_icon_dimen"
+               android:scaleType="centerInside"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/item_ticker"
+               android:layout_width="@dimen/grid_ticker_dimen"
+               android:layout_height="@dimen/grid_ticker_dimen"
+               android:scaleType="centerCrop"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignWithParentIfMissing="true"
+               android:visibility="gone" />
+  </RelativeLayout>
+  <TextView  android:id="@+id/text"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:lines="1"
+             android:singleLine="true"
+             android:ellipsize="end" />
+  <TextView  android:id="@+id/info"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:layout_centerInParent="true"
+             android:layout_alignWithParentIfMissing="true"
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:visibility="gone" />
+  <TextView  android:id="@+id/info_time"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:singleLine="true"
+             android:ellipsize="end"
+            android:visibility="gone" />
+</LinearLayout>

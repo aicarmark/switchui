@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>2 分鐘</item>
+        <item>10 分鐘</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>通話和文字</item>
+        <item>僅通話</item>
+        <item>僅文字</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>所有號碼</item>
+        <item>所有電話簿聯絡人</item>
+        <item>已選取聯絡人</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>訊息將傳送至所有電話號碼。</item>
+        <item>訊息將傳送至您電話簿中儲存的所有號碼。</item>
+        <item>訊息將僅傳送至所選的號碼。</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>最大</item>
+        <item>高</item>
+        <item>中</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>文字訊息傳送者姓名</item>
+        <item>來電者姓名</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>住家</item>
+        <item>公司</item>
+        <item>學校</item>
+        <item>自訂</item>
+    </string-array>
+
+</resources>

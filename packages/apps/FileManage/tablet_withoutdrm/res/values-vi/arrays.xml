@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Nhập tên hoặc IP</item>
+        <item>Quét tìm máy chủ</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Thêm máy chủ</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Đang quét tìm tên miền...</item>
+        <item>Đang quét tìm máy chủ...</item>
+        <item>Đang kết nối với máy chủ...</item>
+        <item>đang tải...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Theo tên</item>
+        <item>Theo loại</item>
+        <item>Theo thời gian</item>
+        <item>Theo kích thước</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Không có mã hóa</item>
+        <item>Mã hóa kế thừa (Zip 2.0)</item>
+        <item>Mã hóa AES 128-bit</item>
+        <item>Mã hóa AES 256-bit</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Bộ nhớ trong của thiết bị</item>
+        <item>Thẻ SD</item>
+    </string-array>
+
+</resources>

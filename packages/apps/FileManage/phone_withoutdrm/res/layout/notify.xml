@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView android:id="@+id/Icon01"
+        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:scaleType="center"
+        android:src="@drawable/stat_sys_download"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/notify_padding"
+        android:paddingRight="@dimen/notify_padding"
+        >
+
+        <TextView android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy_text"
+            android:textStyle="bold"
+            android:textColor="@color/notify_dialog_backgroud"
+            android:ellipsize="end"
+            android:singleLine="true" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView android:id="@+id/TextView02"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="@fraction/notify_filename_weight"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true" >
+            </TextView>
+            <TextView android:id="@+id/ProgressPercent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="@fraction/notify_precentage_txt_weight"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true" >
+            </TextView>
+        </LinearLayout>
+
+        <ProgressBar android:id="@+id/ProgressBar01"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_below="@+id/TextView01"
+            android:layout_toRightOf="@+id/ProgressPercent"
+            android:layout_alignBottom = "@+id/ProgressPercent" >
+        </ProgressBar>
+
+    </LinearLayout>
+</LinearLayout>

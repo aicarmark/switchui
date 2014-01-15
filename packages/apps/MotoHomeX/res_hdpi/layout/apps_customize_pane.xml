@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.motorola.mmsp.motohomex.AppsCustomizeTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.motorola.mmsp.motohomex"
+    android:background="#FF000000">
+    <LinearLayout
+        android:id="@+id/apps_customize_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        
+        <!-- modified by amt_wangpeipei 2012/05/29 show searchbar after click search button in AppsCustomizeTabHost begin -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/apps_customize_tab_bar_height" >
+
+            <include
+                android:id="@+id/apps_customize_searchbar"
+                layout="@layout/apps_customize_searchbar"
+                android:visibility="gone" />
+        <!-- The layout_width of the tab bar gets overriden to align the content
+             with the text in the tabs in AppsCustomizeTabHost. -->
+        <FrameLayout
+            android:id="@+id/tabs_container"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/apps_customize_tab_bar_height"
+            android:layout_marginTop="@dimen/apps_customize_tab_bar_margin_top"
+            android:layout_gravity="center_horizontal">
+            <com.motorola.mmsp.motohomex.FocusOnlyTabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@drawable/tab_unselected_holo"
+                android:tabStripEnabled="false"
+                android:divider="@null" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" >
+                <include
+                    android:id="@+id/market_button"
+                    layout="@layout/market_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+		    android:layout_toLeftOf="@+id/moreoverflow_button"
+		    android:layout_alignWithParentIfMissing="true" />
+
+		<!--Added by e13775 at 19 June 2012 for organize apps' group start-->
+		<com.motorola.mmsp.motohomex.apps.AllAppsDropDownMenu
+                    android:id="@+id/moreoverflow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tab_widget_indicator_selector"
+                    android:gravity="center"
+                    android:src="@drawable/ic_menu_moreoverflow_holo_dark"
+                    android:paddingLeft="@dimen/toolbar_button_horizontal_padding"
+                    android:paddingRight="@dimen/toolbar_button_horizontal_padding"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone" />
+		<!--Added by e13775 at 19 June 2012 for organize apps' group end-->
+            </RelativeLayout>
+        </FrameLayout>
+        </RelativeLayout>
+
+	<!-- modified by amt_wangpeipei 2012/05/29 end -->
+        <!--Modified by e13775 at 19 June 2012 for organize apps' group start-->       
+        <include layout="@layout/all_apps_organize"/>
+        <!--Modified by e13775 at 19 June 2012 for organize apps' group end-->
+    </LinearLayout>
+
+    <include layout="@layout/all_apps_cling"
+        android:id="@+id/all_apps_cling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</com.motorola.mmsp.motohomex.AppsCustomizeTabHost>

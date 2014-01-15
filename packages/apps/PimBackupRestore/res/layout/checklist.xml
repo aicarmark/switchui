@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2009 Motorola
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="true">
+	
+    <ListView android:id="@+id/list"
+        style="@style/listview_background"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+    />
+    
+    <LinearLayout android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="beginning"
+        android:dividerPadding="0dip">
+	    <LinearLayout
+	        style="?android:attr/buttonBarStyle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	    >
+	        <Button android:id="@+id/back"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:text="@string/back"
+	        />
+	        <Button android:id="@+id/ok"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            style="?android:attr/buttonBarButtonStyle"
+	            android:text="@android:string/ok"
+	        />
+	    </LinearLayout>
+     </LinearLayout>
+ 
+</LinearLayout>

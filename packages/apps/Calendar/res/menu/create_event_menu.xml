@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/create_event_lunar" android:icon="@drawable/ic_menu_add_event_holo_light" android:title="@string/event_create" android:showAsAction="always"></item>
+
+    </menu>

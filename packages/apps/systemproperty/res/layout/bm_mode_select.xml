@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- current mode status bar -->
+
+    <LinearLayout
+        android:id="@+id/icons_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bar_wifi"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_bm_wifi" />
+
+        <ImageView
+            android:id="@+id/bar_mobiledata"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_bm_mobiledata" />
+
+        <ImageView
+            android:id="@+id/bar_brightness"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_bm_brightness" />
+
+        <ImageView
+            android:id="@+id/bar_bluetooth"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_bm_bluetooth" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_2" />
+
+    <!-- mode list -->
+
+    <ListView
+        android:id="@+id/bm_list_mode_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_2" />
+
+    <!-- add bar -->
+
+    <LinearLayout
+        android:id="@+id/bar_add_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_add_mode"
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_bm_mode_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/bm_add_mode"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_2" />
+
+    <!-- cancel/set button groups -->
+    <LinearLayout 
+        android:id="@+id/btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="1dp"
+        style="?android:attr/buttonBarStyle">
+
+        <Button 
+            android:id="@+id/btn_mode_list_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/bm_cancel"/>
+
+        <Button 
+            android:id="@+id/btn_mode_list_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:textSize="14dp" 
+            android:textColor="#FFFFFF"      
+            android:text="@string/bm_set"/>
+
+    </LinearLayout>
+</LinearLayout>

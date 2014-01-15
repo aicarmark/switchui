@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Datensammlung</string>
+    <string name="permission_perf_stats_write_label">Einstellungen für Leistungsstatistik schreiben</string>
+    <string name="permission_perf_stats_write_desc">Ermöglicht der Anwendung, Einstellungen für die Leistungsstatistik zu schreiben.</string>
+
+</resources>

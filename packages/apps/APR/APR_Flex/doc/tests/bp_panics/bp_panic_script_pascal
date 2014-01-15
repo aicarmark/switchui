@@ -1,0 +1,5 @@
+adb shell mkdir /data/bp_panic
+adb shell mkdir /data/bp_panic/apr
+adb push pascal_bp_panic.bin5 /data/panic/apr/pascal_bp_panic$1.bin5
+# adb push bp_panic.bin1 /data/panic/apr/bp_panic$1.bin1
+

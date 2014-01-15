@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>10 minuuttia</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Puhelut ja tekstiviestit</item>
+        <item>Vain puhelut</item>
+        <item>Vain tekstiviestit</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Kaikki numerot</item>
+        <item>Kaikki puhelinluettelon yhteystiedot</item>
+        <item>Valitut yhteystiedot</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Viesti lähetetään kaikkiin puhelinnumeroihin.</item>
+        <item>Viesti lähetetään kaikkiin puhelinluetteloon tallennettuihin numeroihin.</item>
+        <item>Viesti lähetetään vain valittuihin numeroihin.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Voimakkain</item>
+        <item>"Korkea"</item>
+        <item>"Keskitaso"</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Tekstiviestin lähettäjän nimi</item>
+        <item>Soittajan nimi</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Koti</item>
+        <item>Työ</item>
+        <item>Koulu</item>
+        <item>Mukautettu</item>
+    </string-array>
+
+</resources>

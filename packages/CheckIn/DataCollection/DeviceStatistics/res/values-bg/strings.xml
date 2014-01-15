@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (C) 2009, Motorola, Inc,
+ * All Rights Reserved
+ * Description: Contains array resources for the Battery Manager app
+ *
+ * Modification History:
+ **********************************************************
+ * Date           Author       Comments
+ **********************************************************
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Услуги за статистика на устройството</string>
+
+</resources>

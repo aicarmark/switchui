@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config
+    xmlns:render="http://schemas.android.com/apk/res/com.motorola.mmsp.weather">
+    <PlayerConfigInfo render:frame_time="100" />
+
+    <AnimationTag>
+        <MotoAnimationSet render:id="@+id/animation_set_01"
+            render:ordering="sequentially" render:repeat_count="1">
+            <MotoLinearAnimation 
+                render:type="alpha" render:affect_type="set" render:from="0"
+                render:to="0" render:duration="1" />
+            <MotoAnimationSet render:id="@+id/animation_set_sub"
+                render:ordering="sequentially" render:repeat_count="2">
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="750" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="255"
+                    render:to="0" render:duration="750" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="0" render:duration="700" />
+            </MotoAnimationSet>
+            <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="500" />
+        </MotoAnimationSet>
+
+        <MotoAnimationSet render:id="@+id/animation_set_02"
+            render:ordering="sequentially" render:repeat_count="1">
+            <MotoLinearAnimation 
+                render:type="alpha" render:affect_type="set" render:from="0"
+                render:to="0" render:duration="1500" />
+            <MotoAnimationSet render:id="@+id/animation_set_sub"
+                render:ordering="sequentially" render:repeat_count="2">
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="650" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="255"
+                    render:to="0" render:duration="650" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="0" render:duration="900" />
+            </MotoAnimationSet>
+            <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="200" />
+        </MotoAnimationSet>
+
+        <MotoAnimationSet render:id="@+id/animation_set_03"
+            render:ordering="sequentially" render:repeat_count="1">
+            <MotoLinearAnimation 
+                render:type="alpha" render:affect_type="set" render:from="0"
+                render:to="0" render:duration="2000" />
+            <MotoAnimationSet render:id="@+id/animation_set_sub"
+                render:ordering="sequentially" render:repeat_count="2">
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="850" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="255"
+                    render:to="0" render:duration="850" />
+                <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="0" render:duration="1200" />
+            </MotoAnimationSet>
+            <MotoLinearAnimation 
+                    render:type="alpha" render:affect_type="set" render:from="0"
+                    render:to="255" render:duration="200" />
+        </MotoAnimationSet>
+    </AnimationTag>
+
+    <PictureTag>
+        <MotoPictureGroup>			
+            <MotoPicture render:bitmap="@drawable/sunnynight_bg" render:x="0" 
+                render:y="0" render:level="1"/>
+            <MotoPicture render:bitmap="@drawable/star1" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_01"/>
+            <MotoPicture render:bitmap="@drawable/star1" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_01"
+                render:seek_animation_to="0.15"/>
+
+            <MotoPicture render:bitmap="@drawable/star2" render:instance="2"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_02"/>
+
+            <MotoPicture render:bitmap="@drawable/star3" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_03"
+                render:seek_animation_to="0.1"/>
+            <MotoPicture render:bitmap="@drawable/star3" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_03"
+                render:seek_animation_to="0.2"/>
+
+            <MotoPicture render:bitmap="@drawable/star4" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_01"
+                render:seek_animation_to="0.12"/>
+            <MotoPicture render:bitmap="@drawable/star5" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_02"
+                render:seek_animation_to="0.06"/>
+            <MotoPicture render:bitmap="@drawable/star6" render:instance="1"
+                render:x="random(0,487)" render:y="random(0,100)" 
+                render:level="2" render:animation_set="@id/animation_set_03"
+                render:seek_animation_to="0.18"/>
+        </MotoPictureGroup>
+    </PictureTag>
+
+</Config>
+

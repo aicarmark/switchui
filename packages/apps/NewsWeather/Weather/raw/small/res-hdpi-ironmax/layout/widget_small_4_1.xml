@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+<!--        android:padding = "8dip"> -->
+    <ImageView android:id="@+id/weahter_condition"
+		android:layout_width = "fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true"
+		android:scaleType = "fitXY"
+		android:src="@drawable/sunny"/>
+		
+	<RelativeLayout android:id="@+id/weather"
+    	    android:layout_width="fill_parent"    
+    	    android:layout_height="fill_parent"
+    	    android:layout_centerHorizontal="true"
+    	    android:paddingLeft="11dip"
+    	    android:paddingRight="12dip">
+
+      <LinearLayout android:id="@+id/firstline"
+	       android:layout_width="fill_parent"
+	       android:layout_weight="1"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentTop="true"
+	       android:orientation="horizontal">
+	       	       	    
+    	    <TextView  android:id="@+id/temperature"
+   			    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content" 
+               
+    		    android:text="@string/initial_temperature"
+    		    android:textSize="39sp"
+    		    android:shadowRadius = "3.0"
+    		    android:shadowDx = "1.2"
+    		    android:shadowDy = "3.0"
+    		    android:shadowColor="@color/shadow_color"
+    		    android:textStyle="bold"
+    		    android:textColor="@color/temperature_color"/>
+    		<RelativeLayout android:id="@+id/weather"
+    	        android:layout_width="wrap_content"    
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+                android:paddingTop="8dip" 
+    		    android:layout_marginLeft="10dip" >   
+    	         
+   		        <TextView  android:id="@+id/cityname"
+   		            android:layout_gravity="top|right"
+   		            android:gravity="right"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+
+    		        android:text="@string/initial_city"
+    		        android:singleLine = "true"
+    		        android:textSize="21sp"
+    		        android:shadowRadius = "3.0"
+    		        android:shadowDx = "1.2"
+    		        android:shadowDy = "3.0"
+    		        android:layout_alignParentRight="true"
+    		        android:shadowColor="@color/shadow_color"
+    		        android:textStyle="bold"
+    		        android:textColor="@color/city_color"/>
+    	    </RelativeLayout>
+        </LinearLayout>
+        
+        <TextView  android:id="@+id/date"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingLeft ="4px"
+    		android:paddingRight ="4px"
+    		android:paddingBottom ="4px"
+    		android:textSize="24sp"
+    		android:text = "@string/initial_date"
+    		android:shadowRadius = "3.0"
+    		android:shadowDx = "1.2"
+    		android:shadowDy = "3.0"
+    		android:shadowColor="@color/shadow_color"
+    		android:layout_alignParentRight="true"
+    		android:layout_alignParentBottom="true"
+    		android:textColor="@color/date_color"/>
+    		
+    	<TextView  android:id="@+id/time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingLeft ="2dip"
+    		android:paddingRight ="2dip"
+    		android:text="@string/initial_time"
+    		android:textSize="30sp"
+    		android:shadowColor="@color/shadow_color"
+    		android:shadowRadius = "3.0"
+    		android:shadowDx = "1.2"
+    		android:shadowDy = "3.0"
+    		android:layout_toLeftOf = "@id/apm"
+    		android:layout_alignParentBottom="true"
+    		android:gravity="center_vertical"
+    		android:textColor="@color/time_color"/>    		
+    	<TextView android:id="@+id/apm"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/initial_apm"
+    		android:textSize="30sp"
+    		android:shadowColor="@color/shadow_color"
+    		android:shadowRadius = "3.0"
+    		android:shadowDx = "1.2"
+    		android:shadowDy = "3.0"
+    		android:layout_alignParentRight="true"
+    		android:layout_alignParentBottom="true"
+    		android:gravity="center_vertical"
+    		android:textColor="@color/time_color"/>
+
+    	
+    	<TextView  android:id="@+id/cityname_nocity"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/add_a_city"
+    		android:textSize="16sp"
+    		android:shadowRadius = "3.0"
+    		android:shadowDx = "1.2"
+    		android:shadowDy = "3.0"
+    		android:shadowColor="@color/shadow_color"
+    		android:layout_centerInParent="true"
+    		android:padding = "2dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/city_color"/>
+    		
+    	<ImageView android:id="@+id/rss_icon"
+    		android:layout_width="37dip"
+    		android:layout_height="37dip"
+    		android:scaleType = "fitXY" 
+    		android:src="@drawable/rss_small"
+    		android:layout_alignParentLeft="true"
+    		android:layout_marginLeft = "5dip"
+    		android:layout_alignParentBottom="true"/>
+  	</RelativeLayout>
+<!-- 
+	 <ImageView
+    		android:id="@+id/shadow_bottom_weather"
+    		android:layout_width = "456px"
+    		android:layout_height= "5px"
+    		android:layout_centerHorizontal="true"
+    		android:layout_below="@id/weather"
+    		android:src = "@drawable/shadow"
+    		android:scaleType = "fitXY" />
+	<ImageView
+    	android:id="@+id/shadow_left"
+    	android:layout_width = "5px"
+    	android:layout_height= "wrap_content"
+    	android:layout_toLeftOf = "@id/weather"
+    	android:layout_alignTop = "@id/shadow_top"
+    	android:layout_alignBottom = "@id/shadow_bottom_weather"
+    	android:paddingBottom="1px"
+    	android:scaleType = "fitXY"
+    	android:src = "@drawable/shadow_left"/>
+    <ImageView
+    	android:id="@+id/shadow_right"
+    	android:layout_width = "5px"
+    	android:layout_height= "wrap_content"
+    	android:layout_toRightOf = "@id/weather"
+    	android:layout_alignTop = "@id/shadow_top"
+    	android:layout_alignBottom = "@id/shadow_bottom_weather"
+    	android:paddingBottom="1px"
+    	android:scaleType = "fitXY"
+    	android:src = "@drawable/shadow_right"/>
+-->
+</RelativeLayout>
+

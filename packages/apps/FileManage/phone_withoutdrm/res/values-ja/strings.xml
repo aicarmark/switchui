@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date       CR                Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="filename_dup">ファイル名は既に存在しています。 異なる名前を選択してください。</string>
+    <string name="app_name">ファイル</string>
+    <string name="add_server">サーバの追加</string>
+    <string name="add_samba_server_title">新規Samba サーバ</string>
+    <string name="edit_samba_server_title">Sambaサーバの編集</string>
+    <string name="add_server_hostname">サーバ名またはIP</string>
+    <string name="add_server_username">ユーザ名</string>
+    <string name="add_server_password">パスワード</string>
+    <string name="server_display_name">氏名：</string>
+    <string name="server_logon_failure">ログオンの失敗</string>
+    <string name="server_reauth_title">認証情報の入力</string>
+    <string name="server_logon_failure_indication">認証情報の再入力。</string>
+    <string name="file_manager">ファイルマネージャ</string>
+    <string name="remote_files">共有フォルダ</string>
+    <string name="usb_files">USBドライブ</string>
+    <string name="menu_edit">編集</string>
+    <string name="menu_remove">削除</string>
+    <string name="file_transfer">転送中</string>
+    <string name="file_transfer_complete">ファイルの転送完了：</string>
+    <string name="transfer_result">転送の完了済み： %dファイル</string>
+    <string name="transferring_file_to">ファイルの転送先：</string>
+    <string name="host_name_empty_indicator">ホスト名を入力してください。</string>
+    <string name="not_found_network_name">ネットワーク名が見つかりません。</string>
+    <string name="server_not_reachable">サービスに到達できません。</string>
+    <string name="no_group_found">グループが見つかりませんでした。 再度実行してください。</string>
+    <string name="context_menu_title_file">ファイルのオプション</string>
+    <string name="context_menu_title_folder">フォルダのオプション</string>
+    <string name="menu_new_folder">新規フォルダ</string>
+    <string name="menu_delete">削除</string>
+    <string name="menu_rename">名前の変更</string>
+    <string name="menu_send">共有</string>
+    <string name="menu_open">開く</string>
+    <string name="menu_move">移動</string>
+    <string name="menu_copy">コピー</string>
+    <string name="menu_info">情報</string>
+    <string name="menu_print">印刷</string>
+    <string name="menu_sort_by">分類</string>
+    <string name="menu_add_server">サーバの追加</string>
+    <string name="menu_unzip">解凍</string>
+    <string name="menu_view_list">リストビュー</string>
+    <string name="menu_view_grid">グリッドビュー</string>
+    <string name="menu_select_all">すべての選択</string>
+    <string name="menu_unselect_all">すべての選択解除</string>
+    <string name="menu_multi_select">複数の選択</string>
+    <string name="menu_copy_selected">コピー</string>
+    <string name="menu_rename_selected">名前の変更</string>
+    <string name="menu_open_selected">開く</string>
+    <string name="menu_info_selected">情報</string>
+    <string name="select_file">ファイルの選択</string>
+    <string name="select">選択</string>
+    <string name="file_info_title">ファイルのプロパティ</string>
+    <string name="file_info_title_dir">ディレクトリのプロパティ</string>
+    <string name="create_new_folder">新規フォルダ</string>
+    <string name="delet">削除</string>
+    <string name="folder_name">フォルダ名</string>
+    <string name="file_name">ファイル名</string>
+    <string name="this_folder_is_empty">このフォルダは空です。</string>
+    <string name="sd_is_used_by_other">メモリカードはUSBマスストレージモードです。 このモードを終了してメモリカードにアクセスしてください。</string>
+    <string name="really_delete">ファイル%sは削除されます。</string>
+    <string name="file_renamed">ファイル名が変更されました。</string>
+    <string name="folder_renamed">フォルダ名が変更されました。</string>
+    <string name="move_sucess">移動が完了しました。</string>
+    <string name="copy_sucessfully">コピーが完了しました。</string>
+    <string name="copy_failed">コピーできません。</string>
+    <string name="file_delet_sucessfully">ファイルが削除されました。</string>
+    <string name="files_delet_sucessfully">ファイルが削除されました。</string>
+    <string name="folder_delet_sucessfully">フォルダが削除されました。</string>
+    <string name="delet_failed">ファイルが削除されません。</string>
+    <string name="delet_failed_multiple">1つ以上のファイルが削除されませんでした。</string>
+    <string name="really_delete_folder">%sフォルダとコンテンツすべてが削除されます。</string>
+    <string name="really_delete_selected">選択されたアイテムとコンテンツは削除されます。 続行しますか？</string>
+    <string name="paste_button">ここに貼り付け</string>
+    <string name="move_button">移動</string>
+    <string name="delete_button">削除</string>
+    <string name="select_folder">フォルダの選択</string>
+    <string name="copied_file_name">コピー_%s</string>
+    <string name="copied_file_name_2">コピー  %1$d_%2$s</string>
+    <string name="home">ホーム</string>
+    <string name="loading">ローディングをお待ちください...</string>
+    <string name="deleting">削除をお待ちください...</string>
+    <string name="cancle">キャンセル</string>
+    <string name="open_wifi">Wi-Fiを開く</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">Wi-Fiは接続されていません すぐに接続しますか？</string>
+    <string name="check_wifi">Wi-Fi接続をチェックしてください。</string>
+    <string name="shared_folders">共有フォルダ</string>
+    <string name="wifi_is_avaiable">Wi-Fiは接続されています。</string>
+    <string name="sd_card">SDカード</string>
+    <string name="sd_missing">メモリカードが不明です。 ファイルを読み取るにはメモリカードを挿入してください。</string>
+    <string name="error_creating_new_folder">新規フォルダを作成できません。</string>
+    <string name="error_renaming_file">ファイルの名前を変更できません。</string>
+    <string name="error_renaming_folder">フォルダの名前を変更できません。</string>
+    <string name="error_moving">ファイルを移動できません。</string>
+    <string name="error_moving_multiple">1つ以上のファイルが移動されませんでした。</string>
+    <string name="send_not_available">このタイプのファイルは送信できません。</string>
+    <string name="application_not_available">このタイプのファイルは開けません。</string>
+    <string name="copy_text">テキストのコピー</string>
+    <string name="anonymous">無記名</string>
+    <string name="no_server_found">サーバが見つかりませんでした。 再度実行してください。</string>
+    <string name="Extract_Zip_File">このファイルのコンテンツを現在のフォルダに抽出しますか？</string>
+    <string name="Unzipping">解凍</string>
+    <string name="tpye_folder">タイプ: フォルダ</string>
+    <string name="folder">フォルダー:&#160;</string>
+    <string name="contains">以下を含む: %1$sフォルダと%2$sファイル。</string>
+    <string name="smb_folder_contains">以下を含む: %sアイテム。</string>
+    <string name="type_file">タイプ: ファイル</string>
+    <string name="type_image">タイプ: 画像</string>
+    <string name="type_audio">タイプ: 音声</string>
+    <string name="type_video">タイプ: ビデオ</string>
+    <string name="type_text">タイプ: テキスト</string>
+    <string name="type_doc">タイプ: ドキュメントファイル</string>
+    <string name="type_zip">タイプ: 解凍</string>
+    <string name="size">サイズ:&#160;</string>
+    <string name="last_modified_at">変更日:&#160;</string>
+    <string name="readable_yes">読み取り可能： はい</string>
+    <string name="readable_no">読み取り可能： いいえ</string>
+    <string name="writable_yes">書き込み可能: はい</string>
+    <string name="writable_no">書き込み可能: いいえ</string>
+    <string name="hidden_yes">非表示： はい</string>
+    <string name="hidden_no">非表示： いいえ</string>
+    <string name="download_dialog_title">ファイルの転送</string>
+    <string name="transfer_complete">転送の完了</string>
+    <string name="transfer_progress">転送の進捗</string>
+    <string name="to">送信先:&#160;</string>
+    <string name="file_size">サイズ:&#160;</string>
+    <string name="hundred_percent">100%</string>
+    <string name="items">アイテム</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="crop_Image_error">ファイルのタイプはサポートされていません！ </string>
+    <string name="usbdisk">リムーバブルディスク</string>
+    <string name="usbdisk_missing">USBディスクは接続されていません。 ファイルを読み取るにはUSBディスクを接続します。</string>
+    <string name="internal_phone_storage">内部電話ストレージ</string>
+    <string name="unknown">不明</string>
+    <string name="sd_unmounted">SDカードはマウントされていません。 ファイルを読み取るにはSDカードをマウントします。</string>
+    <string name="internal_phone_storage_unmounted">内部電話ストレージはマウントされていません。 ファイルを読み取るには内部電話ストレージをマウントします。</string>
+    <string name="protected_content">保護されたコンテンツ</string>
+    <string name="protected_content_fail">保護されたコンテンツは起動できません。</string>
+    <string name="item">アイテム</string>
+    <string name="renaming_file_empty">ファイル名はブランクにできません。別の名前を選択してください。</string>
+    <string name="renaming_folder_empty">フォルダ名はブランクにできません。別の名前を選択してください。</string>
+    <string name="default_group">不明のグループ</string>
+    <string name="enter_Credentials">認証情報の入力</string>
+    <string name="renaming_folder_exist">このフォルダー名はすでに使用されています。別の名前を選択してください。</string>
+
+</resources>

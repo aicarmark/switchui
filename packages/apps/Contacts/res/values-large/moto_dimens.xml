@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--  ChinaDev -->
+    <dimen name="location_matches_text_size">16dip</dimen>
+	<dimen name="largeDialerDigitsSize">28dip</dimen>
+	<dimen name="smallDialerDigitsSize">24dip</dimen>
+	<dimen name="dialer_drawer_height">488dip</dimen>
+	<dimen name="dialer_drawer_header_height">108dip</dimen>
+	<dimen name="dialer_location_height">30dip</dimen>
+	<dimen name="dialer_digits_height">78dip</dimen>
+	<dimen name="dialer_drawer_body_height">380dip</dimen>
+	<dimen name="dialer_drawer_dialpad_height">296dip</dimen>
+	<dimen name="dialer_drawer_dialpad_car_height">296dip</dimen>
+	<dimen name="dialer_drawer_addition_height">84dip</dimen>
+	<dimen name="dialer_drawer_key_height">70dip</dimen>
+	<dimen name="dialer_drawer_key_width">78dip</dimen>
+	<dimen name="smart_dialpad_horz_gap">4dip</dimen>
+	<dimen name="smart_dialpad_outside_margin">0dip</dimen>
+    <dimen name="smart_dialpad_vertical_margin">0dip</dimen>
+    <dimen name="smart_dialpad_horz_edge_margin">0dip</dimen>
+    <dimen name="smart_dialpad_row_padding">4dip</dimen>
+    <dimen name="smart_dialpad_padding_bottom">4dip</dimen>
+    <dimen name="dialer_separater_margin">16dip</dimen>
+    <!--  Speed Dialer -->
+    <dimen name="sd_edit_grid_child_width">440dip</dimen>
+    <dimen name="sd_edit_grid_child_height">182dip</dimen>
+    <dimen name="sd_picker_grid_child_height">182dip</dimen>
+    <dimen name="sd_edit_image_width">134dip</dimen>
+    <dimen name="sd_edit_contact_height">52dip</dimen>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" >
+  <LinearLayout android:id="@+id/topPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/panel_height"
+                android:orientation="horizontal" >
+
+    <TextView android:id="@+id/donwload_activity_title_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:singleLine="true"
+              android:ellipsize="end"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="@string/download_dialog_title" />
+  </LinearLayout>
+</LinearLayout>

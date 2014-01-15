@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="manageshortcuts_hint" >使用此圖可選擇 9 個應用程式來填入小工具。您將可在首頁畫面面板上輕鬆存取這些應用程式。</string>
+</resources>

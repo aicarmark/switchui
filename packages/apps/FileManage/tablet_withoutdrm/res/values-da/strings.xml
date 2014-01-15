@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Filer</string>
+    <string name="add_server">Tilføj server</string>
+    <string name="add_samba_server_title">Ny Samba-server</string>
+    <string name="edit_samba_server_title">Rediger Samba-server</string>
+    <string name="add_server_hostname">Servernavn eller IP</string>
+    <string name="add_server_username">Brugernavn</string>
+    <string name="add_server_password">Adgangskode</string>
+    <string name="confirm_password">Bekræft adgangskode</string>
+    <string name="server_display_name">Navn:</string>
+    <string name="server_logon_failure">Logon-fejl</string>
+    <string name="server_reauth_title">Indtast godkendelsesoplysninger</string>
+    <string name="server_logon_failure_indication">Indtast godkendelsesoplysninger.</string>
+    <string name="remote_files">Fjernmapper</string>
+    <string name="menu_edit">Rediger</string>
+    <string name="menu_remove">Fjern</string>
+    <string name="file_transfer">Overfører</string>
+    <string name="file_transfer_complete">Filoverførsel fuldført:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">Overførsel fuldført: %d fil</item>
+        <item quantity="other">Overførsel fuldført: %d filer</item>
+    </plurals>
+    <string name="host_name_empty_indicator">Indtast et værtsnavn.</string>
+    <string name="not_found_network_name">Netværksnavnet blev ikke fundet.</string>
+    <string name="server_not_reachable">Serveren er utilgængelig.</string>
+    <string name="no_group_found">Der blev ikke fundet nogen grupper. Prøv igen.</string>
+    <string name="external_sdcard">Eksternt SD</string>
+    <string name="menu_new_folder">Ny mappe</string>
+    <string name="menu_delete">Slet</string>
+    <string name="menu_rename">Omdøb</string>
+    <string name="menu_send">Del</string>
+    <string name="menu_open">Åbn</string>
+    <string name="menu_move">Flyt</string>
+    <string name="menu_copy">Kopier</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_print">Udskriv</string>
+    <string name="menu_compress">Komprimer</string>
+    <string name="menu_paste">Kopier</string>
+    <string name="menu_sort_by">Sorter efter</string>
+    <string name="menu_sort_by_name">Efter navn</string>
+    <string name="menu_sort_by_type">Efter type</string>
+    <string name="menu_sort_by_date">Efter dato</string>
+    <string name="menu_sort_by_size">Efter størrelse</string>
+    <string name="menu_unzip">Pak ud</string>
+    <string name="menu_view_list">Listevisning</string>
+    <string name="menu_view_grid">Gittervisning</string>
+    <string name="menu_view_column">Vis kolonne</string>
+    <string name="menu_unselect_all">Fravælg alle</string>
+    <string name="select_file">Vælg fil</string>
+    <string name="select">Vælg</string>
+    <string name="file_info_title">Filegenskaber</string>
+    <string name="file_info_title_dir">Biblioteksegenskaber</string>
+    <string name="create_new_folder">Opret ny mappe</string>
+    <string name="create_new_zip_file">Ny ZIP-fil</string>
+    <string name="create_compress_encryption_file">Komprimer og kryptering</string>
+    <string name="compress_encryption_file">Angiv en adgangskode for at oprette en adgangskodebeskyttet zip-fil.</string>
+    <string name="folder_name">Mappenavn</string>
+    <string name="file_name">Filnavn</string>
+    <string name="this_folder_is_empty">Denne mappe er tom.</string>
+    <string name="sd_is_used_by_other">Hukommelseskortet er i USB-masselagringstilstand. Afslut denne tilstand for at få adgang til hukommelseskortet.</string>
+    <string name="file_renamed">Fil omdøbt.</string>
+    <string name="folder_renamed">Mappe omdøbt.</string>
+    <plurals name="move_success">
+        <item quantity="one">%1$d element blev flyttet</item>
+        <item quantity="other">%1$d elementer blev flyttet</item>
+    </plurals>
+    <string name="error_moving">Der opstod en fejl under flytning.</string>
+    <plurals name="copy_success">
+        <item quantity="one">%1$d element blev kopieret</item>
+        <item quantity="other">%1$d elementer blev kopieret</item>
+    </plurals>
+    <string name="error_copying">Der opstod en fejl under kopiering.</string>
+    <plurals name="delete_success">
+        <item quantity="one">%1$d element blev slettet</item>
+        <item quantity="other">%1$d elementer blev slettet</item>
+    </plurals>
+    <string name="delete_failed">Der opstod en fejl under sletning.</string>
+    <string name="really_delete_selected">Alle valgte elementer og indhold bliver slettet. Er du sikker på, at du vil fortsætte?</string>
+    <string name="paste_button">Indsæt</string>
+    <string name="place_button">Sted</string>
+    <string name="select_folder">Vælg mappe</string>
+    <string name="copied_file_name">Kopi af %s</string>
+    <string name="copied_file_name_2">Kopier %1$d af %2$s</string>
+    <string name="loading">Indlæser...</string>
+    <string name="deleting">Sletter...</string>
+    <string name="open_wifi">Åbn Wi-Fi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">Wi-Fi er ikke forbundet. Vil du oprette forbindelse nu?</string>
+    <string name="check_wifi">Kontroller Wi-Fi-forbindelsen.</string>
+    <string name="shared_folders">Fjernmapper</string>
+    <string name="sd_card">SD-kort</string>
+    <string name="sd_missing">Hukommelseskort mangler. Isæt hukommelseskort for at læse filer.</string>
+    <string name="error_creating_new_folder">Kan ikke oprette ny mappe.</string>
+    <string name="error_renaming_file">Kan ikke omdøbe fil.</string>
+    <string name="error_renaming_folder">Kan ikke omdøbe mappe.</string>
+    <string name="error_file_does_not_exists">Filen findes ikke.</string>
+    <string name="send_not_available">Kan ikke sende filtype.</string>
+    <string name="application_not_available">Kan ikke åbne denne filtype.</string>
+    <string name="copy_text">Kopier tekst</string>
+    <string name="anonymous">Anonym</string>
+    <string name="no_server_found">Der blev ikke fundet nogen server. Prøv igen.</string>
+    <string name="Overwrite_Zip_File">Vil du overskrive den eksisterende ZIP-fil?</string>
+    <string name="Overwrite_Contents">Vil du overskrive den eksisterende mappes indhold?</string>
+    <string name="Unzipping">Pakker ud...</string>
+    <string name="Zipping">Pakker fil(er)...</string>
+    <string name="zip_file_name">Filnavn</string>
+    <string name="create">Opret</string>
+    <string name="extract">Pak ud</string>
+    <string name="overwrite">Overskriv</string>
+    <string name="error_zipping_file">Der opstod en fejl under sammenpakning af filen.</string>
+    <string name="error_unzip_file">Der opstod en fejl under udpakning af filen.</string>
+    <string name="invalid_zip_name">%1$s kan ikke udpakkes. Omdøb filen med et gyldigt navn (f.eks. filnavnet%2$s), og prøv igen.</string>
+    <string name="folder">Mappe: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">Indeholder: %1$d element.</item>
+        <item quantity="other">Indeholder: %1$d elementer.</item>
+    </plurals>
+    <string name="size">Størrelse: </string>
+    <string name="last_modified_at">Ændret den: </string>
+    <string name="readable_yes">Læsbar: Ja</string>
+    <string name="readable_no">Skrivbar: NEJ</string>
+    <string name="writable_yes">Skrivbar: Ja</string>
+    <string name="writable_no">Skrivbar: Nej</string>
+    <string name="hidden_yes">Skjult: Ja</string>
+    <string name="hidden_no">Skjult: Nej</string>
+    <string name="download_dialog_title">Filoverførsel</string>
+    <string name="transfer_complete">Overførsel fuldført</string>
+    <string name="transfer_progress">Overførselsstatus</string>
+    <string name="to">Til: </string>
+    <string name="hundred_percent">100 %</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="crop_Image_error">Filtype understøttes ikke!</string>
+    <string name="internal_device_storage">Internt lager i enheden</string>
+    <string name="unknown">Ukendt</string>
+    <string name="sd_unmounted">Forbindelse til SD-kort er afbrudt. Opret forbindelse til SD-kort for at læse filer.</string>
+    <string name="internal_device_storage_unmounted">Forbindelse til enhedens interne lager er afbrudt. Opret forbindelse til enhedens interne lager for at læse filer.</string>
+    <string name="protected_content">Beskyttet indhold</string>
+    <plurals name="item">
+        <item quantity="one">%1$d element</item>
+        <item quantity="other">%1$d elementer</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">Omdøbning mislykkedes</string>
+    <string name="renaming_exist">Navnet %s er allerede taget. Vælg et andet navn.</string>
+    <string name="renaming_empty">Der er ikke blevet indtastet noget navn.</string>
+    <string name="renaming_invalid">Det indtastede navn indeholder en eller flere ugyldige tegn. Vælg et andet navn.</string>
+    <string name="renaming_file_empty">Filnavnet er ugyldigt. Indtast et mappenavn, der består af bogstaver eller tal.</string>
+    <string name="renaming_folder_empty">Mappenavnet er ugyldigt. Indtast et mappenavn, der består af bogstaver eller tal.</string>
+    <string name="default_group">Ukendt gruppe</string>
+    <string name="search_hint">Søg i filer</string>
+    <string name="menu_search">Søg</string>
+    <string name="search_folder">Vælg mappe, der skal søges i</string>
+    <string name="sd_missing_search">Hukommelseskort mangler. Isæt hukommelseskort for at søge i filer.</string>
+    <string name="search_progess">Søger efter %1$s i %2$s"</string>
+    <string name="settings_description">Filer og mapper</string>
+    <string name="search_result">Resultater i \"%s\"</string>
+    <string name="empty_search_result">Ingen resultater fundet</string>
+    <string name="renaming_folder_exist">Mappenavn findes allerede, vælg et andet navn</string>
+    <string name="enter_Credentials">Indtast login-oplysninger</string>
+    <string name="name">Navn</string>
+    <string name="date">Dato</string>
+    <string name="size_v">Størrelse</string>
+    <string name="type">Type</string>
+    <string name="typ_folder">Mappe</string>
+    <string name="typ_file">Fil</string>
+    <string name="typ_image">Billede</string>
+    <string name="typ_audio">Lyd</string>
+    <string name="typ_video">Video</string>
+    <string name="typ_text">Tekst</string>
+    <string name="typ_doc">Dokument</string>
+    <string name="typ_zip">Pak sammen</string>
+    <string name="typ_ppt">Præsentation</string>
+    <string name="typ_xml">Regneark</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">Webside</string>
+    <string name="typ_msg">Besked</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">Krypteringstype</string>
+    <string name="zip_encryption_type_normal">Ingen kryptering</string>
+    <string name="zip_encryption_type_legacy">Ældre kryptering (Zip 2.0)</string>
+    <string name="zip_encryption_type_128">128 AES-kryptering</string>
+    <string name="zip_encryption_type_256">256 AES-kryptering</string>
+    <string name="show_password">Vis adgangskode</string>
+    <string name="password_protected_zip">Beskyttet med en adgangskode. Indtast adgangskode for at pakke ud.</string>
+    <string name="password_cannot_be_blank">Adgangskode skal udfyldes</string>
+    <string name="stop_zip_file">Zip-pakning annulleret.</string>
+    <string name="stop_unzip_file">Udpakning annulleret.</string>
+    <string name="zip_canceling">Annullerer zip-pakning...</string>
+    <string name="unzip_canceling">Annullerer udpakning...</string>
+    <string name="zip_existing_zip_file">Valget omfatter en eksisterende zip-fil. Den eksisterende zip-fil medtages ikke i den nye zip-fil.</string>
+    <string name="menu_multimode">Vælg flere</string>
+    <string name="selected">%d markerede</string>
+    <string name="copied">%d kopieret</string>
+    <string name="usb_storage">USB-lager</string>
+    <string name="devices">Enheder</string>
+    <string name="shortcuts">Genvejsmapper</string>
+    <string name="recentfile">Seneste filer</string>
+    <string name="moving">Flytter...</string>
+    <string name="copying">Kopierer...</string>
+    <string name="menu_add_shortcut">Føj til genvejsmappen</string>
+    <string name="recent_file_deleted">Det oprindelige element blev ikke fundet.</string>
+    <string name="shortcut_deleted">Det oprindelige element blev ikke fundet. Vil du slette denne genvej?</string>
+    <string name="shortcut_storage_unmount">Det oprindelige element blev ikke fundet, fordi lagerenheden ikke er tilsluttet. Vil du slette denne genvej?</string>
+    <string name="recent_file_storage_unmount">Det oprindelige element blev ikke fundet, fordi lagerenheden ikke er tilsluttet.</string>
+    <string name="menu_delete_shorcut">Fjern fra Genvejsmapper</string>
+    <string name="menu_rename_shorcut">Omdøb genvejsmappen</string>
+    <string name="message_delete_shorcut">Vil du fjerne denne genvejsmappe fra listen Genvejsmapper? Fjernelse af genvejsmappen påvirker ikke den oprindelige mappe.</string>
+    <string name="message_rename_shorcut">Omdøbning af genvejsmappen påvirker ikke den oprindelige mappe.</string>
+    <string name="availmem_gb">%1$s GB tilgængelig</string>
+    <string name="move_shadow">Flyt</string>
+    <string name="no_tranfer_item">Der er i øjeblikket ikke noget overførselselement.</string>
+    <string name="done_button">Udført</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">Kopierer %1$d element til:</item>
+        <item quantity="other">Kopierer %1$d elementer til:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">Flytter %1$d element til:</item>
+        <item quantity="other">Flytter %1$d elementer til:</item>
+    </plurals>
+    <string name="waiting">Venter</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">Annullerer...</string>
+    <string name="confirm_delete">Bekræft sletning</string>
+    <string name="size_mb">%1$s MB</string>
+    <string name="error_occurred">Stoppet, fordi der opstod en fejl</string>
+    <string name="copy_stopped">Kopiering stoppet</string>
+    <string name="move_stopped">Flytning stoppet</string>
+    <string name="compress_using">Komprimer med</string>
+
+</resources>

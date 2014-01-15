@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="pref_sketch_color_entry" translatable="false">
+        <item>"Red"</item>
+        <item>"Yellow"</item>
+        <item>"Green"</item>
+        <item>"Cyan"</item>
+        <item>"Blue"</item>
+        <item>"Magenta"</item>
+        <item>"White"</item>
+        <item>"Black"</item>
+    </array>
+    <array name="pref_sketch_color_values" translatable="false">
+        <item>"RED"</item>
+        <item>"YELLOW"</item>
+        <item>"GREEN"</item>
+        <item>"CYAN"</item>
+        <item>"BLUE"</item>
+        <item>"MAGENTA"</item>
+        <item>"WHITE"</item>
+        <item>"BLACK"</item>
+    </array>
+    <array name="pref_sketch_thick_entry" translatable="false">
+        <item>"Thin"</item>
+        <item>"Medium"</item>
+        <item>"Thick"</item>
+    </array>
+    <array name="pref_sketch_thick_values" translatable="false">
+        <item>"THIN"</item>
+        <item>"MEDIUM"</item>
+        <item>"THICK"</item>
+    </array>
+
+    <string-array name="copypaste_menu_items">
+        <item>Copy</item>
+        <item>Send by SMS</item>
+        <item>Create a quick note</item>
+        <item>Translate</item>
+    </string-array>
+
+</resources>

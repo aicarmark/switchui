@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 2012-6-20, modify by bvq783 for switchui-1569 -->
+    <string-array name="workspace_tansition_effect_entries">
+        <!--item>預設值</item-->
+        <item>盒子 (內部)</item>
+        <item>門</item>
+        <!--item>盒子 (外部)</item-->
+        <item>扭轉</item>
+        <!--item>旋轉</item-->
+        <item>旋轉</item>
+        <!--item>跳躍進入</item-->
+    </string-array>
+
+    <string-array name="workspace_tansition_effect_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <!--item>4</item-->
+        <!--item>5</item-->
+        <!--item>6</item-->
+        <!--item>7</item-->
+    </string-array>
+
+    <string-array name="apps_tansition_effect_entries">
+        <item>盒子 (內部)</item>
+        <item>門</item>
+        <!--item>盒子 (外部)</item-->
+        <item>扭轉</item>
+        <!--item>旋轉</item-->
+        <item>旋轉</item>
+    </string-array>
+    <!-- 2012-6-20, modify end -->
+
+    <string-array name="apps_tansition_effect_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

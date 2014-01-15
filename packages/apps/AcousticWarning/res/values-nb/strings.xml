@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Lydvarsel</string>
+  <string name="title">Medievolum</string>
+  <string name="warning_text">Lytting på høyt volum i lange perioder kan være skadelig for hørselen.\n\nMusikkvolumet ditt er justert under det anbefalte nivået.</string>
+</resources>

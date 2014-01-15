@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingLeft="8dp"
+	android:paddingRight="8dp"	
+	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/weather_animation_layout"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent">	
+	              
+	</LinearLayout>
+		
+	<RelativeLayout android:id="@+id/weather"
+    	    android:layout_width="fill_parent"    
+    	    android:layout_height="fill_parent"
+    	    android:layout_marginBottom="16dip"
+    	    android:paddingLeft="8dip"
+    	    android:paddingRight="8dip">
+   	    
+    	    <TextView  android:id="@+id/temperature"
+   			    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content" 
+               	android:layout_alignParentLeft="true"
+               	android:layout_alignParentTop="true"
+               	android:gravity="top"
+    		    android:text="@string/initial_temperature"
+    		    android:textSize="35sp"
+    		    android:shadowRadius = "3.0"
+    		    android:shadowDy = "1.0"
+    		    android:shadowColor="@color/shadow_color"
+    		    android:textStyle="bold"
+    		    android:textColor="@color/temperature_color"/>
+    		    
+  		     <TextView  android:id="@+id/city_name"
+  		        android:layout_alignParentRight="true"
+               	android:layout_alignParentTop="true"
+               	android:paddingTop="10dip"
+               	android:layout_toRightOf="@id/temperature"
+               	android:layout_marginLeft="10dp"
+  		        android:gravity="top|right"
+   		        android:layout_width="wrap_content"
+   		        android:layout_height="wrap_content"
+
+   		        android:text="@string/initial_city"
+   		        android:singleLine = "true"
+   		        android:textSize="19sp"
+   		        android:shadowRadius = "1.0"
+   		        android:shadowDy = "3.0"
+   		        
+   		        android:shadowColor="@color/shadow_color"
+   		        android:textStyle="bold"
+   		        android:textColor="@color/city_color"/>
+        
+        <TextView  android:id="@+id/date"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:paddingLeft ="2px"
+    		
+    		android:textSize="17sp"
+    		android:text = "@string/initial_date"
+    		android:shadowRadius = "1.0"
+    		android:shadowDy = "1.0"
+    		android:shadowColor="@color/shadow_color"
+			android:layout_marginBottom="6dp"
+    		android:layout_alignParentLeft="true"
+    		android:layout_alignParentBottom="true"
+    		android:textColor="@color/date_color"/>
+    		
+    	<TextView android:id="@+id/time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/initial_apm"
+    		android:textSize="17sp"
+			android:layout_marginBottom="6dp"
+    		android:shadowColor="@color/shadow_color"
+    		android:shadowRadius = "1.0"
+    		android:shadowDy = "1.0"
+    		android:layout_alignParentRight="true"
+    		android:layout_alignParentBottom="true"
+    		android:gravity="center_vertical"
+    		android:textColor="@color/time_color"/>
+
+    	
+    	<TextView  android:id="@+id/no_city"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/add_a_city"
+    		android:textSize="18sp"
+    		android:shadowRadius = "3.0"
+    		android:shadowDy = "1.0"
+    		android:shadowColor="@color/shadow_color"
+    		android:layout_centerInParent="true"
+    		android:padding = "2dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/city_color"/>
+	
+	<TextView  android:id="@+id/no_weather_info"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/weather_null"
+    		android:textSize="18sp"
+    		android:shadowRadius = "3.0"
+    		android:shadowDy = "1.0"
+    		android:shadowColor="@color/shadow_color"
+    		android:layout_centerInParent="true"
+    		android:padding = "2dip"
+    		android:textStyle="bold"
+    		android:textColor="@color/city_color"/>
+    		
+    	<TextView
+			android:id="@+id/loading"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:layout_centerInParent="true"
+	    	android:gravity="center_horizontal|center_vertical"
+	    	android:textColor="#000000"
+	    	android:textSize="22sp"
+	    	android:text="@string/loading"/>	
+    	
+  	</RelativeLayout>
+</RelativeLayout>
+

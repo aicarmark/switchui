@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.motorola.mmsp.sinaweather.app.MyAbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="480dip"
+	android:background="@drawable/weather_bg_02" android:id="@+id/city_weather"
+	android:focusable="false">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="390dip" android:gravity="right"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<TextView android:id="@+id/current_city" android:layout_x="-71px"
+			android:layout_y="32px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="36sp"
+			android:textColor="@android:color/white" android:layout_marginTop="3dip"
+			android:shadowRadius="1" android:shadowDx="0.5" android:shadowDy="1.0"
+			android:singleLine="true" android:ellipsize="end"
+			android:shadowColor="@android:color/black" />
+
+		<TextView android:id="@+id/todaytime"
+			android:layout_marginTop="5dip" android:layout_x="-71px"
+			android:layout_y="92px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="24sp"
+			android:textColor="@android:color/white" android:gravity="center_vertical"
+			android:shadowRadius="1" android:shadowDx="0.5" android:shadowDy="1.0"
+			android:shadowColor="@android:color/black" />
+
+		<TextView android:id="@+id/more_weather_status"
+			android:layout_x="-71px" android:layout_y="120px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="18sp"
+			android:textColor="@android:color/white" android:gravity="center_vertical"
+			android:shadowRadius="1" android:shadowDx="0.5" android:shadowDy="1.0"
+			android:shadowColor="@android:color/black" />
+
+		<TextView android:id="@+id/current_condition"
+			android:layout_x="-59px" android:layout_y="155px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="24sp" android:layout_marginTop="5dip"
+			android:textColor="@android:color/white" android:gravity="center_vertical"
+			android:shadowRadius="1" android:shadowDx="0.5" android:shadowDy="1.0"
+			android:shadowColor="@android:color/black" />
+
+
+		<TextView android:id="@+id/current_range" android:layout_x="-59px"
+			android:layout_y="184px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="24sp"
+			android:textColor="@android:color/white" android:gravity="right|center_vertical"
+			android:shadowRadius="1" android:shadowDx="0.5" android:shadowDy="1.0"
+			android:shadowColor="@android:color/black" />
+
+
+		<TextView android:id="@+id/current_low_range"
+			android:layout_x="-59px" android:layout_y="210px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="24sp" android:textColor="@android:color/white"
+			android:gravity="right|center_vertical" android:shadowRadius="1"
+			android:shadowDx="0.5" android:shadowDy="1.0" android:shadowColor="@android:color/black" />
+
+
+		<TextView android:id="@+id/current_temperature"
+			android:layout_x="320px" android:layout_y="42px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="90sp" android:textColor="@android:color/white"
+			android:gravity="right|center_vertical" android:shadowRadius="1"
+			android:shadowDx="0.5" android:shadowDy="1.0" android:shadowColor="@android:color/black" />
+
+
+
+		<TextView android:id="@+id/realfeel"
+			android:layout_x="320px" android:layout_y="136px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textSize="24sp" android:textColor="@android:color/white"
+			android:gravity="right|center_vertical" android:shadowRadius="1"
+			android:shadowDx="0.5" android:shadowDy="1.0" android:shadowColor="@android:color/black" />
+	</LinearLayout>
+
+
+	<ImageView android:id="@+id/selectCity" 
+		android:src="@drawable/setting_button_refresh" 
+		android:layout_x="10px" android:layout_y="290px"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />	
+
+	<LinearLayout android:id="@+id/city_weather_list"
+		android:layout_x="615px" android:layout_y="0px" android:layout_width="125dip"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:cacheColorHint="#00000000">
+		
+		<LinearLayout android:layout_width="125dip"
+			android:background="@drawable/weather1" 
+			android:layout_height="70dip"
+			android:orientation="horizontal">
+			<ImageView android:id="@+id/cell_icon_1"
+				android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" 
+				android:layout_width="50dip">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:paddingTop="15dip" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				<TextView android:id="@+id/cell_day_1" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+				<TextView android:id="@+id/cell_range_1" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="125dip"
+			android:background="@drawable/weather2" 
+			android:layout_height="70dip"
+			android:orientation="horizontal">
+			<ImageView android:id="@+id/cell_icon_2"
+				android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" 
+				android:layout_width="50dip">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:paddingTop="15dip" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				<TextView android:id="@+id/cell_day_2" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+				<TextView android:id="@+id/cell_range_2" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="125dip"
+			android:background="@drawable/weather3" 
+			android:layout_height="70dip"
+			android:orientation="horizontal">
+			<ImageView android:id="@+id/cell_icon_3"
+				android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" 
+				android:layout_width="50dip">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:paddingTop="15dip" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				<TextView android:id="@+id/cell_day_3" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+				<TextView android:id="@+id/cell_range_3" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+
+		
+		<LinearLayout android:layout_width="125dip"
+			android:background="@drawable/weather4" 
+			android:layout_height="70dip"
+			android:orientation="horizontal">
+			<ImageView android:id="@+id/cell_icon_4"
+				android:layout_gravity="center_vertical"
+				android:layout_height="wrap_content" 
+				android:layout_width="50dip">
+			</ImageView>
+			<LinearLayout android:layout_width="wrap_content"
+				android:paddingTop="15dip" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				<TextView android:id="@+id/cell_day_4" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+				<TextView android:id="@+id/cell_range_4" 
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:textSize="21sp" android:textColor="@android:color/white"
+					android:gravity="center">
+				</TextView>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+</com.motorola.mmsp.sinaweather.app.MyAbsoluteLayout>

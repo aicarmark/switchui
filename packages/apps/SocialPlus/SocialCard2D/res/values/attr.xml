@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingLayout"> 
+    	 <attr name="fixedChild" format="integer"/>
+    	 <attr name="fixedPoint1_x" format="float"/>
+    	 <attr name="fixedPoint1_y" format="float"/>
+    	 <attr name="fixedPoint1_type" format="integer"/>
+    	 <attr name="fixedPoint1_childCount" format="integer"/>
+    	 <attr name="fixedPoint2_x" format="float"/>
+    	 <attr name="fixedPoint2_y" format="float"/>
+    	 <attr name="fixedPoint2_type" format="integer"/>
+    	 <attr name="fixedPoint2_childCount" format="integer"/>
+    	 <attr name="fixedPoint3_x" format="float"/>
+    	 <attr name="fixedPoint3_y" format="float"/>
+    	 <attr name="fixedPoint3_type" format="integer"/>
+    	 <attr name="fixedPoint3_childCount" format="integer"/>
+    	 <attr name="fixedPoint4_x" format="float"/>
+    	 <attr name="fixedPoint4_y" format="float"/>
+    	 <attr name="fixedPoint4_type" format="integer"/>
+    	 <attr name="fixedPoint4_childCount" format="integer"/> 
+    	 <attr name="mode" format="integer"/>
+    	 <attr name="drawOrder" format="string"/>
+     </declare-styleable> 
+     
+     <declare-styleable name="Skin"> 
+    	 <attr name="name" format="reference|string"/>
+		 <attr name="thumbnail_image" format="reference|integer"/>
+		 <attr name="bar_bg_1" format="reference|integer"/>
+    	 <attr name="bar_bg_2" format="reference|integer"/>
+    	 <attr name="bar_bg_3" format="reference|integer"/>
+    	 <attr name="bar_bg_4" format="reference|integer"/>
+    	 <attr name="bar_bg_5" format="reference|integer"/>
+    	 <attr name="bar_bg_6" format="reference|integer"/>
+    	 <attr name="bar_bg_7" format="reference|integer"/>
+    	 <attr name="bar_bg_8" format="reference|integer"/>
+    	 <attr name="bar_bg_9" format="reference|integer"/>
+    	 <attr name="bg_image_1" format="reference|integer"/>
+    	 <attr name="bg_image_2" format="reference|integer"/>
+    	 <attr name="bg_image_3" format="reference|integer"/>
+    	 <attr name="bg_image_4" format="reference|integer"/>
+    	 <attr name="bg_image_5" format="reference|integer"/>
+    	 <attr name="bg_image_6" format="reference|integer"/>
+    	 <attr name="bg_image_7" format="reference|integer"/>
+    	 <attr name="bg_image_8" format="reference|integer"/>    
+    	 <attr name="bg_image_9" format="reference|integer"/>	 
+     </declare-styleable> 
+     
+     <declare-styleable name="Config"> 
+    	 <attr name="id" format="reference|integer"/>
+    	 <attr name="bitmap" format="reference|integer"/>
+    	 <attr name="view" format="reference|integer"/>
+    	 <attr name="animation_set" format="reference|integer"/>
+    	 <attr name="interaction_set" format="reference|integer"/>
+    	 <attr name="type" format="reference|string"/>
+    	 <attr name="offset_x_rate" format="reference|float"/>
+    	 <attr name="offset_y_rate" format="reference|float"/>
+    	 <attr name="repeat_count" format="reference|string"/>
+    	 <attr name="from" format="reference|string"/>
+    	 <attr name="to" format="reference|string"/>
+    	 <attr name="acceleration" format="reference|string"/>
+    	 <attr name="init_velocity" format="reference|string"/>
+    	 <attr name="duration" format="reference|integer"/>
+    	 <attr name="affect_type" format="reference|string"/>
+    	 <attr name="ordering" format="reference|string"/>
+    	 <attr name="speed" format="reference|string"/>
+    	 <attr name="frame_time" format="reference|integer"/>
+    	 <attr name="seek_animation_to" format="reference|string"/>
+    	 <attr name="res_package_name" format="reference|string"/>
+    	 <attr name="res_id" format="reference|integer"/>
+    	 
+    	 <attr name="x" format="reference|string"/>
+    	 <attr name="y" format="reference|string"/>
+    	 <attr name="z" format="reference|string"/>
+    	 <attr name="level" format="reference|string"/>
+    	 <attr name="alpha" format="reference|string"/>
+         <attr name="rotate_degrees" format="reference|string"/>
+         <attr name="rotate_px" format="reference|string"/>
+         <attr name="rotate_py" format="reference|string"/>
+         <attr name="scale_x" format="reference|string"/>
+         <attr name="scale_y" format="reference|string"/>
+         <attr name="visible" format="reference|string"/>
+         <attr name="delay_time" format="reference|string"/>
+         
+         
+         <attr name="intercept_event" format="reference|string"/>
+         <attr name="handle_event" format="reference|string"/>
+         <attr name="start_animation" format="reference|integer"/>
+         <attr name="block_animation" format="reference|string"/>
+         <attr name="animation_follow" format="reference|integer"/>
+         <attr name="tag" format="reference|string"/>
+         
+         <attr name="instance" format="reference|string"/>
+         <attr name="rotate_x_py" format="reference|string"/>
+         <attr name="rotate_y_px" format="reference|string"/>
+         
+     </declare-styleable>      
+</resources>

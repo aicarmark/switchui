@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="recent_call_types">
+        <item>所有通話</item>
+        <item>未接來電</item>
+        <item>已接電話</item>
+        <item>撥出電話</item>
+        <item>語音信箱</item>
+    </string-array>
+    <string-array name="recent_call_types_without_voicemail">
+        <item>所有通話</item>
+        <item>未接來電</item>
+        <item>已接電話</item>
+        <item>撥出電話</item>
+    </string-array>
+
+    <string-array name="contact_typeModes">
+        <item>裝置</item>
+        <item>Google</item>
+        <item>C 卡</item>
+        <item>G 卡</item>
+    </string-array>
+    <string-array name="network_types">
+        <item>所有網路</item>
+        <item>CDMA 網路</item>
+        <item>GSM 網路</item>
+    </string-array>
+    <string-array name="call_types">
+        <item>所有通話</item>
+        <item>已接電話</item>
+        <item>撥出電話</item>
+        <item>未接來電</item>
+    </string-array>
+    <string-array name="select_copy_dialog_items">
+        <item>裝置到 C 卡</item>
+        <item>裝置到 G 卡</item>
+        <item>C 卡到裝置</item>
+        <item>G 卡到裝置</item>
+    </string-array>
+    <string-array name="select_copy_dialog_items_single">
+        <item>裝置到 UIM 卡</item>
+        <item>裝置到 SIM 卡</item>
+        <item>UIM 卡到裝置</item>
+        <item>SIM 卡到裝置</item>
+    </string-array>
+    <string-array name="title_copy_progress_items">
+        <item>複製到 C 卡</item>
+        <item>複製到 G 卡</item>
+        <item>複製到裝置</item>
+        <item>複製到裝置</item>
+    </string-array>
+    <string-array name="title_copy_progress_items_single">
+        <item>複製到 UIM 卡</item>
+        <item>複製到 SIM 卡</item>
+        <item>複製到裝置</item>
+        <item>複製到裝置</item>
+    </string-array>
+    <string-array name="text_copy_progress_items">
+        <item>正在複製聯絡人到 C 卡</item>
+        <item>正在複製聯絡人到 G 卡</item>
+        <item>正在複製聯絡人到裝置</item>
+        <item>正在複製聯絡人到裝置</item>
+    </string-array>
+    <string-array name="text_copy_progress_items_single">
+        <item>正在複製聯絡人到 UIM 卡</item>
+        <item>正在複製聯絡人到 SIM 卡</item>
+        <item>正在複製聯絡人到裝置</item>
+        <item>正在複製聯絡人到裝置</item>
+    </string-array>
+
+</resources>

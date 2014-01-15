@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- calendareventsensor changes start> -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- calendareventsensor changes end> -->
+
+    <!--  *** Don't change the settings below for language translation **** -->
+    <string name="apikey">0f4XfHYCKAZQQK3u7P8agGqaf9YzOLJwg6siVog</string>
+
+    <!-- *** don't change the above settings for language translation *** -->
+
+    <!-- ========== SMARTACTIONS ========== -->
+  <!-- App name -->
+    <string name="app_name" translatable="false">SmartActions</string>
+
+    <!-- Notifications -->
+    <string name="active_smart_actions">Active SmartActions</string>
+
+    <!-- Used for the landing page screen with no rules -->
+    <string name="about_text">Simplify your life by automating actions you do every day. SmartActions can silence your ringer when you\'re in a meeting, send a text message when you arrive at a location, or make sure you never miss an important call.</string>
+    <string name="about_text_2">SMART<b>ACTIONS</b> simplifies your life by automating the things you do every day.</string>
+    <string name="about_version">Version</string>
+    <string name="about_copyright">\u00A9 2012 Motorola Mobility Inc. Version %1s</string>
+    <string name="learn_more">Learn more</string>
+    <string name="get_started">Get started</string>
+    <string name="next">Next</string>
+    <string name="samples">Samples</string>
+    <string name="my_rules">My SmartActions</string>
+    <string name="blank_rule">Custom</string>
+    <string name="blank_rule_subtext">Create a new SmartAction from scratch.</string>
+    <string name="blank_rule_header">CREATE YOUR OWN</string>
+    <string name="suggestion_header">SUGGESTIONS FOR YOU</string>
+    <string name="samples_header">SAMPLES</string>
+    <string name="auto_header">MY SMARTACTIONS</string>
+    <string name="manual_header">MY MANUAL ACTIONS</string>
+    <string name="teach_title">What is SMART<b>ACTIONS</b>?</string>
+    <string name="teach_text">SMART<b>ACTIONS</b> helps you automate things you do every day.\n\nFor example, you can use a SmartAction to silence your ringer when you\'re in a meeting or send a text message when you arrive at a location.\n\nBased on how you use your phone, you may get a suggestion to adopt a SmartAction that will help you.\n\nThere are also sample SmartActions that you can browse and add to your collection.\n\nIf you\'re feeling creative, you can even make your own SmartAction. Simply tell SMART<b>ACTIONS</b> what you want to do and when you want it to happen.</string>
+
+
+  <!-- Activity titles -->
+    <string name="check_status_title">Set by SmartActions</string>
+    <string name="copy_rule_title">Select a SmartAction to copy</string>
+    <string name="preset_rules">Sample SmartActions</string>
+    <string name="settings_title">Settings</string>
+    <string name="add_rule_title">Add a new SmartAction</string>
+
+        <!-- Contextual menu -->
+    <string name="view">View</string>
+    <string name="delete">Delete</string>
+    <!-- Contextual menu - debug mode only -->
+    <string name="debug">Debug</string>
+    <string name="debug_default">Debug default rule</string>
+    <string name="show_conflicts">Show active conflicts</string>
+    <string name="show_possible_conflicts">Show possible conflicts</string>
+    <string name="disable">Disable</string>
+
+    <!-- ImageView content description -->
+    <string name="about_image_desc">About image</string>
+    <string name="logo_image_desc">Motorola Mobility</string>
+    <string name="block_connector_image_desc">Block connector</string>
+    <string name="block_status_ind_image_desc">Block status indicator</string>
+    <string name="block_icon_image_desc">Action or Trigger icon</string>
+    <string name="block_connector_bar_image_desc">Block connector bar</string>
+    <string name="line_divider_image_desc">Line divider</string>
+    <string name="rule_icon_image_desc">Rule icon</string>
+    <string name="setting_icon_image_desc">Setting icon</string>
+    <string name="activity_icon_image_desc">Activity icon</string>
+    <string name="contact_photo_image_desc">Contact photo</string>
+    <string name="drivemode_icon_image_desc">Drive Smart Icon</string>
+    <string name="suggestion_image_desc">Suggestion Icon</string>
+    <string name="suggestion_row_image_desc">Suggestion List Icon</string>
+    <string name="bullet_image_desc">Bullet Image</string>
+    <string name="bt_image_desc">Bluetooth Icon</string>
+    <string name="dock_image_desc">Dock Icon</string>
+    <string name="list_item_icon_desc">List Item Icon</string>
+
+  <!-- Dialog text -->
+    <string name="about_title">About SmartActions</string>
+    <string name="delete_rule">Delete this SmartAction</string>
+    <string name="delete_rule_message">Are you sure you wish to delete this SmartAction?\n\nThis action cannot be undone.</string>
+    <string name="deleting_rule">Deleting SmartAction&#8230;</string>
+    <string name="rule_deleted">SmartAction deleted</string>
+    <string name="disabling_all">Disabling all SmartActions&#8230;</string>
+    <string name="rules_disabled">All SmartActions disabled</string>
+    <string name="copying_rule">Loading&#8230;</string>
+    <string name="copy_failed">Copying of rule failed</string>
+    <string name="discard_changes">Discard changes</string>
+    <string name="discard_rule_message">You have edited this SmartAction.\n Would you like to save these changes before leaving?</string>
+    <string name="changes_discarded">Changes discarded</string>
+    <string name="manual_rule_confirmation_msg">Without Triggers, you will need to turn this SmartAction on and off manually.</string>
+    <string name="manual_title">Manual actions</string>
+    <string name="location_consent">This trigger requires that you agree to allow Motorola to detect your location using Wi-Fi and Google location services.</string>
+    <string name="location_title">Location consent</string>
+    <string name="empty_rule_name">Title cannot be left blank. Reverting to previous name.</string>
+    <string name="max_visible_ena_auto_rules">You have reached the limit of 30 enabled automatic SmartActions. Disable at least one enabled SmartAction to continue.</string>
+    <string name="add">Add</string>
+
+    <!-- Dialog buttons -->
+    <string name="enable">Enable</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="copy">Copy</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="revert">Revert</string>
+    <string name="discard">Discard</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="continue_prompt">Continue</string>
+    <string name="iam_done">I\'m done</string>
+
+    <!-- Status wrapper and Suggestions -->
+    <string name="conflict">Conflict</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="error">Error - Touch for info</string>
+    <string name="manual">Manual</string>
+    <string name="added">Added</string>
+
+  <!-- Rule icon states and messages -->
+    <string name="active">Active</string>
+    <string name="ready">Ready</string>
+    <string name="press_enable">Touch icon to enable</string>
+    <string name="starting_up">Starting up&#8230;</string>
+    <string name="shutting_down">Shutting down&#8230;</string>
+    <string name="loading_rule">Loading&#8230;</string>
+    <string name="last_active">"Ready - Last active "</string>
+
+     <!-- Menu options -->
+    <string name="check_status">Check status</string>
+    <string name="about">About</string>
+    <string name="profile">My profile</string>
+    <string name="help">Help</string>
+    <string name="disable_all">Disable all</string>
+    <string name="settings">Settings</string>
+    <string name="copy_rule">Copy an existing SmartAction</string>
+
+  <!-- My Profile list -->
+    <string name="locations">I\&apos;m at a specific location</string>
+    <string name="locations_title">Locations</string>
+    <string name="locations_summary">Places important to you</string>
+    <string name="timeframes">Timeframes</string>
+    <string name="timeframes_summary">Times important to you</string>
+    <string name="TFHeading">Timeframes important to you</string>
+
+   <!-- Settings options -->
+    <string name="settings_prefs">Settings Preference</string>
+    <string name="rule_status_notifications">Status notifications</string>
+    <string name="rule_status_notifications_summary">Display status in ongoing notifications</string>
+    <string name="suggestion_notifications">Suggestion notifications</string>
+    <string name="suggestion_notifications_summary">New suggestions appear in notifications</string>
+    <string name="popup_suggestions">Pop-up suggestions</string>
+    <string name="popup_suggestions_summary">Important suggestions will pop-up over any application</string>
+    <string name="ca_enabled">Enable Context Aware</string>
+    <string name="mot_loc_services">Motorola location services</string>
+    <string name="mot_loc_services_summary">Uses data from Wi-Fi and mobile networks to determine your approximate location even when Wi-Fi is disabled</string>
+  <!-- Rules importer/exporter -->
+    <string name="app_name_exp">RulesExporterImporter</string>
+    <string name="export_rules">Export SmartActions</string>
+    <string name="canned_rules">Activate SmartActions</string>
+    <string name="import_rules">Import SmartActions</string>
+    <string name="import_precanned_rules">Import pre-canned SmartActions</string>
+    <string name="choose_mode">Choose a mode</string>
+    <string name="rules_exported_pass">SmartActions exported successfully</string>
+    <string name="rules_exported_fail">Exporting SmartActions failed</string>
+
+    <!-- Puzzle builder menu -->
+    <string name="edit_icon">Edit icon</string>
+    <string name="rename">Rename</string>
+
+     <!-- Puzzle builder -->
+    <string name="rule_name">New SmartAction</string>
+    <string name="rule_icons">SmartAction icons</string>
+    <string name="triggers">Triggers</string>
+    <string name="actions">Actions</string>
+    <string name="trigger_text">Touch the plus sign to add triggers and make this SmartAction automatic.</string>
+    <string name="action_text">Touch the plus sign to add actions to your SmartAction.</string>
+    <string name="no_avail_triggers">"There are no available triggers.</string>
+    <string name="no_avail_actions">"There are no available actions.</string>
+    <string name="description">Needs to be configured</string>
+    <string name="status">Touch here to add</string>
+    <string name="suggested">Suggested</string>
+    <string name="install">Touch here to download</string>
+    <string name="saving_rule">Saving SmartAction, please wait&#8230;</string>
+    <string name="changin_rule_state">Changing SmartAction state, please wait&#8230;</string>
+    <string name="error_reason">Reason unknown</string>
+    <string name="no_nw_provider">Google location services not enabled</string>
+    <string name="no_ada_accepted_key">Context Privacy Opt-in not checked</string>
+    <string name ="wifi_sleep">Wi-Fi sleep policy is not set to \"Never\"</string>
+    <string name="please_wait">Loading, please wait&#8230;</string>
+    <string name="rule_string">SmartAction</string>
+    <string name="new_string">New</string>
+    <string name="end_of_rule">When SmartAction ends</string>
+    <string name="manual_rule">Manual SmartAction</string>
+    <string name="block_action_edit">Edit</string>
+    <string name="block_action_enable">Enable</string>
+    <string name="block_action_disable">Disable</string>
+    <string name="block_action_delete">Delete</string>
+    <string name="wifi_loc_correlation_title">Location and Wi-Fi </string>
+    <string name="wifi_loc_correlation_desc">Location is determined using Wi-Fi. If you choose to turn off Wi-Fi or enable Airplane mode, location-based SmartActions will not work correctly.</string>
+    <string name="wifi_loc_consent_title">Location and Wi-Fi</string>
+    <string name="wifi_loc_consent_desc">Wi-Fi must be ON for the Location trigger to accurately detect where you are located.</string>
+    <string name="turn_on">Turn on</string>
+    <string name="wifi_action_block_name">Wi-Fi</string>
+    <string name="loc_condition_block_name">Location</string>
+    <string name="no_corresponding_act_for_intent">No matching settings found, possibly because of uninstallation of the app</string>
+    <string name="airplanemode_loc_correlation_title">Location and Airplane Mode </string>
+
+    <string name="airplanemode_loc_correlation_desc">Airplane mode is on, which disables SmartActions\'s ability to detect location.\n Would you like to turn off Airplane mode? </string>
+    <string name="turn_off_airplanemode">Turn Off </string>
+    <string name="wifi_loc_wifi_autoscan_desc">This trigger requires that you agree to allow Motorola to detect your location using Motorola location services.</string>
+
+  <!-- Error messages -->
+    <string name="no_samples">There are no sample SmartActions to display.</string>
+    <string name="no_suggestions">There are no suggested SmartActions to display.</string>
+    <string name="no_actions">There are no settings set by SmartActions.</string>
+
+   <!-- New Permission Strings -->
+    <string name="perm_rulesimporter_label">Use SmartActions Importer Module</string>
+    <string name="perm_rulesimporter_desc">Client Application needs this permission to launch SmartActions Importer</string>
+    <string name="perm_triggerpublisher_label" translatable="false">Use Trigger Publisher Listener</string>
+    <string name="perm_triggerpublisher_desc" translatable="false">Client Application needs this permission to listen Start and Stop of Trigger Publishers</string>
+
+    <!-- Suggestions related strings -->
+    <string name="suggestions">Suggestions</string>
+    <string name="sg_suggestion">new suggestion</string>
+    <string name="sg_suggestions">new suggestions</string>
+    <string name="sg_new">New Suggestion Available</string>
+    <string name="sg_title">"SmartActions suggests: %s"</string>
+    <string name="sg_init_title">A SmartAction for you</string>
+    <string name="sg_when">When:</string>
+    <string name="sg_because">Because:</string>
+    <string name="sg_text_1">Would you like to automatically:</string>
+    <string name="sg_text_2">Would you like to add the following SmartAction to this rule?</string>
+    <string name="sg_text_3">It is recommended that:</string>
+    <string name="sg_initial_text">"You've received a suggestion for a personalized SmartAction based on how you use your phone."</string>
+    <string name="sg_customize">Customize</string>
+    <string name="sg_learn">Learn more</string>
+    <string name="sg_started">Get started</string>
+    <string name="sg_thanks">No thanks</string>
+    <string name="sg_next">Next</string>
+    <string name="sg_swap">Swap</string>
+    <string name="sg_reject">"You can access this and other suggestions at a later time in the SmartActions application"</string>
+    <string name="sg_rule_added">SmartAction added</string>
+    <string name="sg_get_started">SmartActions are actions that happen automatically when they\'re triggered by something, like your location or the time of day.</string>
+
+    <!-- Driving Mode -->
+    <string name="sg_drivemode_title">Drive</string>
+    <string name="sg_drivemode_widget_title">Drive SmartAction</string>
+    <string name="sg_drivemode_selectRuleDesc">You already have one or more Drive SmartActions. Would you like to pair to an existing Drive SmartAction or create a new one?</string>
+    <string name="sg_drivemode_Desc">The Drive SmartAction helps you stay connected while you focus on driving.</string>
+    <string name="sg_drivemode_Desc1">Would you like to automatically:</string>
+    <string name="sg_drivemode_Item1">Send an \"I\'m driving\" auto-reply  to text messages</string>
+    <string name="sg_drivemode_Item2">Set the ringer to loud</string>
+    <string name="sg_drivemode_Item3">Launch the Vehicle Mode app</string>
+    <string name="sg_drivemode_bottomText">Would you like SmartActions to help you become a safer driver?</string>
+
+    <string name="sg_drivemode_triggerSelect">Select the option that best applies to you.</string>
+    <string name="sg_drivemode_triggerBTOnly">A Bluetooth device can help by automatically turning Drive Smart on or off.</string>
+    <string name="sg_drivemode_triggerBT">I pair to a Bluetooth device in my vehicle.</string>
+    <string name="sg_drivemode_WhatisThis">What is this?</string>
+    <string name="sg_drivemode_triggerDock">I use a Motorola Vehicle Navigation Dock.</string>
+    <string name="sg_drivemode_triggerManual">None of these apply.</string>
+    <string name="sg_drivemode_newRule">Create New Drive SmartAction</string>
+    <string name="sg_drivemode_existing">Existing SmartAction</string>
+
+    <string name="sg_drivemode_Confirm">You can view or edit this SmartAction at any time through the SmartActions application.</string>
+    <string name="sg_drivemode_ManualConfirm1">Use the Drive widget on your home screen to turn the SmartAction on and off.</string>
+    <string name="sg_drivemode_ManualConfirm2">You can automate the Drive SmartAction later by adding a vehicle navigation dock or Bluetooth device through the SmartActions application.</string>
+    <string name="sg_drivemode_DockConfirm1">Congratulations! You\'re all set to go. The Drive SmartAction will automatically turn on and off.</string>
+    <string name="sg_drivemode_DockConfirm2">You can go to the SmartActions application to view or change your Drive SmartAction preferences.</string>
+    <string name="sg_drivemode_BTConfirm1">Congratulations! You\'re all set to go. The Drive SmartAction will automatically turn on and off.</string>
+    <string name="sg_drivemode_BTConfirm2">You can go to the SmartActions application to view or change your Drive SmartAction preferences.</string>
+
+    <!-- Suggestions END -->
+
+    <!-- Debug logging (Internal purposes only) -->
+    <string name="leaving">Leaving</string>
+    <string name="arrived">Arrived</string>
+    <string name="ignoring">Ignore:</string>
+    <string name="ignore_rule_disabled">SmartAction is currently disabled</string>
+    <string name="inactive">Inactive</string>
+    <string name="action_not_fired">SmartAction not fired - conflicting ruleKey is</string>
+
+    <!-- Only for default rule (Debugging only) -->
+    <string name="default_rule">Default SmartAction</string>
+    <string name="default_values_rule">Hold default values for all settings</string>
+
+    <!-- Misc -->
+    <string name="narrative">Narrative</string>
+    <string name="click_text">Click to test</string>
+    <string name="empty_string"></string>
+    <string name="disabled">Disabled</string>
+    <string name="and">and</string>
+    <string name="other">other</string>
+    <string name="no_active_rules">No active SmartActions</string>
+    <string name="view_rule_list">click to view SmartActions list</string>
+    <string name="no_rules">No SmartActions</string>
+    <string name="add_rule_message">click to add a SmartAction</string>
+    <string name="perm_label">Control SmartActions Sensors</string>
+
+    <string-array name="override_actions_list_array">
+       <item>Go to the SmartAction</item>
+       <!--  <item>Reset to Default</item> -->
+       <item>Go to Settings</item>
+    </string-array>
+
+    <!-- ========== INFERENCE MANAGER ========== -->
+    <!-- <string name="app_name">Inference Manager</string> -->
+    <string name="widget_name">Inferencing</string>
+    <string name="widget_loading">No Inferences</string>
+    <!-- <string name="import_rules">Import Rules</string>-->
+    <string name="suggested_rule">new suggestion</string>
+    <string name="suggested_rules">new suggestions</string>
+    <string name="infer_title">SmartActions</string>
+    <string name="setup_in_progress">Please wait&#8230; Inference Engine setup in progress</string>
+    <string name="start">Press to import Additional SmartActions</string>
+    <string name="IM">Inference Manager</string>
+    <string name="Infer_additional">Infer Additional SmartActions</string>
+
+    <!-- ========== SMART PROFILE ========== -->
+    <string name="location">Location</string>
+
+    <!-- Error messages -->
+    <string name="loc_delete_error">Cannot delete location.</string>
+    <string name="timeframe_delete_error">Cannot delete timeframe.</string>
+    <string name="duplicate_location">This location already exists in your list of locations.</string>
+    <string name="loc_delete_confirm">This will remove this location from your profile and it will no longer be available for use in any of your SmartActions. This action cannot be undone.</string>
+    <string name="timeframe_delete_confirm">This will remove this timeframe from your profile and it will no longer be available for use in any of your SmartActions. This action cannot be undone.</string>
+
+
+    <!-- Dialogs -->
+    <string name="or">or</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit">Edit</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="set">Set</string>
+    <string name="help_me_choose">Help me choose</string>
+
+    <!-- Locations -->
+    <string name ="loc_secondary_text">PLACES IMPORTANT TO YOU</string>
+    <string name="smart_rules_loc">Locations</string>
+    <string name="suggested_location">Suggested location</string>
+    <string name="loc_correct">Is this location correct?</string>
+    <string name="no_meaningful_location">You currently have no locations.\n\nTouch the plus sign to add locations to use in SmartActions.</string>
+    <string name="home_poitag">Home</string>
+    <string name="work_poitag">Work</string>
+    <string name="change_location">Change location</string>
+    <string name="loc_name">Location Name</string>
+    <string name="loc_name_title">LOCATION NAME</string>
+    <string name="loc_details">LOCATION DETAILS</string>
+    <string name="loc_action">I\&apos;m at a specific location</string>
+    <string name="loc_prompt">What &lt;b>location&lt;/b> would you like to use?</string>
+    <string name="add_loc">Add a location</string>
+    <string name="custom_loc_name">Custom location name</string>
+    <string name="location_deleted">Location deleted</string>
+
+    <!-- Sensor related strings -->
+    <!-- Battery -->
+    <string name="battery_level">My battery is low</string>
+    <string name="battery_level_title">Battery level</string>
+    <string name="battery_at_100">Less than &lt;b>100%&lt;/b></string>
+    <string name="battery_at_70">Less than &lt;b>70%&lt;/b></string>
+    <string name="battery_at_50">Less than &lt;b>50%&lt;/b></string>
+    <string name="battery_at_35">Less than &lt;b>35%&lt;/b></string>
+    <string name="battery_at_25">Less than &lt;b>25%&lt;/b></string>
+    <string name="battery_at_10">Less than &lt;b>10%&lt;/b></string>
+    <string name="dialog_heading">When battery level goes below</string>
+    <string name="battery_level_prompt">What &lt;b>battery level&lt;/b> would you like to detect?</string>
+    <string name="battery_level_action">My battery is low</string>
+
+        <!-- Motion Detector Proxy -->
+    <string name="motion">My phone is not moving</string>
+    <string name="motion_desc">No Movement</string>
+
+
+    <!-- Dock -->
+    <string name="dock">My phone is docked</string>
+    <string name="dock_title">Dock</string>
+    <string name="dock_prompt">What &lt;b>dock&lt;/b> type would you like to detect?</string>
+    <string name="any">Any dock type</string>
+    <string name="desk">Standard dock</string>
+    <string name="car">Vehicle navigation dock</string>
+    <string name="mobile">Lapdock</string>
+    <string name="hd">HD dock</string>
+    <string name="dock_action">My phone is docked</string>
+
+    <!-- HeadSet -->
+    <string name="headset">I plug in headphones</string>
+    <string name="headset_title">Headphone status</string>
+    <string name="headset_prompt">What &lt;b>headphone status&lt;/b> would you like to detect?</string>
+    <string name="NotConnected">When my headphones are &lt;b>unplugged&lt;/b></string>
+    <string name="Connected">When my headphones are &lt;b>plugged in&lt;/b></string>
+    <string name="headset_block_desc_NotConnected">Unplugged</string>
+    <string name="headset_block_desc_Connected">Plugged In</string>
+    <string name="headset_action">I plug in headphones</string>
+
+    <!-- Storage -->
+    <string name="storage">Phone storage</string>
+    <string name="Low">Low</string>
+    <string name="NotLow">Not low</string>
+
+    <!-- AirPlane -->
+    <string name="airplane">Set Airplane mode</string>
+    <string name="airplane_title">Airplane mode</string>
+    <string name="airplane_off_desc">When Airplane mode is off</string>
+    <string name="airplane_on_desc">When Airplane mode is on</string>
+
+    <!-- Charging -->
+    <string name="charging">Charging</string>
+    <string name="anysourcecharging">Any charging source</string>
+    <string name="using_anysourcecharging">Using any charging source</string>
+    <string name="usbcharging">USB device</string>
+    <string name="using_usbcharging">Using a USB device</string>
+    <string name="usbcharging_desc">Example: Computer</string>
+    <string name="accharging">Wall outlet</string>
+    <string name="using_accharging">Using a wall outlet</string>
+    <string name="notcharging">Not charging</string>
+    <string name="chargingstatus">My charging status changes</string>
+    <string name="chargingstatus_title">Charging status</string>
+    <string name="chargingsource_title">Charging status detail</string>
+    <string name="chargingstatus_prompt">What &lt;b>charging status&lt;/b> would you like to detect?</string>
+    <string name="chargingstatus_action">My charging status changes</string>
+    <string name="chargingoption">When I am &lt;b>charging&lt;/b></string>
+    <string name="notchargingoption">When I am &lt;b>not charging&lt;/b></string>
+
+    <!-- Wifi Connect -->
+    <string name="wifi_connect">Connected</string>
+    <string name="wifi_disconnect">Not connected</string>
+    <string name="wifi_connectivity_status">I\&apos;m connected to Wi-Fi</string>
+    <string name="wifi_connectivity_status_title">Wi-Fi Connection</string>
+
+    <!-- Wifi Connection with Address -->
+    <string name="wificonnectionwithaddress">Wi-Fi network</string>
+    <string name="wifi_error_message">No Wi-Fi networks have been found. \n
+                                      Touch the \"+\" button to add.</string>
+    <string name="wificonnection_prompt">What &lt;b>Wi-Fi network&lt;/b> would you like to detect?</string>
+    <string name="wificonnection_action">I\'m connected to Wi-Fi</string>
+    <string name="wificonnection_discovery">Some other network...</string>
+
+    <!--  BTConnectionWithAddress -->
+    <string name="btconnectionwithaddress">I\&apos;m paired to a Bluetooth device</string>
+    <string name="btconnectionwithaddress_title">Bluetooth device</string>
+    <string name="bt_error_message">No Bluetooth devices have been paired. \n\n
+                                    Touch the plus sign to add Bluetooth devices to use in SmartActions.</string>
+    <string name="bt_action">I\'m paired to a Bluetooth device</string>
+    <string name="btconnection_prompt">What &lt;b>Bluetooth device&lt;/b> would you like to detect?</string>
+    <string name="any_bluetooth_device">Any Bluetooth device</string>
+    <string name="btconnection_discovery">Some other device...</string>
+
+    <!-- Timeframes -->
+    <string name="show_edit_line">Edit timeframes</string>
+    <string name="time_frames_heading">It\&apos;s during a specific time</string>
+    <string name="time_frames_title">Timeframes</string>
+    <string name="time_header_message"></string>
+    <string name="time_dev">Timeframe</string>
+    <string name="time_frame_name_title">Name</string>
+    <string name="timeframe_repeat">Days of the week</string>
+    <string name="all_day_event">All day event</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="start_time_picker_title">Start time</string>
+    <string name="end_time_picker_title">End time</string>
+    <string name="everyday">Everyday</string>
+    <string name="never">Never</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="add_time_frame">Add a timeframe</string>
+    <string name="edit_time_frame">Edit timeframe</string>
+    <string name="delete_time_frame">Delete timeframe</string>
+    <string name="delete_time_confirm">This Timeframe will be deleted</string>
+    <string name="timeframe_name_preference">Timeframe Name Preference</string>
+    <string name="repeat_pref">Repeat Preference</string>
+    <string name="s_time">Start Time Preference</string>
+    <string name="e_time">End Time Preference</string>
+    <string name="all_day_event_pref">All Day Event Preference</string>
+    <string name="name_duplication_error">Another Timeframe with the same name already exists</string>
+    <string name="incomplete_details_error">Please fill in all the details.</string>
+    <string name="time_seperator">\u0020-\u0020</string>
+    <string name="time_dev_action">It\&apos;s during a specific time</string>
+    <string name="timeframe_prompt">What &lt;b>timeframe&lt;/b> would you like to detect?</string>
+    <string name="timeframe_deleted">Timeframe deleted</string>
+    <string name ="timeframes_secondary_text">TIMEFRAMES IMPORTANT TO YOU</string>
+
+
+    <!-- Name of preloaded timeframes -->
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="weekend">Weekend</string>
+    <string name="work">Work</string>
+
+    <!-- Missed Call -->
+    <string name="MissedCall">I miss some calls</string>
+    <string name="MissedCall_title">Missed calls</string>
+    <string name="pbk">PhoneBook</string>
+    <string name="MissedCallHeading">Missed calls</string>
+    <string name="no_of_missed_calls_prompt">Number of missed calls</string>
+    <string name="all_incoming_calls">All incoming calls</string>
+    <string name="selected_numbers">From the following contacts</string>
+    <string name="call">call</string>
+    <string name="calls">calls</string>
+    <string name="missed_call_from">from</string>
+    <string name="call_from_any_number">any number</string>
+    <string name="touch_to_add_numbers">Touch to add numbers</string>
+    <string-array name="frequency_array">
+        <item>1 missed call</item>
+        <item>2 missed calls</item>
+        <item>3 missed calls</item>
+        <item>4 missed calls</item>
+        <item>5 missed calls</item>
+    </string-array>
+    <string name="MissedCall_action">I miss some calls</string>
+
+    <!-- Missed calls -->
+    <string name="missed_calls_question_who">&lt;B>Who&lt;/B> should the &lt;B>missed calls&lt;/B> be from?</string>
+    <string name="missed_calls_question_contacts">&lt;B>Who&lt;/B> should the &lt;B>missed calls&lt;/B> be from?</string>
+    <string name="missed_calls_question_num">&lt;B>How many missed calls&lt;/B> would you like to detect?</string>
+    <string name="specific_people">Specific people</string>
+    <string name="missed_calls_num_1">1 missed call</string>
+    <string name="missed_calls_num_2">2 missed calls</string>
+    <string name="missed_calls_num_3">3 missed calls</string>
+    <string name="missed_calls_num_4">4 missed calls</string>
+    <string name="missed_calls_num_5">5 missed calls</string>
+
+    <!-- Incoming Call -->
+    <string name="IncomingCall">Incoming calls</string>
+    <string name="no_number">Please enter valid numbers</string>
+    <string name="incoming_call_from">from</string>
+
+    <!-- Display -->
+    <string name="display">My display status changes</string>
+    <string name="display_title">Display status</string>
+
+    <string name="display_prompt">What &lt;b>display status&lt;/b> would you like to detect?</string>
+    <string name="display_on">When my display is &lt;b>on&lt;/b></string>
+    <string name="display_off">When my display is &lt;b>off&lt;/b></string>
+    <string name="display_action">My display status changes</string>
+
+    <!-- ========== QUICK ACTIONS ========== -->
+    <string name="qa_app_name">Actions</string>
+
+    <!-- Ringer -->
+    <string name="ringer_volume">Adjust my volume</string>
+    <string name="ringer_volume_title">Volume</string>
+    <string name="ringer_volume_action">Adjust my ringer volume</string>
+    <string name="Ringer">Ringer</string>
+    <string name="silent_vib">"Silent - Vibrate"</string>
+    <string name="normal">Normal</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="silent">Silent</string>
+    <string name="vibe_and">" - Vibrate"</string>
+    <string name="vip_ringer">Ring loud for important people</string>
+    <string name="vip_ringer_title">VIP ringer</string>
+    <string name="vip_ringer_action">Ring loud for important people</string>
+
+    <!-- Messaging  -->
+    <string name="send_a_text_message">Send a text message</string>
+    <string name="send_a_text_message_title">Send text message</string>
+    <string name="send_text">To:\u0020</string>
+    <string name="To">To</string>
+    <string name="Timing">Timing</string>
+    <string name="timing_beginning">Send at beginning of SmartAction</string>
+    <string name="timing_end">Send at end of SmartAction</string>
+    <string name="compose_hint">Compose message</string>
+    <string name="send_a_text_message_action">Send a text message</string>
+
+    <!-- Send text message -->
+    <string name="send_text_question_contacts">&lt;B>Who&lt;/B> would you like to &lt;B>send a text message&lt;/B> to?</string>
+    <string name="send_text_question_msg">&lt;B>What&lt;/B> would you like your &lt;B>text message&lt;/B> to say?</string>
+    <string name="send_text_question_when">&lt;B>When&lt;/B> do you want to send the &lt;B>text message&lt;/B>?</string>
+
+    <!-- Voice Announce -->
+    <string name="voice_announce">Announce calls and texts</string>
+    <string name="voice_announce_title">Voice announce</string>
+    <string name="voice_announce_action">Announce calls and texts</string>
+    <string name="voice_announce_prompt">What would you like your phone to &lt;b>read out&lt;/b> to you?</string>
+    <string name="incoming_call">Incoming call from\u0020</string>
+    <string name="incoming_sms">Incoming text from\u0020</string>
+    <string name="caller_name_and_text_message_sender">Incoming caller name and text message sender</string>
+
+    <!-- Launch Application -->
+    <string name="launch_an_application">Launch an app</string>
+    <string name="launch_an_application_title">Launch application</string>
+    <string name="launch_an_application_prompt">What &lt;b>application&lt;/b> would you like to launch?</string>
+    <string name="launch_an_application_action">Launch an app</string>
+
+    <!-- Play a playlist -->
+    <string name="play_playlist">Play a playlist</string>
+    <string name="sdcard_no_playlist">No playlist found.</string>
+    <string name="pick_playlist">Pick a playlist</string>
+    <string name="no_playlist_message">No compatible playlist found on your phone.</string>
+    <string name="sdcard_missing_message">Your phone does not have an SD card inserted.</string>
+    <string name="sdcard_busy_message">Sorry, your SD card is busy.</string>
+    <string name="sdcard_error_message">An error was encountered on your SD card.</string>
+    <string name="play_playlist_action">Play music</string>
+    <string name="select_music_player">Select music player</string>
+    <string name="no_music_player_found">No compatible music player found on your phone.</string>
+
+    <!-- Play Music, Formerly Play a playlist -->
+    <string name="play_music_title">Play music</string>
+    <string name="play_music_choose_player_prompt">What &lt;b>music&lt;/b> app would you like to use to play music?</string>
+    <string name="play_music_playlist_prompt">What &lt;b>music&lt;/b> would you like to start playing?</string>
+    <string name="no_playlist_found">No playlists found.&lt;br>&lt;br>You can add and manage playlists from most music player apps downloadable from the Google Play Store.</string>
+
+    <!-- Wallpaper -->
+    <string name="change_wallpaper">Set my wallpaper</string>
+    <string name="change_wallpaper_title">Wallpaper</string>
+  <string name="change_wp_title">Set wallpaper</string>
+  <string name="change_wp_msg">You are currently using a live wallpaper. This action only supports regular wallpapers,
+                                     such as pictures.\n\nPlease change your wallpaper to a picture before using this action.</string>
+    <string name="chooser_title">Select wallpaper from</string>
+    <string name="saving_wallpaper">Saving&#8230;</string>
+    <string name="change_wp_prompt">What type of &lt;b>wallpaper&lt;/b> would you like to use?</string>
+    <string name="change_wp_action">Set my wallpaper</string>
+
+  <!-- Background sync -->
+    <string name="sync">Background sync</string>
+    <string name="backgrounddata">Adjust Background data</string>
+    <string name="backgrounddata_title">Background data</string>
+    <string name="bd_always">Keep apps synced all the time</string>
+    <string name="bd_always_s">Does not restrict background data</string>
+    <string name="bd_always_desc">Does not restrict background data</string>
+    <string name="bd_when_using">Keep apps synced only when you\'re using the device</string>
+    <string name="bd_when_using_s">Restricts background data \nselectively based on device usage</string>
+    <string name="bd_never">Only sync apps when you launch them</string>
+    <string name="bd_never_s">Restricts all background data</string>
+    <string name="bd_never_desc">Restricts all background data&lt;br />&lt;font size="14" color="#99CC00">Saves the most battery&lt;/font></string>
+    <string name="sync_prompt">How often would you like your &lt;b>apps to sync&lt;/b>?</string>
+    <string name="sync_on">All the time</string>
+    <string name="sync_on_desc">Does not restrict background data</string>
+    <string name="sync_off">Only when I\&apos;m using that app</string>
+    <string name="sync_off_desc">Restricts all background data&lt;br />&lt;font size="14" color="#99CC00">Saves the most battery&lt;/font></string>
+    <string name="sync_when_using_device">Only when I\&apos;m using my phone</string>
+    <string name="sync_action">Adjust Background data</string>
+
+   <!-- Processor Speed -->
+    <string name="processor_speed">Adjust processor speed</string>
+    <string name="processor_speed_title">Processor speed</string>
+    <string name="processor_speed_prompt">How would you like to set the device\&apos;s &lt;b>processor speed&lt;/b>?</string>
+    <string name="ps_performance">Performance mode</string>
+    <string name="ps_performance_s">Your phone\'s processor will be set for maximum performance</string>
+    <string name="ps_powersaver">Power saver mode</string>
+    <string name="ps_powersaver_s">Your phone\'s processor will slow down when you are not using the device to save battery</string>
+    <string name="ps_powersaver_desc">&lt;font color="#99CC00">Saves the most battery&lt;/font></string>
+    <string name="processor_speed_action">Adjust processor speed</string>
+
+    <!-- Notification -->
+    <string name="notif_label">Remind me</string>
+    <string name="notif_title">Reminder</string>
+    <string name="notif_action">Remind me</string>
+    <string name="reminder">Reminder to be displayed</string>
+    <string name="hint_text">Message</string>
+    <string name="play_sound">Play a sound</string>
+    <string name="notification_title">Notification</string>
+    <string name ="vibrate_and_play">Vibrate and play a sound</string>
+
+    <!-- Reminder (the new Notification) -->
+    <string name="reminder_title">Reminder</string>
+    <string name="reminder_alert_prompt">&lt;b>How&lt;/b> would you like your &lt;b>reminder&lt;/b> to alert you?</string>
+    <string name="reminder_message_prompt">&lt;b>What&lt;/b> would you like your &lt;b>reminder&lt;/b> to say?</string>
+    <string name="reminder_when_prompt">&lt;b>When&lt;/b> do you want to see your &lt;b>reminder&lt;/b>?</string>
+    <string name="smart_action_starts">When your SmartAction &lt;b>starts&lt;/b></string>
+    <string name="smart_action_ends">When your SmartAction &lt;b>ends&lt;/b></string>
+    <string name="smart_action_starts_ends">Both at the &lt;b>start and end&lt;/b></string>
+
+    <!-- Website -->
+    <string name="open_website">Launch a website</string>
+    <string name="open_website_title">Launch website</string>
+    <string name="enter_url">Enter a URL</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="launch_beginning">Launch at beginning of SmartAction</string>
+    <string name="launch_end">Launch at end of SmartAction</string>
+    <string name="open_website_action">Launch a website</string>
+    <string name="enter_url_hint">Touch to add URL</string>
+    <string name="bookmarks_cap">BOOKMARKS</string>
+    <string name="launch_website_prompt">What &lt;b>website&lt;/b> would you like to launch?</string>
+
+
+    <!-- Screen Timeout -->
+  <string name="screen_timeout">Adjust my display sleep</string>
+    <string name="screen_timeout_title">Display sleep</string>
+    <string name="screen_timeout_prompt">How soon do you want your display to go to &lt;b>sleep&lt;/b>?</string>
+    <string name="screen_timeout_action">Adjust my display sleep</string>
+
+    <!-- Ringtone -->
+    <string name="ringtone">Set my ringtone</string>
+    <string name="ringtone_title">Ringtone</string>
+    <string name="ringtone_question">What &lt;B>ringtone&lt;/B> would you like to hear?</string>
+    <string name="ringtone_action">Set my ringtone</string>
+
+    <!-- Contacts chooser -->
+    <string name="contacts_type_markup_begin" translatable="false">&lt;B></string>
+    <string name="contacts_type_markup_end" translatable="false">&lt;/B></string>
+    <string name="contacts_type_number_separator">\u0020</string>
+
+  <!--  Binary action strings -->
+    <string name="action_prompt">Would you like &lt;b>%1$s&lt;/b> to turn on or off?</string>
+    <string name="action_on">%1$s &lt;b>on&lt;/b></string>
+    <string name="action_off">%1$s &lt;b>off&lt;/b></string>
+  <!-- Bluetooth -->
+  <string name="bluetooth">Set Bluetooth</string>
+    <string name="bluetooth_title">Bluetooth</string>
+
+    <string name="bluetooth_prompt">How would you like to set &lt;b>Bluetooth&lt;/b>?</string>
+    <string name="bluetooth_on">Turn Bluetooth &lt;b>on&lt;/b></string>
+    <string name="bluetooth_off">Turn Bluetooth &lt;b>off&lt;/b></string>
+    <string name="bluetooth_action">Set Bluetooth</string>
+
+  <!-- Airplane Mode -->
+  <string name="ap">Set Airplane mode</string>
+    <string name="ap_title">Airplane mode</string>
+
+    <string name="ap_prompt">How would you like to set &lt;b>airplane mode&lt;/b>?</string>
+    <string name="ap_on">Turn airplane mode &lt;b>on&lt;/b></string>
+    <string name="ap_off">Turn airplane mode &lt;b>off&lt;/b></string>
+    <string name="ap_action">Set Airplane mode</string>
+  <!-- GPS -->
+  <string name="gps">Set GPS</string>
+    <string name="gps_title">GPS</string>
+    <string name="gps_error_secure" translatable="false">System Error: Gps - insufficient secure write permission, or invalid configuration.</string>
+        
+    <string name="gps_prompt">How would you like to set &lt;b>GPS&lt;/b>?</string>
+    <string name="gps_on">Turn GPS &lt;b>on&lt;/b></string>
+    <string name="gps_off">Turn GPS &lt;b>off&lt;/b></string>
+    <string name="gps_action">Set GPS</string>
+  <!-- WiFi -->
+  <string name="wifi">Set Wi-Fi</string>
+    <string name="wifi_title">Wi-Fi</string>
+
+    <string name="wifi_prompt">How would you like to set &lt;b>Wi-Fi&lt;/b>?</string>
+    <string name="wifi_on">Turn Wi-Fi &lt;b>on&lt;/b></string>
+    <string name="wifi_off">Turn Wi-Fi &lt;b>off&lt;/b></string>
+    <string name="wifi_action">Set Wi-Fi</string>
+    <!-- Auto SMS -->
+    <string name="auto_reply_text">Auto reply to texts and calls</string>
+    <string name="auto_reply_text_title">Auto reply text</string>
+    <string name="message">Message</string>
+    <string name="respond_to_missed">Respond to missed</string>
+    <string name="respond_to_missed_colon">Respond to missed:</string>
+    <string name="compose_sms_hint">Enter message here</string>
+    <string name="from">From</string>
+    <string name="from_colon">From:</string>
+    <string name="touch_here_to_add_contacts">Touch here to add contacts.</string>
+    <string name="touch_to_add_contacts">Touch to add contacts</string>
+    <string name="missed_calls">missed calls</string>
+    <string name="texts">texts</string>
+    <string name="all_numbers">all contacts</string>
+    <string name="known_contacts">all phonebook contacts</string>
+
+    <!-- Auto reply text -->
+    <string name="auto_reply_question_who">&lt;B>Who&lt;/B> would you like to &lt;B>auto-reply&lt;/B> to?</string>
+    <string name="auto_reply_question_contacts">&lt;B>Who&lt;/B> would you like to &lt;B>reply with a text message&lt;/B> to?</string>
+    <string name="auto_reply_who_all">Reply to all callers</string>
+    <string name="auto_reply_who_phonebook">Reply only to contacts in my phonebook</string>
+    <string name="auto_reply_who_specific_contacts">Reply only to people I specify</string>
+    <string name="auto_reply_question_what">&lt;B>What&lt;/B> would you like to &lt;B>auto-reply&lt;/B> to?</string>
+    <string name="auto_reply_what_texts">Text messages</string>
+    <string name="auto_reply_what_calls">Phone calls</string>
+    <string name="auto_reply_what_both">Both text messages and phone calls</string>
+    <string name="auto_reply_question_msg">&lt;B>What&lt;/B> would you like your &lt;B>reply message&lt;/B> to say?</string>
+    <string name="auto_reply_msg_driving">I\'m driving\nSent by Motorola SMARTACTIONS\u2122</string>
+    <string name="auto_reply_msg_when_available">I\'ll get back to you when I\'m available\nSent by Motorola SMARTACTIONS\u2122</string>
+    <string name="auto_reply_msg_away">I\'m away from my phone\nSent by Motorola SMARTACTIONS\u2122</string>
+    <string name="auto_reply_msg_custom">Custom message</string>
+    <string name="auto_reply_msg_custom_desc">Touch here to add</string>
+    <string name="auto_reply_text_action">Auto reply to texts and calls</string>
+
+    <!-- Triggers Picker -->
+    <string name="triggers_prompt">&lt;B>When&lt;/B> do you want to trigger this SmartAction?</string>
+
+    <!-- Actions Picker -->
+    <string name="actions_prompt">What &lt;B>actions&lt;/B> would you like SMART&lt;B>ACTIONS&lt;/B> to do?</string>
+
+    <!-- VIP Caller Mode -->
+    <string name="vip_caller_heading">Ring loud for important people</string>
+    <string name="vip_caller__title">VIP Contacts</string>
+    <string name="ringer_level_heading">Ringer settings</string>
+    <string name="not_found_in_phonebook">not found in Phonebook.</string>
+
+    <!-- VIP ringer -->
+    <string name="vip_ringer_question_contacts">&lt;B>Who&lt;/B> would you like to be able to get a hold of you?</string>
+    <string name="vip_ringer_question_volume">What &lt;B>ringer volume&lt;/B> would you like for those contacts?</string>
+
+    <!-- Brightness -->
+    <string name="auto_adjust">Automatic brightness</string>
+    <string name="auto_adjust_s">Adjusts brightness based on ambient light conditions</string>
+    <string name="smart_adjust">Smart brightness</string>
+    <string name="smart_adjust_s">Intelligently adjusts brightness to save battery</string>
+    <string name="manual_adjust">Manual brightness</string>
+    <string name="screen_brightness">Screen brightness</string>
+    <string name="brightness">Set my screen brightness</string>
+    <string name="brightness_title">Brightness</string>
+    <string name="smart_adjust_desc">&lt;font size="14" color="#99CC00">Saves the most battery&lt;/font></string>
+    <string name="min">Minimum</string>
+    <string name="automatic">Automatic</string>
+    <string name="brightness_action">Set my screen brightness</string>
+    <string name="brightness_prompt">What &lt;b>brightness level&lt;/b> would you like to set?</string>
+
+    <!-- Cellular Data -->
+    <string name="toggle_data">Set Mobile data</string>
+    <string name="toggle_data_title">Mobile data</string>
+    <string name="toggle_data_prompt">How would you like to set &lt;b>mobile data&lt;/b>?</string>
+    <string name="toggle_data_button">I\&apos;m done</string>
+    <string name="toggle_data_on">Turn mobile data &lt;b>on&lt;/b></string>
+    <string name="toggle_data_off">Turn mobile data &lt;b>off&lt;/b></string>
+    <string name="toggle_data_action">Set Mobile data</string>
+
+    <!-- Common -->
+    <string name="unknown">Unknown</string>
+    <string name="desc_value">\u0020</string>
+    <string name="from_small">from</string>
+    <string name="error_item_missing">Item missing</string>
+    <string name="more">more</string>
+    <string name="others">others</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="max">Max</string>
+    <string name="volume">volume</string>
+    <string name="smart_actions_sms_signature">Sent by SmartActions</string>
+    <string name="smart_actions_sms_signature_append">\nSent by Motorola SMARTACTIONS\u2122</string>
+    <string name="plus">+</string>
+    <string name="percent">%</string>
+
+    <!-- Permission strings -->
+    <string name="perm_action_label">Use SmartActions Module</string>
+    <string name="perm_action_desc">Allows an application to configure and execute
+                Actions on the Phone</string>
+    <string name="perm_action_publisher_admin_desc">Allows an application to control Action Publishers</string>
+    <string name="perm_action_publisher_admin_label">Control Action Publisher</string>
+    <string name="perm_action_publisher_desc">Allows an application to be a SmartActions Action Publisher</string>
+    <string name="perm_action_publisher_label">Be an Action Publisher</string>
+
+    <!-- Addressing Widget -->
+    <string name="msg_aw_edit_address_label">Edit address</string>
+    <string name="max_recipients_error_dialog_title">Messaging limit</string>
+    <string name="max_recipients_error_message">"Can\'t add any more contacts. The network limit is %1$d per message."</string>
+  <string name="address_not_configured">Destination address not configured</string>
+
+  <string name="send_failure">Send failure</string>
+  <string name="no_service">No service</string>
+  <string name="unknown_error">Unknown error in sending SMS</string>
+
+    <!-- wificonnection changes start -->
+    <string name="any_wifi_network">Any Wi-Fi network</string>
+    <string name="any_wifi_network_gb">Any Wi-Fi Network</string>
+    <!-- wificonnection changes end -->
+
+    <!-- calendareventsensor changes start> -->
+    <string name="calendars">Calendars</string>
+    <string name="calendar">Calendar</string>
+    <string name="calendareventsensor">I\&apos;m busy</string>
+    <string name="calendareventsensor_title">Calendar events</string>
+    <!-- This is shown while the calendar events are being loading to the screen. -->
+    <string name="loading">Loading\u2026</string>
+    <!-- This is shown at the top of the agenda view showing the range of events shown. -->
+    <string name="show_older_events">Showing events since <xliff:g id="oldest_search_range">%1$s</xliff:g>. Touch to look for more.</string>
+    <!-- This is shown at the bottom of the agenda view showing the range of events shown. -->
+    <string name="show_newer_events">Showing events until <xliff:g id="newest_search_range">%1$s</xliff:g>. Touch to look for more.</string>
+    <!-- This is shown as part of the heading at the top of a list of today's events. -->
+    <string name="agenda_today">Today, <xliff:g id="date">%1$s</xliff:g></string>
+    <!-- Title of event when no explicit title is specified by the user -->
+    <string name="no_title_label">(No title)</string>
+    <string name="all_calendars">All calendar events</string>
+    <string name="all_calendars_small">all calendars</string>
+    <string name="selected">Selected</string>
+    <string name="calendar_events_matching_search">Matching events</string>
+    <string name="calendar_events_settings">Settings</string>
+    <string name="exclude_allday_events">Exclude all day events</string>
+    <string name="include_multiple_participants_events">Only include events that involve multiple people</string>
+    <string name="include_accepted_events">Only include meetings I\'ve accepted</string>
+    <string name="calendar_events_to_include">Events to include</string>
+    <string name="calendar_view_matching_events">View matching events</string>
+    <string name="calendar_main_preference">Calendar Preference</string>
+    <string name="calendar_phone_display_name">Phone</string>
+    <string name="calendar_phone_account_name">Phone storage</string>
+    <string name="calendar_no_events_found">No events found</string>
+    <string name="calendar_events_action">I\&apos;m busy</string>
+
+    <string name="calendar_picker_title">I am busy</string>
+    <string name="calendar_picker_prompt">Which &lt;b>calendar events&lt;/b> would you like to use?</string>
+    <string name="calendar_picker_all_calendars">All calendar events</string>
+    <string name="calendar_picker_phone_display_name">Phone</string>
+    <string name="calender_picker_event_in">Events in my \"%s\" calendar</string>
+    <string name="calendar_event_config_prompt">Are there any &lt;b>calendar events&lt;/b> that you would like to exclude?</string>
+    <string name="calendar_event_config_all_day">All day events</string>
+    <string name="calendar_event_config_only_invitee">Events created without invitees</string>
+    <string name="calendar_event_config_unaccepted">Events I haven\'t accepted</string>
+    <string name="calendar_event_config_show_matching">Show me a list of matching events</string>
+
+    <!-- calendareventsensor changes end> -->
+
+    <!-- ========== PHOENIX RELATED ========== -->
+    <!-- SmartActions Permission strings -->
+    <string name="perm_smartrules_label">Use SmartActions Module</string>
+    <string name="perm_smartrules_desc">Allows an application to configure and execute
+         SmartActions application on the Phone</string>
+
+    <!-- ========== LOCATION SENSOR ========== -->
+    <string name="perm_location_desc">Permssion to access Location Sensor</string>
+    <string name="perm_location_label">Location Sensor Access Permission</string>
+
+
+    <!-- ========= Chips UI ========== -->
+    <string name="more_string"><xliff:g id="count">%1$s</xliff:g> more...</string>
+    <string name="chips_waiting_for_directory_result">Waiting for more contacts</string>
+
+    <!-- ========= DRIVE SMART WIDGET ========== -->
+    <string name="touch_to_setup">Touch to setup</string>
+    <string name="auto">Automatic</string>
+    <string name="widget_sync">sync...</string>
+
+    <!-- Volumes -->
+    <string name="volumes">Volumes</string>
+    <string name="volumes_prompt">How would you like to set your &lt;b>ringer and notification volume&lt;/b>?</string>
+    <string name="volumes_ringtone">Ringtone</string>
+    <string name="volumes_vibrate">Vibrate</string>
+    <string name="volumes_silent">Silent mode</string>
+
+    <string name="vol_media_volume">Media volume</string>
+    <string name="vol_ringer_volume">Ringer volume</string>
+    <string name="vol_notification_volume">Notification volume</string>
+    <string name="vol_ringer_and_notification_volume">Ringer &amp; notification volume</string>
+    <string name="vol_alarm_volume">Alarm volume</string>
+    <string name="vol_silent">Silent</string>
+    <string name="vol_vibrate">Vibrate</string>
+    <string name="vol_dont_adjut_vibrate">Don\'t adjust vibrate</string>
+    <string name="vol_turn_vibrate_off">Turn vibrate off</string>
+    <string name="vol_turn_vibrate_on">Turn vibrate on</string>
+    <!-- Volume description for media volume -->
+    <string name="volume_media_description">Music, video, games, &amp; other media</string>
+    <!-- Volume description for ringtone and notification volume -->
+    <string name="volume_ring_description">Ringtone</string>
+    <!-- Volume description for notification volume -->
+    <string name="volume_notification_description">Notifications</string>
+    <!-- Volume description for alarm volume -->
+    <string name="volume_alarm_description">Alarms</string>
+    <string name="volume_ringer_and_notification_description">Ringtone &amp; notifications</string>
+    <!-- ========= RULES VALIDATOR ========== -->
+    <string name="perm_rv_label">Use Rules Validator</string>
+    <string name="perm_rv_desc">Allows an application to invoke Rules Validator</string>
+    <!-- ========= PAF ========== -->
+    <string name="perm_paf_label">Receive Publisher Updates</string>
+    <string name="perm_paf_desc">Allows an application to receive publisher updates like publisher installed / removed / replaced / dataclear on publisher</string>
+    <!-- Condition Publisher -->
+    <string name="perm_cp_desc">Allows an application to be a SmartActions Condition Publisher</string>
+    <string name="perm_cp_label">Be a Condition Publisher</string>
+    <string name="perm_cp_admin_desc">Allows an application to control Condition Publishers</string>
+    <string name="perm_cp_admin_label">Control Condition Publisher</string>
+    <string name="perm_cp_user_desc">Allows an application to use Condition Publishers</string>
+    <string name="perm_cp_user_label">Uses Condition Publisher</string>
+    <!-- Rule Publisher -->
+    <string name="perm_rule_publisher_admin_label">Use Rule Publisher</string>
+    <string name="perm_rule_publisher_admin_desc">Allows an application to control Rule Publisher</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_apps_dialog_select_apps_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="9dip"
+    android:paddingBottom="3dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="1dip"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/all_apps_dialog_select_apps_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@null"
+            android:textColor="#000"
+            android:divider="?android:attr/listDividerAlertDialog"
+            android:footerDividersEnabled="false"
+            android:scrollbars="vertical" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDividerAlertDialog"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip" />
+
+    <LinearLayout
+        android:id="@+id/all_apps_dialog_select_apps_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/all_apps_dialog_select_apps_button_parent"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="54dip"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/all_apps_dialog_select_apps_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_gravity="left"
+                android:text="@android:string/cancel"  />
+            <Button
+                android:id="@+id/all_apps_dialog_select_apps_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_gravity="right"
+                android:text="@string/done" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

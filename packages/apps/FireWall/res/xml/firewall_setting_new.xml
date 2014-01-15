@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="firewall_setting">
+    <PreferenceCategory android:title="@string/incoming_call_setting_title"
+        android:key="in_call_setting">
+        <CheckBoxPreference
+            android:title="@string/incoming_call_on_title"
+            android:key="inblock_call_on"
+            android:summary="@string/incoming_call_on_sum"
+            android:defaultValue="false"/>
+        <ListPreference
+            android:entryValues="@array/incoming_call_block_list_value"
+            android:entries="@array/incoming_call_block_list"
+            android:defaultValue="in_call_blacklist"
+            android:dependency="inblock_call_on"
+            android:key="in_block_call_list"
+            android:title="@string/in_block_call_type_title">
+        </ListPreference>
+
+        <ListPreference android:key="reject_type"
+            android:entryValues="@array/in_reject_type_value"
+            android:entries="@array/in_reject_type"
+            android:defaultValue="reject_block"
+            android:dependency="inblock_call_on"
+            android:title="@string/in_reject_type_title">
+        </ListPreference>
+    </PreferenceCategory>
+    <!--  Based on CxD reqest to remove outgoing call firewall -->
+<!--     <PreferenceCategory android:title="@string/outgoing_call_setting_title">
+        <CheckBoxPreference
+            android:title="@string/outgoing_call_on_title"
+            android:key="outblock_call_on"
+            android:summary="@string/outgoing_call_on_sum"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        <ListPreference
+            android:defaultValue="out_call_blacklist"
+            android:dependency="outblock_call_on"
+            android:entries="@array/outgoing_call_block_list"
+            android:entryValues="@array/outgoing_call_block_list_value"
+            android:key="out_block_call_list"
+            android:title="@string/out_block_call_type_title">
+        </ListPreference>
+    </PreferenceCategory> -->
+    <PreferenceCategory android:title="@string/incoming_sms_setting_title"
+        android:key="in_sms_setting">
+        <CheckBoxPreference
+            android:title="@string/incoming_sms_on_title"
+            android:key="inblock_sms_on"
+            android:summary="@string/incoming_sms_on_sum"
+            android:defaultValue="false"/>
+        <ListPreference
+            android:entryValues="@array/incoming_sms_block_list_value"
+            android:entries="@array/incoming_sms_block_list"
+            android:defaultValue="in_sms_blacklist"
+            android:dependency="inblock_sms_on"
+            android:key="in_block_sms_list"
+            android:title="@string/in_block_sms_type_title">
+        </ListPreference>
+    </PreferenceCategory>
+    <!-- Remove Qihoo 360 Keyword filter in Titanium Upgrage -->
+    <!-- <PreferenceCategory android:title="@string/message_keywords_filter_title">
+        <CheckBoxPreference
+            android:title="@string/keywords_filter_on_title"
+            android:key="keywords_filter_on"
+            android:summary="@string/keywords_filter_info"
+            android:defaultValue="true"/>
+        <PreferenceScreen android:key="keywords_manager"
+            android:title="@string/keywords_manager_on_title"
+            android:summary="@string/keywords_manager_info"
+            android:dependency="keywords_filter_on">
+            <intent android:action="android.intent.action.VIEW"
+                android:targetPackage="com.qihoo.keywordui"
+                android:targetClass="com.qihoo.keywordui.KeywordManagerUI"/>
+        </PreferenceScreen>
+    </PreferenceCategory> -->
+    <!-- add network filter settings -->
+    <PreferenceCategory
+        android:title="@string/network_firewall_setting"
+        android:key="in_network_setting">
+        <CheckBoxPreference
+            android:title="@string/in_call_reject_cdma" 
+            android:summary="@string/in_call_reject_cdma_sum" 
+            android:key="in_call_reject_cdma" 
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="in_sms_reject_cdma" 
+            android:title="@string/in_sms_reject_cdma" 
+            android:summary="@string/in_sms_reject_cdma_sum" 
+            android:defaultValue="false"/>
+        <CheckBoxPreference 
+            android:key="in_call_reject_gsm" 
+            android:title="@string/in_call_reject_gsm" 
+            android:summary="@string/in_call_reject_gsm_sum" 
+            android:defaultValue="false"/>
+        <CheckBoxPreference 
+            android:key="in_sms_reject_gsm" 
+            android:title="@string/in_sms_reject_gsm" 
+            android:summary="@string/in_sms_reject_gsm_sum" 
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/log_title">
+        <CheckBoxPreference
+            android:title="@string/call_log_on_title"
+            android:key="call_log_on"
+            android:summary="@string/call_log_on_sum"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:title="@string/sms_log_on_title"
+            android:key="sms_log_on"
+            android:summary="@string/sms_log_on_sum"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

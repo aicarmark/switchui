@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivityGraph</string>
+    <string name="loading">Loading...</string>
+    <string name="widget_label">Activity Graph</string>
+    <string name="hide_applications_key">hide applications</string>
+    <string name="auto_setup_mode_key">auto setup mode</string>
+    <string name="hide_applications_summary">"Choose applications you don't want to be displayed on the widget"</string>
+    <string name="hidden_applications_title">Hidden Applications</string>
+    <string name="activitygraphsettings">Activity graph settings</string>
+    <string name="auto_setup_mode_Summary_off">Turn on to populate the widget automatically with most frequently used applications</string>
+    <string name="auto_setup_mode_Summary_on">Turn off to add the applications manually to the widget</string>
+    <string name="auto_setup_mode_title">Automatic setup mode</string>
+    <string name="hello">Hello World, activitygraphsettings!</string>
+    <string name="manage_shortcuts_title">Manage shortcuts</string>
+    <string name="manage_shortcuts_summary">Manually select applications to populate the widget</string>
+    <string name="set_skin_title">Set skin</string>
+    <string name="set_skin_summary">Color or texture will be used as shortcuts background</string>
+    <string name="reset_title">Widget reset</string>
+    <string name="reset_summary">Erase all applications on the widget</string>
+    <string name="manage_shortcuts_key">manage shortcuts</string>
+    <string name="set_skin_key">set skin</string>
+    <string name="reset_key">reset</string>
+    <string name="resetConfirmation_title">Widget reset</string>
+    <string name="resetConfirmationMessage">This action will reset the widget, erasing all application shortcuts. Reset widget?</string>
+    <string name="resetbutton">Reset</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="search_hint">Type to search</string>
+    <string name="manage_shortcuts_label">Manage shortcuts</string>
+    <string name="choose_skin_label">Choose skin</string>
+    <string name="none_application"></string>
+    <string name="none_string">None</string>
+    <string name="set_skin_button">Set skin</string>
+    <string name="select_apps_to_hide">Select applications to hide</string>
+    <string name="btn_change">Change</string>
+    <string name="bricks">Bricks</string>
+    <string name="grayscale">Grayscale</string>
+    <string name="vivid_colors">Vivid Colors</string>
+    <string name="pale_colors">Pale Colors</string>
+    <string name="natural">Natural</string>
+    <string name="patchwork">Patchwork</string>
+    <string name="pinboard">Pinboard</string>
+    <string name="steel">Steel</string>
+    <string name="textile">Textile</string>
+    <string name="btn_add">Add</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_info1">This is the activity graph widget, a cool way to find your favorite applications easily on your homescreen</string>
+    <string name="welcome_info2">You can choose your preferred way to populate this widget:</string>
+    <string name="auto_info1">You have chosen automatic setup. Right after you start using the applications on your phone, this widget will be automatically updated with your most used applications.</string>
+    <string name="auto_info2">You can change this preference in the widget settings. Widget settings can be found through widget setting button on the upper right corner of widget.</string>
+    <string name="manual_info1">Touch to start adding applications to the widget.</string>
+    <string name="manual_info2">Widget settings can be found through widget setting button on the upper right corner of widget.</string>
+    <string name="welcome_auto">Automatic setup</string>
+    <string name="continue_button">Continue</string>
+    <string name="back">Back</string>
+    <string name="auto_radio_button_label">Automatically. It will be automatically populated by your most used applications</string>
+    <string name="manual_radio_button_label">Manually. You will add the applications manually to the widget</string>
+    <string name="manageshortcuts_hint">Use the graph to choose 9 applications to populate your widget.You\'ll have easy access to these applications right on your homescreen panel.</string>
+
+</resources>

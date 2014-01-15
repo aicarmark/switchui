@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+ <string name="hide_applications_summary">选择您不想在小部件上显示的应用程序</string>
+ <string name="hidden_applications_title">隐藏的应用程序</string>
+ <string name="activitygraphsettings">活动图设置</string>
+ <string name="auto_setup_mode_Summary_off">打开以自动用最常用的应用程序填充小部件</string>
+ <string name="auto_setup_mode_Summary_on">关闭以手动将应用程序添加到小部件</string>
+ <string name="auto_setup_mode_title">自动设置模式</string>
+ <string name="app_name">活动图</string>
+ <string name="manage_shortcuts_title">管理快捷方式</string>
+ <string name="manage_shortcuts_summary">手动选择应用程序以填充小部件</string>
+ <string name="set_skin_title">设置外观</string>
+ <string name="set_skin_summary">颜色和质感将用作快捷方式的背景</string>
+ <string name="reset_title">小部件重置</string>
+ <string name="reset_summary">清除小部件上的所有应用程序</string>
+
+ <string name="resetConfirmation_title">小部件重置</string>
+ <string name="resetConfirmationMessage">此操作将重置小部件，清除所有应用程序快捷方式。重置小部件？</string>
+ <string name="resetbutton">"重置"</string>
+ <string name="cancel">"取消"</string>
+ <string name="ok">"确定"</string>
+ <string name="search_hint">输入后搜索</string>
+ <string name="manage_shortcuts_label">管理快捷方式</string>
+ <string name="choose_skin_label">选择外观</string>
+ <string name="none_application">""</string>
+ <string name="none_string">"无"</string>
+ <string name="set_skin_button">设置外观</string>
+ <string name="select_apps_to_hide">选择要隐藏的应用程序</string>
+ <string name="btn_change">变化</string>
+ <string name="bricks">砖块</string>
+ <string name="grayscale">灰阶</string>
+ <string name="vivid_colors">彩虹</string>
+ <string name="pale_colors">浅色</string>
+ <string name="natural">自然</string>
+ <string name="patchwork">拼缀</string>
+ <string name="pinboard">插板</string>
+ <string name="steel">钢铁</string>
+ <string name="textile">织物</string>
+ <string name="btn_add">新增</string>
+ <string name="welcome_title">欢迎</string>
+ <string name="welcome_info1">这是活动图小部件，让您能够轻松找到主屏上最常使用的应用程序</string>
+ <string name="welcome_info2">您可以选择填充此小部件的首选方式：</string>
+ <string name="auto_info1">您已选择自动设置。从您开始使用手机上的应用程序后，此小部件将自动根据您最常用的应用程序进行更新。</string>
+ <string name="auto_info2">您可以在小部件设置中更改此首选项。小部件设置可以通过点击小部件右上角设置按钮后进入。</string>
+ <string name="manual_info1">点按以开始将应用程序添加到小部件。</string>
+ <string name="manual_info2">您可以在小部件设置中更改此首选项。</string>
+ <string name="widget_label">活动图</string>
+ <string name="welcome_auto">自动设置</string>
+ <string name="continue_button">"继续"</string>
+ <string name="back">"上一步"</string>
+ <string name="auto_radio_button_label">自动。这将自动填充您最常用的应用程序</string>
+ <string name="manual_radio_button_label">手动。您将手动添加应用程序到小部件</string>
+ <string name="loading">加载中..</string>
+</resources>

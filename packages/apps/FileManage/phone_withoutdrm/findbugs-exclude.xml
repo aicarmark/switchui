@@ -1,0 +1,118 @@
+<!-- Find bugs Filter -->
+<?xml version="1.0" encoding="utf-8"?>
+<FindBugsFilter>
+  <Match>
+    <Class name="com.motorola.filemanager.samba.SambaGroupList" />
+    <Bug code="Nm" />
+    <Method name="DiscoveryFinished" />
+    <!-- Provided as part of implemneted methods by DiscoveryObserver-->
+  </Match>
+  <Match>
+    <Class name="com.motorola.filemanager.samba.SambaGroupList" />
+    <Bug code="Nm" />
+    <Method name="DiscoveryHostFound" />
+    <!-- Provided as part of implemneted methods by DiscoveryObserver-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.samba.SambaGroupList" />
+    <Bug code="Nm" />
+    <Method name="DiscoveryStarted" />
+    <!-- Provided as part of implemneted methods by DiscoveryObserver-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.local.SearchContentDatabase$DictionaryOpenHelper" />
+    <Bug code="DMI" />
+    <Method name="loadAllPaths" />
+    <!-- This string refers to the path, so cannot be localized-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.local.FileManagerActivity" />
+    <Bug code="DMI" />
+    <Method name="onCreate" />
+    <!-- This string refers to the path, so cannot be localized-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.local.FileManagerActivity" />
+    <Bug code="DMI" />
+
+    <!-- This string refers to the path, so cannot be localized-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.networkdiscovery.network.NetInfo" />
+    <Bug code="DMI" />
+    <Method name="getCidr" />
+    <!-- This string refers to command to getCidr, so cannot be localized-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.networkdiscovery.network.RateControl" />
+    <Bug code="DMI" />
+    <Method name="getAvgResponseTime" />
+    <!-- This string refers to path, so cannot be localized-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.networkdiscovery.DiscoveryHandler" />
+    <Bug code="UrF" />
+    <Field name="mContext" />
+    <!-- Field might be needed later-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.samba.SambaExplorer" />
+    <Bug code="UrF" />
+    <Field name="myReceiver" />
+    <!-- Field might be needed later-->
+  </Match>
+
+  <Match>
+    <Class name="com.motorola.filemanager.samba.service.DownloadServer" />
+    <Bug code="UPM" />
+    <Method name="setDesAndSrc" />
+    <!-- Method Might be used later-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.samba.service.DownloadServer$DelayedMsg" />
+    <Bug code="UrF" />
+    <Field name="mDes" />
+    <!-- Field might be needed later-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.samba.service.DownloadServer$DelayedMsg" />
+    <Bug code="UrF" />
+    <Field name="mMsgData" />
+    <!-- Field might be needed later-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.samba.service.DownloadServer$DelayedMsg" />
+    <Bug code="UrF" />
+    <Field name="mSrc" />
+    <!-- Field might be needed later-->
+  </Match>
+
+  <Match>
+    <Class
+      name="com.motorola.filemanager.samba.service.DownloadServer$DelayedMsg" />
+    <Bug code="UrF" />
+    <Field name="mAuthInfo" />
+    <!-- Field might be needed later-->
+  </Match>
+
+
+
+</FindBugsFilter>
+
+

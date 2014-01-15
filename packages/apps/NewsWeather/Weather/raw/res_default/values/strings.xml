@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Weather</string>
+    <string name="app_name_small">Weather</string>
+    <string name="widgetname">Weather Widget</string>
+    <string name="add_a_city">Add a city</string>
+    <string name="loading">Loading...</string>
+    <string name="no_weather_information">No weather information</string>
+    <string name="no_news">No available news</string>
+    <string name="no_network">Unable to connect to the network,please check your network configuration</string>
+    <string name="apm_am" >AM</string>
+ 	<string name="apm_pm" >PM</string>
+ 	<string name="app_name_original">Location</string>
+
+    <string name="app_name_weather">Weather</string> 
+    <string name="app_name_widget">Weather Widget</string> 
+    <string name="weather_big">Weather (Big)</string> 
+    <string name="weather_small">Weather (Small)</string>
+    
+    <!-- The following string is only used for develop and debug the layout-->
+    <string name="initial_news_title">No weather information No weather information No weather information No weather gg yy information No weather information </string>
+    <string name="initial_news_content">No weather information No weather information No weather information No weather gg yy information No weather information</string>
+    <string name="initial_news_date">2011.08.15</string>
+    
+    <string name="initial_time">12:05</string>
+    <string name="initial_apm">AM</string>
+    <string name="initial_date">Fri,01/01/2000</string>
+    <string name="initial_temperature">30C</string>
+    <string name="initial_city">Beijing</string>    
+    
+    <string name="str_setting">setting</string>
+	<string name="widget_name">Weather</string>
+	<string name="setting_frequences">Frequency</string>
+	<string name="second">second</string>
+	<string name="add_city">City names</string>
+	<string name="del_city">Delete city</string>
+	<string name="add_one_city">Add one city</string>
+	<string name="del_this_city">Delete this city</string>
+	<string name="details_menu_cities">Cities</string>
+	<string name="details_menu_refresh">Refresh</string>
+	<string name="details_menu_setting">Settings</string>
+	<string name="details_menu_share">Share</string>
+	<string name="details_menu_setwidgetcity">Set widget city</string>
+
+
+	<string name="city_exists">This city already exists</string>
+	<string name="no_city_found">No city found</string>
+	<string name="search_city_title">Searching</string>
+	<string name="search_city_msg">Looking for locations match</string>
+	<string name="updated_at">Updated</string>
+	<string name="error">Error</string>
+	<string name="weather_null">No weather info</string>
+	<string name="weather_error">fail to get weather info</string>
+	<string name="input_city_hint">Type city name</string>
+
+	<string name="date_and_time">Date &amp; Time</string>
+
+
+	<string name="city_and_country">Country &amp; City</string>
+	<string name="temperature_uint">Degree</string>
+	<string name="update_frequency">Update frequency</string>
+	<string name="roaming_setting">Update while roaming</string>
+
+	<string name="choose_prefer_cities">Select preference country and city</string>
+	<string name="allow_roaming_network">Update on</string>
+	<string name="forbid_roaming_network">Update off</string>
+
+	<string name="centigrade">Celsius</string>
+	<string name="fahrenheit">Fahrenheit </string>
+
+	<string name="manual">Manual</string>
+
+	<string name="every">every</string>
+	<string name="close">close</string>
+	<string name="centigrade_unit">ºC</string>
+	<string name="fahrenheit_unit">ºF</string>
+
+	<string name="set_city_1">Add a city</string>
+
+	<string name="my_city">My City</string>
+	<string name="current_city">Current City</string>
+	<string name="current_amin_area">Current Admin Area</string>
+
+	<string name="title_weather_city">Weather City</string>
+	<string name="title_weather_settings">Weather Settings</string>
+	<string name="title_add_city">Add city</string>
+
+	<string name="update_partly_failed">Network error, please check network setting</string>
+	<string name="update_failed">Refresh failed, please check network</string>
+	<string name="update_success">Refresh successful</string>
+
+	<string name="continue_string">Continue</string>
+	<string name="title_discliamer">Note</string>
+	<string name="comment_discliamer">Attention\n\tData throughput may apply when running
+		this application,please refer to telecommunication operator\'s charge
+		rates for more details. The service is ONLY available for users with
+		Internet connection.\n\n\tBy clicking on \"Continue\", you acknowledge
+		you have read and agreed with terms above.</string>
+	<string name="about">About</string>
+	<string name="branding_info">Branding info</string>
+	<string name="details_branding_info">Branding info details\n</string>
+
+	<string name="locate_failed">Failed to locate, please try again later.</string>
+	<string name="too_most_cities">A maximum of 9 cities can be added.</string>
+
+	<string name="hour_1">1 hour</string>
+	<string name="hour_3">3 hours</string>
+	<string name="hour_6">6 hours</string>
+	<string name="hour_12">12 hours</string>
+	<string name="hour_24">24 hours</string>
+	<string name="high">High </string>
+	<string name="realfeel">RealFeel</string>
+	<string name="low">Low </string>
+	<string name="updateago">Updated %1$s hours ago </string>
+	<string name="currenttemperature">Current Temperature</string>
+	<string name="mcity">City</string>
+	<string name="mDate">Date</string>
+	<string name="mWeatherCondition">Weather Condition</string>
+	<string name="mHighTemperature">High temperature</string>
+	<string name="mLowTemperature">Low temperature</string>
+	<string name="weather_get_error">No weather info</string>
+
+	<string name="updatetimeago">Updated</string>
+	<string name="weatherdetails">Weather Details</string>
+
+	<string name="city_name">City name</string>
+
+	<string name="comment_discliamer_new">Data throughput may apply when running
+		this application,please refer to telecommunication operator\'s charge
+		rates for more details. The service is ONLY available for users with
+		Internet connection. By clicking on \"Continue\", you acknowledge
+		you have read and agreed with terms above.</string>
+	<string name="set_default_city">Current city has been set as the default city</string>
+
+
+	<!-- Don't need translation  -->
+	<string name="mAccuWeather">AccuWeather</string>
+	
+	<string name="hello">Hello World, LiveWallpaper!</string>
+    <string name="wallpaper_cube1">Weather</string>  
+    <string name="description">Display the weather information of the city you set.</string>    
+    
+    <string name="no_res">No Resources</string>
+    <string name="no_weather_info">No Weather Information</string>   
+    <string name="add_city_tip">Please add city</string>
+    <string name="livewallpaper_settings">Livewallpaper settings</string>  
+    <string name="select_location">Select Location</string>  
+    <string name="text_display">Text display</string>  
+    <string name="text_size">Text size</string>
+    <string name="location_key">location_key</string>
+    <string name="display_key">display_key</string>
+    <string name="size_key">size_key</string>    
+    <string name="location_title">Select location</string> 
+    <string name="tip_city_name">City list</string>
+    
+    <string name="text_city_name">city name</string>
+    <string name="text_tipTextView">tipTextView</string>
+    <string name="text_cityTextView">cityTextView</string>
+    
+    <string name="unit_str_c">C</string>
+    <string name="unit_str_f">F</string>
+    
+    <string name="settings_back">Back</string>
+    <string name="settings_ok">OK</string>
+    
+</resources>

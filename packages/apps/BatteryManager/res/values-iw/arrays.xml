@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>הגדרות סוללה</item>
+    <item>הגדרות מותאמות אישית</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 דקות</item>
+    <item>30 דקות</item>
+    <item>45 דקות</item>
+    <item>60 דקות</item>
+    <item>השאר תמיד פועל</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 דקות</item>
+    <item>30 דקות</item>
+    <item>45 דקות</item>
+    <item>60 דקות</item>
+  </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carrier_app_list" translatable="false">
+<!--
+        How to costumize
+        =================
+
+        Add to this android string array resouce all the action=MAIN category=LAUCHER activities for the apps 
+        that you want to be listed first in the defaul sort order of the App Tray. The order defined here 
+        will be respected. Full path for activities must be used. That means to no use the dot abbreviation.
+        Refer to android.content.ComponentName.flattenToString().
+
+        The abscence of items indicates that the carrier defined order is disabled.
+
+        Below some sample usage:
+
+        <item>com.motorola.BackupAssistanceClient/com.motorola.BackupAssistanceClient.BuaMainActivity</item>
+        <item>com.android.settings/com.android.settings.wifi.WifiApSettings</item>
+        <item>com.vzw.hss.myverizon/com.vzw.hss.myverizon.main.activity.WidgetMainActivity</item>
+        <item>com.vcast.mediamanager/com.vcast.mediamanager.gui.activities.SplashLogoActivity</item>
+        <item>com.pv.android.verizon.mod/com.pv.android.verizon.mod.MODActivity</item>
+        <item>com.pv.android.verizon.avod/com.pv.android.verizon.avod.VODActivity</item>
+ -->
+    </string-array>
+</resources>

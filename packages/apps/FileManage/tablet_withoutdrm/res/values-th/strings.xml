@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ไฟล์</string>
+    <string name="add_server">เพิ่มเซิร์ฟเวอร์</string>
+    <string name="add_samba_server_title">เซิร์ฟเวอร์ Samba ใหม่</string>
+    <string name="edit_samba_server_title">แก้ไขเซิร์ฟเวอร์ Samba</string>
+    <string name="add_server_hostname">ชื่อเซิร์ฟเวอร์หรือ IP</string>
+    <string name="add_server_username">ชื่อผู้ใช้</string>
+    <string name="add_server_password">รหัสผ่าน</string>
+    <string name="confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="server_display_name">ชื่อ:</string>
+    <string name="server_logon_failure">การเข้าสู่ระบบไม่สำเร็จ</string>
+    <string name="server_reauth_title">ป้อนข้อมูลการตรวจสอบ</string>
+    <string name="server_logon_failure_indication">โปรดป้อนข้อมูลการตรวจสอบ</string>
+    <string name="remote_files">โฟลเดอร์ระยะไกล</string>
+    <string name="menu_edit">แก้ไข</string>
+    <string name="menu_remove">ลบ</string>
+    <string name="file_transfer">กำลังถ่ายโอน</string>
+    <string name="file_transfer_complete">การถ่ายโอนไฟล์เสร็จสิ้น:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">ถ่ายโอนไฟล์เสร็จสิ้น: %d ไฟล์</item>
+        <item quantity="other">ถ่ายโอนไฟล์เสร็จสิ้น: %d ไฟล์</item>
+    </plurals>
+    <string name="host_name_empty_indicator">โปรดใส่ชื่อโฮสต์</string>
+    <string name="not_found_network_name">ไม่พบชื่อเครือข่าย</string>
+    <string name="server_not_reachable">ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์</string>
+    <string name="no_group_found">ไม่พบกลุ่ม โปรดลองอีกครั้ง</string>
+    <string name="external_sdcard">SD ภายนอก</string>
+    <string name="menu_new_folder">โฟลเดอร์ใหม่</string>
+    <string name="menu_delete">ลบ</string>
+    <string name="menu_rename">เปลี่ยนชื่อ</string>
+    <string name="menu_send">แบ่งปัน</string>
+    <string name="menu_open">เปิด</string>
+    <string name="menu_move">ย้าย</string>
+    <string name="menu_copy">คัดลอก</string>
+    <string name="menu_info">ข้อมูล</string>
+    <string name="menu_print">พิมพ์</string>
+    <string name="menu_compress">บีบอัด</string>
+    <string name="menu_paste">คัดลอก</string>
+    <string name="menu_sort_by">เรียงลำดับตาม</string>
+    <string name="menu_sort_by_name">ตามชื่อ</string>
+    <string name="menu_sort_by_type">ตามประเภท</string>
+    <string name="menu_sort_by_date">ตามวันที่</string>
+    <string name="menu_sort_by_size">ตามขนาด</string>
+    <string name="menu_unzip">แยกออก</string>
+    <string name="menu_view_list">มุมมองรายการ</string>
+    <string name="menu_view_grid">มุมมองตาราง</string>
+    <string name="menu_view_column">มุมมองคอลัมน์</string>
+    <string name="menu_unselect_all">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="select_file">เลือกไฟล์</string>
+    <string name="select">เลือก</string>
+    <string name="file_info_title">คุณสมบัติไฟล์</string>
+    <string name="file_info_title_dir">คุณสมบัติไดเรกทอรี</string>
+    <string name="create_new_folder">สร้างโฟลเดอร์ใหม่</string>
+    <string name="create_new_zip_file">ไฟล์ซิปใหม่</string>
+    <string name="create_compress_encryption_file">การบีบอัดและเข้ารหัสลับ</string>
+    <string name="compress_encryption_file">ตั้งรหัสผ่านเพื่อสร้างไฟล์ซิปที่มีการป้องกันด้วยรหัสผ่าน</string>
+    <string name="folder_name">ชื่อโฟลเดอร์</string>
+    <string name="file_name">ชื่อไฟล์</string>
+    <string name="this_folder_is_empty">โฟลเดอร์นี้ว่างเปล่า</string>
+    <string name="sd_is_used_by_other">การ์ดหน่วยความจำอยู่ในโหมดสื่อจัดเก็บข้อมูล USB โปรดออกจากโหมดนี้เพื่อเข้าถึงการ์ดหน่วยความจำ</string>
+    <string name="file_renamed">เปลี่ยนชื่อไฟล์แล้ว</string>
+    <string name="folder_renamed">เปลี่ยนชื่อโฟลเดอร์แล้ว</string>
+    <plurals name="move_success">
+        <item quantity="one">ย้ายแล้ว %1$d รายการ</item>
+        <item quantity="other">ย้ายแล้ว %1$d รายการ</item>
+    </plurals>
+    <string name="error_moving">เกิดข้อผิดพลาดขณะเคลื่อนย้าย</string>
+    <plurals name="copy_success">
+        <item quantity="one">คัดลอกแล้ว %1$d รายการ</item>
+        <item quantity="other">คัดลอกแล้ว %1$d รายการ</item>
+    </plurals>
+    <string name="error_copying">เกิดข้อผิดพลาดขณะคัดลอก</string>
+    <plurals name="delete_success">
+        <item quantity="one">ลบแล้ว %1$d รายการ</item>
+        <item quantity="other">ลบแล้ว %1$d รายการ</item>
+    </plurals>
+    <string name="delete_failed">เกิดข้อผิดพลาดขณะที่ลบ</string>
+    <string name="really_delete_selected">รายการที่เลือกทั้งหมดและข้อมูลจะถูกลบ แน่ใจหรือไม่ว่าคุณต้องการดำเนินการต่อ</string>
+    <string name="paste_button">วาง</string>
+    <string name="place_button">วาง</string>
+    <string name="select_folder">เลือกโฟลเดอร์</string>
+    <string name="copied_file_name">สำเนาของ %s</string>
+    <string name="copied_file_name_2">คัดลอก %1$d จาก %2$s</string>
+    <string name="loading">กำลังโหลด...</string>
+    <string name="deleting">กำลังลบ...</string>
+    <string name="open_wifi">เปิด Wi-Fi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">ไม่ได้เชื่อมต่อ Wi-Fi คุณต้องการเชื่อมต่อทันทีหรือไม่</string>
+    <string name="check_wifi">โปรดตรวจสอบการเชื่อมต่อ Wi-Fi</string>
+    <string name="shared_folders">โฟลเดอร์ระยะไกล</string>
+    <string name="sd_card">การ์ด SD</string>
+    <string name="sd_missing">ไม่มีการ์ดหน่วยความจำ ใส่การ์ดหน่วยความจำเพื่ออ่านไฟล์</string>
+    <string name="error_creating_new_folder">ไม่สามารถสร้างโฟลเดอร์ใหม่</string>
+    <string name="error_renaming_file">ไม่สามารถเปลี่ยนชื่อไฟล์</string>
+    <string name="error_renaming_folder">ไม่สามารถเปลี่ยนชื่อโฟลเดอร์</string>
+    <string name="error_file_does_not_exists">ไม่มีไฟล์อยู่</string>
+    <string name="send_not_available">ไม่สามารถส่งไฟล์ประเภทนี้</string>
+    <string name="application_not_available">ไม่สามารถเปิดไฟล์ชนิดนี้</string>
+    <string name="copy_text">คัดลอกข้อความ</string>
+    <string name="anonymous">ไม่เปิดเผยชื่อ</string>
+    <string name="no_server_found">ไม่พบเซิร์ฟเวอร์ โปรดลองอีกครั้ง</string>
+    <string name="Overwrite_Zip_File">เขียนทับไฟล์ซิปที่มีอยู่หรือไม่</string>
+    <string name="Overwrite_Contents">เขียนทับข้อมูลของโฟลเดอร์ที่มีอยู่หรือไม่</string>
+    <string name="Unzipping">กำลังแยกออก...</string>
+    <string name="Zipping">กำลังซิป...</string>
+    <string name="zip_file_name">ชื่อไฟล์</string>
+    <string name="create">สร้าง</string>
+    <string name="extract">แยกออก</string>
+    <string name="overwrite">เขียนทับ</string>
+    <string name="error_zipping_file">เกิดข้อผิดพลาดขณะซิปไฟล์ของคุณ</string>
+    <string name="error_unzip_file">เกิดข้อผิดพลาดขณะแยกไฟล์ของคุณออก</string>
+    <string name="invalid_zip_name">%1$s ไม่สามารถแยกออก เปลี่ยนชื่อไฟล์ด้วยชื่อที่ถูกต้อง (ได้แก่ filename%2$s) และลองอีกครั้ง</string>
+    <string name="folder">โฟลเดอร์: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">ประกอบด้วย: %1$d รายการ</item>
+        <item quantity="other">ประกอบด้วย: %1$d รายการ</item>
+    </plurals>
+    <string name="size">ขนาด: </string>
+    <string name="last_modified_at">แก้ไขเมื่อ: </string>
+    <string name="readable_yes">อ่านได้: ใช่</string>
+    <string name="readable_no">อ่านได้: ไม่</string>
+    <string name="writable_yes">เขียนได้: ใช่</string>
+    <string name="writable_no">เขียนได้: ไม่</string>
+    <string name="hidden_yes">ซ่อน: ใช่</string>
+    <string name="hidden_no">ซ่อน: ไม่</string>
+    <string name="download_dialog_title">การถ่ายโอนไฟล์</string>
+    <string name="transfer_complete">ถ่ายโอนเสร็จสิ้น</string>
+    <string name="transfer_progress">ความคืบหน้าในการถ่ายโอน</string>
+    <string name="to">ถึง: </string>
+    <string name="hundred_percent">100%</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="crop_Image_error">ไม่รองรับไฟล์ชนิดนี้!</string>
+    <string name="internal_device_storage">ที่จัดเก็บข้อมูลอุปกรณ์ภายใน</string>
+    <string name="unknown">ไม่รู้จัก</string>
+    <string name="sd_unmounted">ไม่ได้ใส่การ์ด SD ใส่การ์ด SD เพื่ออ่านไฟล์</string>
+    <string name="internal_device_storage_unmounted">ถอดอุปกรณ์ภายในที่ใช้จัดเก็บข้อมูลแล้ว เชื่อมต่ออุปกรณ์จัดเก็บข้อมูลภายในเพื่ออ่านไฟล์</string>
+    <string name="protected_content">ข้อมูลที่ป้องกัน</string>
+    <plurals name="item">
+        <item quantity="one">%1$d รายการ</item>
+        <item quantity="other">%1$d รายการ</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">เปลี่ยนชื่อไม่สำเร็จ</string>
+    <string name="renaming_exist">มีผู้ใช้ชื่อ %s แล้ว เลือกชื่ออื่น</string>
+    <string name="renaming_empty">ไม่ได้ป้อนชื่อ</string>
+    <string name="renaming_invalid">ชื่อไฟล์มีอักขระที่ไม่ถูกต้องอย่างน้อยหนึ่งตัว เลือกชื่ออื่น</string>
+    <string name="renaming_file_empty">ชื่อไฟล์ไม่ถูกต้อง โปรดป้อนชื่อไฟล์ที่ประกอบด้วยตัวอักษรหรือตัวเลข</string>
+    <string name="renaming_folder_empty">ชื่อโฟลเดอร์ไม่ถูกต้อง โปรดป้อนชื่อไฟล์ที่ประกอบด้วยตัวอักษรหรือตัวเลข</string>
+    <string name="default_group">กลุ่มที่ไม่รู้จัก</string>
+    <string name="search_hint">ค้นหาไฟล์</string>
+    <string name="menu_search">ค้นหา</string>
+    <string name="search_folder">เลือกโฟลเดอร์ที่จะค้นหา</string>
+    <string name="sd_missing_search">ไม่มีการ์ดหน่วยความจำ ใส่การ์ดหน่วยความจำเพื่อค้นหาไฟล์</string>
+    <string name="search_progess">ค้นหา %1$s ใน %2$s"</string>
+    <string name="settings_description">ไฟล์และโฟลเดอร์</string>
+    <string name="search_result">ผลลัพธ์ภายใน \"%s\"</string>
+    <string name="empty_search_result">ไม่พบผลลัพธ์</string>
+    <string name="renaming_folder_exist">มีชื่อโฟลเดอร์นี้แล้ว โปรดเลือกชื่ออื่น</string>
+    <string name="enter_Credentials">ป้อนข้อมูลประจำตัว</string>
+    <string name="name">ชื่อ</string>
+    <string name="date">วันที่</string>
+    <string name="size_v">ขนาด</string>
+    <string name="type">ประเภท</string>
+    <string name="typ_folder">โฟลเดอร์</string>
+    <string name="typ_file">ไฟล์</string>
+    <string name="typ_image">ภาพ</string>
+    <string name="typ_audio">เสียง</string>
+    <string name="typ_video">วิดีโอ</string>
+    <string name="typ_text">ข้อความ</string>
+    <string name="typ_doc">เอกสาร</string>
+    <string name="typ_zip">ซิป</string>
+    <string name="typ_ppt">งานนำเสนอ</string>
+    <string name="typ_xml">สเปรดชีท</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">เว็บเพจ</string>
+    <string name="typ_msg">ข้อความ</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">ประเภทการเข้ารหัสลับ</string>
+    <string name="zip_encryption_type_normal">ไม่มีการเข้ารหัสลับ</string>
+    <string name="zip_encryption_type_legacy">การเข้ารหัสลับแบบเลกาซีย์ (Zip 2.0)</string>
+    <string name="zip_encryption_type_128">การเข้ารหัส 128 AES</string>
+    <string name="zip_encryption_type_256">การเข้ารหัส 256 AES</string>
+    <string name="show_password">แสดงรหัสผ่าน</string>
+    <string name="password_protected_zip">ป้องกันไว้ด้วยรหัสผ่าน ป้อนรหัสผ่านเพื่อแยกออก</string>
+    <string name="password_cannot_be_blank">รหัสผ่านต้องไม่เว้นว่าง</string>
+    <string name="stop_zip_file">การซิปถูกยกเลิก</string>
+    <string name="stop_unzip_file">การแยกออกถูกยกเลิก</string>
+    <string name="zip_canceling">กำลังยกเลิกการซิป...</string>
+    <string name="unzip_canceling">กำลังยกเลิกการแยกออก...</string>
+    <string name="zip_existing_zip_file">การเลือกรวมไฟล์ซิปที่มีอยู่ ไฟล์ซิปที่มีอยู่จะไม่รวมในไฟล์ซิปใหม่</string>
+    <string name="menu_multimode">เลือกหลายรายการ</string>
+    <string name="selected">เลือก %d รายการ</string>
+    <string name="copied">%d คัดลอกแล้ว</string>
+    <string name="usb_storage">ที่เก็บข้อมูล USB</string>
+    <string name="devices">อุปกรณ์</string>
+    <string name="shortcuts">โฟลเดอร์ทางลัด</string>
+    <string name="recentfile">ไฟล์ล่าสุด</string>
+    <string name="moving">กำลังย้าย...</string>
+    <string name="copying">กำลังคัดลอก...</string>
+    <string name="menu_add_shortcut">เพิ่มเข้ารายการโฟลเดอร์ทางลัด</string>
+    <string name="recent_file_deleted">ไม่พบรายการต้นฉบับ</string>
+    <string name="shortcut_deleted">ไม่พบรายการต้นฉบับ คุณต้องการลบทางลัดนี้หรือไม่</string>
+    <string name="shortcut_storage_unmount">ไม่พบรายการต้นฉบับเพราะอุปกรณ์จัดเก็บข้อมูลถูกยกเลิกการเชื่อมต่อแล้ว คุณต้องการลบทางลัดนี้หรือไม่</string>
+    <string name="recent_file_storage_unmount">ไม่พบรายการต้นฉบับเพราะอุปกรณ์จัดเก็บข้อมูลถูกยกเลิกการเชื่อมต่อแล้ว</string>
+    <string name="menu_delete_shorcut">ลบออกจากรายการโฟลเดอร์ทางลัด</string>
+    <string name="menu_rename_shorcut">เปลี่ยนชื่อโฟลเดอร์ทางลัด</string>
+    <string name="message_delete_shorcut">คุณต้องการลบโฟลเดอร์ทางลัดจากรายการโฟลเดอร์ทางลัดหรือไม่ การลบโฟลเดอร์ทางลัดไม่ส่งผลกับโฟลเดอร์ต้นฉบับ</string>
+    <string name="message_rename_shorcut">การเปลี่ยนชื่อโฟลเดอร์ทางลัดไม่ส่งผลกับโฟลเดอร์ต้นฉบับ</string>
+    <string name="availmem_gb">%1$s GB พร้อมใช้งาน</string>
+    <string name="move_shadow">ย้าย</string>
+    <string name="no_tranfer_item">ไม่มีการถ่ายโอนข้อมูลในขณะนี้</string>
+    <string name="done_button">เรียบร้อย</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">กำลังคัดลอก %1$d รายการไปยัง:</item>
+        <item quantity="other">กำลังคัดลอก %1$d รายการไปยัง:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">กำลังย้าย %1$d รายการไปยัง:</item>
+        <item quantity="other">กำลังย้าย %1$d รายการไปยัง:</item>
+    </plurals>
+    <string name="waiting">กำลังรอ</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">กำลังยกเลิก...</string>
+    <string name="confirm_delete">ยืนยันการลบ</string>
+    <string name="size_mb">%1$s MB</string>
+    <string name="error_occurred">หยุดเนื่องจากเกิดข้อผิดพลาด</string>
+    <string name="copy_stopped">หยุดการคัดลอก</string>
+    <string name="move_stopped">หยุดการย้าย</string>
+    <string name="compress_using">บีบอัดโดยใช้</string>
+
+</resources>

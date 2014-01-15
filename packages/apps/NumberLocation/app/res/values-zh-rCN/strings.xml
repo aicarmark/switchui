@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">"号码归属地查询"</string>
+	<string name="title_search_help">"输入电话号码查询归属地"</string>
+	<string name="title_search_help_city_code">"输入中国城市名查询城市区号，请输入中文"</string>
+	<string name="title_search_help_country_code">"输入国家或地区名称查询区号"</string>
+	<string name="title_menu_update">"升级数据库"</string>
+	<string name="title_menu_setting">"关于"</string>
+	<string name="title_menu_quit">"退出"</string>
+	<string name="preferences_setting_title">"升级设置"</string>
+	<string name="preferences_upgrade_info_title">"升级信息"</string>
+	<string name="title_preferences_auto_update">"自动更新"</string>
+	<string name="title_auto_update_inteval">"自动更新间隔"</string>
+	<string name="title_auto_update_inteval_default">"1个月"</string>
+	<string name="provider_name">"号码归属地数据提供者"</string>
+	<string name="button_cancel">"取消"</string>
+	    <string name="title_package_downloading">"升级数据包下载"</string>
+    <string name="title_database_updating">"数据库更新"</string>
+    <string name="title_search_result">"查询结果"</string>
+    <string name="title_search_result_not_found">"没有匹配记录！"</string>
+    <string name="button_close">"关闭"</string>
+    <string name="title_last_upgrade_timestamp">"最后更新时间"</string>
+    <string name="title_last_upgrade_timestamp_default">"尚未升级"</string>
+    <string name="title_database_version">"号码归属地数据库版本"</string>
+    <string name="title_database_version_default">""</string>
+    <string name="title_update_result">"数据库升级"</string>
+    <string name="title_update_successfully">"已成功更新数据库！"</string>
+    <string name="title_update_not_found">"数据库版本已为最新！"</string>
+    <string name="title_network_fail">"网络错误，请检查网络并再试！"</string>
+    <string name="title_update_user_cancel">"数据库更新已取消!"</string>
+    <string name="string_calendar_am">"上午"</string>
+    <string name="string_calendar_pm">"下午"</string>
+    <string name="title_network_cost_warning">"免责声明"</string>
+    <string name="string_network_cost_warning">"本操作会产生数据流量，流量产生的费用请参见运营商公布的收费标准。本服务目前只面向已开通互联网服务的用户。
+点击确定表示您已阅读并且同意上述事项。"</string>
+    <string name="string_next_time">"下次不再显示"</string>
+    <string name="btn_accept">确定</string>
+    <string name="btn_reject">取消</string>
+    
+    <string name="string_countryNameTraditionalConvertMapping_cn_1">"中国"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_2">"中华人民共和国"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_en_1">"China"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_en_2">"Mainland China"</string>
+    <string name="string_countryNameTraditionalConvertMapping_usa_1">"USA"</string>
+    <string name="string_countryNameTraditionalConvertMapping_usa_2">"United States of America"</string>
+     <!--begin 	IKCHNDEV-1245 cvmq63  -->
+    <string name="title_input_phone_nbumber">"请输入电话号码"</string>
+    <string name="title_input_city_name">"请输入中国城市名称"</string>
+    <string name="title_input_country_name">"请输入国家或地区名称"</string>
+    <!--end   IKCHNDEV-1245 cvmq63 -->
+    
+</resources>

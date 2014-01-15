@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="7dp" >
+
+    <!-- Settings Icon -->
+    <ImageView
+        android:id="@+id/setting_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/setting_icon_image_desc"/>
+
+    <!-- Text Layout -->
+    <LinearLayout
+        android:id="@+id/text_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="7dp" >
+
+        <!-- First Line -->
+        <TextView
+            android:id="@+id/setting_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+			android:textColor="@color/first_line"
+            android:textSize="22sp" />
+        
+        <!-- Second Line -->
+        <TextView
+            android:id="@+id/value_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/second_line"
+            android:textSize="16sp" />      
+    </LinearLayout>
+    
+    <!-- Right Indicator -->
+    <LinearLayout
+        android:id="@+id/mode_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:layout_weight="1.5"      
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="14dp"
+        android:paddingTop="5dp" >
+
+        <!-- Rule Icon -->    
+        <ImageView
+            android:id="@+id/mode_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp" 
+            android:contentDescription="@string/rule_icon_image_desc" />
+
+        <!-- Rule Text -->       
+        <TextView
+            android:id="@+id/mode_text_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/first_line"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

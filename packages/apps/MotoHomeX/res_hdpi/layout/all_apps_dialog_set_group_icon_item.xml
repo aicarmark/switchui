@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 Motorola. -->
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:paddingTop="7dip"
+    android:paddingBottom="0dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:drawablePadding="0dip"
+    android:ellipsize="marquee"
+    android:fadingEdge="horizontal"
+    android:gravity="top|center_horizontal"
+    android:maxLines="2"
+    android:textColor="#FFF"
+    android:textSize="1dip"
+    android:background="@drawable/all_apps_group_icon_selector" />

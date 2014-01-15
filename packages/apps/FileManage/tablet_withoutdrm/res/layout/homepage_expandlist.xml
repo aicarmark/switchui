@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-10-31                   w17952      initial
+ */-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <ExpandableListView android:id="@+id/expandList"
+    android:layout_width="match_parent" android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+ android:title="@string/livewallpaper_settings"
+ android:key="livewallpaper_settings">
+
+    <Preference
+    	android:key="@string/location_key"   
+     	android:title="@string/location_title"   
+     	android:summary=""   
+     	android:widgetLayout="@layout/preference_location" />  
+  	
+ 	<ListPreference
+  	 	android:key="@string/display_key"
+  	 	android:title="@string/text_display"
+  	 	android:summary=""
+  	 	android:entries="@array/text_display_list"
+  	 	android:entryValues="@array/text_display_value_list"
+  	 	android:defaultValue="1"
+  	 	android:persistent="true"
+  	 	android:widgetLayout="@layout/preference_location"/>
+  	
+ 	<ListPreference
+  		android:key="@string/size_key"
+  	 	android:title="@string/text_size"
+  	 	android:summary=""
+  	 	android:entries="@array/text_size_list"
+  		android:entryValues="@array/text_size_value_list"
+  	 	android:defaultValue="0"
+  	 	android:persistent="true"
+  	 	android:widgetLayout="@layout/preference_location"/>
+
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (C) 2010 Motorola Inc.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- MOT Dialer App - IKSTABLETWO-6693 -->
+    <string name="private_num">Restricted number</string>
+    <!-- MOT Dialer App - IKSTABLETWOV-1945-->
+    <string name="visual_voicemail">Visual Voice Mail</string>
+    <string name="Data_roaming_msg">You may incur additional charges for using visual voice mail.\n\nWould you like to use visual voice mail or voicemail?</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+    <TextView android:id="@+id/ReauthNameTextView"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_marginLeft="@dimen/reauth_text_view_margin"
+              android:layout_marginRight="@dimen/reauth_text_view_margin"
+              android:text="@string/add_server_username"
+              android:textColor="@android:color/primary_text_dark"
+              android:gravity="left"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText android:id="@+id/Reauthname"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:layout_marginLeft="@dimen/reauth_text_view_margin"
+              android:layout_marginRight="@dimen/reauth_text_view_margin"
+              android:scrollHorizontally="true"
+              android:autoText="false"
+              android:capitalize="none"
+              android:singleLine="true"
+              android:gravity="fill_horizontal"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/ReauthPasswordTextView"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_marginLeft="@dimen/reauth_text_view_margin"
+              android:layout_marginRight="@dimen/reauth_text_view_margin"
+              android:text="@string/add_server_password"
+              android:textColor="@android:color/primary_text_dark"
+              android:gravity="left"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText android:id="@+id/ReauthPassword"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:layout_marginLeft="@dimen/reauth_text_view_margin"
+              android:layout_marginRight="@dimen/reauth_text_view_margin"
+              android:scrollHorizontally="true"
+              android:autoText="false"
+              android:capitalize="none"
+              android:gravity="fill_horizontal"
+              android:singleLine="true"
+              android:password="true"
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingTop="@dimen/lin_layout_padding_top"
+                  android:paddingLeft="@dimen/lin_layout_padding_left"
+                  android:paddingRight="@dimen/lin_layout_padding_right" >
+
+      <Button android:id="@+id/ReauthCancel"
+              android:layout_width="@dimen/zero_dp"
+              android:layout_gravity="left"
+              android:layout_weight="@fraction/weight_one"
+              android:maxLines="2"
+              android:layout_height="wrap_content"
+              android:text="@android:string/cancel" />
+
+      <Button android:id="@+id/ReauthOk"
+              android:layout_width="@dimen/zero_dp"
+              android:layout_gravity="right"
+              android:layout_weight="@fraction/weight_one"
+              android:maxLines="2"
+              android:layout_height="wrap_content"
+              android:text="@android:string/ok" />
+
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

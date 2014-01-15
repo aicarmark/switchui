@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">防火牆</string>
+    <string name="appwidget_name">VIP 模式</string>
+    <string name="widget_description_vip">查看和控制 VIP 模式</string>
+    <string name="log_title">防火牆記錄</string>
+    <string name="calllog_title">通話防火牆記錄</string>
+    <string name="smslog_title">訊息防火牆記錄</string>
+    <string name="incoming_call_setting_title">來電防火牆設定</string>
+    <string name="incoming_call_on_title">來電防火牆</string>
+    <string name="incoming_sms_setting_title">訊息防火牆設定</string>
+    <string name="incoming_sms_on_title">訊息防火牆</string>
+    <string name="whitescreen_title">VIP 名單</string>
+    <string name="white_pattern_screen_title">以圖案為基礎的 VIP 名單</string>
+    <string name="white_number_screen_title">以號碼為基礎的 VIP 名單</string>
+    <string name="white_name_screen_title">以名稱為基礎的 VIP 名單</string>
+    <string name="white_black_screen_title">VIP 名單和黑名單</string>
+    <string name="in_block_call_type_title">來電防火牆模式</string>
+    <string name="in_block_sms_type_title">訊息防火牆模式</string>
+    <string name="incoming_call_on_sum">開啟/關閉來電防火牆</string>
+    <string name="incoming_sms_on_sum">開啟/關閉 SMS 防火牆</string>
+    <string name="blackscreen_title">黑名單</string>
+    <string name="black_pattern_screen_title">以圖案為基礎的黑名單</string>
+    <string name="black_number_screen_title">以號碼為基礎的黑名單</string>
+    <string name="black_name_screen_title">以名稱為基礎的黑名單</string>
+    <string name="outgoing_call_setting_title">去電防火牆設定</string>
+    <string name="pattern_title">圖案</string>
+    <string name="switch_to_vipmode">在 VIP 模式中，手機僅接受 VIP 的來電和訊息。</string>
+    <string name="in_reject_type_title">封鎖類型</string>
+    <string name="outgoing_call_on_title">去電防火牆</string>
+    <string name="outgoing_call_on_sum">開啟/關閉去電防火牆</string>
+    <string name="out_block_call_type_title">去電防火牆模式</string>
+    <string name="menu_insert_white_list">新增 VIP 號碼</string>
+    <string name="menu_insert_black_list">新增黑名單號碼</string>
+    <string name="menu_insert_white_pattern">新增 VIP 圖案</string>
+    <string name="menu_insert_black_pattern">新增黑名單圖案</string>
+    <string name="menu_delete">刪除</string>
+    <string name="menu_delete_all">刪除全部</string>
+    <string name="menu_pick_pim">從聯絡人中挑選</string>
+    <string name="menu_pick_recall">從通話記錄中挑選</string>
+    <string name="menu_restore">還原回 SMS</string>
+    <string name="menu_edit">編輯</string>
+    <string name="button_done">完成</string>
+    <string name="button_revert">復原</string>
+    <string name="title_edit">編輯名單</string>
+    <string name="title_create">建立新的名單</string>
+    <string name="error_title">錯誤</string>
+    <string name="error_message">錯誤訊息</string>
+    <string name="recentCalls_empty">通話記錄是空的。</string>
+    <string name="all_log_empty">所有防火牆記錄是空的。</string>
+    <string name="call_log_empty">通話防火牆記錄是空的。</string>
+    <string name="sms_log_empty">SMS 防火牆記錄是空的。</string>
+    <string name="white_name_empty">以名稱為基礎的 VIP 名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="white_number_empty">以號碼為基礎的 VIP 名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="white_pattern_empty">以圖案為基礎的 VIP 名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="black_name_empty">以名稱為基礎的黑名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="black_number_empty">以號碼為基礎的黑名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="black_pattern_empty">以圖案為基礎的黑名單是空的。 \n按下 [選單] 以新增。</string>
+    <string name="firewall_service_started">防火牆已啟動</string>
+    <string name="firewall_vip_mode_started">VIP 模式已啟動</string>
+    <string name="firewall_call_intercepted">防火牆已攔截以下來源的通話 </string>
+    <string name="firewall_sms_intercepted">防火牆已攔截以下來源的 SMS </string>
+    <string name="sum_no_item">空</string>
+    <plurals name="sum_items">
+        <item quantity="one">1 個項目</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> 個項目</item>
+    </plurals>
+    <string name="alert_dialog_ok">確定</string>
+    <string name="alert_dialog_pattern_content">圖案的數目上限是 3。您必須刪除較舊的圖案，才能新增圖案。</string>
+    <string name="alert_dialog_name_content">VIP/黑名單的數目上限是 1000。您必須刪除較舊的名單，才能新增名單。</string>
+    <string name="alert_dialog_number_null">儲存的號碼應為有效，且不應為無效號碼。</string>
+    <string name="alert_dialog_unknow_number">無法從最近的通話中挑選未知的號碼。</string>
+    <string name="alert_dialog_invalid_number">無法挑選無效的號碼。</string>
+    <string name="alert_dialog_dup_number_white_list">相同的號碼已在 VIP 名單中。</string>
+    <string name="alert_dialog_dup_number_white_pattern">相同的圖案已在 VIP 圖案清單中。</string>
+    <string name="alert_dialog_dup_number_black_list">相同的號碼已在黑名單中。</string>
+    <string name="alert_dialog_dup_number_black_pattern">相同的圖案已在黑名單圖案清單中。</string>
+    <string name="alert_dialog_error_pattern">無效的圖案號碼。</string>
+    <string name="alert_dialog_error_number">無效的電話號碼。</string>
+    <string name="alert_dialog_dup_name_white_list">相同的名稱已在 VIP 名單中。</string>
+    <string name="alert_dialog_dup_name_black_list">相同的名稱已在黑名單中。</string>
+    <string name="alert_dialog_name_nonumber">此聯絡人沒有電話號碼。</string>
+    <string name="alert_dialog_dup_numbers_white_list">某些號碼已在 VIP 名單中。</string>
+    <string name="alert_dialog_dup_numbers_black_list">某些號碼已在黑名單中。</string>
+    <string name="call_log_on_title">保留通話防火牆記錄</string>
+    <string name="call_log_on_sum">開啟/關閉通話防火牆記錄</string>
+    <string name="sms_log_on_title">保留訊息防火牆記錄</string>
+    <string name="sms_log_on_sum">開啟/關閉訊息防火牆記錄</string>
+    <string name="unknown">不明</string>
+    <string name="private_num">私人號碼</string>
+    <string name="payphone">公共電話</string>
+    <string name="ext_add_black_number_toast">此號碼已經成功新增至黑名單。</string>
+    <string name="ext_add_white_number_toast">此號碼已經成功新增至 VIP 名單。</string>
+    <string name="ext_add_black_name_toast">此名稱已經成功新增至黑名單。</string>
+    <string name="ext_add_white_name_toast">此名稱已經成功新增至 VIP 名單。</string>
+    <string name="ext_add_black_name_number_toast">此聯絡人的號碼已經成功新增至黑名單。</string>
+    <string name="ext_add_white_name_number_toast">此聯絡人的號碼已經成功新增至 VIP 名單。</string>
+    <string name="vip_mode_on_toast">在 VIP 模式中，手機僅接受 VIP 的來電和訊息。</string>
+    <string name="pattern_help">例如： \'189\' 將會比對開頭為 189 的任何號碼，而 \'512#\' 將會比對結尾為 512 的任何號碼。</string>
+    <string name="number_for_pattern">設置為糢糊號碼匹配</string>
+    <string name="number_for_call">針對通話防火牆套用</string>
+    <string name="number_for_sms">針對 SMS 防火牆套用</string>
+    <string name="number_for_call_black">封鎖這個號碼的來電</string>
+    <string name="number_for_sms_black">封鎖這個號碼的訊息</string>
+    <string name="number_for_call_white">接受這個號碼的來電</string>
+    <string name="number_for_sms_white">接受這個號碼的訊息</string>
+    <string name="setting_tab">設定</string>
+    <string name="list_tab">VIP/黑名單</string>
+    <string name="call_log_tab">通話記錄</string>
+    <string name="sms_log_tab">SMS 記錄</string>
+    <string name="black_list_tab">黑名單</string>
+    <string name="white_list_tab">VIP</string>
+    <string name="firewall_log_tab">防火牆記錄</string>
+    <string name="alert_dialog_calllog_delete_all">即將刪除所有封鎖的通話記錄。</string>
+    <string name="alert_dialog_smslog_delete_all">即將刪除所有封鎖的 SMS 記錄。</string>
+    <string name="alert_dialog_alllog_delete_all">即將刪除所有封鎖的記錄。</string>
+    <string name="alert_dialog_white_number_delete_all">即將刪除所有以號碼為基礎的 VIP 名單。</string>
+    <string name="alert_dialog_white_pattern_delete_all">即將刪除所有以圖案為基礎的 VIP 名單。</string>
+    <string name="alert_dialog_black_number_delete_all">即將刪除所有以號碼為基礎的黑名單。</string>
+    <string name="alert_dialog_black_pattern_delete_all">即將刪除所有以圖案為基礎的黑名單。</string>
+    <string name="alert_dialog_white_name_delete_all">即將刪除所有以名稱為基礎的 VIP 名單。</string>
+    <string name="alert_dialog_black_name_delete_all">即將刪除所有以名稱為基礎的黑名單。</string>
+    <string name="alert_dialog_white_number_pattern_delete_all">即將刪除所有以號碼為基礎的 VIP 名單。</string>
+    <string name="alert_dialog_black_number_pattern_delete_all">即將刪除所有以號碼和圖案為基礎的黑名單。</string>
+    <string name="alert_dialog_add_white_list_confirm">這個號碼將會新增至 VIP 名單。</string>
+    <string name="alert_dialog_add_black_list_confirm">這個號碼將會新增至黑名單。</string>
+    <string name="alert_dialog_add_white_name_confirm">這位聯絡人的號碼將會新增至 VIP 名單。</string>
+    <string name="alert_dialog_add_black_name_confirm">這位聯絡人的號碼將會新增至黑名單。</string>
+    <string name="message_keywords_filter_title">訊息關鍵字過濾</string>
+    <string name="keywords_filter_on_title">關鍵字過濾</string>
+    <string name="keywords_filter_info">由 360 Mobile Safe 提供</string>
+    <string name="keywords_manager_on_title">關鍵字管理員</string>
+    <string name="keywords_manager_info">自訂關鍵字，自動關鍵字同步處理設定</string>
+    <string name="select_log_type_prompt">選擇防火牆記錄類型</string>
+    <string name="is_dup_in_white_list">%s \n 已在 VIP 名單中</string>
+    <string name="is_dup_in_black_list">%s \n 已在黑名單中</string>
+    <string name="added_to_white_list">%s \n 已新增至 VIP 名單</string>
+    <string name="added_to_black_list">%s \n 已新增至黑名單</string>
+    <string name="network_firewall_setting">網路防火牆設定</string>
+    <string name="in_call_reject_cdma">封鎖 CDMA 的通話</string>
+    <string name="in_call_reject_gsm">封鎖 GSM 的通話</string>
+    <string name="in_sms_reject_cdma">封鎖 CDMA 的訊息</string>
+    <string name="in_sms_reject_gsm">封鎖 GSM 的訊息</string>
+    <string name="in_call_reject_cdma_sum">封鎖 CDMA 卡的所有來電</string>
+    <string name="in_call_reject_gsm_sum">封鎖 GSM 卡的所有來電</string>
+    <string name="in_sms_reject_cdma_sum">封鎖 CDMA 卡的所有訊息</string>
+    <string name="in_sms_reject_gsm_sum">封鎖 GSM 卡的所有訊息</string>
+    <string-array name="incoming_call_block_list">
+        <item>僅接受聯絡人的來電</item>
+        <item>封鎖所有來電</item>
+        <item>僅接受 VIP 的來電</item>
+        <item>封鎖黑名單的來電</item>
+    </string-array>
+    <string-array name="incoming_call_block_list_value">
+        <item>in_call_pimlist</item>
+        <item>in_call_rejectall</item>
+        <item>in_call_whitelist</item>
+        <item>in_call_blacklist</item>
+    </string-array>
+    <string-array name="incoming_sms_block_list">
+        <item>僅接受聯絡人的 SMS</item>
+        <item>封鎖所有 SMS</item>
+        <item>僅接受 VIP 的 SMS</item>
+        <item>封鎖黑名單的 SMS</item>
+    </string-array>
+    <string-array name="incoming_sms_block_list_value">
+        <item>in_sms_pimlist</item>
+        <item>in_sms_rejectall</item>
+        <item>in_sms_whitelist</item>
+        <item>in_sms_blacklist</item>
+    </string-array>
+    <string-array name="white_black_list_title">
+        <item>以號碼為基礎的 VIP 名單</item>
+        <item>以圖案為基礎的 VIP 名單</item>
+        <item>以號碼為基礎的黑名單</item>
+        <item>以圖案為基礎的黑名單</item>
+        <item>以名稱為基礎的 VIP 名單</item>
+        <item>以名稱為基礎的黑名單</item>
+    </string-array>
+    <string-array name="white_black_editor_title">
+        <item>新增 VIP 名單號碼</item>
+        <item>新增 VIP 圖案號碼</item>
+        <item>新增黑名單號碼</item>
+        <item>新增黑名單圖案號碼</item>
+        <item>新增 VIP 名單號碼</item>
+        <item>新增黑名單號碼或圖案</item>
+        <item>編輯 VIP 名單號碼</item>
+        <item>編輯黑名單號碼</item>
+        <item>編輯 VIP 名單圖案</item>
+        <item>編輯黑名單圖案</item>
+    </string-array>
+    <string-array name="outgoing_call_block_list">
+        <item>僅允許撥號給聯絡人</item>
+        <item>禁止所有撥出電話</item>
+        <item>VIP 名單</item>
+        <item>黑名單</item>
+    </string-array>
+    <string-array name="outgoing_call_block_list_value">
+        <item>out_call_pimlist</item>
+        <item>out_call_banall</item>
+        <item>out_call_whitelist</item>
+        <item>out_call_blacklist</item>
+    </string-array>
+    <string-array name="in_reject_type">
+        <item>忽略來電</item>
+        <item>拒絕來電</item>
+    </string-array>
+    <string-array name="in_reject_type_value">
+        <item>ignore_block</item>
+        <item>reject_block</item>
+    </string-array>
+    <string-array name="firewall_log_type">
+        <item>所有防火牆記錄</item>
+        <item>通話防火牆記錄</item>
+        <item>SMS 防火牆記錄</item>
+    </string-array>
+
+</resources>

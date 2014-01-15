@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Tehtävänhallinta"</string>
+  <string name="tabTasks">"Sovellukset"</string>
+  <string name="tabProcesses">"Prosessit"</string>
+  <string name="buttonEnd">"Loppu"</string>
+  <string name="buttonRefresh">"Päivitä"</string>
+  <string name="menuSwitch">"Vaihda"</string>
+  <string name="menuEndTask">"Lopeta tehtävä"</string>
+  <string name="menuCancel">"Peruuta"</string>
+  <string name="textAvailableMemory">"Muistia vapaana:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Sovellusten määrä:"</string>
+  <string name="loading">Ladataan\u2026</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Miniaplikácie prepínačov</string>
+  <string name="gps_app_name">Prepínač GPS</string>
+  <string name="airplane_app_name">Prepínač režimu V lietadle</string>
+  <string name="wifi_app_name">Prepínač Wi-Fi</string>
+  <string name="bluetooth_app_name">Prepínač Bluetooth</string>
+  <string name="apn_app_name">Prepínač APN</string>
+  <string name="data_app_name">Prepínač dátového pripojenia</string>
+  <string name="widget_description">Zobrazenie a ovládanie stavu režimu V lietadle</string>
+  <string name="widget_description_bt">Zobrazenie a ovládanie stavu zariadenia Bluetooth</string>
+  <string name="widget_description_wifi">Zobrazenie a ovládanie stavu siete Wi-Fi</string>
+  <string name="widget_description_gps">Zobrazenie a ovládanie stavu zariadenia GPS</string>
+  <string name="StatusOn">ZAP</string>
+  <string name="StatusOff">VYP</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Režim V lietadle je nedostupný</string>
+  <string name="BluetoothtoastText">Rozhranie Bluetooth je nedostupné</string>
+  <string name="GPStoastText">Zariadenie GPS je nedostupné</string>
+  <string name="WifitoastText">Wi-Fi nie je k dispozícii</string>
+  <string name="location_restriction_enabled">Obmedzenie lokality je povolené.</string>
+  <string name="apncontrol_app_name">Riadenie APN</string>
+  <string name="no_apn">Nie je dostupné žiadne APN</string>
+</resources>

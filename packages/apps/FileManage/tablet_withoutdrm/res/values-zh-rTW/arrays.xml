@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>輸入名稱或 IP</item>
+        <item>掃描伺服器</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>新增伺服器</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>正在掃描域名…</item>
+        <item>正在掃描伺服器…</item>
+        <item>正在連線至伺服器…</item>
+        <item>正在載入…</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>按名稱</item>
+        <item>按類型</item>
+        <item>按時間</item>
+        <item>按大小</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>無加密</item>
+        <item>傳統 (Zip 2.0) 加密</item>
+        <item>128 位元 AES 加密</item>
+        <item>256 位元 AES 加密</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>內部儲存裝置</item>
+        <item>SD 卡</item>
+    </string-array>
+
+</resources>

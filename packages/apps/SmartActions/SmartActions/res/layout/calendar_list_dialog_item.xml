@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 Motorola Inc. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical" android:id="@+id/calendar_dialog_list_item_layout">
+
+    <View android:id="@+id/calendar_dialog_list_item_color"
+        android:layout_width="10dip" android:layout_height="fill_parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="0dip" android:layout_weight="1"
+        android:layout_height="match_parent" android:layout_marginLeft="4dip"
+        android:gravity="center_vertical">
+
+        <!--android:layout_marginLeft="4dip" android:layout_weight="1" -->
+        <TextView android:id="@+id/calendar_dialog_list_item_display_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#000000" style="?android:attr/textAppearanceMedium"
+            android:singleLine="true" android:ellipsize="end"/>
+
+        <TextView android:id="@+id/calendar_dialog_list_item_sync_account"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="true" android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/calendar_dialog_list_item_checkbox"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip" android:layout_marginRight="4dip" />
+
+</LinearLayout>

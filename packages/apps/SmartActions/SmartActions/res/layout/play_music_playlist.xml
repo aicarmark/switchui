@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+<LinearLayout
+            android:orientation="vertical"
+    	    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+    <ListView android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:longClickable="true"/>
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="7dip"
+        android:layout_marginLeft="7dip"
+        android:text="@string/no_playlist_message"
+        android:gravity = "center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
+   <LinearLayout
+       android:id="@+id/edit_fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+</LinearLayout>
+</LinearLayout>

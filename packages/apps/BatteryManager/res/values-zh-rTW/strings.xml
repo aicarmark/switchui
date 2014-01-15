@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright (C) 2009, Motorola, Inc,
+ * All Rights Reserved
+ * Description: Contains array resources for the Battery Manager app
+ *
+ * Modification History:
+ **********************************************************
+ * Date           Author       Comments
+ * 11-11-09       A24178       Created file
+ * 02-15-10       A24178       String changes for smart mode default
+ **********************************************************
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="batt_manager_mode">"電池模式"</string>
+    <string name="preset_title">"預置"</string>
+    <string name="customs_title">"自定義"</string>
+    <string name="preset_maxbatt_title">"最省電"</string>
+    <string name="preset_maxbatt_shortdesc">"最佳省電模式。最少自動數據更新。"</string>
+    <string name="preset_nighttime_title">"夜間省電"</string>
+    <string name="preset_nighttime_shortdesc">"白天正常操作。夜間省電。"</string>
+    <string name="preset_perfmode_title">"性能模式"</string>
+    <string name="preset_perfmode_shortdesc">"手機無限制同步。不必省電。"</string>
+    <string name="customs_mode_title">"自定義省電"</string>
+    <string name="customs_mode_shortdesc">"創建自己的省電配置檔案。"</string>
+    <string name="moreinfo_text">"更多資訊"</string>
+    <string name="presets_perfmode_desc">"手機全天無限制同步。"</string>
+    <string name="presets_maxsaver_desc">"手機未連接到充電器的情況下:\n\n<li>閒置15分鐘後停止數據同步。</li>\n\n<li>調暗顯示屏。</li>"</string>
+    <string name="presets_nighttime_desc">"手機未連接到充電器的情況下:\n\n<li>非高峰時間(晚上10點到早上5點)手機閒置15分鐘後停止數據同步。按任意鍵恢復同步。</li>\n\n<li>高峰時間無限制同步。</li>"</string>
+    <string name="presets_nighttime_desc_24">"手機未連接到充電器的情況下:\n\n<li>非高峰時間(晚上10點到早上5點)手機閒置15分鐘後停止數據同步。按任意鍵恢復同步。</li>\n\n<li>高峰時間無限制同步。</li>"</string>
+    <string name="customs_description">"自定義模式下，您可以完全控制手機的省電功能。這些設置僅適用於手機不充電期間。"</string>
+    <string name="customs_offpeak_title">"<bold>非高峰時間</bold>"</string>
+    <string name="customs_start_text">"開始:"</string>
+    <string name="customs_end_text">"結束:"</string>
+    <string name="customs_data_text">"關閉數據的時間為:"</string>
+    <string name="customs_peak_title">"<bold>高峰時間</bold>"</string>
+    <string name="customs_displayopt_title">"<bold>顯示亮度</bold>"</string>
+    <string name="customs_disp_text">"如果電池電量低於30%，將顯示亮度設為:"</string>
+    <string name="but_ok_text">"確定"</string>
+    <string name="but_cancel_text">"取消"</string>
+    <string name="time_unit_minutes">"分鐘"</string>
+    <string name="time_unit_hour">"小時"</string>
+    <string name="never_timeout">"總是開啟"</string>
+    <string name="disp_text_min">"最低"</string>
+    <string name="disp_text_max">"最高"</string>
+    <string name="disp_text_curr">"當前顯示亮度"</string>
+    <string name="battery_manager_setting">"電池管理"</string>
+    <string name="battery_manager_settings_summary">"省電設置"</string>
+    <string name="powerprofile_app_name">"電池配置文件"</string>
+    <string name="powerprofile_svc_name">"電源配置文件服務"</string>
+    <string name="powerprofile_rcv_name">"電源配置文件接收器"</string>
+    <string name="logtitle">"數據禁用持續時間:\n"</string>
+    <string name="logs">"查看記錄"</string>
+    <string name="pref_user_max_timeout">"關閉數據的時間為"</string>
+    <string name="remote_mgmt_text">該模式在手機閒置一段時間後可能會斷開您的行動數據連接，在此期間，手機不能同步任何數據。\n\n連接斷開後，串流媒體播放將中斷。"\n</string>
+    <string name="remote_mgmt_title">"注意"</string>
+    <string name="lightsensorctrl">"顯示亮度由光線感應器自動控制"</string>
+    <string name="power_usage_summary_title">"電池使用情況"</string>
+    <string name="power_usage_summary">"耗電情況"</string>
+    <string name="notice_profile_select">"為了延長電池壽命，我們已將晚上10點至早上5點設為非高峰時間。"</string>
+    <string name="configure_text">"配置"</string>
+    <string name="pwrup_notice_title">"電池管理設為夜間省電模式"</string>
+    <string name="pwrup_notice_subtext">"點擊查看詳細資訊"</string>
+    <string name="pwrup_notice_desc">"將電池管理設為夜間省電模式可以節省電池電量。\n\n手機未連接到充電器的情況下，晚上10點至早上5點之間手機閒置15分鐘後，夜間省電模式將關閉您的數據連接。\n\n數據連接關閉後，手機將不會同步或者播放流媒體。\n\n要改變這種模式，請按\"配置\"或訪問"所有程式"中的"電池管理"。\n"</string>
+    <string name="battery_setting">"電池設置"</string>
+    <string name="bu_level_label">"電池剩餘電量:"</string>
+    <string name="bu_entry_label">"點按查看使用情況統計"</string>
+    <string name="bu_pct_text">"<g id="number">%d</g><g id="percent">%%</g>"</string>
+
+</resources>

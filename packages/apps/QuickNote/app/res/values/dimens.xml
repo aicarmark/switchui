@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for sketcher -->
+    <dimen name="preview_bar_width">61px</dimen>
+    <dimen name="preview_bar_margin_left">15px</dimen>
+    <dimen name="preview_bar_margin_top">77px</dimen>
+    
+    <dimen name="thumb_layout_width">138px</dimen>
+    <dimen name="thumb_layout_height">212px</dimen>
+    <dimen name="delete_layout_width">149px</dimen>
+    <dimen name="delete_layout_height">219px</dimen>
+    <dimen name="thumb_ationbar_height">68px</dimen>
+    <dimen name="gridview_vertical_spacing">6px</dimen>
+    <dimen name="gridview_horizontal_spacing">3px</dimen>
+    <dimen name="gridview_padding_top">2px</dimen>
+    <dimen name="gridview_padding_left">9px</dimen>
+    <dimen name="gridview_padding_right">6px</dimen>
+    <dimen name="note_title_linespace">0px</dimen>
+
+</resources>

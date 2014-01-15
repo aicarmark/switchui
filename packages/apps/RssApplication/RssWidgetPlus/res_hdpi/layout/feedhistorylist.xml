@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/feedhistorylist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+	    <View
+            style="@style/button_line"
+            />
+	    <Button
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:textColor="@android:color/white"
+	        android:onClick="onSubscribe"
+	        android:background="@drawable/button_background"
+	        android:text="@string/subscribe" 
+	        />
+	</LinearLayout>
+</RelativeLayout>

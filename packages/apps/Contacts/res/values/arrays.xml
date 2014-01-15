@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Avaliable types of contact, used in EditContactActivity.java. -->
+    <string-array name="contact_typeModes">
+        <item>Device</item>
+        <item>Google</item>
+        <item>C card</item>
+        <item>G card</item>
+    </string-array>
+
+    <!-- Used in RecentCallsListActivity.java -->
+    <string-array name="network_types">
+        <item>All networks</item>
+        <item>CDMA network</item>
+        <item>GSM network</item>
+    </string-array>
+
+    <!-- Used in RecentCallsListActivity.java -->
+    <string-array name="recent_call_types">
+        <item>All calls</item>
+        <item>Missed calls</item>
+        <item>Received calls</item>
+        <item>Outgoing calls</item>
+        <item>Voice mails</item>
+    </string-array>
+
+    <string-array name="recent_call_types_without_voicemail">
+        <item>All calls</item>
+        <item>Missed calls</item>
+        <item>Incoming calls</item>
+        <item>Outgoing calls</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device selection dialog in  dual mode-->
+    <string-array name="select_copy_dialog_items">
+        <item>Device to C card</item>
+        <item>Device to G card</item>
+        <item>C card to Device</item>
+        <item>G card to Device</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device selection dialog  in  single mode-->
+    <string-array name="select_copy_dialog_items_single">
+        <item>Device to UIM card</item>
+        <item>Device to SIM card</item>
+        <item>UIM card to Device</item>
+        <item>SIM card to Device</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device progress bar title in dual mode-->
+    <string-array name="title_copy_progress_items">
+        <item>Copy to C card</item>
+        <item>Copy to G card</item>
+        <item>Copy to Device</item>
+        <item>Copy to Device</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device progress bar title in single mode-->
+    <string-array name="title_copy_progress_items_single">
+        <item>Copy to UIM card</item>
+        <item>Copy to SIM card</item>
+        <item>Copy to Device</item>
+        <item>Copy to Device</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device progress bar text in dual mode-->
+    <string-array name="text_copy_progress_items">
+        <item>Copying contacts to C card</item>
+        <item>Copying contacts to G card</item>
+        <item>Copying contacts to Device</item>
+        <item>Copying contacts to Device</item>
+    </string-array>
+
+    <!-- Used in Copy between SIM/Device progress bar text in single mode-->
+    <string-array name="text_copy_progress_items_single">
+        <item>Copying contacts to UIM card</item>
+        <item>Copying contacts to SIM card</item>
+        <item>Copying contacts to Device</item>
+        <item>Copying contacts to Device</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="55px"
+	android:layout_height="76px">
+
+    <LinearLayout
+    android:layout_width="55px"
+    android:layout_height="20px"
+    android:layout_x="0px"
+    android:layout_y="10px"
+    android:orientation="vertical"
+    android:gravity="center"> 
+    <TextView android:id="@+id/skinitemtext"
+    	android:textSize="12px"
+    	android:gravity="center"
+    	android:layout_width="fill_parent"
+    	android:layout_height="16px"
+    	android:textColor="#ff000000"
+       android:visibility="invisible"
+    	/>
+    </LinearLayout>
+    <ImageView android:id="@+id/skinitemimage"
+    	
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_x="5px"
+    	android:layout_y="26px"/>	
+
+    <ImageView android:id="@+id/skinselected"
+    	android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_x="5px"
+    	android:layout_y="26px"
+   
+/>	
+</AbsoluteLayout>

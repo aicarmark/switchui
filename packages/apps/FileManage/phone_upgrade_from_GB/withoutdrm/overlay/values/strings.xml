@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">File \nManager</string>
+    
+    <!-- Titles -->
+    
+    <string name="choose_file_name">Choose File</string>
+    <string name="title_choose_file">Choose a file</string>
+    <string name="title_choose_folder">Choose a folder</string>
+    <string name="title_dlg_deleting">Deleting</string>
+    <string name="title_dlg_hide">Hide</string>
+    <string name="title_dlg_moving">Moving</string>
+    <string name="title_dlg_copying">Copying</string>
+    <string name="title_dlg_canceling">Cancel...</string>
+    <string name="title_dlg_new">Input folder name</string>
+    <string name="title_dlg_sort">Sort By</string>
+    <string name="title_dlg_property">Property</string>
+    <string name="title_dlg_confirm_delete">Confirm Delete</string>
+    <string name="title_dlg_confirm_hide">Confirm Hide</string>
+    <string name="title_copyto">Copy</string>
+    <string name="title_move">Move</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_dlg_confirm_overwrite">Confirm Overwrite</string>
+    <string name="title_dlg_select_network">Select network</string>
+    <string name="title_hideunhide">Hide/Unhide</string>
+
+    
+    <!-- context menu -->
+    <!-- string name="menu_open">Open</string-->
+    <string name="menu_move">Move</string>
+    <string name="menu_copy">Copy</string>
+    <string name="menu_detail">Property</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_new_folder">New</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_set_as">Set As</string>
+    <string name="menu_set_as_call_ringtone">Set as incoming call ringtone</string>
+    <string name="menu_set_as_message_ringtone">Set as message ringtone</string>
+    <string name="menu_hide">Hide</string>
+    
+    <!-- options menu -->
+     
+    <string name="menu_multi_choice">Choice</string>
+    <string name="menu_cancel_choice">Cancel</string>
+    <string name="menu_delete_choice">Delete</string>
+    <string name="menu_move_choice">Move</string>
+    <string name="menu_copy_choice">Copy</string>
+    <string name="menu_sorting">Sort</string>
+    <string name="menu_sort_name">By Name</string>
+    <string name="menu_sort_type">By Type</string>
+    <string name="menu_sort_size">By Size</string>
+    <string name="menu_sort_date">By Date</string>
+    <string name="menu_property">Property</string>
+    <string name="menu_hideunhide">Hide/Unhide</string>   
+
+    
+    
+    <!-- Used in open a file -->
+    <string name="sendImage">Share picture via</string>
+    <string name="sendVideo">Share video via</string>
+    <string name="sendText">Share Text via</string>
+    <string name="sendAudio">Share Audio via</string>
+    <string name="sendUnknown">Share via</string>
+    <string name="setImage">Set picture as</string>
+    
+    
+    <!-- Buttons -->
+    
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_copyto">Copy To</string>
+    <string name="btn_move">Move To</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_hide">Hide</string>
+
+
+	<!--  Error prompt -->
+	
+    <string name="invalidate_folder">%s is an invalidate folder!</string>
+    <string name="folder_not_exist">The folder %s doesn\'t exist!</string>
+    <string name="file_not_exist">The file %s doesn\'t exist!</string>
+    <string name="sdcard_not_exist">The SD Card doesn\'t exist!</string>
+    <string name="sdcard_is_shared">Sorry, Your SD card is busy!</string>
+    <string name="application_not_available">There is no application for opening this file!</string>
+    <string name="fail_to_share_file">This file cannot be shared!</string>
+    <string name="fail_to_set_file">This file cannot be set!</string>
+    <string name="fail_delete">Can not delete %s!</string>    
+    <string name="fail_delete_ringtone">The file %s has been set as ring tone, can not be deleted!</string>    
+    <string name="fail_move_ringtone">The file %s has been set as ring tone, can not be moved!</string>    
+    <string name="fail_rename_ringtone">The file %s has been set as ring tone, can not be renamed!</string>    
+    <string name="fail_rename">Can not rename from %1$s to %2$s!</string>    
+    <string name="fail_copy_file">Can not copy %s!</string>    
+    <string name="fail_move_file">Can not move %s!</string>    
+    <string name="fail_create_file">Can not create file %s!</string>
+    <string name="fail_create_folder">Can not create folder %s!</string>
+    <string name="fail_disk_full">There is no enough room to finish this operation!</string>
+    <string name="cannot_write_folder">The folder %s can not be written!</string>
+    <string name="cannot_same_folder">Can not copy/move to same folder!</string>
+    <string name="cannot_sub_folder">Can not copy/move a folder to its sub folder!</string>
+    <string name="cannot_choose_vfolder">Can not select a virtual folder!</string>
+	<string name="need_choose_file">Please select a file!</string>
+    <string name="filename_cannot_null">File or folder name can not be null!</string>
+    <string name="filename_invalidate">File or folder name can not be %s !</string>
+    <string name="folder_existed">The Folder %s has existed!</string>
+    <string name="file_existed">The File %s has existed!</string>
+    <string name="not_set_ringtone">wma type audio, couldn\'t be set as ringtone</string>
+    <string name="filename_too_long">Filename too long!</string>
+
+	<!--  Success prompt -->
+    <string name="success_move_file">Move file success!</string>    
+    <string name="success_copy_file">Copy file success!</string>
+    <string name="success_cancel_move_file">Move canceled!</string>    
+    <string name="success_cancel_copy_file">Copy canceled!</string>
+    <string name="success_skip_move_file">Operation success, but some files did not be moved!</string>    
+    <string name="success_skip_copy_file">Operation file success, but some files did not be copied!</string>
+    <string name="success_create_file">Create file %s success!</string>
+    <string name="success_create_folder">Create folder %s success!</string>
+    <string name="success_set_ringstone">Set call ringstone success!</string>
+    <string name="success_set_cdma_message_ringstone"> %s set as message ringstone for CDMA network!</string>
+    <string name="success_set_gsm_message_ringstone"> %s set as message ringstone for GSM network!</string>
+    <string name="success_set_message_ringstone"> %s set as message ringstone success!</string>
+    <string name="success_hide_folder">Hide folder success!</string>
+    <string name="success_cancel_hide_folder">Hide canceled!</string> 
+
+    <!-- property -->
+    <string name="type_folder">Folder</string>
+    <string name="type_video">Video</string>
+    <string name="type_audio">Audio</string>
+    <string name="type_image">Image</string>
+    <string name="type_text">Text</string>
+    <string name="type_removealbe_memory">Removable memory</string>
+    <string name="location_sdcard">SD card</string>
+    <string name="permition_writable">Writable</string>
+    <string name="permition_readonly">Read Only</string>
+    <string name="folder_contains">%1$d folders,\n%2$d files</string>
+    <string name="folder_contains_folder_file">%1$d folder,\n%2$d file</string>
+    <string name="folder_contains_folders_file">%1$d folders,\n%2$d file</string> 
+    <string name="folder_contains_folder_files">%1$d folder,\n%2$d files</string>
+    <string name="folder_contains_folders_files">%1$d folders,\n%2$d files</string>
+ 
+	<string name="property_name">"Name:"</string> 
+	<string name="property_type">"Type:"</string>
+	<string name="property_location">"Location:"</string> 
+	<string name="property_permition">"Permission:"</string>
+	<string name="property_resolution">"Resolution:"</string>
+	<string name="property_duration">"Duration:"</string>
+	<string name="property_size">"Size:"</string>
+	<string name="property_modified">"Modified:"</string>
+	<string name="property_contains">"Contains:"</string>
+	<string name="property_used_space">"Used Space:"</string>
+	<string name="property_free_space">"Free Space:"</string> 
+     <string name="property_license">"License:"</string>	
+    <!-- Others -->
+    <string name="internal_storage">Internal storage</string>
+    <string name="removable_sdcard">SD card</string>
+    <string name="internal_phone_storage_unmounted">Internal phone storage is Unmounted. Mount Internal phone storage to read files.</string>
+    <string name="menu_view_switch">View</string>
+    <string name="menu_view_list">List view</string>
+    <string name="menu_view_grid">Grid view</string>
+    <string name="home">File Manager Home</string>
+    <string name="sd_missing">Memory card is missing. Insert memory card to read files.</string>
+        
+    <string name="empty_folder">This folder is empty!</string>
+    <string name="confirm_delete">Do you really want to delete %s ?</string>    
+    <string name="confirm_delete_choice">Do you really want to delete these files?</string>
+    <string name="confirm_delete_subdir">Check this on if you want delete all files and sub-folders.</string>
+    <string name="confirm_new_file">Check this on for creating a new file.</string>
+    <string name="prompt_input_name">Please input a new name:</string>
+    <string name="prompt_handling">Currently handling :</string>
+    <string name="confirm_overwrite_all">Check this on if you want overwrite them all</string>
+    <string name="confirm_overwrite">The file %s has existed, do you want overwrite it?</string>
+    <string name="receive_event">Receive system event: %s</string>
+    <string name="CB_Select_all">Select All</string>
+    <string name="file_size_zero">File size is 0kb, can not open it!</string>
+    <string name="msg_opening_progress">opening...</string>
+    <string name="msg_refreshing_progress">refreshing...</string>
+    <string name="msg_sorting_progress">sorting...</string>
+    
+    <!-- search -->
+    <string name="loading">Loading...</string>
+    <string name="menu_search">Search</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search files</string>
+    <string name="settings_description">Files and folders</string>
+    <string name="tpye_folder">Type: Folder</string>
+    <string name="type_file">Type: File</string>
+	  <string name="type_doc">Type: Doc</string>
+	  <string name="type_zip">Type: Zip</string>
+	  <string name="type_drm">DRM</string>
+	  <string name="size_kb">%1$s KB</string>
+	  <string name="empty_search_result">No results found</string>
+	  <string name="matches_for">Matches for</string>
+      <string name="found_in">in</string>
+      <string name="select_folder">Select folder</string>
+      <string name="cancle">Cancel</string>      
+      <string name="crop_Image_error">File type is not supported! </string>
+      <string name = "search_folder">Select folder to search</string>
+      <string name="sd_missing_search">Memory card is missing. Insert memory card to search files.</string>
+     <string name="end_time_constraint">License %1$d: end time is %2$s</string>
+      <string name="interval_constraint">License %1$d: interval is %2$s</string>
+      <string name="count_constraint">License %1$d: count is %2$d</string>
+      <string name="start_time_constraint">License %1$d: start time is %2$s</string> 
+      <string name="menu_select_all">Select all</string>
+      <string name="menu_unselect_all">Unselect all</string>
+      <string name="menu_multi_select">Select multiple</string>
+      <string name="menu_update_package">System update</string>
+      <string name="msg_confirm_system_update">Your phone will restart when the update is finished. Do you want to coninue?</string>
+      <string name="sd_is_used_by_other">SD card is in USB mass storage mode. Please exit this mode to access SD card.</string>
+      <string name="with_drm">no</string> 
+</resources>

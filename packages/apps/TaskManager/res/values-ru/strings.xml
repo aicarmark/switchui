@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Диспетчер задач"</string>
+  <string name="tabTasks">"Приложения"</string>
+  <string name="tabProcesses">"Процессы"</string>
+  <string name="buttonEnd">"Завершить"</string>
+  <string name="buttonRefresh">"Обновить"</string>
+  <string name="menuSwitch">"Переключиться на"</string>
+  <string name="menuEndTask">"Завершить задачу"</string>
+  <string name="menuCancel">"Отмена"</string>
+  <string name="textAvailableMemory">"Доступно памяти:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Кол-во приложений:"</string>
+  <string name="loading">Загрузка…\u2026</string>
+</resources>

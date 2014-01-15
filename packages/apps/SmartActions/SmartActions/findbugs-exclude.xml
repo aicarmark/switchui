@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FindBugsFilter>
+    <Match>
+        <Class name="com.motorola.contextual.smartrules.db.table.RuleTable.initialize"/>
+        <Bug code="DLS"/>
+    </Match> 
+    <Match>
+        <Class name="com.motorola.contextual.smartrules.rulesimporter.FileUtil.getAllNodeNamesFromXml"/>
+        <Bug code="DLS"/>
+    </Match>
+    <Match>
+        <Class name="com.motorola.contextual.smartrules.rulesimporter.FileUtil.openRulesImporterFile"/>
+        <Bug code="DLS"/>
+    </Match>               
+    <Match>
+        <Class name="com.motorola.contextual.smartrules.db.table.view.ActionPersistence.markActionsInactiveInDb"/>
+        <Bug code="DLS"/>
+    </Match> 
+</FindBugsFilter>

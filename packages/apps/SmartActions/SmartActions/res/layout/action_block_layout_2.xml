@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: We need to unhardcode these dimens values, especially the arbitrary or non-uniform ones -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionBlockOverlay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Connector to the Block -->
+
+    <ImageView
+        android:id="@+id/actionconnectorBlockToBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/sr_bar_connector"
+        android:contentDescription="@string/block_connector_image_desc" />
+
+    <!-- Start of BLOCK layout -->
+
+    <RelativeLayout
+        android:id="@+id/BlockContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/sr_block_normal"
+        android:includeFontPadding="true"
+        android:minHeight="90dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="62dp"
+        android:paddingTop="5dp" >
+
+        <!-- Status indicator light -->
+
+        <ImageView
+            android:id="@+id/blockStatusInd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/block_status_ind_image_desc"
+            android:src="@drawable/status_indicator_disabled" />
+
+        <!-- ICON -->
+
+        <ImageView
+            android:id="@+id/actionblockImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/blockStatusInd"
+            android:contentDescription="@string/block_icon_image_desc"
+            android:src="@drawable/ic_location_w" />
+
+        <LinearLayout
+            android:id="@+id/outerTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/actionblockImg"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/actiontitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/empty_string"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!-- HSHIEH: singleLine="true" and maxLines="5" contradict each other -->
+
+            <TextView
+                android:id="@+id/actiondescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:singleLine="true"
+                android:text="@string/description"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/actionStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/suggestion_green"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

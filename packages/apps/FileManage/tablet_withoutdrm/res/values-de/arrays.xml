@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Name oder IP-Adresse eingeben</item>
+        <item>Nach Server suchen</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Server hinzufügen</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Suche nach Domänen...</item>
+        <item>Suche nach Servern...</item>
+        <item>Verbindungsaufbau zu Server...</item>
+        <item>Ladevorgang...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Nach Name</item>
+        <item>Nach Typ</item>
+        <item>Nach Zeit</item>
+        <item>Nach Größe</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Keine Verschlüsselung</item>
+        <item>Zip-2.0-Verschlüsselung (veraltet)</item>
+        <item>128-Bit AES-Verschlüsselung</item>
+        <item>256-Bit AES-Verschlüsselung</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Interner Gerätespeicher</item>
+        <item>SD-Karte</item>
+    </string-array>
+
+</resources>

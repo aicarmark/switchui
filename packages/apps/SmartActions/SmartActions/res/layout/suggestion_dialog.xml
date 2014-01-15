@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<LinearLayout
+    	android:id="@+id/LinearLayout01"    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="13dp"
+		android:paddingLeft="13dp"
+		android:paddingRight="13dp"
+		android:paddingBottom="13dp"
+		android:orientation="vertical">
+
+	    <!-- TOP DESCRIPTION -->			    
+		<TextView
+		    android:id="@+id/suggestionDesc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="0dip"
+		    android:layout_weight="1" 
+		    android:layout_marginBottom="15dp"
+		    style="@style/Suggestion.Text"/>
+
+	    <TextView
+		    android:id="@+id/suggestionPrologue"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    style="@style/Suggestion.Text"
+		    android:layout_marginBottom="15dp"/>
+		    
+		<!-- BULLETPOINT ITEMS go here -->
+       	<LinearLayout
+            android:id="@+id/suggestionItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13dp"/>
+				    
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <Button
+            android:id="@+id/sg_customize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sg_customize"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textSize="19sp"
+            android:layout_margin="10dip"/>
+           </LinearLayout>	    	    
+	</LinearLayout>	    
+</ScrollView>

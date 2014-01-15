@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/edit_save"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/done"
+        android:visible="false"></item>
+
+    <item
+        android:id="@+id/edit_rb_save"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/save"
+        android:visible="false"></item>
+        
+    <item
+        android:id="@+id/edit_cancel"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/cancel"
+        android:visible="false"></item>
+
+    <item
+        android:id="@+id/edit_confirm"
+        android:enabled="true"
+        android:showAsAction="always"
+        android:title="@string/confirm"
+        android:visible="false"></item>
+                    
+    <item
+        android:id="@+id/edit_add_button"
+        android:enabled="true"
+        android:icon="@drawable/ic_control_add"
+        android:showAsAction="always"
+        android:title="@string/add"
+        android:visible="true"></item>     
+</menu>

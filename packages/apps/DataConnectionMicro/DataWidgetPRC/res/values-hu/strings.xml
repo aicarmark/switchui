@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Kapcsolówidgetek</string>
+  <string name="gps_app_name">GPS-kapcsoló</string>
+  <string name="airplane_app_name">Repülőgép-\nmód-kapcsoló</string>
+  <string name="wifi_app_name">Wi-Fi-kapcsoló</string>
+  <string name="bluetooth_app_name">Bluetooth-kapcsoló</string>
+  <string name="apn_app_name">Hozzáférésipont-kapcsoló</string>
+  <string name="data_app_name">Adatkapcsolat-váltó</string>
+  <string name="widget_description">A repülőgép mód állapotának megtekintése és kezelése</string>
+  <string name="widget_description_bt">A Bluetooth funkció állapotának megtekintése és kezelése</string>
+  <string name="widget_description_wifi">Wi-Fi állapot megjelenítése és vezérlése</string>
+  <string name="widget_description_gps">A GPS állapotának megtekintése és kezelése</string>
+  <string name="StatusOn">BE</string>
+  <string name="StatusOff">KI</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">A repülőgép mód nem érhető el</string>
+  <string name="BluetoothtoastText">A Bluetooth nem érhető el</string>
+  <string name="GPStoastText">A GPS nem érhető el</string>
+  <string name="WifitoastText">Nincs Wi-Fi</string>
+  <string name="location_restriction_enabled">A helykorlátozás engedélyezve van.</string>
+  <string name="apncontrol_app_name">Hozzáférésipont-vezérlés</string>
+  <string name="no_apn">Nincs elérhető hozzáférési pont</string>
+</resources>

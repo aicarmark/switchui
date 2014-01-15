@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- for sketcher -->
+    <dimen name="preview_bar_width">74px</dimen>
+    <dimen name="preview_bar_margin_left">11px</dimen>
+    <dimen name="preview_bar_margin_top">81px</dimen>
+    <dimen name="thickness_margin_top">12dip</dimen>
+    <dimen name="thick2_margin_left">33dip</dimen>
+    <dimen name="thick3_margin_left">33dip</dimen>
+    <dimen name="pen_color_margin_top">14dip</dimen>
+
+
+    <dimen name="thumb_ationbar_height">96px</dimen>
+</resources>

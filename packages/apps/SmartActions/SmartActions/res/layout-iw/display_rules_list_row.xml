@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_rules_row_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <!-- Left Image -->
+    <ImageView
+        android:id="@+id/display_rules_mode_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/rule_icon_image_desc"
+        android:layout_marginLeft="10dp"/>
+
+    <!-- Right Section -->
+    <LinearLayout
+        android:id="@+id/right_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="14dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/display_rules_line_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+			<!-- Added Section -->
+			<LinearLayout
+				android:id="@+id/added_wrapper"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="gone"
+				android:layout_marginLeft="3dp"
+				android:layout_weight="0">
+
+				<!-- Added Line -->
+				<TextView
+					android:id="@+id/added_line"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:textColor="@color/active_blue"
+					android:text="@string/added"
+					android:singleLine="true"/>
+			</LinearLayout>
+
+			<!-- Rule Name Section -->
+			<LinearLayout
+				android:id="@+id/display_rules_first_line_wrapper"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:layout_weight="1">
+
+				<!-- Rule Name -->
+				<TextView
+					android:id="@+id/display_rules_first_line"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textSize="22sp"
+					android:textColor="@color/first_line"
+					android:singleLine="true"
+					android:ellipsize="end"
+                    android:gravity="right"/>
+			</LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Second/Description Line -->
+        <TextView
+            android:id="@+id/display_rules_second_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@color/second_line"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

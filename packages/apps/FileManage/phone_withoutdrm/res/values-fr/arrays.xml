@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Saisir le nom ou l\'adresse IP</item>
+        <item>Rechercher un serveur</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Ajouter un serveur</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Recherche de domaines...</item>
+        <item>Recherche de serveurs...</item>
+        <item>Connexion au serveur...</item>
+        <item>Chargement en cours...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Nom</item>
+        <item>Type</item>
+        <item>Heure</item>
+        <item>Taille</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Pas de cryptage</item>
+        <item>Cryptage traditionnel (Zip 2.0)</item>
+        <item>Cryptage AES 128 bits</item>
+        <item>Cryptage AES 256 bits</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Mémoire interne du téléphone</item>
+        <item>Carte SD</item>
+    </string-array>
+
+</resources>

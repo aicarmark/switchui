@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="97dp"
+            android:layout_height="196dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bm_power_bg" />
+
+            <ImageView
+                android:id="@+id/bm_batt_percent"
+                android:layout_width="97dp"
+                android:layout_height="176dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="7dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bm_power_green" />
+
+            <ImageView
+                android:id="@+id/bm_batt_charing"
+                android:layout_width="31dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/charging" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/bm_edit_mode_name"
+                style="@android:style/Theme.DeviceDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="48dp"
+                android:ems="10"
+                android:maxLength="32"
+                android:singleLine="true"
+                android:textColor="#8a8a8a"
+                android:textSize="18dp" >
+            </EditText>
+           
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="11dp"
+                android:text="@string/str_battery_usage"
+                android:textColor="#ffffff"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/bm_usage_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dp"
+                android:text="@string/str_battery_percent"
+                android:textColor="#ffffff"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/str_battery_remaining"
+                android:textColor="#ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bm_remaining_time"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/str_battery_remaining_time"
+                android:textColor="#ffffff"
+                android:textSize="39dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- string mode optimize display -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="19dp"
+        android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
+        android:text="@string/str_battery_mode_optimize"
+        android:textColor="#33B5E5"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/title_line" />
+
+    <!-- mode optimize list display   -->
+    <GridView
+        android:id="@+id/bm_edit_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:numColumns="3" 
+        android:layout_weight="1"/>   
+     
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@drawable/line_2" />
+ 
+    <!-- cancel delete save button -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="1dp"
+        style="?android:attr/buttonBarStyle">
+
+        <Button android:id="@+id/btn_edit_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"     
+            android:text="@string/bm_cancel"/>
+
+        <Button android:id="@+id/btn_edit_delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"     
+            android:text="@string/bm_delete"/>
+
+        <Button android:id="@+id/btn_edit_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:focusable="true"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:textSize="14dp"     
+            android:text="@string/bm_save"/>
+
+    </LinearLayout>
+</LinearLayout>

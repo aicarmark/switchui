@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_vertical">
+    <GridView android:id="@+id/speed_dial_edit_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/speed_dialer_girdview_margin_right"
+        android:layout_marginLeft="@dimen/speed_dialer_girdview_margin_left"
+        android:numColumns="3"/>
+</LinearLayout>

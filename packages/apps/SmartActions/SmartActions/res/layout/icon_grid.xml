@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  (c) COPYRIGHT 2012 MOTOROLA INC.
+  MOTOROLA CONFIDENTIAL PROPRIETARY
+
+  REVISION HISTORY:
+  Author        Date       CR Number         Brief Description
+  ============= ========== ================= ==============================
+  A14693        2012/10/11 Smart Actions 2.1 Initial Version
+-->
+<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+android:id="@+id/gridview"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+/>

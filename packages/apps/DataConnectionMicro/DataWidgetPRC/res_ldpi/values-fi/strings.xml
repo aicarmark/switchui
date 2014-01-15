@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Vaihda widgetiä</string>
+  <string name="gps_app_name">Vaihda GPS-asetusta</string>
+  <string name="airplane_app_name">Vaihda lentokonetilaa</string>
+  <string name="wifi_app_name">Vaihda Wi-Fi-tilaa</string>
+  <string name="bluetooth_app_name">Vaihda Bluetooth-tilaa</string>
+  <string name="apn_app_name">Vaihda tukiasemaa</string>
+  <string name="data_app_name">Vaihda data-asetusta</string>
+  <string name="widget_description">Näytä ja hallitse lentokonetilan tilatietoja</string>
+  <string name="widget_description_bt">Näytä ja hallitse Bluetooth-tilaa</string>
+  <string name="widget_description_wifi">Näytä ja hallitse WLAN-tilaa</string>
+  <string name="widget_description_gps">Näytä ja hallitse GPS-tilaa</string>
+  <string name="StatusOn">ON</string>
+  <string name="StatusOff">EI</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Lentokonetila ei käytettävissä</string>
+  <string name="BluetoothtoastText">Bluetooth ei ole käytettävissä</string>
+  <string name="GPStoastText">GPS ei ole käytettävissä</string>
+  <string name="WifitoastText">WLAN ei ole käytettävissä</string>
+  <string name="location_restriction_enabled">Sijaintirajoitus on käytössä.</string>
+  <string name="apncontrol_app_name">Tukiasemien hallinta</string>
+  <string name="no_apn">Ei tukiasemaa saatavilla</string>
+</resources>

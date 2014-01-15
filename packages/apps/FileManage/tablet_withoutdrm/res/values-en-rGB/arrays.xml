@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Enter name or IP</item>
+        <item>Scan for server</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Add server</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Scanning for domains...</item>
+        <item>Scanning for servers...</item>
+        <item>Connecting to server...</item>
+        <item>loading…</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>By name</item>
+        <item>By type</item>
+        <item>By time</item>
+        <item>By size</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>No encryption</item>
+        <item>Legacy (Zip 2.0) encryption</item>
+        <item>128-bit AES encryption</item>
+        <item>256-bit AES encryption</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Internal device storage</item>
+        <item>SD card</item>
+    </string-array>
+
+</resources>

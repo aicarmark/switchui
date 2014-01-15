@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Preklopi med pripomočki</string>
+  <string name="gps_app_name">Vklop/izklop GPS-a</string>
+  <string name="airplane_app_name">Vklop/izklop letalskega načina</string>
+  <string name="wifi_app_name">Vklop/izklop brezžične povezave</string>
+  <string name="bluetooth_app_name">Vklop/izklop povezave Bluetooth</string>
+  <string name="apn_app_name">Vklop/izklop imena dostopne točke</string>
+  <string name="data_app_name">Vklop/izklop podatkov</string>
+  <string name="widget_description">Ogled in upravljanje stanja letalskega načina</string>
+  <string name="widget_description_bt">Ogled in upravljanje stanja povezave Bluetooth</string>
+  <string name="widget_description_wifi">Ogled in upravljanje stanja brezžične povezave</string>
+  <string name="widget_description_gps">Ogled in upravljanje stanja GPS-a</string>
+  <string name="StatusOn">VKL</string>
+  <string name="StatusOff">IZKL</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Letalski način ni na voljo</string>
+  <string name="BluetoothtoastText">Bluetooth ni na voljo</string>
+  <string name="GPStoastText">GPS ni na voljo</string>
+  <string name="WifitoastText">Brezžična povezava ni na voljo</string>
+  <string name="location_restriction_enabled">Omejitev lokacije je omogočena.</string>
+  <string name="apncontrol_app_name">Nadzor imena dostopne točke</string>
+  <string name="no_apn">Ime dostopne točke ni na voljo</string>
+</resources>

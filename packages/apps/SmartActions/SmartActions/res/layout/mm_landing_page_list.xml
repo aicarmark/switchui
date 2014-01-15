@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+
+     <!-- List -->
+    <ListView android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:longClickable="true"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <!-- User opted in and no rules available to view -->
+  <ScrollView
+    android:id="@+id/about_layout_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1"
+    android:visibility="gone">
+
+    <include android:id="@+id/aboutLayout"
+             layout="@layout/about_layout" />
+  </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Número restringido</string>
+    <string name="visual_voicemail">Buzón de voz visual</string>
+    <string name="Data_roaming_msg">Es posible que se apliquen costes adicionales por el uso del buzón de voz visual.\n\n¿Deseas usar el buzón de voz visual o el buzón de voz?</string>
+
+</resources>

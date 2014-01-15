@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_settings"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<CheckBoxPreference android:key="automatic_setup_mode"
+		android:title="@string/automatic_setup_mode"	
+		android:layout="@layout/preference_activity_title"	
+		android:summaryOff="@string/turn_on_auto_mode" 
+		android:summaryOn="@string/turn_off_auto_mode"	
+		/>
+	
+	
+	<Preference android:key="hide_contacts"
+		android:title="@string/hide_contacts"
+		android:summary="@string/hide_contacts_prompt"
+		/>
+	
+	<Preference android:key="manage_contacts"
+		android:title="@string/manage_contacts"
+		android:summary="@string/manage_contacts_prompt"
+		/>
+			
+	<!--  ListPreference android:key="history_settings"
+		android:title="@string/history_settings" 
+		android:entries="@array/history_settings_entries"
+		android:entryValues="@array/history_settings_values" 
+		android:dialogTitle="@string/history_settings"
+		/>-->
+	
+	<CheckBoxPreference android:key="stretch_contacts_pictures"
+		android:title="@string/stretch_contacts_pictures"
+		android:layout="@layout/preference_activity_title"	
+		android:summaryOff="@string/turn_on_stretch_contacts_pictures_prompt" 
+		android:summaryOn="@string/trun_off_stretch_contacts_pictures_prompt"		
+		/>
+		
+	<Preference android:key="set_skin"
+		android:title="@string/set_skin"
+		android:summary="@string/set_skin_prompt"
+		/>
+
+	<!--  com.motorola.mmsp.socialGraph.socialGraphWidget.common.YesNoPreference 
+		android:key="widget_reset"
+		android:title="@string/widget_reset"
+		android:summary="@string/widget_reset_prompt"
+		android:dialogMessage="@string/widget_reset_message"
+		android:positiveButtonText="@string/widget_reset_reset"
+		android:negativeButtonText="@android:string/cancel"
+		/-->
+		
+</PreferenceScreen>

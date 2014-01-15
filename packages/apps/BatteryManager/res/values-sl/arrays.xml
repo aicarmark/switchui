@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Prednastavitve baterije</item>
+    <item>Nastavitve po meri</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 minut</item>
+    <item>30 minut</item>
+    <item>45 minut</item>
+    <item>60 minut</item>
+    <item>Ohrani vedno vklopljeno</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 minut</item>
+    <item>30 minut</item>
+    <item>45 minut</item>
+    <item>60 minut</item>
+  </string-array>
+</resources>

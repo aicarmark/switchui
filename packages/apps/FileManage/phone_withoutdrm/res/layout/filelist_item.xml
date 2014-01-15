@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/list_layout_margin_left"
+              android:layout_marginRight="@dimen/list_layout_margin_right"
+              android:minHeight="?android:attr/listPreferredItemHeight" >
+  <ImageView android:id="@+id/item_ticker"
+             android:layout_width="@dimen/list_ticker_dimen"
+             android:layout_height="@dimen/list_ticker_dimen"
+             android:scaleType="centerInside"
+             android:layout_gravity="center_vertical"
+             android:visibility="gone" />
+  <ImageView android:id="@+id/icon"
+             android:layout_height="@dimen/list_icon_dimen"
+             android:layout_width="@dimen/list_icon_dimen"
+             android:scaleType="centerInside"
+             android:layout_gravity="center_vertical" />
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_marginLeft="@dimen/list_layout_margin_left" >
+    <LinearLayout android:id="@+id/text_info"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:orientation="vertical" >
+
+      <TextView android:id="@+id/text"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_weight="@fraction/weight_one"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/file_select"
+                android:layout_alignWithParentIfMissing="true"
+                android:singleLine="true"
+                android:ellipsize="middle" />
+      <TextView android:id="@+id/info"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_weight="@fraction/weight_one"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="gone" />
+    </LinearLayout>
+    <TextView  android:id="@+id/info_time"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:layout_alignBottom="@id/text_info"
+               android:layout_toLeftOf="@id/file_select"
+               android:layout_alignWithParentIfMissing="true"
+               android:singleLine="true"
+               android:ellipsize="end" />
+    <Button android:id="@id/file_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/select"
+            android:focusable="false"
+            android:visibility="gone" />
+  </RelativeLayout>
+</LinearLayout>

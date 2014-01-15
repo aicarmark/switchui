@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  	<LinearLayout
+    	android:orientation="vertical"
+     	android:layout_width="match_parent"
+     	android:layout_height="match_parent">
+     	<RelativeLayout
+			android:layout_width="match_parent"            
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dip">    
+			<TextView android:id="@+id/checked_lunar_date"
+				android:textSize="15dp"
+				android:layout_height="wrap_content"
+				android:gravity="left|center_vertical"
+				android:layout_width="wrap_content"
+				android:textColor="#676767"
+				android:layout_marginLeft="25dp"
+				android:layout_marginTop ="2dp"/>       
+			<TextView android:id="@+id/checked_day"
+				android:textSize="15dp"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"        		
+				android:textColor="#676767"
+				android:layout_toRightOf="@+id/checked_lunar_date"
+				android:gravity="center_vertical"
+				android:layout_marginLeft="6dp"
+				android:layout_marginTop ="2dp"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"            
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip">
+            <TextView android:id="@+id/today_lunar_date"
+        	android:textSize="11dp"
+        	android:layout_height="wrap_content"
+        	android:gravity="left"
+        	android:layout_width="wrap_content"
+        	android:layout_marginLeft="25dp"/>
+    		<TextView android:id="@+id/today_solar_date"
+        	    android:textSize="11dp"
+        	    android:layout_height="wrap_content"        		
+        	    android:layout_width="match_parent"
+        	    android:layout_toRightOf="@+id/today_lunar_date"
+        	    android:layout_marginLeft="6dp"/>    
+		</RelativeLayout>
+    		<TextView android:id="@+id/title"
+        	    android:layout_marginLeft="15dip"
+        	    android:layout_marginRight="15dip"
+        	    android:layout_marginTop="2dip"
+        	    android:text="@string/set_solar_date"
+        	    style="?android:attr/listSeparatorTextViewStyle"/>
+    		<DatePicker android:id="@+id/datePicker"
+        	    android:calendarViewShown="false"
+        	    android:layout_marginTop="10dp"
+        	    android:layout_gravity="center_horizontal"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"/>
+  	</LinearLayout>
+</RelativeLayout>

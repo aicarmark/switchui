@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/prompt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rule_header"
+                android:gravity="center_vertical"
+                android:minHeight="70dip"
+                android:paddingBottom="7dip"
+                android:paddingLeft="22dip"
+                android:paddingRight="22dip"
+                android:paddingTop="7dip"
+                android:textSize="20sp" />
+
+            <include
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                layout="@layout/edit_text"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/contacts_edit_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                layout="@layout/contacts_edit_line"
+                android:visibility="gone" />
+            <!-- android:layout_above="@id/nav_btn" -->
+            <!-- android:layout_height="match_parent"/> -->
+
+
+            <!--
+         <Button android:id="@+id/nav_btn"
+        android:layout_below="@id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+            -->
+            <!--
+    <TextView android:id="@+id/text_field_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button android:id="@+id/nav_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+    <com.motorola.contextual.pickers.PickerListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:minHeight="54dip"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/account_filter_header_bottom_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:background="@drawable/list_divider_holo_dark" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:paddingTop="4dip" >
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:maxLines="2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="2" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

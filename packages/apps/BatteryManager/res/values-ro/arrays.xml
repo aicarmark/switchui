@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Presetări baterie</item>
+    <item>Setări personalizate</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 minute</item>
+    <item>30 de minute</item>
+    <item>45 de minute</item>
+    <item>60 de minute</item>
+    <item>Întotdeauna activ</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 minute</item>
+    <item>30 de minute</item>
+    <item>45 minute</item>
+    <item>60 de minute</item>
+  </string-array>
+</resources>

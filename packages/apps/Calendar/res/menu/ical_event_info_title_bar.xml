@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/info_action_cancel"
+        android:alphabeticShortcut="c"
+        android:title="@string/discard_label"
+        android:icon="@drawable/ic_menu_cancel_holo_light"
+        android:showAsAction="withText|always"
+        android:enabled="false"
+        android:visible="false" />
+    <item android:id="@+id/info_action_save"
+        android:alphabeticShortcut="s"
+        android:title="@string/ics_save_label"
+        android:icon="@drawable/ic_menu_done_holo_light"
+        android:showAsAction="withText|always"
+        android:enabled="false"
+        android:visible="false" />
+</menu>

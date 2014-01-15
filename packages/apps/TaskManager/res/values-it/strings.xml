@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Gestione attività</string>
+  <string name="tabTasks">Applicazioni</string>
+  <string name="tabProcesses">Processi</string>
+  <string name="buttonEnd">Termina</string>
+  <string name="buttonRefresh">Aggiorna</string>
+  <string name="menuSwitch">Passa a</string>
+  <string name="menuEndTask">Termina attività</string>
+  <string name="menuCancel">Annulla</string>
+  <string name="textAvailableMemory">Memoria disponibile:</string>
+  <string name="textAvailableMemoryUnit">" MB"</string>
+  <string name="textNumOfApplications">N. applicazioni:</string>
+  <string name="loading">Caricamento\u2026</string>
+</resources>

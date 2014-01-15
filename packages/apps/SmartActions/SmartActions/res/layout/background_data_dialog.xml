@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parent_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="11dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bulletpoint_wrapper_always"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/twoline_text_1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bulletpoint_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_always"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/subText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_always_s"
+                    android:textColor="@color/battery_rule_grey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radioButton_always"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/bulletpoint_wrapper_whenusingdevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/twoline_text_2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bulletpoint_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_when_using"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/subText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_when_using_s"
+                    android:textColor="@color/battery_rule_grey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radioButton_whenusingdevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/bulletpoint_wrapper_whenusing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/twoline_text_3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bulletpoint_text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_never"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/subText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bd_never_s"
+                    android:textColor="@color/battery_rule_grey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radioButton_whenusing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:checked="false"
+                android:gravity="center"
+                android:onClick="onRadioButtonClicked" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

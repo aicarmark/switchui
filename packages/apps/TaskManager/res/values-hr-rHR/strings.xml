@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >Upravitelj zadataka</string>
+ <string name="tabTasks" >Aplikacije</string>
+ <string name="tabProcesses" >Procesi</string>
+ <string name="buttonEnd" >Kraj</string>
+ <string name="buttonRefresh" >Osvježi</string>
+ <string name="menuSwitch" >Prijeđi na</string>
+ <string name="menuEndTask" >Završi zadatak</string>
+ <string name="menuCancel" >Odustani</string>
+ <string name="textAvailableMemory" >Dostupna memorija:</string>
+ <string name="textAvailableMemoryUnit" >M</string>
+ <string name="textNumOfApplications" >Broj aplikacija:</string>
+ <string name="loading" >Učitavanje\u2026</string>
+</resources>

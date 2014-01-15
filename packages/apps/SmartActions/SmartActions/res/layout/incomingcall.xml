@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false">
+  
+         
+    	<LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="6"
+                android:background="#eeeeee">
+            
+        <RelativeLayout
+                android:id="@+id/all_incoming_calls_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/all_incoming_calls_text"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/all_incoming_calls"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/all_incoming_calls_text"
+                android:gravity="right">
+
+            <RadioButton
+                android:id="@+id/all_incoming_calls_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </RelativeLayout> 
+        <ImageView android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+            	android:scaleType="fitXY"
+            	android:src="@android:drawable/divider_horizontal_bright"
+            	android:contentDescription="@string/line_divider_image_desc"/>          
+                        
+       	<RelativeLayout
+                android:id="@+id/selected_numbers_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/selected_numbers_text"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/selected_numbers"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/selected_numbers_text"
+                android:gravity="right">
+            <RadioButton
+                android:id="@+id/selected_numbers_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout> 
+       		  <LinearLayout android:id="@+id/address_widget_lo"  
+        		android:orientation="vertical"
+       			android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:layout_marginTop="10dip"
+       			 >
+    
+       		
+       				<ViewStub android:id="@+id/recipients_editor_smartprofile_stub"
+                    android:layout="@layout/recipients_editor_smartprofile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+   	        		
+        	
+            </LinearLayout>   
+    
+    		
+			<LinearLayout   
+        		android:orientation="vertical"
+       			android:layout_width="fill_parent"
+       			android:layout_height="fill_parent"
+       			android:layout_marginTop="10dip"
+       			android:background="#cccccc"
+       			 >
+			<View android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:background="@drawable/title_bar_shadow"
+				  />
+			</LinearLayout>
+		       
+		</LinearLayout>
+	 
+	 
+    
+      <!--  Bottom Button Bar  Look 10 Action bar for OK/Cancel -->
+			
+      <!--  
+          Look-10 Action Bar temporarily defined inside smart profiles. to be changed to the one 
+          defined in Motorola SDK later
+      -->
+      <LinearLayout  
+      		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+            android:layout_height="wrap_content"> 
+      <LinearLayout android:id="@+id/abwidget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+      </LinearLayout>
+</LinearLayout>
+

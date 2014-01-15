@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<dimen name="statusTextSize">16sp</dimen>
+	<dimen name="progressBarSize">16dp</dimen>
+
+	<dimen name="bgBottomPadding">26dp</dimen>
+	<dimen name="sleeveTopPadding">15dp</dimen>
+	<dimen name="sleeveLeftPadding">1dp</dimen>
+	<dimen name="ToggleImageLeftPadding">18dp</dimen>
+	<dimen name="ToggleImageTopPadding">16dp</dimen>
+	<dimen name="statusTextPaddingLeft">28dp</dimen>
+	<dimen name="statusTextPaddingTop">61dp</dimen>
+
+	<dimen name="sleeveTopPaddingOff">0dp</dimen>
+	<dimen name="ToggleImageLeftPaddingOff">18dp</dimen>
+	<dimen name="ToggleImageTopPaddingOff">2dp</dimen>
+	<dimen name="statusTextPaddingLeftOff">24dp</dimen>
+	<dimen name="statusTextPaddingTopOff">12dp</dimen>
+
+	<dimen name="progressBarPaddingOnLeft">31dp</dimen>
+	<dimen name="progressBarPaddingOnTop">60dp</dimen>
+
+	<dimen name="progressBarPaddingOffLeft">32dp</dimen>
+	<dimen name="progressBarPaddingOffTop">13dp</dimen>
+	<dimen name="sleeveImageRightPadding">0dp</dimen>
+
+</resources>

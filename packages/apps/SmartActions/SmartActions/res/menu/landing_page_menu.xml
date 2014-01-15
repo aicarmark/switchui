@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <group android:id="@+id/full_menu">
+        <item android:id="@+id/menu_check_status"
+            android:title="@string/check_status"
+            />
+        <item android:id="@+id/menu_disable_all"
+            android:title="@string/disable_all"
+            />   
+    </group>
+        
+    <group android:id="@+id/no_rules_menu">
+        <item android:id="@+id/menu_profile"
+            android:title="@string/profile"
+            />    
+        <item android:id="@+id/menu_about"
+            android:title="@string/about"
+            />          
+        <item android:id="@+id/menu_help"
+            android:title="@string/help"
+            />    
+        <item android:id="@+id/menu_settings"
+            android:title="@string/settings"
+            />
+    </group>
+</menu>

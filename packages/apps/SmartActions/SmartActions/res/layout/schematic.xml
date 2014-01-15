@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+	<TextView  
+		android:id="@+id/title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:textSize="30dp"
+	    />
+
+	<ScrollView
+		android:id="@+id/vert_scroll_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="vertical"
+	    android:scrollbarAlwaysDrawHorizontalTrack="true"
+	    android:scrollbarAlwaysDrawVerticalTrack="true"
+	    android:background="#3f3f3f"
+		>
+		<HorizontalScrollView
+			android:id="@+id/horiz_scroll_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:scrollbars="horizontal"
+			>
+			<com.motorola.contextual.smartrules.widget.SchematicView
+				android:id="@+id/canvas"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				android:layout_gravity="top"
+				/>			
+	
+		</HorizontalScrollView>
+	</ScrollView>		
+	<!--<TextView  
+		android:id="@+id/narrative"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="@string/narrative" 
+	/>
+	-->
+</LinearLayout>		    

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <ViewStub
+    android:id="@+id/customs_stub_desc"
+    android:inflatedId="@+id/icustoms_stub_desc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout="@layout/customs_desc_view">
+  </ViewStub>
+  <ViewStub
+    android:id="@+id/customs_stub_offpeak"
+    android:inflatedId="@+id/icustoms_stub_offpeak"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout="@layout/customs_offpeak_view">
+  </ViewStub>
+  <ViewStub
+    android:id="@+id/customs_stub_peak"
+    android:inflatedId="@+id/icustoms_stub_peak"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout="@layout/customs_peak_view">
+  </ViewStub>
+  <ViewStub
+    android:id="@+id/customs_stub_disp"
+    android:inflatedId="@+id/icustoms_stub_disp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout="@layout/customs_disp_view">
+  </ViewStub>
+  <ViewStub
+    android:id="@+id/customs_stub_button"
+    android:inflatedId="@+id/icustoms_stub_button"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout="@layout/customs_buttons_view">
+  </ViewStub>
+</LinearLayout>

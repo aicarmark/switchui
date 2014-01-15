@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>ป้อนชื่อหรือ IP</item>
+        <item>ตรวจหาเซิร์ฟเวอร์</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>เพิ่มเซิร์ฟเวอร์</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>กำลังตรวจหาโดเมน...</item>
+        <item>กำลังตรวจหาเซิร์ฟเวอร์...</item>
+        <item>กำลังเชื่อมต่อกับเซิร์ฟเวอร์...</item>
+        <item>กำลังโหลด...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>ตามชื่อ</item>
+        <item>ตามประเภท</item>
+        <item>ตามเวลา</item>
+        <item>ตามขนาด</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>ไม่มีการเข้ารหัสลับ</item>
+        <item>การเข้ารหัสลับแบบเลกาซีย์ (Zip 2.0)</item>
+        <item>การเข้ารหัสลับ AES 128 บิต</item>
+        <item>การเข้ารหัสลับ AES 256 บิต</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>ที่จัดเก็บข้อมูลอุปกรณ์ภายใน</item>
+        <item>การ์ด SD</item>
+    </string-array>
+
+</resources>

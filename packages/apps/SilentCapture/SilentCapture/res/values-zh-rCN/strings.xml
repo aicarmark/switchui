@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Application name -->
+    <string name="application_name">默拍</string>
+    <!-- Title of setting activity -->
+    <string name="title">默拍设置</string>
+
+    <!-- Strings for auto launch preference -->
+    <string name="auto_launch">自动开启默拍服务</string>
+    <string name="launch_summary_on">当蓝牙耳机连接上手机时</string>
+    <string name="launch_summary_off">服务已被禁</string>
+
+    <!-- Strings for exiting preview while screen turns on -->
+    <string name="screen_on_exit">暗屏拍照</string>
+    <string name="screen_summary_on">当屏幕关闭时进入拍照模式</string>
+    <string name="screen_summary_off">支持屏幕打开时进入拍照模式</string>
+
+</resources>

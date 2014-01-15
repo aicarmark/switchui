@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    
+    <!-- status on/off icon -->
+
+    <RadioButton
+        android:id="@+id/bm_mode_list_status"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp"
+        android:checked="false" />
+    
+    <!-- mode icon -->
+    <ImageView
+        android:id="@+id/bm_mode_list_icon"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toRightOf="@+id/bm_mode_list_status"
+        android:layout_width="21dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@drawable/ic_bm_mode_general" />
+    
+    <!-- mode name -->
+    <TextView
+        android:id="@+id/bm_mode_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="52dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bm_mode_list_icon"
+        android:layout_toLeftOf="@+id/bm_mode_list_edit"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="18dp"
+        />
+
+    <!-- mode setting icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:orientation="horizontal">
+        
+        <!-- divider line -->
+        <View
+            android:id="@+id/bm_mode_list_divider"
+            android:layout_width="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line_2" />
+            
+        <ImageView  
+            android:id="@+id/bm_mode_list_edit"      
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"      
+            android:src="@drawable/bm_setting_2in1" />
+    </LinearLayout>
+
+</RelativeLayout>

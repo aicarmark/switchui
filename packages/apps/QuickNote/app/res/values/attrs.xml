@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="QNGeneral">
+        <attr name="index" format="reference|integer" />
+        <attr name="color" format="reference|color" />
+        <attr name="src_up" format="reference" />
+        <attr name="src_down" format="reference" />
+        <attr name="bg_up" format="reference" />
+        <attr name="bg_down" format="reference" />
+        <attr name="src_detail" format="reference" />
+        <!-- attributes for selector -->
+        <attr name="selector_mode">
+            <enum name="tab" value="0" />
+            <enum name="slide" value="1" />
+        </attr>
+    </declare-styleable>
+    <!-- BEGIN Motorola, tbrn43, 2012/3/15, -->
+
+    <declare-styleable name="ActionBar">
+
+        <!--
+             This attribute is used by Action Bar to denote its position
+             on screen. It can take values like bottom and right for now.
+        -->
+        <attr name="position">
+            <enum name="bottom" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <!-- End Motorola -->
+
+</resources>

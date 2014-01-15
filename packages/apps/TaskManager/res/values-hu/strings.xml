@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Feladatkezelő</string>
+  <string name="tabTasks">Alkalmazások</string>
+  <string name="tabProcesses">Folyamatok</string>
+  <string name="buttonEnd">Vége</string>
+  <string name="buttonRefresh">Frissít</string>
+  <string name="menuSwitch">Váltás erre:</string>
+  <string name="menuEndTask">Feladat vége</string>
+  <string name="menuCancel">Mégse</string>
+  <string name="textAvailableMemory">Elérhető memória:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Alkalmazások száma:</string>
+  <string name="loading">Betöltés\u2026</string>
+</resources>

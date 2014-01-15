@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >Chuyển widget</string>
+ <string name="gps_app_name" >Chuyển GPS</string>
+ <string name="airplane_app_name" >Chuyển chế độ máy bay</string>
+ <string name="wifi_app_name" >Chuyển WLAN</string>
+ <string name="bluetooth_app_name" >Chuyển bluetooth</string>
+ <string name="apn_app_name" >Chuyển APN</string>
+ <string name="data_app_name" >Chuyển đổi dữ liệu</string>
+ <string name="widget_description" >Xem và quản lý tình trạng chế độ máy bay</string>
+ <string name="widget_description_bt" >Xem và quản lý tình trạng Bluetooth</string>
+ <string name="widget_description_wifi" >Xem và quản lý tình trạng WLAN</string>
+ <string name="widget_description_gps" >Xem và quản lý tình trạng GPS</string>
+ <string name="StatusOn" >MỞ</string>
+ <string name="StatusOff" >TẮT</string>
+ <string name="AirplanetoastText" >Chế độ máy bay chưa sẵn sàng</string>
+ <string name="BluetoothtoastText" >Bluetooth chưa sẵn sàng</string>
+ <string name="GPStoastText" >GPS chưa sẵn sàng</string>
+ <string name="WifitoastText" >WLAN chưa sẵn sàng</string>
+ <string name="location_restriction_enabled" >Mở hạn chế vị trí</string>
+ <string name="apncontrol_app_name" >Quản lý APN</string>
+ <string name="no_apn" >Không có sẵn APN</string>
+</resources>

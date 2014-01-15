@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">Reloj mundial</string>
+
+    <!-- The following come from com.android.internal.R.string -->
+
+    <!-- Strings used to display the date -->
+    <string name="today">Hoy</string>
+
+    <string name="sunday">Domingo</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+
+    <string name="clean">Borrar</string>
+    <!-- AM - as in morning - as in 10:30 AM -->
+    <string name="am">&quot;a.m.&quot;</string>
+    <!-- AM PM should have the same translation with the system -->
+    <!-- PM - as in afternoon - as in 10:30 PM -->
+    <string name="pm">&quot;p.m.&quot;</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_sunday">Domingo</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_monday">Lunes</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_tuesday">Martes</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_wednesday">Miércoles</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_thursday">Jueves</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_friday">Viernes</string>
+
+    <!-- The full spelled out version of the day of the week. -->
+    <string name="day_of_week_long_saturday">Sábado</string>
+
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Sun" stands for Sunday
+    -->
+    <string name="day_of_week_medium_sunday">Dom</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Mon" stands for Monday
+    -->
+    <string name="day_of_week_medium_monday">Lun</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Tue" stands for Tuesday
+    -->
+    <string name="day_of_week_medium_tuesday">Mar</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Wed" stands for Wednesday
+    -->
+    <string name="day_of_week_medium_wednesday">Mié</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Thu" stands for Thursday
+    -->
+    <string name="day_of_week_medium_thursday">Jue</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Fri" stands for Friday
+    -->
+    <string name="day_of_week_medium_friday">Vie</string>
+
+    <!--
+        An abbreviated day of the week. Three characters typically in
+        western languages. In US English: "Sat" stands for Saturday
+    -->
+    <string name="day_of_week_medium_saturday">Sáb</string>
+
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Su" stands for Sunday
+    -->
+    <string name="day_of_week_short_sunday">Do</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Mo" stands for Monday
+    -->
+    <string name="day_of_week_short_monday">Lu</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Tu" stands for Tuesday
+    -->
+    <string name="day_of_week_short_tuesday">Ma</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "We" stands for Wednesday
+    -->
+    <string name="day_of_week_short_wednesday">Do</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Th" stands for Thursday
+    -->
+    <string name="day_of_week_short_thursday">Ju</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Fr" stands for Friday
+    -->
+    <string name="day_of_week_short_friday">Vi</string>
+
+    <!--
+        An abbreviated day of the week. Two characters typically in
+        western languages. In US English: "Sa" stands for Saturday
+    -->
+    <string name="day_of_week_short_saturday">Sá</string>
+
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "Su" stands for Sunday
+    -->
+    <string name="day_of_week_shorter_sunday">Do</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "M" stands for Monday
+    -->
+    <string name="day_of_week_shorter_monday">L</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "Tu" stands for Tuesday
+    -->
+    <string name="day_of_week_shorter_tuesday">Ma</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "W" stands for Wednesday
+    -->
+    <string name="day_of_week_shorter_wednesday">M</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "Th" stands for Thursday
+    -->
+    <string name="day_of_week_shorter_thursday">Ju</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "F" stands for Friday
+    -->
+    <string name="day_of_week_shorter_friday">V</string>
+
+    <!--
+        An abbreviated day of the week. One character if that is unique.
+        Two if necessary. In US English: "Sa" stands for Saturday
+    -->
+    <string name="day_of_week_shorter_saturday">Sá</string>
+
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "S" stands for
+        Sunday
+    -->
+    <string name="day_of_week_shortest_sunday">D</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "M" stands for
+        Monday
+    -->
+    <string name="day_of_week_shortest_monday">L</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "T" stands for
+        Tuesday
+    -->
+    <string name="day_of_week_shortest_tuesday">M</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "W" stands for
+        Wednesday
+    -->
+    <string name="day_of_week_shortest_wednesday">M</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "T" stands for
+        Thursday
+    -->
+    <string name="day_of_week_shortest_thursday">J</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "F" stands for
+        Friday
+    -->
+    <string name="day_of_week_shortest_friday">V</string>
+
+    <!--
+        An abbreviated day of the week. One character long if it makes
+        sense. Does not have to be unique. In US English: "S" stands for
+        Saturday
+    -->
+    <string name="day_of_week_shortest_saturday">S</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_january">Enero</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_february">Febrero</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_march">Marzo</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_april">Abril</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_may">Mayo</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_june">Junio</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_july">Julio</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_august">Agosto</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_september">Septiembre</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_october">Octubre</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_november">Noviembre</string>
+
+    <!-- The full spelled out version of the month. -->
+    <string name="month_long_december">Diciembre</string>
+
+
+    <!--
+        An abbreviated month name. In US English: "Jan" stands for
+        January.
+    -->
+    <string name="month_medium_january">Ene</string>
+
+    <!--
+        An abbreviated month name. In US English: "Feb" stands for
+        February.
+    -->
+    <string name="month_medium_february">Feb</string>
+
+    <!--
+        An abbreviated month name. In US English: "Mar" stands for
+        March.
+    -->
+    <string name="month_medium_march">Mar</string>
+
+    <!--
+        An abbreviated month name. In US English: "Apr" stands for
+        April.
+    -->
+    <string name="month_medium_april">Abr</string>
+
+    <!--
+        An abbreviated month name. In US English: "May" stands for May.
+    -->
+    <string name="month_medium_may">Mayo</string>
+
+    <!--
+        An abbreviated month name. In US English: "Jun" stands for June.
+    -->
+    <string name="month_medium_june">Jun</string>
+
+    <!--
+        An abbreviated month name. In US English: "Jul" stands for July.
+    -->
+    <string name="month_medium_july">Jul</string>
+
+    <!--
+        An abbreviated month name. In US English: "Aug" stands for
+        August.
+    -->
+    <string name="month_medium_august">Ago</string>
+
+    <!--
+        An abbreviated month name. In US English: "Sep" stands for
+        September.
+    -->
+    <string name="month_medium_september">Sep</string>
+
+    <!--
+        An abbreviated month name. In US English: "Oct" stands for
+        October.
+    -->
+    <string name="month_medium_october">Oct</string>
+
+    <!--
+        An abbreviated month name. In US English: "Nov" stands for
+        November.
+    -->
+    <string name="month_medium_november">Nov</string>
+
+    <!--
+        An abbreviated month name. In US English: "Dec" stands for
+        December.
+    -->
+    <string name="month_medium_december">Dic</string>
+
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "J" stands for
+        January
+    -->
+    <string name="month_shortest_january">E</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "F" stands for
+        February.
+    -->
+    <string name="month_shortest_february">F</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "M" stands for March.
+    -->
+    <string name="month_shortest_march">M</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "A" stands for April.
+    -->
+    <string name="month_shortest_april">A</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "M" stands for May.
+    -->
+    <string name="month_shortest_may">M</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "J" stands for June.
+    -->
+    <string name="month_shortest_june">J</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "J" stands for July.
+    -->
+    <string name="month_shortest_july">J</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "A" stands for
+        August.
+    -->
+    <string name="month_shortest_august">A</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "S" stands for
+        September.
+    -->
+    <string name="month_shortest_september">S</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "O" stands for
+        October.
+    -->
+    <string name="month_shortest_october">O</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "N" stands for
+        November.
+    -->
+    <string name="month_shortest_november">N</string>
+
+    <!--
+        An abbreviated month name. One character long if it makes sense.
+        Does not have to be unique. In US English: "D" stands for
+        December.
+    -->
+    <string name="month_shortest_december">D</string>
+    <!-- Todo End -->
+
+
+
+    <!-- Reminder format strings -->
+    <plurals name="Nminutes">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">1 minuto</item>
+        <!--
+            This is the label for 2 or more minutes. The actual number
+            of minutes is a parameter.
+        -->
+        <item quantity="other">
+            <xliff:g id="count">%d</xliff:g>
+            minutos
+        </item>
+    </plurals>
+    <!--
+        We use the abbreviation "mins" instead of "minutes" to keep the
+        string short. This is the number of minutes displayed for a
+        calendar reminder. For example, a reminder of 10 minutes would
+        be displayed as '10 mins'. The translation should use the
+        shortest acceptable abbreviation to save space.
+    -->
+    <plurals name="Nmins">
+        <!-- This is the label for a 1-minute reminder. -->
+        <item quantity="one">1 min</item>
+        <!--
+            This is the label for 2 or more minutes. The actual number
+            of minutes is a parameter.
+        -->
+        <item quantity="other">
+            <xliff:g id="count">%d</xliff:g>
+            mins
+        </item>
+    </plurals>
+    <!--
+        This is the number of hours displayed for a calendar reminder.
+        For example, a reminder of 1 hour would be displayed as '1
+        hour'. The translation should use the shortest acceptable
+        abbreviation of 'hour' to save space.
+    -->
+    <plurals name="Nhours">
+        <!-- This is the label for a 1-hour reminder. -->
+        <item quantity="one">1 hora</item>
+        <!--
+            This is the label for a reminder of 2 or more hours. The
+            actual number of hours is a parameter.
+        -->
+        <item quantity="other">
+            <xliff:g id="count">%d</xliff:g>
+            horas
+        </item>
+    </plurals>
+    <!--
+        This is the number of days displayed for a calendar reminder.
+        For example, a reminder of 2 days would be displayed as '2
+        days'. The translation should use the shortest acceptable
+        abbreviation of 'day' to save space.
+    -->
+    <plurals name="Ndays">
+        <!-- This is the label for a reminder of 1 day. -->
+        <item quantity="one">1 día</item>
+        <!--
+            This is the label for a reminder of 2 or more days. The
+            actual number of days is a parameter.
+        -->
+        <item quantity="other">
+            <xliff:g id="count">%d</xliff:g>
+            días
+        </item>
+    </plurals>
+
+    <!-- CityClockSettings -->
+    <string name="city_1">Ciudad 1</string>
+    <string name="time_zone">Zona horaria</string>
+    <string name="time">Hora</string>
+    <string name="time_default">00:00</string>
+    <string name="date">Fecha</string>
+    <string name="date_default">01-01-1970</string>
+    <string name="city_2">Ciudad 2</string>
+    <string name="city_3">Ciudad 3</string>
+    <string name="city_4">Ciudad 4</string>
+    <string name="save_settings">Guardar</string>
+
+    <!--
+        Caution: Keep this item's value identical with arrays.xml's
+        timezone's first item value
+    -->
+    <string name="all_time_zone">Todas las zonas horarias estándar</string>
+
+    <!-- CityClocDbAdapter -->
+    <string name="db_title">Reloj de ciudad</string>
+    <string name="db_message_create">
+        Por favor, espera. Creando versión en inglés de lista de ciudades...
+    </string>
+    <string name="db_message_update">
+        Por favor, espera. Actualizando versión en inglés de lista de ciudades...
+    </string> 
+
+    
+    <!-- World Clock TimeZone Table  -->
+    <string name="default_worldclock_config" translatable="false">SYNC_WITH_OS</string>    
+    <string name="default_worldclock_timezone_id0" translatable="false">Asia/Hong_Kong</string>
+    <string name="default_worldclock_timezone_id1" translatable="false">America/Chicago</string>
+    <string name="default_worldclock_timezone_id2" translatable="false">Europa/Londres</string>
+    <string name="default_worldclock_timezone_id3" translatable="false">Asia/Tokyo</string>
+
+    <!-- City 's Display Name need localization BEGIN ~~~~~~~~~~ -->
+
+    <string name="default_worldclock_city0">Beijing/China</string>
+    <string name="default_worldclock_city1">Chicago/Estados Unidos</string>
+    <string name="default_worldclock_city2">Londres/Reino Unido</string>
+    <string name="default_worldclock_city3">Tokyo/Japón</string>
+    <string name="Abidjan">Abidjan/Costa de Marfil</string>
+    <string name="Accra">Accra/Ghana</string>
+    <string name="Addis_Ababa">Adís Abeba/Etiopía</string>
+    <string name="Algiers">Alger/Algeria</string>
+    <string name="Asmara">Asmara/Etiopía</string>
+    <string name="Bamako">Bamako/Mali</string>
+    <string name="Bangui">Bangui/República central de África</string>
+    <string name="Banjul">Banjul/Gambia</string>
+    <string name="Bissau">Bissau/Guinea</string>
+    <string name="Blantyre">Blantyre/Malawi</string>
+    <string name="Brazzaville">Brazzaville/Congo</string>
+    <string name="Bujumbura">Bujumbura/Burundi</string>
+    <string name="Cairo">El Cairo/Egipto</string>
+    <string name="Casablanca">Casablanca/Marruecos</string>
+    <string name="Ceuta">Ceuta/Marruecos</string>
+    <string name="Conakry">Conakry/Guinea</string>
+    <string name="Dakar">Dakar/Senegal</string>
+    <string name="Dar_es_Salaam">Dar es Salaam/Tanzania</string>
+    <string name="Djibouti">Yibuti/Yibuti</string>
+    <string name="Douala">Douala/Camerún</string>
+    <string name="El_Aaiun">El Aaiun/Sahara Oriental</string>
+    <string name="Freetown">Freetown/Sierra Leona</string>
+    <string name="Gaborone">Gaborone/Botswana</string>
+    <string name="Harare">Harare/Zimbabwe</string>
+    <string name="Johannesburg">Johannesburgo/Sudáfrica</string>
+    <string name="Kampala">Kampala/Uganda</string>
+    <string name="Khartoum">Khartoum/Sudán</string>
+    <string name="Kigali">Kigali/Ruanda</string>
+    <string name="Kinshasa">Kinshasa/Congo</string>
+    <string name="Lagos">Lagos/Nigeria</string>
+    <string name="Libreville">Libreville/Gabon</string>
+    <string name="Lome">Lome/Togo</string>
+    <string name="Luanda">Luanda/Angola</string>
+    <string name="Lubumbashi">Lubumbashi/Congo</string>
+    <string name="Lusaka">Lusaka/Zambia</string>
+    <string name="Malabo">Malabo/Guinea Ecuatorial</string>
+    <string name="Maputo">Maputo/Mozambique</string>
+    <string name="Maseru">Maseru/Lesotho</string>
+    <string name="Mbabane">Mbabane/Swazilandia</string>
+    <string name="Mogadishu">Mogadishu/Somalia</string>
+    <string name="Monrovia">Monrovia/Liberia</string>
+    <string name="Nairobi">Nairobi/Kenia</string>
+    <string name="Ndjamena">Ndjamena/Chad</string>
+    <string name="Niamey">Niamey/Niger</string>
+    <string name="Nouakchott">Nouakchott/Mauritania</string>
+    <string name="Ouagadougou">Ouagadougou/BurkinaFaso</string>
+    <string name="Porto_Novo">Porto Novo/Benin</string>
+    <string name="Sao_Tome">Santo Tomás/Santo Tomás y Príncipe</string>
+    <string name="Timbuktu">Timbuktu/Mali</string>
+    <string name="Tripoli">Tripoli/Libia</string>
+    <string name="Tunis">Túnez/Tunisia</string>
+    <string name="Windhoek">Windhoek/Namibia</string>
+    <string name="Adak">Adak/Estados Unidos</string>
+    <string name="Anchorage">Anclaje/Estados Unidos</string>
+    <string name="Anguilla">Anguila/Antillas Británicas</string>
+    <string name="Antigua">Antigua/Antigua y Barbuda</string>
+    <string name="Araguaina">Araguaina/Brasil</string>
+    <string name="Buenos_Aires">Buenos Aires/Argentina</string>
+    <string name="Catamarca">Catamarca/Argentina</string>
+    <string name="ComodRivadavia">ComodRivadavia/Argentina</string>
+    <string name="Cordoba">Córdoba/Argentina</string>
+    <string name="Jujuy">Jujuy/Argentina</string>
+    <string name="La_Rioja">La Rioja/Argentina</string>
+    <string name="Rio_Gallegos">Rio Gallegos/Argentina</string>
+    <string name="San_Juan">San Juan/Argentina</string>
+    <string name="San_Luis">San Luis/Argentina</string>
+    <string name="Tucuman">Tucuman/Argentina</string>
+    <string name="Ushuaia">Ushuaia/Argentina</string>
+    <string name="Aruba">Aruba/Reino de los Países Bajos</string>
+    <string name="Asuncion">Asunción/Paraguay</string>
+    <string name="Atikokan">Atikokan/Canadá</string>
+    <string name="Atka">Atka/Estados Unidos</string>
+    <string name="Bahia">Bahia/Brasil</string>
+    <string name="Barbados">Barbados/Barbados</string>
+    <string name="Belem">Belem/Brasil</string>
+    <string name="Belize">Bélice/Bélice</string>
+    <string name="Blanc_Sablon">Blanc Sablon/Canadá</string>
+    <string name="Boa_Vista">Boa Vista/Brasil</string>
+    <string name="Bogota">Bogotá/Colombia</string>
+    <string name="Boise">Boise/Estados Unidos</string>
+    <string name="Cambridge_Bay">Bahía de Cambridge/Canadá</string>
+    <string name="Campo_Grande">Campo Grande/Brasil</string>
+    <string name="Cancun">Cancun/México</string>
+    <string name="Caracas">Caracas/Venezuela</string>
+    <string name="Cayenne">Cayenne/Francia</string>
+    <string name="Cayman">Caimán/Islas de Caimán</string>
+    <string name="Chicago">Chicago/Estados Unidos</string>
+    <string name="Chihuahua">Chihuahua/México</string>
+    <string name="Coral_Harbour">Coral Harbour/Canadá</string>
+    <string name="Costa_Rica">Costa Rica/Costa Rica</string>
+    <string name="Cuiaba">Cuiaba/Brasil</string>
+    <string name="Curacao">Curacao/Reino de los Países Bajos</string>
+    <string name="Danmarkshavn">Danmarkshavn/Groenlandia</string>
+    <string name="Dawson">Dawson/Canadá</string>
+    <string name="Dawson_Creek">Dawson Creek/Canadá</string>
+    <string name="Denver">Denver/Estados Unidos</string>
+    <string name="Detroit">Detroit/Estados Unidos</string>
+    <string name="Dominica">Dominica/Dominica</string>
+    <string name="Edmonton">Edmonton/Canadá</string>
+    <string name="Eirunepe">Eirunepe/Brasil</string>
+    <string name="El_Salvador">El Salvador/El Salvador</string>
+    <string name="Ensenada">Ensenada/México</string>
+    <string name="Fort_Wayne">Fort Wayne/Estados Unidos</string>
+    <string name="Fortaleza">Fortaleza/Brasil</string>
+    <string name="Glace_Bay">Bahía Glace/Canadá</string>
+    <string name="Godthab">Godthab/Groenlandia</string>
+    <string name="Goose_Bay">Bahía Goose/Canadá</string>
+    <string name="Grand_Turk">Gran Turco/Islas Turcas y Caicos</string>
+    <string name="Grenada">Granada/Granada</string>
+    <string name="Guadeloupe">Guadalupe/Guadalupe</string>
+    <string name="Guatemala">Guatemala/Guatemala</string>
+    <string name="Guayaquil">Guayaquil/Ecuador</string>
+    <string name="Guyana">Guyana/Guyana</string>
+    <string name="Halifax">Halifax/Canadá</string>
+    <string name="Havana">Habana/Cuba</string>
+    <string name="Hermosillo">Hermosillo/México</string>
+    <string name="Indianapolis">Indianapolis/Estados Unidos</string>
+    <string name="Knox">Knox/Estados Unidos</string>
+    <string name="Marengo">Marengo/Estados Unidos</string>
+    <string name="Petersburg">St. Petersburg/Estados Unidos</string>
+    <string name="Tell_City">Tell City/Estados Unidos</string>
+    <string name="Vevay">Vevay/Estados Unidos</string>
+    <string name="Vincennes">Vincennes/Estados Unidos</string>
+    <string name="Winamac">Winamac/Estados Unidos</string>
+    <string name="Inuvik">Inuvik/Canadá</string>
+    <string name="Iqaluit">Iqaluit/Canadá</string>
+    <string name="Jamaica">Jamaica/Jamaica</string>
+    <string name="Juneau">Juneau/Estados Unidos</string>
+    <string name="Monticello">Monticello/Estados Unidos</string>
+    <string name="Knox_IN">Knox IN/Estados Unidos</string>
+    <string name="La_Paz">La Paz/Bolivia</string>
+    <string name="Lima">Lima/Perú</string>
+    <string name="Los_Angeles">Los Ángeles/Estados Unidos</string>
+    <string name="Louisville">Louisville/Estados Unidos</string>
+    <string name="Maceio">Maceio/Brasil</string>
+    <string name="Managua">Managua/Nicaragua</string>
+    <string name="Manaus">Manaus/Brasil</string>
+    <string name="Marigot">Marigot/Dominica</string>
+    <string name="Martinique">Martinique/Martinique</string>
+    <string name="Mazatlan">Mazatlan/México</string>
+    <string name="Mendoza">Mendoza/Argentina</string>
+    <string name="Menominee">Menominee/Estados Unidos</string>
+    <string name="Merida">Merida/México</string>
+    <string name="Mexico_City">Ciudad de México/México</string>
+    <string name="Miquelon">Miquelón/Saint Pierre y Miquelón</string>
+    <string name="Moncton">Moncton/Canadá</string>
+    <string name="Monterrey">Monterrey/México</string>
+    <string name="Montevideo">Montevideo/Uruguay</string>
+    <string name="Montreal">Montreal/Canadá</string>
+    <string name="Montserrat">Montserrat/Montserrat</string>
+    <string name="Nassau">Nassau/Bahamas</string>
+    <string name="New_York">Nueva York/Estados Unidos</string>
+    <string name="Nipigon">Nipigon/Canadá</string>
+    <string name="Nome">Nome/Estados Unidos</string>
+    <string name="Noronha">Noronha/Brasil</string>
+    <string name="Center">Centro/Estados Unidos</string>
+    <string name="New_Salem">Nueva Salem/Estados Unidos</string>
+    <string name="Panama">Panamá/Panamá</string>
+    <string name="Pangnirtung">Pangnirtung/Canadá</string>
+    <string name="Paramaribo">Paramaribo/Suriname</string>
+    <string name="Phoenix">Phoenix/Estados Unidos</string>
+    <string name="Port_au_Prince">Puerto Príncipe/Haití</string>
+    <string name="Port_of_Spain">Puerto de España/Trinidad y Tobago</string>
+    <string name="Porto_Acre">Porto Acre/Brasil</string>
+    <string name="Porto_Velho">Porto Velho/Brasil</string>
+    <string name="Puerto_Rico">Puerto Rico/Puerto Rico</string>
+    <string name="Rainy_River">Rainy River/Canadá</string>
+    <string name="Rankin_Inlet">Rankin Inlet/Canadá</string>
+    <string name="Recife">Recife/Brasil</string>
+    <string name="Regina">Regina/Canadá</string>
+    <string name="Resolute">Resolute/Canadá</string>
+    <string name="Rio_Branco">Rio Branco/Brasil</string>
+    <string name="Rosario">Rosario/Argentina</string>
+    <string name="Santarem">Santarem/Brasil</string>
+    <string name="Santiago">Santiago/Chile</string>
+    <string name="Santo_Domingo">Santo Domingo/República Dominicana</string>
+    <string name="Sao_Paulo">Sao Paulo/Brasil</string>
+    <string name="Scoresbysund">Scoresbysund/Groenlandia</string>
+    <string name="Shiprock">Shiprock/Estados Unidos</string>
+    <string name="St_Barthelemy">San Bartolomé/Francia</string>
+    <string name="St_Johns">St Johns/Canadá</string>
+    <string name="St_Kitts">St Kitts/Estados Unidos</string>
+    <string name="St_Lucia">St Lucia/St Lucia</string>
+    <string name="St_Thomas">St Thomas/Islas Vírgenes</string>
+    <string name="St_Vincent">St Vincent/St Vincent</string>
+    <string name="Swift_Current">Swift Current/Canadá</string>
+    <string name="Tegucigalpa">Tegucigalpa/Honduras</string>
+    <string name="Thule">Thule/Groenlandia</string>
+    <string name="Thunder_Bay">Thunder Bay/Canadá</string>
+    <string name="Tijuana">Tijuana/México</string>
+    <string name="Toronto">Toronto/Canadá</string>
+    <string name="Tortola">Tortola/Islas Vírgenes Británicas</string>
+    <string name="Vancouver">Vancouver/Canadá</string>
+    <string name="Virgin">Virgin/Estados Unidos</string>
+    <string name="Whitehorse">Whitehorse/Canadá</string>
+    <string name="Winnipeg">Winnipeg/Canadá</string>
+    <string name="Yakutat">Yakutat/Estados Unidos</string>
+    <string name="Yellowknife">Yellowknife/Canadá</string>
+    <string name="Casey">Casey/Antártica</string>
+    <string name="Davis">Davis/Antártica</string>
+    <string name="DumontDUrville">DumontDUrville/Antártica</string>
+    <string name="Mawson">Mawson/Antártica</string>
+    <string name="McMurdo">McMurdo/Antártica</string>
+    <string name="Palmer">Palmer/Antártica</string>
+    <string name="Rothera">Rothera/Antártica</string>
+    <string name="South_Pole">Polo Sur/Antártica</string>
+    <string name="Syowa">Syowa/Japón</string>
+    <string name="Vostok">Vostok/Antártica</string>
+    <string name="Longyearbyen">Longyearbyen/Noruega</string>
+    <string name="Aden">Aden/Yemén</string>
+    <string name="Almaty">Almaty/Kazakstán</string>
+    <string name="Amman">Amman/Jordán</string>
+    <string name="Anadyr">Anadyr/Rusia</string>
+    <string name="Aqtau">Aqtau/Kazakhstán</string>
+    <string name="Aqtobe">Aqtobe/Kazakhstán</string>
+    <string name="Ashgabat">Ashgabat/Turkmenistán</string>
+    <string name="Baghdad">Baghdad/Irak</string>
+    <string name="Bahrain">Bahrein/Bahrein</string>
+    <string name="Baku">Baku/Azerbaiyán</string>
+    <string name="Bangkok">Bangkok/Tailandia</string>
+    <string name="Beirut">Beirut/Líbano</string>
+    <string name="Bishkek">Bishkek/Kyrgyzstán</string>
+    <string name="Brunei">Brunei/Brunei</string>
+    <string name="Choibalsan">Choibalsan/Mongolia</string>
+    <string name="Chongqing">Chongqing/China</string>
+    <string name="Colombo">Colombo/Sri Lanka</string>
+    <string name="Damascus">Damasco/Siria</string>
+    <string name="Dhaka">Dhaka/Bangladesh</string>
+    <string name="Dili">Dili/Timor-Leste</string>
+    <string name="Dubai">Dubai/Emiratos Árabes Unidos</string>
+    <string name="Dushanbe">Dushanbe/Tajikistán</string>
+    <string name="Gaza">Gaza/Franja de gaza</string>
+    <string name="Harbin">Harbin/China</string>
+    <string name="Ho_Chi_Minh">Ho Chi Minh/Vietnam</string>
+    <string name="Nanjing">Nanjing/China</string>
+    <string name="Beijing">Beijing/China</string>
+    <string name="Hovd">Hovd/Mongolia</string>
+    <string name="Irkutsk">Irkutsk/Siberia</string>
+    <string name="Istanbul">Estambul/Turquía</string>
+    <string name="Jakarta">Jakarta/Indonesia</string>
+    <string name="Jayapura">Jayapura/Indonesia</string>
+    <string name="Jerusalem">Jerusalén/Israel</string>
+    <string name="Kabul">Kabul/Afganistán</string>
+    <string name="Kamchatka">Kamchatka/Rusia</string>
+    <string name="Karachi">Karachi/Pakistán</string>
+    <string name="Kashgar">Kashgar/China</string>
+    <string name="Katmandu">Katmandu/Nepal</string>
+    <string name="Kolkata">Kolkata/India</string>
+    <string name="Krasnoyarsk">Krasnoyarsk/Rusia</string>
+    <string name="Kuala_Lumpur">Kuala Lumpur/Malasia</string>
+    <string name="Kuching">Kuching/Malasia</string>
+    <string name="Kuwait">Kuwait/Kuwait</string>
+    <string name="Macao">Macao/China</string>
+    <string name="Magadan">Magadán/Rusia</string>
+    <string name="Makassar">Makassar/Indonesia</string>
+    <string name="Manila">Manila/Filipinas</string>
+    <string name="Muscat">Muscat/Omán</string>
+    <string name="Nicosia">Nicosia/Chipre</string>
+    <string name="Novosibirsk">Novosibirsk/Rusia</string>
+    <string name="Omsk">Omsk/Rusia</string>
+    <string name="Oral">Oral/Kazakhstán</string>
+    <string name="Phnom_Penh">Phnom Penh/Cambodia</string>
+    <string name="Pontianak">Pontianak/Indonesia</string>
+    <string name="Pyongyang">Pyongyang/Corea (norte)</string>
+    <string name="Qatar">Qatar/Qatar</string>
+    <string name="Qyzylorda">Qyzylorda/Kazakhstán</string>
+    <string name="Rangoon">Rangoon/Burma(Myanmar)</string>
+    <string name="Riyadh">Riyadh/Arabia Saudita</string>
+    <string name="Saigon">Saigón/Vietnam</string>
+    <string name="Sakhalin">Sakhalin/Rusia</string>
+    <string name="Samarkand">Samarkand/Uzbekistán</string>
+    <string name="Seoul">Seoul/Corea (sur)</string>
+    <string name="Shanghai">Shanghai/China</string>
+    <string name="Singapore">Singapur/Singapur</string>
+    <string name="Taipei">Taipei/Taiwán</string>
+    <string name="Tashkent">Tashkent/Uzbekistán</string>
+    <string name="Tbilisi">Tbilisi/Georgia</string>
+    <string name="Tehran">Teherán/Irán</string>
+    <string name="Tel_Aviv">Tel Aviv/Israel</string>
+    <string name="Thimphu">Thimphu/Bután</string>
+    <string name="Tokyo">Tokio/Japón</string>
+    <string name="Ujung_Pandang">Ujung Pandang/Indonesia</string>
+    <string name="Ulaanbaatar">Ulaanbaatar/Mongolia</string>
+    <string name="Ulan_Bator">Ulan Bator/Mongolia</string>
+    <string name="Urumqi">Urumqi/China</string>
+    <string name="Vientiane">Vientiane/Laos</string>
+    <string name="Vladivostok">Vladivostok/Rusia</string>
+    <string name="Yakutsk">Yakutsk/Rusia</string>
+    <string name="Yekaterinburg">Yekaterinburg/Rusia</string>
+    <string name="Yerevan">Yerevan/Armenia</string>
+    <string name="Azores">Azores/Portugal</string>
+    <string name="Bermuda">Bermudas/Bermudas</string>
+    <string name="Canary">Canarias/España</string>
+    <string name="Cape_Verde">Cabo Verde/CaboVerde</string>
+    <string name="Faroe">Faroe/Dinamarca</string>
+    <string name="Jan_Mayen">Jan Mayen/Noruega</string>
+    <string name="Madeira">Madeira/Portugal</string>
+    <string name="Reykjavik">Reykjavik/Islandia</string>
+    <string name="South_Georgia">Georgia del sur/Bretaña</string>
+    <string name="St_Helena">Santa Helena/Bretaña</string>
+    <string name="Stanley">Stanley/Islas Folkland</string>
+    <string name="ACT">ACT/Australia</string>
+    <string name="Adelaide">Adelaide/Australia</string>
+    <string name="Brisbane">Brisbane/Australia</string>
+    <string name="Broken_Hill">Broken Hill/Australia</string>
+    <string name="Canberra">Canberra/Australia</string>
+    <string name="Currie">Currie/Escocia</string>
+    <string name="Darwin">Darwin/Australia</string>
+    <string name="Eucla">Eucla/Australia</string>
+    <string name="Hobart">Hobart/Australia</string>
+    <string name="LHI">LHI/Australia</string>
+    <string name="Lindeman">Lindeman/Australia</string>
+    <string name="Lord_Howe">Lord Howe/Australia</string>
+    <string name="Melbourne">Melbourne/Australia</string>
+    <string name="NSW">NSW/Australia</string>
+    <string name="North">Norte/Australia</string>
+    <string name="Perth">Perth/Australia</string>
+    <string name="Queensland">Queensland/Australia</string>
+    <string name="South">Sur/Australia</string>
+    <string name="Sydney">Sidney/Australia</string>
+    <string name="Tasmania">Tasmania/Australia</string>
+    <string name="Victoria">Victoria/Australia</string>
+    <string name="West">West/Australia</string>
+    <string name="Yancowinna">Yancowinna/Yancowinna</string>
+    <string name="Acre">Acre/Brasil</string>
+    <string name="DeNoronha">DeNoronha/Brasil</string>
+    <string name="East">Este/Brasil</string>
+    <string name="BWest">Oeste/Brasil</string>
+    <string name="Atlantic">Atlántico/Canadá</string>
+    <string name="Central">Central/Canadá</string>
+    <string name="East_Saskatchewan">Saskatchewan del este/Canadá</string>
+    <string name="Eastern">Eastern/Canadá</string>
+    <string name="Mountain">Mountain/Canadá</string>
+    <string name="Newfoundland">Newfoundland/Canadá</string>
+    <string name="Pacific">Pacific/Canadá</string>
+    <string name="Saskatchewan">Saskatchewan/Canadá</string>
+    <string name="Yukon">Yukon/Canadá</string>
+    <string name="Continental">Continental/Chile</string>
+    <string name="EasterIsland">Isla de Pascua/Chile</string>
+    <string name="Cuba">Cuba/Cuba</string>
+    <string name="Egypt">Egipto/Egipto</string>
+    <string name="Eire">Eire/Eire</string>
+    <string name="GMT">GMT/GMT</string>
+    <string name="GMT_0_a">GMT-0/GMT-0</string>
+    <string name="GMT_1_a">GMT-1/GMT-1</string>
+    <string name="GMT_10_a">GMT-10/GMT-10</string>
+    <string name="GMT_11_a">GMT-11/GMT-11</string>
+    <string name="GMT_12_a">GMT-12/GMT-12</string>
+    <string name="GMT_2_a">GMT-2/GMT-2</string>
+    <string name="GMT_3_a">GMT-3/GMT-3</string>
+    <string name="GMT_4_a">GMT-4/GMT-4</string>
+    <string name="GMT_5_a">GMT-5/GMT-5</string>
+    <string name="GMT_6_a">GMT-6/GMT-6</string>
+    <string name="GMT_7_a">GMT-7/GMT-7</string>
+    <string name="GMT_8_a">GMT-8/GMT-8</string>
+    <string name="GMT_9_a">GMT-9/GMT-9</string>
+    <string name="GMT_0">GMT+0/GMT+0</string>
+    <string name="GMT_1">GMT+1/GMT+1</string>
+    <string name="GMT_10">GMT+10/GMT+10</string>
+    <string name="GMT_11">GMT+11/GMT+11</string>
+    <string name="GMT_12">GMT+12/GMT+12</string>
+    <string name="GMT_13">GMT+13/GMT+13</string>
+    <string name="GMT_14">GMT+14/GMT+14</string>
+    <string name="GMT_2">GMT+2/GMT+2</string>
+    <string name="GMT_3">GMT+3/GMT+3</string>
+    <string name="GMT_4">GMT+4/GMT+4</string>
+    <string name="GMT_5">GMT+5/GMT+5</string>
+    <string name="GMT_6">GMT+6/GMT+6</string>
+    <string name="GMT_7">GMT+7/GMT+7</string>
+    <string name="GMT_8">GMT+8/GMT+8</string>
+    <string name="GMT_9">GMT+9/GMT+9</string>
+    <string name="Greenwich">Greenwich/Greenwich</string>
+    <string name="UCT">UCT/UCT</string>
+    <string name="UTC">UTC/UTC</string>
+    <string name="Universal">Universal/Universal</string>
+    <string name="Zulu">Zulú/Zulú</string>
+    <string name="Amsterdam">Amsterdam/Holanda</string>
+    <string name="Andorra">Andorra/Andorra</string>
+    <string name="Athens">Atenas/Grecia</string>
+    <string name="Belfast">Belfast/Reino Unido</string>
+    <string name="Belgrade">Belgrado/Serbia</string>
+    <string name="Berlin">Berlín/Alemania</string>
+    <string name="Bratislava">Bratislava/Eslovaquia</string>
+    <string name="Brussels">Bruselas/Bélgica</string>
+    <string name="Bucharest">Bucharest/Rumania</string>
+    <string name="Budapest">Budapest/Hungría</string>
+    <string name="Chisinau">Chisinau/Moldovia</string>
+    <string name="Copenhagen">Copenhague/DInamarca</string>
+    <string name="Dublin">Dublín/Irlanda</string>
+    <string name="Gibraltar">Gibraltar/Gibraltar</string>
+    <string name="Guernsey">Guernsey/Reino Unido</string>
+    <string name="Helsinki">Helsinki/Finlandia</string>
+    <string name="Isle_of_Man">Isla de Man/Isla de Man</string>
+    <string name="Jersey">Jersey/Reino Unido</string>
+    <string name="Kaliningrad">Kaliningrado/Rusia</string>
+    <string name="Kiev">Kiev/Ucrania</string>
+    <string name="Lisbon">Lisboa/Portugal</string>
+    <string name="Ljubljana">Ljubljana/Eslovenia</string>
+    <string name="London">Londres/Reino Unido</string>
+    <string name="Luxembourg">Luxemburgo/Luxemburgo</string>
+    <string name="Madrid">Madrid/España</string>
+    <string name="Malta">Malta/Malta</string>
+    <string name="Mariehamn">Mariehamn/Finlandia</string>
+    <string name="Minsk">Minsk/Bélice</string>
+    <string name="Monaco">Mónaco/Mónaco</string>
+    <string name="Moscow">Moscú/Rusia</string>
+    <string name="Oslo">Oslo/Noruega</string>
+    <string name="Paris">París/Francia</string>
+    <string name="Podgorica">Podgorica/Montenegro</string>
+    <string name="Prague">Praga/República Checa</string>
+    <string name="Riga">Riga/Latvia</string>
+    <string name="Rome">Roma/Italia</string>
+    <string name="Samara">Samara/Rusia</string>
+    <string name="San_Marino">San Marino/San Marino</string>
+    <string name="Sarajevo">Sarajevo/Bosnia</string>
+    <string name="Simferopol">Simferopol/Ucrania</string>
+    <string name="Skopje">Skopje/Macedonia</string>
+    <string name="Sofia">Sofia/Bulgaria</string>
+    <string name="Stockholm">Estocolomo/Suecia</string>
+    <string name="Tallinn">Tallinn/Estonia</string>
+    <string name="Tirane">Tirane/Albania</string>
+    <string name="Tiraspol">Tiraspol/Moldova</string>
+    <string name="Uzhgorod">Uzhgorod/Ucrania</string>
+    <string name="Vaduz">Vaduz/Liechtenstein</string>
+    <string name="Vatican">Vaticano/Vaticano</string>
+    <string name="Vienna">Viena/Austria</string>
+    <string name="Vilnius">Vilnius/Lituania</string>
+    <string name="Volgograd">Volgograd/Rusia</string>
+    <string name="Warsaw">Varsovia/Polonia</string>
+    <string name="Zagreb">Zagreb/Croacia</string>
+    <string name="Zaporozhye">Zaporozhye/Ucrania</string>
+    <string name="Zurich">Zurich/Suiza</string>
+    <string name="GB">GB/Bretaña</string>
+    <string name="GB_Eire">GB-Eire/Bretaña</string>
+    <string name="HST">HST/HST</string>
+    <string name="Hongkong">Hongkong/China</string>
+    <string name="Iceland">Islandia/Islandia</string>
+    <string name="Antananarivo">Antananarivo/Madagascar</string>
+    <string name="Chagos">Chagos/Territorio Británico del Océano Índico </string>
+    <string name="Christmas">Navidad/Isla Navidad</string>
+    <string name="Cocos">Cocos/Islas Cocos</string>
+    <string name="Comoro">Comoro/Comoro</string>
+    <string name="Kerguelen">Kerguelen/Islas Kerguelen </string>
+    <string name="Mahe">Mahe/India</string>
+    <string name="Maldives">Maldivas/Maldivas</string>
+    <string name="Mauritius">Mauricio/Mauricio</string>
+    <string name="Mayotte">Mayotte/Mayotte</string>
+    <string name="Reunion">Reunión/Reunión</string>
+    <string name="Iran">Irán/Irán</string>
+    <string name="Israel">Israel/Israel</string>
+    <string name="Japan">Japón/Japón</string>
+    <string name="Kwajalein">Kwajalein/Islas Marshall </string>
+    <string name="Libya">Libia/Libia</string>
+    <string name="BajaNorte">BajaNorte/México</string>
+    <string name="BajaSur">BajaSur/México</string>
+    <string name="General">General/México</string>
+    <string name="NZ">Nueva Zelanda/Nueva Zelanda</string>
+    <string name="Navajo">Navajo/Navajo</string>
+    <string name="PRC">PRC/China</string>
+    <string name="Apia">Apia/Samoa</string>
+    <string name="Auckland">Auckland/Nueva Zelanda</string>
+    <string name="Chatham">Chatham/Nueva Zelanda</string>
+    <string name="Easter">Pascua/Chile</string>
+    <string name="Efate">Efate/Vanuatu</string>
+    <string name="Enderbury">Enderbury/Kiribati</string>
+    <string name="Fakaofo">Fakaofo/Tokelau</string>
+    <string name="Fiji">Fiyi/Fiyi</string>
+    <string name="Funafuti">Funafuti/Tuvalu</string>
+    <string name="Galapagos">Galápagos/Ecuador</string>
+    <string name="Gambier">Gambier/Polinesia Francesa</string>
+    <string name="Guadalcanal">Guadalcanal/Islas Salomón </string>
+    <string name="Guam">Guam/Guam</string>
+    <string name="Honolulu">Honolulú/Estados Unidos</string>
+    <string name="Johnston">Johnston/Islas periféricas menores de los Estados Unidos </string>
+    <string name="Kiritimati">Kiritimati/Kiribati</string>
+    <string name="Kosrae">Kosrae/Micronesia</string>
+    <string name="Majuro">Majuro/Islas Marshall</string>
+    <string name="Marquesas">Marquesas/Francia</string>
+    <string name="Midway">Midway/Estados Unidos</string>
+    <string name="Nauru">Nauru/Nauru</string>
+    <string name="Niue">Niue/Niue</string>
+    <string name="Norfolk">Norfolk/E.U.A.</string>
+    <string name="Noumea">Noumea/Francia</string>
+    <string name="Pago_Pago">Pago Pago/Samoa Americana</string>
+    <string name="Palau">Palaos/Palaos</string>
+    <string name="Pitcairn">Pitcairn/Islas Ducie y Oeno </string>
+    <string name="Ponape">Ponape/Micronesia</string>
+    <string name="Port_Moresby">Port Moresby/Port Moresby</string>
+    <string name="Rarotonga">Rarotonga/Islas Cook</string>
+    <string name="Saipan">Saipán/Islas Marianas del Norte</string>
+    <string name="Samoa">Samoa/Samoa</string>
+    <string name="Tahiti">Tahití/Francia</string>
+    <string name="Tarawa">Tarawa/Kiribati</string>
+    <string name="Tongatapu">Tongatapu/Tonga</string>
+    <string name="Truk">Truk/Micronesia</string>
+    <string name="Wake">Wake/Islas periféricas menores de los Estados Unidos</string>
+    <string name="Wallis">Wallis/Wallis y Futuna</string>
+    <string name="Yap">Yap/Micronesia</string>
+    <string name="Poland">Polonia/Polonia</string>
+    <string name="Portugal">Portugal/Portugal</string>
+    <string name="ROC">Taiwán/Taiwán</string>
+    <string name="ROK">ROK/ROK</string>
+    <string name="Turkey">Turquía/Turquía</string>
+    <string name="Alaska">Alaska/Estados Unidos</string>
+    <string name="Aleutian">Aleutian/Estados Unidos</string>
+    <string name="Arizona">Arizona/Estados Unidos</string>
+    <string name="aCentral">E.U Central/Estados Unidos</string>
+    <string name="East_Indiana">Indiana del Este/Estados Unidos</string>
+    <string name="aEastern">E.U del Este/Estados Unidos</string>
+    <string name="WashingtonDC">Washington DC/Estados Unidos</string>
+    <string name="Hawaii">Hawaii/Estados Unidos</string>
+    <string name="Indiana_Starke">Indiana-Starke/Estados Unidos</string>
+    <string name="Michigan">Michigan/Estados Unidos</string>
+    <string name="aMountain">Montana/Estados Unidos</string>
+    <string name="aPacific">E.U Pacífico/Estados Unidos</string>
+    <string name="Pacific_New">Nuevo Pacífico/Nuevo Pacífico</string>
+    <string name="W_SU">W-SU/Rusia</string>
+    <string name="WET">WET/WET</string>
+        <string name="San_Francisco">San Francisco/Estados Unidos</string>
+    <string name="Seattle">Seattle/Estados Unidos</string>
+    <string name="Aklavik">Aklavik/Canadá</string>
+    <string name="Houston">Houston/Estados Unidos</string>
+    <string name="Minneapolis">Minneapolis/Estados Unidos</string>
+    <string name="St_Paul">St. Paul/Estados Unidos</string>
+    <string name="New_Orleans">Nueva Orleans/Estados Unidos</string>
+    <string name="Montgomery">Montgomery/Estados Unidos</string>
+    <string name="San_Salvador">San Salvador/Salvador</string>
+    <string name="Atlanta">Atlanta/Estados Unidos</string>
+    <string name="Philadelphia">Filadelfia/Estados Unidos</string>
+    <string name="Ottawa">Ottawa/Canadá</string>
+    <string name="Kingston">Kingston/Jamaica</string>
+    <string name="Boston">Boston/Estados Unidos</string>
+    <string name="Brasilia">Brasilia/Brasil</string>
+    <string name="Rio_de_Janeiro">Rio de Janeiro/Brasil</string>
+    <string name="Barcelona">Barcelona/España</string>
+    <string name="Geneva">Génova/Suiza</string>
+    <string name="Frankfurt">Frankfurt/Alemania</string>
+    <string name="Cape_Town">Ciudad del cabo/Sur África</string>
+    <string name="Kyiv">Kyiv/Ucrania</string>
+    <string name="Odessa">Odessa/Ucrania</string>
+    <string name="Ankara">Ankara/Turquía</string>
+    <string name="Wellington">Wellington/Nueva Zelanda</string>
+    <string name="Suva">Suva/Fiyi</string>
+    <string name="Abu_Dhabi">Abu Dhabi/Emiratos Árabes Unidos</string>
+    <string name="Islamabad">Islamabad/Pakistán</string>
+    <string name="Lahore">Lahore/Pakistán</string>
+    <string name="Mumbai">Mumbai/India</string>
+    <string name="Hanoi">Hanoi/Vietnam</string>
+    <string name="Yangon">Yangon/Burma</string>
+    <string name="New_Delhi">Nueva Delhi/India</string>
+    <!-- City 's Display Name needn localization END ~~~~~~~~~~ -->
+    
+<string name="Analog">Análogo</string>
+<string name="Digital">Digital</string>
+<string name="clock_style">Estilo de reloj</string>
+<string name="date_time_settings">Config. de fecha y hora</string>
+<string name="Touch_to_select_a_city">Toca para\n seleccionar una ciudad</string>
+<string name="done_button">Listo</string>
+<string name="City">Ciudad</string>
+<string name="City_A">Ciudad A (izquierda)</string><string name="City_B">Ciudad B (derecha)</string>
+
+<string name="current_location">Usar ubicación actual</string>
+<string name="World_Clock_Setting_Title">Reloj mundial</string>
+<string name="find_city">Buscar ciudad</string>
+<string name="addLocationHint">Ingresa una ciudad o país</string>
+<string name="No_matches">No hay coincidencias</string>
+<string name="daylight_savings_time">Horario de verano</string>
+<string name="adjust_daylight_savings_time">Ajustar la hora mostrada paar el horario de verano</string>
+<string name="Scanning_location">Buscando ubicación...</string>
+<string name="No_location_provider">No hay ningún proveedor de ubicación habilitado.</string>
+<string name="description">Conoce la hora actual de la mayoría de ciudades alrededor del mundo</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--MOT calling code- IKMAIN-4172 this layout is for smart dialer single item-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerVertical="true">
+
+    <QuickContactBadge
+        android:id="@+id/sd_caller"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_width = "64dip"
+        android:layout_height = "64dip"
+    />
+
+    <ImageView android:id="@+id/sd_call_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="@dimen/call_log_icon_margin"
+    />
+
+    <TextView android:id="@+id/sd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/sd_caller"
+        android:layout_toLeftOf="@id/sd_call_type"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="5dip"
+        android:textColor="?attr/call_log_primary_text_color"
+        android:textSize="18sp"
+        android:singleLine="true"
+    />
+
+    <TextView android:id="@+id/sd_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sd_caller"
+        android:layout_below="@id/sd_name"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip"
+        android:textColor="?attr/call_log_secondary_text_color"
+        android:textSize="14sp"
+        android:singleLine="true"
+    />
+    <ImageView android:id="@+id/sd_network_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sd_name"
+        android:layout_marginRight="@dimen/call_log_icon_margin"
+    />
+    <TextView android:id="@+id/sd_call_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_marginBottom="2sp"
+        android:layout_marginRight="5dip"
+        android:layout_below="@+id/sd_number"
+        android:textColor="?attr/call_log_secondary_text_color"
+        android:textSize="14sp"
+        android:singleLine="true"
+    />
+
+</merge>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.socialGraph.socialGraphWidget.skinutils.SkinLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ringlayout"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		    
+	    <RelativeLayout android:id="@+id/skin_item2"
+			android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+			android:layout_marginTop="64px" android:layout_marginLeft="12px">
+			<ImageView android:id="@+id/item_2_shadow" 
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+				android:src="@drawable/shadow_medium"/>
+			<ImageView android:id="@+id/item_2_bg"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+				android:src="@drawable/bg_image_medium" />
+			<ImageView android:id="@+id/item_2_bar"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_2_bg" android:layout_alignRight="@id/item_2_bg"
+				android:layout_marginBottom="-5px" android:src="@drawable/bar_bg_medium" />
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/skin_item1"
+			android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+			android:layout_toRightOf="@id/skin_item2" android:layout_alignBottom="@id/skin_item2">			
+			<ImageView android:id="@+id/item_1_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_medium"/>
+			<ImageView android:id="@+id/item_1_bg"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+				android:src="@drawable/bg_image_medium" />
+			<ImageView android:id="@+id/item_1_bar"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_1_bg" android:layout_alignRight="@id/item_1_bg"
+				android:layout_marginBottom="-5px" android:src="@drawable/bar_bg_medium" />
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/skin_item0"
+			android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/large_size_land"
+			android:layout_toRightOf="@id/skin_item1" android:layout_alignBottom="@id/skin_item1"
+			android:layout_marginLeft="-1px">
+			<ImageView android:id="@+id/item_0_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_big"/>
+			<ImageView android:id="@+id/item_0_bg"
+				android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/large_size_land"
+				android:src="@drawable/bg_image_big" />
+			<ImageView android:id="@+id/item_0_bar"
+				android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_0_bg" android:layout_alignRight="@id/item_0_bg"
+				android:layout_marginBottom="-5px" android:src="@drawable/bar_bg_big" />
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/skin_item3"
+			android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+			android:layout_below="@id/skin_item1" android:layout_alignRight="@id/skin_item1">
+			<ImageView android:id="@+id/item_3_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_medium"/>
+			<ImageView android:id="@+id/item_3_bg"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+				android:src="@drawable/bg_image_medium" />
+			<ImageView android:id="@+id/item_3_bar"
+				android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_3_bg" android:layout_alignRight="@id/item_3_bg"
+				android:layout_marginBottom="-5px" android:src="@drawable/bar_bg_medium" />
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/skin_item4"
+			android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+			android:layout_below="@id/skin_item0" android:layout_toRightOf="@id/skin_item3">
+			<ImageView android:id="@+id/item_4_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_small"/>
+			<ImageView android:id="@+id/item_4_bg"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+				android:src="@drawable/bg_image_small" />
+			<ImageView android:id="@+id/item_4_bar"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_4_bg" android:layout_alignRight="@id/item_4_bg"
+				android:layout_marginBottom="-6px" android:src="@drawable/bar_bg_small" />
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/skin_item5"
+			android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+			android:layout_below="@id/skin_item0" android:layout_toRightOf="@id/skin_item4">
+			<ImageView android:id="@+id/item_5_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_small"/>
+			<ImageView android:id="@+id/item_5_bg"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+				android:src="@drawable/bg_image_small" />
+			<ImageView android:id="@+id/item_5_bar"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_5_bg" android:layout_alignRight="@id/item_5_bg"
+				android:layout_marginBottom="-6px" android:src="@drawable/bar_bg_small" />
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/skin_item6"
+			android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+			android:layout_toRightOf="@id/skin_item5" android:layout_alignTop="@id/skin_item5">
+			<ImageView android:id="@+id/item_6_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_small"/>
+			<ImageView android:id="@+id/item_6_bg"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+				android:src="@drawable/bg_image_small" />
+			<ImageView android:id="@+id/item_6_bar"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_6_bg" android:layout_alignRight="@id/item_6_bg"
+				android:layout_marginBottom="-6px" android:src="@drawable/bar_bg_small" />
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/skin_item7"
+			android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+			android:layout_toRightOf="@id/skin_item0" android:layout_alignBottom="@id/skin_item0">
+			<ImageView android:id="@+id/item_7_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_small"/>
+			<ImageView android:id="@+id/item_7_bg"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+				android:src="@drawable/bg_image_small" />
+			<ImageView android:id="@+id/item_7_bar"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_7_bg" android:layout_alignRight="@id/item_7_bg"
+				android:layout_marginBottom="-6px" android:src="@drawable/bar_bg_small" />
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/skin_item8"
+			android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+			android:layout_toRightOf="@id/skin_item7" android:layout_alignTop="@id/skin_item7">
+			<ImageView android:id="@+id/item_8_shadow" 
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:src="@drawable/shadow_small"/>
+			<ImageView android:id="@+id/item_8_bg"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+				android:src="@drawable/bg_image_small" />
+			<ImageView android:id="@+id/item_8_bar"
+				android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/bar_height_land"
+				android:layout_alignBottom="@id/item_8_bg" android:layout_alignRight="@id/item_8_bg"
+				android:layout_marginBottom="-6px" android:src="@drawable/bar_bg_small" />
+			
+		</RelativeLayout>
+
+	</RelativeLayout>
+</com.motorola.mmsp.socialGraph.socialGraphWidget.skinutils.SkinLayout>

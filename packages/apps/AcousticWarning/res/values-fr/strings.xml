@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Volume multimédia</string>
+  <string name="warning_text">Le fait d\'écouter de la musique à un volume élevé pendant des périodes prolongées peut entraîner une baisse de l\'ouïe.\n\nLe volume de votre musique a été réglé en dessous du niveau recommandé.</string>
+</resources>

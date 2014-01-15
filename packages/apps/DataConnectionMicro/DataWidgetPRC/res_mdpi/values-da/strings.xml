@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Slå widgets til/fra</string>
+  <string name="gps_app_name">Slå GPS til/fra</string>
+  <string name="airplane_app_name">Slå flytilstand til/fra</string>
+  <string name="wifi_app_name">Slå WLAN til/fra</string>
+  <string name="bluetooth_app_name">Slå Bluetooth til/fra</string>
+  <string name="apn_app_name">Slå APN til/fra</string>
+  <string name="data_app_name">Slå data til/fra</string>
+  <string name="widget_description">Vis og kontroller status for flytilstand</string>
+  <string name="widget_description_bt">Vis og kontroller Bluetooth-status</string>
+  <string name="widget_description_wifi">Vis og kontroller Wi-Fi-status</string>
+  <string name="widget_description_gps">Vis og kontroller GPS-status</string>
+  <string name="StatusOn">TIL</string>
+  <string name="StatusOff">FRA</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Flytilstand er utilgængelig</string>
+  <string name="BluetoothtoastText">Bluetooth er utilgængelig</string>
+  <string name="GPStoastText">GPS er utilgængelig</string>
+  <string name="WifitoastText">Wi-Fi er utilgængelig</string>
+  <string name="location_restriction_enabled">Stedsbegrænsning er aktiveret.</string>
+  <string name="apncontrol_app_name">APN-kontrol</string>
+  <string name="no_apn">Ingen APN tilgængelig</string>
+</resources>

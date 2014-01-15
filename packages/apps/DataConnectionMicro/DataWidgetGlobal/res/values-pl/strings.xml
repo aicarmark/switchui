@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Przełączanie widżetów</string>
+  <string name="gps_app_name">Przełączanie GPS</string>
+  <string name="airplane_app_name">Tryb samolotowy</string>
+  <string name="wifi_app_name">Przełączanie modułu Wi-Fi</string>
+  <string name="bluetooth_app_name">Przełączanie Bluetooth</string>
+  <string name="apn_app_name">Przełączanie APN</string>
+  <string name="data_app_name">Przełączanie danych</string>
+  <string name="widget_description">Wyświetlanie i określanie statusu trybu samolotowego</string>
+  <string name="widget_description_bt">Wyświetlanie i określanie statusu modułu Bluetooth</string>
+  <string name="widget_description_wifi">Wyświetl i kontroluj stan modułu Wi-Fi</string>
+  <string name="widget_description_gps">Wyświetlanie i określanie statusu GPS</string>
+  <string name="StatusOn">"WŁ"</string>
+  <string name="StatusOff">"WYŁ"</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Tryb samolotowy jest niedostępny</string>
+  <string name="BluetoothtoastText">Moduł Bluetooth jest niedostępny</string>
+  <string name="GPStoastText">GPS jest niedostępny</string>
+  <string name="WifitoastText">Moduł Wi-Fi jest niedostępny</string>
+  <string name="location_restriction_enabled">Ograniczenie lokalizacji jest włączone.</string>
+  <string name="apncontrol_app_name">Sterowanie APN</string>
+  <string name="no_apn">Brak dostępnych APN</string>
+</resources>

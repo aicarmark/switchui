@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:quicknote="http://schemas.android.com/apk/res/com.motorola.quicknote"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/main"
+  android:background="@drawable/bg_board_softwood">
+
+  <!-- Top Action Bar -->
+  <RelativeLayout
+      android:id="@+id/sketch_action_bar"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+      <ImageButton
+        android:id="@+id/sketch_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9px"
+        android:background="@color/transparent"
+        android:src="@drawable/sketch_btn_undo" />
+      <ImageButton
+        android:id="@+id/sketch_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sketch_undo"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/sketch_btn_redo" />
+      <ImageButton
+        android:id="@+id/sketch_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sketch_redo"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent" />
+      <View
+        android:id="@+id/pen_preview"
+        android:layout_width="@dimen/preview_bar_width"
+        android:layout_height="6px"
+        android:layout_toRightOf="@+id/sketch_redo"
+        android:layout_marginLeft="@dimen/preview_bar_margin_left"
+        android:layout_marginTop="@dimen/preview_bar_margin_top"
+        android:background="@color/black" />
+      <ImageButton
+        android:id="@+id/sketch_eraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sketch_pen"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent" />
+      <View
+        android:id="@+id/eraser_preview"
+        android:layout_width="@dimen/preview_bar_width"
+        android:layout_height="6px"
+        android:layout_toRightOf="@+id/sketch_pen"
+        android:layout_marginLeft="@dimen/preview_bar_margin_left"
+        android:layout_marginTop="@dimen/preview_bar_margin_top"
+        android:background="@color/white"
+        android:visibility="gone" />
+      <ImageButton
+        android:id="@+id/sketch_discard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7px"
+        android:background="@color/transparent"
+        android:src="@drawable/note_edit_cancel_btn" />
+      <ImageButton
+        android:id="@+id/sketch_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sketch_discard"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:src="@drawable/note_edit_ok_btn" />
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+      <LinearLayout
+          android:id="@+id/board_container"
+          android:layout_alignParentTop = "true"
+          android:layout_marginLeft="8px"
+          android:layout_marginRight="8px"
+          android:layout_marginBottom="8px"
+          android:gravity="center"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="@color/sketch_background_white"/>
+
+	  <LinearLayout android:id="@+id/pen_menu"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg_sketch_customize1"
+        android:layout_marginLeft="12dip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:visibility="gone">
+	    <LinearLayout android:id="@+id/pen_thickness"
+    	    android:orientation="horizontal"
+	        android:layout_centerVertical = "true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thickness_margin_top"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip">
+            <ImageButton
+                android:id="@+id/pen_thick_1"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_small"
+                android:background="@color/transparent"
+                android:layout_marginLeft="7dip"/>
+            <ImageButton
+                android:id="@+id/pen_thick_2"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_middle"
+                android:background="@color/transparent" 
+                android:layout_marginLeft="@dimen/thick2_margin_left"/>
+            <ImageButton
+                android:id="@+id/pen_thick_3"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_big"
+                android:background="@color/transparent"
+                android:layout_marginLeft="@dimen/thick3_margin_left"/>
+        </LinearLayout>
+	    <LinearLayout android:id="@+id/pen_color"
+    	    android:orientation="horizontal"
+    	    android:layout_gravity="center_vertical"    	    
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pen_color_margin_top"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+            <ImageButton
+                android:id="@+id/pen_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_black"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:id="@+id/pen_color_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_red"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:id="@+id/pen_color_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_yellow"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:id="@+id/pen_color_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_green"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:id="@+id/pen_color_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_blue"
+                android:background="@color/transparent" />
+            <ImageButton
+                android:id="@+id/pen_color_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/ic_color_gradient"
+                android:background="@color/transparent" />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/pen_color_gradient_bar"
+    	    android:orientation="horizontal"
+    	    android:layout_gravity="center_vertical"    	    
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="40dip"
+            android:layout_marginTop="12dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/close_pen_panel_button"
+            android:layout_width="57dip"
+            android:layout_height="50dip"
+            android:layout_gravity="right|bottom"
+            android:src="@color/transparent"
+            android:background="@color/transparent" />
+      </LinearLayout>
+
+	  <LinearLayout android:id="@+id/eraser_menu"
+	    android:orientation="vertical"
+	    android:background="@drawable/bg_sketch_customize3"
+        android:layout_marginLeft="12dip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:visibility="gone">
+	    <LinearLayout
+    	    android:orientation="horizontal"
+	        android:layout_centerVertical = "true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+            android:layout_marginTop="11dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip">
+            <ImageButton
+                android:id="@+id/eraser_thick_1"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_small"
+                android:background="@color/transparent"
+                android:layout_marginLeft="7dip"/>
+            <ImageButton
+                android:id="@+id/eraser_thick_2"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_middle"
+                android:background="@color/transparent" 
+                android:layout_marginLeft="@dimen/thick2_margin_left"/>
+            <ImageButton
+                android:id="@+id/eraser_thick_3"
+                android:layout_width="80dip"
+                android:layout_height="fill_parent"
+    	        android:layout_weight="1.0"
+                android:src="@drawable/ic_size_big"
+                android:background="@color/transparent"
+                android:layout_marginLeft="@dimen/thick3_margin_left"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/close_eraser_panel_button"
+            android:layout_width="57dip"
+            android:layout_height="50dip"
+            android:layout_gravity="right|bottom"
+            android:src="@color/transparent"
+            android:background="@color/transparent" />
+      </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

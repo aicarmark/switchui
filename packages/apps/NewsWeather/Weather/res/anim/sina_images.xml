@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--
+		android:layout_x widget night change android:layout_y widget night
+		android:layout_width widget day change android:layout_height widget
+		day android:text screen night change android:layout_marginLeft screen
+		night android:src screen day change android:animation screen day
+
+		andorid:drawable is a drawable match to the weather condition.
+	-->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<晴 android:layout_marginLeft="1dip" android:layout_marginTop="0dip"
+		android:drawable="@drawable/sunny_day"></晴>
+	<多云 android:layout_marginLeft="3dip" android:layout_marginTop="2dip"
+		android:drawable="@drawable/cloudy_day"></多云>
+	<阴 android:layout_marginLeft="3dip" android:layout_marginTop="2dip"
+		android:drawable="@drawable/cloudy_day"></阴>
+	<阵雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></阵雨>
+
+	<雷阵雨 android:layout_marginLeft="5dip" android:layout_marginTop="4dip"
+		android:drawable="@drawable/thunderstorms_day"></雷阵雨>
+	<雷阵雨伴有冰雹 android:layout_marginLeft="5dip"
+		android:layout_marginTop="4dip" android:drawable="@drawable/thunderstorms_day"></雷阵雨伴有冰雹>
+	<雷阵雨并伴有冰雹 android:layout_marginLeft="5dip"
+		android:layout_marginTop="4dip" android:drawable="@drawable/thunderstorms_day"></雷阵雨并伴有冰雹>
+
+	<雨夹雪 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></雨夹雪>
+	<小雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></小雨>
+	<中雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></中雨>
+	<大雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></大雨>
+	<暴雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></暴雨>
+	<大暴雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></大暴雨>
+	<特大暴雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></特大暴雨>
+	<小到中雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></小到中雨>
+	<中到大雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></中到大雨>
+	<大到暴雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></大到暴雨>
+
+	<阵雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></阵雪>
+	<小雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></小雪>
+	<中雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></中雪>
+	<大雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></大雪>
+	<小到中雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></小到中雪>
+	<中到大雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></中到大雪>
+	<大到暴雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></大到暴雪>
+	<暴雪 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></暴雪>
+
+	<雾 android:layout_marginLeft="9dip" android:layout_marginTop="8dip"
+		android:drawable="@drawable/frog_day"></雾>
+	<暴雾 android:layout_marginLeft="9dip" android:layout_marginTop="8dip"
+		android:drawable="@drawable/frog_day"></暴雾>
+	<浓雾 android:layout_marginLeft="9dip" android:layout_marginTop="8dip"
+		android:drawable="@drawable/frog_day"></浓雾>
+
+	<冻雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></冻雨>
+	<冰雨 android:layout_marginLeft="7dip" android:layout_marginTop="6dip"
+		android:drawable="@drawable/rain_day"></冰雨>
+	<冰雹 android:layout_marginLeft="11dip" android:layout_marginTop="10dip"
+		android:drawable="@drawable/snow_day"></冰雹>
+
+	<沙尘暴 android:layout_marginLeft="13dip" android:layout_marginTop="12dip"
+		android:drawable="@drawable/sand_storm_day"></沙尘暴>
+	<浮尘 android:layout_marginLeft="13dip" android:layout_marginTop="12dip"
+		android:drawable="@drawable/sand_storm_day"></浮尘>
+	<扬沙 android:layout_marginLeft="13dip" android:layout_marginTop="12dip"
+		android:drawable="@drawable/sand_storm_day"></扬沙>
+	<强沙尘暴 android:layout_marginLeft="13dip" android:layout_marginTop="12dip"
+		android:drawable="@drawable/sand_storm_day"></强沙尘暴>
+	<霾 android:layout_marginLeft="9dip" android:layout_marginTop="8dip"
+		android:drawable="@drawable/frog_day"></霾>
+	<烟 android:layout_marginLeft="9dip" android:layout_marginTop="8dip"
+		android:drawable="@drawable/frog_day"></烟>
+</animation-list>

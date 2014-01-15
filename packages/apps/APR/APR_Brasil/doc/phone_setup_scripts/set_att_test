@@ -1,0 +1,12 @@
+#!/bin/bash
+
+device_id=$1
+
+if [ $device_id ]; then
+   setup_test $device_id ATT 2> /dev/null
+else
+   echo "Specify Device ID"
+fi
+
+
+

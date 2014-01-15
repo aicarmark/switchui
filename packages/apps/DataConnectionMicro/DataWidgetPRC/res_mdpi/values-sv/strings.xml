@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Växla mellan widgetar</string>
+  <string name="gps_app_name">GPS-växling</string>
+  <string name="airplane_app_name">Flygplansläges-\nväxling</string>
+  <string name="wifi_app_name">Wi-Fi-växling</string>
+  <string name="bluetooth_app_name">Bluetooth-växling</string>
+  <string name="apn_app_name">APN-växling</string>
+  <string name="data_app_name">Dataväxling</string>
+  <string name="widget_description">Visa och kontrollera status för flygplansläge</string>
+  <string name="widget_description_bt">Visa och kontrollera Bluetooth-status</string>
+  <string name="widget_description_wifi">Visa och kontrollera Wi-Fi-status</string>
+  <string name="widget_description_gps">Visa och kontrollera GPS-status</string>
+  <string name="StatusOn">PÅ</string>
+  <string name="StatusOff">AV</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Flygplansläget är inte tillgängligt</string>
+  <string name="BluetoothtoastText">Bluetooth är inte tillgängligt</string>
+  <string name="GPStoastText">GPS är inte tillgängligt</string>
+  <string name="WifitoastText">Wi-Fi är inte tillgängligt</string>
+  <string name="location_restriction_enabled">Platsbegränsningen är aktiverad.</string>
+  <string name="apncontrol_app_name">APN-kontroll</string>
+  <string name="no_apn">Inget APN är tillgänglig</string>
+</resources>

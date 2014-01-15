@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Data Collection</string>
+    <string name="permission_perf_stats_write_label">Zapisivanje postavki statistike radnih značajki</string>
+    <string name="permission_perf_stats_write_desc">Aplikaciji omogućava zapisivanje statistike radnih značajki.</string>
+
+</resources>

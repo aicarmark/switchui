@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">"Dateien"</string>
+    <string name="add_server">Server hinzufügen</string>
+    <string name="add_samba_server_title">Neuer Samba-Server</string>
+    <string name="edit_samba_server_title">Samba-Server bearbeiten</string>
+    <string name="add_server_hostname">Servername oder IP-Adresse</string>
+    <string name="add_server_username">Nutzername</string>
+    <string name="add_server_password">Passwort</string>
+    <string name="confirm_password">Passwort bestätigen</string>
+    <string name="server_display_name">Name:</string>
+    <string name="server_logon_failure">Fehler bei Anmeldung</string>
+    <string name="server_reauth_title">Authentifizierungsdaten eingeben</string>
+    <string name="server_logon_failure_indication">Geben Sie die Authentifizierungsdaten ein.</string>
+    <string name="remote_files">Remote-Ordner</string>
+    <string name="menu_edit">Bearbeiten</string>
+    <string name="menu_remove">Entfernen</string>
+    <string name="file_transfer">Dateiübertragung:</string>
+    <string name="file_transfer_complete">Übertragung abgeschlossen:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">Übertragung abgeschlossen: %d Datei</item>
+        <item quantity="other">Übertragung abgeschlossen: %d Dateien</item>
+    </plurals>
+    <string name="host_name_empty_indicator">Geben Sie einen Hostnamen ein.</string>
+    <string name="not_found_network_name">Der Netzwerkname wurde nicht gefunden.</string>
+    <string name="server_not_reachable">Der Server ist nicht erreichbar.</string>
+    <string name="no_group_found">Es wurde keine Gruppe gefunden. Versuchen Sie es erneut.</string>
+    <string name="external_sdcard">Externe SD-Karte</string>
+    <string name="menu_new_folder">Neuer Ordner</string>
+    <string name="menu_delete">Löschen</string>
+    <string name="menu_rename">Umbenennen</string>
+    <string name="menu_send">Weiterleiten</string>
+    <string name="menu_open">Öffnen</string>
+    <string name="menu_move">Verschieben</string>
+    <string name="menu_copy">Kopieren</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_print">Drucken</string>
+    <string name="menu_compress">Komprimieren</string>
+    <string name="menu_paste">Kopieren</string>
+    <string name="menu_sort_by">Sortieren nach</string>
+    <string name="menu_sort_by_name">Nach Name</string>
+    <string name="menu_sort_by_type">Nach Typ</string>
+    <string name="menu_sort_by_date">Nach Datum</string>
+    <string name="menu_sort_by_size">Nach Größe</string>
+    <string name="menu_unzip">Extrahieren</string>
+    <string name="menu_view_list">Listenansicht</string>
+    <string name="menu_view_grid">Rasteransicht</string>
+    <string name="menu_view_column">Spaltenansicht</string>
+    <string name="menu_unselect_all">Alle abwählen</string>
+    <string name="select_file">Datei auswählen</string>
+    <string name="select">Auswählen</string>
+    <string name="file_info_title">Dateieigenschaften</string>
+    <string name="file_info_title_dir">Verzeichniseigenschaften</string>
+    <string name="create_new_folder">Neuen Ordner erstellen</string>
+    <string name="create_new_zip_file">Neue Zip-Datei</string>
+    <string name="create_compress_encryption_file">Komprimieren und Verschlüsseln</string>
+    <string name="compress_encryption_file">Legen Sie ein Passwort fest, um eine passwortgeschützte ZIP-Datei zu erstellen.</string>
+    <string name="folder_name">Ordnername</string>
+    <string name="file_name">Dateiname</string>
+    <string name="this_folder_is_empty">Dieser Ordner ist leer.</string>
+    <string name="sd_is_used_by_other">Die Speicherkarte befindet sich im USB-Massenspeichermodus. Beenden Sie diesen Modus, um auf die Speicherkarte zuzugreifen.</string>
+    <string name="file_renamed">Datei umbenannt</string>
+    <string name="folder_renamed">Ordner umbenannt</string>
+    <plurals name="move_success">
+        <item quantity="one">%1$d Element verschoben</item>
+        <item quantity="other">%1$d Elemente verschoben</item>
+    </plurals>
+    <string name="error_moving">Beim Verschieben ist ein Fehler aufgetreten.</string>
+    <plurals name="copy_success">
+        <item quantity="one">%1$d Element kopiert</item>
+        <item quantity="other">%1$d Elemente kopiert</item>
+    </plurals>
+    <string name="error_copying">Beim Kopieren ist ein Fehler aufgetreten.</string>
+    <plurals name="delete_success">
+        <item quantity="one">%1$d Element gelöscht</item>
+        <item quantity="other">%1$d Elemente gelöscht</item>
+    </plurals>
+    <string name="delete_failed">Beim Löschen ist ein Fehler aufgetreten.</string>
+    <string name="really_delete_selected">Alle ausgewählten Elemente werden mitsamt Inhalt gelöscht. Möchten Sie wirklich fortfahren?</string>
+    <string name="paste_button">Einfügen</string>
+    <string name="place_button">Ort</string>
+    <string name="select_folder">Ordner auswählen</string>
+    <string name="copied_file_name">Kopie von %s</string>
+    <string name="copied_file_name_2">Kopie %1$d von %2$s</string>
+    <string name="loading">Ladevorgang...</string>
+    <string name="deleting">Löschvorgang...</string>
+    <string name="open_wifi">WLAN öffnen</string>
+    <string name="wifi">WLAN</string>
+    <string name="wifi_unavaiable">Keine WLAN-Verbindung vorhanden. Möchten Sie jetzt eine Verbindung herstellen?</string>
+    <string name="check_wifi">Überprüfen Sie die WLAN-Verbindung.</string>
+    <string name="shared_folders">Remote-Ordner</string>
+    <string name="sd_card">SD-Karte</string>
+    <string name="sd_missing">Keine Speicherkarte vorhanden. Legen Sie zum Lesen von Dateien eine Speicherkarte ein.</string>
+    <string name="error_creating_new_folder">Neuer Ordner konnte nicht erstellt werden.</string>
+    <string name="error_renaming_file">Datei konnte nicht umbenannt werden.</string>
+    <string name="error_renaming_folder">Ordner konnte nicht umbenannt werden.</string>
+    <string name="error_file_does_not_exists">Die Datei ist nicht vorhanden.</string>
+    <string name="send_not_available">Dieser Dateityp konnte nicht gesendet werden.</string>
+    <string name="application_not_available">Dieser Dateityp konnte nicht geöffnet werden.</string>
+    <string name="copy_text">Text kopieren</string>
+    <string name="anonymous">Anonym</string>
+    <string name="no_server_found">Es wurde kein Server gefunden. Versuchen Sie es erneut.</string>
+    <string name="Overwrite_Zip_File">Bestehende Zip-Datei überschreiben?</string>
+    <string name="Overwrite_Contents">Inhalte des bestehenden Ordners überschreiben?</string>
+    <string name="Unzipping">Extrahierung...</string>
+    <string name="Zipping">Komprimierung...</string>
+    <string name="zip_file_name">Dateiname</string>
+    <string name="create">Erstellen</string>
+    <string name="extract">Extrahieren</string>
+    <string name="overwrite">Überschreiben</string>
+    <string name="error_zipping_file">Beim Komprimieren der Datei ist ein Fehler aufgetreten.</string>
+    <string name="error_unzip_file">Beim Extrahieren der Datei ist ein Fehler aufgetreten.</string>
+    <string name="invalid_zip_name">%1$s kann nicht abgerufen werden. Weisen Sie der Datei einen gültigen Namen zu (d. h. filename%2$s), und versuchen Sie es erneut.</string>
+    <string name="folder">Ordner: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">Inhalt: %1$d Element</item>
+        <item quantity="other">Inhalt: %1$d Elemente</item>
+    </plurals>
+    <string name="size">Größe: </string>
+    <string name="last_modified_at">Geändert am: </string>
+    <string name="readable_yes">Leseberechtigung: Ja</string>
+    <string name="readable_no">Leseberechtigung: NEIN</string>
+    <string name="writable_yes">Schreibberechtigung: Ja</string>
+    <string name="writable_no">Schreibberechtigung: Nein</string>
+    <string name="hidden_yes">Verborgen: Ja</string>
+    <string name="hidden_no">Verborgen: Nein</string>
+    <string name="download_dialog_title">Dateiübertragung</string>
+    <string name="transfer_complete">Übertragung abgeschlossen:</string>
+    <string name="transfer_progress">Übertragungsfortschritt</string>
+    <string name="to">An:" </string>
+    <string name="hundred_percent">100%</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="crop_Image_error">Dateityp wird nicht unterstützt!</string>
+    <string name="internal_device_storage">Interner Gerätespeicher</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="sd_unmounted">Die SD-Karte ist nicht bereitgestellt. Stellen Sie die SD-Karte bereit, um die Dateien zu lesen.</string>
+    <string name="internal_device_storage_unmounted">Der interne Gerätespeicher ist nicht bereitgestellt. Stellen Sie den internen Gerätespeicher bereit, um Dateien zu lesen.</string>
+    <string name="protected_content">Geschützte Inhalte</string>
+    <plurals name="item">
+        <item quantity="one">%1$d Element</item>
+        <item quantity="other">%1$d Elemente</item>
+    </plurals>
+    <string name="size_k">K</string>
+    <string name="rename_failed_title">Fehler beim Umbenennen</string>
+    <string name="renaming_exist">Der Name \"%s\" ist bereits vergeben. Wählen Sie einen anderen Namen.</string>
+    <string name="renaming_empty">Es wurde kein Name eingegeben.</string>
+    <string name="renaming_invalid">Der eingegebene Name enthält mindestens ein ungültiges Zeichen. Wählen Sie einen anderen Namen.</string>
+    <string name="renaming_file_empty">Ungültiger Dateiname. Bitte geben Sie einen Namen ein, der nur aus Buchstaben "und/oder" Ziffern besteht.</string>
+    <string name="renaming_folder_empty">Ungültiger Ordnername. Bitte geben Sie einen Namen ein, der nur aus Buchstaben "und/oder" Ziffern besteht.</string>
+    <string name="default_group">Unbekannte Gruppe</string>
+    <string name="search_hint">Dateien suchen</string>
+    <string name="menu_search">Suchen</string>
+    <string name="search_folder">Ordner für die Suche auswählen</string>
+    <string name="sd_missing_search">Keine Speicherkarte vorhanden. Legen Sie zum Suchen von Dateien eine Speicherkarte ein.</string>
+    <string name="search_progess">Suche nach \"%1$s\" in \"%2$s\"</string>
+    <string name="settings_description">Dateien und Ordner</string>
+    <string name="search_result">Ergebnisse in \"%s\"</string>
+    <string name="empty_search_result">Keine Ergebnisse gefunden</string>
+    <string name="renaming_folder_exist">Der Ordnername ist bereits vorhanden. Bitte wählen Sie einen anderen Namen.</string>
+    <string name="enter_Credentials">Anmeldeinformationen eingeben</string>
+    <string name="name">"Name"</string>
+    <string name="date">"Datum"</string>
+    <string name="size_v">Größe</string>
+    <string name="type">"Typ"</string>
+    <string name="typ_folder">Ordner</string>
+    <string name="typ_file">Datei</string>
+    <string name="typ_image">Bild</string>
+    <string name="typ_audio">Audio</string>
+    <string name="typ_video">Video</string>
+    <string name="typ_text">Text</string>
+    <string name="typ_doc">Dokument</string>
+    <string name="typ_zip">Zip</string>
+    <string name="typ_ppt">Präsentation</string>
+    <string name="typ_xml">Tabellendokument</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">Webseite</string>
+    <string name="typ_msg">Nachricht</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">Verschlüsselungstyp</string>
+    <string name="zip_encryption_type_normal">Keine Verschlüsselung</string>
+    <string name="zip_encryption_type_legacy">Zip-2.0-Verschlüsselung (veraltet)</string>
+    <string name="zip_encryption_type_128">128-Bit-AES-Verschlüsselung</string>
+    <string name="zip_encryption_type_256">256-Bit-AES-Verschlüsselung</string>
+    <string name="show_password">Passwort anzeigen</string>
+    <string name="password_protected_zip">Passwortgeschützt. Zum Extrahieren Passwort eingeben.</string>
+    <string name="password_cannot_be_blank">Passwort darf nicht leer sein.</string>
+    <string name="stop_zip_file">Komprimierung abgebrochen.</string>
+    <string name="stop_unzip_file">Extrahieren abgebrochen</string>
+    <string name="zip_canceling">Komprimieren wird abgebrochen...</string>
+    <string name="unzip_canceling">Extrahieren wird abgebrochen...</string>
+    <string name="zip_existing_zip_file">Auswahl enthält eine vorhandene ZIP-Datei. Die vorhandene ZIP-Datei wird nicht zur neuen ZIP-Datei hinzugefügt.</string>
+    <string name="menu_multimode">Mehrere auswählen</string>
+    <string name="selected">%d ausgewählt</string>
+    <string name="copied">%d kopiert</string>
+    <string name="usb_storage">USB-Speicher</string>
+    <string name="devices">Geräte</string>
+    <string name="shortcuts">Verknüpfte Ordner</string>
+    <string name="recentfile">Zuletzt verwendete Dateien</string>
+    <string name="moving">Verschieben läuft...</string>
+    <string name="copying">Kopieren...</string>
+    <string name="menu_add_shortcut">Zu verknüpften Ordnern hinzufügen</string>
+    <string name="recent_file_deleted">Das ursprüngliche Element kann nicht gefunden werden.</string>
+    <string name="shortcut_deleted">Das ursprüngliche Element kann nicht gefunden werden. Möchten Sie diese Verknüpfung löschen?</string>
+    <string name="shortcut_storage_unmount">Das ursprüngliche Element kann nicht gefunden werden, weil das Speichergerät nicht angeschlossen ist. Möchten Sie diese Verknüpfung löschen?</string>
+    <string name="recent_file_storage_unmount">Das ursprüngliche Element kann nicht gefunden werden, weil das Speichergerät nicht angeschlossen ist.</string>
+    <string name="menu_delete_shorcut">Aus verknüpften Ordnern löschen</string>
+    <string name="menu_rename_shorcut">Verknüpften Ordner umbenennen</string>
+    <string name="message_delete_shorcut">Möchten Sie diesen verknüpften Ordner aus der Liste der verknüpften Ordner löschen? Das Löschen des verknüpften Ordners hat keine Auswirkung auf den ursprünglichen Ordner.</string>
+    <string name="message_rename_shorcut">Das Umbenennen des verknüpften Ordners hat keine Auswirkung auf den ursprünglichen Ordner.</string>
+    <string name="availmem_gb">%1$s GB verfügbar</string>
+    <string name="move_shadow">Verschieben</string>
+    <string name="no_tranfer_item">Derzeit gibt es kein Element zum Übertragen.</string>
+    <string name="done_button">Fertig</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">Kopieren von %1$d Element nach:</item>
+        <item quantity="other">Kopieren von %1$d Elementen nach:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">Verschieben von %1$d Element nach:</item>
+        <item quantity="other">Verschieben von %1$d Elementen nach:</item>
+    </plurals>
+    <string name="waiting">Wartend</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">Wird abgebrochen...</string>
+    <string name="confirm_delete">Löschen bestätigen</string>
+    <string name="size_mb">%1$s MB</string>
+    <string name="error_occurred">Angehalten, weil ein Fehler aufgetreten ist</string>
+    <string name="copy_stopped">Kopieren angehalten</string>
+    <string name="move_stopped">Verschieben angehalten</string>
+    <string name="compress_using">Verschlüsselung beim Komprimieren</string>
+
+</resources>

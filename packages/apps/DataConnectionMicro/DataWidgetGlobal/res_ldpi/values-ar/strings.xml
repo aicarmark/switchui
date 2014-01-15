@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">تبديل واجهات المستخدم</string>
+  <string name="gps_app_name">تبديل GPS</string>
+  <string name="airplane_app_name">تبديل وضع السفر بالطائرة</string>
+  <string name="wifi_app_name">تبديل Wi-Fi</string>
+  <string name="bluetooth_app_name">تبديل Bluetooth</string>
+  <string name="apn_app_name">تبديل APN</string>
+  <string name="data_app_name">تبديل البيانات</string>
+  <string name="widget_description">عرض والتحكم في حالة وضع السفر بالطائرة</string>
+  <string name="widget_description_bt">عرض والتحكم في حالة Bluetooth</string>
+  <string name="widget_description_wifi">عرض حالة Wi-Fi والتحكم فيها</string>
+  <string name="widget_description_gps">عرض والتحكم في حالة GPS</string>
+  <string name="StatusOn">تشغيل</string>
+  <string name="StatusOff">إيقاف</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">وضع السفر بالطائرة غير متاح</string>
+  <string name="BluetoothtoastText">Bluetooth غير متاح</string>
+  <string name="GPStoastText">GPS غير متاح</string>
+  <string name="WifitoastText">Wi-Fi غير متاح</string>
+  <string name="location_restriction_enabled">تم تمكين خاصية تقييد الموقع.</string>
+  <string name="apncontrol_app_name">التحكم في APN</string>
+  <string name="no_apn">لا توجد APN متاحة</string>
+</resources>

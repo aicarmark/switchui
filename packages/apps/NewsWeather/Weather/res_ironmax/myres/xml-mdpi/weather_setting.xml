@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_weather_settings"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<Preference android:key="date_and_time"
+		android:title="@string/date_and_time"
+			
+		>
+	</Preference>
+	<Preference android:key="country_and_city"
+		android:title="@string/city_and_country"
+		android:summary="@string/choose_prefer_cities" 		
+		>
+	</Preference>
+	
+	<com.motorola.mmsp.weather.sinaweather.app.WeatherSettingPreference android:key="temperature_uint"
+	    xmlns:weatherapp="http://schemas.android.com/apk/res/com.motorola.mmsp.weather"
+		android:title="@string/temperature_uint" 
+		android:entries="@array/temperature_uint_entries"
+		android:entryValues="@array/temperature_uint" 
+		android:dialogTitle="@string/temperature_uint"
+		weatherapp:settingName="temperature_uint"/>
+	
+	<com.motorola.mmsp.weather.sinaweather.app.WeatherSettingPreference android:key="setting_update_frequency"
+	    xmlns:weatherapp="http://schemas.android.com/apk/res/com.motorola.mmsp.weather"
+		android:title="@string/update_frequency" 
+		android:entries="@array/setting_update_frequency_entries"
+		android:entryValues="@array/setting_update_frequency" 
+		android:dialogTitle="@string/update_frequency"
+		weatherapp:settingName="setting_update_frequency"/>
+	
+	<!--  
+	<Preference android:key="about"
+		android:title="@string/about"
+		android:summary="@string/branding_info" 		
+		>
+	</Preference>
+	-->
+	
+	<!--  
+	<CheckBoxPreference android:key="roaming"
+		android:title="@string/roaming_setting" 
+		android:summaryOff="@string/forbid_roaming_network" 
+		android:summaryOn="@string/allow_roaming_network" />
+	-->
+</PreferenceScreen>

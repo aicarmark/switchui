@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Užduočių tvarkytuvė"</string>
+  <string name="tabTasks">"Programos"</string>
+  <string name="tabProcesses">"Procesai"</string>
+  <string name="buttonEnd">"Baigti"</string>
+  <string name="buttonRefresh">"Atnaujinti"</string>
+  <string name="menuSwitch">"Perjungti į"</string>
+  <string name="menuEndTask">"Baigti užduotį"</string>
+  <string name="menuCancel">"Atšaukti"</string>
+  <string name="textAvailableMemory">"Laisvos atminties:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Programų skaičius:"</string>
+  <string name="loading">Įkeliama\u2026</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/pref_current_img" 
+    android:layout_width="35dip" 
+    android:layout_height="39dip"  
+    android:layout_gravity="center_vertical" 
+    android:focusable="false" 
+    android:clickable="false" 
+    android:background="@drawable/expander_ic_minimized" 
+    android:padding="4dip" 
+    /> 

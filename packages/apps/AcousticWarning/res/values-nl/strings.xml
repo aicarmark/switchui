@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Akoestische waarschuwing</string>
+  <string name="title">Mediavolume</string>
+  <string name="warning_text">Wanneer u zich gedurende een lange periode blootstelt aan een hoog volume, kan dit schadelijk zijn voor uw gehoor.\n\nHet volume van uw muziek is aangepast tot onder het aanbevolen niveau.</string>
+</resources>

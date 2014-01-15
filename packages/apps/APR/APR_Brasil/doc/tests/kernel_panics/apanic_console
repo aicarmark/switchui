@@ -1,0 +1,808 @@
+<6>[    0.000000] Initializing cgroup subsys cpu
+<5>[    0.000000] Linux version 2.6.29-omap1 (rkg683@ca25rhe74) (gcc version 4.4.0 (GCC) ) #1 Tue Sep 8 21:03:19 PDT 2009
+<4>[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c5387f
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+<4>[    0.000000] Machine: mapphone_
+<4>[    0.000000] parse_tag_powerup_reason: powerup reason=0x00004000
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000402
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000403
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000404
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000405
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000406
+<6>[    0.000000] parse_tag_mbm_version: mbm_version=0x00009030
+<6>[    0.000000] parse_tag_mbm_loader_version: mbm_loader_version=0x000005a0
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000409
+<6>[    0.000000] flat_dev_tree_address=0x85960000, flat_dev_tree_size == 0x00000834
+<4>[    0.000000] Ignoring unrecognised tag 0xf100040b
+<4>[    0.000000] Ignoring unrecognised tag 0xf100040c
+<4>[    0.000000] Ignoring unrecognised tag 0xf100040d
+<6>[    0.000000] parse_tag_battery_status_at_boot: battery_status_at_boot=0x00000001
+<4>[    0.000000] Ignoring unrecognised tag 0xf100040f
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000410
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000411
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000412
+<4>[    0.000000] Ignoring unrecognised tag 0xf1000413
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<7>[    0.000000] On node 0 totalpages: 62464
+<7>[    0.000000] free_area_init_node: node 0, pgdat c04b988c, node_mem_map c05a0000
+<7>[    0.000000]   Normal zone: 488 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 61976 pages, LIFO batch:15
+<6>[    0.000000] OMAP3430 ES3.1
+<6>[    0.000000] SRAM: Mapped pa 0x40200000 to va 0xe3000000 size: 0x100000
+<6>[    0.000000] Reserving 4194304 bytes SDRAM for VRAM
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 61976
+<5>[    0.000000] Kernel command line: console=ttyS2,115200n8 console=ttyMTD10 rw mem=244M@0x80C00000 init=/init ip=off brdrev=P2A androidboot.bootloader=0x0000 mtdparts=omap2-nand.0:1536k@2176k(pds),384k@4480k(cid),384k@7424k(misc),3584k(boot)ro,4608k@15232k(recovery),9344k(cdrom),130688k(system),90m@160256k(cache),267392k(userdata),1536k(cust),2m@521728k(kpanic)
+<3>[    0.000000] Unknown boot option `androidboot.bootloader=0x0000': ignoring
+<6>[    0.000000] Clocking rate (Crystal/DPLL/ARM core): 26.0/321/550 MHz
+<6>[    0.000000] Reprogramming SDRC
+<6>[    0.000000] GPMC revision 5.0
+<6>[    0.000000] GPMC Prefetch is enabled....
+<6>[    0.000000] IRQ: Found an INTC at 0xd8200000 (revision 4.0) with 96 interrupts
+<6>[    0.000000] Total of 96 interrupts on 1 active controller
+<6>[    0.000000] OMAP34xx GPIO hardware version 2.5
+<4>[    0.000000] PID hash table entries: 1024 (order: 10, 4096 bytes)
+<6>[    0.000000] OMAP clockevent source: GPTIMER1 at 32768 Hz
+<6>[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.000000] Memory: 244MB = 244MB total
+<5>[    0.000000] Memory: 231160KB available (4356K code, 1156K data, 204K init)
+<6>[    0.000000] Calibrating delay loop... 549.33 BogoMIPS (lpj=2146304)
+<4>[    0.000000] Mount-cache hash table entries: 512
+<6>[    0.000000] Initializing cgroup subsys debug
+<6>[    0.000000] Initializing cgroup subsys cpuacct
+<6>[    0.000000] Initializing cgroup subsys freezer
+<6>[    0.000000] CPU: Testing write buffer coherency: ok
+<6>[    0.000000] net_namespace: 952 bytes
+<6>[    0.000000] regulator: core version 0.5
+<6>[    0.000000] NET: Registered protocol family 16
+<6>[    0.000000] Device tree prop padinit override done
+<6>[    0.000000] Device tree prop padwkupsinit override done
+<6>[    0.000000] Device tree prop offmodeinit override done
+<6>[    0.000000] Device tree prop offmodewkupsinit override done
+<6>[    0.000000] GPIO mapping write: pin = 28, name = akm8973_reset
+<6>[    0.000000] GPIO mapping write: pin = 92, name = als_int
+<6>[    0.000000] GPIO mapping write: pin = 175, name = akm8973_int
+<6>[    0.000000] GPIO mapping write: pin = 179, name = bt_reset_b
+<6>[    0.000000] GPIO mapping write: pin = 8, name = bt_wake_b
+<6>[    0.000000] GPIO mapping write: pin = 178, name = bt_host_wake_b
+<6>[    0.000000] GPIO mapping write: pin = 186, name = wlan_reset
+<6>[    0.000000] GPIO mapping write: pin = 100, name = silence_data
+<6>[    0.000000] GPIO mapping write: pin = 181, name = vib_control_en
+<6>[    0.000000] GPIO mapping write: pin = 176, name = power_off
+<6>[    0.000000] GPIO mapping write: pin = 99, name = touch_panel_int
+<6>[    0.000000] GPIO mapping write: pin = 42, name = fm_enable
+<6>[    0.000000] DT overwrite GPIO Mapping done!
+<6>[    0.000000] GPIO Mapping init done!
+<6>[    0.000000] cpcap init size = 3
+<6>[    0.000000] CPCAP: Overwrite reg [46] setting!
+<6>[    0.000000] CPCAP: Overwrite reg [54] setting!
+<6>[    0.000000] CPCAP: Overwrite reg [55] setting!
+<6>[    0.000000] cpcap init size = 7
+<6>[    0.000000] CPCAP: Overwrite regulator init [2]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [4]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [9]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [10]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [11]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [14]!
+<6>[    0.000000] CPCAP: Overwrite regulator init [15]!
+<6>[    0.000000] cpcap init size = 6
+<6>[    0.000000] CPCAP: Overwrite regulator mode [2]!
+<6>[    0.000000] CPCAP: Overwrite regulator mode [4]!
+<6>[    0.000000] CPCAP: Overwrite regulator mode [9]!
+<6>[    0.000000] CPCAP: Overwrite regulator mode [10]!
+<6>[    0.000000] CPCAP: Overwrite regulator mode [11]!
+<6>[    0.000000] CPCAP: Overwrite regulator mode [18]!
+<6>[    0.000000] mapphone_als_init:Initializing
+<6>[    6.586242] OMAP DMA hardware revision 4.0
+<6>[    6.586334] Reserving DMA channels 0 and 1 for HS ROM code
+<4>[    6.630401] bio: create slab <bio-0> at 0
+<6>[    6.632965] omap-uart.1: ttyS0 at MMIO 0x4806a000 (irq = 72) is a OMAP UART1
+<6>[    6.633544] omap-uart.2: ttyS1 at MMIO 0x4806c000 (irq = 73) is a OMAP UART2
+<6>[    6.634033] omap-uart.3: ttyS2 at MMIO 0x49020000 (irq = 74) is a OMAP UART3
+<6>[    6.634063] console [ttyS2] enabled
+<6>[    7.186859] i2c_omap i2c_omap.1: bus 1 rev3.12 at 400 kHz
+<6>[    7.195404] i2c_omap i2c_omap.2: bus 2 rev3.12 at 400 kHz
+<6>[    7.213806] i2c_omap i2c_omap.3: bus 3 rev3.12 at 400 kHz
+<6>[    7.226928] regulator: sw5: 5050 mV 
+<6>[    7.231781] regulator: vusb: 3300 mV 
+<6>[    7.236694] regulator: vcam: 2900 mV 
+<6>[    7.241638] regulator: vcsi: 1800 mV 
+<6>[    7.246490] regulator: vdac: 1800 mV 
+<6>[    7.251342] regulator: vdig: 1875 mV 
+<6>[    7.256347] regulator: vfuse: 1500 <--> 3150 mV 
+<6>[    7.262268] regulator: vhvio: 2775 mV 
+<6>[    7.267181] regulator: vsdio: 2900 mV 
+<6>[    7.272369] regulator: vpll: 1800 mV 
+<6>[    7.277221] regulator: vrf1: 2775 mV 
+<6>[    7.282165] regulator: vrf2: 2775 mV 
+<6>[    7.287200] regulator: vrfref: 2775 mV 
+<6>[    7.292205] regulator: vwlan1: 1800 <--> 1900 mV 
+<6>[    7.298187] regulator: vwlan2: 3000 mV 
+<6>[    7.303344] regulator: vsim: 1800 <--> 2900 mV 
+<6>[    7.309143] regulator: vsimcard: 1800 <--> 2900 mV 
+<6>[    7.315246] regulator: vvib: 1300 <--> 3000 mV 
+<6>[    7.321197] regulator: vaudio: 2775 mV normal standby
+<6>[    7.333953] cpcap_usb cpcap_usb: Initialized CPCAP USB module
+<6>[    7.341644] usbcore: registered new interface driver usbfs
+<6>[    7.348327] usbcore: registered new interface driver hub
+<6>[    7.354370] usbcore: registered new device driver usb
+<6>[    7.369018] Bluetooth: Core ver 2.15
+<6>[    7.373413] NET: Registered protocol family 31
+<6>[    7.378173] Bluetooth: HCI device and connection manager initialized
+<6>[    7.384857] Bluetooth: HCI socket layer initialized
+<7>[    7.393585] Switched to high resolution mode on CPU 0
+<6>[    7.394470] musb_hdrc: version 6.0, musb-dma, otg (peripheral+host), debug=0
+<7>[    7.402404] musb_hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine (X), bulk split (X), HB-ISO Rx (X), HB-ISO Tx (X), SoftConn)
+<7>[    7.402435] musb_hdrc: MHDRC RTL version 1.400 
+<7>[    7.402435] musb_hdrc: setup fifo_mode 4
+<7>[    7.402465] musb_hdrc: 29/31 max ep, 15424/16384 memory
+<7>[    7.402496] musb_hdrc: hw_ep 0shared, max 64
+<7>[    7.402496] musb_hdrc: hw_ep 1tx, max 512
+<7>[    7.402496] musb_hdrc: hw_ep 1rx, max 512
+<7>[    7.402526] musb_hdrc: hw_ep 2tx, max 512
+<7>[    7.402526] musb_hdrc: hw_ep 2rx, max 512
+<7>[    7.402526] musb_hdrc: hw_ep 3tx, max 512
+<7>[    7.402557] musb_hdrc: hw_ep 3rx, max 512
+<7>[    7.402557] musb_hdrc: hw_ep 4tx, max 512
+<7>[    7.402587] musb_hdrc: hw_ep 4rx, max 512
+<7>[    7.402587] musb_hdrc: hw_ep 5tx, max 512
+<7>[    7.402587] musb_hdrc: hw_ep 5rx, max 512
+<7>[    7.402618] musb_hdrc: hw_ep 6tx, max 512
+<7>[    7.402618] musb_hdrc: hw_ep 6rx, max 512
+<7>[    7.402618] musb_hdrc: hw_ep 7tx, max 512
+<7>[    7.402648] musb_hdrc: hw_ep 7rx, max 512
+<7>[    7.402648] musb_hdrc: hw_ep 8tx, max 512
+<7>[    7.402679] musb_hdrc: hw_ep 8rx, max 512
+<7>[    7.402679] musb_hdrc: hw_ep 9tx, max 512
+<7>[    7.402679] musb_hdrc: hw_ep 9rx, max 512
+<7>[    7.402709] musb_hdrc: hw_ep 10tx, max 512
+<7>[    7.402709] musb_hdrc: hw_ep 10rx, max 512
+<7>[    7.402709] musb_hdrc: hw_ep 11tx, max 512
+<7>[    7.402740] musb_hdrc: hw_ep 11rx, max 512
+<7>[    7.402740] musb_hdrc: hw_ep 12tx, max 512
+<7>[    7.402770] musb_hdrc: hw_ep 12rx, max 512
+<7>[    7.402770] musb_hdrc: hw_ep 13tx, max 512
+<7>[    7.402770] musb_hdrc: hw_ep 13rx, max 512
+<7>[    7.402801] musb_hdrc: hw_ep 14shared, max 1024
+<7>[    7.402801] musb_hdrc: hw_ep 15shared, max 1024
+<6>[    7.402832] musb_hdrc: USB OTG mode controller at d80ab000 using DMA, IRQ 92
+<6>[    7.411163] NET: Registered protocol family 2
+<6>[    7.416046] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    7.424194] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+<6>[    7.432006] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+<6>[    7.438873] TCP: Hash tables configured (established 8192 bind 8192)
+<6>[    7.445556] TCP reno registered
+<6>[    7.449340] NET: Registered protocol family 1
+<6>[    7.457214] checking if image is initramfs... it is
+<6>[    7.542633] Freeing initrd memory: 212K
+<6>[    7.549713] dspbridge_init: 600000 bytes @ 81800000
+<4>[    7.556335] mapphone_wifi_init: start
+<6>[    7.560791] gpio_dev_size = 4
+<6>[    7.563903] GPIODev: Overwrite device [gps_reset] setting!
+<6>[    7.569702] GPIODev: Overwrite device [gps_standby] setting!
+<6>[    7.575805] GPIODev: Add new device [bt_wake] setting!
+<6>[    7.581207] GPIODev: Add new device [bt_hostwake] setting!
+<4>[    7.587432] NetWinder Floating Point Emulator V0.97 (double precision)
+<6>[    7.604675] ashmem: initialized
+<5>[    7.608581] VFS: Disk quotas dquot_6.5.2
+<4>[    7.612854] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+<4>[    7.620056] yaffs Sep  8 2009 21:00:47 Installing. 
+<6>[    7.625244] msgmni has been set to 452
+<6>[    7.634887] alg: No test for stdrng (krng)
+<6>[    7.639373] io scheduler noop registered
+<6>[    7.643768] io scheduler cfq registered (default)
+<6>[    7.706146] OMAP DSS rev 2.0
+<6>[    7.709259] OMAP DISPC rev 3.0
+<6>[    7.712646] OMAP DSI rev 1.0
+<7>[    7.716705] sholes-panel: sholes_panel_init
+<7>[    7.717041] sholes-panel: probe
+<6>[    7.722442] GPIODev init successfully 
+<4>[    7.727447] SGX clock speed 107000000l
+<6>[    7.750122] brd: module loaded
+<6>[    7.762054] loop: module loaded
+<6>[    7.766662] input: compass as /devices/virtual/input/input0
+<6>[    7.774932] <6>LIS331DLH accelerometer driver
+<6>[    7.781494] input: accelerometer as /devices/virtual/input/input1
+<6>[    7.788513] lis331dlh 2-0019: lis331dlh probed
+<6>[    7.800903] ts27010 mux registered
+<6>[    7.805328] Loaded SysPanic device driver
+<6>[    7.863281] Android kernel panic handler initialized (bind=kpanic)
+<6>[    7.870635] input: cpcap-key as /devices/virtual/input/input2
+<6>[    7.876678] cpcap_key cpcap_key: CPCAP key device probed
+<3>[    7.882995] regulator_check_voltage: operation not allowed for vusb
+<6>[    7.890075] cpcap_usb_det cpcap_usb_det: CPCAP USB detection device probed
+<3>[    7.911956] regulator_check_voltage: operation not allowed for vaudio
+<6>[    7.919403] cpcap spi1.0: Headset key event: old=0, new=0
+<6>[    7.925109] cpcap spi1.0: New headset state: 0
+<6>[    7.930114] PPP generic driver version 2.4.2
+<6>[    7.935394] PPP Deflate Compression module registered
+<6>[    7.940734] PPP BSD Compression module registered
+<6>[    7.946472] PPP MPPE Compression module registered
+<6>[    7.951599] NET: Registered protocol family 24
+<6>[    7.956726] Linux video capture interface: v2.00
+<6>[    7.961883] mt9p012 driver loading
+<6>[    7.967742] hp3a hp3a-omap: Registered hp3a driver.
+<6>[    8.033020] i2c /dev entries driver
+<6>[    8.043090] omap2-nand driver initializing
+<6>[    8.047637] NAND device: Manufacturer ID: 0xad, Chip ID: 0xbc (Hynix NAND 512MiB 1,8V 16-bit)
+<5>[    8.056762] 11 cmdlinepart partitions found on MTD device omap2-nand.0
+<5>[    8.063690] Creating 11 MTD partitions on "omap2-nand.0":
+<5>[    8.069366] 0x000000220000-0x0000003a0000 : "pds"
+<5>[    8.076934] 0x000000460000-0x0000004c0000 : "cid"
+<5>[    8.083679] 0x000000740000-0x0000007a0000 : "misc"
+<5>[    8.090606] 0x0000007a0000-0x000000b20000 : "boot"
+<5>[    8.097961] 0x000000ee0000-0x000001360000 : "recovery"
+<5>[    8.105987] 0x000001360000-0x000001c80000 : "cdrom"
+<5>[    8.114532] 0x000001c80000-0x000009c20000 : "system"
+<6>[    8.145477] cpcap spi1.0: notify_accy: accy=3
+<5>[    8.151885] 0x000009c80000-0x00000f680000 : "cache"
+<5>[    8.176422] 0x00000f680000-0x00001fba0000 : "userdata"
+<5>[    8.234649] 0x00001fba0000-0x00001fd20000 : "cust"
+<5>[    8.241668] 0x00001fd80000-0x00001ff80000 : "kpanic"
+<6>[    8.249176] apanic: Bound to mtd partition 'kpanic'
+<6>[    8.254333] apanic: No panic data available
+<4>[    8.279449] apanic: Skipping erase of bad block @1e0000
+<7>[    8.284942] apanic: kpanic partition erased
+<4>[    8.286468] IRQ 78/usbtll: IRQF_DISABLED is not guaranteed on shared IRQs
+<6>[    8.293823] ehci-omap ehci-omap.0: OMAP-EHCI Host Controller
+<6>[    8.301055] ehci-omap ehci-omap.0: new USB bus registered, assigned bus number 1
+<6>[    8.309448] ehci-omap ehci-omap.0: irq 77, io mem 0x48064800
+<6>[    8.323242] ehci-omap ehci-omap.0: USB 2.0 started, EHCI 1.00, driver 10 Dec 2004
+<6>[    8.332244] usb usb1: configuration #1 chosen from 1 choice
+<6>[    8.338623] hub 1-0:1.0: USB hub found
+<6>[    8.342773] hub 1-0:1.0: 3 ports detected
+<6>[    8.349670] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<6>[    8.357116] usbcore: registered new interface driver cdc_acm
+<6>[    8.363159] cdc_acm: v0.26:USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    8.372985] usbcore: registered new interface driver usbserial
+<6>[    8.379150] usbserial: USB Serial Driver core
+<6>[    8.384124] USB Serial support registered for moto-modem
+<6>[    8.390136] usbcore: registered new interface driver moto-modem
+<6>[    8.396728] USB Serial support registered for QSC 6085 Modem Driver
+<6>[    8.403778] usbcore: registered new interface driver cdma-modem
+<6>[    8.410369] USB Serial support registered for moto-flashqsc
+<6>[    8.416564] usbcore: registered new interface driver moto-flashqsc
+<6>[    8.423614] usbcore: registered new interface driver usb_ipc_data
+<6>[    8.433044] mass_storage_function_add
+<6>[    8.437438] fsg_probe pdata: c0489854
+<6>[    8.442047] android_usb gadget: Number of LUNs=1
+<6>[    8.447021] usbnet_function_add
+<6>[    8.450500] usb0 (): not using net_device_ops yet
+<6>[    8.456481] usb_ether_get_stats
+<6>[    8.462921] adb_function_add
+<6>[    8.467224] android_usb gadget: android_usb ready
+<6>[    8.472320] musb_hdrc musb_hdrc: MUSB HDRC host driver
+<6>[    8.478912] musb_hdrc musb_hdrc: new USB bus registered, assigned bus number 2
+<6>[    8.487640] usb usb2: configuration #1 chosen from 1 choice
+<6>[    8.494049] hub 2-0:1.0: USB hub found
+<6>[    8.498229] hub 2-0:1.0: 1 port detected
+<6>[    8.505920] qtouch_force_reset: Forcing HW reset
+<6>[    8.589385] qtouch_process_info_block: Build version is 0x18
+<6>[    8.595703] qtouch_process_info_block: Object 2 @ 0x0046 (168) insts 1 rep_ids 0
+<6>[    8.603942] qtouch_process_info_block: Object 3 @ 0x00ee (168) insts 1 rep_ids 0
+<6>[    8.612121] qtouch_process_info_block: Object 5 @ 0x0196 (8) insts 1 rep_ids 0
+<6>[    8.620147] qtouch_process_info_block: Object 6 @ 0x019e (5) insts 1 rep_ids 1
+<6>[    8.628112] qtouch_process_info_block: Object 7 @ 0x01a3 (3) insts 1 rep_ids 0
+<6>[    8.636138] qtouch_process_info_block: Object 8 @ 0x01a6 (6) insts 1 rep_ids 0
+<6>[    8.644134] qtouch_process_info_block: Object 9 @ 0x01ac (26) insts 1 rep_ids 6
+<6>[    8.652221] qtouch_process_info_block: Object 15 @ 0x01c6 (11) insts 1 rep_ids 1
+<6>[    8.660400] qtouch_process_info_block: Object 17 @ 0x01d1 (37) insts 1 rep_ids 0
+<6>[    8.668609] qtouch_process_info_block: Object 20 @ 0x01f6 (11) insts 1 rep_ids 0
+<4>[    8.676696] qtouch_process_info_block: Checksum mismatch (0xf906 != 0xcf99)
+<6>[    8.684020] qtouch_process_info_block: qtouch-obp-ts found. family 0x31, variant 0x1, ver 0x18, build 0x1, matrix 12x7, 10 objects.
+<6>[    8.697296] input: qtouch-touchscreen as /devices/virtual/input/input3
+<6>[    8.705535] qtouch_hw_init: Doing hw init
+<6>[    8.711853] GPIO Matrix Keypad Driver: Start keypad matrix for sholesp2a-keypad in interrupt mode
+<6>[    8.721313] GPIO Input Driver: Start gpio inputs for sholesp2a-keypad in interrupt mode
+<6>[    8.732910] input: sholesp2a-keypad as /devices/virtual/input/input4
+<6>[    8.740081] qtouch_force_calibration: Forcing calibration
+<6>[    8.747924] input: proximity as /devices/virtual/input/input5
+<6>[    8.755126] sfh7743 sfh7743: sfh7743 probed
+<6>[    8.761291] using input dev sholesp2a-keypad for key reset
+<6>[    8.769653] cpcap_rtc cpcap_rtc: rtc core: registered cpcap_rtc as rtc0
+<6>[    8.777404] Driver for 1-wire Dallas network protocol.
+<6>[    8.784057] omap_hdq omap_hdq.0: OMAP HDQ Hardware Rev 0.5. Driver in Interrupt mode
+<6>[    8.854522] usb 1-3: new high speed USB device using ehci-omap and address 2
+<3>[    8.987335] omap_hdq omap_hdq.0: break wait elapsed
+<6>[    8.993499] w1_master_driver w1 bus master: Family 89 for 89.000000000000.5b is not registered.
+<6>[    9.006347] OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+<6>[    9.013092] Bluetooth: HCI UART driver ver 2.2
+<6>[    9.017761] Bluetooth: HCI H4 protocol initialized
+<6>[    9.022796] Bluetooth: HCILL protocol initialized
+<6>[    9.028045] cpuidle: using governor ladder
+<6>[    9.032318] cpuidle: using governor menu
+<6>[    9.066802] Registered led device: button-backlight
+<6>[    9.072814] Registered led device: red
+<6>[    9.077239] Registered led device: green
+<6>[    9.081787] Registered led device: blue
+<6>[    9.086791] Registered led device: keyboard-backlight
+<6>[    9.093505] input: lm3530_led as /devices/virtual/input/input6
+<6>[    9.102081] Registered led device: lcd-backlight
+<6>[    9.108001] cpcap_lm3554_probe:CPCAP Probe enter
+<6>[    9.118072] cpcap_lm3554_probe:CPCAP torch probe exit
+<6>[    9.124786] Registered led device: torch-flash
+<6>[    9.133728] Registered led device: spotlight
+<6>[    9.138305] LM3554 torch initialized
+<6>[    9.144622] usbcore: registered new interface driver usbhid
+<6>[    9.150512] usbhid: v2.6:USB HID core driver
+<6>[    9.156555] logger: created 64K log 'log_main'
+<6>[    9.161773] logger: created 256K log 'log_events'
+<6>[    9.167297] logger: created 64K log 'log_radio'
+<6>[    9.172485] logger: created 64K log 'log_kernel'
+<6>[    9.177368] console [logger-1] enabled
+<6>[    9.187225] usb 1-3: configuration #1 chosen from 1 choice
+<4>[    9.195739] Netfilter messages via NETLINK v0.30.
+<4>[    9.200927] nf_conntrack version 0.5.0 (3904 buckets, 15616 max)
+<4>[    9.207580] CONFIG_NF_CT_ACCT is deprecated and will be removed soon. Please use
+<4>[    9.215362] nf_conntrack.acct=1 kernel paramater, acct=1 nf_conntrack module option or
+<4>[    9.223693] sysctl net.netfilter.nf_conntrack_acct=1 to enable it.
+<4>[    9.230529] ctnetlink v0.93: registering with nfnetlink.
+<6>[    9.241638] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    9.249023] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    9.255584] xt_time: kernel timezone is -0000
+<6>[    9.260620] ip_tables: (C) 2000-2006 Netfilter Core Team
+<5>[    9.266510] ClusterIP Version 0.8 loaded successfully
+<6>[    9.271972] arp_tables: (C) 2002 David S. Miller
+<6>[    9.276977] TCP cubic registered
+<6>[    9.280364] Initializing XFRM netlink socket
+<6>[    9.285278] NET: Registered protocol family 10
+<6>[    9.291198] lo: Disabled Privacy Extensions
+<6>[    9.296447] Mobile IPv6
+<6>[    9.299011] IPv6 over IPv4 tunneling driver
+<6>[    9.304412] do_cmd_proc_msg: Reset done.
+<6>[    9.308563] do_cmd_proc_msg: Self-calibration started.
+<6>[    9.317321] sit0: Disabled Privacy Extensions
+<6>[    9.324340] ip6tnl0: Disabled Privacy Extensions
+<6>[    9.329376] NET: Registered protocol family 17
+<6>[    9.334259] NET: Registered protocol family 15
+<6>[    9.338989] Bluetooth: L2CAP ver 2.13
+<6>[    9.342834] Bluetooth: L2CAP socket layer initialized
+<6>[    9.348144] Bluetooth: SCO (Voice Link) ver 0.6
+<6>[    9.352905] Bluetooth: SCO socket layer initialized
+<6>[    9.360748] Bluetooth: RFCOMM socket layer initialized
+<6>[    9.366302] Bluetooth: RFCOMM TTY layer initialized
+<6>[    9.371490] Bluetooth: RFCOMM ver 1.11
+<6>[    9.375427] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    9.381042] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<3>[    9.387817] Power Management for TI OMAP3.
+<6>[    9.399230] pm_dbg_init()
+<6>[    9.402832] SmartReflex driver initialized
+<6>[    9.421875] Disabling unused clock "sr2_fck"
+<6>[    9.426452] Disabling unused clock "sr1_fck"
+<6>[    9.430938] Disabling unused clock "gpt2_ick"
+<6>[    9.435546] Disabling unused clock "gpt3_ick"
+<6>[    9.440093] Disabling unused clock "gpt4_ick"
+<6>[    9.444702] Disabling unused clock "gpt5_ick"
+<6>[    9.449279] Disabling unused clock "gpt6_ick"
+<6>[    9.453857] Disabling unused clock "gpt7_ick"
+<6>[    9.458435] Disabling unused clock "gpt8_ick"
+<6>[    9.463012] Disabling unused clock "gpt9_ick"
+<6>[    9.467590] Disabling unused clock "gpio2_dbck"
+<6>[    9.472381] Disabling unused clock "gpio3_dbck"
+<6>[    9.477111] Disabling unused clock "gpio4_dbck"
+<6>[    9.481903] Disabling unused clock "gpio5_dbck"
+<6>[    9.486633] Disabling unused clock "gpio6_dbck"
+<6>[    9.491424] Disabling unused clock "gpt9_fck"
+<6>[    9.496002] Disabling unused clock "gpt8_fck"
+<6>[    9.500579] Disabling unused clock "gpt7_fck"
+<6>[    9.505157] Disabling unused clock "gpt6_fck"
+<6>[    9.509735] Disabling unused clock "gpt5_fck"
+<6>[    9.514312] Disabling unused clock "gpt4_fck"
+<6>[    9.518890] Disabling unused clock "gpt3_fck"
+<6>[    9.523468] Disabling unused clock "gpt2_fck"
+<6>[    9.528045] Disabling unused clock "gpt12_ick"
+<6>[    9.532714] Disabling unused clock "wdt1_ick"
+<6>[    9.537292] Disabling unused clock "wdt2_ick"
+<6>[    9.541870] Disabling unused clock "usim_ick"
+<6>[    9.546447] Disabling unused clock "wdt2_fck"
+<6>[    9.551055] Disabling unused clock "gpio1_dbck"
+<6>[    9.555786] Disabling unused clock "usim_fck"
+<6>[    9.560394] Disabling unused clock "rng_ick"
+<6>[    9.564880] Disabling unused clock "ssi_ick"
+<6>[    9.569366] Disabling unused clock "mcbsp_ick"
+<6>[    9.574035] Disabling unused clock "mcbsp_ick"
+<6>[    9.578704] Disabling unused clock "gpt10_ick"
+<6>[    9.583374] Disabling unused clock "gpt11_ick"
+<6>[    9.588043] Disabling unused clock "mspro_ick"
+<6>[    9.592742] Disabling unused clock "des2_ick"
+<6>[    9.597320] Disabling unused clock "sha12_ick"
+<6>[    9.601989] Disabling unused clock "aes2_ick"
+<6>[    9.606567] Disabling unused clock "icr_ick"
+<6>[    9.611053] Disabling unused clock "ssi_ssr_fck"
+<6>[    9.615905] Disabling unused clock "mcbsp_fck"
+<6>[    9.620605] Disabling unused clock "mcbsp_fck"
+<6>[    9.625244] Disabling unused clock "mspro_fck"
+<6>[    9.629943] Disabling unused clock "gpt11_fck"
+<6>[    9.634613] Disabling unused clock "gpt10_fck"
+<6>[    9.639282] Disabling unused clock "modem_fck"
+<6>[    9.643951] Disabling unused clock "dpll4_m6x2_ck"
+<6>[    9.648986] Disabling unused clock "dpll3_m3x2_ck"
+<6>[    9.654022] Disabling unused clock "sys_clkout1"
+<6>[    9.659851] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+<3>[    9.670654] FIXME: no omap_set_dma_color_mode on 24xx
+<6>[    9.676086] DMA transaction error with device 0
+<7>[    9.682708] sholes-panel: enable
+<4>[    9.883392] done EDISCO CTRL ENABLE
+<7>[    9.887115] sholes-panel:  edisco_ctrl_enable_te 
+<7>[    9.887176] sholes-panel:  edisco_ctrl_enable_te 
+<7>[    9.887237] sholes-panel:  edisco_ctrl_enable_te 
+<6>[    9.889007] HP_GEN_LENS 3-0004: lens probe called....
+<3>[    9.894378] Registered hplens as V4L2 device.
+<6>[    9.900543] omap34xxcam omap34xxcam: video0 is now omap34xxcam//hplens/
+<6>[    9.912841] mt9p012 3-0036: model id detected 0x2803 mfr 0x6
+<6>[    9.919006] omap34xxcam omap34xxcam: video0 is now omap34xxcam/mt9p012/hplens/
+<6>[    9.927246] cpcap_rtc cpcap_rtc: setting system clock to 2009-09-11 19:35:31 UTC (1252697731)
+<6>[    9.936462] Freeing init memory: 204K
+<6>[   10.347717] yaffs: dev is 32505862 name is "mtdblock6"
+<6>[   10.353118] yaffs: passed flags ""
+<4>[   10.356964] yaffs: Attempting MTD mount on 31.6, "mtdblock6"
+<4>[   10.412261] block 319 is bad
+<4>[   12.254974] yaffs_read_super: isCheckpointed 0
+<4>[   12.298004] save exit: isCheckpointed 1
+<6>[   12.302520] yaffs: dev is 32505864 name is "mtdblock8"
+<6>[   12.307952] yaffs: passed flags ""
+<4>[   12.311492] yaffs: Attempting MTD mount on 31.8, "mtdblock8"
+<4>[   12.461334] block 1460 is bad
+<4>[   16.451751] yaffs_read_super: isCheckpointed 0
+<6>[   16.462188] yaffs: dev is 32505863 name is "mtdblock7"
+<6>[   16.467620] yaffs: passed flags ""
+<4>[   16.471191] yaffs: Attempting MTD mount on 31.7, "mtdblock7"
+<4>[   16.480224] yaffs: restored from checkpoint
+<4>[   16.484649] yaffs_read_super: isCheckpointed 1
+<6>[   16.504119] yaffs: dev is 32505856 name is "mtdblock0"
+<6>[   16.509521] yaffs: passed flags ""
+<4>[   16.513122] yaffs: Attempting MTD mount on 31.0, "mtdblock0"
+<4>[   16.520843] yaffs: restored from checkpoint
+<4>[   16.527343] yaffs_read_super: isCheckpointed 0
+<6>[   16.534393] yaffs: dev is 32505865 name is "mtdblock9"
+<6>[   16.539764] yaffs: passed flags ""
+<4>[   16.543365] yaffs: Attempting MTD mount on 31.9, "mtdblock9"
+<4>[   16.560882] yaffs_read_super: isCheckpointed 0
+<4>[   16.590759] Running NetMUX
+<6>[   16.611877] Inserting sec module
+<6>[   16.698669] adb_open
+<3>[   16.803039] init: cannot find '/system/bin/watchdogd', disabling 'watchdogd'
+<6>[   17.060485] cpcap spi1.0: CPCAP uC: open status:0
+<3>[   17.091430] init: cannot find '/system/bin/catcommands', disabling 'catcommands'
+<6>[   17.138092] rmnet0 (): not using net_device_ops yet
+<6>[   17.163574] rmnet0: Disabled Privacy Extensions
+<6>[   17.168762] psd_data6 (): not using net_device_ops yet
+<6>[   17.185943] warning: `rild' uses 32-bit capabilities (legacy support in use)
+<6>[   17.218292] psd_data6: Disabled Privacy Extensions
+<6>[   17.223632] psd_data7 (): not using net_device_ops yet
+<6>[   17.252471] psd_data7: Disabled Privacy Extensions
+<6>[   17.257873] psd_data8 (): not using net_device_ops yet
+<3>[   17.283264] init: cannot find '/system/bin/playmp3', disabling 'bootsound'
+<6>[   17.298156] psd_data8: Disabled Privacy Extensions
+<6>[   17.303588] psd_data9 (): not using net_device_ops yet
+<6>[   17.337860] cpcap spi1.0: CPCAP uC: open status:0
+<6>[   17.370941] psd_data9: Disabled Privacy Extensions
+<6>[   17.376281] psd_data10 (): not using net_device_ops yet
+<6>[   17.422149] psd_data10: Disabled Privacy Extensions
+<6>[   17.427673] muxtest_net (): not using net_device_ops yet
+<3>[   17.456787] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<6>[   17.466278] muxtest_net: Disabled Privacy Extensions
+<3>[   17.996032] init: untracked pid 1055 exited
+<3>[   19.493682] Oneshot wake up timer has been set.
+<6>[   19.498565] cascade_attach: type=1, timer_base=1252697741, period=6.0, now=1252697741.71
+<3>[   19.542572] Trying to free already-free IRQ 35
+<6>[   20.240020] 0x200 = 35
+<6>[   20.242736] 0x201 = 0
+<6>[   20.245300] 0x202 = 0
+<6>[   20.247833] 0x203 = 79
+<6>[   20.250457] 0x204 = 80e
+<6>[   20.253295] 0x205 = 2000
+<6>[   20.270080] 0x206 = 3ff
+<6>[   20.272827] 0x207 = 400
+<6>[   20.275573] 0x208 = 771c
+<6>[   20.278411] 0x209 = 0
+<6>[   20.280975] 0x20A = 800
+<6>[   20.283691] 0x20B = 0
+<6>[   20.325317] 0x200 = 75
+<6>[   20.328002] 0x201 = 0
+<6>[   20.330566] 0x202 = 0
+<6>[   20.333190] 0x203 = 8
+<6>[   20.335723] 0x204 = 80c
+<6>[   20.338470] 0x205 = 2000
+<6>[   20.350097] 0x206 = 3ff
+<6>[   20.352874] 0x207 = 400
+<6>[   20.355651] 0x208 = 771c
+<6>[   20.365234] 0x209 = 0
+<6>[   20.367828] 0x20A = 0
+<6>[   20.370391] 0x20B = 0
+<6>[   20.433044] 0x200 = 35
+<6>[   20.435791] 0x201 = 0
+<6>[   20.438323] 0x202 = 0
+<6>[   20.440917] 0x203 = 79
+<6>[   20.443572] 0x204 = 80e
+<6>[   20.448364] 0x205 = 2000
+<6>[   20.513732] 0x206 = 3ff
+<6>[   20.516479] 0x207 = 400
+<6>[   20.519256] 0x208 = 771c
+<6>[   20.522064] 0x209 = 0
+<6>[   20.524597] 0x20A = 800
+<6>[   20.527435] 0x20B = 0
+<6>[   20.563049] 0x200 = 75
+<6>[   20.565826] 0x201 = 0
+<6>[   20.568359] 0x202 = 0
+<6>[   20.570892] 0x203 = 8
+<6>[   20.574462] 0x204 = 80c
+<6>[   20.577209] 0x205 = 2000
+<6>[   20.580017] 0x206 = 3ff
+<6>[   20.590515] 0x207 = 400
+<6>[   20.593322] 0x208 = 771c
+<6>[   20.596130] 0x209 = 0
+<6>[   20.638427] 0x20A = 0
+<6>[   20.641143] 0x20B = 0
+<6>[   20.667297] 0x200 = 75
+<6>[   20.670013] 0x201 = 0
+<6>[   20.672546] 0x202 = 0
+<6>[   20.675140] 0x203 = 8
+<6>[   20.677673] 0x204 = 80c
+<6>[   20.680389] 0x205 = 2000
+<6>[   20.683258] 0x206 = 3ff
+<6>[   20.685974] 0x207 = 400
+<6>[   20.688690] 0x208 = 771c
+<6>[   20.691528] 0x209 = 0
+<6>[   20.699737] 0x20A = 0
+<6>[   20.702301] 0x20B = 0
+<6>[   20.704833] AUDIO_DRIVER:spkr1 = 0x20, spkr2 = 0x0
+<6>[   20.737152] 0x200 = 75
+<6>[   20.739959] 0x201 = 0
+<6>[   20.742492] 0x202 = 0
+<6>[   20.745025] 0x203 = 8
+<6>[   20.747680] 0x204 = 80c
+<6>[   20.750396] 0x205 = 2000
+<6>[   20.753234] 0x206 = 3ff
+<6>[   20.755950] 0x207 = 400
+<6>[   20.758666] 0x208 = 771c
+<6>[   20.761535] 0x209 = 0
+<6>[   20.764068] 0x20A = 0
+<6>[   20.766601] 0x20B = 0
+<6>[   20.792144] 0x200 = 75
+<6>[   20.794799] 0x201 = 0
+<6>[   20.797332] 0x202 = 0
+<6>[   20.799926] 0x203 = 8
+<6>[   20.802459] 0x204 = 80c
+<6>[   20.805175] 0x205 = 2000
+<6>[   20.808044] 0x206 = 3ff
+<6>[   20.810760] 0x207 = 400
+<6>[   20.813476] 0x208 = dd34
+<6>[   20.816284] 0x209 = 0
+<6>[   20.818817] 0x20A = 0
+<6>[   20.821350] 0x20B = 0
+<3>[   23.684204] Oneshot wake up timer has been set.
+<6>[   23.688995] cascade_attach: type=1, timer_base=1252697745, period=58.940, now=1252697745.261
+<6>[   31.628936] usb_ether_get_stats
+<6>[   31.646972] usb_ether_get_stats
+<6>[   31.805389] request_suspend_state: wakeup (3->0) at 24919738820 (2009-09-11 19:35:53.378143320 UTC)
+<6>[   32.162780] cpcap spi1.0: notify_accy: accy=0
+<6>[   32.300537] usb_ether_get_stats
+<6>[   32.346008] usb_ether_get_stats
+<6>[   33.019104] input: sensors as /devices/virtual/input/input7
+<3>[   35.572357] Oneshot wake up timer has been set.
+<6>[   35.577209] cascade_attach: type=1, timer_base=1252697757, period=47.50, now=1252697757.149
+<3>[   36.260650] Oneshot wake up timer has been set.
+<6>[   36.265502] cascade_attach: type=1, timer_base=1252697757, period=46.360, now=1252697757.838
+<3>[   36.274902] Oneshot wake up timer has been set.
+<6>[   36.279693] cascade_attach: type=1, timer_base=1252697757, period=46.350, now=1252697757.852
+<3>[   37.221252] Oneshot wake up timer has been set.
+<6>[   37.226135] cascade_attach: type=1, timer_base=1252697758, period=45.400, now=1252697758.798
+<6>[   41.859558] 0x200 = 35
+<6>[   41.862213] 0x201 = 0
+<6>[   41.865600] 0x202 = 0
+<6>[   41.868621] 0x203 = 79
+<6>[   41.871307] 0x204 = 80e
+<6>[   41.880981] 0x205 = 2000
+<6>[   41.883880] 0x206 = 3ff
+<6>[   41.886779] 0x207 = 404
+<6>[   41.889739] 0x208 = dd34
+<6>[   41.893127] 0x209 = 0
+<6>[   41.897857] 0x20A = 1e04
+<6>[   41.901062] 0x20B = 0
+<6>[   41.917297] 0x200 = 35
+<6>[   41.920043] 0x201 = 0
+<6>[   41.922607] 0x202 = 0
+<6>[   41.925537] 0x203 = 79
+<6>[   41.928527] 0x204 = 80e
+<6>[   41.931243] 0x205 = 2000
+<6>[   41.934112] 0x206 = 3ff
+<6>[   41.940826] 0x207 = 404
+<6>[   41.943786] 0x208 = dd34
+<6>[   41.946594] 0x209 = 0
+<6>[   41.949493] 0x20A = 1e04
+<6>[   41.956268] 0x20B = 0
+<6>[   44.801849] android_usb gadget: high speed config #1: android
+<6>[   44.807922] usbnet_set_alt intf: 2 alt: 0
+<6>[   46.491180] usb_ether_open
+<6>[   46.494079] usb_ether_get_stats
+<6>[   48.706634] 0x200 = 75
+<6>[   48.709350] 0x201 = 0
+<6>[   48.711914] 0x202 = 0
+<6>[   48.714569] 0x203 = 8
+<6>[   48.717102] 0x204 = 80c
+<6>[   48.719818] 0x205 = 2000
+<6>[   48.730499] 0x206 = 3ff
+<6>[   48.733306] 0x207 = 400
+<6>[   48.736022] 0x208 = dd34
+<6>[   48.738891] 0x209 = 0
+<6>[   48.741424] 0x20A = 0
+<6>[   48.745330] 0x20B = 0
+<7>[   56.870483] usb0: no IPv6 routers present
+<6>[   63.378875] request_suspend_state: sleep (0->3) at 56493194584 (2009-09-11 19:36:25.555453321 UTC)
+<7>[   63.391937] sholes-panel: sholes_panel_ctrl_disable
+<4>[   63.589447] save exit: isCheckpointed 1
+<4>[   63.596099] save exit: isCheckpointed 1
+<4>[   63.600738] save exit: isCheckpointed 1
+<6>[   63.608306] active wake lock LD_netmux_to_usb
+<6>[   63.612915] active wake lock PowerManagerService
+<6>[   63.617736] active wake lock usb
+<6>[   63.621124] wake lock evdev, expired
+<6>[   63.624877] wake lock evdev, expired
+<6>[   63.628601] wake lock evdev, expired
+<6>[   63.632354] wake lock omap_serial, expired
+<6>[   63.636627] wake lock ehci_omap, expired
+<6>[   63.640747] wake lock GKI_LOCK_TIMER_0, expired
+<6>[   68.086456] request_suspend_state: wakeup (3->0) at 61200744623 (2009-09-11 19:36:30.263033878 UTC)
+<7>[   68.098236] sholes-panel: enable
+<6>[   68.151123] input: sensors as /devices/virtual/input/input8
+<4>[   68.369720] done EDISCO CTRL ENABLE
+<7>[   68.405853] sholes-panel:  edisco_ctrl_enable_te 
+<6>[   68.408660] qtouch_force_reset: Forcing HW reset
+<6>[   68.488983] qtouch_hw_init: Doing hw init
+<6>[   68.500396] qtouch_force_calibration: Forcing calibration
+<6>[   69.011566] do_cmd_proc_msg: Reset done.
+<6>[   69.015838] do_cmd_proc_msg: Self-calibration started.
+<6>[   69.022583] do_cmd_proc_msg: Self-calibration started.
+<6>[   82.022644] wakeup_timer_callback: type=1, timer_base=1252697758, period=45.400, now=1252697804.199
+<3>[   82.086517] Oneshot wake up timer has been set.
+<6>[   82.091583] cascade_attach: type=1, timer_base=1252697804, period=58.940, now=1252697804.268
+<3>[  104.200683] NOHZ: local_softirq_pending 08
+<3>[  104.205810] NOHZ: local_softirq_pending 08
+<3>[  104.950531] NOHZ: local_softirq_pending 08
+<3>[  104.955657] NOHZ: local_softirq_pending 08
+<3>[  105.390777] NOHZ: local_softirq_pending 08
+<3>[  105.540557] NOHZ: local_softirq_pending 08
+<3>[  106.000274] NOHZ: local_softirq_pending 08
+<3>[  117.956939] NOHZ: local_softirq_pending 08
+<3>[  117.962005] NOHZ: local_softirq_pending 08
+<3>[  118.086730] NOHZ: local_softirq_pending 08
+<6>[  141.031921] wakeup_timer_callback: type=1, timer_base=1252697804, period=58.940, now=1252697863.208
+<3>[  141.094360] Oneshot wake up timer has been set.
+<6>[  141.099395] cascade_attach: type=1, timer_base=1252697863, period=58.940, now=1252697863.276
+<6>[  145.297882] request_suspend_state: sleep (0->3) at 138412170409 (2009-09-11 19:37:47.474429146 UTC)
+<7>[  145.311187] sholes-panel: sholes_panel_ctrl_disable
+<4>[  145.509124] save exit: isCheckpointed 1
+<6>[  145.516967] active wake lock PowerManagerService
+<6>[  145.521850] active wake lock usb
+<6>[  145.525238] wake lock evdev, expired
+<6>[  145.528961] wake lock evdev, expired
+<6>[  145.532714] wake lock omap_serial, expired
+<6>[  145.536987] wake lock pwrkey, expired
+<6>[  145.540832] wake lock evdev, expired
+<6>[  145.544586] wake lock evdev, expired
+<6>[  145.548309] wake lock ehci_omap, expired
+<6>[  145.552429] wake lock GKI_LOCK_TIMER_0, expired
+<6>[  200.039733] wakeup_timer_callback: type=1, timer_base=1252697863, period=58.940, now=1252697922.216
+<3>[  200.102233] Oneshot wake up timer has been set.
+<6>[  200.107330] cascade_attach: type=1, timer_base=1252697922, period=58.940, now=1252697922.283
+<6>[  213.945037] request_suspend_state: wakeup (3->0) at 207059326170 (2009-09-11 19:38:56.121584907 UTC)
+<7>[  213.956848] sholes-panel: enable
+<6>[  214.010681] input: sensors as /devices/virtual/input/input9
+<4>[  214.228759] done EDISCO CTRL ENABLE
+<7>[  214.283050] sholes-panel:  edisco_ctrl_enable_te 
+<6>[  214.285858] qtouch_force_reset: Forcing HW reset
+<6>[  214.363220] qtouch_hw_init: Doing hw init
+<6>[  214.373168] qtouch_force_calibration: Forcing calibration
+<6>[  214.886413] do_cmd_proc_msg: Reset done.
+<6>[  214.890655] do_cmd_proc_msg: Self-calibration started.
+<6>[  214.897735] do_cmd_proc_msg: Self-calibration started.
+<6>[  245.706878] request_suspend_state: sleep (0->3) at 238821166993 (2009-09-11 19:39:27.883456248 UTC)
+<7>[  245.723907] sholes-panel: sholes_panel_ctrl_disable
+<4>[  245.947509] save exit: isCheckpointed 1
+<6>[  245.959533] active wake lock LD_netmux_to_usb
+<6>[  245.964141] active wake lock PowerManagerService
+<6>[  245.968963] active wake lock usb
+<6>[  245.972351] wake lock evdev, expired
+<6>[  245.976104] wake lock evdev, expired
+<6>[  245.979827] wake lock omap_serial, expired
+<6>[  245.984130] wake lock pwrkey, expired
+<6>[  245.987945] wake lock evdev, expired
+<6>[  245.991699] wake lock evdev, expired
+<6>[  245.995452] wake lock ehci_omap, expired
+<6>[  245.999542] wake lock GKI_LOCK_TIMER_0, expired
+<6>[  259.047698] wakeup_timer_callback: type=1, timer_base=1252697922, period=58.940, now=1252697981.224
+<3>[  259.110076] Oneshot wake up timer has been set.
+<6>[  259.115173] cascade_attach: type=1, timer_base=1252697981, period=58.940, now=1252697981.291
+<6>[  318.055541] wakeup_timer_callback: type=1, timer_base=1252697981, period=58.940, now=1252698040.232
+<3>[  318.117858] Oneshot wake up timer has been set.
+<6>[  318.122924] cascade_attach: type=1, timer_base=1252698040, period=58.940, now=1252698040.299
+<3>[  333.323913] init: untracked pid 1473 exited
+<6>[  369.127136] request_suspend_state: wakeup (3->0) at 362241485602 (2009-09-11 19:41:31.303744340 UTC)
+<7>[  369.137420] sholes-panel: enable
+<4>[  369.406829] done EDISCO CTRL ENABLE
+<6>[  369.416229] input: sensors as /devices/virtual/input/input10
+<7>[  369.751373] sholes-panel:  edisco_ctrl_enable_te 
+<6>[  369.761322] qtouch_force_reset: Forcing HW reset
+<6>[  369.839508] qtouch_hw_init: Doing hw init
+<6>[  369.855590] qtouch_force_calibration: Forcing calibration
+<6>[  370.370910] do_cmd_proc_msg: Reset done.
+<6>[  370.375213] do_cmd_proc_msg: Self-calibration started.
+<6>[  370.393768] do_cmd_proc_msg: Self-calibration started.
+<6>[  370.406738] do_cmd_proc_msg: Self-calibration started.
+<6>[  374.410003] request_suspend_state: sleep (0->3) at 367524292002 (2009-09-11 19:41:36.586550739 UTC)
+<7>[  374.423126] sholes-panel: sholes_panel_ctrl_disable
+<4>[  374.604919] save exit: isCheckpointed 1
+<6>[  374.612762] active wake lock LD_netmux_to_usb
+<6>[  374.617370] active wake lock PowerManagerService
+<6>[  374.622192] active wake lock usb
+<6>[  374.625579] wake lock omap_serial, expired
+<6>[  374.629852] wake lock pwrkey, expired
+<6>[  374.633697] wake lock evdev, expired
+<6>[  374.637451] wake lock ehci_omap, expired
+<6>[  374.641540] wake lock GKI_LOCK_TIMER_1, expired
+<6>[  374.646301] wake lock evdev, expired
+<6>[  374.650024] wake lock evdev, expired
+<6>[  374.653778] active wake lock evdev, time left 101
+<6>[  375.044036] request_suspend_state: wakeup (3->0) at 368158325192 (2009-09-11 19:41:37.220583929 UTC)
+<7>[  375.065124] sholes-panel: enable
+<6>[  375.097656] input: sensors as /devices/virtual/input/input11
+<4>[  375.353332] done EDISCO CTRL ENABLE
+<7>[  375.362854] sholes-panel:  edisco_ctrl_enable_te 
+<6>[  375.373474] qtouch_force_reset: Forcing HW reset
+<6>[  375.456817] qtouch_hw_init: Doing hw init
+<6>[  375.466522] qtouch_force_calibration: Forcing calibration
+<6>[  375.980194] do_cmd_proc_msg: Reset done.
+<6>[  375.984436] do_cmd_proc_msg: Self-calibration started.
+<6>[  375.991638] do_cmd_proc_msg: Self-calibration started.
+<6>[  377.063293] wakeup_timer_callback: type=1, timer_base=1252698040, period=58.940, now=1252698099.239
+<3>[  377.125946] Oneshot wake up timer has been set.
+<6>[  377.131011] cascade_attach: type=1, timer_base=1252698099, period=58.940, now=1252698099.307
+<6>[  436.071350] wakeup_timer_callback: type=1, timer_base=1252698099, period=58.940, now=1252698158.247
+<3>[  436.133483] Oneshot wake up timer has been set.
+<6>[  436.138519] cascade_attach: type=1, timer_base=1252698158, period=58.940, now=1252698158.315
+<6>[  442.790100] request_suspend_state: sleep (0->3) at 435904418944 (2009-09-11 19:42:44.966677681 UTC)
+<7>[  442.803253] sholes-panel: sholes_panel_ctrl_disable
+<4>[  443.018585] save exit: isCheckpointed 1
+<6>[  443.026519] active wake lock PowerManagerService
+<6>[  443.031402] active wake lock usb
+<6>[  443.034759] wake lock omap_serial, expired
+<6>[  443.039062] wake lock pwrkey, expired
+<6>[  443.042907] wake lock evdev, expired
+<6>[  443.046630] wake lock evdev, expired
+<6>[  443.050384] wake lock evdev, expired
+<6>[  443.054107] wake lock evdev, expired
+<6>[  443.057861] wake lock ehci_omap, expired
+<6>[  443.061981] wake lock GKI_LOCK_TIMER_0, expired
+<6>[  453.903350] request_suspend_state: wakeup (3->0) at 447017639158 (2009-09-11 19:42:56.079897896 UTC)
+<7>[  453.915649] sholes-panel: enable
+<6>[  453.964477] input: sensors as /devices/virtual/input/input12
+<4>[  454.184936] done EDISCO CTRL ENABLE
+<7>[  454.239807] sholes-panel:  edisco_ctrl_enable_te 
+<6>[  454.242584] qtouch_force_reset: Forcing HW reset
+<6>[  454.327209] qtouch_hw_init: Doing hw init
+<6>[  454.336883] qtouch_force_calibration: Forcing calibration
+<6>[  454.847534] do_cmd_proc_msg: Reset done.
+<6>[  454.851806] do_cmd_proc_msg: Self-calibration started.
+<6>[  454.858612] do_cmd_proc_msg: Self-calibration started.
+<6>[  485.785003] request_suspend_state: sleep (0->3) at 478899291990 (2009-09-11 19:43:27.961581245 UTC)
+<7>[  485.798187] sholes-panel: sholes_panel_ctrl_disable
+<4>[  486.018646] save exit: isCheckpointed 1
+<6>[  486.026763] active wake lock LD_netmux_to_usb
+<6>[  486.031372] active wake lock PowerManagerService
+<6>[  486.036193] active wake lock usb
+<6>[  486.039581] wake lock omap_serial, expired
+<6>[  486.043853] wake lock pwrkey, expired
+<6>[  486.047698] wake lock evdev, expired
+<6>[  486.051452] wake lock evdev, expired
+<6>[  486.055175] wake lock evdev, expired
+<6>[  486.058929] wake lock ehci_omap, expired
+<6>[  486.063018] wake lock GKI_LOCK_TIMER_0, expired
+<6>[  486.067779] wake lock evdev, expired
+<6>[  495.078857] wakeup_timer_callback: type=1, timer_base=1252698158, period=58.940, now=1252698217.255
+<3>[  495.141296] Oneshot wake up timer has been set.
+<6>[  495.146362] cascade_attach: type=1, timer_base=1252698217, period=58.940, now=1252698217.323
+<4>[  511.565338] apanic: Skipping bad block @1e0000
+<0>[  511.570373] Timestamp = 1252698233.746
+<0>[  511.574523] Current Time = 09-11 19:43:53.746, Uptime = 504.684 seconds

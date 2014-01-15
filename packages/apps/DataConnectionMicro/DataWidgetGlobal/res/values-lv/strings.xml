@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Pārslēga logrīki</string>
+  <string name="gps_app_name">GPS pārslēgs</string>
+  <string name="airplane_app_name">Lidojuma režīma pārslēgs</string>
+  <string name="wifi_app_name">Wi-Fi pārslēgs</string>
+  <string name="bluetooth_app_name">Bluetooth pārslēgs</string>
+  <string name="apn_app_name">APN pārslēgs</string>
+  <string name="data_app_name">Datu pārslēgs</string>
+  <string name="widget_description">Skatīt un regulēt lidmašīnas režīma statusu</string>
+  <string name="widget_description_bt">Skatīt un regulēt Bluetooth statusu</string>
+  <string name="widget_description_wifi">Skatīt un regulēt Wi-Fi statusu</string>
+  <string name="widget_description_gps">Skatīt un regulēt GPS statusu</string>
+  <string name="StatusOn">IESL</string>
+  <string name="StatusOff">IZSL</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Lidmašīnas režīms nav pieejams</string>
+  <string name="BluetoothtoastText">Bluetooth nav pieejams</string>
+  <string name="GPStoastText">GPS nav pieejams</string>
+  <string name="WifitoastText">Wi-Fi nav pieejams</string>
+  <string name="location_restriction_enabled">Atrašanās vietas ierobežojums ir iespējots.</string>
+  <string name="apncontrol_app_name">APN vadība</string>
+  <string name="no_apn">APN nav pieejams</string>
+</resources>

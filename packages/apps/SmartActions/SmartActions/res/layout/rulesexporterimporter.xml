@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	<RadioGroup
+	android:id="@+id/Mode"
+	android:text="@string/choose_mode"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical|center_horizontal">
+		<RadioButton
+			android:text="@string/export_rules"
+			android:id="@+id/rbAMOff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</RadioButton>
+
+		<RadioButton
+			android:text="@string/import_rules"
+			android:id="@+id/imp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</RadioButton>
+	</RadioGroup>
+
+	<Button
+	android:id="@+id/bOK"
+	android:text="@string/ok"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal"/>
+</LinearLayout>

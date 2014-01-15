@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Glasnost predstavnosti</string>
+  <string name="warning_text">Pri dolgotrajni izpostavljenosti visoki glasnosti lahko pride do poškodb sluh.\n\nGlasnost glasbe je nastavljena pod priporočeno ravnjo.</string>
+</resources>

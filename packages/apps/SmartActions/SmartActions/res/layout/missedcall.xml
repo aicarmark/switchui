@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/MissedCallHeading"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ics_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/account_filter_header_bottom_divider5"
+                style="@style/SectionDivider"
+                android:layout_height="1dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <RelativeLayout
+                android:id="@+id/all_incoming_calls_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/all_incoming_calls_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right" >
+
+                    <RadioButton
+                        android:id="@+id/all_incoming_calls_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/all_incoming_calls_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/all_incoming_calls_button_layout"
+                    android:text="@string/all_incoming_calls"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_horizontal_dark_opaque" />
+
+            <RelativeLayout
+                android:id="@+id/selected_numbers_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/selected_numbers_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right" >
+
+                    <RadioButton
+                        android:id="@+id/selected_numbers_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selected_numbers_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/selected_numbers_button_layout"
+                    android:text="@string/selected_numbers"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <com.motorola.contextual.commonutils.chips.AddressEditTextView
+                android:id="@+id/to"
+                style="@style/RecipientEditTextView"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/no_of_missed_calls_prompt"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ics_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/account_filter_header_bottom_divider6"
+                style="@style/SectionDivider"
+                android:layout_height="1dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:layout_marginTop="10dip"
+                android:prompt="@string/no_of_missed_calls_prompt" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</LinearLayout>

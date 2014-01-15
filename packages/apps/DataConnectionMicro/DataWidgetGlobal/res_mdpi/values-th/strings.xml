@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggle Widgets</string>
+    <string name="gps_app_name">สลับ GPS</string>
+    <string name="airplane_app_name">สลับโหมดบนเครื่องบิน</string>
+    <string name="wifi_app_name">สลับ Wi-Fi</string>
+    <string name="bluetooth_app_name">สลับ Bluetooth</string>
+    <string name="apn_app_name">สลับ APN</string>
+    <string name="data_app_name">สลับข้อมูล</string>
+    <string name="widget_description">ดูและควบคุมสถานะโหมดบนเครื่องบิน</string>
+    <string name="widget_description_bt">ดูและควบคุมสถานะ Bluetooth</string>
+    <string name="widget_description_wifi">ดูและควบคุมสถานะ Wi-Fi</string>
+    <string name="widget_description_gps">ดูและควบคุมสถานะ GPS</string>
+    <string name="StatusOn">เปิด</string>
+    <string name="StatusOff">ปิด</string>
+    <string name="StatusIntermediate"></string>
+    <string name="AirplanetoastText">ไม่สามารถใช้งานโหมดบนเครื่องบิน</string>
+    <string name="BluetoothtoastText">ไม่สามารถใช้งาน Bluetooth</string>
+    <string name="GPStoastText">ไม่สามารถใช้งาน GPS</string>
+    <string name="WifitoastText">ไม่สามารถใช้งาน Wi-Fi</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+    <string name="location_restriction_enabled">เปิดใช้งานการจำกัดตำแหน่ง</string>
+    <!-- END IKPITTSBURGH-473 -->
+    <string name="apncontrol_app_name">ควบคุม APN</string>
+    <string name="no_apn">ไม่สามารถใช้งาน APN</string>
+</resources>

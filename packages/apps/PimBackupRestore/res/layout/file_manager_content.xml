@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:clipChildren="true"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+  <LinearLayout android:id="@+id/homesync_bar"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/title_bar"
+                android:visibility="gone" >
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" >
+      <TextView android:id="@+id/homesync_title"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/windowTitleSize"
+                style="?android:attr/windowTitleStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left" />
+      <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="@fraction/weight_one" />
+      <TextView android:id="@+id/homesync_step"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/windowTitleSize"
+                style="?android:attr/windowTitleStyle"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right" />
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="@dimen/homesync_layout_height"
+              android:background="@color/homesync_text_backgroud" />
+  </LinearLayout>
+  <LinearLayout android:id="@+id/content_page"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+    <FrameLayout android:id="@+id/content"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="@fraction/weight_one" />
+    <LinearLayout android:id="@+id/move_n_cancel"
+                  android:orientation="horizontal"
+                  android:background="@color/movecancel_panel_background"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:visibility="gone" >
+      <Button android:id="@+id/paste_button"
+              android:layout_width="@dimen/movecancel_button_width"
+              android:layout_marginTop="@dimen/movecancel_button_margin"
+              android:layout_height="wrap_content" />
+      <Button android:id="@+id/cancel_button"
+              android:layout_width="@dimen/movecancel_button_width"
+              android:layout_marginTop="@dimen/movecancel_button_margin"
+              android:layout_height="wrap_content" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout android:id="@+id/file_chooser_panel"
+                android:orientation="horizontal"
+                android:background="@color/filechooser_panel_backgroud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" >
+    <Button android:id="@+id/file_chooser_cancel"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/filechooser_panel_margintop"
+            android:text="@string/cancel"
+            android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Colectare date</string>
+    <string name="permission_perf_stats_write_label">Scriere setări statistici de performanţă</string>
+    <string name="permission_perf_stats_write_desc">Permite aplicaţiei să scrie setări pentru statisticile de performanţă.</string>
+
+</resources>

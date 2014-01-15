@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+        <!-- number type label -->
+        <TextView android:id="@+id/callerNumberType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                style="@style/Contacts.TxtListItemB.SingleLine"/>
+        <!-- number -->
+        <TextView android:id="@+id/callerNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                style="@style/Contacts.TxtListItemA.SingleLine"/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="5dip">
+        <ImageView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/divider_horizontal_dark"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="25dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Contacts.TxtListItemB.SingleLine"
+                android:text="@string/speedDialSpinner"
+                android:layout_marginLeft="5dp"/>
+
+        <Spinner android:id="@+id/speed_dial_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:spinnerMode="dialog"
+                android:prompt="@string/speedDialSpinner"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

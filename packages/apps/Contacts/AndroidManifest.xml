@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.contacts"
+    android:sharedUserId="android.uid.shared"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <original-package android:name="com.android.contacts" />
+
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />    
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission android:name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL" />
+    <uses-permission android:name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+    <!-- allow broadcasting secret code intents that reboot the phone -->
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- CEQUINT code begin - IKHSS6-8052 FID:34118 Enhanced CityID -->
+    <uses-permission android:name="com.cequint.ecid.CALLER_ID_LOOKUP" />
+    <!-- CEQUINT code end -->
+
+    <!-- MOTO Dailer Start -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_WRITE"/>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_READ"/>
+    <!-- Mot calling-IKSTABLETWOV-752 -->
+    <uses-permission android:name="com.motorola.blur.service.blur.Permissions.INTERACT_BLUR_SERVICE"/>
+    <!-- MOTO Dailer End -->
+    <!-- MOTO Begin IKCBS-2943 Add permission to protect AAB launch broadcast -->
+    <uses-permission android:name="com.motorola.permission.AAB_LAUNCH_BROADCAST_PERMISSION" />
+    <!-- MOTO End IKCBS-2943 -->
+
+    <!--MOT Calling Code IKHSS6UPGR-3937 to make Contacts process persistent-->
+    <application
+        android:name="com.android.contacts.ContactsApplication"
+        android:persistent="true"
+        android:label="@string/contactsList"
+        android:icon="@mipmap/ic_launcher_contacts"
+        android:taskAffinity="android.task.contacts"
+        android:hardwareAccelerated="true"
+    >
+
+        <!-- TBD, comment to running
+        <uses-library android:name="com.motorola.android.widget"/>
+        <uses-library android:name="com.motorola.blur.library.serviceutils"/>
+        <uses-library android:name="com.motorola.blur.library.app.service"/>
+         -->
+        <!-- MOT calling code- IKMAIN-4172-->
+
+
+        <!-- MOTO need it for dock mode -->
+        <!-- A virtual 12 key dialer -->
+        <activity android:name=".activities.DialpadActivity"
+            android:launchMode="singleTop"
+            android:label="@string/dialerLabel"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:configChanges="keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:excludeFromRecents="true"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:theme="@style/DialerCallLogTheme"
+            android:screenOrientation="nosensor"
+        >
+            <intent-filter>
+                <action android:name="com.android.phone.action.TOUCH_DIALER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.dialer.action.TOUCH_DIALER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.TAB"/>
+            </intent-filter>
+        </activity>
+
+        <!-- A list of recent calls -->
+        <activity android:name=".activities.CallLogActivity"
+            android:label="@string/recentCallsLabel"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:theme="@style/DialerCallLogTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.motorola.dialer.RecentCall"
+            android:launchMode="@string/RecentCallLaunchMode"
+            android:clearTaskOnLaunch="@string/RecentCallClearTask"
+            android:screenOrientation="nosensor"
+        >
+            <intent-filter>
+                <action android:name="com.android.phone.action.RECENT_CALLS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.dialer.action.RECENT_CALLS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.TAB"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- Intercept Dialer Intents for devices without a phone.
+        This activity should have the same intent filters as the DialtactsActivity,
+        so that its capturing the same events. Omit android.intent.category.LAUNCHER, because we
+        don't want this to show up in the Launcher. The priorities of the intent-filters
+        are set lower, so that the user does not see a disambig dialog -->
+        <activity
+            android:name=".activities.NonPhoneActivity"
+            android:theme="@style/NonPhoneActivityTheme"
+        >
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.CALL_BUTTON" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- The entrance point for Phone UI.
+             stateAlwaysHidden is set to suppress keyboard show up on
+             dialpad screen. -->
+        <activity android:name=".activities.DialtactsActivity"
+            android:label="@string/launcherDialer"
+            android:theme="@style/DialtactsTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="android.task.contacts.phone"
+            android:configChanges="keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_BUTTON" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <!-- This was never intended to be public, but is here for backward
+                 compatibility.  Use Intent.ACTION_DIAL instead. -->
+             <!-- comment as moto keep Dialpad Activity, CallLog Activity
+            <intent-filter>
+                <action android:name="com.android.phone.action.TOUCH_DIALER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            <intent-filter android:label="@string/recentCallsIconLabel">
+                <action android:name="com.android.phone.action.RECENT_CALLS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <activity-alias android:name="CallLogShortcut"
+                        android:targetActivity=".activities.DialtactsActivity"
+                        android:label="@string/recentCallsIconLabel"
+                        android:icon="@drawable/ic_launcher_recent_calls">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- ip call setting -->
+        <activity android:name="IpCallSettings" android:label="@string/ip_call_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- The main Contacts activity with the contact list, favorites, and groups. -->
+        <activity android:name=".activities.PeopleActivity"
+            android:label="@string/people"
+            android:theme="@style/PeopleTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:clearTaskOnLaunch="true"
+            android:noHistory="false"
+            android:launchMode="singleTop"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_CONTACTS" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_CONTACTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_ALL_CONTACTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.LIST_CONTACTS_WITH_PHONES" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/starredList">
+                <action android:name="com.android.contacts.action.LIST_STARRED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/frequentList">
+                <action android:name="com.android.contacts.action.LIST_FREQUENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/strequentList">
+                <action android:name="com.android.contacts.action.LIST_STREQUENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.FILTER_CONTACTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+            />
+        </activity>
+
+        <!-- android:configChanges is added to fix SWITCHUITWO-474,ODC_001639,2013-01-09 -->
+        <activity android:name=".activities.ContactSelectionActivity"
+            android:label="@string/contactsList"
+            android:theme="@style/ContactPickerTheme"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:clearTaskOnLaunch="true"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/phone_v2" />
+                <data android:mimeType="vnd.android.cursor.dir/phone" />
+                <data android:mimeType="vnd.android.cursor.dir/postal-address_v2" />
+                <data android:mimeType="vnd.android.cursor.dir/postal-address" />
+                <data android:mimeType="vnd.android.cursor.dir/email_v2" />
+            </intent-filter>
+
+            <!-- MOTOROLA MOD Start: IKPIM-491 -->
+            <intent-filter>
+                <action android:name="motorola.intent.ACTION_MULTIPLE_PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/phone_v2" />
+                <data android:mimeType="vnd.android.cursor.dir/phone" />
+                <data android:mimeType="vnd.android.cursor.dir/postal-address_v2" />
+                <data android:mimeType="vnd.android.cursor.dir/postal-address" />
+            </intent-filter>
+            <!-- MOTOROLA MOD End of IKPIM-491 -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+                <data android:mimeType="vnd.android.cursor.item/phone_v2" />
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address_v2" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address" />
+            </intent-filter>
+        </activity>
+
+        <!-- Backwards compatibility: somebody may have hard coded this activity name -->
+        <activity-alias android:name="ContactsListActivity"
+            android:targetActivity=".activities.PeopleActivity"
+        />
+
+        <!-- Backwards compatibility: "Contacts" from Honeycomb -->
+        <activity-alias android:name=".activities.ContactsFrontDoor"
+            android:targetActivity=".activities.PeopleActivity"
+            android:exported="true"
+        />
+
+        <!-- Backwards compatibility: "Contacts" from Gingerbread and earlier -->
+        <activity-alias android:name="DialtactsContactsEntryActivity"
+            android:targetActivity=".activities.PeopleActivity"
+            android:exported="true"
+        />
+
+        <!-- Backwards compatibility: "Phone" from Gingerbread and earlier -->
+        <activity-alias android:name="DialtactsActivity"
+            android:targetActivity=".activities.DialtactsActivity"
+            android:exported="true"
+        />
+
+        <!-- Backwards compatibility: "Call log" from Gingerbread and earlier -->
+        <activity-alias android:name="RecentCallsListActivity"
+            android:targetActivity=".activities.DialtactsActivity"
+            android:exported="true"
+        />
+
+        <!-- Backwards compatibility: "Call log" from ICS -->
+        <!-- comment as moto keep .activities.CallLogActivity
+        <activity-alias android:name=".activities.CallLogActivity"
+            android:targetActivity=".activities.DialtactsActivity"
+            android:exported="true"
+        />
+        -->
+
+        <!-- An activity for joining contacts -->
+        <activity android:name=".activities.JoinContactActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/JoinContactActivityTheme"
+            android:clearTaskOnLaunch="true"
+        >
+            <intent-filter>
+                <action android:name="com.android.contacts.action.JOIN_CONTACT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Used to set options -->
+        <activity
+            android:name=".preference.ContactsPreferenceActivity"
+            android:label="@string/activity_title_settings"
+            android:theme="@style/ContactsPreferencesTheme" />
+
+        <!-- Used to filter contacts list by account -->
+        <activity
+            android:name=".list.AccountFilterActivity"
+            android:label="@string/activity_title_contacts_filter"
+            android:theme="@style/ContactListFilterTheme" />
+
+        <!-- Used to select display and sync groups -->
+        <activity
+            android:name=".list.CustomContactListFilterActivity"
+            android:label="@string/custom_list_filter"
+            android:theme="@style/ContactListFilterTheme" />
+
+        <!-- MOTO MOD Start: IKHSS7-18331 -->
+        <activity
+            android:name=".activities.ShowOrCreateActivity"
+            android:theme="@style/BackgroundOnlyTheme">
+        <!-- MOTO MOD End: IKHSS7-18331 -->
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.SHOW_OR_CREATE_CONTACT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="mailto" />
+                <data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+
+        <!-- List of groups -->
+        <activity android:name=".activities.GroupBrowserActivity"
+            android:label="@string/contactsGroupsLabel"
+            android:theme="@style/PeopleTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:launchMode="singleTop"
+            android:clearTaskOnLaunch="true"/>
+
+        <!-- Views the details of a single group -->
+        <activity android:name=".activities.GroupDetailActivity"
+            android:label=""
+            android:theme="@style/DetailActivityTheme"/>
+
+        <!-- Create a new or edit an existing group -->
+        <activity
+            android:name=".activities.GroupEditorActivity"
+            android:theme="@style/EditorActivityTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+                <action android:name="com.motorola.contacts.QUICKTASK_SAVE_GROUPS" />
+                <action android:name="com.motorola.contacts.ACTION_SAVING_GROUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- MOTO MODE BEGIN -->
+        <activity
+            android:name="com.motorola.contacts.activities.GroupConfirmActivity"
+            android:theme="@style/EditorActivityTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.motorola.contacts.ACTION_CONFIRM_GROUP" />
+                <data android:mimeType="vnd.android.cursor.item/contact_event"/>
+                <data android:mimeType="vnd.android.cursor.item/sms-address"/>
+                <data android:mimeType="vnd.android.cursor.item/email_v2"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- MOTO MODE END -->
+
+        <!-- MOTO MODE BEGIN IKPIM-1133-->
+        <activity
+            android:name="com.motorola.contacts.activities.AddContactDialogActivity"
+            android:theme="@style/BackgroundOnlyTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.motorola.contacts.ACTION_ADD_CONTACT_DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- MOTO MODE END IKPIM-1133-->
+
+        <!-- Used to show QuickContact window over a translucent activity, which is a
+             temporary hack until we add better framework support. -->
+        <activity
+            android:name=".quickcontact.QuickContactActivity"
+            android:theme="@style/Theme.QuickContact"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity="android.task.quickcontact"
+            android:windowSoftInputMode="stateUnchanged">
+
+            <intent-filter>
+                <action android:name="com.android.contacts.action.QUICK_CONTACT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias android:name="ContactShortcut"
+            android:targetActivity=".activities.ContactSelectionActivity"
+            android:label="@string/shortcutContact"
+            android:icon="@mipmap/ic_launcher_shortcut_contact">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity-alias android:name="alias.DialShortcut"
+            android:targetActivity=".activities.ContactSelectionActivity"
+            android:label="@string/shortcutDialContact"
+            android:icon="@mipmap/ic_launcher_shortcut_directdial"
+            android:enabled="@*android:bool/config_voice_capable">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.CAR_MODE" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity-alias android:name="alias.MessageShortcut"
+            android:targetActivity=".activities.ContactSelectionActivity"
+            android:label="@string/shortcutMessageContact"
+            android:icon="@mipmap/ic_launcher_shortcut_directmessage"
+            android:enabled="@*android:bool/config_voice_capable">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity android:name="CallDetailActivity"
+            android:label="@string/callDetailTitle"
+            android:theme="@style/CallDetailActivityTheme"
+            android:screenOrientation="nosensor"
+            android:configChanges="keyboardHidden|screenSize"
+            android:icon="@mipmap/ic_launcher_phone"
+            android:taskAffinity="android.task.contacts.phone"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/calls" />
+            </intent-filter>
+        </activity>
+
+        <!-- Views the details of a single contact -->
+        <activity android:name=".activities.ContactDetailActivity"
+            android:label="@string/viewContactTitle"
+            android:theme="@style/DetailActivityTheme">
+
+            <intent-filter android:label="@string/viewContactDesription">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+            </intent-filter>
+        </activity>
+
+        <!-- Confirm that a single detail will be added to an existing contact -->
+        <activity
+            android:name=".activities.ConfirmAddDetailActivity"
+            android:label="@string/activity_title_confirm_add_detail"
+            android:theme="@style/ConfirmAddDetailDialogTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"/>
+
+        <!-- Accounts changed prompt that can appear when creating a new contact. -->
+        <activity
+            android:name=".activities.ContactEditorAccountsChangedActivity"
+            android:theme="@style/ContactEditorAccountsChangedActivityTheme"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false"/>
+
+        <!-- Create a new or edit an existing contact -->
+        <!-- android:configChanges is added to fix SWITCHUITWO-541,ODC_001639,2013-01-17 -->
+        <activity
+            android:name=".activities.ContactEditorActivity"
+            android:theme="@style/EditorActivityTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+             android:windowSoftInputMode="adjustResize">
+		<!-- modify for IKCBSMMCPPRC-1758 by bphx43 2012-08-30 -->
+		 <!-- android:configChanges="orientation|screenSize|keyboardHidden" -->
+		<!-- end by bphx43-->
+
+
+            <intent-filter android:label="@string/editContactDescription">
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+            </intent-filter>
+            <intent-filter android:label="@string/insertContactDescription">
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+                <data android:mimeType="vnd.android.cursor.dir/raw_contact" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".test.FragmentTestActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.TEST" />
+            </intent-filter>
+        </activity>
+
+        <!-- Stub service used to keep our process alive long enough for
+             background threads to finish their operations. -->
+        <service
+            android:name=".util.EmptyService"
+            android:exported="false" />
+
+        <!-- Service to save a contact -->
+        <service
+            android:name=".ContactSaveService"
+            android:exported="false" />
+ 
+        <service
+            android:name="com.motorola.contacts.group.LocalGroupSaveService"
+            android:exported="false" />
+
+        <!-- Attaches a photo to a contact. Started from external applications -->
+        <activity android:name=".activities.AttachPhotoActivity"
+            android:label="@string/attach_photo_dialog_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.ATTACH_DATA" />
+                <data android:mimeType="image/*" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            />
+        </activity>
+
+        <!-- Interstitial activity that shows a phone disambig dialog -->
+        <activity android:name="CallContactActivity"
+            android:theme="@android:style/Theme.Translucent">
+        </activity>
+
+        <!-- Pinned header list demo -->
+        <activity android:name=".widget.PinnedHeaderListDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- The widget that shows details and the social stream of a contact -->
+        <receiver android:name=".socialwidget.SocialWidgetProvider"
+            android:label="@string/social_widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/social_widget_info" />
+        </receiver>
+
+        <receiver android:name=".calllog.CallLogReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_VOICEMAIL" />
+                <data
+                    android:scheme="content"
+                    android:host="com.android.voicemail"
+                    android:mimeType="vnd.android.cursor.item/voicemail"
+                />
+            </intent-filter>
+            <intent-filter android:priority="100">
+                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".socialwidget.SocialWidgetConfigureActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.APPWIDGET_PICK" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".calllog.CallLogNotificationsService"
+            android:exported="false"
+        />
+
+        <!-- MOTOROLA MOD Start: IKPIM-491 -->
+        <provider
+            android:name="com.motorola.contacts.list.ContactMultiplePickerResultContentProvider"
+            android:readPermission="android.permission.READ_CONTACTS"
+            android:writePermission="android.permission.WRITE_CONTACTS"
+            android:authorities="com.motorola.contacts.list.ContactMultiplePickerResult">
+        </provider>
+        <!-- MOTOROLA MOD End of IKPIM-491 -->
+<!--MOTO MOD BEGIN partial field vcard share-->
+        <!-- Views the details of a single contact -->
+        <activity android:name="com.motorola.contacts.activities.ContactDetailPartialFieldPickerActivity"
+            android:label="@string/viewContactTitle"
+            android:theme="@style/PeopleTheme">
+
+            <intent-filter android:label="@string/viewContactDesription">
+                <action android:name="motorola.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/contact" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+                <data android:mimeType="vnd.android.cursor.item/contact" />
+                <data android:mimeType="vnd.android.cursor.item/raw_contact" />
+            </intent-filter>
+        </activity>
+
+        <!-- preview of a vcard file -->
+        <activity android:name="com.motorola.contacts.activities.ContactDetailVCardPreviewActivity"
+            android:label="@string/previewVCardTitle"
+            android:theme="@style/PeopleTheme" >
+            <intent-filter android:label="@string/previewVCardDesription">
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="text/vcard" />
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/x-vCard" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!--MOTO MOD END-->
+<!--
+        <activity android:name=".vcard.ImportVCardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/BackgroundOnlyTheme">
+            <intent-filter android:label="@string/importVCardDesription">
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="text/directory" />
+                <data android:mimeType="text/vcard" />
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/x-vCard" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+-->
+        <activity android:name=".vcard.ExportVCardActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BackgroundOnlyTheme" />
+
+        <service
+            android:name=".vcard.VCardService"
+            android:exported="false" />
+
+        <!-- MOTO Dialer Code Start -->
+        <activity android:name=".spd.SpeedDialEditActivity"
+                android:label="@string/speedDial_setup"
+                android:clearTaskOnLaunch="true"
+                android:launchMode="@string/FrequentLaunchMode"
+                android:screenOrientation="nosensor"
+                android:configChanges="keyboardHidden|screenSize"
+                android:theme="@style/Theme.TranslucentSpeedDialer"
+                android:icon="@mipmap/ic_launcher_phone">
+            <intent-filter>
+                <action android:name="com.android.contacts.spd.SPEEDDIAL_SETUP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".spd.SpeedDialPicker"
+                android:label="@string/speedDialPickerLabel"
+                android:clearTaskOnLaunch="true"
+                android:screenOrientation="nosensor"
+                android:launchMode="@string/FrequentLaunchMode"
+                android:configChanges="keyboardHidden|screenSize"
+                android:theme="@style/Theme.TranslucentSpeedDialer"
+                android:icon="@mipmap/ic_launcher_phone"
+         />
+        <provider android:name=".spd.SpeedDialProvider"
+                android:authorities="com.android.contacts.spd"
+                android:label="@string/speedial_provider_label"
+                android:readPermission="android.permission.READ_CONTACTS"
+                android:writePermission="android.permission.WRITE_CONTACTS">
+        </provider>
+
+<!--
+        <activity android:name="com.motorola.contacts.activities.CreateDialerShortcut"
+                android:theme="@style/CallDetailActivityTheme"/>
+        <activity-alias android:name="DialerShortcut"
+                android:targetActivity="com.motorola.contacts.activities.CreateDialerShortcut"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:icon="@drawable/ic_launcher_phone"
+                android:screenOrientation="nosensor"
+                android:label="@string/shortcutDialerApp">
+                <intent-filter>
+                        <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+            </activity-alias>
+-->
+
+         <!-- MOTO MOD  IKHSS6-12133 Start-->
+         <activity android:name="com.motorola.contacts.activities.ContactSearchShortCut"
+                android:theme="@android:style/Theme.NoDisplay"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:icon="@drawable/ic_launcher_contact_search"
+                android:screenOrientation="nosensor"
+                android:label="@string/search_contacts">
+                <intent-filter>
+                        <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+         </activity>
+         <activity-alias android:name="com.android.contacts.SearchResultsActivity"
+                android:targetActivity=".activities.PeopleActivity"
+                android:exported="true">
+                <intent-filter>
+                        <action android:name="com.android.contacts.action.FILTER_CONTACTS"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+         </activity-alias>
+         <!--MOTO MOD End  IKHSS6-12133 -->
+
+         <!-- MOTO Dialer Code IKHSS6-3559 Start-->
+         <activity android:name="com.motorola.contacts.activities.VoicemailShortcut"
+                android:theme="@android:style/Theme.NoDisplay"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:icon="@drawable/ic_launcher_voicemail"
+                android:screenOrientation="nosensor"
+                android:label="@string/voicemail">
+         </activity>
+         <!--MOTO Dialer Code IKHSS6-3559 End -->
+        <!-- MOTO Dialer Code End -->
+<!--MOTO MOD BEGIN, add the receiver and service for update voice mail number -->
+        <service
+            android:name="com.motorola.contacts.voicemail.VoiceMailUpdateService"
+            android:exported="false"
+        />
+        <receiver android:name="com.motorola.contacts.voicemail.VoiceMailUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.android.phone.CallFeaturesSetting.VOICEMAIL_CHANGED" />
+             </intent-filter>
+         </receiver>
+<!-- MOTO MOD END-->
+
+        <activity android:name=".activities.MultiplePickActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/contactMultiplePickerActivityTitle">
+            <intent-filter>
+                <action android:name="com.motorola.action.PICK_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/phone" />
+                <data android:mimeType="vnd.android.cursor.dir/phone_email" />
+                <data android:mimeType="vnd.android.cursor.dir/email_v2" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MultiplePickSearchActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+            android:label="@string/search_contacts">
+            <intent-filter>
+                <action android:name="com.motorola.action.PICK_MULTIPLE_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/person" />
+                <data android:mimeType="vnd.android.cursor.dir/phone" />
+                <data android:mimeType="vnd.android.cursor.dir/phone_email" />
+                <data android:mimeType="vnd.android.cursor.dir/email_v2" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MultiplePickPreviewActivity"
+            android:label="@string/contactMultiplePickerActivityTitle">
+            <intent-filter>
+                <action android:name="com.android.contacts.action.MULTIPLE_PREVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity used to copy between SIM and device -->
+        <activity android:name=".activities.ContactsCopySIM"
+            android:theme="@*android:style/Theme.Dialog.Alert"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+        />
+
+        <!-- Activity used to Delete Contacts -->
+        <activity android:name=".activities.DeleteContacts"
+            android:theme="@*android:style/Theme.Dialog.Alert"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+        />
+
+        <receiver android:name=".ContactSystemEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.motorola.intent.action.ICC_PRECACHE_STATUS_CHANGED" />
+                <action android:name="com.motorola.intent.action.ICC_PRECACHE_STATUS_CHANGED_2" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED_2" />
+            </intent-filter>
+        </receiver>
+
+        <!--Required stanza to register the LocalAuthenticatorService with AccountManager -->
+        <service android:name=".service.LocalAuthenticatorService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator" />
+        </service>
+
+        <!--Required stanza to register the CardAuthenticatorService with AccountManager -->
+        <service android:name=".service.CardAuthenticatorService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                       android:resource="@xml/authenticator2" />
+        </service>
+                                                                                                                      
+        <service android:name=".LoadSimContactsService"
+                 android:exported="true" />
+
+        <!-- for local contact sync  -->          
+        <service
+            android:name=".service.LocalSyncAdapterService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter_local" />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts" />
+        </service>
+
+        <!-- for sim/uim card sync  -->          
+        <service
+            android:name=".service.SimSyncAdapterService"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter_sim" />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts2" />
+        </service>
+
+		<!-- A Transparent Dialer -->
+		<activity android:name=".activities.TransDialPad"
+		    android:icon="@drawable/ic_launcher_phone"
+		    android:theme="@style/Theme.Translucent"
+		    android:excludeFromRecents="true"
+		    android:launchMode="singleInstance"
+		    android:configChanges="mcc|mnc|keyboardHidden">
+		    <intent-filter>
+                <action android:name="com.android.contacts.activities.TransDialPad" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">החלף מצב של Widgets</string>
+  <string name="gps_app_name">החלף מצב GPS</string>
+  <string name="airplane_app_name">החלף מצב טיסה</string>
+  <string name="wifi_app_name">החלף מצב Wi-Fi</string>
+  <string name="bluetooth_app_name">עבור למצב Bluetooth</string>
+  <string name="apn_app_name">החלף מצב APN</string>
+  <string name="data_app_name">החלף מצב נתונים</string>
+  <string name="widget_description">הצג את הסטטוס של מצב טיסה ונהל אותו</string>
+  <string name="widget_description_bt">הצג את סטטוס Bluetooth ונהל אותו</string>
+  <string name="widget_description_wifi">הצג את סטטוס Wi-Fi ונהל אותו</string>
+  <string name="widget_description_gps">הצג את סטטוס GPS ונהל אותו</string>
+  <string name="StatusOn">פעיל</string>
+  <string name="StatusOff">כבוי</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">מצב מטוס אינו זמין</string>
+  <string name="BluetoothtoastText">Bluetooth אינו זמין</string>
+  <string name="GPStoastText">GPS אינו זמין</string>
+  <string name="WifitoastText">Wi-Fi אינו זמין</string>
+  <string name="location_restriction_enabled">הגבלת המיקום מופעלת.</string>
+  <string name="apncontrol_app_name">פקד APN</string>
+  <string name="no_apn">אין APN זמין</string>
+</resources>

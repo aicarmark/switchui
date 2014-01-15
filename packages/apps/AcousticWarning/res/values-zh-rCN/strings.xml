@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  /*  * Copyright (C) 2012 Motorola, Inc.  * All Rights Reserved  *  */ -->
+<resources>
+    <string name="app_name">声音警报</string>
+    <string name="title">媒体音量</string>
+    <string name="warning_text">长时间收听大音量可能会损害您的听力。\n\n您的音乐音量已调至推荐级别以下。</string>
+</resources>

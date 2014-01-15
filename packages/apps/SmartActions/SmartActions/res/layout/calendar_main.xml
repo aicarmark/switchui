@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_main_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calendar_main_abwidget"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/calendar_main_layout_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/calendar_main_events_to_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/calendar_events_to_include"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/ics_blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/calendar_main_events_to_include1"
+                style="@style/SectionDivider"
+                android:layout_height="1dip"
+                android:layout_below="@id/calendar_main_events_to_include"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <!-- TODO: Need to check if this listview is used at all or not -->
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:layout_below="@id/calendar_main_events_to_include1"
+                android:layout_marginLeft="10dip"
+                android:drawSelectorOnTop="false" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/calendar_layout_preference_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@android:id/list"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_horizontal_dark_opaque" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/calendar_layout_allday_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_preference_separator"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/calendar_textview_allday_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/exclude_allday_events"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/calendar_checkbox_allday_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </CheckBox>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/calendar_layout_allday_events_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_allday_events"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_horizontal_dark_opaque" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/calendar_layout_multiple_participants_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_allday_events_separator"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/calendar_textview_multiple_participants_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:text="@string/include_multiple_participants_events"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/calendar_checkbox_multiple_participants_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </CheckBox>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/calendar_layout_multiple_participants_events_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_multiple_participants_events"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_horizontal_dark_opaque" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/calendar_layout_accepted_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_multiple_participants_events_separator"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/calendar_textview_accepted_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/include_accepted_events"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/calendar_checkbox_accepted_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </CheckBox>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/calendar_layout_accepted_events_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_accepted_events"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@drawable/divider_horizontal_dark_opaque" >
+            </ImageView>
+
+            <Button
+                android:id="@+id/calendar_main_events_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calendar_layout_accepted_events_separator"
+                android:layout_marginLeft="70dip"
+                android:layout_marginRight="70dip"
+                android:layout_marginTop="100dip"
+                android:text="@string/calendar_view_matching_events"
+                android:textSize="18sp" >
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</RelativeLayout>

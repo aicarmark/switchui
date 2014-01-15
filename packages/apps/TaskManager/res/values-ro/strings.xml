@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Manager de sarcini</string>
+  <string name="tabTasks">Aplicaţii</string>
+  <string name="tabProcesses">Procese</string>
+  <string name="buttonEnd">Încheiere</string>
+  <string name="buttonRefresh">Reîmprospătare</string>
+  <string name="menuSwitch">Comutare la</string>
+  <string name="menuEndTask">Finalizare sarcină</string>
+  <string name="menuCancel">Anulare</string>
+  <string name="textAvailableMemory">Memorie disponibilă:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Nr. de aplicaţii:</string>
+  <string name="loading">Se încarcă\u2026</string>
+</resources>

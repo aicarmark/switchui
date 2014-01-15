@@ -1,0 +1,21 @@
+#!/bin/bash
+
+device_id=$1
+enable_disable=$2
+
+if [ $device_id ] && [ $enable_disable ]; then
+
+   adb -s $device_id pull /data/data/com.motorola.motoapr.service/shared_prefs/APRPreferences.xml APRPreferences_orig.xml
+
+   perl switch_apr.pl APRPreferences_orig.xml $enable_disable > APRPreferences.xml
+
+   adb -s $device_id push APRPreferences.xml /data/data/com.motorola.motoapr.service/shared_prefs/APRPreferences.xml
+
+   adb -s $device_id reboot
+
+else
+
+   echo "Device ID or enabled state Not Specified:"
+   echo " e.g. $0 LOLA340150 false"
+
+fi

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_type">
+        <item>名稱</item>
+        <item>日期</item>
+        <item>大小</item>
+        <item>類型</item>
+    </string-array>
+    
+    <string-array name="network_type">
+        <item>CDMA網路</item>
+        <item>GSM網路</item>   
+    </string-array>
+        <string-array name="search_storage_selector">
+        <item>手機內部儲存</item>
+        <item>SD 卡</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Εισαγωγή ονόματος ή διεύθυνσης IP</item>
+        <item>Σάρωση για διακομιστή</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Προσθήκη διακομιστή</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Σάρωση για τομείς...</item>
+        <item>Σάρωση για διακομιστές...</item>
+        <item>Σύνδεση στο διακομιστή...</item>
+        <item>Φόρτωση...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Κατά όνομα</item>
+        <item>Κατά τύπο</item>
+        <item>Κατά ώρα</item>
+        <item>Κατά μέγεθος</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Χωρίς κρυπτογράφηση</item>
+        <item>Κρυπτογράφηση παλαιού τύπου (Zip 2.0)</item>
+        <item>Κρυπτογράφηση AES 128 bit </item>
+        <item>Κρυπτογράφηση AES 256 bit</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Εσωτερ. χώρος αποθ/σης</item>
+        <item>Κάρτα SD</item>
+    </string-array>
+
+</resources>

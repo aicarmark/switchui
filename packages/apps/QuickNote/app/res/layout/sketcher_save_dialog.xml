@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/main"
+  android:orientation="vertical"
+  android:gravity="center"
+  android:layout_width="400px"
+  android:layout_height="230px" >
+  <LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="350px"
+    android:layout_height="130px" >
+    <TextView
+      android:text="@string/name"
+      android:textSize="30px"
+      android:textStyle="bold"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"/>
+    <EditText
+      android:id="@+id/edit"
+      android:minHeight="80px"
+      android:maxHeight="80px"
+      android:scrollHorizontally="true"
+      android:gravity="fill_horizontal"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:singleLine="true"
+      android:layout_width="fill_parent"
+      android:layout_height="80px" />
+  </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="100px" >
+    <Button
+      android:id="@+id/btn_ok"
+      android:text="@string/ok"
+      android:layout_width="175px"
+      android:layout_height="wrap_content" />
+    <Button
+      android:id="@+id/btn_cancel"
+      android:text="@string/cancel"
+      android:layout_width="175px"
+      android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:paddingTop="6dip" android:paddingBottom="10dip" android:paddingLeft="6dip" android:paddingRight="6dip">
+		<ImageView android:id="@+id/title_icon"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_vertical"/>
+		<TextView android:id="@+id/title_text" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:singleLine="true" 
+			android:layout_gravity="center_vertical"
+			android:ellipsize="end"/>
+	</LinearLayout>
+
+	<ImageView android:id="@+id/titleDivider"
+		android:layout_width="fill_parent" android:layout_height="1dip"
+		android:scaleType="fitXY" android:gravity="fill_horizontal"
+		android:src="@drawable/dialog_divider_horizontal_light"/>
+
+	<LinearLayout android:id="@+id/frame1" android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingBottom="15dip" 
+    	 android:paddingTop="15dip" android:paddingLeft="6dip" android:paddingRight="6dip">
+
+		<ProgressBar android:id="@+android:id/progress"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingLeft="6dip" android:paddingRight="6dip" >
+		<TextView android:text="@string/prompt_handling" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+			/>
+		<TextView android:id="@+id/file_name" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:paddingTop="6dip" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/frame2" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:paddingBottom="15dip" 
+    	 android:paddingTop="15dip" android:paddingLeft="6dip" android:paddingRight="6dip">
+
+	    <TextView  
+	        android:id="@+id/prompt_overwrite"
+	        android:text="@string/btn_cancel"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	            	
+		<CheckBox android:text="@string/confirm_overwrite_all"
+			android:id="@+id/cb_overwrite_all" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/buttonPanel1"
+		style="@android:style/ButtonBar"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:minHeight="54dip" 
+		android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+		
+		<Button android:id="@+id/btn_cancel" 
+				android:text="@string/btn_cancel"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="1" 
+				android:maxLines="2" 
+				android:paddingLeft="20dip" android:paddingRight="20dip"
+				/>
+			
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/buttonPanel2"
+		style="@android:style/ButtonBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="54dip" 
+		android:orientation="horizontal">
+	
+		<Button android:id="@+id/btn_no" 
+				android:text="@string/btn_no"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="1" 
+				android:maxLines="2" 
+				android:paddingLeft="20dip" android:paddingRight="20dip"
+				/>
+	    <Button android:id="@+id/btn_yes" 
+				android:text="@string/btn_yes"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="1" 
+				android:maxLines="2" 
+				android:paddingLeft="20dip" android:paddingRight="20dip"
+				/>
+	</LinearLayout>
+
+
+</LinearLayout>

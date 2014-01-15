@@ -1,0 +1,20 @@
+# See system/core/logcat/event.logtags for a description of the format of this file.
+
+option java_package com.motorola.devicestatistics
+
+# This event is logged when bluetooth setting is turned on or off
+# bluetooth_enabled: This indicates whether bluetooth is on(1) or off(0)
+1000303 dsbt_status (bluetooth_enabled|1|5)
+
+
+# This event is logged when a user opens/closes the hard keyboard or the soft keyboard.
+# kbd_event: Indicates the type of keyboard event: 1-close_hard_kbd,2-close_soft_kbd
+# kbdActiveTime: Indicates the time for which the given keyboard was active.
+# key_count: Total number of keys pressed.
+# alphanumeric_count: Total number of alphanumeric keys pressed.
+# key_entry_rate: Rate of key press entry
+# special_char: list of special characters pressed along with the number of occurences (splchar1 = count1, specialchar2 = count2 .....).
+1000310 dc_kbd (kbd_event|1), (kbdActiveTime|2), (key_count|1), (alphanumeric_count|1), (key_entry_rate|2), (special_char|3)
+1000311 dc_vib (vibrate_enabled|1)
+1000312 dc_snd (soundonkeypress_enabled|1)
+1000313 dc_autocmpl (autocomplete_enabled|1)

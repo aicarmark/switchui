@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ /*
+ * Copyright (C) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ */
+-->
+<resources>
+    <string name="app_name">AcousticWarning</string>
+    <string name="title">Media Volume</string>
+    <string name="warning_text">Listening at high volume for long periods may be harmful to your hearing.\n\nYour music volume has been adjusted below the recommended level.</string>
+</resources>

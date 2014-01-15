@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for sketcher board parameters -->
+    <integer name="board_width_land">1264</integer>
+    <integer name="board_height_land">573</integer>
+    <integer name="board_width_port">704</integer>
+    <integer name="board_height_port">1133</integer>
+
+    <!-- for note content size -->
+    <integer name="note_content_width">702</integer>
+    <integer name="note_content_height">1125</integer>
+    <!-- for image size in note view -->
+    <integer name="image_width">702</integer>
+    <integer name="image_height">1055</integer>
+    <!-- for image size in detail view -->
+    <integer name="detail_image_width">720</integer>
+    <integer name="detail_image_height">1230</integer>
+    <!-- for widget size -->
+    <integer name="widget_width">238</integer>
+    <integer name="widget_height">319</integer>
+
+    <!-- for thumbnails layout -->
+    <integer name="thumb_layout_width">230</integer>
+    <integer name="thumb_layout_height">371</integer>
+    <integer name="delete_layout_width">137</integer>
+    <integer name="delete_layout_height">195</integer>
+
+    <integer name="title_scrolling">75</integer>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-11-04                    XQH748      initial
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal" android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tfitem_margin_left"
+
+  android:minHeight="?android:attr/listPreferredItemHeight">
+  <ImageView android:id="@+id/icon" android:layout_height="@dimen/ticon_dimen"
+    android:layout_width="@dimen/ticon_dimen" android:scaleType="centerInside"
+    android:layout_gravity="center_vertical" />
+
+  <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/text_info"
+      android:paddingLeft="@dimen/info_layout_padding_left"
+      android:layout_height="wrap_content" android:layout_width="wrap_content"
+      android:layout_centerVertical="true" android:orientation="vertical"
+      android:layout_marginRight="@dimen/colfitem_margin_right"
+      android:paddingRight="@dimen/cont_icon_width">
+      <TextView android:id="@+id/text" android:layout_height="@dimen/text_view_height"
+        android:layout_weight="@fraction/weight_one"
+        android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/file_select"
+        android:layout_alignWithParentIfMissing="true"
+        android:singleLine="true" android:ellipsize="middle" />
+      <TextView android:id="@+id/info" android:layout_height="@dimen/text_view_height"
+        android:layout_weight="@fraction/weight_one"
+        android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true" android:singleLine="true"
+        android:ellipsize="end" android:visibility="gone" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/filebrowser_contextMenuContainer"
+      android:layout_marginRight="@dimen/colfitem_margin_right"
+      android:layout_width="@dimen/cont_icon_width"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:gravity="right">
+      <ImageView android:id="@+id/filebrowser_contextMenu"
+        android:layout_width="wrap_content" android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dropdown_normal_holo_dark" />
+    </RelativeLayout>
+  </RelativeLayout>
+</LinearLayout>

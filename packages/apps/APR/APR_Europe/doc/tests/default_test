@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+echo "--------------------------------"
+echo "Loading BP Panics!"
+echo "--------------------------------"
+cd bp_panics
+./script
+
+echo "--------------------------------"
+echo "Loading JAVA Panics!"
+echo "--------------------------------"
+cd ../java_panics
+./script
+
+echo "--------------------------------"
+echo "Loading Kernel Panics!"
+echo "--------------------------------"
+cd ../kernel_panics
+./script
+
+echo "--------------------------------"
+echo "Loading Linux User Space Panics!"
+echo "--------------------------------"
+cd ../tombstones
+./script
+echo "--------------------------------"

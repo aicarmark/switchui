@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferences_general_title">
+        <com.android.calendar.DefaultCalendarDialogPreference
+             android:key="preference_defaultCalendar"
+             android:title="@string/preferences_default_calendar_title"
+             android:summary="@string/no_default_calendars_summary" />
+        <ListPreference
+            android:key="preferences_default_calendarview"
+            android:title="@string/preferences_default_view_title"
+            android:entries="@array/default_view_labels"
+            android:entryValues="@array/default_view_value"
+            android:defaultValue="@string/default_calendar_view_value"
+            android:dialogTitle="@string/preferences_default_view_title" />
+        <CheckBoxPreference
+            android:key="preferences_hide_declined"
+            android:defaultValue="false"
+            android:title="@string/preferences_hide_declined_title" />
+        <CheckBoxPreference
+            android:key="preferences_show_week_num"
+            android:defaultValue="false"
+            android:title="@string/preferences_show_week_num_title" />
+        <ListPreference
+            android:key="preferences_week_start_day"
+            android:defaultValue="@string/preferences_week_start_day_default"
+            android:title="@string/preferences_week_start_day_title"
+            android:entries="@array/preferences_week_start_day_labels"
+            android:entryValues="@array/preferences_week_start_day_values"
+            android:dialogTitle="@string/preferences_week_start_day_dialog" />
+        <CheckBoxPreference
+            android:key="preferences_home_tz_enabled"
+            android:defaultValue="false"
+            android:title="@string/preferences_use_home_tz_title"
+            android:summary="@string/preferences_use_home_tz_descrip" />
+        <ListPreference
+            android:key="preferences_home_tz"
+            android:dependency="preferences_home_tz_enabled"
+            android:defaultValue="@string/preferences_home_tz_default"
+            android:title="@string/preferences_home_tz_title"
+            android:entries="@array/timezone_labels"
+            android:entryValues="@array/timezone_values"
+            android:dialogTitle="@string/preferences_home_tz_title" />
+        <PreferenceScreen
+            android:key="preferences_clear_search_history"
+            android:title="@string/preferences_clear_search_history_title"
+            android:summary="@string/preferences_clear_search_history_summary" />
+    </PreferenceCategory>
+    <!-- The below two preference items are only used in Chinese,
+    default value should be true when switch to Chinese at first time -->
+    <PreferenceCategory android:title="@string/preferences_lunar_title"
+         android:key="pref_key_general_settings">
+        <CheckBoxPreference
+            android:key="preferences_show_lunar"
+            android:defaultValue="true"
+            android:summary="@string/preference_enable_lunar_calendar_summary"
+            android:title="@string/preferences_show_lunar_title" />
+         <CheckBoxPreference
+            android:key="preferences_show_holiday"
+            android:defaultValue="true"
+            android:title="@string/preferences_show_holiday_title" />
+    </PreferenceCategory>
+    <!-- PreferenceCategory android:title="@string/preference_conference_call_settings_title"
+        android:key="pref_key_general_conference">
+        <CheckBoxPreference
+            android:key="preferences_enable_quick_conference_dialing"
+            android:defaultValue="true"
+            android:title="@string/preference_enable_quick_conference_dialing_title"
+            android:summary="@string/preference_enable_quick_conference_dialing_summary"/>
+        <com.android.calendar.confinfo.ConferenceCallDialogPreference
+            android:key="preference_conference_call_info"
+            android:title="@string/preference_conference_call_info_title"
+            android:summary="@string/preference_conference_call_info_summary"/>
+    </PreferenceCategory -->
+    
+    <PreferenceCategory
+        android:key="preferences_alerts_category"
+        android:title="@string/preferences_reminder_title">
+        <CheckBoxPreference
+            android:key="preferences_alerts"
+            android:defaultValue="true"
+            android:title="@string/preferences_alerts_title" />
+
+        <RingtonePreference
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:key="preferences_alerts_ringtone"
+            android:title="@string/preferences_alerts_ringtone_title"
+            android:ringtoneType="notification"
+            android:defaultValue="content://settings/system/notification_sound" />
+
+        <ListPreference
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:key="preferences_alerts_vibrateWhen"
+            android:title="@string/preferences_alerts_vibrateWhen_title"
+            android:entries="@array/prefEntries_alerts_vibrateWhen"
+            android:entryValues="@array/prefValues_alerts_vibrateWhen"
+            android:defaultValue="@string/prefDefault_alerts_vibrateWhen"
+            android:dialogTitle="@string/prefDialogTitle_vibrateWhen" />
+
+        <CheckBoxPreference
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:key="preferences_alerts_popup"
+            android:defaultValue="false"
+            android:title="@string/preferences_alerts_popup_title" />
+
+        <ListPreference
+            android:key="preferences_default_reminder"
+            android:defaultValue="@string/preferences_default_reminder_default"
+            android:title="@string/preferences_default_reminder_title"
+            android:entries="@array/preferences_default_reminder_labels"
+            android:entryValues="@array/preferences_default_reminder_values"
+            android:dialogTitle="@string/preferences_default_reminder_dialog" />
+
+        <PreferenceScreen
+            android:key="preferences_quick_responses"
+            android:fragment="com.android.calendar.QuickResponseSettings"
+            android:title="@string/quick_response_settings"
+            android:summary="@string/quick_response_settings_summary" />
+     </PreferenceCategory>
+
+</PreferenceScreen>

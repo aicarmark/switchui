@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ger. de arquivos</string>
+    
+    <!-- Titles -->
+    
+    <string name="choose_file_name">Escolher arquivo</string>
+    <string name="title_choose_file">Escolha um arquivo</string>
+    <string name="title_choose_folder">Escolha uma pasta</string>
+    <string name="title_dlg_deleting">Excluindo...</string>
+    <string name="title_dlg_hide">Ocultar</string>
+    <string name="title_dlg_moving">Movendo...</string>
+    <string name="title_dlg_copying">Copiando...</string>
+    <string name="title_dlg_canceling">Cancelar</string>
+    <string name="title_dlg_new">Insira o nome da pasta</string>
+    <string name="title_dlg_sort">Classificar por</string>
+    <string name="title_dlg_property">Propriedade</string>
+    <string name="title_dlg_confirm_delete">Confirme exclusão</string>
+    <string name="title_dlg_confirm_hide">Confirmar ocultação</string>
+    <string name="title_copyto">Copiar</string>
+    <string name="title_move">Mover</string>
+    <string name="title_delete">Excluir</string>
+    <string name="title_dlg_confirm_overwrite">Confirmar para sobrescrever</string>
+    <string name="title_dlg_select_network">Selecionar rede</string>
+    <string name="title_hideunhide">Ocultar/Exibir</string>
+
+    
+    <!-- context menu -->
+    <!-- string name="menu_open">Open</string-->
+    <string name="menu_move">Mover</string>
+    <string name="menu_copy">Copiar</string>
+    <string name="menu_detail">Propriedade</string>
+    <string name="menu_rename">Renomear</string>
+    <string name="menu_delete">Excluir</string>
+    <string name="menu_new_folder">Novo</string>
+    <string name="menu_share">Compartilhar</string>
+    <string name="menu_set_as">Definir como</string>
+    <string name="menu_set_as_call_ringtone">Definir como toque de toque de ligação</string>
+    <string name="menu_set_as_message_ringtone">Definir como toque de mensagem</string>
+    <string name="menu_hide">Ocultar</string>
+    
+    <!-- options menu -->
+     
+    <string name="menu_multi_choice">Escolha</string>
+    <string name="menu_cancel_choice">Cancelar</string>
+    <string name="menu_delete_choice">Excluir</string>
+    <string name="menu_move_choice">Mover</string>
+    <string name="menu_copy_choice">Copiar</string>
+    <string name="menu_sorting">Classificar</string>
+    <string name="menu_sort_name">Por nome</string>
+    <string name="menu_sort_type">Por tipo</string>
+    <string name="menu_sort_size">Por tamanho</string>
+    <string name="menu_sort_date">Por data</string>
+    <string name="menu_property">Propriedade</string>
+    <string name="menu_hideunhide">Ocultar/Exibir</string>   
+
+    
+    
+    <!-- Used in open a file -->
+    <string name="sendImage">Compartilhar imagem via</string>
+    <string name="sendVideo">Compartilhar vídeo via</string>
+    <string name="sendText">Compartilhar vídeo via</string>
+    <string name="sendAudio">Compartilhar áudio via</string>
+    <string name="sendUnknown">Compartilhar via</string>
+    <string name="setImage">Definir foto como</string>
+    
+    
+    <!-- Buttons -->
+    
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_copyto">Copiar no</string>
+    <string name="btn_move">Mover para o</string>
+    <string name="btn_delete">Excluir</string>
+    <string name="btn_yes">Sim</string>
+    <string name="btn_no">Não</string>
+    <string name="btn_hide">Ocultar</string>
+
+
+	<!--  Error prompt -->
+	
+    <string name="invalidate_folder">%s é uma pasta inválida.</string>
+    <string name="folder_not_exist">A pasta %s não existe.</string>
+    <string name="file_not_exist">O arquivo %s não existe.</string>
+    <string name="sdcard_not_exist">Sem cartão SD.</string>
+    <string name="sdcard_is_shared">Seu cartão SD está em uso.</string>
+    <string name="application_not_available">Não há aplicativos para abrir este arquivo.</string>
+    <string name="fail_to_share_file">Não é possível compartilhar este arquivo.</string>
+    <string name="fail_to_set_file">Não é possível definir este arquivo.</string>
+    <string name="fail_delete">Não é possível excluir %s.</string>    
+    <string name="fail_delete_ringtone">O arquivo %s foi definido como toque. Não é possível exclui-lo.</string>    
+    <string name="fail_move_ringtone">O arquivo %s foi definido como toque. Não é possível movê-lo.</string>    
+    <string name="fail_rename_ringtone">O arquivo %s foi definido como toque. Não é possível renomeá-lo.</string>    
+    <string name="fail_rename">Não é possível renomear %1$s para %2$s.</string>    
+    <string name="fail_copy_file">Não é possível copiar %s.</string>    
+    <string name="fail_move_file">Não é possível mover %s.</string>    
+    <string name="fail_create_file">Não é possível criar arquivo %s.</string>
+    <string name="fail_create_folder">Não é possível criar pasta %s.</string>
+    <string name="fail_disk_full">Não há espaço suficiente para concluir esta operação.</string>
+    <string name="cannot_write_folder">A pasta %s não pode ser sobrescrita.</string>
+    <string name="cannot_same_folder">Não é possível copiar/mover para a mesma pasta.</string>
+    <string name="cannot_sub_folder">Não é possível copiar/mover uma pasta para sua subpasta.</string>
+    <string name="cannot_choose_vfolder">Não é possível selecionar uma pasta virtual.</string>
+	<string name="need_choose_file">Selecione um arquivo.</string>
+    <string name="filename_cannot_null">O nome do arquivo e da pasta não pode ficar vazio.</string>
+    <string name="filename_invalidate">O nome do arquivo e da pasta não pode ser %s.</string>
+    <string name="folder_existed">A pasta %s já existe.</string>
+    <string name="file_existed">O arquivo %s já existe.</string>
+    <string name="not_set_ringtone">Áudio de tipo wma. Não é possível defini-lo como toque.</string>
+    <string name="filename_too_long">Nome de arquivo muito longo.</string>
+
+	<!--  Success prompt -->
+    <string name="success_move_file">Arquivo movido.</string>    
+    <string name="success_copy_file">Arquivo copiado.</string>
+    <string name="success_cancel_move_file">Mover cancelado.</string>    
+    <string name="success_cancel_copy_file">Copiar cancelado.</string>
+    <string name="success_skip_move_file">Operação concluída, mas alguns arquivos não foram movidos.</string>    
+    <string name="success_skip_copy_file">Operação concluída, mas alguns arquivos não foram copiados.</string>
+    <string name="success_create_file">Arquivo %s criado.</string>
+    <string name="success_create_folder">Pasta %s criada.</string>
+    <string name="success_set_ringstone">Toque de ligação definido.</string>
+    <string name="success_set_cdma_message_ringstone"> %s definido como toque de mensagem para rede CDMA.</string>
+    <string name="success_set_gsm_message_ringstone"> %s definido como toque de mensagem para rede GSM.</string>
+    <string name="success_set_message_ringstone"> %s definido como toque de mensagem.</string>
+    <string name="success_hide_folder">Pasta oculta.</string>
+    <string name="success_cancel_hide_folder">Ocultar cancelado.</string> 
+
+    <!-- property -->
+    <string name="type_folder">Pasta</string>
+    <string name="type_video">Vídeo</string>
+    <string name="type_audio">Áudio</string>
+    <string name="type_image">Imagem</string>
+    <string name="type_text">Texto</string>
+    <string name="type_removealbe_memory">Memória removível</string>
+    <string name="location_sdcard">Cartão SD</string>
+    <string name="permition_writable">Regravável</string>
+    <string name="permition_readonly">Somente leitura</string>
+    <string name="folder_contains">%1$d pastas,\n%2$d arquivos</string>
+    <string name="folder_contains_folder_file">%1$d pasta,\n%2$d arquivo</string>
+    <string name="folder_contains_folders_file">%1$d pastas,\n%2$d arquivo</string> 
+    <string name="folder_contains_folder_files">%1$d pasta,\n%2$d arquivos</string>
+    <string name="folder_contains_folders_files">%1$d pastas,\n%2$d arquivos</string>
+ 
+	<string name="property_name">&quot;Nome:&quot;</string> 
+	<string name="property_type">&quot;Tipo:&quot;</string>
+	<string name="property_location">&quot;Localização:&quot;</string> 
+	<string name="property_permition">&quot;Permissão:&quot;</string>
+	<string name="property_resolution">&quot;Resolução:&quot;</string>
+	<string name="property_duration">&quot;Duração:&quot;</string>
+	<string name="property_size">&quot;Tamanho:&quot;</string>
+	<string name="property_modified">&quot;Data de modificação:&quot;</string>
+	<string name="property_contains">&quot;Contém:&quot;</string>
+	<string name="property_used_space">&quot;Espaço utilizado:&quot;</string>
+	<string name="property_free_space">&quot;Espaço livre:&quot;</string> 
+     <string name="property_license">&quot;Licença:&quot;</string>	
+    <!-- Others -->
+    <string name="internal_storage">Memória interna</string>
+    <string name="removable_sdcard">Cartão SD</string>
+    <string name="internal_phone_storage_unmounted">A memória do telefone está desativada. Ative-a para ler arquivos.</string>
+    <string name="menu_view_switch">Visualizar</string> 
+    <string name="menu_view_list">Visualização em lista</string>
+    <string name="menu_view_grid">Visualização em grade</string>
+    <string name="home">Página inicial do gerenciador de arquivos</string>
+    <string name="sd_missing">Sem cartão de memória. Insira um cartão de memória para ler arquivos.</string>
+        
+    <string name="empty_folder">Esta pasta está vazia.</string>
+    <string name="confirm_delete">Tem certeza de que deseja excluir %s?</string>    
+    <string name="confirm_delete_choice">Tem certeza de que deseja excluir estes arquivos?</string>
+    <string name="confirm_delete_subdir">Marque esta opção se quiser excluir todos os arquivos e suas subpastas.</string>
+    <string name="confirm_new_file">Marque esta opção para criar um novo arquivo.</string>
+    <string name="prompt_input_name">Insira um novo nome:</string>
+    <string name="prompt_handling">Responsável atual:</string>
+    <string name="confirm_overwrite_all">Marque esta opção se quiser sobrescrever tudo.</string>
+    <string name="confirm_overwrite">O arquivo %s já existe. Deseja sobrescrevê-lo?</string>
+    <string name="receive_event">Receber evento do sistema: %s</string>
+    <string name="CB_Select_all">Selecionar todos(as)</string>
+    <string name="file_size_zero">O tamanho do arquivo é 0Kb. Não é possível abri-lo.</string>
+    <string name="msg_opening_progress">Abrindo…</string>
+    <string name="msg_refreshing_progress">Atualizando...</string>
+    <string name="msg_sorting_progress">Classificando...</string>
+    
+    <!-- search -->
+    <string name="loading">Carregando...</string>
+    <string name="menu_search">Buscar</string>
+    <string name="search_title">Buscar</string>
+    <string name="search_hint">Buscar arquivos</string>
+    <string name="settings_description">Arquivos e pastas</string>
+    <string name="tpye_folder">Tipo: Pasta</string>
+    <string name="type_file">Tipo: Arquivo</string>
+	  <string name="type_doc">Tipo: Doc.</string>
+	  <string name="type_zip">Tipo: Zip</string>
+	  <string name="type_drm">DRM</string>
+	  <string name="size_kb">%1$s KB</string>
+	  <string name="empty_search_result">Nenhum resultado foi encontrado.</string>
+	  <string name="matches_for">Resultados para</string>
+      <string name="found_in">em</string>
+      <string name="select_folder">Selecione pasta</string>
+      <string name="cancle">Cancelar</string>      
+      <string name="crop_Image_error">Tipo de arquivo não suportado. </string>
+      <string name = "search_folder">Selecione pasta para buscar</string>
+      <string name="sd_missing_search">Sem cartão de memória. Insira um cartão de memória para buscar arquivos.</string>
+      <string name="end_time_constraint">Licença %1$d: O horário de término é %2$s</string>
+      <string name="interval_constraint">Licença %1$d: O intervalo é %2$s</string>
+      <string name="count_constraint">Licença %1$d: A contagem é %2$s</string>
+      <string name="start_time_constraint">Licença %1$d: O horário de início é %2$s</string>  
+      <string name="menu_select_all">Marcar tudo</string>
+      <string name="menu_unselect_all">Desmarcar tudo</string>	 
+      <string name="menu_multi_select">Multisseleção</string>
+      <string name="sd_is_used_by_other">O dispositivo está no modo de armazenamento USB. Saia deste modo para acessar a memória.</string>
+      <string name="menu_update_package">Atualização do sistema</string>
+      <string name="msg_confirm_system_update">Seu telefone será reiniciado quando a atualização for concluída. Deseja continuar?</string>
+</resources>

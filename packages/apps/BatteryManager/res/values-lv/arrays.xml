@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Akumulatora sākotnējie iestatījumi</item>
+    <item>Pielāgotie iestatījumi</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 minūtes</item>
+    <item>30 minūtes</item>
+    <item>45 minūtes</item>
+    <item>60 minūtes</item>
+    <item>Vienmēr ieslēgts</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 minūtes</item>
+    <item>30 minūtes</item>
+    <item>45 minūtes</item>
+    <item>60 minūtes</item>
+  </string-array>
+</resources>

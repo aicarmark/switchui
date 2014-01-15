@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Akustisches Warnsignal</string>
+  <string name="title">Medienlautstärke</string>
+  <string name="warning_text">Das Hören bei hoher Lautstärke über einen langen Zeitraum kann Ihr Gehör schädigen.\n\nIhre Musiklautstärke wurde unter das empfohlene Niveau geändert.</string>
+</resources>

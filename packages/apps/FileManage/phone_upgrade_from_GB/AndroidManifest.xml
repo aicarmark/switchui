@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.motorola.FileManager"
+      android:versionCode="1"
+      android:versionName="CBS_ICS_FileManager3.1">     
+ 
+  <uses-sdk android:minSdkVersion="14" />
+  <supports-screens android:smallScreens="true"
+                    android:normalScreens="true"
+                    android:largeScreens="true"
+                    android:xlargeScreens="false" />
+      
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" 
+         android:theme="@android:style/Theme.Holo">
+        <activity android:name=".FileManager" 
+                  android:launchMode="singleTop"          
+                  android:label="@string/app_name"  
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <!-- modify by amt_xulei for SWITCHUITWO-309 -->
+        <activity android:name=".FileManagerActivity"
+                  android:launchMode="singleTask"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="@string/app_name"> 
+        <!-- end modify -->            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.action.VIEW_DIRECTORY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+               <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                 android:resource="@xml/searchable"/>
+            <meta-data android:name="android.app.default_searchable"
+                 android:value=".FileManagerActivity" />
+            
+        </activity>
+        <activity android:name=".ChooseActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChooseFileNameActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.action.CHOOSE_FILE"/>
+                 <category android:name="android.intent.category.DEFAULT" />               
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.action.CHOOSE_FILE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                 <category android:name="android.intent.category.OPENABLE" />  
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="image/*" />
+                 <data android:mimeType="audio/*" />
+                 <data android:mimeType="video/*" />
+            </intent-filter>      
+
+            <intent-filter>
+                <action android:name="com.motorola.action.CHOOSE_DIRECTORY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.motorola.action.CHOOSE_DIRECTORY"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+        <provider android:name=".SearchSuggestionsProvider"
+              android:authorities="com.motorola.FileManager.SearchSuggestionsProvider" />    
+    </application>
+    
+</manifest> 

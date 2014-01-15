@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cy="http://schemas.android.com/apk/res/com.motorola.mmsp.rss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_portrait" >
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:visibility="invisible"
+        >
+
+        <ImageButton
+            android:id="@+id/previous"
+            style="@style/bottom_button"
+            android:gravity="center"
+            android:text="@string/previous_page"
+            android:src="@drawable/previous"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/share"
+            style="@style/bottom_button"
+            android:gravity="center"
+            android:text="@string/share" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/dark_gray" />
+
+        <ImageButton
+            android:id="@+id/viewOriginal"
+            style="@style/bottom_button"
+            android:gravity="top|center_horizontal"
+            android:src="@drawable/view_original" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/articlelist"
+            style="@style/bottom_button"
+            android:gravity="center"
+            android:text="@string/articlelist" />
+
+        <ImageButton
+            android:id="@+id/next"
+            style="@style/bottom_button"
+            android:gravity="center"
+            android:src="@drawable/next"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_divide"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/button_layout"
+        android:background="@color/dark_gray" />
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_detail_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/horizontal_divide"
+        android:layout_marginTop="7dp"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_article_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" 
+            android:layout_marginLeft="14dp"
+        	android:layout_marginRight="14dp">
+
+            <TextView
+                android:id="@+id/fullscreen_articledetail_author"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.0"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/fullscreen_articledetail_pubdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="3.0"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <FrameLayout 
+            android:id="@+id/fullscreen_textview_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/fullscreen_article_title_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+            <WebView
+                android:id="@+id/fullscreen_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"       
+                android:scrollbars="vertical"         
+            />
+        </FrameLayout>
+        <TextView 
+	        android:id="@+id/fullscreen_noarticle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#00000000" 
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:visibility="invisible"
+	        />    
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/articledetail_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/horizontal_divide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/horizontal_divide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:unselectedAlpha="0.5" />
+
+</RelativeLayout>

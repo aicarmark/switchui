@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_type">
+        <item>Nombre</item>
+        <item>Fecha</item>
+        <item>Tamaño</item>
+        <item>Tipo</item>
+    </string-array>
+    
+     <string-array name="network_type">
+        <item>Red CDMA</item>
+        <item>Red GSM</item>   
+    </string-array>
+    
+</resources>

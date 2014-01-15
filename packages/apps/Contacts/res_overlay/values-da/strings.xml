@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Hemmeligt nummer</string>
+    <string name="visual_voicemail">Visual Voicemail</string>
+    <string name="Data_roaming_msg">Du vil muligvis blive opkrævet yderligere gebyrer for brug af visual voicemail.\n\nVil du bruge visual voicemail eller voicemail?</string>
+
+</resources>

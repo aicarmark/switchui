@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tb_single_select_container"
+    style="@style/Interactive_Titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/rule_header"
+    android:minHeight="@dimen/title_bar_control_size"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/title_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/list_selector_holo_dark"
+        android:gravity="left|center" >
+
+        <!-- Rule Icon Layout -->
+        <LinearLayout
+            android:id="@+id/left_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <!-- Rule Icon -->
+            <ImageButton
+                android:id="@+id/rule_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:clickable="false"
+                android:contentDescription="@string/rule_icon_image_desc" />
+        </LinearLayout>
+
+        <!-- Text Layout -->
+        <LinearLayout
+            android:id="@+id/right_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left_wrapper"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp" >
+
+            <!-- First Line -->
+            <LinearLayout
+                android:id="@+id/first_line_wrapper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical" >
+
+                <!-- Title/Rule Name -->
+                <LinearLayout
+                    android:id="@+id/title_line_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/title_line"
+                        style="@style/Interactive_Titlebar.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|center_vertical"
+                        android:shadowDx="0"
+                        android:shadowDy="-2.0"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <!-- On Off Switch -->
+                <LinearLayout
+                    android:id="@+id/on_off_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="0"
+                    android:orientation="horizontal" >
+
+                    <Switch
+                        android:id="@+id/on_off_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Description/Rule Status -->
+            <TextView
+                android:id="@+id/description_line"
+                style="@style/Interactive_Titlebar.SecondLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <!-- Rule Name Edit Text -->
+            <EditText
+                android:id="@+id/edit_rule_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:gravity="start|center_vertical"
+                android:hint="@string/rule_name"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:minHeight="48dp"
+                android:selectAllOnFocus="false"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

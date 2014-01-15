@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recipients_editor_smartprofile_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.motorola.contextual.address.AddressScrollView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipients_editor_smartprofile_scroll"
+            android:fadingEdge="none">
+
+
+    <com.motorola.contextual.address.AddressingLayout android:id="@+id/recipients_editor_smartprofile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+
+</com.motorola.contextual.address.AddressScrollView>
+
+</LinearLayout>

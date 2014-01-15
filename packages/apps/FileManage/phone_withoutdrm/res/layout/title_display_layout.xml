@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ *  Date            CR                Author               Description
+ */
+-->
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/header_bkg" 
+                style="@style/Interactive_Titlebar" >
+    <Button android:id="@+id/show_server_view" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_int_titlebar_dropdown"
+            android:background="@drawable/int_titlebar_btn_bkg"
+            style="@style/Interactive_Titlebar.Button"
+            android:text="@string/shared_folders" />
+  </LinearLayout>

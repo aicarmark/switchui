@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/vip_widget_bg">
+    
+    <LinearLayout android:id="@+id/vip_on_off"
+        android:layout_width="0dip" android:layout_height="fill_parent"
+        android:layout_weight="1" android:orientation="vertical"
+        android:background="@drawable/appwidget_button_left">
+        <ImageView android:id="@+id/widget_viponoff"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_weight="1"  android:layout_margin="12dip" />
+        <ImageView android:id="@+id/on_off"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    
+    <ImageView android:background="@drawable/vip_settings_divider"
+        android:layout_height="fill_parent" android:layout_width="wrap_content" />
+        
+    <LinearLayout android:id="@+id/vip"
+        android:layout_width="0dip" android:layout_height="fill_parent"
+        android:layout_weight="1" android:background="@drawable/appwidget_button_right">
+        <ImageView android:id="@+id/widget_vip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="1" android:scaleType="center"
+            android:src="@drawable/ic_vip_settings_data_connection_on_r"/>
+    </LinearLayout>
+</LinearLayout>

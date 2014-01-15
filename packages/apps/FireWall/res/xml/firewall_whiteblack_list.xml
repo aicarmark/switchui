@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/whitescreen_title">
+            <PreferenceScreen android:key="white_pattern_screen"
+                android:title="@string/white_pattern_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+            <PreferenceScreen android:key="white_number_screen"
+                android:title="@string/white_number_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+            <PreferenceScreen android:key="white_name_screen"
+                android:title="@string/white_name_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+    </PreferenceCategory>>
+        <PreferenceCategory android:title="@string/blackscreen_title"
+            android:key="black_screen">
+            <PreferenceScreen android:key="black_pattern_screen"
+                android:title="@string/black_pattern_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+            <PreferenceScreen android:key="black_number_screen"
+                android:title="@string/black_number_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+            <PreferenceScreen android:key="black_name_screen"
+                android:title="@string/black_name_screen_title">
+                <intent android:action="android.intent.action.VIEW"
+                    android:data="content://com.motorola.firewall.provider/namelist"/>
+            </PreferenceScreen>
+        </PreferenceCategory>
+</PreferenceScreen>

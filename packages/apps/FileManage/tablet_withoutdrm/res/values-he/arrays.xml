@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* * Copyright (c) 2010 Motorola, Inc. * All Rights Reserved * * The
+    contents of this file are Motorola Confidential Restricted (MCR). *
+    Revision history (newest first): * * Date CR Author Description *
+    2010-03-23 IKSHADOW-2425 A20815 initial */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="sort_by_method_selector">
+        <item>לפי שם</item>
+        <item>לפי סוג</item>
+        <item>לפי זמן</item>
+        <item>לפי גודל</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Internal device storage</item>
+        <item>כרטיס SD</item>
+    </string-array>
+
+</resources>

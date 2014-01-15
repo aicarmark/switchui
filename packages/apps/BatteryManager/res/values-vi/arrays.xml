@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string-array name="options_list" >
+<item >Mức pin có sẵn</item>
+<item >Tùy chỉnh cài đặt</item>
+</string-array>
+<string-array name="smart_batt_timeout_entries" >
+<item >15 phút</item>
+<item >30 phút</item>
+<item >45 phút</item>
+<item >60 phút</item>
+<item >Luôn mở</item>
+</string-array>
+<integer-array name="batt_timeout_values" >
+<item >15</item>
+<item >30</item>
+<item >45</item>
+<item >60</item>
+<item >-1</item>
+</integer-array>
+<string-array name="smart_batt_offpeak_timeout_entries" >
+<item >15 phút</item>
+<item >30 phút</item>
+<item >45 phút</item>
+<item >60 phút</item>
+</string-array>
+</resources>

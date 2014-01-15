@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="33dp">
+                
+                <!-- model -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/str_cpu_model"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16.0dp"
+                android:textStyle="bold" />
+ 
+ 
+            <!-- model string -->
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:paddingTop="0dp"     
+                android:textColor="#FF8A8A8A"
+                android:textSize="14.0dp" />
+
+            <!-- core freq -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/str_cpu_freq"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16.0dp"
+                android:textStyle="bold" />
+
+            <!-- cur freq -->
+
+            <TextView
+                android:id="@+id/tv_current_freq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#FFFFFFFF"
+                android:textSize="32.0dp" />
+
+            <!-- max freq -->
+
+            <TextView
+                android:id="@+id/tv_max_freq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/str_cpu_max_freq"
+                android:textColor="#FF8A8A8A"
+                android:textSize="14.0dp" />
+
+            <!-- min freq -->
+
+            <TextView
+                android:id="@+id/tv_min_freq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/str_cpu_max_freq"
+                android:textColor="#FF8A8A8A"
+                android:textSize="14.0dp" />
+
+            <!-- cpu usage -->
+
+            <TextView
+                android:id="@+id/tv_static_cpu_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="9dp"
+                android:text="@string/str_cpu_usage"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16.0dp"
+                android:textStyle="bold" />
+
+            <!-- usr + sys + idle -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:id="@+id/tv_cpu_usage_usr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#FF8A8A8A"
+                    android:textSize="14.0dp" />
+
+                <TextView
+                    android:id="@+id/tv_cpu_usage_sys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_cpu_usage_usr"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FF8A8A8A"
+                    android:textSize="14.0dp" />
+
+                <TextView
+                    android:id="@+id/tv_cpu_usage_idle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_cpu_usage_sys"
+                    android:paddingLeft="6dp"
+                    android:textColor="#FF8A8A8A"
+                    android:textSize="14.0dp" />
+            </RelativeLayout>
+            </LinearLayout>
+            
+
+            <!-- dashboared-graphic layout -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ll_dashboard_graph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="53dp"
+                    android:orientation="vertical" >
+
+                    <!-- cpu1 info : dashboard&graphic -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_cpu1_dashboard_graphic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <!-- cpu1 label -->
+
+                        <TextView
+                            android:id="@+id/tv_cpu1_lael_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="8dp"
+                            android:text="@string/str_cpu_label_1"
+                            android:textColor="@color/text_hilight_color"
+                            android:textSize="14.0dp"
+                            android:textStyle="bold" />
+
+                        <!-- split -->
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@drawable/title_line" />
+
+                        <!-- dashboard and graphic -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left" >
+
+                            <!-- dashboard -->
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp" >
+
+                                <ImageView
+                                    android:layout_width="115dp"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/cpu_chassis" />
+
+                                <TextView
+                                    android:id="@+id/tv_cpuusage1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="@string/str_default_usage"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0dp"
+                                    android:shadowColor="#ffffffff"
+                                    android:shadowRadius="1.0"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+
+                            <!-- view reference -->
+
+                            <LinearLayout
+                                android:id="@+id/ll_reference_view"
+                                android:layout_width="0dp"
+                                android:layout_height="130dp"
+                                android:layout_marginLeft="160dp"
+                                android:background="#ff00ff00" >
+                            </LinearLayout>
+
+                            <!-- graphic -->
+
+                            <com.motorola.mmsp.performancemaster.ui.DrawGraphic
+                                android:id="@+id/dg_graphic_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="102dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginLeft="31dp"
+                                android:layout_marginTop="12dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- cpu2 info : dashboard&graphic -->
+
+                    <LinearLayout
+                        android:id="@+id/ll_cpu2_dashboard_graphic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <!-- cpu2 label -->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="8dp"
+                            android:text="@string/str_cpu_label_2"
+                            android:textColor="@color/text_hilight_color"
+                            android:textSize="14.0dp"
+                            android:textStyle="bold" />
+
+                        <!-- split -->
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="@drawable/title_line" />
+
+                        <!-- dashboard and graphic -->
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left" >
+
+                            <!-- dashboard -->
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="5dp" >
+
+                                <ImageView
+                                    android:layout_width="115dp"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/cpu_chassis" />
+
+                                <TextView
+                                    android:id="@+id/tv_cpuusage2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="@string/str_default_usage"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="18.0dp"
+                                    android:shadowColor="#ffffffff"
+                                    android:shadowRadius="1.0"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+
+                            <!-- graphic 127dp -->
+
+                            <com.motorola.mmsp.performancemaster.ui.DrawGraphic
+                                android:id="@+id/dg_graphic_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="102dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginLeft="31dp"
+                                android:layout_marginTop="12dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- arrow -->
+
+                <ImageButton
+                    android:id="@+id/ivb_arrow"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/press_arrow" />
+            </RelativeLayout>
+
+            <!-- just for split -->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

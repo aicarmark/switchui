@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/ScrollView" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+                     android:layout_weight="1"
+			>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/widget_label"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="37px"
+                > </TextView>
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_info1"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="19px"
+                android:layout_marginRight="19px"
+                android:layout_marginTop="37px"
+                android:gravity="center"
+                > </TextView>
+    <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_info2"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="19px"
+                android:layout_marginRight="19px"
+                android:layout_marginTop="37px"
+                android:gravity="center"
+                > </TextView>
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="31px"
+        android:layout_marginRight="31px"
+        android:layout_marginTop="37px"
+        >
+        <RadioButton
+            android:id="@+id/radiobutton_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_radio_button_label"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+        />
+        <RadioButton
+            android:id="@+id/radiobutton_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="@string/manual_radio_button_label"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+        />
+    </RadioGroup>
+</LinearLayout>
+</ScrollView >
+     <LinearLayout android:id="@+id/buttonPanel"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:minHeight="48dip"
+	  android:orientation="vertical"
+	  android:divider="?android:attr/dividerHorizontal"
+	  android:showDividers="beginning"
+	  android:dividerPadding="0dip">
+	  
+         <LinearLayout
+	      style="?android:attr/buttonBarStyle"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:measureWithLargestChild="true">
+						
+             <Button
+		   android:id="@+id/ok"
+		   android:text="@string/continue_button"
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content"								
+		   android:layout_weight="1"								
+		   style="?android:attr/buttonBarButtonStyle"							
+		/>
+
+	   </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

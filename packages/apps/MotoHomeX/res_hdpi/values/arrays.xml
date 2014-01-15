@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Array of group names for automatic run-time localizing -->
+    <!-- INSTRUCTIONS:  -->
+    <!-- 1. Put the user-visible group name in the apps_group_name array. -->
+    <!-- 2. In the apps_group_name_key array, prefix the visible name with "localize_key_". -->
+    <!--    MAKE SURE THE ARRAY POSITIONS MATCH! -->
+    <!-- 3. The first array gets translated, but not the second array. -->
+    <!-- 4. In overlay file, use the key in the second array, with the prefix. -->
+    <string-array name="apps_group_name">
+        <item>AT&amp;T apps</item>
+        <item>Communicate</item>
+        <item>Favorites</item>
+        <item>Games</item>
+        <item>Music</item>
+        <item>Navigate</item>
+        <item>Pictures &amp; Video</item>
+        <item>Productivity</item>
+        <item>Social</item>
+        <item>T-Mobile apps</item>
+        <item>Utilities</item>
+        <item>Verizon apps</item>
+    </string-array>
+    <string-array name="apps_group_name_key" translatable="false"> <!-- DO NOT TRANSLATE -->
+        <item>localize_key_AT&amp;T apps</item>
+        <item>localize_key_Communicate</item>
+        <item>localize_key_Favorites</item>
+        <item>localize_key_Games</item>
+        <item>localize_key_Music</item>
+        <item>localize_key_Navigate</item>
+        <item>localize_key_Pictures &amp; Video</item>
+        <item>localize_key_Productivity</item>
+        <item>localize_key_Social</item>
+        <item>localize_key_T-Mobile apps</item>
+        <item>localize_key_Utilities</item>
+        <item>localize_key_Verizon apps</item>
+    </string-array>
+    <string-array name="whitelisted_apps" translatable="false">
+        <item>com.motorola.dialer</item>
+        <item>com.android.contacts</item>
+        <item>com.android.settings</item>
+        <item>com.motorola.filemanager</item>
+        <item>com.motorola.im</item>
+        <item>com.nuance.android.vsuite.vsuiteapp</item>
+        <item>com.motorola.android.WebtopSession</item>
+        <item>com.motorola.vvm</item>
+        <item>com.motorola.blur.setup</item>
+        <item>com.motorola.contextual.smartrules</item>
+        <item>com.motorola.notification.ui</item>
+        <item>com.pv.android.verizon.avod</item>
+        <item>com.pv.android.verizon.mod</item>
+        <item>com.android.calendar</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.motorola.blur.conversations</item>
+        <item>com.motorola.motmusic</item>
+        <item>com.motorola.BackupAssistanceClient</item>
+        <item>com.vzw.hss.myverizon</item>
+        <item>com.mobitv.client.nfl2010</item>
+        <item>com.slacker.radio</item>
+        <item>com.vzw.hs.android.modlite</item>
+        <item>com.vznavigator.DROIDRAZR</item>
+        <item>com.android.setupwizard</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.motorola.messaging</item>
+        <item>com.vznavigator.DROID4</item>
+        <item>com.gravitymobile.app.hornbill</item>
+        <item>com.mog.android</item>
+        <item>com.verizon.developer.android.slingbox</item>
+    </string-array>
+    <string-array name="multi_level_text_size" translatable="false">
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.activitygraph.SearchPickerLayout 
+    android:id="@+id/searchpicker"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="47px"
+            >           
+            <LinearLayout 
+              android:layout_width="fill_parent"              
+              android:layout_height="42px"
+              android:layout_marginLeft="4px"
+              android:layout_marginTop="5px"
+              android:layout_marginRight="4px"
+              android:orientation="horizontal"
+              android:focusable="true" 
+              android:focusableInTouchMode="true">   
+                       
+             <EditText android:id="@+id/searchEdit"
+               android:layout_height="42px"
+               android:layout_width="fill_parent"
+               android:layout_gravity="center_vertical"
+               android:inputType="textNoSuggestions"
+               android:imeOptions="flagNoExtractUi"
+               android:hint="@string/search_hint"
+               android:freezesText="true"></EditText>
+        </LinearLayout>
+    </RelativeLayout>   
+        
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fastScrollEnabled="false">
+    </ListView>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <Button android:text="@string/cancel" 
+            android:id="@+id/btnCancel" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+        </Button>
+        <Button android:text="@string/ok" 
+            android:id="@+id/btnOk" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+        </Button>
+    </LinearLayout>
+</com.motorola.mmsp.activitygraph.SearchPickerLayout>

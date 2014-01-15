@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Промени виџет</string>
+  <string name="gps_app_name">GPS</string>
+  <string name="airplane_app_name">Режим рада у авиону</string>
+  <string name="wifi_app_name">Wi-Fi</string>
+  <string name="bluetooth_app_name">Bluetooth</string>
+  <string name="apn_app_name">APN</string>
+  <string name="data_app_name">Подаци</string>
+  <string name="widget_description">Приказ и контрола статуса режима рада у авиону</string>
+  <string name="widget_description_bt">Приказ и контрола Bluetooth статуса</string>
+  <string name="widget_description_wifi">Приказ и контрола Wi-Fi статуса</string>
+  <string name="widget_description_gps">Приказ и контрола GPS статуса</string>
+  <string name="StatusOn">ON</string>
+  <string name="StatusOff">OFF</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Режим рада у авиону није доступан</string>
+  <string name="BluetoothtoastText">Bluetooth није доступан</string>
+  <string name="GPStoastText">GPS није доступан</string>
+  <string name="WifitoastText">Wi-Fi није доступан</string>
+  <string name="location_restriction_enabled">Ограничење локације је омогућено.</string>
+  <string name="apncontrol_app_name">APN контрола</string>
+  <string name="no_apn">APN није доступан</string>
+</resources>

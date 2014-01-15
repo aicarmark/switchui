@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Restricted number</string>
+    <string name="visual_voicemail">Visual voicemail</string>
+    <string name="Data_roaming_msg">You may incur additional charges for using visual voicemail.\n\nWould you like to use visual voicemail or voicemail?</string>
+
+</resources>

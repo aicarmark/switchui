@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Ad veya IP girin</item>
+        <item>Sunucuları arayın</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Sunucu Ekle</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Alanlar aranıyor...</item>
+        <item>Sunucular aranıyor...</item>
+        <item>Sunucuya bağlanılıyor...</item>
+        <item>yükleniyor...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Ada göre</item>
+        <item>Türe göre</item>
+        <item>Zamana göre</item>
+        <item>Boyuta göre</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Şifreleme Yok</item>
+        <item>Eski (Zip 2.0) Şifreleme</item>
+        <item>128 bit AES Şifreleme</item>
+        <item>256 bit AES Şifreleme</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>"Dahili telefon depolama alanı"</item>
+        <item>SD kart</item>
+    </string-array>
+
+</resources>

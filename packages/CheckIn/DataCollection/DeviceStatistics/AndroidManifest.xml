@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.motorola.devicestatistics"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="2" android:versionName="4.1.1.1">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+
+    <!-- Start: Device Statistics -->
+    <uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"></uses-permission>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_READ"></uses-permission>
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="com.motorola.blur.service.email.Permissions.INTERACT"></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--  This is a hack. BatteryStatsImpl in android framework needs this permission to read
+          non-self uid data from /proc/net/xt_qtaguid/stats. Since both they and us, run in the
+          system uid, this hack gives this permission, and the group AID_NET_BW_STATS, to the
+          BatteryStatsImpl android framework code -->
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY"></uses-permission>
+
+    <!-- End: Device Statistics -->
+
+    <application  android:label="@string/app_name"
+                  android:name="DeviceStatisticsApplication"
+                  android:process="com.motorola.process.system">
+        <service android:name=".wlmonitor.WakelockMonitorService">
+        </service>
+
+        <service android:name=".DeviceStatisticsSvc">
+        </service>
+
+        <service android:name=".TrafficCollectionService">
+        </service>
+
+        <receiver android:name=".DeviceStatisticsRcv">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="com.motorola.devicestatistics.CHECKIN_STATS_ALARM"></action>
+                <action android:name="com.motorola.devicestatistics.APP_STATS_ALARM"></action>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".eventlogs.EventLogBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="com.motorola.eventlogger.START_LOG"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".NetworkAndChargeRcv">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

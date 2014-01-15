@@ -1,0 +1,2261 @@
+<6>[  511.594024]   task                PC stack   pid father
+<6>[  511.594116] init          S c038328c     0     1      0
+<4>[  511.594207] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.594421] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.594604]  r9:00000000 r8:cec21e58 r7:00000000 r6:cec21bf0 r5:00000000
+<4>[  511.594726] r4:cec21bf0
+<4>[  511.594757] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.594909]  r5:00000000 r4:00000000
+<4>[  511.594970] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.595092] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.595245]  r8:c003c008 r7:000000a8 r6:00000008 r5:bebc0e38 r4:0002148c
+<6>[  511.595367] kthreadd      S c038328c     0     2      0
+<4>[  511.595428] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007e400>] (kthreadd+0x88/0x13c)
+<4>[  511.595581] [<c007e378>] (kthreadd+0x0/0x13c) from [<c006e1bc>] (do_exit+0x0/0x660)
+<6>[  511.595703] ksoftirqd/0   S c038328c     0     3      2
+<4>[  511.595794] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0070328>] (ksoftirqd+0x48/0xe8)
+<4>[  511.595947] [<c00702e0>] (ksoftirqd+0x0/0xe8) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.596069] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.596191]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.596282] watchdog/0    S c038328c     0     4      2
+<4>[  511.596343] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0096c70>] (watchdog+0x5c/0x1f8)
+<4>[  511.596496] [<c0096c14>] (watchdog+0x0/0x1f8) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.596618] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.596893]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.596984] events/0      S c038328c     0     5      2
+<4>[  511.597045] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.597229] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.597351]  r7:00000000 r6:cec011d8 r5:c007ae40 r4:cec28000
+<4>[  511.597442] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.597564]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.597656] khelper       S c038328c     0     6      2
+<4>[  511.597747] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.597869] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.597991]  r7:00000000 r6:cec01130 r5:c007ae40 r4:cec2a000
+<4>[  511.598114] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.598205]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.598297] suspend       S c038328c     0    11      2
+<4>[  511.598388] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.598541] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.598663]  r7:00000000 r6:cec47478 r5:c007ae40 r4:cec52000
+<4>[  511.598754] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.598876]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.598968] kblockd/0     S c038328c     0   182      2
+<4>[  511.599029] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.599182] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.599304]  r7:00000000 r6:cece2c20 r5:c007ae40 r4:cec84000
+<4>[  511.599395] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.599517]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.599609] cqueue        S c038328c     0   186      2
+<4>[  511.599700] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.599822] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.599975]  r7:00000000 r6:ced1c248 r5:c007ae40 r4:cec8c000
+<4>[  511.600067] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.600189]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.600280] omap2_mcspi   S c038328c     0   203      2
+<4>[  511.600341] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.600494] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.600616]  r7:00000000 r6:cec65c58 r5:c007ae40 r4:cec54000
+<4>[  511.600708] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.600830]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.600921] cpcap_irq/0   S c038328c     0   206      2
+<4>[  511.601013] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.601135] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.601287]  r7:00000000 r6:cec4e7f8 r5:c007ae40 r4:cec5a000
+<4>[  511.601379] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.601501]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.601593] ksuspend_usbd S c038328c     0   264      2
+<4>[  511.601654] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.601806] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.601928]  r7:00000000 r6:cecd1590 r5:c007ae40 r4:cec72000
+<4>[  511.602020] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.602142]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.602233] khubd         S c038328c     0   270      2
+<4>[  511.602294] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0228eb8>] (hub_thread+0xc08/0xcf4)
+<4>[  511.602447] [<c02282b0>] (hub_thread+0x0/0xcf4) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.602600] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.602722]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.602813] kmmcd         S c038328c     0   283      2
+<4>[  511.602874] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.603027] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.603149]  r7:00000000 r6:cecd55c8 r5:c007ae40 r4:cec82000
+<4>[  511.603240] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.603363]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.603454] btaddconn     S c038328c     0   290      2
+<4>[  511.603546] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.603668] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.603820]  r7:00000000 r6:cecd5c58 r5:c007ae40 r4:cec76000
+<4>[  511.603912] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.604034]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.604125] btdelconn     S c038328c     0   291      2
+<4>[  511.604187] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.604339] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.604461]  r7:00000000 r6:cecd5be8 r5:c007ae40 r4:cec94000
+<4>[  511.604644] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.604797]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.604888] pdflush       S c038328c     0   320      2
+<4>[  511.604949] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c00a55c8>] (pdflush+0xdc/0x1dc)
+<4>[  511.605133] [<c00a54ec>] (pdflush+0x0/0x1dc) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.605255] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.605377]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.605468] pdflush       S c038328c     0   321      2
+<4>[  511.605529] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c00a55c8>] (pdflush+0xdc/0x1dc)
+<4>[  511.605682] [<c00a54ec>] (pdflush+0x0/0x1dc) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.605804] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.605926]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.606018] kswapd0       S c038328c     0   322      2
+<4>[  511.606079] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c00a9768>] (kswapd+0x104/0x548)
+<4>[  511.606231] [<c00a9664>] (kswapd+0x0/0x548) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.606384] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.606475]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.606567] aio/0         S c038328c     0   324      2
+<4>[  511.606658] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.606811] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.606933]  r7:00000000 r6:cecd9d00 r5:c007ae40 r4:ced04000
+<4>[  511.607025] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.607147]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.607238] dsi           S c038328c     0   336      2
+<4>[  511.607330] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c016d720>] (dsi_update_thread+0xe0/0x910)
+<4>[  511.607482] [<c016d640>] (dsi_update_thread+0x0/0x910) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.607604] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.607727]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.607818] bridge_work-q S c038328c     0   475      2
+<4>[  511.607910] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.608062] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.608184]  r7:00000000 r6:cc7fe9b8 r5:c007ae40 r4:ccdfc000
+<4>[  511.608276] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.608398]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.608489] mtdblockd     S c038328c     0   478      2
+<4>[  511.608551] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0215938>] (mtd_blktrans_thread+0x64/0x1d8)
+<4>[  511.608734] [<c02158d4>] (mtd_blktrans_thread+0x0/0x1d8) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.608856] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.608978]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.609069] klink_driver_ S c038328c     0   535      2
+<4>[  511.609130] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.609283] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.609405]  r7:00000000 r6:cc7d9c20 r5:c007ae40 r4:ccbfc000
+<4>[  511.609497] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.609619]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.609710] usb_mass_stor S c038328c     0   545      2
+<4>[  511.609802] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c02574a0>] (sleep_thread+0x64/0x8c)
+<4>[  511.609954] [<c025743c>] (sleep_thread+0x0/0x8c) from [<c0258220>] (fsg_main_thread+0x2bc/0x14ac)
+<4>[  511.610076]  r7:cc7d6c0d r6:00000000 r5:cc7d6c0b r4:cc7d6b38
+<4>[  511.610168] [<c0257f64>] (fsg_main_thread+0x0/0x14ac) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.610321] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.610443]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.610534] qtouch_obp_ts S c038328c     0   559      2
+<4>[  511.610595] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.610748] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.610870]  r7:00000000 r6:cc7bfe88 r5:c007ae40 r4:cc7a8000
+<4>[  511.610961] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.611083]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.611175] sfh7743_wq    S c038328c     0   568      2
+<4>[  511.611267] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.611389] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.611541]  r7:00000000 r6:cc7b9ec0 r5:c007ae40 r4:ced96000
+<4>[  511.611633] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.611755]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.611816] bu52014hfv_wq S c038328c     0   573      2
+<4>[  511.611907] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.612060] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.612182]  r7:00000000 r6:cc7b4280 r5:c007ae40 r4:ced8a000
+<4>[  511.612274] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.612548]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.612640] w1_bus_master S c038328c     0   586      2
+<4>[  511.612701] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03834c4>] (schedule_timeout+0x9c/0xc8)
+<4>[  511.612854] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0269ca4>] (w1_process+0xa8/0xe0)
+<4>[  511.613037]  r7:00000500 r6:cc7b8380 r5:cc72a000 r4:cc7b8318
+<4>[  511.613128] [<c0269bfc>] (w1_process+0x0/0xe0) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.613250]  r9:00000000 r8:00000000 r7:00000000 r6:cc7b8318 r5:c0269bfc
+<4>[  511.613342] r4:cc72a000
+<4>[  511.613403] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.613525]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.613616] kondemand/0   R running      0   595      2
+<4>[  511.613677] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.613830] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.613952]  r7:00000000 r6:cc7b0ad0 r5:c007ae40 r4:ced88000
+<4>[  511.614044] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.614166]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.614257] als_wq        S c038328c     0   607      2
+<4>[  511.614349] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.614471] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.614624]  r7:00000000 r6:cc7aa868 r5:c007ae40 r4:cee02000
+<4>[  511.614715] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.614837]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.614929] hid_compat    S c038328c     0   617      2
+<4>[  511.614990] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.615142] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.615264]  r7:00000000 r6:ccffeb40 r5:c007ae40 r4:cc52c000
+<4>[  511.615356] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.615478]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.615570] kwakeup_usb_i S c038328c     0   640      2
+<4>[  511.615631] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.615783] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.615905]  r7:00000000 r6:cc5f9da8 r5:c007ae40 r4:cd5f8000
+<4>[  511.615997] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.616119]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.616210] ksuspend_usb_ S c038328c     0   641      2
+<4>[  511.616302] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.616455] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.616577]  r7:00000000 r6:cc5f9d38 r5:c007ae40 r4:cd5fa000
+<4>[  511.616668] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.616790]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.616882] kipcd         S c038328c     0   642      2
+<4>[  511.616943] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0249e74>] (ipc_thread+0x3a8/0x444)
+<4>[  511.617095] [<c0249acc>] (ipc_thread+0x0/0x444) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.617248] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.617340]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.617431] krfcommd      S c038328c     0   648      2
+<4>[  511.617523] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0375f5c>] (rfcomm_run+0x198/0x13bc)
+<4>[  511.617706] [<c0375dc4>] (rfcomm_run+0x0/0x13bc) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.617828] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.617950]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.618041] pvrflip/0     S c038328c     0   670      2
+<4>[  511.618133] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.618286] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.618408]  r7:00000000 r6:cd714750 r5:c007ae40 r4:cda0e000
+<4>[  511.618499] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.618621]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.618743] adbd          S c038328c     0  1028      1
+<4>[  511.618835] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.618988] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.619140]  r9:00000000 r8:00000058 r7:00000000 r6:00000000 r5:0000000c
+<4>[  511.619262] r4:cc79fb78
+<4>[  511.619293] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.619445]  r5:0000000c r4:cc79ff00
+<4>[  511.619506] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.619628] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.619781] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.619903] adbd          S c038328c     0  1029      1
+<4>[  511.619995] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.620239] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.620391] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.620513] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.620666] adbd          S c038328c     0  1030      1
+<4>[  511.620727] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.620880] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.621032]  r7:ccbc4d28 r6:7fffffff r5:ccbcde28 r4:00000000
+<4>[  511.621124] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c0294a90>] (sock_aio_read+0x108/0x118)
+<4>[  511.621307] [<c0294988>] (sock_aio_read+0x0/0x118) from [<c00c1390>] (do_sync_read+0xc0/0x10c)
+<4>[  511.621459] [<c00c12d0>] (do_sync_read+0x0/0x10c) from [<c00c1ea4>] (vfs_read+0xcc/0x144)
+<4>[  511.621582] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.621704]  r7:00000000 r6:00000000 r5:40108ec4 r4:cece76e0
+<4>[  511.621795] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.621917]  r8:c003c008 r7:00000003 r6:40108ec4 r5:00000008 r4:00000004
+<6>[  511.622039] adbd          S c038328c     0  1033      1
+<4>[  511.622131] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0256454>] (adb_read+0x2f4/0x370)
+<4>[  511.622253] [<c0256160>] (adb_read+0x0/0x370) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.622375] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.622528]  r7:00000000 r6:00000000 r5:00032f14 r4:cedfd090
+<4>[  511.622619] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.622741]  r8:c003c008 r7:00000003 r6:00030480 r5:00032f14 r4:0002857c
+<6>[  511.622863] sh            S c038328c     0  1031      1
+<4>[  511.622924] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.623077] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c017f74c>] (n_tty_read+0x3b4/0x698)
+<4>[  511.623229]  r7:7fffffff r6:00000000 r5:ccbce000 r4:ccbfada8
+<4>[  511.623321] [<c017f398>] (n_tty_read+0x0/0x698) from [<c017b7d0>] (tty_read+0x88/0xd0)
+<4>[  511.623443] [<c017b748>] (tty_read+0x0/0xd0) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.623596] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.623718]  r7:00000000 r6:00000000 r5:0001cc80 r4:cece7530
+<4>[  511.623809] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.623931]  r8:c003c008 r7:00000003 r6:000196d9 r5:0001cc80 r4:0001c91c
+<6>[  511.624053] servicemanage S c038328c     0  1032      1
+<4>[  511.624114] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.624267] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.624389] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.624542]  r7:cc797ee4 r6:c0186201 r5:cc52ebd0 r4:bec89d18
+<4>[  511.624633] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.624755] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.624877]  r7:00000036 r6:0000b008 r5:0000a168 r4:bec89d18
+<6>[  511.624969] vold          S c038328c     0  1034      1
+<4>[  511.625061] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03842d4>] (schedule_hrtimeout_range+0x140/0x180)
+<4>[  511.625213] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.625366]  r9:ccfc7f70 r8:0000000b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.625457] r4:ccfc7b78
+<4>[  511.625518] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.625671]  r5:00000004 r4:ccfc7f00
+<4>[  511.625701] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.625854] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.625976] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.626129] debuggerd     S c038328c     0  1035      1
+<4>[  511.626190] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.626342] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c029ece8>] (__skb_recv_datagram+0x1f0/0x25c)
+<4>[  511.626495]  r7:cc9d5e54 r6:7fffffff r5:00000000 r4:cda1e840
+<4>[  511.626586] [<c029eaf8>] (__skb_recv_datagram+0x0/0x25c) from [<c029ed7c>] (skb_recv_datagram+0x28/0x30)
+<4>[  511.626739] [<c029ed54>] (skb_recv_datagram+0x0/0x30) from [<c032c4f0>] (unix_accept+0x60/0xd0)
+<4>[  511.626861] [<c032c490>] (unix_accept+0x0/0xd0) from [<c0296ba4>] (sys_accept4+0xf0/0x1b0)
+<4>[  511.627014]  r8:ce94ce18 r7:be871d3c r6:00000000 r5:00000007 r4:ce941090
+<4>[  511.627136] [<c0296ab4>] (sys_accept4+0x0/0x1b0) from [<c0296e78>] (sys_accept+0x14/0x18)
+<4>[  511.627288] [<c0296e64>] (sys_accept+0x0/0x18) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.627410] rild          S c038328c     0  1036      1
+<4>[  511.627502] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.627624] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.627807] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.628051] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.628204]  r5:00008fdb r4:0000915a
+<6>[  511.628265] rild          S c038328c     0  1143      1
+<4>[  511.628326] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.628479] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.628662]  r9:00000000 r8:00000014 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.628753] r4:cc95bb78
+<4>[  511.628784] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.628936]  r5:00000004 r4:cc95bf00
+<4>[  511.628997] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.629150] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.629272] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.629394] rild          S c038328c     0  1149      1
+<4>[  511.629486] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.629638] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.629760] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.629882] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.630035] telnetd       S c038328c     0  1038      1
+<4>[  511.630096] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.630249] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.630401]  r9:00000000 r8:ccdcde48 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.630523] r4:ccdcdbf0
+<4>[  511.630554] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.630706]  r5:00000000 r4:00000000
+<4>[  511.630767] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.630889] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.631011]  r8:c003c008 r7:000000a8 r6:0000a104 r5:0000a1b4 r4:000001c0
+<6>[  511.631134] usbd          S c038328c     0  1040      1
+<4>[  511.631195] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.631347] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.631530]  r9:00000000 r8:0000000c r7:00000000 r6:00000000 r5:00000004
+<4>[  511.631622] r4:ccd3fb78
+<4>[  511.631652] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.631805]  r5:00000004 r4:ccd3ff00
+<4>[  511.631866] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.631988] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.632141] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.632263] nvm_daemon    S c038328c     0  1041      1
+<4>[  511.632354] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.632507] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.632659]  r9:00000000 r8:ccd2de48 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.632751] r4:ccd2dbf0
+<4>[  511.632781] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.632934]  r5:00000000 r4:00000000
+<4>[  511.632995] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.633117] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.633270]  r8:c003c008 r7:000000a8 r6:00000004 r5:0000b100 r4:0000b1a4
+<6>[  511.633361] gkisystem     S c038328c     0  1048      1
+<4>[  511.633453] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c006df20>] (do_wait+0x204/0x308)
+<4>[  511.633575] [<c006dd1c>] (do_wait+0x0/0x308) from [<c006e0dc>] (sys_wait4+0xb8/0xd0)
+<4>[  511.633697] [<c006e024>] (sys_wait4+0x0/0xd0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.633850]  r8:c003c008 r7:00000072 r6:be849c28 r5:0000a154 r4:afe3ae04
+<6>[  511.633941] gkisystem     S c038328c     0  1131      1
+<4>[  511.634033] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.634155] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.634307] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.634429] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.634552] gkisystem     S c038328c     0  1133      1
+<4>[  511.634643] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.634765] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.634918] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.635040] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.635162] gkisystem     S c038328c     0  1134      1
+<4>[  511.635253] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.635406] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.635559]  r9:00000000 r8:00000009 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.635650] r4:cd1d1b78
+<4>[  511.635711] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.635955]  r5:00000004 r4:cd1d1f00
+<4>[  511.636016] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.636169] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.636291] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.636444] gkisystem     S c038328c     0  1136      1
+<4>[  511.636505] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.636657] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.636779] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.636901] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.637054] gkisystem     S c038328c     0  1139      1
+<4>[  511.637115] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.637268] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.637390] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.637512] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.637634] gkisystem     S c038328c     0  1141      1
+<4>[  511.637725] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.637878] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c029ece8>] (__skb_recv_datagram+0x1f0/0x25c)
+<4>[  511.638031]  r7:cc949e54 r6:7fffffff r5:00000000 r4:cd1c7590
+<4>[  511.638122] [<c029eaf8>] (__skb_recv_datagram+0x0/0x25c) from [<c029ed7c>] (skb_recv_datagram+0x28/0x30)
+<4>[  511.638244] [<c029ed54>] (skb_recv_datagram+0x0/0x30) from [<c032c4f0>] (unix_accept+0x60/0xd0)
+<4>[  511.638397] [<c032c490>] (unix_accept+0x0/0xd0) from [<c0296ba4>] (sys_accept4+0xf0/0x1b0)
+<4>[  511.638519]  r8:ce9694e8 r7:00000000 r6:00000000 r5:0000000f r4:ce969670
+<4>[  511.638641] [<c0296ab4>] (sys_accept4+0x0/0x1b0) from [<c0296e78>] (sys_accept+0x14/0x18)
+<4>[  511.638763] [<c0296e64>] (sys_accept+0x0/0x18) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.638916] gkisystem     S c038328c     0  1160      1
+<4>[  511.638977] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.639129] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c00eb42c>] (sys_epoll_wait+0x188/0x428)
+<4>[  511.639282]  r7:a0000013 r6:cc97c3c0 r5:ffffffff r4:cc97c398
+<4>[  511.639373] [<c00eb2a4>] (sys_epoll_wait+0x0/0x428) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.639495] gkisystem     S c038328c     0  1161      1
+<4>[  511.639587] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.639709] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.639862] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.639984] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.640106] rild_tcmd     S c038328c     0  1052      1
+<4>[  511.640197] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.640350] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.640472] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.640625] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.640777]  r5:be9c8d1c r4:0000c120
+<6>[  511.640838] rild_tcmd     S c038328c     0  1065      1
+<4>[  511.640899] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.641052] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c029ece8>] (__skb_recv_datagram+0x1f0/0x25c)
+<4>[  511.641204]  r7:cd1d3e54 r6:7fffffff r5:00000000 r4:cd1c7bf0
+<4>[  511.641296] [<c029eaf8>] (__skb_recv_datagram+0x0/0x25c) from [<c029ed7c>] (skb_recv_datagram+0x28/0x30)
+<4>[  511.641418] [<c029ed54>] (skb_recv_datagram+0x0/0x30) from [<c032c4f0>] (unix_accept+0x60/0xd0)
+<4>[  511.641571] [<c032c490>] (unix_accept+0x0/0xd0) from [<c0296ba4>] (sys_accept4+0xf0/0x1b0)
+<4>[  511.641693]  r8:ce954380 r7:100ffe54 r6:00000000 r5:00000006 r4:ce954b28
+<4>[  511.641815] [<c0296ab4>] (sys_accept4+0x0/0x1b0) from [<c0296e78>] (sys_accept+0x14/0x18)
+<4>[  511.641937] [<c0296e64>] (sys_accept+0x0/0x18) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.642089] rild_tcmd     S c038328c     0  1069      1
+<4>[  511.642150] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.642303] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.642425] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.642578] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.642700] battd         S c038328c     0  1057      1
+<4>[  511.642791] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.642944] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.643096]  r9:00000000 r8:0000000b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.643188] r4:cd335b78
+<4>[  511.643218] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.643371]  r5:00000004 r4:cd335f00
+<4>[  511.643432] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.643676] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.643829] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.643951] app_process   S c038328c     0  1064      1
+<4>[  511.644042] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.644195] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.644348]  r9:00000000 r8:00000013 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.644439] r4:cd525b78
+<4>[  511.644500] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.644622]  r5:00000004 r4:cd525f00
+<4>[  511.644683] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.644836] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.644958] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.645111] mediaserver   S c038328c     0  1067      1
+<4>[  511.645172] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.645324] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.645446] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.645568]  r7:cd529ee4 r6:c0186201 r5:ccf43bd0 r4:bea58ce8
+<4>[  511.645660] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.645812] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.645935]  r7:00000036 r6:0000ab0c r5:bea58ce8 r4:0000aae0
+<6>[  511.646026] mediaserver   S c038328c     0  1162      1
+<4>[  511.646087] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.646240] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.646423]  r9:00000000 r8:00000009 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.646514] r4:ccf6db78
+<4>[  511.646545] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.646697]  r5:00000004 r4:ccf6df00
+<4>[  511.646759] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.646881] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.647033] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.647155] mediaserver   S c038328c     0  1163      1
+<4>[  511.647247] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.647399] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.647552]  r9:00000000 r8:0000000b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.647644] r4:ccf6fb78
+<4>[  511.647705] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.647827]  r5:00000004 r4:ccf6ff00
+<4>[  511.647888] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.648040] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.648162] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.648284] AudioCommandT S c038328c     0  1164      1
+<4>[  511.648376] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.648529] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.648651] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.648773] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.648895] AudioCommandT S c038328c     0  1165      1
+<4>[  511.648986] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.649108] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.649261] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.649383] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.649505] Playback Thre S c038328c     0  1167      1
+<4>[  511.649597] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.649719] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.649841] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.649993] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.650115] Binder Thread S c038328c     0  1168      1
+<4>[  511.650177] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.650329] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.650451] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.650604]  r7:ccf77ee4 r6:c0186201 r5:ccf43bd0 r4:40518e40
+<4>[  511.650695] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.650817] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.650939]  r7:00000036 r6:00014e94 r5:40518e40 r4:00014e68
+<6>[  511.651062] Binder Thread S c038328c     0  1169      1
+<4>[  511.651123] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.651275] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.651489] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.651641]  r7:ccf79ee4 r6:c0186201 r5:ccf43bd0 r4:40618e40
+<4>[  511.651733] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.651855] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.652008]  r7:00000036 r6:00015144 r5:40618e40 r4:00015118
+<6>[  511.652099] logwrapper    S c038328c     0  1072      1
+<4>[  511.652160] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.652313] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c017f74c>] (n_tty_read+0x3b4/0x698)
+<4>[  511.652465]  r7:7fffffff r6:00000000 r5:cd53e000 r4:ccdc71e0
+<4>[  511.652557] [<c017f398>] (n_tty_read+0x0/0x698) from [<c017b7d0>] (tty_read+0x88/0xd0)
+<4>[  511.652709] [<c017b748>] (tty_read+0x0/0xd0) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.652832] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.652954]  r7:00000000 r6:00000000 r5:becc2ccc r4:cd5385c0
+<4>[  511.653045] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.653167]  r8:c003c008 r7:00000003 r6:becc2ccc r5:00000000 r4:0000a100
+<6>[  511.653289] dbus-daemon   S c038328c     0  1073   1072
+<4>[  511.653381] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.653533] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.653686]  r9:00000000 r8:cc753e58 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.653778] r4:cc753bf0
+<4>[  511.653839] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.653961]  r5:00000000 r4:00000000
+<4>[  511.654022] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.654144] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.654296]  r8:c003c008 r7:000000a8 r6:00000000 r5:ffffffff r4:000230c8
+<6>[  511.654388] installd      S c038328c     0  1075      1
+<4>[  511.654479] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.654602] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.654754]  r7:ccdd6550 r6:7fffffff r5:cc75be28 r4:00000000
+<4>[  511.654846] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c0294a90>] (sock_aio_read+0x108/0x118)
+<4>[  511.654998] [<c0294988>] (sock_aio_read+0x0/0x118) from [<c00c1390>] (do_sync_read+0xc0/0x10c)
+<4>[  511.655151] [<c00c12d0>] (do_sync_read+0x0/0x10c) from [<c00c1ea4>] (vfs_read+0xcc/0x144)
+<4>[  511.655273] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.655395]  r7:00000000 r6:00000000 r5:bef6891a r4:cd538ec0
+<4>[  511.655487] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.655609]  r8:c003c008 r7:00000003 r6:00000002 r5:00000000 r4:0000b114
+<6>[  511.655731] keystore      S c038328c     0  1080      1
+<4>[  511.655792] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.655944] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c029ece8>] (__skb_recv_datagram+0x1f0/0x25c)
+<4>[  511.656097]  r7:cc76fe54 r6:7fffffff r5:00000000 r4:cd7dda78
+<4>[  511.656188] [<c029eaf8>] (__skb_recv_datagram+0x0/0x25c) from [<c029ed7c>] (skb_recv_datagram+0x28/0x30)
+<4>[  511.656341] [<c029ed54>] (skb_recv_datagram+0x0/0x30) from [<c032c4f0>] (unix_accept+0x60/0xd0)
+<4>[  511.656463] [<c032c490>] (unix_accept+0x0/0xd0) from [<c0296ba4>] (sys_accept4+0xf0/0x1b0)
+<4>[  511.656616]  r8:ce960528 r7:be8b5d1c r6:00000000 r5:00000003 r4:ce960b48
+<4>[  511.656707] [<c0296ab4>] (sys_accept4+0x0/0x1b0) from [<c0296e78>] (sys_accept+0x14/0x18)
+<4>[  511.656860] [<c0296e64>] (sys_accept+0x0/0x18) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.656982] ssmgrd        S c038328c     0  1083      1
+<4>[  511.657073] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.657226] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.657379]  r9:00000000 r8:0000000e r7:00000000 r6:00000000 r5:00000004
+<4>[  511.657501] r4:cc775b78
+<4>[  511.657531] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.657684]  r5:00000004 r4:cc775f00
+<4>[  511.657745] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.657867] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.658020] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.658142] tcmd          S c038328c     0  1085      1
+<4>[  511.658203] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.658355] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.658477] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.658630] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.658752] tcmd          S c038328c     0  1153      1
+<4>[  511.658843] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.658996] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.659149]  r9:00000000 r8:0000000b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.659362] r4:ccf8db78
+<4>[  511.659423] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.659576]  r5:00000004 r4:ccf8df00
+<4>[  511.659637] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.659759] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.659881] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.660034] panic_daemon  S c038328c     0  1088      1
+<4>[  511.660095] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.660278] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.660430]  r9:00000000 r8:cc591e50 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.660522] r4:cc591bf0
+<4>[  511.660552] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.660705]  r5:00000000 r4:00000000
+<4>[  511.660766] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.660888] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.661041]  r8:c003c008 r7:000000a8 r6:00000002 r5:0001111c r4:bebb9a28
+<6>[  511.661132] akmd2         S c038328c     0  1090      1
+<4>[  511.661224] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c01afdb4>] (akmd_ioctl+0x47c/0x698)
+<4>[  511.661376] [<c01af938>] (akmd_ioctl+0x0/0x698) from [<c00cd4b8>] (vfs_ioctl+0x64/0x74)
+<4>[  511.661499] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.661621]  r7:cc549ee4 r6:8004a10d r5:cc547cf0 r4:bec0bd3c
+<4>[  511.661712] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.661865] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.661987]  r7:00000036 r6:00023234 r5:00000030 r4:00023024
+<6>[  511.662078] brcm_guci_drv S c038328c     0  1095      1
+<4>[  511.662170] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03842d4>] (schedule_hrtimeout_range+0x140/0x180)
+<4>[  511.662322] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.662475]  r9:cc563f38 r8:cc563e58 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.662567] r4:cc563bf0
+<4>[  511.662628] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.662750]  r5:00000000 r4:00000000
+<4>[  511.662811] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.662933] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.663085]  r8:c003c008 r7:000000a8 r6:0011c158 r5:0013ce84 r4:00000000
+<6>[  511.663177] brcm_guci_drv S c038328c     0  1129      1
+<4>[  511.663269] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.663421] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.663574]  r9:00000000 r8:00000010 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.663665] r4:ccb8fb78
+<4>[  511.663726] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.663848]  r5:00000004 r4:ccb8ff00
+<4>[  511.663909] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.664062] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.664184] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.664306] aplogd        R running      0  1101      1
+<4>[  511.664398] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.664550] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.664703]  r9:00000000 r8:cc5b9e68 r7:00000000 r6:cc5b9bf0 r5:00000000
+<4>[  511.664794] r4:cc5b9bf0
+<4>[  511.664855] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.664978]  r5:00000000 r4:00000000
+<4>[  511.665039] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.665191] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.665313]  r8:c003c008 r7:000000a8 r6:00000000 r5:0000b270 r4:00000001
+<6>[  511.665405] aplogd        S c038328c     0  1105      1
+<4>[  511.665496] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.665649] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.665771] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.665893] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.666015] bplogd_daemon S c038328c     0  1104      1
+<4>[  511.666107] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.666259] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.666412]  r9:00000000 r8:ccb83e98 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.666503] r4:ccb83bf0
+<4>[  511.666564] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.666717]  r5:00000000 r4:00000000
+<4>[  511.666748] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.666900] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.667114]  r8:c003c008 r7:000000a8 r6:000001e8 r5:000001fc r4:00010150
+<6>[  511.667236] pvrisr/0      S c038328c     0  1112      2
+<4>[  511.667327] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c007af0c>] (worker_thread+0xcc/0x118)
+<4>[  511.667480] [<c007ae40>] (worker_thread+0x0/0x118) from [<c007e510>] (kthread+0x5c/0x98)
+<4>[  511.667602]  r7:00000000 r6:cc9962b8 r5:c007ae40 r4:cc9a8000
+<4>[  511.667694] [<c007e4b4>] (kthread+0x0/0x98) from [<c006e1bc>] (do_exit+0x0/0x660)
+<4>[  511.667816]  r7:00000000 r6:00000000 r5:00000000 r4:00000000
+<6>[  511.667907] protocol_driv S c038328c     0  1120   1048
+<4>[  511.667999] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.668121] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.668273] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.668426] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.668548]  r5:00000000 r4:00155db0
+<6>[  511.668609] protocol_driv S c038328c     0  1154   1048
+<4>[  511.668701] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.668853] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.668975] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.669097] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.669219] protocol_driv S c038328c     0  1155   1048
+<4>[  511.669311] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.669433] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.669586] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.669708] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.669830] protocol_driv S c038328c     0  1156   1048
+<4>[  511.669921] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.670074] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.670227]  r9:00000000 r8:0000001f r7:00000000 r6:00000000 r5:00000004
+<4>[  511.670318] r4:ccfb1b78
+<4>[  511.670379] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.670501]  r5:00000004 r4:ccfb1f00
+<4>[  511.670562] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.670715] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.670837] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.670989] protocol_driv S c038328c     0  1157   1048
+<4>[  511.671051] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.671203] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.671325] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.671447] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.671600] protocol_driv S c038328c     0  1158   1048
+<4>[  511.671661] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.671813] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.671966]  r9:00000000 r8:ccfb5e48 r7:00000000 r6:ccfb5bf0 r5:00000000
+<4>[  511.672088] r4:ccfb5bf0
+<4>[  511.672119] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.672271]  r5:00000000 r4:00000000
+<4>[  511.672332] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.672454] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.672576]  r8:c003c008 r7:000000a8 r6:001594d0 r5:00000000 r4:00155db0
+<6>[  511.672698] protocol_driv S c038328c     0  1159   1048
+<4>[  511.672760] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.672912] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.673034] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.673187] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.673309] gkilogd       S c038328c     0  1122      1
+<4>[  511.673370] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.673522] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c00eb42c>] (sys_epoll_wait+0x188/0x428)
+<4>[  511.673675]  r7:a0000013 r6:cd1c6680 r5:ffffffff r4:cd1c6658
+<4>[  511.673767] [<c00eb2a4>] (sys_epoll_wait+0x0/0x428) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.673889] location      S c038328c     0  1124   1048
+<4>[  511.673980] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.674102] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.674255] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.674407] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.674530]  r5:00000000 r4:00000000
+<6>[  511.674591] location      S c038328c     0  1144   1048
+<4>[  511.674682] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.674926] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.675079] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.675201] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.675323] location      S c038328c     0  1145   1048
+<4>[  511.675415] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.675567] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.675720]  r9:00000000 r8:00000017 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.675811] r4:cc95fb78
+<4>[  511.675872] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.675994]  r5:00000004 r4:cc95ff00
+<4>[  511.676055] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.676208] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.676330] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.676483] location      S c038328c     0  1146   1048
+<4>[  511.676544] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.676696] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.676818] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.676940] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.677093] location      S c038328c     0  1147   1048
+<4>[  511.677154] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.677307] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.677459]  r9:00000000 r8:00000019 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.677581] r4:cc963b78
+<4>[  511.677612] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.677764]  r5:00000004 r4:cc963f00
+<4>[  511.677825] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.677947] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.678100] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.678222] location      S c038328c     0  1148   1048
+<4>[  511.678283] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.678436] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.678558] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.678680] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.678833] location      S c038328c     0  1150   1048
+<4>[  511.678894] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.679046] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.679199]  r9:00000000 r8:00000013 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.679321] r4:cc979b78
+<4>[  511.679351] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.679504]  r5:00000004 r4:cc979f00
+<4>[  511.679565] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.679687] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.679840] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.679962] location      S c038328c     0  1151   1048
+<4>[  511.680053] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.680175] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.680297] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.680450] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.680572] location      S c038328c     0  1152   1048
+<4>[  511.680633] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.680786] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.680938]  r7:ccdd6a18 r6:7fffffff r5:ccf8bf54 r4:00000000
+<4>[  511.681030] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.681182] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c0296910>] (sys_recvfrom+0x8c/0xe4)
+<4>[  511.681335] [<c0296884>] (sys_recvfrom+0x0/0xe4) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.681457]  r8:c003c008 r7:00000124 r6:0007b780 r5:00000000 r4:00000000
+<6>[  511.681579] secclkd       S c038328c     0  1126      1
+<4>[  511.681640] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.681793] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c029ece8>] (__skb_recv_datagram+0x1f0/0x25c)
+<4>[  511.681945]  r7:cc561e54 r6:7fffffff r5:00000000 r4:cd1c73f8
+<4>[  511.682037] [<c029eaf8>] (__skb_recv_datagram+0x0/0x25c) from [<c029ed7c>] (skb_recv_datagram+0x28/0x30)
+<4>[  511.682189] [<c029ed54>] (skb_recv_datagram+0x0/0x30) from [<c032c4f0>] (unix_accept+0x60/0xd0)
+<4>[  511.682312] [<c032c490>] (unix_accept+0x0/0xd0) from [<c0296ba4>] (sys_accept4+0xf0/0x1b0)
+<4>[  511.682434]  r8:ce9697f8 r7:00000000 r6:00000000 r5:00000005 r4:ce969980
+<4>[  511.682556] [<c0296ab4>] (sys_accept4+0x0/0x1b0) from [<c0296e78>] (sys_accept+0x14/0x18)
+<4>[  511.682800] [<c0296e64>] (sys_accept+0x0/0x18) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.682952] opprofdaemon  S c038328c     0  1128   1048
+<4>[  511.683013] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.683166] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.683319] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.683471] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.683593]  r5:00000000 r4:00000000
+<6>[  511.683654] opprofdaemon  S c038328c     0  1138   1048
+<4>[  511.683746] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03843f8>] (do_nanosleep+0xc8/0x12c)
+<4>[  511.683868] [<c0384330>] (do_nanosleep+0x0/0x12c) from [<c0081ad8>] (hrtimer_nanosleep+0xbc/0x140)
+<4>[  511.684020] [<c0081a1c>] (hrtimer_nanosleep+0x0/0x140) from [<c0081bf8>] (sys_nanosleep+0x9c/0xb0)
+<4>[  511.684173] [<c0081b5c>] (sys_nanosleep+0x0/0xb0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.684295]  r5:00011128 r4:000104e8
+<6>[  511.684356] opprofdaemon  S c038328c     0  1140   1048
+<4>[  511.684448] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.684600] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.684753]  r9:00000000 r8:cc9b7e48 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.684844] r4:cc9b7bf0
+<4>[  511.684906] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.685028]  r5:00000000 r4:00000000
+<4>[  511.685089] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.685241] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.685363]  r8:c003c008 r7:000000a8 r6:00000000 r5:00000000 r4:00011250
+<6>[  511.685485] opprofdaemon  S c038328c     0  1142   1048
+<4>[  511.685546] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.685699] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.685852]  r9:00000000 r8:0000000c r7:00000000 r6:00000000 r5:00000004
+<4>[  511.685974] r4:cc94bb78
+<4>[  511.686004] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.686157]  r5:00000004 r4:cc94bf00
+<4>[  511.686187] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.686340] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.686462] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.686614] app_process   S c038328c     0  1170   1064
+<4>[  511.686676] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.686828] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.686950] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.687103]  r7:ccb65ee4 r6:c0186201 r5:ccf626e0 r4:befa5858
+<4>[  511.687194] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.687316] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.687438]  r7:00000036 r6:0023bf54 r5:befa5858 r4:0023bf28
+<6>[  511.687530] HeapWorker    S c038328c     0  1171   1064
+<4>[  511.687622] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.687774] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.687896] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.688018] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.688140] Signal Catche S c038328c     0  1172   1064
+<4>[  511.688232] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.688385] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.688537]  r7:ccdb5f80 r6:00000000 r5:7fffffff r4:ccdb4000
+<4>[  511.688629] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.688781] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.688934]  r7:000000b1 r6:4357beac r5:0013a5d0 r4:4357bea8
+<6>[  511.689025] JDWP          S c038328c     0  1173   1064
+<4>[  511.689086] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.689239] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.689422]  r9:00000000 r8:00000050 r7:00000000 r6:00000000 r5:0000000c
+<4>[  511.689514] r4:ccdb7b78
+<4>[  511.689544] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.689697]  r5:0000000c r4:ccdb7f00
+<4>[  511.689758] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.689880] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.690032] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.690155] Binder Thread S c038328c     0  1174   1064
+<4>[  511.690246] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.690368] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.690612] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.690734]  r7:ccd49ee4 r6:c0186201 r5:ccf626e0 r4:4646fe28
+<4>[  511.690826] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.690979] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.691101]  r7:00000036 r6:001b96b4 r5:4646fe28 r4:001b9688
+<6>[  511.691192] Binder Thread S c038328c     0  1175   1064
+<4>[  511.691284] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.691406] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.691558] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.691680]  r7:ccd4bee4 r6:c0186201 r5:ccf626e0 r4:4656fe28
+<4>[  511.691772] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.691894] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.692047]  r7:00000036 r6:00232c44 r5:4656fe28 r4:00232c18
+<6>[  511.692138] Binder Thread S c038328c     0  1176   1064
+<4>[  511.692199] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.692352] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.692474] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.692626]  r7:ccd4dee4 r6:c0186201 r5:ccf626e0 r4:4666fe28
+<4>[  511.692718] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.692840] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.692962]  r7:00000036 r6:001d54f4 r5:4666fe28 r4:001d54c8
+<6>[  511.693054] Binder Thread S c038328c     0  1177   1064
+<4>[  511.693145] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.693267] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.693420] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.693542]  r7:ccd4fee4 r6:c0186201 r5:ccf626e0 r4:4676fe28
+<4>[  511.693634] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.693756] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.693908]  r7:00000036 r6:00080f14 r5:4676fe28 r4:00080ee8
+<6>[  511.694000] SurfaceFlinge S c038328c     0  1178   1064
+<4>[  511.694061] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.694213] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.694335] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.694458] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.694610] DisplayEventT S c038328c     0  1179   1064
+<4>[  511.694671] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c00919f0>] (wait_for_fb_wake_show+0xd0/0x128)
+<4>[  511.694824] [<c0091920>] (wait_for_fb_wake_show+0x0/0x128) from [<c0149b10>] (kobj_attr_show+0x20/0x24)
+<4>[  511.694976] [<c0149af0>] (kobj_attr_show+0x0/0x24) from [<c0106000>] (sysfs_read_file+0xc0/0x138)
+<4>[  511.695159] [<c0105f40>] (sysfs_read_file+0x0/0x138) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.695281] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.695434]  r7:00000000 r6:00000000 r5:4696fe87 r4:c5e399b0
+<4>[  511.695526] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.695648]  r8:c003c008 r7:00000003 r6:00000015 r5:0023c7b0 r4:acd2a1f8
+<6>[  511.695770] er.ServerThre S c038328c     0  1180   1064
+<4>[  511.695831] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.695983] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.696105] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.696258] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.696380] ActivityManag S c038328c     0  1182   1064
+<4>[  511.696441] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.696594] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.696716] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.696868] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.696990] ProcessStats  S c038328c     0  1189   1064
+<4>[  511.697052] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.697204] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.697326] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.697448] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.697601] PackageManage S c038328c     0  1190   1064
+<4>[  511.697662] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.697814] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.697937] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.698059] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.698211] FileObserver  S c038328c     0  1191   1064
+<4>[  511.698394] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c00ea340>] (inotify_read+0x1cc/0x208)
+<4>[  511.698577] [<c00ea174>] (inotify_read+0x0/0x208) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.698699] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.698852]  r7:00000000 r6:00000000 r5:479cfb6c r4:c8f47b40
+<4>[  511.698944] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.699066]  r8:c003c008 r7:00000003 r6:ad369008 r5:00267cf8 r4:479cfb6c
+<6>[  511.699188] AccountManage S c038328c     0  1192   1064
+<4>[  511.699249] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.699401] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.699523] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.699645] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.699798] SyncHandlerTh S c038328c     0  1193   1064
+<4>[  511.699859] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.700012] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.700134] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.700256] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.700378] UEventObserve S c038328c     0  1194   1064
+<4>[  511.700469] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.700622] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.700775]  r9:00000000 r8:c898be48 r7:00000000 r6:c898bbf0 r5:00000000
+<4>[  511.700897] r4:c898bbf0
+<4>[  511.700927] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.701080]  r5:00000000 r4:00000000
+<4>[  511.701141] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.701263] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.701385]  r8:c003c008 r7:000000a8 r6:44ca7838 r5:47ea5d40 r4:a9c07888
+<6>[  511.701507] er.ServerThre S c038328c     0  1195   1064
+<4>[  511.701568] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.701721] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.701873]  r9:00000000 r8:c898de50 r7:00000000 r6:00000000 r5:00000000
+<4>[  511.701995] r4:c898dbf0
+<4>[  511.702026] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.702178]  r5:00000000 r4:00000000
+<4>[  511.702239] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.702362] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.702484]  r8:c003c008 r7:000000a8 r6:00000001 r5:811021d4 r4:0027b028
+<6>[  511.702606] PowerManagerS S c038328c     0  1196   1064
+<4>[  511.702667] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.702819] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.702941] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.703094] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.703216] AlarmManager  S c038328c     0  1199   1064
+<4>[  511.703277] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0267184>] (alarm_ioctl+0x2d4/0x588)
+<4>[  511.703430] [<c0266eb0>] (alarm_ioctl+0x0/0x588) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.703582]  r8:c8990000 r7:c8991ee4 r6:c0266eb0 r5:00006101 r4:c89781b0
+<4>[  511.703674] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.703826]  r7:c8991ee4 r6:00006101 r5:c89781b0 r4:00000030
+<4>[  511.703918] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.704040] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.704162]  r7:00000036 r6:42f621af r5:00000030 r4:ad90410c
+<6>[  511.704284] WindowManager S c038328c     0  1200   1064
+<4>[  511.704345] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.704498] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.704620] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.704742] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.704864] InputDeviceRe S c038328c     0  1201   1064
+<4>[  511.704956] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.705108] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.705261]  r9:00000000 r8:c8995e68 r7:00000000 r6:c8995bf0 r5:00000000
+<4>[  511.705352] r4:c8995bf0
+<4>[  511.705413] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.705566]  r5:00000000 r4:00000000
+<4>[  511.705596] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.705749] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.705871]  r8:c003c008 r7:000000a8 r6:484a5d60 r5:0028b2d0 r4:00000000
+<6>[  511.705993] WindowManager S c038328c     0  1202   1064
+<4>[  511.706054] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.706329] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.706481] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.706604] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.706726] InputDispatch S c038328c     0  1203   1064
+<4>[  511.706817] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.706939] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.707092] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.707214] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.707336] ConnectivityT S c038328c     0  1207   1064
+<4>[  511.707427] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.707550] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.707672] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.707824] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.707946] WifiService   S c038328c     0  1208   1064
+<4>[  511.708007] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.708160] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.708282] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.708404] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.708557] WifiWatchdogT S c038328c     0  1209   1064
+<4>[  511.708618] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.708770] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.708892] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.709014] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.709136] LocationManag S c038328c     0  1210   1064
+<4>[  511.709228] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.709350] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.709503] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.709625] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.709747] LocationManag S c038328c     0  1211   1064
+<4>[  511.709838] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.709960] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.710113]  r7:ccdd6bb0 r6:7fffffff r5:c89b7f54 r4:00000000
+<4>[  511.710205] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.710357] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c0296910>] (sys_recvfrom+0x8c/0xe4)
+<4>[  511.710510] [<c0296884>] (sys_recvfrom+0x0/0xe4) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.710632]  r8:c003c008 r7:00000124 r6:a970b25c r5:00000000 r4:00000000
+<6>[  511.710754] SuplReceiver  S c038328c     0  1212   1064
+<4>[  511.710815] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.710968] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.711120]  r7:ccdd6880 r6:7fffffff r5:c89b9f54 r4:00000000
+<4>[  511.711212] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.711334] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c02967d4>] (sys_recvmsg+0x120/0x1d0)
+<4>[  511.711486] [<c02966b4>] (sys_recvmsg+0x0/0x1d0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.711639] GpsEventThrea S c038328c     0  1213   1064
+<4>[  511.711700] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.711853] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.711975] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.712097] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.712249] AudioService  S c038328c     0  1214   1064
+<4>[  511.712310] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.712463] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.712585] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.712707] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.712829] GpsNetworkThr S c038328c     0  1215   1064
+<4>[  511.712921] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.713043] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.713195] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.713317] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.713439] android:unnam S c038328c     0  1216   1064
+<4>[  511.713531] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.713653] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.713806] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.714019] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.714172] android:unnam S c038328c     0  1217   1064
+<4>[  511.714233] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.714385] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.714508] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.714660] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.714782] watchdog      S c038328c     0  1227   1064
+<4>[  511.714843] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.714996] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.715118] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.715240] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.715393] Binder Thread S c038328c     0  1257   1064
+<4>[  511.715454] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.715606] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.715728] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.715881]  r7:c8b11ee4 r6:c0186201 r5:ccf626e0 r4:4ac03e28
+<4>[  511.715972] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.716094] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.716217]  r7:00000036 r6:002cc744 r5:4ac03e28 r4:002cc718
+<6>[  511.716308] Binder Thread S c038328c     0  1258   1064
+<4>[  511.716400] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.716552] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.716674] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.716796]  r7:c8b13ee4 r6:c0186201 r5:ccf626e0 r4:4ad6fe28
+<4>[  511.716888] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.717041] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.717163]  r7:00000036 r6:002cf2dc r5:4ad6fe28 r4:002cf2b0
+<6>[  511.717254] r.MountListen S c038328c     0  1279   1064
+<4>[  511.717315] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.717468] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.717620]  r7:ccb9d900 r6:7fffffff r5:c97f7f54 r4:00000000
+<4>[  511.717712] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.717864] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c02967d4>] (sys_recvmsg+0x120/0x1d0)
+<4>[  511.717987] [<c02966b4>] (sys_recvmsg+0x0/0x1d0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.718139] SearchDialog  S c038328c     0  1428   1064
+<4>[  511.718200] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.718353] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.718475] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.718597] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.718750] app_process   S c038328c     0  1228   1064
+<4>[  511.718811] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.718963] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.719085] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.719207] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.719360] HeapWorker    S c038328c     0  1229   1064
+<4>[  511.719421] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.719573] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.719696] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.719818] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.719970] Signal Catche S c038328c     0  1230   1064
+<4>[  511.720031] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.720184] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.720336]  r7:c8a1ff80 r6:00000000 r5:7fffffff r4:c8a1e000
+<4>[  511.720428] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.720581] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.720733]  r7:000000b1 r6:4357beac r5:001b95f0 r4:4357bea8
+<6>[  511.720825] JDWP          S c038328c     0  1231   1064
+<4>[  511.720886] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.721038] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.721191]  r9:00000000 r8:00000025 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.721313] r4:c8a21b78
+<4>[  511.721343] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.721496]  r5:00000008 r4:c8a21f00
+<4>[  511.721557] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.721801] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.721954] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.722076] Binder Thread S c038328c     0  1234   1064
+<4>[  511.722167] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.722290] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.722442] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.722564]  r7:c8a67ee4 r6:c0186201 r5:cd3b0a40 r4:4646fe28
+<4>[  511.722656] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.722778] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.722930]  r7:00000036 r6:001d550c r5:4646fe28 r4:001d54e0
+<6>[  511.723022] Binder Thread S c038328c     0  1235   1064
+<4>[  511.723083] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.723236] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.723358] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.723480]  r7:c8a6bee4 r6:c0186201 r5:cd3b0a40 r4:4656fe28
+<4>[  511.723602] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.723724] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.723846]  r7:00000036 r6:00081214 r5:4656fe28 r4:000811e8
+<6>[  511.723937] Binder Thread S c038328c     0  1238   1064
+<4>[  511.724029] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.724151] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.724304] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.724426]  r7:c8aa1ee4 r6:c0186201 r5:cd3b0a40 r4:4666fe28
+<4>[  511.724517] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.724639] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.724792]  r7:00000036 r6:0023a604 r5:4666fe28 r4:0023a5d8
+<6>[  511.724884] ApplicationsP S c038328c     0  1248   1064
+<4>[  511.724945] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.725097] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.725219] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.725341] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.725494] ContactAggreg S c038328c     0  1259   1064
+<4>[  511.725555] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.725708] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.725830] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.725952] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.726074] RefQueueWorke S c038328c     0  1268   1064
+<4>[  511.726165] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.726287] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.726440] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.726562] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.726684] app_process   S c038328c     0  1232   1064
+<4>[  511.726776] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.726898] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.727050] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.727172] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.727294] HeapWorker    S c038328c     0  1233   1064
+<4>[  511.727386] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.727508] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.727630] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.727783] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.727905] Signal Catche S c038328c     0  1237   1064
+<4>[  511.727966] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.728118] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.728271]  r7:c8a9ff80 r6:00000000 r5:7fffffff r4:c8a9e000
+<4>[  511.728363] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.728546] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.728668]  r7:000000b1 r6:4357beac r5:001d5438 r4:4357bea8
+<6>[  511.728759] JDWP          S c038328c     0  1240   1064
+<4>[  511.728851] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.729003] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.729156]  r9:00000000 r8:0000001f r7:00000000 r6:00000000 r5:00000004
+<4>[  511.729248] r4:c8ab3b78
+<4>[  511.729309] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.729431]  r5:00000004 r4:c8ab3f00
+<4>[  511.729492] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.729736] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.729888] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.730010] Binder Thread S c038328c     0  1241   1064
+<4>[  511.730102] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.730224] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.730377] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.730499]  r7:c8ab7ee4 r6:c0186201 r5:c89782d0 r4:4646fe28
+<4>[  511.730590] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.730712] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.730865]  r7:00000036 r6:00232b7c r5:4646fe28 r4:00232b50
+<6>[  511.730957] Binder Thread S c038328c     0  1244   1064
+<4>[  511.731018] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.731170] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.731292] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.731445]  r7:c8acdee4 r6:c0186201 r5:c89782d0 r4:4656fe28
+<4>[  511.731536] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.731658] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.731781]  r7:00000036 r6:000811b4 r5:4656fe28 r4:00081188
+<6>[  511.731903] app_process   S c038328c     0  1236   1064
+<4>[  511.731964] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.732116] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.732238] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.732360] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.732513] HeapWorker    S c038328c     0  1239   1064
+<4>[  511.732574] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.732727] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.732849] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.732971] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.733093] Signal Catche S c038328c     0  1242   1064
+<4>[  511.733184] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.733337] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.733489]  r7:c8ac9f80 r6:00000000 r5:7fffffff r4:c8ac8000
+<4>[  511.733581] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.733734] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.733886]  r7:000000b1 r6:4357beac r5:0007fed8 r4:4357bea8
+<6>[  511.733978] JDWP          S c038328c     0  1243   1064
+<4>[  511.734039] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.734191] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.734375]  r9:00000000 r8:00000025 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.734466] r4:c8acbb78
+<4>[  511.734497] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.734649]  r5:00000008 r4:c8acbf00
+<4>[  511.734710] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.734832] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.734985] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.735107] Binder Thread S c038328c     0  1245   1064
+<4>[  511.735168] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.735321] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.735443] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.735595]  r7:c8acfee4 r6:c0186201 r5:c89785a0 r4:4646fe28
+<4>[  511.735687] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.735809] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.735931]  r7:00000036 r6:000813bc r5:4646fe28 r4:00081390
+<6>[  511.736022] Binder Thread S c038328c     0  1246   1064
+<4>[  511.736114] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.736236] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.736389] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.736511]  r7:c8ad1ee4 r6:c0186201 r5:c89785a0 r4:4656fe28
+<4>[  511.736602] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.736724] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.736877]  r7:00000036 r6:00239dfc r5:4656fe28 r4:00239dd0
+<6>[  511.736968] Binder Thread S c038328c     0  1247   1064
+<4>[  511.737030] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.737182] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.737304] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.737548]  r7:c8ad3ee4 r6:c0186201 r5:c89785a0 r4:4666fe28
+<4>[  511.737640] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.737792] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.737915]  r7:00000036 r6:0023aa4c r5:4666fe28 r4:0023aa20
+<6>[  511.738006] RILSender     S c038328c     0  1249   1064
+<4>[  511.738098] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.738220] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.738372] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.738494] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.738616] RILReceiver   S c038328c     0  1250   1064
+<4>[  511.738708] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.738861] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.738983]  r7:c8ae0de8 r6:7fffffff r5:c8ae7f54 r4:00000000
+<4>[  511.739105] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.739227] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c02967d4>] (sys_recvmsg+0x120/0x1d0)
+<4>[  511.739379] [<c02966b4>] (sys_recvmsg+0x0/0x1d0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.739501] Stk Telephony S c038328c     0  1251   1064
+<4>[  511.739593] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.739746] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.739868] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.739990] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.740112] RilMessageDec S c038328c     0  1252   1064
+<4>[  511.740203] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.740325] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.740478] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.740600] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.740722] Stk Icon Load S c038328c     0  1253   1064
+<4>[  511.740814] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.740936] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.741058] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.741210] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.741333] AsyncQueryWor S c038328c     0  1254   1064
+<4>[  511.741394] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.741546] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.741668] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.741790] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.741943] Binder Thread S c038328c     0  1272   1064
+<4>[  511.742004] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.742156] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.742279] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.742401]  r7:c5dd1ee4 r6:c0186201 r5:c89785a0 r4:46edde28
+<4>[  511.742523] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.742645] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.742767]  r7:00000036 r6:002587a4 r5:46edde28 r4:00258778
+<6>[  511.742858] Binder Thread S c038328c     0  1274   1064
+<4>[  511.742950] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.743072] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.743225] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.743347]  r7:c5dd5ee4 r6:c0186201 r5:c89785a0 r4:46adde28
+<4>[  511.743438] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.743560] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.743713]  r7:00000036 r6:00256504 r5:46adde28 r4:002564d8
+<6>[  511.743804] Binder Thread S c038328c     0  1275   1064
+<4>[  511.743865] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.744018] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.744140] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.744293]  r7:c5dd9ee4 r6:c0186201 r5:c89785a0 r4:475dde28
+<4>[  511.744384] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.744506] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.744628]  r7:00000036 r6:00277624 r5:475dde28 r4:002775f8
+<6>[  511.744720] Stk App Servi S c038328c     0  1277   1064
+<4>[  511.744812] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.744934] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.745086] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.745330] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.745452] app_process   S c038328c     0  1260   1064
+<4>[  511.745544] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.745666] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.745819] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.745941] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.746063] HeapWorker    S c038328c     0  1261   1064
+<4>[  511.746154] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.746276] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.746398] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.746551] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.746673] Signal Catche S c038328c     0  1262   1064
+<4>[  511.746734] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.746887] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.747039]  r7:c8b4df80 r6:00000000 r5:7fffffff r4:c8b4c000
+<4>[  511.747131] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.747314] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.747436]  r7:000000b1 r6:4357beac r5:00080318 r4:4357bea8
+<6>[  511.747528] JDWP          S c038328c     0  1263   1064
+<4>[  511.747619] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.747772] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.747924]  r9:00000000 r8:00000021 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.748016] r4:c8b5db78
+<4>[  511.748077] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.748199]  r5:00000008 r4:c8b5df00
+<4>[  511.748260] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.748413] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.748535] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.748657] Binder Thread S c038328c     0  1264   1064
+<4>[  511.748748] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.748901] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.749023] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.749145]  r7:c8b5fee4 r6:c0186201 r5:c8aea7e0 r4:4646fe28
+<4>[  511.749237] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.749389] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.749511]  r7:00000036 r6:00232c64 r5:4646fe28 r4:00232c38
+<6>[  511.749603] Binder Thread S c038328c     0  1265   1064
+<4>[  511.749694] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.749816] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.749938] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.750091]  r7:c8b61ee4 r6:c0186201 r5:c8aea7e0 r4:4656fe28
+<4>[  511.750183] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.750305] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.750427]  r7:00000036 r6:0023a13c r5:4656fe28 r4:0023a110
+<6>[  511.750549] Binder Thread S c038328c     0  1266   1064
+<4>[  511.750610] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.750762] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.750885] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.751007]  r7:c8b63ee4 r6:c0186201 r5:c8aea7e0 r4:4666fe28
+<4>[  511.751098] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.751251] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.751373]  r7:00000036 r6:0023b36c r5:4666fe28 r4:0023b340
+<6>[  511.751464] app_process   S c038328c     0  1282   1064
+<4>[  511.751525] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.751678] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.751800] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.751953] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.752075] HeapWorker    S c038328c     0  1283   1064
+<4>[  511.752136] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.752288] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.752410] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.752532] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.752685] Signal Catche S c038328c     0  1284   1064
+<4>[  511.752746] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.752899] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.753204]  r7:c8e39f80 r6:00000000 r5:7fffffff r4:c8e38000
+<4>[  511.753295] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.753448] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.753601]  r7:000000b1 r6:4357beac r5:00080840 r4:4357bea8
+<6>[  511.753692] JDWP          S c038328c     0  1285   1064
+<4>[  511.753753] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.753906] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.754089]  r9:00000000 r8:00000021 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.754180] r4:c8e3bb78
+<4>[  511.754211] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.754364]  r5:00000008 r4:c8e3bf00
+<4>[  511.754425] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.754547] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.754699] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.754821] Binder Thread S c038328c     0  1286   1064
+<4>[  511.754913] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.755035] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.755187] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.755310]  r7:c8f7dee4 r6:c0186201 r5:c97045c0 r4:4646fe28
+<4>[  511.755401] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.755523] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.755676]  r7:00000036 r6:00232a8c r5:4646fe28 r4:00232a60
+<6>[  511.755767] Binder Thread S c038328c     0  1287   1064
+<4>[  511.755828] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.755981] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.756103] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.756225]  r7:c8f7fee4 r6:c0186201 r5:c97045c0 r4:4656fe28
+<4>[  511.756347] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.756469] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.756591]  r7:00000036 r6:0023a79c r5:4656fe28 r4:0023a770
+<6>[  511.756683] Binder Thread S c038328c     0  1288   1064
+<4>[  511.756774] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.756896] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.757019] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.757171]  r7:c8fa1ee4 r6:c0186201 r5:c97045c0 r4:4666fe28
+<4>[  511.757263] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.757385] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.757507]  r7:00000036 r6:0023b3ec r5:4666fe28 r4:0023b3c0
+<6>[  511.757629] app_process   S c038328c     0  1290   1064
+<4>[  511.757690] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.757843] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.757965] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.758087] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.758239] HeapWorker    S c038328c     0  1291   1064
+<4>[  511.758300] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.758453] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.758575] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.758697] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.758850] Signal Catche S c038328c     0  1292   1064
+<4>[  511.758911] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.759063] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.759216]  r7:c545ff80 r6:00000000 r5:7fffffff r4:c545e000
+<4>[  511.759307] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.759460] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.759613]  r7:000000b1 r6:4357beac r5:00080da0 r4:4357bea8
+<6>[  511.759704] JDWP          S c038328c     0  1293   1064
+<4>[  511.759765] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.759918] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.760101]  r9:00000000 r8:0000002a r7:00000000 r6:00000000 r5:00000008
+<4>[  511.760192] r4:c88c1b78
+<4>[  511.760223] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.760375]  r5:00000008 r4:c88c1f00
+<4>[  511.760437] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.760559] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.760711] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.760955] Binder Thread S c038328c     0  1297   1064
+<4>[  511.761016] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.761169] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.761291] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.761444]  r7:c8fe9ee4 r6:c0186201 r5:cd3b06e0 r4:4646fe28
+<4>[  511.761535] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.761657] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.761779]  r7:00000036 r6:00239f94 r5:4646fe28 r4:00239f68
+<6>[  511.761901] Binder Thread S c038328c     0  1299   1064
+<4>[  511.761962] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.762115] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.762237] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.762359]  r7:c8fedee4 r6:c0186201 r5:cd3b06e0 r4:4656fe28
+<4>[  511.762451] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.762603] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.762725]  r7:00000036 r6:0023b00c r5:4656fe28 r4:0023afe0
+<6>[  511.762817] Binder Thread S c038328c     0  1301   1064
+<4>[  511.762878] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.763031] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.763153] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.763305]  r7:c8fffee4 r6:c0186201 r5:cd3b06e0 r4:4666fe28
+<4>[  511.763397] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.763519] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.763641]  r7:00000036 r6:0023bce4 r5:4666fe28 r4:0023bcb8
+<6>[  511.763732] album thumbs  S c038328c     0  1304   1064
+<4>[  511.763824] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.763977] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.764099] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.764221] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.764343] Timer-0       S c038328c     0  1417   1064
+<4>[  511.764434] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.764556] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.764709] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.764831] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.764953] MtpCtrThread  S c038328c     0  1418   1064
+<4>[  511.765045] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c025a770>] (mtp_ctl_read+0xd8/0x260)
+<4>[  511.765197] [<c025a698>] (mtp_ctl_read+0x0/0x260) from [<c00fca20>] (proc_reg_read+0x48/0x5c)
+<4>[  511.765350] [<c00fc9d8>] (proc_reg_read+0x0/0x5c) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.765502]  r5:c89ceab0 r4:00000008
+<4>[  511.765563] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.765686]  r7:00000000 r6:00000000 r5:46db1d64 r4:c89ceab0
+<4>[  511.765777] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.765899]  r8:c003c008 r7:00000003 r6:46db1d6c r5:806398f0 r4:80639124
+<6>[  511.766021] MtpCmdThread  S c038328c     0  1419   1064
+<4>[  511.766113] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c025a2cc>] (mtp_read+0x27c/0x338)
+<4>[  511.766235] [<c025a050>] (mtp_read+0x0/0x338) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.766387] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.766510]  r7:00000000 r6:00000000 r5:46eb1d44 r4:c54ff530
+<4>[  511.766601] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.766723]  r8:c003c008 r7:00000003 r6:46eb1d1c r5:806398f0 r4:80639124
+<6>[  511.766845] app_process   S c038328c     0  1307   1064
+<4>[  511.766906] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.767059] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.767181] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.767303] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.767456] HeapWorker    S c038328c     0  1308   1064
+<4>[  511.767517] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.767669] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.767791] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.767913] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.768066] Signal Catche S c038328c     0  1310   1064
+<4>[  511.768127] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.768280] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.768432]  r7:c888df80 r6:00000000 r5:7fffffff r4:c888c000
+<4>[  511.768524] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.768798] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.768951]  r7:000000b1 r6:4357beac r5:00081040 r4:4357bea8
+<6>[  511.769042] JDWP          S c038328c     0  1311   1064
+<4>[  511.769104] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.769256] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.769439]  r9:00000000 r8:0000001e r7:00000000 r6:00000000 r5:00000004
+<4>[  511.769531] r4:c888fb78
+<4>[  511.769561] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.769714]  r5:00000004 r4:c888ff00
+<4>[  511.769775] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.769897] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.770050] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.770172] Binder Thread S c038328c     0  1312   1064
+<4>[  511.770263] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.770385] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.770538] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.770660]  r7:c8891ee4 r6:c0186201 r5:c9704770 r4:4646fe28
+<4>[  511.770751] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.770874] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.771026]  r7:00000036 r6:00232a1c r5:4646fe28 r4:002329f0
+<6>[  511.771118] Binder Thread S c038328c     0  1313   1064
+<4>[  511.771179] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.771331] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.771453] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.771606]  r7:c8893ee4 r6:c0186201 r5:c9704770 r4:4656fe28
+<4>[  511.771697] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.771820] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.771942]  r7:00000036 r6:0023bacc r5:4656fe28 r4:0023baa0
+<6>[  511.772033] Binder Thread S c038328c     0  1314   1064
+<4>[  511.772125] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.772247] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.772399] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.772521]  r7:c8895ee4 r6:c0186201 r5:c9704770 r4:4666fe28
+<4>[  511.772613] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.772735] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.772888]  r7:00000036 r6:0023c71c r5:4666fe28 r4:0023c6f0
+<6>[  511.772979] app_process   S c038328c     0  1315   1064
+<4>[  511.773040] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.773193] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.773315] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.773437] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.773590] HeapWorker    S c038328c     0  1316   1064
+<4>[  511.773651] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.773803] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.773925] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.774047] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.774200] Signal Catche S c038328c     0  1320   1064
+<4>[  511.774261] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.774414] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.774566]  r7:c8f31f80 r6:00000000 r5:7fffffff r4:c8f30000
+<4>[  511.774658] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.774810] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.774963]  r7:000000b1 r6:4357beac r5:00081588 r4:4357bea8
+<6>[  511.775054] JDWP          S c038328c     0  1321   1064
+<4>[  511.775115] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.775268] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.775451]  r9:00000000 r8:0000001b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.775543] r4:c8f33b78
+<4>[  511.775573] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.775726]  r5:00000004 r4:c8f33f00
+<4>[  511.775787] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.775909] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.776062] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.776184] Binder Thread S c038328c     0  1322   1064
+<4>[  511.776275] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.776519] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.776641] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.776763]  r7:c8f2fee4 r6:c0186201 r5:c88894a0 r4:4646fe28
+<4>[  511.776885] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.777008] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.777130]  r7:00000036 r6:0023274c r5:4646fe28 r4:00232720
+<6>[  511.777221] Binder Thread S c038328c     0  1323   1064
+<4>[  511.777313] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.777465] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.777587] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.777709]  r7:c8f2bee4 r6:c0186201 r5:c88894a0 r4:4656fe28
+<4>[  511.777801] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.777954] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.778076]  r7:00000036 r6:00232cbc r5:4656fe28 r4:00232c90
+<6>[  511.778167] Binder Thread S c038328c     0  1324   1064
+<4>[  511.778259] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.778381] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.778503] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.778656]  r7:c8f35ee4 r6:c0186201 r5:c88894a0 r4:4666fe28
+<4>[  511.778747] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.778869] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.778991]  r7:00000036 r6:0023ccec r5:4666fe28 r4:0023ccc0
+<6>[  511.779113] Thread-9      S c038328c     0  1326   1064
+<4>[  511.779174] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.779327] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.779449] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.779571] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.779724] Binder Thread S c038328c     0  1442   1064
+<4>[  511.779785] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.779937] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.780059] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.780181]  r7:c5f51ee4 r6:c0186201 r5:c88894a0 r4:46e19e28
+<4>[  511.780303] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.780426] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.780548]  r7:00000036 r6:0027fc84 r5:46e19e28 r4:0027fc58
+<6>[  511.780639] Binder Thread S c038328c     0  1534   1064
+<4>[  511.780731] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.780853] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.781005] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.781127]  r7:c88f5ee4 r6:c0186201 r5:c88894a0 r4:46c19e28
+<4>[  511.781219] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.781341] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.781494]  r7:00000036 r6:0025bd8c r5:46c19e28 r4:0025bd60
+<6>[  511.781585] app_process   S c038328c     0  1331   1064
+<4>[  511.781646] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.781799] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.781921] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.782043] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.782196] HeapWorker    S c038328c     0  1332   1064
+<4>[  511.782257] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.782409] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.782531] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.782653] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.782806] Signal Catche S c038328c     0  1333   1064
+<4>[  511.782867] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.783020] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.783172]  r7:c9043f80 r6:00000000 r5:7fffffff r4:c9042000
+<4>[  511.783264] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.783416] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.783569]  r7:000000b1 r6:435dceac r5:001d3498 r4:435dcea8
+<6>[  511.783660] JDWP          S c038328c     0  1335   1064
+<4>[  511.783721] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.783874] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.784027]  r9:00000000 r8:0000001b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.784149] r4:c9055b78
+<4>[  511.784179] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.784423]  r5:00000004 r4:c9055f00
+<4>[  511.784484] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.784637] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.784759] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.784912] Binder Thread S c038328c     0  1336   1064
+<4>[  511.784973] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.785125] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.785247] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.785369]  r7:c9057ee4 r6:c0186201 r5:c8f28da0 r4:4646fe28
+<4>[  511.785491] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.785614] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.785736]  r7:00000036 r6:0013a80c r5:4646fe28 r4:0013a7e0
+<6>[  511.785827] Binder Thread S c038328c     0  1337   1064
+<4>[  511.785919] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.786041] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.786193] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.786315]  r7:c9059ee4 r6:c0186201 r5:c8f28da0 r4:4656fe28
+<4>[  511.786407] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.786529] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.786682]  r7:00000036 r6:001b9734 r5:4656fe28 r4:001b9708
+<6>[  511.786773] Binder Thread S c038328c     0  1338   1064
+<4>[  511.786834] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.786987] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.787109] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.787231]  r7:c905bee4 r6:c0186201 r5:c8f28da0 r4:4666fe28
+<4>[  511.787322] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.787475] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.787597]  r7:00000036 r6:00232d4c r5:4666fe28 r4:00232d20
+<6>[  511.787689] app_process   S c038328c     0  1340   1064
+<4>[  511.787780] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.787902] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.788055] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.788177] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.788299] HeapWorker    S c038328c     0  1341   1064
+<4>[  511.788391] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.788513] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.788665] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.788787] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.788909] Signal Catche S c038328c     0  1342   1064
+<4>[  511.789001] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.789123] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.789276]  r7:c8833f80 r6:00000000 r5:7fffffff r4:c8832000
+<4>[  511.789367] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.789550] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.789672]  r7:000000b1 r6:435dceac r5:001d3498 r4:435dcea8
+<6>[  511.789764] JDWP          S c038328c     0  1343   1064
+<4>[  511.789855] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.790008] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.790161]  r9:00000000 r8:0000001b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.790252] r4:c8835b78
+<4>[  511.790313] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.790435]  r5:00000004 r4:c8835f00
+<4>[  511.790496] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.790649] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.790771] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.790893] Binder Thread S c038328c     0  1344   1064
+<4>[  511.790985] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.791137] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.791259] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.791381]  r7:c8837ee4 r6:c0186201 r5:c8f281d0 r4:4646fe28
+<4>[  511.791473] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.791625] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.791748]  r7:00000036 r6:0013a80c r5:4646fe28 r4:0013a7e0
+<6>[  511.791839] Binder Thread S c038328c     0  1345   1064
+<4>[  511.791900] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.792175] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.792297] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.792419]  r7:c8839ee4 r6:c0186201 r5:c8f281d0 r4:4656fe28
+<4>[  511.792510] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.792663] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.792785]  r7:00000036 r6:00085d5c r5:4656fe28 r4:00085d30
+<6>[  511.792877] Binder Thread S c038328c     0  1346   1064
+<4>[  511.792968] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.793090] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.793212] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.793365]  r7:c883bee4 r6:c0186201 r5:c8f281d0 r4:4666fe28
+<4>[  511.793457] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.793579] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.793701]  r7:00000036 r6:00232d24 r5:4666fe28 r4:00232cf8
+<6>[  511.793823] usb.UsbListen S c038328c     0  1353   1064
+<4>[  511.793884] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.794036] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c032bd78>] (unix_stream_recvmsg+0x22c/0x4b4)
+<4>[  511.794189]  r7:c90677c8 r6:7fffffff r5:c90d9f54 r4:00000000
+<4>[  511.794281] [<c032bb4c>] (unix_stream_recvmsg+0x0/0x4b4) from [<c02959fc>] (sock_recvmsg+0xc4/0xe4)
+<4>[  511.794403] [<c0295938>] (sock_recvmsg+0x0/0xe4) from [<c02967d4>] (sys_recvmsg+0x120/0x1d0)
+<4>[  511.794555] [<c02966b4>] (sys_recvmsg+0x0/0x1d0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.794708] app_process   S c038328c     0  1347   1064
+<4>[  511.794769] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.794921] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.795043] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.795166] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.795318] HeapWorker    S c038328c     0  1348   1064
+<4>[  511.795379] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.795532] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.795654] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.795776] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.795898] Signal Catche S c038328c     0  1349   1064
+<4>[  511.795989] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.796142] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.796295]  r7:c90c1f80 r6:00000000 r5:7fffffff r4:c90c0000
+<4>[  511.796386] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.796539] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.796691]  r7:000000b1 r6:435dceac r5:001d3498 r4:435dcea8
+<6>[  511.796783] JDWP          S c038328c     0  1350   1064
+<4>[  511.796844] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.796997] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.797149]  r9:00000000 r8:0000001e r7:00000000 r6:00000000 r5:00000004
+<4>[  511.797271] r4:c90c3b78
+<4>[  511.797302] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.797454]  r5:00000004 r4:c90c3f00
+<4>[  511.797515] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.797637] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.797790] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.797912] Binder Thread S c038328c     0  1351   1064
+<4>[  511.798004] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.798126] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.798248] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.798400]  r7:c90d5ee4 r6:c0186201 r5:c8f37630 r4:4646fe28
+<4>[  511.798492] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.798614] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.798736]  r7:00000036 r6:001d4714 r5:4646fe28 r4:001d46e8
+<6>[  511.798828] Binder Thread S c038328c     0  1352   1064
+<4>[  511.798919] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.799072] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.799194] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.799316]  r7:c90d7ee4 r6:c0186201 r5:c8f37630 r4:4656fe28
+<4>[  511.799407] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.799560] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.799682]  r7:00000036 r6:001b96dc r5:4656fe28 r4:001b96b0
+<6>[  511.799774] NotifyingServ S c038328c     0  1359   1064
+<4>[  511.799957] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.800140] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.800262] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.800384] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.800506] app_process   S c038328c     0  1354   1064
+<4>[  511.800598] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.800750] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.800872] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.800994] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.801116] HeapWorker    S c038328c     0  1355   1064
+<4>[  511.801208] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.801330] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.801483] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.801605] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.801727] Signal Catche S c038328c     0  1356   1064
+<4>[  511.801818] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.801940] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.802093]  r7:c549ff80 r6:00000000 r5:7fffffff r4:c549e000
+<4>[  511.802185] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.802368] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.802490]  r7:000000b1 r6:435dceac r5:00087250 r4:435dcea8
+<6>[  511.802581] JDWP          S c038328c     0  1357   1064
+<4>[  511.802673] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.802825] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.803009]  r9:00000000 r8:00000021 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.803131] r4:c54a1b78
+<4>[  511.803161] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.803314]  r5:00000008 r4:c54a1f00
+<4>[  511.803375] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.803497] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.803649] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.803771] Binder Thread S c038328c     0  1358   1064
+<4>[  511.803863] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.803985] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.804138] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.804260]  r7:c54a3ee4 r6:c0186201 r5:c90c97e0 r4:4646fe28
+<4>[  511.804351] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.804473] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.804626]  r7:00000036 r6:001b95a4 r5:4646fe28 r4:001b9578
+<6>[  511.804718] Binder Thread S c038328c     0  1360   1064
+<4>[  511.804779] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.804931] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.805053] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.805175]  r7:c54a7ee4 r6:c0186201 r5:c90c97e0 r4:4656fe28
+<4>[  511.805297] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.805419] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.805541]  r7:00000036 r6:00232bdc r5:4656fe28 r4:00232bb0
+<6>[  511.805633] Binder Thread S c038328c     0  1361   1064
+<4>[  511.805725] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.805847] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.805999] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.806121]  r7:c54b9ee4 r6:c0186201 r5:c90c97e0 r4:4666fe28
+<4>[  511.806243] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.806365] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.806488]  r7:00000036 r6:0023a93c r5:4666fe28 r4:0023a910
+<6>[  511.806579] RefQueueWorke S c038328c     0  1363   1064
+<4>[  511.806671] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.806793] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.806945] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.807067] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.807189] RefQueueWorke S c038328c     0  1372   1064
+<4>[  511.807281] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.807403] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.807525] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.807769] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.807922] Binder Thread S c038328c     0  1399   1064
+<4>[  511.807983] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.808135] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.808288] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.808410]  r7:c8867ee4 r6:c0186201 r5:c90c97e0 r4:46f6ce28
+<4>[  511.808502] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.808624] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.808776]  r7:00000036 r6:00270804 r5:46f6ce28 r4:002707d8
+<6>[  511.808868] app_process   S c038328c     0  1365   1064
+<4>[  511.808929] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.809082] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.809204] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.809326] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.809478] HeapWorker    S c038328c     0  1366   1064
+<4>[  511.809539] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.809692] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.809814] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.809936] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.810089] Signal Catche S c038328c     0  1368   1064
+<4>[  511.810150] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.810302] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.810455]  r7:c54f3f80 r6:00000000 r5:7fffffff r4:c54f2000
+<4>[  511.810546] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.810699] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.810852]  r7:000000b1 r6:435dceac r5:001b94f0 r4:435dcea8
+<6>[  511.810943] JDWP          S c038328c     0  1370   1064
+<4>[  511.811004] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.811187] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.811340]  r9:00000000 r8:0000001e r7:00000000 r6:00000000 r5:00000004
+<4>[  511.811431] r4:c54f7b78
+<4>[  511.811462] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.811614]  r5:00000004 r4:c54f7f00
+<4>[  511.811676] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.811798] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.811950] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.812072] Binder Thread S c038328c     0  1371   1064
+<4>[  511.812164] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.812286] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.812438] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.812561]  r7:c54f5ee4 r6:c0186201 r5:c90c9750 r4:4646fe28
+<4>[  511.812652] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.812774] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.812927]  r7:00000036 r6:00232b7c r5:4646fe28 r4:00232b50
+<6>[  511.813018] Binder Thread S c038328c     0  1373   1064
+<4>[  511.813079] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.813232] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.813354] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.813476]  r7:c9109ee4 r6:c0186201 r5:c90c9750 r4:4656fe28
+<4>[  511.813598] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.813720] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.813842]  r7:00000036 r6:00239dfc r5:4656fe28 r4:00239dd0
+<6>[  511.813934] Binder Thread S c038328c     0  1374   1064
+<4>[  511.814025] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.814147] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.814300] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.814422]  r7:c910bee4 r6:c0186201 r5:c90c9750 r4:4666fe28
+<4>[  511.814514] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.814636] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.814788]  r7:00000036 r6:0023ae04 r5:4666fe28 r4:0023add8
+<6>[  511.814880] app_process   S c038328c     0  1377   1064
+<4>[  511.814941] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.815093] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.815216] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.815338] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.815582] HeapWorker    S c038328c     0  1378   1064
+<4>[  511.815673] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.815826] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.815948] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.816070] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.816192] Signal Catche S c038328c     0  1379   1064
+<4>[  511.816284] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.816436] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.816589]  r7:c9153f80 r6:00000000 r5:7fffffff r4:c9152000
+<4>[  511.816680] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.816833] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.816986]  r7:000000b1 r6:435dceac r5:001b94f0 r4:435dcea8
+<6>[  511.817077] JDWP          S c038328c     0  1380   1064
+<4>[  511.817138] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.817291] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.817443]  r9:00000000 r8:0000001c r7:00000000 r6:00000000 r5:00000004
+<4>[  511.817565] r4:c9155b78
+<4>[  511.817596] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.817749]  r5:00000004 r4:c9155f00
+<4>[  511.817810] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.817932] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.818084] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.818206] Binder Thread S c038328c     0  1381   1064
+<4>[  511.818267] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.818420] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.818542] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.818695]  r7:c9165ee4 r6:c0186201 r5:c54ff1d0 r4:4646fe28
+<4>[  511.818786] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.818908] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.819030]  r7:00000036 r6:00232b7c r5:4646fe28 r4:00232b50
+<6>[  511.819122] Binder Thread S c038328c     0  1382   1064
+<4>[  511.819213] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.819366] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.819488] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.819610]  r7:c9167ee4 r6:c0186201 r5:c54ff1d0 r4:4656fe28
+<4>[  511.819702] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.819854] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.819976]  r7:00000036 r6:001d54cc r5:4656fe28 r4:001d54a0
+<6>[  511.820068] Binder Thread S c038328c     0  1383   1064
+<4>[  511.820129] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.820281] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.820404] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.820556]  r7:c9169ee4 r6:c0186201 r5:c54ff1d0 r4:4666fe28
+<4>[  511.820648] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.820770] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.820892]  r7:00000036 r6:0023a604 r5:4666fe28 r4:0023a5d8
+<6>[  511.820983] app_process   S c038328c     0  1401   1064
+<4>[  511.821075] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.821228] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.821350] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.821472] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.821594] HeapWorker    S c038328c     0  1402   1064
+<4>[  511.821685] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.821807] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.821960] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.822082] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.822204] Signal Catche S c038328c     0  1403   1064
+<4>[  511.822296] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.822418] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.822601]  r7:c8febf80 r6:00000000 r5:7fffffff r4:c8fea000
+<4>[  511.822692] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.822845] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.822967]  r7:000000b1 r6:435dceac r5:001d5328 r4:435dcea8
+<6>[  511.823089] JDWP          S c038328c     0  1404   1064
+<4>[  511.823150] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.823394] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.823577]  r9:00000000 r8:0000001d r7:00000000 r6:00000000 r5:00000004
+<4>[  511.823669] r4:c888bb78
+<4>[  511.823730] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.823852]  r5:00000004 r4:c888bf00
+<4>[  511.823913] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.824066] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.824188] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.824340] Binder Thread S c038328c     0  1405   1064
+<4>[  511.824401] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.824554] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.824676] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.824798]  r7:c5fa7ee4 r6:c0186201 r5:c8b5b530 r4:4646fe28
+<4>[  511.824920] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.825042] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.825164]  r7:00000036 r6:00080f9c r5:4646fe28 r4:00080f70
+<6>[  511.825256] Binder Thread S c038328c     0  1406   1064
+<4>[  511.825347] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.825469] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.825622] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.825744]  r7:c9171ee4 r6:c0186201 r5:c8b5b530 r4:4656fe28
+<4>[  511.825836] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.825958] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.826110]  r7:00000036 r6:0023a27c r5:4656fe28 r4:0023a250
+<6>[  511.826202] Binder Thread S c038328c     0  1407   1064
+<4>[  511.826263] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.826416] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.826538] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.826660]  r7:c5fabee4 r6:c0186201 r5:c8b5b530 r4:4666fe28
+<4>[  511.826751] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.826904] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.827026]  r7:00000036 r6:0023af6c r5:4666fe28 r4:0023af40
+<6>[  511.827117] Timer-0       S c038328c     0  1427   1064
+<4>[  511.827209] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089828>] (futex_wait+0x2f4/0x43c)
+<4>[  511.827331] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.827453] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.827606] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.827728] RefQueueWorke S c038328c     0  1441   1064
+<4>[  511.827819] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.827941] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.828063] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.828216] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.828338] Thread-16     S c038328c     0  1537   1064
+<4>[  511.828399] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03842d4>] (schedule_hrtimeout_range+0x140/0x180)
+<4>[  511.828552] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.828735]  r9:c92a9f70 r8:0000001f r7:00000000 r6:00000000 r5:00000004
+<4>[  511.828826] r4:c92a9b78
+<4>[  511.828857] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.829010]  r5:00000004 r4:c92a9f00
+<4>[  511.829071] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.829193] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.829345] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.829467] app_process   S c038328c     0  1408   1064
+<4>[  511.829559] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.829681] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.829833] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.829956] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.830078] HeapWorker    S c038328c     0  1409   1064
+<4>[  511.830169] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.830291] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.830413] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.830535] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.830688] Signal Catche S c038328c     0  1410   1064
+<4>[  511.830749] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.830902] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.831146]  r7:c5ff5f80 r6:00000000 r5:7fffffff r4:c5ff4000
+<4>[  511.831268] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.831420] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.831573]  r7:000000b1 r6:435dceac r5:001d5688 r4:435dcea8
+<6>[  511.831665] JDWP          S c038328c     0  1411   1064
+<4>[  511.831726] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.831878] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.832061]  r9:00000000 r8:00000020 r7:00000000 r6:00000000 r5:00000004
+<4>[  511.832153] r4:c5ff7b78
+<4>[  511.832183] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.832336]  r5:00000004 r4:c5ff7f00
+<4>[  511.832397] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.832519] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.832672] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.832794] Binder Thread S c038328c     0  1412   1064
+<4>[  511.832885] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.833007] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.833160] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.833282]  r7:c5ff9ee4 r6:c0186201 r5:c5f9d5c0 r4:4646fe28
+<4>[  511.833374] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.833526] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.833648]  r7:00000036 r6:00232c8c r5:4646fe28 r4:00232c60
+<6>[  511.833740] Binder Thread S c038328c     0  1413   1064
+<4>[  511.833831] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.833953] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.834075] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.834228]  r7:c5ffbee4 r6:c0186201 r5:c5f9d5c0 r4:4656fe28
+<4>[  511.834320] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.834442] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.834564]  r7:00000036 r6:0023a144 r5:4656fe28 r4:0023a118
+<6>[  511.834686] Binder Thread S c038328c     0  1414   1064
+<4>[  511.834747] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.834899] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.835021] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.835144]  r7:c550dee4 r6:c0186201 r5:c5f9d5c0 r4:4666fe28
+<4>[  511.835235] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.835388] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.835510]  r7:00000036 r6:0023b78c r5:4666fe28 r4:0023b760
+<6>[  511.835601] Modem Event T S c038328c     0  1415   1064
+<4>[  511.835693] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03842d4>] (schedule_hrtimeout_range+0x140/0x180)
+<4>[  511.835845] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.835998]  r9:c550ff38 r8:c550fe48 r7:00000000 r6:c550fbf0 r5:00000000
+<4>[  511.836090] r4:c550fbf0
+<4>[  511.836151] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00cea20>] (do_sys_poll+0x2d0/0x380)
+<4>[  511.836273]  r5:00000000 r4:00000000
+<4>[  511.836334] [<c00ce750>] (do_sys_poll+0x0/0x380) from [<c00ceb38>] (sys_poll+0x68/0xcc)
+<4>[  511.836456] [<c00cead0>] (sys_poll+0x0/0xcc) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.836608]  r8:c003c008 r7:000000a8 r6:467e2cec r5:80504168 r4:00257d30
+<6>[  511.836700] Binder Thread S c038328c     0  1532   1064
+<4>[  511.836791] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.836914] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.837066] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.837188]  r7:c5f55ee4 r6:c0186201 r5:c5f9d5c0 r4:46b98e28
+<4>[  511.837280] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.837432] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.837554]  r7:00000036 r6:0013a80c r5:46b98e28 r4:0013a7e0
+<6>[  511.837646] Binder Thread S c038328c     0  1535   1064
+<4>[  511.837707] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.837860] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.837982] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.838134]  r7:c88fbee4 r6:c0186201 r5:c5f9d5c0 r4:434cce28
+<4>[  511.838226] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.838348] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.838470]  r7:00000036 r6:00250ae4 r5:434cce28 r4:00250ab8
+<6>[  511.838562] app_process   S c038328c     0  1420   1064
+<4>[  511.838653] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.838775] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.839019] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.839141] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.839294] HeapWorker    S c038328c     0  1421   1064
+<4>[  511.839355] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.839508] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.839630] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.839752] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.839904] Signal Catche S c038328c     0  1422   1064
+<4>[  511.839965] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.840118] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.840270]  r7:c5553f80 r6:00000000 r5:7fffffff r4:c5552000
+<4>[  511.840362] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.840515] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.840667]  r7:000000b1 r6:435dceac r5:00080110 r4:435dcea8
+<6>[  511.840759] JDWP          S c038328c     0  1423   1064
+<4>[  511.840850] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.841003] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.841156]  r9:00000000 r8:0000001b r7:00000000 r6:00000000 r5:00000004
+<4>[  511.841247] r4:c5555b78
+<4>[  511.841278] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.841430]  r5:00000004 r4:c5555f00
+<4>[  511.841491] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.841644] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.841766] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.841888] Binder Thread S c038328c     0  1424   1064
+<4>[  511.841979] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.842102] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.842254] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.842376]  r7:c5567ee4 r6:c0186201 r5:c54ffbf0 r4:4646fe28
+<4>[  511.842468] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.842620] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.842742]  r7:00000036 r6:00232a04 r5:4646fe28 r4:002329d8
+<6>[  511.842834] Binder Thread S c038328c     0  1425   1064
+<4>[  511.842895] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.843048] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.843170] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.843322]  r7:c5569ee4 r6:c0186201 r5:c54ffbf0 r4:4656fe28
+<4>[  511.843414] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.843536] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.843658]  r7:00000036 r6:0023ab24 r5:4656fe28 r4:0023aaf8
+<6>[  511.843750] Binder Thread S c038328c     0  1426   1064
+<4>[  511.843841] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.843994] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.844116] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.844238]  r7:c556bee4 r6:c0186201 r5:c54ffbf0 r4:4666fe28
+<4>[  511.844329] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.844482] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.844604]  r7:00000036 r6:0023b8fc r5:4666fe28 r4:0023b8d0
+<6>[  511.844696] app_process   S c038328c     0  1444   1064
+<4>[  511.844787] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.844909] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.845062] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.845184] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.845306] HeapWorker    S c038328c     0  1445   1064
+<4>[  511.845397] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0089728>] (futex_wait+0x1f4/0x43c)
+<4>[  511.845520] [<c0089534>] (futex_wait+0x0/0x43c) from [<c008aa84>] (do_futex+0xa0/0x7bc)
+<4>[  511.845672] [<c008a9e4>] (do_futex+0x0/0x7bc) from [<c008b2d8>] (sys_futex+0x138/0x14c)
+<4>[  511.845794] [<c008b1a0>] (sys_futex+0x0/0x14c) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.845916] Signal Catche S c038328c     0  1446   1064
+<4>[  511.846008] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c0383448>] (schedule_timeout+0x20/0xc8)
+<4>[  511.846130] [<c0383428>] (schedule_timeout+0x0/0xc8) from [<c0383570>] (schedule_timeout_interruptible+0x28/0x2c)
+<4>[  511.846282]  r7:c5d5bf80 r6:00000000 r5:7fffffff r4:c5d5a000
+<4>[  511.846374] [<c0383548>] (schedule_timeout_interruptible+0x0/0x2c) from [<c00777a4>] (sys_rt_sigtimedwait+0x1a4/0x244)
+<4>[  511.846557] [<c0077600>] (sys_rt_sigtimedwait+0x0/0x244) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.846801]  r7:000000b1 r6:435dceac r5:00080670 r4:435dcea8
+<6>[  511.846923] JDWP          S c038328c     0  1447   1064
+<4>[  511.846984] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c03841e4>] (schedule_hrtimeout_range+0x50/0x180)
+<4>[  511.847137] [<c0384194>] (schedule_hrtimeout_range+0x0/0x180) from [<c00ce68c>] (poll_schedule_timeout+0x40/0x60)
+<4>[  511.847320]  r9:00000000 r8:00000022 r7:00000000 r6:00000000 r5:00000008
+<4>[  511.847412] r4:c5d5db78
+<4>[  511.847442] [<c00ce64c>] (poll_schedule_timeout+0x0/0x60) from [<c00ceff0>] (do_select+0x3fc/0x440)
+<4>[  511.847595]  r5:00000008 r4:c5d5df00
+<4>[  511.847656] [<c00cebf4>] (do_select+0x0/0x440) from [<c00cf278>] (core_sys_select+0x244/0x2fc)
+<4>[  511.847808] [<c00cf034>] (core_sys_select+0x0/0x2fc) from [<c00cf414>] (sys_select+0xe4/0x1e0)
+<4>[  511.847930] [<c00cf330>] (sys_select+0x0/0x1e0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<6>[  511.848052] Binder Thread S c038328c     0  1448   1064
+<4>[  511.848144] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.848297] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.848419] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.848541]  r7:c5d6fee4 r6:c0186201 r5:c919e650 r4:4646fe28
+<4>[  511.848632] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.848785] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.848907]  r7:00000036 r6:00239f94 r5:4646fe28 r4:00239f68
+<6>[  511.848999] Binder Thread S c038328c     0  1449   1064
+<4>[  511.849060] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.849212] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.849334] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.849487]  r7:c5d71ee4 r6:c0186201 r5:c919e650 r4:4656fe28
+<4>[  511.849578] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.849700] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.849822]  r7:00000036 r6:0023abe4 r5:4656fe28 r4:0023abb8
+<6>[  511.849914] Binder Thread S c038328c     0  1450   1064
+<4>[  511.850006] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c028c7fc>] (binder_ioctl+0x4ec/0x1260)
+<4>[  511.850158] [<c028c310>] (binder_ioctl+0x0/0x1260) from [<c00cd488>] (vfs_ioctl+0x34/0x74)
+<4>[  511.850280] [<c00cd454>] (vfs_ioctl+0x0/0x74) from [<c00cda24>] (do_vfs_ioctl+0x530/0x5a0)
+<4>[  511.850402]  r7:c5d73ee4 r6:c0186201 r5:c919e650 r4:4666fe28
+<4>[  511.850494] [<c00cd4f4>] (do_vfs_ioctl+0x0/0x5a0) from [<c00cdad4>] (sys_ioctl+0x40/0x64)
+<4>[  511.850616] [<c00cda94>] (sys_ioctl+0x0/0x64) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.850769]  r7:00000036 r6:0023b89c r5:4666fe28 r4:0023b870
+<6>[  511.850860] sh            S c038328c     0  1512   1028
+<4>[  511.850921] [<c0382fe0>] (schedule+0x0/0x2f0) from [<c006df20>] (do_wait+0x204/0x308)
+<4>[  511.851074] [<c006dd1c>] (do_wait+0x0/0x308) from [<c006e0dc>] (sys_wait4+0xb8/0xd0)
+<4>[  511.851196] [<c006e024>] (sys_wait4+0x0/0xd0) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.851348]  r8:c003c008 r7:00000072 r6:bea43a1c r5:bea43a1c r4:00000002
+<6>[  511.851440] cat           R running      0  1553   1512
+<4>[  511.851531] [<c004066c>] (show_stack+0x0/0x50) from [<c0066c24>] (sched_show_task+0x98/0xb0)
+<4>[  511.851684] [<c0066b8c>] (sched_show_task+0x0/0xb0) from [<c0066c84>] (show_state_filter+0x48/0x88)
+<4>[  511.851837]  r5:c5d6a9e0 r4:c5d6a9e0
+<4>[  511.851898] [<c0066c3c>] (show_state_filter+0x0/0x88) from [<c01b46c4>] (apanic+0x150/0x2ec)
+<4>[  511.852050]  r7:0000ace8 r6:00000000 r5:0000b800 r4:ced98000
+<4>[  511.852142] [<c01b4574>] (apanic+0x0/0x2ec) from [<c01b487c>] (panic_dbg_get+0x1c/0x24)
+<4>[  511.852294] [<c01b4860>] (panic_dbg_get+0x0/0x24) from [<c00d9d94>] (simple_attr_read+0x70/0xc4)
+<4>[  511.852447] [<c00d9d24>] (simple_attr_read+0x0/0xc4) from [<c00c1e8c>] (vfs_read+0xb4/0x144)
+<4>[  511.852600] [<c00c1dd8>] (vfs_read+0x0/0x144) from [<c00c1fe0>] (sys_read+0x44/0x70)
+<4>[  511.852722]  r7:00000000 r6:00000000 r5:0001e008 r4:c8b5bc80
+<4>[  511.852813] [<c00c1f9c>] (sys_read+0x0/0x70) from [<c003be40>] (ret_fast_syscall+0x0/0x40)
+<4>[  511.852966]  r8:c003c008 r7:00000003 r6:00019920 r5:00019630 r4:00019920
+<4>[  511.853088] Sched Debug Version: v0.08, 2.6.29-omap1 #1
+<4>[  511.853149] now at 504967.437747 msecs
+<4>[  511.853210]   .sysctl_sched_latency                    : 10.000000
+<4>[  511.853271]   .sysctl_sched_min_granularity            : 4.000000
+<4>[  511.853332]   .sysctl_sched_wakeup_granularity         : 2.000000
+<4>[  511.853393]   .sysctl_sched_child_runs_first           : 0.000001
+<4>[  511.853454]   .sysctl_sched_features                   : 24191
+<4>[  511.853515] 
+<4>[  511.853515] cpu#0
+<4>[  511.853546]   .nr_running                    : 3
+<4>[  511.853607]   .load                          : 5169
+<4>[  511.853637]   .nr_switches                   : 225029
+<4>[  511.853698]   .nr_load_updates               : 23299
+<4>[  511.853759]   .nr_uninterruptible            : 0
+<4>[  511.853820]   .jiffies                       : 26235
+<4>[  511.853851]   .next_balance                  : 0.000000
+<4>[  511.853912]   .curr->pid                     : 1553
+<4>[  511.853973]   .clock                         : 511846.710205
+<4>[  511.854034]   .cpu_load[0]                   : 5169
+<4>[  511.854064]   .cpu_load[1]                   : 5169
+<4>[  511.854125]   .cpu_load[2]                   : 5169
+<4>[  511.854187]   .cpu_load[3]                   : 5137
+<4>[  511.854217]   .cpu_load[4]                   : 4731
+<4>[  511.854309] 
+<4>[  511.854309] cfs_rq[0]:/bg_non_interactive
+<4>[  511.854370]   .exec_clock                    : 0.000000
+<4>[  511.854431]   .MIN_vruntime                  : 0.000001
+<4>[  511.854492]   .min_vruntime                  : 5377.933457
+<4>[  511.854675]   .max_vruntime                  : 0.000001
+<4>[  511.854736]   .spread                        : 0.000000
+<4>[  511.854797]   .spread0                       : -80678.612740
+<4>[  511.854827]   .nr_running                    : 0
+<4>[  511.854888]   .load                          : 0
+<4>[  511.854919]   .nr_spread_over                : 0
+<4>[  511.854980]   .se->exec_start                : 511243.041992
+<4>[  511.855041]   .se->vruntime                  : 85871.587259
+<4>[  511.855102]   .se->sum_exec_runtime          : 2958.068834
+<4>[  511.855163]   .se->load.weight               : 52
+<4>[  511.855224] 
+<4>[  511.855224] cfs_rq[0]:/fg_boost
+<4>[  511.855285]   .exec_clock                    : 0.000000
+<4>[  511.855346]   .MIN_vruntime                  : 0.000001
+<4>[  511.855407]   .min_vruntime                  : -1.048576
+<4>[  511.855438]   .max_vruntime                  : 0.000001
+<4>[  511.855499]   .spread                        : 0.000000
+<4>[  511.855560]   .spread0                       : -86057.594773
+<4>[  511.855621]   .nr_running                    : 0
+<4>[  511.855651]   .load                          : 0
+<4>[  511.855712]   .nr_spread_over                : 0
+<4>[  511.855743]   .se->exec_start                : 0.000000
+<4>[  511.855804]   .se->vruntime                  : 0.000000
+<4>[  511.855865]   .se->sum_exec_runtime          : 0.000000
+<4>[  511.855926]   .se->load.weight               : 1024
+<4>[  511.855957] 
+<4>[  511.855987] cfs_rq[0]:/
+<4>[  511.856018]   .exec_clock                    : 0.000000
+<4>[  511.856079]   .MIN_vruntime                  : 86046.546197
+<4>[  511.856140]   .min_vruntime                  : 86056.546197
+<4>[  511.856201]   .max_vruntime                  : 86053.265197
+<4>[  511.856262]   .spread                        : 6.719000
+<4>[  511.856323]   .spread0                       : 0.000000
+<4>[  511.856353]   .nr_running                    : 3
+<4>[  511.856414]   .load                          : 5169
+<4>[  511.856445]   .nr_spread_over                : 0
+<4>[  511.856506] 
+<4>[  511.856536] rt_rq[0]:/bg_non_interactive
+<4>[  511.856567]   .rt_nr_running                 : 0
+<4>[  511.856628]   .rt_throttled                  : 0
+<4>[  511.856658]   .rt_time                       : 0.000000
+<4>[  511.856719]   .rt_runtime                    : 0.000000
+<4>[  511.856781] 
+<4>[  511.856811] rt_rq[0]:/fg_boost
+<4>[  511.856842]   .rt_nr_running                 : 0
+<4>[  511.856872]   .rt_throttled                  : 0
+<4>[  511.856933]   .rt_time                       : 0.000000
+<4>[  511.856994]   .rt_runtime                    : 0.000000
+<4>[  511.857025] 
+<4>[  511.857055] rt_rq[0]:/
+<4>[  511.857086]   .rt_nr_running                 : 0
+<4>[  511.857147]   .rt_throttled                  : 0
+<4>[  511.857177]   .rt_time                       : 0.000000
+<4>[  511.857238]   .rt_runtime                    : 950.000000
+<4>[  511.857299] 
+<4>[  511.857330] runnable tasks:
+<4>[  511.857360]             task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+<4>[  511.857421] ----------------------------------------------------------------------------------------------------------
+<4>[  511.857574]      kondemand/0   595     86053.265197      6337   115               0               0               0.000000               0.000000               0.000000 /
+<4>[  511.857849]           aplogd  1101     86046.546197      5471   120               0               0               0.000000               0.000000               0.000000 /
+<4>[  511.858306] R            cat  1553     86340.970025         3   120               0               0               0.000000               0.000000               0.000000 /
+<4>[  511.858459] 

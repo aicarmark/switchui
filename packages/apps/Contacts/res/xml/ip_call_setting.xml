@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ip_call_settings_title">
+
+    <com.android.contacts.util.EditIPPreference
+        android:title="@string/ip_cdma_title"
+        android:dialogTitle="@string/ip_cdma_title"
+        android:defaultValue="@string/default_cdma_ip_prefix"
+        android:key="ip_cdma"
+        android:singleLine="true"
+        android:inputType="number" />
+    <com.android.contacts.util.EditIPPreference
+        android:title="@string/ip_gsm_title"
+        android:dialogTitle="@string/ip_gsm_title"
+        android:defaultValue="@string/default_gsm_ip_prefix"
+        android:key="ip_gsm"
+        android:singleLine="true"
+        android:inputType="number" />
+
+</PreferenceScreen>

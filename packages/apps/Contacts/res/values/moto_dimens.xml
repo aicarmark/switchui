@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!--  MOTO MOD BEGIN -->
+    <dimen name="moto_list_accelerator_thumb_height">23px</dimen>
+    <dimen name="moto_list_accelerator_thumb_width">36px</dimen>
+    <dimen name="moto_list_accelerator_highlighter_width">76px</dimen>
+    <dimen name="provider_icon_length">40dp</dimen>
+    <!--  MOTO MOD END -->
+
+    <!--  ChinaDev -->
+    <dimen name="location_matches_text_size">14dip</dimen>
+    <dimen name="hintDialerDigitsSize">16dip</dimen>
+	<dimen name="largeDialerDigitsSize">21dip</dimen>
+	<dimen name="smallDialerDigitsSize">18dip</dimen>
+	<dimen name="dialer_drawer_height">378dip</dimen>
+	<dimen name="dialer_drawer_header_height">82dip</dimen>
+	<dimen name="dialer_location_height">22dip</dimen>
+	<dimen name="dialer_digits_height">60dip</dimen>
+	<dimen name="dialer_drawer_body_height">296dip</dimen>
+	<dimen name="dialer_drawer_dialpad_height">230dip</dimen>
+	<dimen name="dialer_drawer_dialpad_car_height">330dip</dimen>
+	<dimen name="dialer_drawer_addition_height">64dip</dimen>
+	<dimen name="dialer_drawer_key_height">53dip</dimen>
+	<dimen name="dialer_drawer_key_width">117dip</dimen>
+	<dimen name="dialer_addition_left_area_width">282dip</dimen>
+	<dimen name="dialer_addition_right_area_width">56dip</dimen>
+	<dimen name="dialer_addition_menu_area_width">52dip</dimen>
+	<dimen name="dialer_addition_call_area_width">224dip</dimen>
+	<dimen name="smart_dialpad_horz_gap">4dip</dimen>
+	<dimen name="smart_dialpad_outside_margin">0dip</dimen>
+    <dimen name="smart_dialpad_vertical_margin">0dip</dimen>
+    <dimen name="smart_dialpad_horz_edge_margin">0dip</dimen>
+    <dimen name="smart_dialpad_row_padding">4dip</dimen>
+    <dimen name="smart_dialpad_padding_bottom">5dip</dimen>
+    <dimen name="dialer_separater_margin">18dip</dimen>
+    <dimen name="land_dialpad_width">320dip</dimen>
+    <dimen name="dialer_digits_text_width">260dip</dimen>
+    <dimen name="dialpad_del_btn_width">54dip</dimen>
+    <dimen name="dialpad_del_btn_marginLeft">38dip</dimen>
+    <dimen name="dialtacts_empty_text_size">20sp</dimen>
+    <dimen name="dialer_divider_width">2dip</dimen>
+    <dimen name="transdialpad_bottom_height">122dip</dimen>
+    <dimen name="transdialpad_dial_height">75dip</dimen>
+    <dimen name="transdialpad_dial_divider_height">25dip</dimen>
+    <dimen name="transdialpad_dial_divider_margin">25dip</dimen>
+
+    <!--  Speed Dialer -->
+    <dimen name="speed_dialer_girdview_margin_left">10dip</dimen>
+    <dimen name="speed_dialer_girdview_margin_right">4dip</dimen>
+    <dimen name="speed_dialer_gridchild_margin_delete_right">4dip</dimen>
+    <dimen name="speed_dialer_gridchild_margin_delete_top">12dip</dimen>
+    <dimen name="sd_edit_grid_child_width">115dip</dimen>
+    <dimen name="sd_edit_grid_child_height">142dip</dimen>
+    <dimen name="sd_picker_grid_child_height">130dip</dimen>
+    <dimen name="sd_det_ic_marginTop">7dip</dimen>
+    <dimen name="sd_det_ic_marginBottom">8dip</dimen>
+    <dimen name="sd_det_ic_marginLeft">6dip</dimen>
+    <dimen name="sd_det_ic_marginRight">6dip</dimen>
+</resources>

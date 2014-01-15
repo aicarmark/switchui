@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The list of packages that have access to data that is marked as being restricted -->
+    <string-array name="unrestricted_packages" translatable="false">
+
+        <item>com.android.contacts</item>
+
+ <!-- MOTO MOD BEGIN -->
+        <item>com.android.phone</item>
+        <item>com.facebook.katana</item>
+        <item>com.motorola.blurgallery</item>
+        <item>com.motorola.blur.contacts.data</item>
+        <item>com.motorola.blur.contacts.sync</item>
+        <item>com.motorola.messaging</item>
+        <item>com.motorola.blur.friendfeed</item>
+        <item>com.motorola.blurgallery</item>
+        <item>com.motorola.blur.music</item>
+        <item>com.motorola.contextual.smartrules</item>
+        <item>com.motorola.contacts.ice</item>
+        <item>com.android.mms</item>
+        <item>com.motorola.firewall</item>
+ <!-- MOTO MOD END -->
+    </string-array>
+
+<!-- MOTO MOD BEGIN -->
+    <string-array name="unrestricted_motosignature_packages" translatable="false">
+        <item>com.motorola.blur.home</item>
+        <item>com.motorola.motochat</item>
+        <item>com.motorola.notifier.plugin.facebookblur</item>
+        <item>com.motorola.quickview</item>
+        <item>com.motorola.motgallery</item>
+        <item>com.motorola.motmusic</item>
+        <item>com.motorola.smartcardock</item>
+        <item>com.motorola.gallerywidget</item>
+        <item>com.motorola.smartmode</item>
+        <item>com.motorola.contacts.ice</item>
+    </string-array>
+ <!-- MOTO MOD END -->
+
+</resources>

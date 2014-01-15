@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ScrollView
+	        android:layout_width="fill_parent" 
+	        android:layout_height="1px"
+	        android:layout_weight="1"
+	        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText android:id="@+id/number_pattern"
+                    android:layout_width="fill_parent"
+                    android:layout_height="?android:attr/listPreferredItemHeight"
+                    android:gravity="center_vertical"
+                    android:inputType = "phone"
+                    android:singleLine="true" />
+
+            <CheckBox android:id="@+id/is_pattern"
+                    android:text="@string/number_for_pattern"
+                    android:checked="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@id/number_pattern"
+                    android:gravity="center_vertical" />
+
+            <TextView android:id="@+id/pattern_text"
+                    android:text="@string/pattern_help"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@id/is_pattern" 
+                    android:layout_marginLeft="30dip"/>
+
+            <CheckBox android:id="@+id/for_call"
+                    android:checked="true"
+                    android:text="@string/number_for_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@id/pattern_text"
+                    android:gravity="center_vertical" />
+
+            <CheckBox android:id="@+id/for_sms"
+                    android:checked="true"
+                    android:text="@string/number_for_sms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@id/for_call"
+                    android:gravity="center_vertical" />
+
+        </LinearLayout>
+        </ScrollView>
+        <!-- BEGIN Motorola, qknr64 , 2011-4-14 , IKSF-4973
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/ButtonBar"
+            android:orientation="horizontal">
+            <Button android:id="@+id/doneButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_done"
+            />
+
+            <Button android:id="@+id/revertButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_revert"
+            />
+        </LinearLayout>-->
+       <com.motorola.firewall.MotoActionBar
+           android:id="@+id/action_bar"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true" />
+       <!--END IKSF-4973-->
+</LinearLayout>
+

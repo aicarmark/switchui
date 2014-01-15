@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+     <string name="app_name">檔案管理員</string>
+    
+    <!-- Titles -->
+    
+    <string name="choose_file_name">選擇檔案</string>
+    <string name="title_choose_file">選擇檔案</string>
+    <string name="title_choose_folder">選擇資料夾</string>
+    <string name="title_dlg_deleting">刪除</string>
+    <string name="title_dlg_moving">移動</string>
+    <string name="title_dlg_copying">複製</string>
+    <string name="title_dlg_canceling">取消...</string>
+    <string name="title_dlg_new">輸入資料夾名</string>
+    <string name="title_dlg_sort">順序方式</string>
+    <string name="title_dlg_property">屬性</string>
+    
+    <string name="title_dlg_confirm_delete">確認刪除</string>
+    
+    <string name="title_copyto">複製</string>
+    <string name="title_move">移動</string>
+    <string name="title_delete">刪除</string>
+    <string name="title_dlg_hide">隱藏</string>
+    <string name="title_dlg_confirm_hide">確認隱藏</string>
+    <string name="title_hideunhide">隱藏/不隱藏</string> 
+    <string name="title_dlg_confirm_overwrite">確認隱藏</string>
+    <string name="title_dlg_select_network">選擇網路</string>
+    
+    <!-- context menu -->
+    
+    <string name="menu_move">移動</string>
+    <string name="menu_copy">複製</string>
+    <string name="menu_detail">屬性</string>
+    <string name="menu_rename">重命名</string>
+    <string name="menu_delete">刪除</string>
+    <string name="menu_new_folder">新建</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_set_as">設置為</string>  
+    <string name="menu_set_as_call_ringtone">設置為手機鈴聲</string>
+    <string name="menu_set_as_message_ringtone">設置為短訊鈴聲</string>
+    <string name="menu_hide">隱藏</string>
+    
+    <!-- options menu -->
+     
+    <string name="menu_multi_choice">選擇</string>
+    <string name="menu_cancel_choice">取消</string>
+    <string name="menu_delete_choice">刪除</string>
+    <string name="menu_move_choice">移動</string>
+    <string name="menu_copy_choice">複製</string>
+    <string name="menu_sorting">順序方式</string>
+    <string name="menu_sort_name">名稱</string>
+    <string name="menu_sort_type">类型</string>
+    <string name="menu_sort_size">類型</string>
+    <string name="menu_sort_date">日期</string>
+    <string name="menu_property">屬性</string>
+    <string name="menu_hideunhide">隱藏/不隱藏</string>   
+    
+    
+    <!-- Used in open a file -->
+    <string name="sendImage">分享圖片方式</string>
+    <string name="sendVideo">分享視頻方式</string>
+    <string name="sendText">分享文本方式</string>
+    <string name="sendAudio">分享音频方式</string>
+    <string name="sendUnknown">分享方式</string>
+    <string name="setImage">將圖片設置為</string>
+    
+    
+    <!-- Buttons -->
+    
+    <string name="btn_ok">確定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_copyto">複製至</string>
+    <string name="btn_move">移動至</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_yes">確定</string>
+    <string name="btn_no">取消</string>
+    <string name="btn_hide">隱藏</string>
+
+	<!--  Error prompt -->
+	
+    <string name="invalidate_folder">%s 是一個無效的資料夾!</string>
+    <string name="folder_not_exist">資料夾 %s 不存在!</string>
+    <string name="file_not_exist">檔案 %s 不存在!</string>
+    <string name="sdcard_not_exist">SD 卡不存在!</string>
+    <string name="sdcard_is_shared">對不起，SD卡忙!</string>
+    <string name="application_not_available">沒有可用程式打開本檔案!</string>
+    <string name="fail_to_share_file">不能分享本檔案!</string>
+    <string name="fail_to_set_file">不能設置本檔案!</string>
+    <string name="fail_delete">不能刪除 %s!</string>    
+    <string name="fail_delete_ringtone">檔案 %s 已經被設成鈴聲, 不能被刪除!</string>    
+    <string name="fail_move_ringtone">檔案 %s 已經被設成鈴聲, 不能被移動!</string>    
+    <string name="fail_rename_ringtone">檔案 %s 已經被設成鈴聲, 不能被重命名!</string>    
+    <string name="fail_rename">不能把檔案 %1$s 重命名為 %2$s!</string>    
+    <string name="fail_copy_file">不能拷貝檔案%s!</string>    
+    <string name="fail_move_file">不能移動檔案 %s!</string>    
+    <string name="fail_create_file">不能創建檔案 %s!</string>
+    <string name="fail_create_folder">不能創建資料夾 %s!</string>
+    <string name="fail_disk_full">超過儲存限制，不能完成操作!</string>
+    <string name="cannot_write_folder">檔案 %s 不能被覆蓋!</string>
+    <string name="cannot_same_folder">不能拷貝/移動到相同的資料夾!</string>
+    <string name="cannot_sub_folder">不能拷貝/移動資料夾到子資料夾!</string>
+    <string name="cannot_choose_vfolder">不能選擇虛擬資料夾!</string>
+	<string name="need_choose_file">請選擇檔案!</string>
+    <string name="filename_cannot_null">檔案或資料夾名不能為空</string>
+    <string name="filename_invalidate">檔案或資料夾名不能為 %s !</string>
+    <string name="folder_existed">資料夾 %s 已存在!</string>
+    <string name="file_existed">檔案 %s 已存在!</string>
+    <string name="not_set_ringtone">wma類型檔案不能設置為鈴聲</string>
+    <string name="filename_too_long">檔案名太長！</string>
+
+	<!--  Success prompt -->
+    <string name="success_move_file">移動檔案成功!</string>    
+    <string name="success_copy_file">拷貝檔案成功!</string>
+    <string name="success_cancel_move_file">移動檔案取消!</string>    
+    <string name="success_cancel_copy_file">拷貝檔案取消!</string>  
+    <string name="success_skip_move_file">操作成功, 但是有些檔案沒有被移動!</string>    
+    <string name="success_skip_copy_file">操作成功, 但是有些檔案沒有被拷貝!</string>
+    <string name="success_create_file">創建檔案 %s 成功!</string>
+    <string name="success_create_folder">創建資料夾 %s 成功!</string>
+    <string name="success_set_ringstone">設置手機鈴聲成功!</string>
+    <string name="success_set_cdma_message_ringstone"> %s 設置CDMA短信鈴聲成功！</string>
+    <string name="success_set_gsm_message_ringstone"> %s 設置GSM短信鈴聲成功！</string>
+    <string name="success_set_message_ringstone"> %s 設置短信鈴聲成功！</string>
+    <string name="success_hide_folder">隱藏檔案夾成功!</string>
+    <string name="success_cancel_hide_folder">隱藏取消!</string> 
+    
+
+    <!-- property -->
+    <string name="type_folder">資料夾</string>
+    <string name="type_video">視頻</string>
+    <string name="type_audio">音頻</string>
+    <string name="type_image">圖片</string>
+    <string name="type_text">文本</string>
+    <string name="type_removealbe_memory">可移動內存卡</string>
+    <string name="location_sdcard">SD 卡</string>
+    <string name="permition_writable">可寫</string>
+    <string name="permition_readonly">只讀</string>
+    <string name="folder_contains">%1$d 資料夾,\n%2$d 檔案</string>
+    <string name="folder_contains_folder_file">%1$d 資料夾,\n%2$d 檔案</string>
+    <string name="folder_contains_folders_file">%1$d 資料夾,\n%2$d 檔案</string>
+    <string name="folder_contains_folder_files">%1$d 資料夾,\n%2$d 檔案</string>
+    <string name="folder_contains_folders_files">%1$d 資料夾,\n%2$d 檔案</string>
+ 
+	<string name="property_name">"名稱:"</string> 
+	<string name="property_type">"類型:"</string>
+	<string name="property_location">"位置:"</string> 
+	<string name="property_permition">"權限:"</string>
+	<string name="property_resolution">"分辨率:"</string>
+	<string name="property_duration">"持續時間:"</string>
+	<string name="property_size">"大小:"</string>
+	<string name="property_modified">"修改日期:"</string>
+	<string name="property_contains">"包含:"</string>
+	<string name="property_used_space">"已用空間:"</string>
+	<string name="property_free_space">"剩餘空間:"</string> 
+	<string name="property_license">"證書:"</string>	
+    <!-- Others -->
+    
+    <string name="empty_folder">本資料夾為空!</string>
+    <string name="confirm_delete">確定刪除 %s ?</string>    
+    <string name="confirm_delete_choice">確定刪除檔案?</string>
+    <string name="confirm_delete_subdir">如果想刪除所有檔案和子資料夾請選擇</string>
+    <string name="confirm_new_file">創建新檔案請選擇</string>
+    <string name="prompt_input_name">請輸入新名稱:</string>
+    <string name="prompt_handling">目前處理 :</string>
+    <string name="confirm_overwrite_all">如果想全覆蓋請選擇</string>
+    <string name="confirm_overwrite">檔案 %s 已存在, 覆蓋已有檔案?</string>
+    <string name="receive_event">收到系統事件: %s</string>
+    <string name="CB_Select_all">全選</string>
+    <string name="file_size_zero">檔案大小為 0kb,不能打開!</string>
+    <string name="msg_opening_progress">正在打開</string>
+    <string name="msg_refreshing_progress">正在刷新</string>    
+    <string name="msg_sorting_progress">正在排序</string>
+    
+    <string name="internal_storage">手機內部儲存</string>
+    <string name="removable_sdcard">SD 卡</string>
+    <string name="internal_phone_storage_unmounted">手機內部儲存裝置已卸載。請掛載手機內部儲存裝置以讀取檔案</string>
+    <string name="sd_unmounted">SD 卡已卸載。請掛載 SD 卡以讀取檔案</string>
+    <string name="menu_view_switch">檢視</string>
+    <string name="menu_view_list">清單檢視</string>
+    <string name="menu_view_grid">網格檢視</string>    
+    <string name="sd_missing">"遺失記憶卡。請插入記憶卡以讀取檔案。"</string>
+    <string name="home">首頁</string>
+        
+     <!-- search -->
+    <string name="menu_search">搜尋</string>
+   <string name="search_title">搜尋</string>
+    <string name="search_hint">搜尋檔案</string>
+    <string name="settings_description">檔案和資料夾</string>
+    <string name="tpye_folder">類型：資料夾</string>
+    <string name="type_file">類型：檔案</string>
+    <string name="type_doc">類型： 文件</string>
+     <string name="type_zip">類型： 壓縮</string>
+    <string name="type_drm">DRM</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="empty_search_result">找不到結果</string>
+    <string name="matches_for">符合</string>
+    <string name="found_in">於</string>
+    <string name="select_folder">選擇資料夾</string>
+    <string name="cancle">取消</string>
+    <string name="crop_Image_error">檔案類型不受支援!</string>
+    <string name="loading">請等待載入...</string>
+    <string name="search_folder">選取要搜尋的資料夾</string>
+    <string name="sd_missing_search">記憶卡遺失。 請插入記憶卡以搜尋檔案。</string>
+    <string name="end_time_constraint">證書%1$d: 截至日期: %2$s</string>
+    <string name="interval_constraint">證書%1$d: 有效期限: %2$s</string>
+    <string name="count_constraint">證書%1$d: 有效次數: %2$d</string>
+    <string name="start_time_constraint">證書%1$d: 開始日期: %2$s</string> 
+    <string name="menu_select_all">"全選"</string>
+    <string name="menu_unselect_all">"取消全選"</string>
+    <string name="menu_multi_select">"選擇多個"</string>    
+    <string name="menu_update_package">"更新系統"</string>
+    <string name="msg_confirm_system_update">"系統更新需要重啟手機，是否繼續？"</string>
+    <string name="sd_is_used_by_other">SD卡處於USB大量儲存裝置模式。請結束此模式以存取SD卡。</string>
+</resources>
+    
+

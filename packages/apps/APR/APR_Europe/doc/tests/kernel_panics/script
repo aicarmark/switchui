@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+# Test for Kernel Crashes
+touch *
+
+adb shell mkdir /data/dontpanic
+adb shell chmod 777 /data/dontpanic
+adb shell chown system system /data/dontpanic
+
+adb push apanic_console /data/dontpanic
+adb push apanic_threads /data/dontpanic
+adb push kpanic.bin /data/dontpanic
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Numer zastrzeżony</string>
+    <string name="visual_voicemail">Wizualna poczta głosowa</string>
+    <string name="Data_roaming_msg">Korzystanie z usługi wizualnej poczty głosowej może wiązać się z koniecznością ponoszenia dodatkowych opłat.\n\nCzy chcesz używać wizualnej poczty głosowej czy zwykłej poczty głosowej?</string>
+
+</resources>

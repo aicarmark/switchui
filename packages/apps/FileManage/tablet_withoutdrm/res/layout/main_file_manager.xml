@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--
+    /* * Copyright (c) 2010 Motorola, Inc. * All Rights Reserved * * The
+    contents of this file are Motorola Confidential Restricted (MCR). *
+    Revision history (newest first): * * Date CR Author Description *
+    2010-03-23 IKSHADOW-2425 A20815 initial */
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@color/app_background">
+
+  <LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/homesync_bar"
+      android:orientation="vertical" android:layout_width="fill_parent"
+      android:layout_height="wrap_content" android:background="@android:drawable/title_bar"
+      android:visibility="gone">
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/homesync_title"
+          android:layout_width="wrap_content" android:layout_height="?android:attr/windowTitleSize"
+          style="?android:attr/windowTitleStyle"
+          android:layout_alignParentLeft="true" android:layout_gravity="left" />
+        <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content" android:layout_weight="1" />
+        <TextView android:id="@+id/homesync_step"
+          android:layout_width="wrap_content" android:layout_height="?android:attr/windowTitleSize"
+          style="?android:attr/windowTitleStyle"
+          android:layout_alignParentRight="true" android:layout_gravity="right" />
+      </LinearLayout>
+      <TextView android:layout_width="fill_parent"
+        android:layout_height="@dimen/homesync_layout_height"
+        android:background="@color/homesync_text_backgroud" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/home_page"
+      android:layout_weight="@fraction/land_size_tf" android:background="@drawable/texture_holo_bkg"
+      android:layout_marginRight="@dimen/home_page_rightmargin"
+      android:layout_width="@dimen/zero_dp" android:layout_height="match_parent" />
+    <ImageView android:layout_width="wrap_content"
+      android:layout_height="match_parent" android:src="@drawable/shadow_vert_holo_left"
+      android:scaleType="fitXY" />
+    <LinearLayout android:id="@+id/details"
+      android:layout_weight="@fraction/land_size_cf"
+      android:layout_width="@dimen/zero_dp" android:layout_height="match_parent" />
+  </LinearLayout>
+
+  <ImageView android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:layout_alignParentTop="true"
+    android:src="@drawable/divider_horz_holo" android:scaleType="fitXY" />
+</RelativeLayout>

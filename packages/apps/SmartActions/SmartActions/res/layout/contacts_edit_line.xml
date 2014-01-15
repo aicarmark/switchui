@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  (c) COPYRIGHT 2012 MOTOROLA INC.
+  MOTOROLA CONFIDENTIAL PROPRIETARY
+
+  REVISION HISTORY:
+  Author        Date       CR Number         Brief Description
+  ============= ========== ================= ==============================
+  XPR643        2012/06/06 Smart Actions 2.1 Initial Version
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    <!-- To prevent a view from initially receiving focus, the following
+    attributes are added to the container view group:
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+    http://stackoverflow.com/questions/1555109/stop-edittext-from-gaining-focus-at-activity-startup
+    -->
+
+    <com.motorola.contextual.commonutils.chips.AddressEditTextView
+        android:paddingTop="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contacts_completion"
+        style="@style/RecipientEditTextView"
+        android:inputType="text"/>
+</LinearLayout>

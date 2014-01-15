@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/info_action_edit"
+        android:alphabeticShortcut="e"
+        android:title="@string/edit_label"
+        android:icon="@drawable/ic_menu_compose_holo_light"
+        android:showAsAction="withText|always"
+        android:enabled="false"
+        android:visible="false" />
+    <item android:id="@+id/info_action_delete"
+        android:alphabeticShortcut="x"
+        android:title="@string/delete_label"
+        android:icon="@drawable/ic_menu_trash_holo_light"
+        android:showAsAction="withText|always"
+        android:enabled="false"
+        android:visible="false" />
+    <!-- Begin Motorola -->
+    <item android:id="@+id/info_action_reply"
+        android:title="@string/reply_label"
+        android:icon="@drawable/ic_reply"
+        android:showAsAction="withText|always"
+        android:visibility="gone" />
+    <item android:id="@+id/info_action_reply_all"
+        android:title="@string/reply_all_label"
+        android:icon="@drawable/ic_reply_all"
+        android:showAsAction="withText|always"
+        android:visibility="gone" />
+    <item android:id="@+id/info_action_forward"
+        android:title="@string/forward_label"
+        android:icon="@drawable/ic_forward"
+        android:showAsAction="withText|ifRoom"
+        android:visibility="gone" />
+    <item android:id="@+id/info_action_print"
+        android:alphabeticShortcut="p"
+        android:title="@string/print_event_label"
+        android:showAsAction="withText|never"
+        android:visibility="gone" />
+    <item android:id="@+id/info_action_share"
+        android:alphabeticShortcut="s"
+        android:title="@string/share_label"
+        android:showAsAction="withText|never" />
+    <item android:id="@+id/info_action_add_event_to_tasks"
+        android:alphabeticShortcut="t"
+        android:title="@string/add_event_to_tasks_label"
+        android:showAsAction="withText|never"
+        android:visibility="gone" />
+    <!-- End Motorola -->
+</menu>

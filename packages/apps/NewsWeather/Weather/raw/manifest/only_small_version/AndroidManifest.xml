@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.motorola.mmsp.locationwidget.small"
+    android:versionCode="1" 
+    android:versionName="1.3.4">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="9"/>
+	<supports-screens 
+		android:largeScreens="true" 
+		android:smallScreens="true" 
+		android:anyDensity="true" 
+		android:normalScreens="true" android:resizeable="true">
+	</supports-screens>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application 
+    	android:name=".WidgetApplication"
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name_original"
+    	android:debuggable="false">
+    
+    <activity android:name=".Configure"
+    	android:label = "@string/app_name_original"
+    	android:theme = "@android:style/Theme.Dialog">
+        <intent-filter>
+             <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+        </intent-filter>
+    </activity>
+        
+    <receiver android:name=".WeatherNewsProvider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_provider_small"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET"/>
+    			<action android:name="com.motorola.mmsp.home.ACTION_SET_WIDGET_SIZE"/>   
+    			<action android:name="com.motorola.mmsp.motohome.ACTION_SET_WIDGET_SIZE"/>  
+    			               
+                <action android:name="com.motorola.mmsp.motoswitch.action.weatherdetailview.exit" />
+                <action android:name="com.motorola.mmsp.weather.updated.response" />
+                <action android:name="com.motorola.mmsp.weather.cities.updating"/>
+                <action android:name="com.motorola.mmsp.weather.cities.updated.response" />
+                
+                <action android:name="com.motoroal.mmsp.rssnews.update.response" />
+                <action android:name="com.motorola.mmsp.rssnews.NETWORK_STATE" />
+            </intent-filter>      
+    </receiver>
+    <service android:name="WidgetUpdateService"
+    />
+
+    </application>
+</manifest>

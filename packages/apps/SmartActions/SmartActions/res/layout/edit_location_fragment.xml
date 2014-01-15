@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/location_title"
+          android:text="@string/loc_name_title"
+          android:layout_width="fill_parent"
+          android:layout_height="30dp"
+          android:textSize="14sp"
+          android:textColor="@color/ics_blue"
+          android:gravity="center_vertical"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textStyle="bold"
+          android:textAllCaps="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="16dp"/>
+    <View android:id="@+id/text_divider"
+          android:layout_height="1dp"
+          android:layout_marginRight="7dp"
+          android:layout_marginLeft="7dp"
+          style="@style/SectionDivider" />
+    <!--
+    <EditText android:id="@+id/edit_location_name"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/loc_name"
+          android:imeOptions="actionDone"
+          android:inputType="textNoSuggestions|textCapSentences"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="7dp"
+          android:layout_marginRight="7dp"/>
+     -->
+    <Spinner android:id="@+id/spinner_location_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:drawSelectorOnTop="true"
+          android:prompt="@string/loc_name"/>
+
+    <TextView android:id="@+id/loc_details_title"
+          android:layout_width="fill_parent"
+          android:layout_height="30dp"
+          android:text="@string/loc_details"
+          android:textSize="14sp"
+          android:textColor="@color/ics_blue"
+          android:gravity="center_vertical"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:textStyle="bold"
+          android:textAllCaps="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="10dp"/>
+    <View android:id="@+id/loc_details_divider"
+          android:layout_height="1dp"
+          android:layout_marginRight="7dp"
+          android:layout_marginLeft="7dp"
+          style="@style/SectionDivider" />
+
+    <LinearLayout android:id="@+id/address_row"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:layout_marginLeft="7dp"
+          android:layout_marginRight="7dp"
+          android:minHeight="70dp">
+        <TextView android:id="@+id/edit_location_address"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/first_line"
+            android:layout_gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_margin="6dp"/>
+        <Button android:id="@+id/change_button"
+            android:text="@string/change_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"          
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <com.google.android.maps.MapView 
+        android:id="@+id/googleMap_map"
+        android:visibility="visible"
+        android:clickable="false"
+        android:apiKey="@string/apikey"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="?android:attr/buttonBarButtonStyle"
+        android:maxLines="2"
+        android:text="@string/iam_done" 
+        android:state_enabled="false"/>
+    <LinearLayout
+        android:id="@+id/edit_loc_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>     
+    
+
+</LinearLayout>

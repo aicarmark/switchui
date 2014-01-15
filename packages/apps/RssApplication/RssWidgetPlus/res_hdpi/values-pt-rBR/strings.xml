@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Widget de RSS</string>
+    <string name="feedaddtips">Adicione feeds</string>
+    <string name="empty_article_list">Não há artigos.</string>
+    <string name="nullstring" translatable="false"></string>
+    <string name="rss" translatable="false">RSS</string>
+    <string name="rsssettings_prefenrence">Configurações de RSS</string>
+    <string name="rsssettings_disclaimer">Aviso</string>
+    <string name="rsssettings_data_traffic_tips">A ativação do aplicativo poderá gerar tráfego de dados. Para conhecer as taxas cobradas, entre em contato com a sua operadora.</string>
+    <string name="rsssettings_never_show">Não exibir novamente</string>
+    <string name="addfeed_prefenrence">Adicionar feed</string>
+    <string name="customfeed">Personalizar feed</string>
+    <string name="customfeed_enterrssaddress">Insira um endereço de feed RSS:</string>
+    <string name="customfeed_tip">Dica: Para copiar um feed do navegador, mantenha o link do feed pressionado e selecione ”copiar URL do link”.</string>
+    <string name="customforaddfeedurl">Personalizar feed: Feed de RSS</string>
+    <string name="customforaddfeedurl_title">Fontes de notícias contribuintes:</string>
+    <string name="recent_added">Adicionados recentemente</string>
+    <string name="subscribe">Assinar</string>
+    <string name="customsubscribe_des">Assinando: Feed de RSS</string>
+    <string name="feeds">Feeds</string>
+    <string name="title_input_frequency">Frequência de atualização</string>
+    <string name="title_input_duration">Exibir itens para</string>
+    <string name="ok">OK</string>
+    <string name="error">Erro</string>
+    <string name="tryagain">Tente novamente mais tarde.</string>
+    <string name="addbybundlestitle">Bundles</string>
+    <string name="addbyhistorytitle">Feed adicionado ao histórico</string>
+    <string name="done">Concluído</string>
+    <string name="oneday">1 dia</string>
+    <string name="twodays">2 dias</string>
+    <string name="threedays">3 dias</string>
+    <string name="oneweek">1 semana</string>
+    <string name="onemonth">1 mês</string>
+    <string name="never">Nunca</string>
+    <string name="onehour">1 hora</string>
+    <string name="threehours">3 horas</string>
+    <string name="sixhours">6 horas</string>
+    <string name="twelvehours">12 horas</string>
+    
+    <string name="refresh">Atualizar</string>
+    <string name="settings">Configurações</string>
+    
+    <string name="share">Compartilhar</string>
+    <string name="viewOriginal">Ver\noriginal</string>
+    <string name="articlelist">Lista\nde artigos</string>
+    <string name="empty_article_detail">Não há notícias.</string>
+    <string name="listloadingtips">Carregando lista de artigos...</string>
+    <string name="articlerefreshtips">Atualizando...</string>
+    
+    
+    <string name="previous_page">Anterior</string>
+    <string name="next_page">Próxima</string>
+    <string name="next_step">Próxima</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    
+    <string name="subscribing">Adicionando feeds de assinatura. Aguarde...</string>
+    <string name="feedaddednumtips">Ops! Você pode exibir até 50 feeds no widget.</string>
+    <string name="removefeedconfirm">Remover este feed?</string>
+    <string name="remove">Remover</string>
+    
+    <string name="widgetname">Nome do widget</string>  
+    <string name="showitmefor">Exibir itens para</string>  
+    <string name="updatefrequency">Frequência</string> 
+    <string name="loading">Carregando... </string>
+    <string name="article_loading">Carregando detalhes do artigo...</string> 
+  	<string name="title">Título</string> 
+  	<string name="date">Data</string> 
+  	<string name="url">URL</string>
+    
+    <string name="network_not_available">Conexão de dados indisponível. Tente novamente.</string>
+    <string name="cannot_add_subscription">Não é possível adicionar assinaturas de notícias no momento. Conexão de dados indisponível. Tente novamente.</string>
+</resources>

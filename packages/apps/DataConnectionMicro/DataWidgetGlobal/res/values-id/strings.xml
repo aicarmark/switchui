@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggle Widgets</string>
+    <string name="gps_app_name">Pengalihan GPS</string>
+    <string name="airplane_app_name">Pengalihan mode pesawat</string>
+    <string name="wifi_app_name">Pengalihan Wi-Fi</string>
+    <string name="bluetooth_app_name">Pengalihan Bluetooth</string>
+    <string name="apn_app_name">Pengalihan APN</string>
+    <string name="data_app_name">Pengalihan data</string>
+    <string name="widget_description">Lihat dan kontrol status mode pesawat</string>
+    <string name="widget_description_bt">Lihat dan kontrol status Bluetooth</string>
+    <string name="widget_description_wifi">Lihat dan kontrol status Wi-Fi</string>
+    <string name="widget_description_gps">Lihat dan kontrol status GPS</string>
+    <string name="StatusOn">HIDUP</string>
+    <string name="StatusOff">MATI</string>
+    <string name="StatusIntermediate"></string>
+    <string name="AirplanetoastText">Mode pesawat tidak tersedia</string>
+    <string name="BluetoothtoastText">Bluetooth tidak tersedia</string>
+    <string name="GPStoastText">GPS tidak tersedia</string>
+    <string name="WifitoastText">Wi-Fi tidak tersedia</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+    <string name="location_restriction_enabled">Pembatasan lokasi diaktifkan.</string>
+    <!-- END IKPITTSBURGH-473 -->
+    <string name="apncontrol_app_name">Kontrol APN</string>
+    <string name="no_apn">Tidak tersedia APN</string>
+</resources>

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+device_id=$1
+test_type=$2
+
+if [ $test_type ]; then
+
+   adb -s $device_id pull /data/data/com.motorola.motoapr.service/shared_prefs/APRPreferences.xml APRPreferences_orig.xml
+
+   perl update_for_apr.pl APRPreferences_orig.xml $test_type > APRPreferences.xml
+
+   adb -s $device_id push APRPreferences.xml /data/data/com.motorola.motoapr.service/shared_prefs/APRPreferences.xml
+
+   adb -s $device_id reboot
+
+else
+
+   echo "Test Type Not Specified: please use one of:"
+   echo "  set_ful_test, set_norml_test, set_pkg_test, set_att_test, or set_2hr_test"
+
+fi

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actionfilterlist>
+  <filter_for_trigger> 
+	<trigger name="com.motorola.contextual.smartprofile.wificonnectionwithaddresssensor" />
+        <action value="com.motorola.contextual.actions.Wifi" />
+        <action value="com.motorola.contextual.actions.Airplane" />
+        <action value="com.motorola.contextual.actions.CellularData" />
+  </filter_for_trigger>
+  <filter_for_trigger> 
+	<trigger name="com.motorola.contextual.smartprofile.btconnectionwithaddresssensor" />
+        <action value="com.motorola.contextual.actions.Bluetooth" />
+        <action value="com.motorola.contextual.actions.Airplane" />
+  </filter_for_trigger>
+  <filter_for_trigger>
+        <trigger name="com.motorola.contextual.smartprofile.missedcallsensor" />
+        <action value="com.motorola.contextual.actions.autosms" /> 
+  </filter_for_trigger>
+  <filter_for_trigger>
+        <trigger name="com.motorola.contextual.smartprofile.location" />
+        <action value="com.motorola.contextual.actions.Airplane" />
+  </filter_for_trigger>
+</actionfilterlist>

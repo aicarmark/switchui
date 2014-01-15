@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_board_softwood"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/grid_view_menu"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thumb_ationbar_height" >
+
+        <ImageButton
+            android:id="@+id/exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/thumbnail_btn_unselect"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+        
+        <com.motorola.quicknote.DropdownButton
+            android:id="@+id/selection_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thumb_ationbar_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@+id/delete_btn"
+            android:layout_toRightOf="@+id/exit_btn"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/quicknote_app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+        
+<!--        
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+-->  
+
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:src="@drawable/thumbnail_btn_delete"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:numColumns="@integer/thumb_column_num"
+    android:verticalSpacing="@dimen/gridview_vertical_spacing"
+    android:horizontalSpacing="@dimen/gridview_horizontal_spacing"
+    android:paddingTop="@dimen/gridview_padding_top"
+    android:paddingLeft="@dimen/gridview_padding_left"
+    android:paddingRight="@dimen/gridview_padding_right"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:drawSelectorOnTop="false"
+    android:fastScrollEnabled="true"
+    android:listSelector="@color/transparent"
+/>
+
+</LinearLayout>

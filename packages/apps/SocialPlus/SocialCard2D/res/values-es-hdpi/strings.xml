@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Usa el gráfico de abajo para seleccionar 9 contactos para rellenar el widget. Podrás acceder fácilmente a esos contactos desde el panel de tu escritorio.</string>
+</resources>

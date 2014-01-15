@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<AbsoluteLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        
+        android:layout_width="345px"
+        android:layout_height="197px"
+        >
+
+        <ImageView android:id="@+id/bg2to9" 
+                android:layout_width="345px"             
+                android:layout_height="192px"
+                android:layout_x="0px"
+                android:layout_y="5px"
+                android:src="@drawable/bg_manage_landscape_seven" >
+        </ImageView>
+
+<RelativeLayout 
+      
+      android:layout_width="345px"
+      android:layout_height="192px"
+      android:layout_x="0px"
+      android:layout_y="5px"
+      >      
+      <RelativeLayout  android:id="@+id/shortcut2"
+        android:layout_width="85px"
+        android:layout_height="84px"
+        android:layout_marginTop="12px"
+        android:layout_marginLeft="12px">
+        
+        <LinearLayout android:id="@+id/imagelayout2"
+              android:layout_width="85px"
+              android:layout_height="84px"
+              android:gravity="center">
+              
+              <ImageView android:id="@+id/image2"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                
+                >
+              </ImageView>
+        </LinearLayout>
+       
+         <TextView  android:id="@+id/text2"
+                android:layout_width="85px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout2"
+                android:layout_alignRight="@+id/imagelayout2"
+                 >
+            </TextView>
+            
+           
+            <ImageView android:id="@+id/bg_IM_2"
+                android:layout_width="85px"             
+                android:layout_height="84px"
+                android:background="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout2"
+                android:layout_alignRight="@+id/imagelayout2"
+                 >
+            </ImageView>
+            
+        <LinearLayout
+            android:layout_width="85px"
+            android:layout_height="84px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button2"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext2"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+     </RelativeLayout>
+ 
+      <RelativeLayout  android:id="@+id/shortcut3"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_below="@+id/shortcut2"
+        android:layout_alignLeft="@id/shortcut2"
+        android:layout_marginLeft="13px"
+         >  
+        <LinearLayout android:id="@+id/imagelayout3"
+              android:layout_width="70px"
+              android:layout_height="70px"
+              android:gravity="center">
+              <ImageView android:id="@+id/image3"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                 >
+              </ImageView>
+        </LinearLayout>
+        
+       <TextView  android:id="@+id/text3"
+                android:layout_width="70px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout3"
+                android:layout_alignRight="@+id/imagelayout3"
+                
+                 >
+            </TextView>
+                       
+            <ImageView android:id="@+id/bg_IM_3"
+                android:layout_width="70px"             
+                android:layout_height="70px"
+                android:src="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout3"
+                android:layout_alignRight="@+id/imagelayout3"
+              >
+            </ImageView>
+        
+        <LinearLayout
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button3"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext3"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+   </RelativeLayout>
+   
+   <ImageView android:id="@+id/shortcut01"      
+        
+         android:layout_width="96px" 
+         android:layout_height="96px"     
+         android:layout_toRightOf="@+id/shortcut2"
+         android:layout_alignBottom="@id/shortcut2"
+         >  
+   </ImageView>
+   
+ 
+   <RelativeLayout  android:id="@+id/shortcut4"
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_alignTop="@+id/shortcut3"
+        android:layout_toRightOf="@id/shortcut3">
+              
+        <LinearLayout android:id="@+id/imagelayout4"
+              android:layout_width="84px"
+              android:layout_height="84px"
+              android:gravity="center">
+               <ImageView  android:id="@+id/image4"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                >
+              </ImageView>
+        </LinearLayout>
+       
+         <TextView  android:id="@+id/text4"
+                android:layout_width="84px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout4"
+                android:layout_alignRight="@+id/imagelayout4"
+                
+
+                 >
+            </TextView>
+                       
+            <ImageView android:id="@+id/bg_IM_4"
+                android:layout_width="84px"             
+                android:layout_height="84px"
+                android:src="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout4"
+                android:layout_alignRight="@+id/imagelayout4"
+              >
+            </ImageView>
+        <LinearLayout
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button4"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext4"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+        
+  </RelativeLayout>
+  
+      <RelativeLayout  android:id="@+id/shortcut5"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_toRightOf="@+id/shortcut4"
+        android:layout_alignTop="@id/shortcut4"
+         >  
+              
+        <LinearLayout android:id="@+id/imagelayout5"
+              android:layout_width="70px"
+              android:layout_height="70px"
+              android:gravity="center">
+              <ImageView android:id="@+id/image5"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                 >
+              </ImageView>
+        </LinearLayout>
+        
+       <TextView  android:id="@+id/text5"
+                android:layout_width="70px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout5"
+                android:layout_alignRight="@+id/imagelayout5"
+                
+                 >
+            </TextView>
+                       
+            <ImageView android:id="@+id/bg_IM_5"
+                android:layout_width="70px"             
+                android:layout_height="70px"
+                android:src="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout5"
+                android:layout_alignRight="@+id/imagelayout5"
+              >
+            </ImageView>
+        
+        <LinearLayout
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button5"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext5"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+     </RelativeLayout>
+   <RelativeLayout  android:id="@+id/shortcut6"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_toRightOf="@+id/shortcut01"
+        android:layout_alignBottom="@id/shortcut01"
+         >  
+              
+        <LinearLayout android:id="@+id/imagelayout6"
+              android:layout_width="70px"
+              android:layout_height="70px"
+              android:gravity="center">
+              <ImageView android:id="@+id/image6"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                 >
+              </ImageView>
+        </LinearLayout>
+        
+       <TextView  android:id="@+id/text6"
+                android:layout_width="70px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout6"
+                android:layout_alignRight="@+id/imagelayout6"
+                
+                 >
+            </TextView>
+                       
+            <ImageView android:id="@+id/bg_IM_6"
+                android:layout_width="70px"             
+                android:layout_height="70px"
+                android:src="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout6"
+                android:layout_alignRight="@+id/imagelayout6"
+              >
+            </ImageView>
+        
+        <LinearLayout
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button6"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext6"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+   </RelativeLayout>
+    <RelativeLayout  android:id="@+id/shortcut7"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_toRightOf="@+id/shortcut6"
+        android:layout_alignTop="@id/shortcut6"
+         >  
+              
+        <LinearLayout android:id="@+id/imagelayout7"
+              android:layout_width="70px"
+              android:layout_height="70px"
+              android:gravity="center">
+              <ImageView android:id="@+id/image7"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"                
+                 >
+              </ImageView>
+        </LinearLayout>
+               <TextView  android:id="@+id/text7"
+                android:layout_width="70px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout7"
+                android:layout_alignRight="@+id/imagelayout7"
+                
+                
+                 >
+            </TextView>
+                       
+            <ImageView android:id="@+id/bg_IM_7"
+                android:layout_width="70px"             
+                android:layout_height="70px"
+                android:src="@drawable/transparency" 
+                android:layout_alignBottom="@id/imagelayout7"
+                android:layout_alignRight="@+id/imagelayout7"
+              >
+            </ImageView>
+        
+        <LinearLayout
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+            android:id="@+id/button7"
+            android:background="@drawable/ic_add_big"
+            android:layout_width="27px"
+            android:layout_height="27px"></ImageButton>
+            <TextView android:id="@+id/btntext7"
+            android:text="@string/btn_add"
+            android:layout_width="70px"
+            android:layout_height="15px"
+            android:gravity="center"
+            android:textSize="11px"
+            android:textColor="#ffffffff"
+            ></TextView>
+        </LinearLayout>
+   </RelativeLayout>
+  </RelativeLayout>
+ <ImageView android:id="@+id/bg1" 
+                android:layout_width="108px"             
+                android:layout_height="107px"
+                android:layout_x="90px"
+                android:layout_y="0px"
+                android:background="@drawable/bg_manage_big_landscape_seven">  
+                
+   </ImageView>  
+<RelativeLayout android:id="@+id/shortcut1"      
+        
+         android:layout_width="94px" 
+         android:layout_height="94px"     
+
+         android:layout_x="97px"
+         android:layout_y="7px"
+         >  
+          
+           <LinearLayout android:id="@+id/imagelayout1"  
+              android:layout_width="94px"
+              android:layout_height="94px"
+              android:gravity="center"
+              >
+              <ImageView  android:id="@+id/image1"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"
+                 >
+              </ImageView>              
+            </LinearLayout>
+            
+           <TextView  android:id="@+id/text1"
+                android:layout_width="94px"             
+                android:layout_height="20px"   
+                
+                android:gravity="center"
+                android:textSize="13px"
+                android:textColor="#ff353535"              
+                android:layout_alignBottom="@id/imagelayout1"
+                android:layout_alignRight="@+id/imagelayout1"
+                 >
+            </TextView>
+            
+           
+            <ImageView android:id="@+id/bg_IM_1"
+                android:layout_width="94px"             
+                android:layout_height="94px"
+                 android:background="@drawable/transparency"
+                android:layout_alignBottom="@id/imagelayout1"
+                android:layout_alignRight="@+id/imagelayout1"
+                 >
+            </ImageView>
+          
+        <LinearLayout
+              android:layout_width="94px"
+              android:layout_height="94px"
+              android:orientation="vertical"
+              android:layout_alignRight="@+id/imagelayout1"
+              android:layout_alignBottom="@id/imagelayout1"
+              android:gravity="center">
+              <ImageButton
+                android:id="@+id/button1"
+                android:background="@drawable/ic_add_big"
+                android:layout_width="27px"
+                android:layout_height="27px"></ImageButton>
+              <TextView android:id="@+id/btntext1"
+                android:text="@string/btn_add"
+                android:layout_width="67px"
+                android:layout_height="15px"
+                android:gravity="center"
+                android:textSize="11px"
+                android:textColor="#ffffffff"
+              ></TextView>              
+            </LinearLayout>
+  
+   </RelativeLayout> 
+</AbsoluteLayout>   
+   

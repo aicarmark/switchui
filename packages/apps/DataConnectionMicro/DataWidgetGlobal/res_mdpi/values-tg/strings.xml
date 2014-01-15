@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggle Widgets</string>
+    <string name="gps_app_name">GPS toggle</string>
+    <string name="airplane_app_name">Airplane mode</string>
+    <string name="wifi_app_name">Wi-Fi toggle</string>
+    <string name="bluetooth_app_name">Bluetooth ng toggle</string>
+    <string name="apn_app_name">APN toggle</string>
+    <string name="data_app_name">Datos ng toggle</string>
+    <string name="widget_description">Tingnan at kontrolin ang katayuan ng airplane mode</string>
+    <string name="widget_description_bt">Tingnan at kontrolin ang katayuan ng Bluetooth</string>
+    <string name="widget_description_wifi">Tingnan at kontrolin ang katayuan ng Wi-Fi</string>
+    <string name="widget_description_gps">Tingnan at kontrolin ang katayuan ng GPS</string>
+    <string name="StatusOn">Buksan</string>
+    <string name="StatusOff">Isara</string>
+    <string name="StatusIntermediate"></string>
+    <string name="AirplanetoastText">Ang Airplane mode ay hindi magagamit</string>
+    <string name="BluetoothtoastText">Ang Bluetooth ay hindi magagamit</string>
+    <string name="GPStoastText">Ang GPS ay hindi magagamit</string>
+    <string name="WifitoastText">Ang Wi-Fi ay hindi magagamit</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+    <string name="location_restriction_enabled">Ang pagpipigil sa lokasyon ay gumagana.</string>
+    <!-- END IKPITTSBURGH-473 -->
+    <string name="apncontrol_app_name">Kontrol ng APN</string>
+    <string name="no_apn">Walang magagamit na APN</string>
+</resources>

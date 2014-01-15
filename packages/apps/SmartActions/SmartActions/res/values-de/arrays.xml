@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 Sekunden</item>
+        <item>30 Sekunden</item>
+        <item>1 Minute</item>
+        <item>2 Minuten</item>
+        <item>10 Minuten</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Anrufe und SMS</item>
+        <item>Anrufe</item>
+        <item>SMS</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Alle Nummern</item>
+        <item>Alle Telefonbuchkontakte</item>
+        <item>Ausgewählte Kontakte</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Nachricht wird an alle Telefonnummern gesendet.</item>
+        <item>Nachricht wird an alle in Ihrem Telefonbuch gespeicherten Nummern gesendet.</item>
+        <item>Nachricht wird nur an ausgewählte Nummern gesendet.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Max.</item>
+        <item>Hoch</item>
+        <item>Mittel</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Name des SMS-Absenders</item>
+        <item>Name des Anrufers</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Zuhause</item>
+        <item>Arbeit</item>
+        <item>Schule</item>
+        <item>Benutzerdefiniert</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggle Widgets</string>
+    <string name="gps_app_name">GPS toggle</string>
+    <string name="airplane_app_name">Airplane mode toggle</string>
+    <string name="wifi_app_name">WLAN toggle</string>
+    <string name="bluetooth_app_name">Bluetooth toggle</string>
+    <string name="apn_app_name">APN toggle</string>
+    <string name="data_app_name">Data toggle</string>
+    <string name="widget_description">View and control airplane mode status</string>
+    <string name="widget_description_bt">View and control Bluetooth status</string>
+    <string name="widget_description_wifi">View and control WLAN status</string>
+    <string name="widget_description_gps">View and control GPS status</string>
+    <string name="StatusOn">ON</string>
+    <string name="StatusOff">OFF</string>
+    <string name="StatusIntermediate"></string>
+    <string name="AirplanetoastText">Airplane mode is unavailable</string>
+    <string name="BluetoothtoastText">Bluetooth is unavailable</string>
+    <string name="GPStoastText">GPS is unavailable</string>
+    <string name="WifitoastText">WLAN is unavailable</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+    <string name="location_restriction_enabled">Location restriction is enable.</string>
+    <!-- END IKPITTSBURGH-473 -->
+    <string name="apncontrol_app_name">APN control</string>
+    <string name="no_apn">No APN available</string>
+</resources>

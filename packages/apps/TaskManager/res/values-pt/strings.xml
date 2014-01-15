@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >Gestor de tarefas</string>
+ <string name="tabTasks" >Aplicações</string>
+ <string name="tabProcesses" >Processos</string>
+ <string name="buttonEnd" >Terminar</string>
+ <string name="buttonRefresh" >Actualizar</string>
+ <string name="menuSwitch" >Comutar para</string>
+ <string name="menuEndTask" >Terminar tarefa</string>
+ <string name="menuCancel" >Cancelar</string>
+ <string name="textAvailableMemory" >Memória disponível:</string>
+ <string name="textAvailableMemoryUnit" >M</string>
+ <string name="textNumOfApplications" >Núm de aplicações:</string>
+ <string name="loading" >Carregando...</string>
+</resources>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Переключити віджети</string>
+  <string name="gps_app_name">Перемикання GPS</string>
+  <string name="airplane_app_name">Перемикання режиму \"У літаку\"</string>
+  <string name="wifi_app_name">Перемикання Wi-Fi</string>
+  <string name="bluetooth_app_name">Перемикання Bluetooth</string>
+  <string name="apn_app_name">Перемикання APN</string>
+  <string name="data_app_name">Перемикання даних</string>
+  <string name="widget_description">Перегляд та керування статусом режиму \"У літаку\"</string>
+  <string name="widget_description_bt">Перегляд та керування статусом Bluetooth</string>
+  <string name="widget_description_wifi">Перегляд та керування статусом Wi-Fi</string>
+  <string name="widget_description_gps">Перегляд та керування статусом GPS</string>
+  <string name="StatusOn">УВІМК.</string>
+  <string name="StatusOff">ВИМК.</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Режим \"У літаку\"</string>
+  <string name="BluetoothtoastText">Bluetooth недоступний</string>
+  <string name="GPStoastText">GPS недоступний</string>
+  <string name="WifitoastText">Wi-Fi недоступний</string>
+  <string name="location_restriction_enabled">Обмеження доступу до даних місцезнаходження увімкнено.</string>
+  <string name="apncontrol_app_name">Керування APN</string>
+  <string name="no_apn">Немає APN</string>
+</resources>

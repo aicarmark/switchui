@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ResizableView">
+    <attr name="handle" format="reference" />
+    <attr name="content" format="reference" />
+  </declare-styleable>
+</resources>

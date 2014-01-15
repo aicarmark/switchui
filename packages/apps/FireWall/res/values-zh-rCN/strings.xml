@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+<string name="app_name">防火墙</string>
+<string name="appwidget_name">VIP模式</string>
+<string name="widget_description_vip">查看和控制VIP模式</string>
+<string name="log_title">防火墙记录</string>
+<string name="calllog_title">电话防火墙记录</string>
+<string name="smslog_title">短信防火墙记录</string>
+<string name="incoming_call_setting_title">来电防火墙设置</string>
+<string name="incoming_call_on_title">来电防火墙</string>
+<string name="incoming_sms_setting_title">短信防火墙设置</string>
+<string name="incoming_sms_on_title">短信防火墙</string>
+<string name="whitescreen_title">VIP名单</string>
+<string name="white_black_screen_title">VIP名单和黑名单</string>
+<string name="white_pattern_screen_title">基于模糊号码的VIP名单</string>
+<string name="white_number_screen_title">基于号码的VIP名单</string>
+<string name="white_name_screen_title">基于姓名的VIP名单</string>
+<string name="in_block_call_type_title">来电防火墙模式</string>
+<string name="in_block_sms_type_title">短信防火墙模式</string>
+<string name="incoming_call_on_sum">打开/关闭 来电防火墙</string>
+<string name="incoming_sms_on_sum">打开/关闭 短信防火墙</string>
+<string name="blackscreen_title">黑名单</string>
+<string name="black_pattern_screen_title">基于模糊号码的黑名单</string>
+<string name="black_number_screen_title">基于号码的黑名单</string>
+<string name="black_name_screen_title">基于姓名的黑名单</string>
+<string name="outgoing_call_setting_title">呼出防火墙设置</string>
+<string name="pattern_title">模糊号码</string>
+<string name="vipmode">VIP 模式已启动，仅接收VIP名单来的电话和短信.</string>
+
+<string name="in_reject_type_title">拦截方式</string>
+<string name="outgoing_call_on_title">呼出防火墙</string>
+<string name="outgoing_call_on_sum">打开/关闭 呼出防火墙</string>
+<string name="out_block_call_type_title">呼出防火墙模式</string>
+
+
+<string name="menu_insert_white_list">添加VIP号码</string>
+<string name="menu_insert_black_list">添加黑名单号码</string>
+<string name="menu_insert_white_pattern">添加新VIP名单模糊号码</string>
+<string name="menu_insert_black_pattern">添加新黑名单模糊号码</string>
+<string name="menu_delete">删除</string>
+<string name="menu_delete_all">全部删除</string>
+<string name="menu_pick_pim">从联系人提取</string>
+<string name="menu_pick_recall">从通话记录提取</string>
+<string name="menu_restore">恢复到短信</string>
+<string name="menu_edit">编辑</string>
+<string name="button_done">完成</string>
+<string name="button_revert">取消</string>
+<string name="title_edit">编辑名单</string>
+<string name="title_create">添加新名单</string>
+<string name="error_title">错误</string>
+<string name="error_message">错误信息</string>
+<string name="recentCalls_empty">通话记录为空。</string>
+<string name="all_log_empty">所有防火墙记录为空。</string>
+<string name="call_log_empty">电话防火墙记录为空。</string>
+<string name="sms_log_empty">短信防火墙记录为空。</string>
+<string name="white_name_empty">基于姓名的VIP名单为空。\n按菜单键添加。</string>
+<string name="white_number_empty">基于号码的VIP名单为空。\n按菜单键添加。</string>
+<string name="white_pattern_empty">基于模糊号码的VIP名单为空。\n按菜单键添加。</string>
+<string name="black_name_empty">基于姓名的黑名单为空。\n按菜单键添加。</string>
+<string name="black_number_empty">基于号码的黑名单为空。\n按菜单键添加。</string>
+<string name="black_pattern_empty">基于模糊号码的黑名单为空。\n按菜单键添加。</string>
+<string name="firewall_service_started">防火墙已启动</string>
+<string name="firewall_vip_mode_started">VIP模式已启动</string>
+<string name="firewall_call_intercepted">电话防火墙已拦截</string>
+<string name="firewall_sms_intercepted">短信防火墙已拦截</string>
+<string name="sum_no_item">空</string>
+<plurals name="sum_items">
+    <item quantity="one">1 条</item>
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> 条</item>
+</plurals>
+<string name="alert_dialog_ok">确定</string>
+<string name="alert_dialog_pattern_content">模糊号码名单最大为3条，请先删除旧条目，再添加新条目。</string>
+<string name="alert_dialog_name_content">黑名单/VIP名单最大为1000条，请先删除旧条目，再添加新条目。</string>
+<string name="alert_dialog_number_null">保存的号码不能为无效号码或为空。 </string>
+<string name="alert_dialog_unknow_number">不能从通话记录提取未知号码。</string>
+<string name="alert_dialog_invalid_number">不能提取无效号码。</string>
+<string name="alert_dialog_dup_number_white_list">VIP名单中已经存在相同的号码。</string>
+<string name="alert_dialog_dup_number_white_pattern">VIP名单模糊号码中已经存在相同的模糊号码。</string>
+<string name="alert_dialog_dup_number_black_list">黑名单中已经存在相同的号码。</string>
+<string name="alert_dialog_dup_number_black_pattern">黑名单模糊号码中已经存在相同的模糊号码。</string>
+<string name="alert_dialog_error_pattern">无效的模糊号码。</string>
+<string name="alert_dialog_error_number">无效的电话号码。</string>
+<string name="alert_dialog_dup_name_white_list">VIP名单中已经存在相同的姓名。</string>
+<string name="alert_dialog_dup_name_black_list">黑名单中已经存在相同的姓名。</string>
+<string name="alert_dialog_name_nonumber">此联系人无电话号码。</string>
+<string name="alert_dialog_dup_numbers_white_list">VIP名单中已经存在部分相同的号码。</string>
+<string name="alert_dialog_dup_numbers_black_list">黑名单中已经存在部分相同的号码。</string>
+<string name="call_log_on_title">保留电话防火墙记录</string>
+<string name="call_log_on_sum">打开/关闭 电话防火墙记录</string>
+<string name="sms_log_on_title">保留短信防火墙记录</string>
+<string name="sms_log_on_sum">打开/关闭 短信防火墙记录</string>
+<!-- String used to display calls from unknown numbers in the call log -->
+<string name="unknown">未知</string>
+
+<!-- String used to display calls from private numbers in the call log -->
+<string name="private_num">私人号码</string>
+
+<!-- String used to display calls from pay phone in the call log -->
+<string name="payphone">对方付费电话</string>
+<string name="ext_add_black_number_toast">此号码已经被成功加入黑名单中。</string>
+<string name="ext_add_white_number_toast">此号码已经被成功加入VIP名单中。</string>
+<string name="ext_add_black_name_toast">此姓名已经被成功加入黑名单中。</string>
+<string name="ext_add_white_name_toast">此姓名已经被成功加入VIP名单中。</string>
+<string name="ext_add_black_name_number_toast">此联系人的号码已经被成功加入黑名单中。</string>
+<string name="ext_add_white_name_number_toast">此联系人的号码已经被成功加入VIP名单中。</string>
+<string name="vip_mode_on_toast">在VIP模式下，只接收来自VIP的电话和短信。</string>
+<string name="pattern_help">例如 ：\'189\' 将匹配所有189开头的号码，\'512#\'将匹配所有512结尾的号码。</string>
+<string name="number_for_pattern">设置为模糊号码匹配</string>
+<string name="number_for_call">应用到电话防火墙</string>
+<string name="number_for_sms">应用到短信防火墙</string>
+<string name="number_for_call_black">拒接来自此号码的电话</string>
+<string name="number_for_sms_black">拒接来自此号码的短信</string>
+<string name="number_for_call_white">接收来自此号码的电话</string>
+<string name="number_for_sms_white">接收来自此号码的短信</string>
+
+<string name="setting_tab">设置</string>
+<string name="list_tab">黑/白 名单</string>
+<string name="call_log_tab">电话记录</string>
+<string name="sms_log_tab">短信记录</string>
+<string name="black_list_tab">黑名单</string>
+<string name="white_list_tab">VIP</string>
+<string name="firewall_log_tab">记录</string>
+
+<string name="alert_dialog_calllog_delete_all">将删除所有的防火墙电话记录。</string>
+<string name="alert_dialog_smslog_delete_all">将删除所有的防火墙短信记录。</string>
+<string name="alert_dialog_alllog_delete_all">将删除所有的防火墙记录。</string>
+<string name="alert_dialog_white_number_delete_all">将删除所有基于号码的VIP名单。 </string>
+<string name="alert_dialog_white_pattern_delete_all">将删除所有基于模糊号码的VIP名单。 </string>
+<string name="alert_dialog_black_number_delete_all">将删除所有基于号码的黑名单。 </string>
+<string name="alert_dialog_black_pattern_delete_all">将删除所有基于模糊号码的黑名单。</string>
+<string name="alert_dialog_white_name_delete_all">将删除所有基于姓名的VIP名单。</string>
+<string name="alert_dialog_black_name_delete_all">将删除所有基于姓名的黑名单。</string>
+<string name="alert_dialog_white_number_pattern_delete_all">将删除所有基于号码的VIP名单。</string>
+<string name="alert_dialog_black_number_pattern_delete_all">将删除所有基于号码和模糊号码的黑名单。</string>
+<string name="alert_dialog_add_white_list_confirm">此号码将被加入VIP名单。</string>
+<string name="alert_dialog_add_black_list_confirm">此号码将被加入黑名单。</string>
+<string name="alert_dialog_add_white_name_confirm">此联系人的号码将被加入VIP名单。</string>
+<string name="alert_dialog_add_black_name_confirm">此联系人的号码将被加入黑名单。</string>
+
+
+<string name="message_keywords_filter_title">短信关键字过滤</string>
+<string name="keywords_filter_on_title">关键字过滤</string>
+<string name="keywords_filter_info">由360移动安全提供</string>
+<string name="keywords_manager_on_title">关键字管理</string>
+<string name="keywords_manager_info">定制关键字，关键自动同步设置</string>
+
+<string name="select_log_type_prompt">选择防火墙记录类型</string>
+<string name="is_dup_in_white_list">VIP名单中已经存在 \n %s</string>
+<string name="is_dup_in_black_list">黑名单中已经存在 \n %s</string>
+<string name="added_to_white_list">%s \n 已经被成功加入VIP名单中</string>
+<string name="added_to_black_list">%s \n 已经被成功加入黑名单中</string>
+
+<string name="network_firewall_setting">网络过滤设置</string>
+<string name="in_call_reject_cdma">拦截C网来电</string>
+<string name="in_call_reject_gsm">拦截G网来电</string>
+<string name="in_sms_reject_cdma">拦截C网短信</string>
+<string name="in_sms_reject_gsm">拦截G网短信</string>
+<string name="in_call_reject_cdma_sum">拦截所有打到CDMA卡的电话</string>
+<string name="in_call_reject_gsm_sum">拦截所有打到GSM卡的电话</string>
+<string name="in_sms_reject_cdma_sum">拦截所有发到CDMA卡短信</string>
+<string name="in_sms_reject_gsm_sum">拦截所有发到GSM卡短信</string>
+
+    <string-array name="incoming_call_block_list">
+        <item>仅接收联系人来电</item>
+        <item>拦截所有来电</item>
+        <item>仅接收VIP来电</item>
+        <item>拦截黑名单来电</item>
+    </string-array>
+
+    <string-array name="incoming_sms_block_list">
+        <item>仅接收联系人来短信</item>
+        <item>拦截所有短信</item>
+        <item>仅接收VIP来短信</item>
+        <item>拦截黑名单来短信</item>
+    </string-array>
+
+    <string-array name="white_black_list_title">
+        <item>基于号码的VIP名单</item>
+        <item>基于模糊号码的VIP名单</item>
+        <item>基于号码的黑名单</item>
+        <item>基于模糊号码的黑名单</item>
+        <item>基于姓名的VIP名单</item>
+        <item>基于姓名的黑名单</item>
+    </string-array>
+    
+    <string-array name="white_black_editor_title">
+        <item>添加新VIP名单号码</item>
+        <item>添加新VIP名单模糊号码</item>
+        <item>添加新黑名单号码</item>
+        <item>添加新黑名单模糊号码</item>
+        <item>添加新VIP名单号码</item>
+        <item>添加新黑名单号码或模糊号码</item>
+        <item>编辑VIP名单号码</item>
+        <item>编辑黑名单号码</item>
+        <item>编辑VIP名单模糊号码</item>
+        <item>编辑黑名单模糊号码</item>
+    </string-array>
+    
+    <string-array name="outgoing_call_block_list">
+        <item>仅允许呼出到联系人</item>
+        <item>禁止所有呼出</item>
+        <item>VIP名单</item>
+        <item>黑名单</item>
+    </string-array>
+
+    <string-array name="in_reject_type">
+        <item>忽略来电</item>
+        <item>拒绝来电</item>
+    </string-array>
+
+
+    <string-array name="firewall_log_type">
+        <item>所有防火墙记录</item>
+        <item>电话防火墙记录</item>
+        <item>短信防火墙记录</item>
+    </string-array>
+</resources>

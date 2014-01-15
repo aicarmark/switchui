@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >"Task Manager"</string>
+ <string name="tabTasks" >"Applications"</string>
+ <string name="tabProcesses" >"Processes"</string>
+ <string name="buttonEnd" >"End"</string>
+ <string name="buttonRefresh" >"Refresh"</string>
+ <string name="menuSwitch" >"Switch To"</string>
+ <string name="menuEndTask" >"End Task"</string>
+ <string name="menuCancel" >"Cancel"</string>
+ <string name="textAvailableMemory" >"Available Memory:"</string>
+ <string name="textAvailableMemoryUnit" >"M"</string>
+ <string name="textNumOfApplications" >"Num of Applications:"</string>
+ <string name="loading" >Loading\u2026</string>
+</resources>

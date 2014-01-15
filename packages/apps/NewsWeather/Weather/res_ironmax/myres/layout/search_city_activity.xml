@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    
+	    <ImageButton android:id="@+id/search_city_image"
+		    android:layout_width="40dp" 
+		    android:layout_height="40dp"
+		    android:layout_marginRight="9dp"
+		     			
+			android:layout_alignParentRight="true"
+		    android:background="#00000000"
+		    android:src="@drawable/search"
+		    android:scaleType="centerCrop"
+		/>
+	    
+		<EditText  android:id="@+id/search_city_text"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_toLeftOf="@id/search_city_image"
+		    android:layout_marginRight="5dp"
+		    android:singleLine="true"
+		    android:hint="@string/input_city_hint"
+		    android:textSize="18sp"
+		    android:textColor="#ffffff"
+		    />	 
+	
+	</RelativeLayout>
+	
+	<ListView android:id="@+id/search_city_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginRight="9dp"
+		/>		
+		
+</LinearLayout>

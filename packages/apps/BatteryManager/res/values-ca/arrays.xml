@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Predeterminats de la bateria</item>
+    <item>Paràmetres personalitzats</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 minuts</item>
+    <item>30 minuts</item>
+    <item>45 minuts</item>
+    <item>60 minuts</item>
+    <item>Sempre activat</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 minutos</item>
+    <item>30 minutos</item>
+    <item>45 minutos</item>
+    <item>60 minuts</item>
+  </string-array>
+</resources>

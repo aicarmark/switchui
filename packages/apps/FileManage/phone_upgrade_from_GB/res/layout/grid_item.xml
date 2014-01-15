@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<com.motorola.FileManager.CheckableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/grid_layout_margin_left"
+              android:layout_marginRight="@dimen/grid_layout_margin_right"
+              android:minHeight="?android:attr/listPreferredItemHeight" >
+  <RelativeLayout android:layout_width="@dimen/rel_layout_width"
+                  android:layout_height="@dimen/rel_layout_height"
+                  android:layout_gravity="center" >
+    <ImageView android:id="@+id/icon"
+               android:layout_height="@dimen/grid_icon_dimen"
+               android:layout_width="@dimen/grid_icon_dimen"
+               android:scaleType="centerInside" />
+  </RelativeLayout>
+  <TextView  android:id="@+id/text"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:gravity="center"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:lines="1"
+             android:singleLine="true"
+             android:ellipsize="end" />
+  <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dip"
+        android:focusable="false"
+        android:clickable="false" 
+        android:visibility="gone"/>
+</com.motorola.FileManager.CheckableLayout>

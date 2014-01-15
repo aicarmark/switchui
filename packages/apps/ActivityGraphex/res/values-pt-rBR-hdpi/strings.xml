@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="manageshortcuts_hint" >Utilize o gráfico para escolher 9 aplicativos e adicioná-los ao seu widget. Você terá fácil acesso a estes aplicativos em seu painel na tela inicial.</string>
+</resources>

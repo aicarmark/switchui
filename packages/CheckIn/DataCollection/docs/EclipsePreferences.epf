@@ -1,0 +1,10 @@
+#Sat Feb 25 17:15:43 GMT+05:30 2012
+file_export_version=3.0
+/instance/org.eclipse.ui.editors/printMargin=true
+/instance/org.eclipse.ui.editors/lineNumberRuler=true
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.tabulation.char=space
+/instance/org.eclipse.ui.editors/spacesForTabs=true
+/instance/com.android.ide.eclipse.adt/com.android.ide.eclipse.adt.skipPostCompileOnFileSave=false
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.forbiddenReference=ignore
+/instance/org.eclipse.ui.editors/printMarginColumn=100
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles.version=12

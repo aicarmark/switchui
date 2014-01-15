@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Volume contenuti</string>
+  <string name="warning_text">L\'ascolto a volume elevato per lunghi periodi di tempo può danneggiare l\'udito.\n\nIl volume della musica è stato regolato al di sotto del livello consigliato.</string>
+</resources>

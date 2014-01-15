@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SmartActionsTest-build-customization">
+
+    <!-- This macro signs in.package and outputs it to out.package using in.certificate.class. 
+         Used by release target. -->
+    <macrodef name="sign-helper">
+        <attribute name="in.package" />
+        <attribute name="out.package" />
+        <attribute name="in.certificate.class" />
+        <sequential>
+            <echo>Signing apk with '@{in.certificate.class}' certificate-class...</echo>
+            <java jar="${signjar}" fork="true">
+                <arg value="${certificate.path}/@{in.certificate.class}.x509.pem"/>
+                <arg value="${certificate.path}/@{in.certificate.class}.pk8"/>
+                <arg value="@{in.package}"/>
+                <arg value="@{out.package}"/>
+            </java>
+        </sequential>
+    </macrodef>
+
+    <!-- Customization of the release target from <SDK>/tools/ant/build.xml to sign apk using Motorola cert -->
+    <target name="release"
+                depends="-pre-set-release-mode, -set-release-mode, -release-obfuscation-check, -package">
+
+        <!-- only create apk if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not create apk..." >
+            <sequential>
+                <property name="out.unaligned.file" location="${out.absolute.dir}/${ant.project.name}-release-unaligned.apk" />
+
+                <!-- Set release APK file name -->
+                <property name="release-apk-file" location="${out.absolute.dir}/${ant.project.name}.apk" />
+
+                <!-- Signs the APK -->
+                <sign-helper in.package="${out.packaged.file}"
+                             out.package="${out.unaligned.file}"
+                             in.certificate.class="${certificate.class}" />
+                <delete file="${out.packaged.file}" />
+
+                <!-- Zip aligns the APK -->
+                <zipalign-helper in.package="${out.unaligned.file}"
+                                 out.package="${release-apk-file}" />
+                <delete file="${out.unaligned.file}" />
+
+                <echo>------------------------------------</echo>
+                <echo>Release Package: ${release-apk-file}</echo>
+                <echo>------------------------------------</echo>
+            </sequential>
+        </do-only-if-not-library>
+        <record-build-info />
+    </target>
+
+    <!-- Customization of the debug target from <SDK>/tools/ant/build.xml to make it equivalent to release target -->
+    <target name="debug" depends="release" />
+    <property name="out.debug.file" location="bin/${out.release.file.name}" />
+
+    <!-- Build default application, not customized for any carrier --> 
+    <target name="default" depends="release" />
+
+    <!-- Fix release apk name -->
+    <target name="-pre-set-release-mode" depends="-set-mode-check">
+        <property name="out.final.file" location="${out.absolute.dir}/${ant.project.name}.apk" />
+    </target>
+
+</project>

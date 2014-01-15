@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singleline_centered_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity ="center_horizontal"
+    android:gravity ="center"
+    android:padding="5dp"
+    android:visibility="gone">
+    <TextView android:id="@+id/failmessage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity ="center_horizontal"
+        android:textColor="@color/first_line"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+</RelativeLayout>

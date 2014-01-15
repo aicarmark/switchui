@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">Cargando...</string>
+    <string name="widget_label">Gráficos de actividad</string>
+    <string name="hide_applications_summary">Seleccionar las aplicaciones que no quieres que se muestren en el widget</string>
+    <string name="hidden_applications_title">Aplicaciones ocultas</string>
+    <string name="activitygraphsettings">Config. de gráficos de actividad</string>
+    <string name="auto_setup_mode_Summary_off">Activar para llenar el widget automáticamente con las aplicaciones usadas recientemente.</string>
+    <string name="auto_setup_mode_Summary_on">Desactivar para agregar aplicaciones manualmente al widget.</string>
+    <string name="auto_setup_mode_title">Modo de config. automática</string>
+    <string name="app_name">Config. de gráficos de actividad</string>
+    <string name="manage_shortcuts_title">Administrar atajos</string>
+    <string name="manage_shortcuts_summary">Seleccionar aplicaciones manualmente para llenar el widget.</string>
+    <string name="set_skin_title">Establecer tapiz</string>
+    <string name="set_skin_summary">El color o la textura serán usados como atajos</string>
+    <string name="reset_title">Restaurar Widget</string>
+    <string name="reset_summary">Borra todas las aplicaciones del widget</string>
+    <string name="resetConfirmation_title">Restaurar Widget</string>
+    <string name="resetConfirmationMessage">Esta acción restablecerá el widget borrando todos los atajos a aplicaciones. ¿Restablecer widget?</string>
+    <string name="resetbutton">Restablecer</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+    <string name="search_hint">Digita para buscar</string>
+    <string name="manage_shortcuts_label">Administrar atajos</string>
+    <string name="choose_skin_label">Seleccionar tapiz</string>
+    <string name="none_application"></string>
+    <string name="none_string">Ninguno(a)</string>
+    <string name="set_skin_button">Establecer tapiz</string>
+    <string name="select_apps_to_hide">Seleccionar aplicaciones para ocultar</string>
+    <string name="btn_change">Cambiar</string>
+    <string name="bricks">Ladrillos</string>
+    <string name="grayscale">Escala de grises</string>
+    <string name="vivid_colors">Colores vivos</string>
+    <string name="pale_colors">Colores pálidos</string>
+    <string name="natural">Natural</string>
+    <string name="patchwork">Parche</string>
+    <string name="pinboard">Pinboard</string>
+    <string name="steel">Hierro</string>
+    <string name="textile">Textil</string>
+    <string name="btn_add">Agregar</string>
+    <string name="welcome_title">Bienvenido(a)</string>
+    <string name="welcome_info1">Este widget de gráficos de actividad es una forma interesante de encontrar tus aplicaciones favoritas en la pantalla principal. </string>
+    <string name="welcome_info2">Puedes escoger la forma de llenar este widget</string>
+    <string name="auto_info1">Has seleccionado la configuración automática. Después de que comiences a usar las aplicaciones en tu teléfono, este widget se actualizará automáticamente con las aplicaciones que más usas.</string>
+    <string name="auto_info2">Puedes cambiar esta preferencia en la configuración del widget. Las configuraciones se encuentran al mantener el widget presionado.</string>
+    <string name="manual_info1">Toca para comenzar a agregar aplicaciones al widget.</string>
+    <string name="manual_info2">Mantén presionado para ver la configuración del widget.</string>
+    <string name="welcome_auto">Config. automática</string>
+    <string name="continue_button">Continuar</string>
+    <string name="back">Atrás</string>
+    <string name="auto_radio_button_label">Automáticamente. Se llenará automáticamente con tus aplicaciones usadas recientemente</string>
+    <string name="manual_radio_button_label">Manualmente. Agregarás aplicaciones manualmente al widget.</string>
+    <string name="air">Aire</string>
+    <string name="blue">Azul</string>
+    <string name="camera_light">Luz de cámara</string>
+    <string name="dream">Sueño</string>
+    <string name="sunny">Soleado</string>
+
+</resources>

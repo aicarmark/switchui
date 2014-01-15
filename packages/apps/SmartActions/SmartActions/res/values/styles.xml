@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Define all of the styles needed for the Blur apps -->
+
+    <!--
+        Put everything under a Blur style so that we can default everything to
+        wrap_content and only have to specify width or height when they are
+        different
+    -->
+
+<!-- ========== SMART RULES ========== -->
+
+    <style name="Interactive_Titlebar">
+        <item name="android:height">46dp</item>
+    </style>
+
+    <style name="Interactive_Titlebar.Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="Interactive_Titlebar.SecondLine">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffb0b0b0</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- END app widgets -->
+
+    <!-- Suggestions related styles -->
+    <style name="Suggestion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Suggestion.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:textColor">#1D87C2</item>
+    </style>
+
+    <style name="Suggestion.Title.Unread">
+        <item name="android:textColor">#E6E6E6</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Suggestion.Title.Read">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#9B9C9C</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Suggestion.Text">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="Suggestion.Text.Bullet">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Pickers STYLES -->
+<!-- <item name="android:logo=@drawable/ic_launcher_smartrules</item> -->
+    <style name="Pickers" parent="android:Theme.Holo">
+        <item name="android:logo">@drawable/ic_launcher_smartrules</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color_picker</item>
+    </style>
+
+    <!-- END Picker STYLES -->
+
+<!-- ========== COMMON STYLES ========== -->
+
+    <style name="Text">
+    </style>
+    <style name="Text.WordTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="RecipientEditTextView" parent="@android:attr/autoCompleteTextViewStyle">
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:background">@drawable/recipient_edittext_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:dropDownVerticalOffset">-6dip</item>
+        <item name="android:dropDownHorizontalOffset">-16dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:lineSpacingExtra">4dip</item>
+    </style>
+
+	<!-- DRIVE MODE WIDGET STYLES -->
+	<style name="DriveModeText">
+	    <item name="android:textColor">@color/white</item>
+	    <item name="android:paddingLeft">2dp</item>
+	</style>
+	
+	<style name="DriveModeText.normal">
+	    <item name="android:textSize">14sp</item>
+	</style>
+	
+	<style name="DriveModeText.small">
+	    <item name="android:textSize">12sp</item>	
+	</style>
+	
+	<style name="DriveModeText.smallGreyed">
+	    <item name="android:textSize">12sp</item>	
+	</style>
+</resources>

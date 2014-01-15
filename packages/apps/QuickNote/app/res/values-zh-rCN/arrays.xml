@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="copypaste_menu_items">
+        <item>复制</item>
+        <item>发送短信</item>
+        <item>创建百事贴</item>
+        <item>翻译</item>
+    </string-array>
+
+</resources>

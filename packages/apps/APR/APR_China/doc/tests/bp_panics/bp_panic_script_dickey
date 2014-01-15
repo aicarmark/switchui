@@ -1,0 +1,7 @@
+adb shell mkdir /data/bp_panic
+adb shell mkdir /data/bp_panic/apr
+adb push cdma_test_panic.bin /data/bp_panic/cdma_test_panic$1.bin
+adb push umts_test_panic.bin /data/panic/apr/umts_test_panic$1.bin
+adb push bp_panic.bin1 /data/panic/apr/bp_panic$1.bin1
+
+

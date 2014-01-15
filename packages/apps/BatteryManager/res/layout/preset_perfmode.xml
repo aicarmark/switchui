@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RadioButton 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center" 
+        android:checked="false"
+        android:clickable="true"
+        android:layout_marginRight="5dip">
+    </RadioButton>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/infoimg"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/zz_moto_ic_control_info_rev"
+           android:gravity="center"
+           android:padding="2dip"
+           android:focusable="true"
+           android:background="?android:attr/selectableItemBackground"
+           android:layout_marginRight="4dip">
+        </ImageView>
+         <!-- android:src="@drawable/ic_control_info" -->
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/infoimg"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:id="@+id/ptext"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+        
+        <TextView 
+	        android:id="@+id/ptitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/preset_perfmode_title"
+	        android:textAppearance="@android:style/TextAppearance.Medium">
+        </TextView>
+        
+        <TextView 
+	        android:id="@+id/pdesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@android:style/TextAppearance.Small"
+	        android:text="@string/preset_perfmode_shortdesc">
+        </TextView>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

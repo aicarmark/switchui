@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/speedDialEditAdapterHandle">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/speed_dialer_gridchild_margin_delete_right"
+        android:layout_marginTop="@dimen/speed_dialer_gridchild_margin_delete_top">
+        <!-- Display view when no contact assigned to  speed dial number-->
+        <ImageView android:id="@+id/pickerPosition"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:visibility="visible"/>
+        <!-- Display view after a contact assigned to this speed dial number-->
+        <RelativeLayout android:id="@+id/speedDialContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/sd_det_ic_marginTop"
+            android:layout_marginBottom="@dimen/sd_det_ic_marginBottom"
+            android:layout_marginLeft="@dimen/sd_det_ic_marginLeft"
+            android:layout_marginRight="@dimen/sd_det_ic_marginRight"
+            android:visibility="invisible">
+            <ImageView android:id="@+id/pickerImage"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/sd_edit_image_width"
+                android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sd_edit_contact_height"
+                android:layout_toLeftOf="@id/pickerImage"
+                android:background="@drawable/sd_bg_contact_info"
+                android:gravity="center_vertical"
+                android:layout_alignParentBottom="true">
+                <!-- label name -->
+                <TextView android:id="@+id/pickerName"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="2dip"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"
+                    style="@style/Contacts.SpeedDialNameEditSingleLine"
+                    android:textSize="12dip"/>
+                <!-- label number -->
+                <TextView android:id="@+id/pickerNumber"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="2dip"
+                    android:includeFontPadding="false"
+                    style="@style/Contacts.SpeedDialNumberEditSingleLine"
+                    android:textSize="10dip"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/pickerPosition_upper"
+	        android:layout_centerVertical="true"
+	        android:scaleType="fitXY"
+	        android:gravity="center_vertical"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"/>
+	</RelativeLayout>
+    <ImageView  android:id="@+id/statusImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sd_ic_delete"/>
+</RelativeLayout>

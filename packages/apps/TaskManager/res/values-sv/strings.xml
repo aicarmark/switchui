@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Uppgiftshanterare"</string>
+  <string name="tabTasks">"Program"</string>
+  <string name="tabProcesses">"Processer"</string>
+  <string name="buttonEnd">"Avsluta"</string>
+  <string name="buttonRefresh">"Uppdatera"</string>
+  <string name="menuSwitch">"Växla till"</string>
+  <string name="menuEndTask">"Avsluta uppgift"</string>
+  <string name="menuCancel">"Avbryt"</string>
+  <string name="textAvailableMemory">"Tillgänglig minne:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Antal program:"</string>
+  <string name="loading">Läser in\u2026</string>
+</resources>

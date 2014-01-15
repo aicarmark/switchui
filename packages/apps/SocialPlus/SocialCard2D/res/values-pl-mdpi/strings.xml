@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Użyj tego wykresu, aby wybrać 7 kontaktów, które zostaną dodane do widżetu. Będziesz mieć do nich łatwy dostęp z panelu głównego.</string>
+</resources>

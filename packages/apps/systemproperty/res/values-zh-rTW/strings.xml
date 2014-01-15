@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">系統優化</string>
+    <string name="MemeryInfo">記憶體</string>
+    <string name="raminfo_title">RAM</string>
+    <string name="ramtotal">總計:</string>
+    <string name="ramfree">可用:</string>
+    <string name="ramused">已使用:</string>
+    <string name="rominfo_title">ROM</string>
+    <string name="romtotal">總計:</string>
+    <string name="romfree">可用:</string>
+    <string name="romused">已使用:</string>
+    <string name="sdtotal">總計:</string>
+    <string name="sdfree">可用:</string>
+    <string name="sdused">已使用:</string>
+    <string name="sdinfo_title">SD 卡</string>
+    <string name="MEM_MB">MB </string>
+    <string name="MEM_GB">GB </string>
+    <string name="BatteryInfo">電池</string>
+    <string name="clear">清除</string>
+    <string name="select_all">全選</string>
+    <string name="deselect_all">取消全選</string>
+    <string name="clickcleaner">單按式清除工具</string>
+    <string name="dialogtital">通知</string>
+    <string name="oneclean_context">您想要清除所有快取嗎？</string>
+    <string name="opda_global_ok">確定</string>
+    <string name="opda_global_cancel">取消</string>
+    <string name="running_application">執行中應用程式</string>
+    <string name="stayresident_application">常駐應用程式</string>
+    <string name="no_cache">沒有要清除的快取檔案</string>
+    <string name="no_apps">沒有要清除的執行中應用程式</string>
+    <string name="app_loading">正在掃描快取檔案...</string>
+    <string name="cleancache_title">清除快取檔案</string>
+    <string name="stay_resident_head">您可以按一下項目以手動強制停止應用程式</string>
+    <string name="user_process">使用者程序</string>
+    <string name="system_process">系統程序</string>
+    <string name="oneclean_result">資料清除成功</string>
+
+    <!-- text to display the number of backgroup apps size of mem to delete -->
+    <string name="cache_head_rom">清除應用程式執行時產生的的暫存檔案快取，您將得到 </string>
+    <string name="cache_back_rom">ROM 可用空間</string>
+    <string name="process_head_ram">清除選取的項目，您將得到 </string>
+    <string name="process_back_ram">RAM 可用空間</string>
+
+    <!-- text to display the number of running apps size of mem to delete -->
+    <string name="runningapps">執行中應用程式:<xliff:g id="numprocess">%1$d</xliff:g></string>
+
+    <!-- Descriptive text of ram free number/total number of mem -->
+    <string name="ram_free_total">RAM:<xliff:g id="numfree">%1$s</xliff:g>/<xliff:g id="numtotal">%2$s</xliff:g></string>
+
+    <!-- Descriptive text of rom free number/total number of mem -->
+    <string name="rom_free_total">ROM:<xliff:g id="numfree">%1$s</xliff:g>/<xliff:g id="numtotal">%2$s</xliff:g></string>
+
+    <!-- Battery -->
+    <string name="battery_health_str">健康狀態</string>
+    <string name="battery_voltage_str">電壓</string>
+    <string name="battery_temperature_str">溫度</string>
+    <string name="battery_health_dead_str">沒電</string>
+    <string name="battery_health_good_str">正常</string>
+    <string name="battery_health_overheat_str">過熱</string>
+    <string name="battery_health_overvoltage_str">超壓</string>
+    <string name="battery_health_unknown_str">未知</string>
+    <string name="battery_health_failure_str">未指定失敗</string>
+    <string name="str_battery_remaining">剩餘時間:</string>
+    <string name="str_battery_usage">電池使用率:</string>
+    <string name="str_battery_percent">100%</string>
+    <string name="str_battery_remaining_time">24 小時 0 分鐘</string>
+    <string name="str_battery_mode_optimize">優化選項</string>
+    <string name="str_battery_voltage">電壓:4.0V</string>
+    <string name="str_battery_temperature">溫度:25C</string>
+    <string name="str_battery_current_mode">目前電池模式:</string>
+    <string name="str_battery_general_mode">一般模式</string>
+
+    <!-- Actionbar back to TAB -->
+    <string name="str_action_bar_title">動作列標題</string>
+    <string name="str_action_bar_back_to_cpu">CPU</string>
+    <string name="str_action_bar_back_to_memory">記憶體</string>
+    <!-- TAB -->
+    <string name="CPUInfo">CPU</string>
+
+    <!-- units -->
+    <string name="str_cpu_freq_units">MHz</string>
+
+    <!-- Cpu information -->
+    <string name="str_cpu_model">型號</string>
+    <string name="str_cpu_freq">核心頻率</string>
+    <string name="str_cpu_min_freq">最小:</string>
+    <string name="str_cpu_max_freq">最大:</string>
+    <string name="str_cpu_usage_usr">使用者:</string>
+    <string name="str_cpu_usage_sys">系統:</string>
+    <string name="str_cpu_usage_idle">閒置:</string>
+    <string name="str_cpu_usage">CPU 使用率</string>
+    <string name="str_usr_process">使用者程序</string>
+    <string name="str_sys_process">系統程序</string>
+    <string name="str_cpu_label_1">CPU1</string>
+    <string name="str_cpu_label_2">CPU2</string>
+    <string name="str_cpu_label_1_rename">CPU</string>
+    <string name="str_dialog_message">載入中，請稍候...</string>
+    <string name="str_default_usage">0%</string>
+    <string name="str_percent_symbol">%</string>
+    <string name="str_cpu_unknown">未知</string>
+    <string name="str_no_process">沒有要顯示的執行中程序</string>
+
+    <!-- memory cleaner gkp864 -->
+    <string name="ReleaseMemory">釋放記憶體</string>
+    <string name="UpdateStep">%</string>
+    <string name="MemoryCleaner">記憶體清除工具</string>
+    <string name="MemoryCleaned">已最大程度釋放記憶體</string>
+
+    <!-- Battery Manager -->
+    <string name="but_ok_text">確定</string>
+    <string name="battery_manager_setting">電池管理員</string>
+
+    <!-- New prompts -->
+    <string name="bm_parm_brightness">亮度</string>
+    <string name="bm_parm_timeout">休眠</string>
+    <string name="bm_parm_wifi">WiFi</string>
+    <string name="bm_parm_bluetooth">藍牙</string>
+    <string name="bm_parm_mobiledata">行動資料</string>
+    <string name="bm_parm_sync">同步處理</string>
+    <string name="bm_parm_haptic">觸感</string>
+    <string name="bm_parm_vibration">震動</string>
+    <string name="bm_parm_rotation">旋轉</string>
+    <string name="bm_mode_general">一般</string>
+    <string name="bm_mode_saver">電池省電</string>
+    <string name="bm_mode_night">超級省電</string>
+    <string name="bm_mode_performance">效能</string>
+    <string name="bm_select_mode">選取電池模式:</string>
+    <string name="bm_add_mode">新增自訂模式</string>
+    <string name="bm_warning">警告</string>
+    <string name="bm_save">完成</string>
+    <string name="bm_cancel">取消</string>
+    <string name="bm_delete">刪除</string>
+    <string name="bm_warning_hint">您確定要從電池模式清單中移除 %s 嗎？</string>
+    <string name="bm_hour">時</string>
+    <string name="bm_minute">分</string>
+    <string name="bm_status_on">開啟</string>
+    <string name="bm_status_off">關閉</string>
+    <string name="bm_brightness_auto">自動</string>
+    <string name="bm_second">s</string>
+    <string name="bm_timeout_never">永不</string>
+    <string name="bm_mode_switching">切換到電池模式:%s </string>
+    <string name="bm_voltage_unit">V</string>
+    <string name="bm_mode_prefix">模式-</string>
+    <string name="bm_name_length_zero">模式名稱長度不能為 0</string>
+    <string name="bm_name_same">此模式名稱已使用</string>
+    <string name="bm_disclaimer_text">友情提醒，此應用程式中顯示的電池剩餘時間資訊僅供您參考，詳細值視實際手機使用情況而定。</string>
+    <string name="bm_disclaimer_title">免責聲明</string>
+    <string name="bm_set">設定</string>
+    <string name="bm_switching">切換中...</string>
+    <string name="bm_saving">儲存中...</string>
+    <string name="bm_mode_max">只支持 10 個電池管理模式</string>
+    <string name="bm_setting_mode">模式設置</string>
+    <string name="bm_airplane_mode">正處於飛行模式</string>
+    <string name="bm_bt_fail">打開藍牙失敗</string>
+    <string name="bm_airplane_on">飛行模式打開中...</string>
+    <string name="bm_airplane_off">飛行模式關閉中...</string>
+    <string name="bm_wifi_fail">打開 WLAN 失敗 </string>
+
+</resources>

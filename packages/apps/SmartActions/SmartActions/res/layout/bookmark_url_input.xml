@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/enter_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_url_hint"
+        android:inputType="textUri"
+        android:maxLength="160"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_below="@id/enter_url"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/list_divider_holo_dark" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/bookmarks"
+        android:layout_below="@id/divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="12dip"
+        android:textColor="@color/ics_blue"
+        android:text="@string/bookmarks_cap"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_below="@id/bookmarks"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/list_divider_holo_dark" 
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

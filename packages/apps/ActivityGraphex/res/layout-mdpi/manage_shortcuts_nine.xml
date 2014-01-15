@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/bg_transparency">
+   <TextView  android:id="@+id/pro_text"
+                android:layout_width="wrap_content"             
+                android:layout_height="wrap_content"   
+                android:text="@string/manageshortcuts_hint"
+                android:textSize="24px"
+                android:layout_marginLeft="19px"
+                android:layout_marginTop="27px"
+                android:textColor="#ff000000"  
+                android:scrollbars="vertical"            
+                > </TextView>
+                
+  <include layout="@layout/activitylayout_nine"/>
+  
+  <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        
+        <Button android:text="@string/cancel" 
+            android:id="@+id/buttonCancel" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+        <Button android:text="@string/ok" 
+            android:id="@+id/buttonOk" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+    </LinearLayout>
+</LinearLayout>

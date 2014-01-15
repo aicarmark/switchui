@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Вкл/Изкл на изпълними модули</string>
+  <string name="gps_app_name">GPS вкл/изкл</string>
+  <string name="airplane_app_name">Самолетен р-м вкл/изкл</string>
+  <string name="wifi_app_name">Wi-Fi вкл/изкл</string>
+  <string name="bluetooth_app_name">Bluetooth вкл/изкл</string>
+  <string name="apn_app_name">APN вкл/изкл</string>
+  <string name="data_app_name">Данни вкл/изкл</string>
+  <string name="widget_description">Преглед и контрол на състояние на самолетен режим</string>
+  <string name="widget_description_bt">Преглед и контрол на Bluetooth състояние</string>
+  <string name="widget_description_wifi">Преглед и контрол на състоянието на Wi-Fi</string>
+  <string name="widget_description_gps">Преглед и контрол на GPS състояние</string>
+  <string name="StatusOn">ВКЛ.</string>
+  <string name="StatusOff">ИЗКЛ.</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Самолетен режим е недостъпен</string>
+  <string name="BluetoothtoastText">Bluetooth е недостъпен</string>
+  <string name="GPStoastText">GPS е недостъпен</string>
+  <string name="WifitoastText">Wi-Fi е недостъпен</string>
+  <string name="location_restriction_enabled">Активирани са ограничения за местоположение.</string>
+  <string name="apncontrol_app_name">APN контрол</string>
+  <string name="no_apn">Няма достъпна APN</string>
+</resources>

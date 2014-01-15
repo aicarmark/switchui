@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.FileManager.CheckableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+		      android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:paddingLeft="10dip" 
+	      android:paddingRight="10dip" 
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/list_layout_margin_left"
+              android:layout_marginRight="@dimen/list_layout_margin_right"
+              android:minHeight="?android:attr/listPreferredItemHeight" >
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dip"
+        android:focusable="false"
+        android:clickable="false" 
+        android:visibility="gone"/>
+        
+	<ImageView android:id="@+id/icon" 	    
+		android:layout_width="48dip"
+	    android:layout_height="48dip"
+		android:layout_gravity="center"/>  
+	
+<RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_marginLeft="@dimen/list_layout_margin_left" >
+                  
+   <LinearLayout android:id="@+id/text_info"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:orientation="vertical" >
+	<TextView android:id="@+id/vf_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:ellipsize="middle"
+	            android:layout_weight="1"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:layout_gravity="left|center_vertical"
+	            android:visibility="gone"/>
+    </LinearLayout>
+    
+	<LinearLayout android:id="@+id/text_panel" 	
+		    android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+	           	
+	        <TextView android:id="@+id/name"
+	            android:layout_height="@dimen/zero_dp"
+                android:layout_weight="@fraction/weight_one"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:singleLine="true"
+                android:ellipsize="middle"/>	            	       
+	            
+	        <TextView android:id="@+id/info"
+                android:layout_height="@dimen/zero_dp"
+                android:layout_weight="@fraction/weight_one"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="gone" />	
+    </LinearLayout>
+    <TextView  android:id="@+id/info_time"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:layout_alignBottom="@id/text_panel"
+               android:layout_alignWithParentIfMissing="true"
+               android:layout_toLeftOf="@id/file_select"
+               android:singleLine="true"
+               android:ellipsize="end" />
+    <Button android:id="@id/file_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:focusable="false"
+            android:visibility="gone" />
+</RelativeLayout>
+</com.motorola.FileManager.CheckableLayout>

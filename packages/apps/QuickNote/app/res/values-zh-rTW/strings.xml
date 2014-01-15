@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="quicknote_app_name">百事貼</string>
+    <string name="sketcher_app_name">繪圖</string>
+    <!--
+    string name="capture_and_see">截圖並預覽</string>
+    <string name="capture_and_send">截圖並發送</string>
+    <string name="change">更改</string>
+    <string name="sketch">繪圖</string>
+    <string name="tester_screenshot">測試-截圖</string>
+    <string name="note_edit">修改</string>
+    <string name="note_detail">詳細</string>
+    <string name="notes_list">書籤列表</string
+    -->
+    <string name="delete_note">刪除?</string>
+    <string name="menu_delete">刪除</string>
+    <string name="no_file">沒有可用的媒體檔案</string>
+    <string name="save">儲存</string>
+    <string name="create_note">建立百事貼</string>
+    <string name="update">更新</string>
+    <string name="discard">放棄</string>
+    <string name="discard_exit">放棄並退出</string>
+    <string name="done">完成</string>
+    <string name="revert">還原</string>
+    <string name="delete">刪除</string>
+    <string name="delete_confirm">確認要刪除此百事貼?</string>
+    <string name="delete_progress_text">刪除中...</string>
+    <string name="delete_progress_deleted">"<xliff:g id="deleted">%s</xliff:g> / <xliff:g id="to_be_deleted">%s</xliff:g> 已刪除"</string>
+    <string name="menu_deleteQuickNotes">刪除百事貼</string>
+    <string name="show_discard_dialog_message">確認放棄編輯?</string>
+    <string name="show_discard_dialog_message_exit">確認放棄編輯並退出?</string>
+    <string name="sketch_saved">繪圖已保存。</string>
+    <!-- string name="bg_color">背景色</string -->
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="name">名稱</string>
+    <string name="text_note">文本</string>
+    <string name="picture_note">照片</string>
+    <string name="sketch_note">繪圖</string>
+    <string name="voice_note">語音</string>
+    <string name="add_note">建立百事貼</string>
+    <string name="snapshot_info_text">\n已截取當前畫面. \n</string>
+    <string name="snapshotflip_info_text">\n已截取當前畫面. \n請開蓋繼續. \n</string>
+    <string name="snapshot_btn_save">儲存</string>
+    <string name="snapshot_btn_create">建立百事貼</string>
+    <string name="snapshot_btn_discard">放棄</string>
+    <string name="snapshot_title">截圖</string>
+    <!--
+    string name="pen_color">畫筆顏色</string>
+    <string name="pen_color_summary">設置為預設畫筆顏色</string>
+    <string name="pen_thickness">畫筆大小</string>
+    <string name="pen_thickness_summary">設置為預設畫筆大小</string>
+    <string name="eraser_thickness">板擦大小</string>
+    <string name="eraser_thickness_summary">設置為預設板擦大小</string>
+    <string name="background_color">背景顏色</string>
+    <string name="background_color_summary">設置為預設背景顏色</string
+    -->
+    <string name="share">共享</string>
+    <string name="share_via">百事貼共享方式</string>
+    <string name="share_error">此百事貼不能被共享。</string>
+    <string name="edit">編輯</string>
+    <string name="play">播放</string>
+    <string name="pause">暫停</string>
+    <string name="thumbnail_view">查看全部</string>
+    <string name="no_sd_snapshot">截圖前請先掛載手機儲存裝置</string>
+    <string name="no_sd_createnote">建立新百事貼前請先掛載手機儲存裝置</string>
+    <string name="no_sd_createsketcher">建立新繪圖前請先掛載手機儲存裝置</string>
+    <string name="not_enough_free_space_sd_for_sketcher">手機儲存裝置空間不足。建立新繪圖前請確保手機儲存裝置有1M以上空余空間。</string>
+    <string name="not_enough_free_space_sd">手機儲存裝置空間不足。建立新百事貼前請確保手機儲存裝置有1M以上空余空間。</string>
+    <string name="load_failed">手機儲存裝置不可用或未知錯誤</string>
+    <string name="enter_title">標題</string>
+    <string name="enter_text_note">輸入文字內容</string>
+    <string name="tap_to_sketch">點擊以繪畫</string>
+    <string name="discard_title">放棄</string>
+    <string name="discard_msg">放棄當前編輯?</string>
+    <string name="warning">警告</string>
+    <string name="empty_name">請輸入檔案名稱</string>
+    <string name="file_exist">檔案已存在，覆蓋現有檔案?</string>
+    <string name="illegal_name">檔案名包含非法字符</string>
+    <string name="open">打開</string>
+    <string name="undo">撤消</string>
+    <string name="redo">重做</string>
+    <string name="grid_delete">刪除</string>
+    <string name="grid_delete_confirm">已選中的百事貼將會被刪除。</string>
+    <string name="text_copied">文本復制到剪貼板。</string>
+    <string name="set_reminder">設置提醒</string>
+    <string name="set_date_time">設置日期和時間</string>
+    <string name="set_date">設置日期</string>
+    <string name="set_time">設置時間</string>
+    <string name="set_date_time_summary">在特定的日期和時間提醒</string>
+    <string name="waring_toast">警告：設定的 <xliff:g id="TIME" example="Year/Month/Day Hour:Minute">%s</xliff:g>是已過去的時間!</string>
+    <string name="failure_toast">設置失敗: 設定的 <xliff:g id="TIME" example="Year/Month/Day Hour:Minute">%s</xliff:g>不是有效的時間!</string>
+    <string name="notification_multiple">百事貼提醒</string>
+    <string name="no_title_label">（無主題）</string>
+    <string name="alert_title">百事貼通知</string>
+    <string name="type_text">文本</string>
+    <string name="type_image">圖片</string>
+    <string name="type_audio">音頻</string>
+    <string name="type_unknown">未知</string>
+    <string name="notenotfound_toast">相關百事貼已被刪除!</string>
+    <string name="default_page_title">建立百事貼</string>
+    <string name="fail_to_read_file_toast">讀/寫檔案失敗。</string>
+    <string name="memeory_not_enough">內部儲存空間不足</string>
+    <string name="widget_description_quicknote">建立和瀏覽百事貼</string>
+    <string name="internal_full_exit">手機內部儲存空間已滿，請先刪除部分檔案</string>
+    <string name="sdcard_full_exit">手機儲存空間已滿，請先刪除部分檔案</string>
+    <string name="tips_content">同時短按\"電源鍵\"和\"音量降低鍵\"可以觸發截圖功能</string>
+    <string name="snapshoting">正在截圖，請稍候...</string>
+    <string name="snapshot_failed">截圖失敗</string>
+    <string name="file_too_long_cut">文件超出百事帖容許大小，超出部分將無法顯示!</string>
+    <string name="image_process">圖像處理中，請稍候...</string>
+    <string name="image_process_failed">圖像處理失敗</string>
+    <string name="snapshot_save_failed">保存截圖失敗</string>
+    <string name="add_subject">新增主旨</string>
+    <string name="note_selected">已選擇{0}項</string>
+    <string name="notes_selected">已選擇{0}項</string>
+    <string name="contact_unknown">未知聯繫人</string>
+    <string name="menu_select_all">"全選"</string>
+    <string name="menu_unselect_all">"取消全選"</string>
+    <string name="note_update_failed">百事貼更新失敗</string>
+    <string name="unexpected_failure">百事貼遇到意外錯誤，請稍後嘗試!</string>
+    <string name="note_saved">百事貼已保存。</string>
+    <string name="title_maxLength">主旨已經達成的最大長度。</string>
+    <!-- 2012-10-8, add by amt_sunzhao for SWITCHUITWOV-246 -->
+    <string name="data_processing_wait">資料處理中，請稍候...</string>
+    <!-- 2012-10-8, add end -->
+
+</resources>

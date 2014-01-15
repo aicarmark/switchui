@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!--  Failed View -->
+    
+    <ListView android:id="@+id/new_networks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+    />
+    
+    
+       <TextView android:id="@+id/failmessage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_gravity="center"
+        android:gravity ="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    
+    
+    <!--  Bottom Button Bar  Look 10 Action bar for OK/Cancel -->
+			
+    <!--  
+          Look-10 Action Bar temporarily defined inside smart profiles. to be changed to the one 
+          defined in Motorola SDK later
+     -->
+    <LinearLayout
+       android:id="@+id/edit_fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+    </LinearLayout>
+</LinearLayout>

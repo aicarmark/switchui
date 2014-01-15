@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  font:12pt Verdana;
+  color: #FFF;
+  background-color: #282828;
+  margin: 14px 16px;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#content {
+  background-color: #dddddd;
+  width: 200px;
+  margin-top: 2px;
+}
+
+#moreText {
+  opacity: 0.0;
+  display: none;
+}
+
+#arrow {
+  width: 32;
+  height: 32;
+}

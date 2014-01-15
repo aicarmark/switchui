@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Akkuvoreinstellungen</item>
+    <item>Benutzerdefinierte Einstellungen</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 Minuten</item>
+    <item>30 Minuten</item>
+    <item>45 Minuten</item>
+    <item>60 Minuten</item>
+    <item>Immer eingeschaltet</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>"15 Minuten"</item>
+    <item>"30 Minuten"</item>
+    <item>45 Minuten</item>
+    <item>60 Minuten</item>
+  </string-array>
+</resources>

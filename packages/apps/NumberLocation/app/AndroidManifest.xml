@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.motorola.numberlocation" android:versionCode="1"
+	android:versionName="1.0">
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<application android:icon="@drawable/ic_number_location" android:label="@string/app_name" android:theme="@android:style/Theme.Holo">
+	<receiver android:name=".NumberLocationReceiver">
+		<intent-filter>
+		<!--
+			<action android:name="android.intent.action.BOOT_COMPLETED" />
+			<action android:name="android.intent.action.TIME_SET" />
+			<action android:name="android.intent.action.TIMEZONE_CHANGED" />
+			-->
+		</intent-filter>
+	</receiver>
+		<!-- BLUR - dependencies -->
+<!--		
+        <uses-library android:name="com.motorola.blur.library.service"/>
+        <uses-library android:name="com.motorola.blur.library.utilities"/>
+        <uses-library android:name="com.motorola.blur.library.home"/>
+-->
+		<activity android:label="@string/app_name" android:name=".NumberLocationActivity"
+		android:configChanges="navigation|orientation|keyboardHidden" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".NumberLocationPreferenceActivity" android:label="@string/title_menu_setting" />
+		<service android:name=".NumberLocationService" android:exported="true">
+			<intent-filter>
+				<action android:name="com.motorola.numberlocation.INumberLocationService" />
+				
+                <action android:name="com.motorola.numberlocation.CALL_BACK_SHOW_RESULT" />
+                <action android:name="com.motorola.numberlocation.CALL_BACK_SHOW_PROGRESS" />
+                <action android:name="com.motorola.numberlocation.CALL_BACK_UPDATE_PROGRESS" />
+                <action android:name="com.motorola.numberlocation.CALL_BACK_DISMISS_PROGRESS" />
+                <action android:name="com.motorola.numberlocation.CALL_BACK_SET_PROGRESS_MAX" />
+				<!-- 
+                <action android:name="com.motorola.numberlocation.AUTO_UPDATE" />
+                <action android:name="com.motorola.numberlocation.AUTO_CHECK_SETTING_CHANGED" />
+                -->
+			</intent-filter>
+		</service>
+		<provider android:label="@string/provider_name" android:authorities="com.motorola.numberlocation.provider" android:name=".NumberLocationProvider">
+    </provider>
+	</application>
+	  <supports-screens android:largeScreens="true"
+          android:normalScreens="true"
+          android:smallScreens="true"
+          android:anyDensity="true" />
+	<uses-sdk android:minSdkVersion="8" />
+
+</manifest>  

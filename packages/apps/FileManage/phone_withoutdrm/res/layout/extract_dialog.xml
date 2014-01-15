@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="@dimen/zip_dialog_width"
+            android:layout_height="wrap_content" >
+
+  <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/zip_dialog_padding"
+                android:orientation="vertical" >
+
+    <LinearLayout android:id="@+id/type"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:visibility="gone" >
+
+      <TextView style="?android:attr/textAppearanceSmallInverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zip_prompt_margin"
+                android:text="@string/password_protected_zip"
+                android:textColor="@android:color/primary_text_dark" />
+
+      <TextView style="?android:attr/textAppearanceSmallInverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zip_password_margin"
+                android:text="@string/add_server_password"
+                android:textColor="@android:color/primary_text_dark" />
+
+      <EditText android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:password="true" />
+
+      <CheckBox android:id="@+id/show_password"
+                style="?android:attr/textAppearanceSmallInverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_password"
+                android:textColor="@android:color/primary_text_dark" />
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

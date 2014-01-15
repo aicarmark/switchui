@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Acoustic warning</string>
+  <string name="title">Media volume</string>
+  <string name="warning_text">Listening at high volume for long periods may be harmful to your hearing.\n\nYour music volume has been adjusted below the recommended level.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Správce úloh</string>
+  <string name="tabTasks">Aplikace</string>
+  <string name="tabProcesses">Procesy</string>
+  <string name="buttonEnd">Konec</string>
+  <string name="buttonRefresh">Obnovit</string>
+  <string name="menuSwitch">Přepnout na</string>
+  <string name="menuEndTask">Ukončit úkol</string>
+  <string name="menuCancel">Zrušit</string>
+  <string name="textAvailableMemory">Dostupná paměť:</string>
+  <string name="textAvailableMemoryUnit">P</string>
+  <string name="textNumOfApplications">Počet aplikací:</string>
+  <string name="loading">Načítání\u2026</string>
+</resources>

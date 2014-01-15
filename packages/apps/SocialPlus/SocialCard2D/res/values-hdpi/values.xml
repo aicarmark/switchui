@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="screen_size">1</integer>
+	
+	<integer-array name="shortcut_position_auto">
+	      <item>0</item>   
+          <item>1</item>   
+          <item>2</item>   
+          <item>3</item>   
+          <item>4</item>
+          <item>5</item>   
+          <item>6</item>   
+          <item>7</item>   
+          <item>8</item>
+     </integer-array>
+     
+     <integer-array name="shortcut_size_manual">   
+          <item>1</item>   
+          <item>2</item>   
+          <item>2</item>   
+          <item>2</item>
+          <item>3</item>   
+          <item>3</item>   
+          <item>3</item>   
+          <item>3</item>
+          <item>3</item>   
+     </integer-array>
+	
+	<dimen name="large_size">150px</dimen>
+	<dimen name="medium_size">113px</dimen>
+	<dimen name="small_size">83px</dimen>	
+	
+	<dimen name="large_size_land">129px</dimen>
+	<dimen name="medium_size_land">100px</dimen>
+	<dimen name="small_size_land">72px</dimen>
+	
+	<dimen name="bar_height">30px</dimen>
+	<dimen name="bar_height_land">30px</dimen>
+	
+	<integer name="shortcut_count">9</integer>
+	<integer name="shortcut_big_count">1</integer>
+	<integer name="shortcut_medium_count">3</integer>
+	<integer name="shortcut_small_count">5</integer>
+
+</resources>

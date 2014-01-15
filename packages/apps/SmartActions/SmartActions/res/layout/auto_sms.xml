@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+        
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dip"
+            android:paddingTop="10dip"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dip"
+                android:text="@string/message"
+                android:textSize="14sp"
+                android:textColor="@color/ics_blue"
+                android:gravity = "center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="16dip" />
+
+            <View
+                android:id="@+id/account_filter_header_bottom_divider1"
+                android:layout_height="1dip"
+                android:layout_marginRight="7dip"
+                android:layout_marginLeft="7dip"
+                style="@style/SectionDivider" />
+
+             <EditText
+                android:id="@+id/compose"
+                android:layout_width="fill_parent"
+                android:textSize="20sp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="160"
+                android:hint="@string/compose_hint"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="7dip"
+                android:layout_marginLeft="7dip"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dip"
+                android:text="@string/respond_to_missed"
+                android:textSize="14sp"
+                android:textColor="@color/ics_blue"
+                android:gravity = "center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="10dip" />
+
+            <View
+              android:id="@+id/account_filter_header_bottom_divider2"
+              android:layout_height="1dip"
+              android:layout_marginRight="7dip"
+              android:layout_marginLeft="7dip"
+              style="@style/SectionDivider" />
+
+            <Spinner
+                android:id="@+id/respond_to_event"
+                android:prompt="@string/respond_to_missed"
+                android:layout_height="wrap_content" android:layout_width="fill_parent"
+                android:minHeight="50dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dip"
+                android:text="@string/from"
+                android:textSize="14sp"
+                android:textColor="@color/ics_blue"
+                android:textAllCaps="true"
+                android:gravity = "center_vertical"
+                android:textStyle="bold"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="10dip" />
+            
+            <View
+              android:id="@+id/account_filter_header_bottom_divider3"
+              android:layout_height="1dip"
+              android:layout_marginRight="7dip"
+              android:layout_marginLeft="7dip"
+              style="@style/SectionDivider" />
+
+            <Spinner
+                android:id="@+id/respond_to_contact"
+                android:prompt="@string/from"
+                android:layout_height="wrap_content" android:layout_width="fill_parent"
+                android:minHeight="50dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <com.motorola.contextual.commonutils.chips.AddressEditTextView
+                android:id="@+id/to"
+                style="@style/RecipientEditTextView"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+</LinearLayout>

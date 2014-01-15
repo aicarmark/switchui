@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.motorola.datacollection"
+      android:sharedUserId="android.uid.system"
+      android:versionCode="2"
+      android:versionName="4.1.1.1">
+        
+    <!--  Start: PerformanceStats -->
+    <permission android:name="com.motorola.datacollection.perfstats.WRITE_SETTINGS"
+        android:label="@string/permission_perf_stats_write_label"
+        android:description="@string/permission_perf_stats_write_desc"
+        android:protectionLevel="signatureOrSystem" />
+    
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS" />
+    <!-- End: PerformanceStats -->
+
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application android:label="@string/app_name"
+        android:name="DataCollectionApplication"
+        android:persistent="true"
+        android:process="com.motorola.process.system" >
+
+        <receiver android:name=".DataCollectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".gps.GpsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.location.GPS_ENABLED_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".battery.BatteryHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".pkg.PackageInfoReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".hardkey.HardkeyBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+                <action android:name="android.media.VOLUME_CHANGED_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".accessory.AccessoryReceiver" />
+
+        <receiver android:name=".configinfo.ConfigInfoBroadcastReceiver" />
+
+        <receiver android:name=".unlock.SlideUnlockBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".filesystem.FsFullReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".dock.DockReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOCK_EVENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".tethering.WifiHotSpotReceiver">
+            <intent-filter>
+                <action android:name="com.motorola.mynet.STATE_CHANGED" />
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".sdcard.SdCardBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".accounts.AccountReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".freewifi.WifiScanBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.SCAN_RESULTS" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".DataCollectionSelfService" />
+
+<!--
+        <service android:name=".meter.reader.MeterReader">
+                <intent-filter>
+                        <action android:name="com.motorola.meter.intent.bind" />
+                        <action android:name="com.motorola.collectionservice.intent.bind_framework" />
+                </intent-filter>
+        </service>
+
+        <service android:name=".meter.checkin.MeterReaderCheckIn">
+                <intent-filter>
+                        <action android:name="com.motorola.meter.reader.intent.CHECK_IN_POWER_TOTAL" />
+                        <action android:name="com.motorola.meter.reader.intent.CHECK_IN_POWER_DETAIL" />
+                </intent-filter>
+        </service>
+
+        <receiver android:name=".meter.reader.MeterReaderBootCompleteReceiver">
+                <intent-filter>
+                        <action android:name="android.intent.action.BOOT_COMPLETED" />
+                </intent-filter>
+        </receiver>
+-->
+
+        <receiver android:name=".wifistate.WifiStateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.supplicant.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+<!--
+        <service android:name=".perfstats.PerformanceStatsService">
+            <intent-filter>
+                <action android:name="com.motorola.kpi.perfstats.intent.START_COLLECTION" />
+                <action android:name="com.motorola.kpi.perfstats.intent.STOP_COLLECTION" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".perfstats.PerformanceStatsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <service android:name=".perfstats.PerformanceStatsWorker">
+            <intent-filter>
+                <action android:name="com.motorola.datacollection.perfstats.INTENT_CHECK_IN_DAILY_STATS" />
+                <action android:name="com.motorola.datacollection.perfstats.INTENT_INIT_PERF_STATS" />
+            </intent-filter>
+        </service>
+        
+        <provider android:name=".perfstats.PerformanceStatsSettingsCache"
+            android:authorities="com.motorola.datacollection.perfstats.perfstatssettings" />
+
+        <provider android:name=".perfstats.PerformanceStatsSettingsWriter"
+            android:permission="com.motorola.datacollection.perfstats.WRITE_SETTINGS"
+            android:authorities="com.motorola.datacollection.perfstats.perfstatssettingswriter" />
+        
+        <provider android:name=".perfstats.data.PerformanceStatsDataProvider"
+            android:authorities="com.motorola.datacollection.perfstats.perfstatsdata" />
+        
+-->
+        <!--
+                Do not move this uses-library android.test.runner This has to be
+                inside <application> tag to run unit test for MeterReader
+        -->
+<!--
+        <uses-library android:name="android.test.runner" />
+-->
+
+
+    </application>
+
+    <!--  Android Unit Test for MeterReader -->
+<!--
+    <instrumentation android:targetPackage="com.motorola.datacollection"
+        android:name="android.test.InstrumentationTestRunner" />
+-->
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Número anónimo</string>
+    <string name="visual_voicemail">Correio de voz visual</string>
+    <string name="Data_roaming_msg">Poderá ter encargos adicionais por utilizar correio de voz visual.\n\nPretende utilizar correio de voz visual ou correio de voz normal?</string>
+
+</resources>

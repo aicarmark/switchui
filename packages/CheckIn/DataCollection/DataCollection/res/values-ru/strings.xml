@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Сбор данных</string>
+    <string name="permission_perf_stats_write_label">Запись параметров статистики производительности</string>
+    <string name="permission_perf_stats_write_desc">Позволяет приложению записывать параметры статистики производительности.</string>
+
+</resources>

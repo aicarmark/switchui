@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:layout_marginRight="6dip"
+    android:layout_marginTop="6dip"
+    android:layout_marginBottom="6dip"
+    android:layout_weight="1">
+
+    <View android:id="@+id/conf_call_calendar_color"
+        android:layout_width="10dip"
+        android:layout_height="58dip"
+        android:layout_marginRight="4dip"
+    />
+
+    <CheckBox android:id="@+id/conf_call_select_calendars_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="14dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+    />
+
+    <TextView android:id="@+id/conf_call_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/conf_call_calendar_color"
+        android:layout_toLeftOf="@id/conf_call_select_calendars_checkbox"
+        android:singleLine="true"
+        android:ellipsize="end"
+        style="?android:attr/textAppearanceLarge"
+        android:duplicateParentState="true"
+        android:layout_centerVertical="true"
+    />
+</RelativeLayout>

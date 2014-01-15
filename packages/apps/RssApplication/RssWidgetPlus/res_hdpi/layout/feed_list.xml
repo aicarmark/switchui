@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/feed_name"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="85dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" 
+        android:singleLine="true"
+        />
+
+    <ImageButton
+        android:id="@+id/sub_feed"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/delete"
+        android:layout_centerVertical="true" 
+        android:background="@drawable/button_background"
+        />
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp" 
+        android:layout_marginRight="19dp"
+        android:background="#2FFFFFFF"
+        />
+</RelativeLayout>

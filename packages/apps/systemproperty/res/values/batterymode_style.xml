@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.batteryModeSelectStyle" parent="android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@drawable/popup_2</item>
+    </style>
+    <!-- android:theme="@android:style/Theme.Dialog"  common_bg  popup_2 -->
+    <!--
+    
+    <item name="android:windowBackground">@drawable/popup_2</item>
+    -->
+
+</resources>

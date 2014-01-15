@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView_wrapper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical" 
+    android:layout_marginTop="13dp"
+		android:paddingLeft="13dp"
+		android:paddingRight="13dp"
+		android:paddingBottom="13dp">
+	
+
+    <!-- Rule List -->
+	<ListView android:id="@+id/rule_list"
+	  	android:layout_width="match_parent"
+	    android:layout_height="wrap_content"              
+	    android:drawSelectorOnTop="true"/>
+
+</LinearLayout>

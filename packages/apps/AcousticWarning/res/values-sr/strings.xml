@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Јачина звука медија</string>
+  <string name="warning_text">Дуже слушање при високој јачини звука може да буде штетно по слух.\n\nЈачина звука за музику подешена је тако да буде мања од препорученог нивоа.</string>
+</resources>

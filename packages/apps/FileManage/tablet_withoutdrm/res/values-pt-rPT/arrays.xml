@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Introduzir nome ou IP</item>
+        <item>Procurar servidor</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Adicionar servidor</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>A procurar domínios...</item>
+        <item>A procurar servidores...</item>
+        <item>A ligar ao servidor...</item>
+        <item>a carregar...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Por nome</item>
+        <item>Por tipo</item>
+        <item>Por data/hora</item>
+        <item>Por tamanho</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Sem encriptação</item>
+        <item>Encriptação Legacy (Zip 2.0)</item>
+        <item>Encriptação AES 128 bits</item>
+        <item>Encriptação AES 256 bits</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Armazenamento interno</item>
+        <item>Cartão SD</item>
+    </string-array>
+
+</resources>

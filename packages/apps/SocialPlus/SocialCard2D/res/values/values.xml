@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="history_settings_entries">
+		<item>@string/display_5_events</item>
+        <item>@string/display_10_events</item>
+        <item>@string/display_15_events</item>
+        <item>@string/display_30_events</item>
+	</string-array>
+	
+	<string-array name="history_settings_values">
+		<item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+	</string-array>
+	
+	<string-array name="clear_message_checkbox">
+		<item>@string/clear_message_checkbox</item>
+	</string-array>
+	
+	<string name="internal_empty"> </string>
+</resources>

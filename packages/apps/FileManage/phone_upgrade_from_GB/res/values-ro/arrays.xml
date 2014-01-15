@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="sort_type">
+    <item>"Nume"</item>
+    <item>Data</item>
+    <item>Dimensiune</item>
+    <item>Tip</item>
+  </string-array>
+  <string-array name="network_type">
+    <item>Reţea CDMA</item>
+    <item>Reţea GSM</item>
+  </string-array>
+  <string-array name="search_storage_selector">
+    <item>Spaţiu de stocare intern al telefonului</item>
+    <item>Card SD</item>
+  </string-array>
+</resources>

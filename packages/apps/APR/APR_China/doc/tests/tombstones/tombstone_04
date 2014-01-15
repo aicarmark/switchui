@@ -1,0 +1,288 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'unknown'
+pid: 2180, tid: 2180  >>> zygote <<<
+signal 11 (SIGSEGV), fault addr 00000c98
+ r0 beec79c8  r1 00000033  r2 00000bcc  r3 00000005
+ r4 42082000  r5 4186beb0  r6 beec79c8  r7 000020f8
+ r8 ad00ed00  r9 0000bcf0  10 4186bec4  fp 00000000
+ ip 000000f8  sp beec7988  lr ad018628  pc ad012b24  cpsr 20000010
+         #00  pc 00012b24  /system/lib/libdvm.so
+         #01  pc 00018624  /system/lib/libdvm.so
+         #02  pc 00017bfc  /system/lib/libdvm.so
+         #03  pc 0004b65e  /system/lib/libdvm.so
+         #04  pc 0004b68a  /system/lib/libdvm.so
+         #05  pc 00055814  /system/lib/libdvm.so
+         #06  pc 00056146  /system/lib/libdvm.so
+         #07  pc 0004ffd6  /system/lib/libdvm.so
+         #08  pc 00051820  /system/lib/libdvm.so
+         #09  pc 000138d8  /system/lib/libdvm.so
+         #10  pc 00018624  /system/lib/libdvm.so
+         #11  pc 00017bfc  /system/lib/libdvm.so
+         #12  pc 0004b65e  /system/lib/libdvm.so
+         #13  pc 000385c8  /system/lib/libdvm.so
+         #14  pc 0002a91a  /system/lib/libdvm.so
+         #15  pc 00028c44  /system/lib/libandroid_runtime.so
+         #16  pc 00029908  /system/lib/libandroid_runtime.so
+         #17  pc 00008cae  /system/bin/app_process
+         #18  pc 0000bf56  /system/lib/libc.so
+         #19  pc b0001696  /system/bin/linker
+code:
+ ad012b14   0a0003e7 e5922000 e5922078 e5054008
+ ad012b24   e7920101 eb000327 e1a00000 e1a00000
+stack:
+    beec7948  000f5a80  [heap]
+    beec794c  00000000  
+    beec7950  beec79b8  [stack]
+    beec7954  beec79b8  [stack]
+    beec7958  4186be34  
+    beec795c  beec79b0  [stack]
+    beec7960  4001aa58  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7964  ad051d3d  /system/lib/libdvm.so
+    beec7968  41fa959e  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    beec796c  ad0138dc  /system/lib/libdvm.so
+    beec7970  00000000  
+    beec7974  beec79b0  [stack]
+    beec7978  00015e58  [heap]
+    beec797c  ad0185d0  /system/lib/libdvm.so
+    beec7980  df002777  
+    beec7984  e3a070ad  
+#00 beec7988  0000bcf0  [heap]
+    beec798c  beec79c8  [stack]
+    beec7990  00015e58  [heap]
+    beec7994  ad0185d0  /system/lib/libdvm.so
+    beec7998  beec7a80  [stack]
+    beec799c  ad00ed00  /system/lib/libdvm.so
+    beec79a0  0000bcf0  [heap]
+    beec79a4  4186bec4  
+    beec79a8  00000000  
+    beec79ac  ad018628  /system/lib/libdvm.so
+#01 beec79b0  0000bcf0  [heap]
+    beec79b4  beec79c8  [stack]
+    beec79b8  ad0185d0  /system/lib/libdvm.so
+    beec79bc  ad017c00  /system/lib/libdvm.so
+#02 beec79c0  418974d8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec79c4  00015e58  [heap]
+    beec79c8  4208191c  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    beec79cc  4186beb0  
+    beec79d0  beec79e0  [stack]
+    beec79d4  ad056a6b  /system/lib/libdvm.so
+    beec79d8  41a5d118  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec79dc  00015e58  [heap]
+    beec79e0  0000bcf0  [heap]
+    beec79e4  beec7988  [stack]
+    beec79e8  41869200  
+    beec79ec  0000bcf8  [heap]
+    beec79f0  ad07def4  /system/lib/libdvm.so
+    beec79f4  ad07df88  /system/lib/libdvm.so
+    beec79f8  00000000  
+    beec79fc  00000000  
+    beec7a00  00000001  
+    beec7a04  ad04b1d5  /system/lib/libdvm.so
+    beec7a08  00000000  
+    beec7a0c  00010008  [heap]
+    beec7a10  41a5d118  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7a14  0000bcf0  [heap]
+    beec7a18  beec7a70  [stack]
+    beec7a1c  ad04b661  /system/lib/libdvm.so
+#03 beec7a20  ad07ceb8  /system/lib/libdvm.so
+    beec7a24  4217e7e4  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    beec7a28  beec7a30  [stack]
+    beec7a2c  beec7a80  [stack]
+    beec7a30  00000009  
+    beec7a34  00000000  
+    beec7a38  41a5d118  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7a3c  beec7a70  [stack]
+    beec7a40  0000bcf0  [heap]
+    beec7a44  ad07ceb8  /system/lib/libdvm.so
+    beec7a48  fffe8c80  
+    beec7a4c  ad04b68f  /system/lib/libdvm.so
+#04 beec7a50  beec7a70  [stack]
+    beec7a54  ad07ceb8  /system/lib/libdvm.so
+    beec7a58  fffe8c80  
+    beec7a5c  beec7a70  [stack]
+    beec7a60  ad065b38  /system/lib/libdvm.so
+    beec7a64  401bd7b0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a68  ad055819  /system/lib/libdvm.so
+    beec7a6c  beec7a80  [stack]
+#05 beec7a70  000f32e0  [heap]
+    beec7a74  401bd7b0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a78  401bd7b0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a7c  ad071eeb  /system/lib/libdvm.so
+    beec7a80  40205918  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a84  ad07ceb8  /system/lib/libdvm.so
+    beec7a88  000e7ad0  [heap]
+    beec7a8c  401bd7b0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a90  000e7ad0  [heap]
+    beec7a94  4001a940  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7a98  00000001  
+    beec7a9c  ad05614b  /system/lib/libdvm.so
+#06 beec7aa0  ad07ceb8  /system/lib/libdvm.so
+    beec7aa4  ad04ffdb  /system/lib/libdvm.so
+#07 beec7aa8  000f32e0  [heap]
+    beec7aac  00000022  
+    beec7ab0  ad00ed00  /system/lib/libdvm.so
+    beec7ab4  beec7b18  [stack]
+    beec7ab8  4186bef8  
+    beec7abc  beec7b10  [stack]
+    beec7ac0  40009400  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7ac4  ad051825  /system/lib/libdvm.so
+#08 beec7ac8  41fab78c  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    beec7acc  ad0138dc  /system/lib/libdvm.so
+#09 beec7ad0  afe3a9b8  
+    beec7ad4  beec7b10  [stack]
+    beec7ad8  0003aae8  [heap]
+    beec7adc  ad0185d0  /system/lib/libdvm.so
+    beec7ae0  beec7ba0  [stack]
+    beec7ae4  00000000  
+    beec7ae8  00000000  
+    beec7aec  00000000  
+    beec7af0  00000000  
+    beec7af4  ad018628  /system/lib/libdvm.so
+#10 beec7af8  0000bcf0  [heap]
+    beec7afc  beec7b10  [stack]
+    beec7b00  ad0185d0  /system/lib/libdvm.so
+    beec7b04  ad017c00  /system/lib/libdvm.so
+#11 beec7b08  00000001  
+    beec7b0c  00000001  
+    beec7b10  429381c0  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    beec7b14  4186bfa4  
+    beec7b18  4001a940  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7b1c  00000007  
+    beec7b20  4186df28  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7b24  00015e58  [heap]
+    beec7b28  0000bcf0  [heap]
+    beec7b2c  beec7ad0  [stack]
+    beec7b30  41869200  
+    beec7b34  0000bcf8  [heap]
+    beec7b38  ad07def4  /system/lib/libdvm.so
+    beec7b3c  ad07df88  /system/lib/libdvm.so
+    beec7b40  00000000  
+    beec7b44  00000000  
+    beec7b48  00000001  
+    beec7b4c  ad04b1d5  /system/lib/libdvm.so
+    beec7b50  00000000  
+    beec7b54  00000009  
+    beec7b58  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7b5c  0000bcf0  [heap]
+    beec7b60  beec7c08  [stack]
+    beec7b64  ad04b661  /system/lib/libdvm.so
+#12 beec7b68  ad07ceb8  /system/lib/libdvm.so
+    beec7b6c  42a60969  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    beec7b70  beec7b78  [stack]
+    beec7b74  beec7ba0  [stack]
+    beec7b78  00000001  
+    beec7b7c  00000007  
+    beec7b80  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7b84  0000bcf0  [heap]
+    beec7b88  beec7c04  [stack]
+    beec7b8c  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7b90  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7b94  ad0385cd  /system/lib/libdvm.so
+#13 beec7b98  beec7c04  [stack]
+    beec7b9c  ad0638a0  /system/lib/libdvm.so
+    beec7ba0  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7ba4  ad0638a0  /system/lib/libdvm.so
+    beec7ba8  ad0385ad  /system/lib/libdvm.so
+    beec7bac  0000aa60  [heap]
+    beec7bb0  400254a0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7bb4  ad02a91d  /system/lib/libdvm.so
+#14 beec7bb8  ad0638a0  /system/lib/libdvm.so
+    beec7bbc  ad3543f8  /system/lib/libandroid_runtime.so
+    beec7bc0  400254a0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7bc4  ad0389f1  /system/lib/libdvm.so
+    beec7bc8  0000aa60  [heap]
+    beec7bcc  beec7c04  [stack]
+    beec7bd0  ad3543f8  /system/lib/libandroid_runtime.so
+    beec7bd4  ad02a895  /system/lib/libdvm.so
+    beec7bd8  ad07b8e0  /system/lib/libdvm.so
+    beec7bdc  00076f48  [heap]
+    beec7be0  400254a0  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7be4  ad328c47  /system/lib/libandroid_runtime.so
+#15 beec7be8  00000000  
+    beec7bec  beec7c04  [stack]
+    beec7bf0  00076f48  [heap]
+    beec7bf4  ad02b4d1  /system/lib/libdvm.so
+    beec7bf8  ad368008  /system/lib/libandroid_runtime.so
+    beec7bfc  ad32990d  /system/lib/libandroid_runtime.so
+    beec7c00  418d7950  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    beec7c04  40028888  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+#16 beec7c08  00000000  
+    beec7c0c  40028888  /dev/ashmem/mspace/dalvik-heap/zygote/0 (deleted)
+    beec7c10  00008dd7  /system/bin/app_process
+    beec7c14  00000001  
+    beec7c18  fffffc72  
+    beec7c1c  beec7c38  [stack]
+    beec7c20  00000000  
+    beec7c24  afb0588f  /system/lib/libcutils.so
+    beec7c28  afb0d0c4  /system/lib/libcutils.so
+    beec7c2c  afb0d250  /system/lib/libcutils.so
+    beec7c30  beec7c38  [stack]
+    beec7c34  afb057a5  /system/lib/libcutils.so
+    beec7c38  00000000  
+    beec7c3c  00000000  
+    beec7c40  0000a910  [heap]
+    beec7c44  beec7d0c  [stack]
+    beec7c48  beec7cbc  [stack]
+    beec7c4c  00000001  
+    beec7c50  00000000  
+    beec7c54  a9d1bc87  /system/lib/libutils.so
+    beec7c58  00000000  
+    beec7c5c  beec7c88  [stack]
+    beec7c60  ac13fc70  /system/lib/libskia.so
+    beec7c64  beec7d0c  [stack]
+    beec7c68  00000001  
+    beec7c6c  beec7c88  [stack]
+    beec7c70  00000004  
+    beec7c74  a9d1bcbf  /system/lib/libutils.so
+    beec7c78  beec7d0c  [stack]
+    beec7c7c  ad328ffd  /system/lib/libandroid_runtime.so
+    beec7c80  0016186e  
+    beec7c84  00000000  
+    beec7c88  beec7e11  [stack]
+    beec7c8c  0000aa60  [heap]
+    beec7c90  beec7cb8  [stack]
+    beec7c94  00008dba  /system/bin/app_process
+    beec7c98  00009148  /system/bin/app_process
+    beec7c9c  00000001  
+    beec7ca0  fffffc72  
+    beec7ca4  00008cb1  /system/bin/app_process
+#17 beec7ca8  00000000  
+    beec7cac  00000003  
+    beec7cb0  beec7df9  [stack]
+    beec7cb4  beec7e26  [stack]
+    beec7cb8  00009028  /system/bin/app_process
+    beec7cbc  ad367528  /system/lib/libandroid_runtime.so
+    beec7cc0  0000a920  [heap]
+    beec7cc4  0000000c  
+    beec7cc8  00000000  
+    beec7ccc  00000008  
+    beec7cd0  beec7e1a  [stack]
+    beec7cd4  00000000  
+    beec7cd8  00000000  
+    beec7cdc  00000000  
+    beec7ce0  00000000  
+    beec7ce4  00000000  
+    beec7ce8  00000000  
+    beec7cec  00000000  
+    beec7cf0  00000000  
+    beec7cf4  afe0bf59  /system/lib/libc.so
+#18 beec7cf8  00000000  
+    beec7cfc  b000169b  /system/bin/linker
+#19 beec7d00  00000005  
+    beec7d04  beec7df9  [stack]
+    beec7d08  beec7e11  [stack]
+    beec7d0c  beec7e1a  [stack]
+    beec7d10  beec7e26  [stack]
+    beec7d14  beec7e2f  [stack]
+    beec7d18  00000000  
+    beec7d1c  beec7e45  [stack]
+    beec7d20  beec7e76  [stack]
+    beec7d24  beec7e92  [stack]
+    beec7d28  beec7ea5  [stack]
+    beec7d2c  beec7eba  [stack]
+    beec7d30  beec7ed5  [stack]
+    beec7d34  beec7ee8  [stack]
+    beec7d38  beec7f01  [stack]
+    beec7d3c  beec7fa8  [stack]
+    beec7d40  beec7fcb  [stack]
+    beec7d44  00000000  

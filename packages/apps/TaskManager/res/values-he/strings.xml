@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >"מנהל המשימות"</string>
+ <string name="tabTasks" >"יישומים"</string>
+ <string name="tabProcesses" >"תהליכים"</string>
+ <string name="buttonEnd" >"סיום"</string>
+ <string name="buttonRefresh" >"רענן"</string>
+ <string name="menuSwitch" >"עבור ל"</string>
+ <string name="menuEndTask" >"סיים משימה"</string>
+ <string name="menuCancel" >"ביטול"</string>
+ <string name="textAvailableMemory" >"זיכרון זמין:"</string>
+ <string name="textAvailableMemoryUnit" >"M"</string>
+ <string name="textNumOfApplications" >"מס\' יישומים"</string>
+ <string name="loading" >טוען\u2026</string>
+</resources>

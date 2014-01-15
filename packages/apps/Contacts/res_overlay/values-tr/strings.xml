@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Kısıtlı numara</string>
+    <string name="visual_voicemail">Görsel Sesli Mesaj</string>
+    <string name="Data_roaming_msg">Görsel sesli mesaj kullanma nedeniyle ek ücret ödemeniz gerekebilir.\n\nGörsel sesli mesajı mı, sesli mesajı mı kullanmak istiyorsunuz?</string>
+
+</resources>

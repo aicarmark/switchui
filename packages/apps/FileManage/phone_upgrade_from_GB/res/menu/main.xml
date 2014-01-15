@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:id="@+id/MENU_NEW_FOLDER"
+		android:icon="@drawable/ic_menu_new"
+	    android:showAsAction="ifRoom"
+        android:title="@string/menu_new_folder"/>
+   <item android:id="@+id/MENU_VIEW_SWITCH"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_list_view"
+        android:title="@string/menu_view_switch">
+        <menu>
+            <item android:id="@+id/MENU_LIST_VIEW" 
+                  android:icon = "@drawable/ic_menu_list_view" 
+                  android:title="@string/menu_view_list">
+            </item>
+            <item android:id="@+id/MENU_GRID_VIEW" 
+                  android:icon = "@drawable/ic_menu_grid_view" 
+                  android:title="@string/menu_view_grid">
+            </item>
+        </menu>
+   </item> 
+   
+   <item android:id="@+id/MENU_SEARCH"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_search"
+        android:title="@string/menu_search"/>
+
+   <item android:id="@+id/MENU_SORTING"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_sort"
+        android:title="@string/menu_sorting"/>
+   
+   <item android:id="@+id/MENU_MULTI_SELECT"
+        android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_select_items"
+        android:title="@string/menu_multi_select">
+        <menu> 
+		   <item android:id="@+id/MENU_COPY_CHOICE"
+				android:icon="@drawable/ic_menu_copy"
+		        android:title="@string/menu_copy_choice"/>
+		   
+		   <item android:id="@+id/MENU_MOVE_CHOICE"
+				android:icon="@drawable/ic_menu_move"
+		        android:title="@string/menu_move_choice"/>
+		   
+		   <item android:id="@+id/MENU_DELETE_CHOICE"
+				android:icon="@drawable/ic_menu_delete"
+		        android:title="@string/menu_delete_choice"/>
+		 </menu>
+   </item> 
+   <!-- item android:id="@+id/MENU_HIDEUNHIDE"
+		android:icon="@drawable/ic_menu_hideunhide"
+        android:title="@string/menu_hideunhide"/-->
+       
+   <item android:id="@+id/MENU_PROPERTY"
+       android:showAsAction="ifRoom"
+		android:icon="@drawable/ic_menu_prop"
+        android:title="@string/menu_property"/>
+
+</menu>

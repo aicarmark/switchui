@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Number Location Search"</string>
+    <string name="title_search_help">"Input telephone number to get its location."</string>
+    <string name="title_search_help_city_code">"Input Chinese city name to get its calling codes, please only input Chinese."</string>
+    <string name="title_search_help_country_code">"Input country or region name to get its calling codes."</string>
+    <string name="title_menu_update">"Update database"</string>
+    <string name="title_menu_setting">"About"</string>
+    <string name="title_menu_quit">"Quit"</string>
+    <string name="preferences_setting_title">"Upgrade setting"</string>
+    <string name="preferences_upgrade_info_title">"Upgrade information"</string>
+    <string name="title_preferences_auto_update">"Auto Update"</string>
+    <string name="title_auto_update_inteval">"auto update interval"</string>
+    <string name="title_auto_update_inteval_default">"1 month"</string>
+    <string name="provider_name">"Number Location Provider"</string>
+    <string name="button_cancel">"cancel"</string>
+    <string name="title_package_downloading">"Upgrade package download"</string>
+    <string name="title_database_updating">"Database upgrade"</string>
+    <string name="title_search_result">"Search result"</string>
+    <string name="title_search_result_not_found">"Not found!"</string>
+    <string name="button_close">"close"</string>
+    <string name="title_last_upgrade_timestamp">"Last upgrade time"</string>
+    <string name="title_last_upgrade_timestamp_default">"Never upgrade"</string>
+    <string name="title_database_version">"Number location database version"</string>
+    <string name="title_database_version_default">""</string>
+    <string name="title_update_result">"Database upgrade result"</string>
+    <string name="title_update_successfully">"Database upgrade successfully!"</string>
+    <string name="title_update_not_found">"Database version is the latest!"</string>
+    <string name="title_network_fail">"Network error, please check it and try again!"</string>
+    <string name="title_update_user_cancel">"Database upgrade has been canceled!"</string>
+    <string name="string_calendar_am">"AM"</string>
+    <string name="string_calendar_pm">"PM"</string>
+    <string name="title_network_cost_warning">"Disclaimer"</string>
+    <string name="string_network_cost_warning">"This action will incur data charge. Please refer to charging information from your carrier for more details. This service is only available to users with internet connection.
+By clicking on OK, you acknowledge you have read and agreed with terms above."</string>
+    <string name="string_next_time">"Don't show me again"</string>
+    <string name="btn_accept">OK</string>
+    <string name="btn_reject">Cancel</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_1">"中国"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_2">"中华人民共和国"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_en_1">"China"</string>
+    <string name="string_countryNameTraditionalConvertMapping_cn_en_2">"Mainland China"</string>
+    <string name="string_countryNameTraditionalConvertMapping_usa_1">"USA"</string>
+    <string name="string_countryNameTraditionalConvertMapping_usa_2">"United States of America"</string>
+    <!--begin 	IKCHNDEV-1245 cvmq63  -->
+    <string name="title_input_phone_nbumber">"Please input telephone number"</string>
+    <string name="title_input_city_name">"Please input Chinese city name"</string>
+    <string name="title_input_country_name">"Please input country or region name"</string>
+    <!--end   IKCHNDEV-1245 cvmq63 -->
+</resources>

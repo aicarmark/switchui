@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>10 dakika</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Çağrılar ve kısa mesajlar</item>
+        <item>Yalnızca çağrılar</item>
+        <item>Yalnızca kısa mesajlar</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Tüm numaralar</item>
+        <item>Tüm telefon rehberi kişileri</item>
+        <item>Seçili kişiler</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Mesaj tüm telefon numaralarına gönderilecek.</item>
+        <item>Mesaj telefon rehberinizde kayıtlı tüm numaralara gönderilecek.</item>
+        <item>Mesaj yalnızca seçili numaralara gönderilecek.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Maksimum</item>
+        <item>Yüksek</item>
+        <item>Orta</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Kısa mesaj gönderenin adı</item>
+        <item>Arayan kişinin adı</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Ev</item>
+        <item>İş</item>
+        <item>Okul</item>
+        <item>Özel</item>
+    </string-array>
+
+</resources>

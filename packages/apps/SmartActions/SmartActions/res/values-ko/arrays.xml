@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15초</item>
+        <item>30초</item>
+        <item>1분</item>
+        <item>2분</item>
+        <item>10분</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>통화와 문자 모두</item>
+        <item>통화만</item>
+        <item>문자만</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>모든 번호</item>
+        <item>모든 주소록 연락처</item>
+        <item>선택한 연락처</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>모든 전화 번호에 대해 응답합니다.</item>
+        <item>주소록에 저장된 모든 번호에 대해서만 응답합니다.</item>
+        <item>선택한 번호로만 응답합니다.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>최대</item>
+        <item>높음</item>
+        <item>보통</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>문자 메시지 보낸 사람 이름</item>
+        <item>발신자 이름</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>홈</item>
+        <item>직장</item>
+        <item>학교</item>
+        <item>사용자 설정</item>
+    </string-array>
+
+</resources>

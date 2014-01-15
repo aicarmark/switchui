@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >Botão de widgets</string>
+ <string name="gps_app_name" >Botão de GPS</string>
+ <string name="airplane_app_name" >Botão de modo avião</string>
+ <string name="wifi_app_name" >Botão de Wi-Fi</string>
+ <string name="bluetooth_app_name" >Botão de Bluetooth</string>
+ <string name="apn_app_name" >Botão de APN</string>
+ <string name="data_app_name" >Botão de dados</string>
+ <string name="widget_description" >Veja e controle o status do modo avião</string>
+ <string name="widget_description_bt" >Veja e controle o status do Bluetooth</string>
+ <string name="widget_description_wifi" >Veja e controle o status de Wi-Fi</string>
+ <string name="widget_description_gps" >Veja e controle o status do GPS</string>
+ <string name="StatusOn" >SIM</string>
+ <string name="StatusOff" >NÃO</string>
+ <string name="StatusIntermediate" >""</string>
+ <string name="AirplanetoastText" >Modo avião está indisponível.</string>
+ <string name="BluetoothtoastText" >Bluetooth está indisponível.</string>
+ <string name="GPStoastText" >GPS está indisponível.</string>
+ <string name="WifitoastText" >Wi-Fi está indisponível.</string>
+ <string name="location_restriction_enabled" >Restrição da localização está ativa.</string>
+ <string name="apncontrol_app_name" >Controle APN</string>
+ <string name="no_apn" >Sem APN disponível.</string>
+</resources>

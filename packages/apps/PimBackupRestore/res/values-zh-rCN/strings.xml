@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2009 Motorola
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="sdcard_backup_restore">数据备份</string>
+    <string name="backup_title">一键备份</string>
+    <string name="backup_summary">自动备份联系人、信息、百事贴、日历、已安装应用程序</string>
+    <string name="restore_title">一键恢复</string>
+    <string name="restore_summary">自动恢复联系人、信息、百事贴、日历、应用程序</string>
+    <string name="import3rd_title">从指定文件导入</string>
+    <string name="import3rd_summary">从指定文件、目录导入联系人、信息、百事贴、日历</string>
+    <string name="ExportByAccount_title">从指定账户导出联系人</string>
+    <string name="ExportByAccount_summary">从手机、手机卡、公司账户等导出联系人</string>
+    <string name="contacts">联系人</string>
+    <string name="sms">信息</string>
+    <string name="quicknote">百事贴</string>
+    <string name="calendar">日历</string>
+    <string name="installed_app">已安装应用程序</string>
+    <string name="bookmark">书签</string>
+    <string name="available_backup_file">可用的备份文件</string>
+    <string name="file">从指定文件中导入联系人、信息、百事贴、日历</string>
+    <string name="folder">从指定文件夹中导入联系人、信息、百事贴、日历</string>
+    <string name="select_account">请选择指定账户</string>
+    <string name="local_contacts">手机联系人</string>
+    <string name="cCard_contacts">CDMA卡联系人</string>
+    <string name="gCard_contacts">SIM卡联系人</string>
+    <string name="gAccount_contacts">Google账户联系人</string>
+    <string name="eAccount_contacts">公司账户联系人</string>
+    <string name="account">账户</string>
+    <string name="google">谷歌</string>
+    <string name="mobile">手机</string>
+    <string name="local">本地</string>
+    <string name="corporate">公司</string>
+    <string name="app">应用程序</string>
+    <string name="inner_storage">手机闪存</string>
+    <string name="outer_storage">SD卡</string>
+    <string name="all_storage">手机闪存和SD卡</string>
+    <string name="back">返回</string>
+    <string name="items">条目</string>
+    <string name="files">文件</string>
+    <string name="summary_contact">联系人</string>
+    <string name="summary_sms">信息</string>
+    <string name="summary_quicknote">百事贴</string>
+    <string name="summary_calendar">日历</string>
+    <string name="summary_app">应用程序</string>
+    <string name="summary_bookmark">书签</string>
+    <string name="items_num_show"><xliff:g id="items_num">%s</xliff:g>个<xliff:g id="items_type">%s</xliff:g></string>
+    <string name="no_item">没有<xliff:g id="items_type">%s</xliff:g></string>
+    <string name="backup">备份</string>
+    <string name="backup_to_sdcard">备份<xliff:g id="contentType">%s</xliff:g>至<xliff:g id="storageType">%s</xliff:g></string>
+    <string name="backup_content">备份<xliff:g id="contentType">%s</xliff:g></string>
+    <string name="backuping">正在备份<xliff:g id="type">%s</xliff:g></string>
+    <string name="restore">恢复</string>
+    <string name="restore_to_phone">恢复<xliff:g id="contentType">%s</xliff:g>至手机</string>
+    <string name="restore_content">恢复<xliff:g id="contentType">%s</xliff:g></string>
+    <string name="restoring">正在恢复<xliff:g id="type">%s</xliff:g></string>
+    <string name="import3rd">导入</string>
+    <string name="import3rd_from_sd">导入<xliff:g id="contentType">%s</xliff:g>至手机</string>
+    <string name="import3rd_content">从<xliff:g id="storageType">%s</xliff:g>中导入<xliff:g id="contentType">%s</xliff:g></string>
+    <string name="import3rding0">正在导入<xliff:g id="type">%s</xliff:g>文件 (<xliff:g id="currentCount">%s</xliff:g>/<xliff:g id="totalCount">%s</xliff:g>): <xliff:g id="fileName">%s</xliff:g></string>
+    <string name="import3rding">正在导入<xliff:g id="type">%s</xliff:g>文件<xliff:g id="fname">%s</xliff:g></string>
+    <string name="export">导出</string>
+    <string name="export_to_sdcard">导出<xliff:g id="contentType">%s</xliff:g>至<xliff:g id="storageType">%s</xliff:g></string>
+    <string name="export_content">导出<xliff:g id="contentType">%s</xliff:g></string>
+    <string name="exporting">正在导出<xliff:g id="type">%s</xliff:g></string>
+    <string name="delete_backup_folder">您上次备份的<xliff:g id="contentType">%s</xliff:g>文件将被删除，您是否希望继续？</string>
+    <string name="replace_old_backup_file">您上次备份的以下文件将被覆盖，您是否希望继续?<xliff:g id="item_list">%s</xliff:g></string>
+    <string name="progressbar_title">处理中......</string>
+    <string name="no_content_found">对不起，您的<xliff:g id="contentType">%s</xliff:g>上没有发现<xliff:g id="storageType">%s</xliff:g>。</string>
+    <string name="phone">手机</string>
+    <string name="sdcard">SD卡</string>
+    <string name="would_like_to_do_operation_only">您希望只<xliff:g id="opeartionType">%s</xliff:g><xliff:g id="contentType">%s</xliff:g>吗?</string>
+    <string name="contacts_and_sms">联系人和信息</string>
+    <string name="delete">删除</string>
+    <string name="replace">覆盖</string>
+    <string name="setting">设置</string>
+    <string name="proceed">继续</string>
+    <string name="cancel_button_text">取消</string>
+    <string name="vcard_suffix">.vcf</string>
+    <string name="vmg_suffix">.vmg</string>
+    <string name="no_sdcard">SD卡不可用！</string>
+    <string name="no_sdcard_and_internal_sdcard">SD卡和手机内存不可用！</string>
+    <string name="read_sdcard_error">读取文件失败</string>
+    <string name="read_phone_db_error">读取手机数据失败</string>
+    <string name="write_sdcard_error">写文件失败</string>
+    <string name="write_phone_db_error">写入手机失败</string>
+    <string name="sdcard_readonly">文件系统写保护或备份文件夹为只读。</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="insufficient_space"><xliff:g id="storageType">%s</xliff:g>上空间不足</string>
+    <string name="service_busy">备份和恢复服务忙，请稍后重试。</string>
+    <string name="copy_files_failed">复制文件失败</string>
+    <string name="sdcard_is_unavailable">SD卡不可用，数据将备份到手机闪存中！</string>
+    <string name="encryption_is_enable">您的手机已经被设置为闪存加密，将要备份的数据会受到影响，并且不能再其他设备上正确恢复。</string>
+    <string name="prohibit_install">安装指南</string>
+    <string name="non_market_app">为了安全起见，您的手机已设置为只安装从Play ﻿商店中获取的应用程序。如果您想安装从其它渠道获取的应用程序，请按“设置”，勾选“未知来源”，然后返回并安装应用程序。</string>
+    <string name="final_success_result">已<xliff:g id="operationType">%s</xliff:g>以下数据<xliff:g id="from_or_to">%s</xliff:g><xliff:g id="storageType">%s</xliff:g><xliff:g id="path">%s</xliff:g>："\r\n"<xliff:g id="itemList">%s</xliff:g></string>
+    <string name="final_failed_result"><xliff:g id="operationType">%s</xliff:g>以下数据失败："\r\n"<xliff:g id="itemList">%s</xliff:g></string>
+    <string name="from">从</string>
+    <string name="to">至</string>
+    <string name="item_list"><xliff:g id="item_type">%s</xliff:g>：<xliff:g id="result">%s</xliff:g></string>
+    <string name="done">完成<xliff:g id="actual">%s</xliff:g>个<xliff:g id="piece_type">%s</xliff:g>，总共<xliff:g id="total">%s</xliff:g>个<xliff:g id="piece_type">%s</xliff:g>。</string>
+    <string name="cancel">操作被取消。</string>
+    <string name="operation_cancel"><xliff:g id="operationType">%s</xliff:g><xliff:g id="contentType">%s</xliff:g>操作已取消</string>
+    <string name="cancel_finished_single"><xliff:g id="actual">%s</xliff:g>/<xliff:g id="total">%s</xliff:g>个<xliff:g id="contentType">%s</xliff:g><xliff:g id="itemType">%s</xliff:g>已完成</string>
+    <string name="cancel_finished_both"><xliff:g id="actual">%s</xliff:g>/<xliff:g id="total">%s</xliff:g>个<xliff:g id="contentType">%s</xliff:g><xliff:g id="itemType">%s</xliff:g>和<xliff:g id="actual">%s</xliff:g>/<xliff:g id="total">%s</xliff:g>个<xliff:g id="contentType">%s</xliff:g><xliff:g id="itemType">%s</xliff:g>已完成</string>
+    <string name="sdcard_file_contents_error">抱歉，读取格式有误，程序终止！</string>
+    <string name="sdcard_file_type_error">抱歉，文件格式有误，请选取后缀名为<xliff:g id="file_suffix">%s</xliff:g>的文件</string>
+    <string name="out_of_memory_error">抱歉，手机内存不足，恢复操作失败！</string>
+    <string name="dir_not_exist">对不起，文件夹 <xliff:g id="default_folder">%s</xliff:g>不存在，请从指定文件或文件夹中导入。</string>
+    <string name="operation_is_cancelling">正在取消......</string>
+    <string name="operation_is_doing">正在进行......</string>
+    <string name="prepare_for_backup">正在准备......</string>
+    <string name="mms_default_string">彩信</string>
+    <string name="more_string_display"> ...</string>
+    <string name="is_calculating">正在计算 ...</string>
+    <string name="not_support_unsaved_vcard_file">请将联系人文件保存到本地后再查看。</string>
+    <string name="caution">注意</string>
+    <string name="not_show_anymore">下次不再显示</string>
+    <string name="disclaimer_content">SD卡不可用，数据将备份到手机闪存中！一旦恢复出厂设置后，手机闪存上的备份数据将会全部丢失。</string>
+    <string name="popup_cancel_ongoing_title">取消操作</string>
+    <string name="popup_complete_result_title">完成</string>
+    <string name="popup_cancel_ongoing_body">您想取消操作吗？</string>
+    <string name="popup_cancel_button">是的，取消操作</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="importVCardDesription">导入 vCard 文件</string>
+
+</resources>

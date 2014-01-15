@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.motorola.contextual.actions.TimingPreference android:key="@string/Timing"
+                android:persistent="false"
+                android:title="@string/Timing">
+        </com.motorola.contextual.actions.TimingPreference>
+
+</PreferenceScreen>

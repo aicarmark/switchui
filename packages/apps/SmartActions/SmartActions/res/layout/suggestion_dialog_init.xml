@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sg_rule_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- Rule Title -->
+        <LinearLayout
+            android:id="@+id/sg_rule_title_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingTop="13dip" >
+
+            <TextView
+                android:id="@+id/sg_rule_title_txt"
+                style="@style/Suggestion.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sg_get_started" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sg_text_two"
+            style="@style/Suggestion.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:text="@string/sg_initial_text" />
+    </LinearLayout>
+</ScrollView>

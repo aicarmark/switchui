@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="bottom"
+  android:id="@+id/tit_frag">
+
+  <LinearLayout android:id="@+id/search_heading"
+    android:layout_height="wrap_content" android:layout_width="fill_parent"
+    android:background="@drawable/header_holo" android:orientation="horizontal"
+    android:visibility="gone">
+
+    <TextView android:id="@+id/search_result_text"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:singleLine="true" android:ellipsize="end"
+      android:paddingLeft="@dimen/search_item_padding"
+      android:layout_gravity="center_vertical" android:layout_weight="@fraction/weight_one"
+      android:layout_height="wrap_content" android:layout_width="@dimen/search_item_width" />
+
+    <TextView android:id="@+id/search_result_count"
+      android:textAppearance="?android:attr/textAppearanceSmall"
+      android:singleLine="true" android:ellipsize="none"
+      android:paddingLeft="@dimen/search_item_padding"
+      android:paddingRight="@dimen/search_item_padding"
+      android:paddingBottom="@dimen/search_item_padding"
+      android:layout_gravity="bottom" android:gravity="right"
+      android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <ListView android:id="@+id/file_list_t" android:layout_width="fill_parent"
+    android:layout_height="@dimen/tfilelist_item_height"
+    android:layout_weight="@fraction/weight_one" />
+
+  <TextView android:id="@+id/empty_text" android:layout_width="fill_parent"
+    android:layout_height="@dimen/tfilelist_item_height"
+    android:layout_weight="@fraction/weight_one" android:visibility="gone"
+    android:text="@string/this_folder_is_empty" android:textAppearance="?android:attr/textAppearanceMedium"
+    android:gravity="center" />
+</LinearLayout>

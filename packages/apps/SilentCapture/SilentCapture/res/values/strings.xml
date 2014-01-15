@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+
+    <!-- Application name -->
+    <string name="application_name">Silent Capture</string>
+    <!-- Title of setting activity -->
+    <string name="title">Silent Capture Setting</string>
+
+    <!-- Strings for auto launch preference -->
+    <string name="auto_launch">Automatically launch service</string>
+    <string name="launch_summary_on">Be launched while BT headset connected</string>
+    <string name="launch_summary_off">Service closed</string>
+
+    <!-- Strings for exiting preview while screen turns on -->
+    <string name="screen_on_exit">Screen-on to exit preview</string>
+    <string name="screen_summary_on">Exit preview while screen turns on</string>
+    <string name="screen_summary_off">Support screen-on preview</string>
+
+</resources>

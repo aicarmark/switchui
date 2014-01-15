@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/actionBlockOverlay"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<!-- Connector to the Block -->
+	<ImageView
+		android:id="@+id/actionconnectorBlockToBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/sr_bar_connector"
+		android:contentDescription="@string/block_connector_image_desc"
+		android:layout_marginTop="1dp"
+		android:layout_centerVertical="true" 
+		android:layout_marginLeft="14dp" />
+
+	<!-- Start of BLOCK layout -->
+	<RelativeLayout
+		android:id="@+id/BlockContainer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:minHeight="90dp"
+		android:background="@drawable/sr_block_normal"
+		android:paddingBottom="15dp"
+		android:layout_marginRight="32dp" 
+		android:layout_marginLeft="20dp" 
+		android:paddingLeft="18dp" 
+		android:paddingTop="5dp"
+		android:includeFontPadding="true" 
+		android:paddingRight="62dp">
+
+		<!-- Status indicator light -->
+		<ImageView
+			android:id="@+id/blockStatusInd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/status_indicator_disabled"
+			android:contentDescription="@string/block_status_ind_image_desc"
+			android:layout_centerVertical="true"/>
+
+		<!-- ICON -->
+		<ImageView
+			android:id="@+id/actionblockImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/blockStatusInd"
+			android:src="@drawable/ic_location_w"
+			android:contentDescription="@string/block_icon_image_desc"
+			android:layout_marginTop="13dp"	/>
+
+		<LinearLayout
+				android:orientation="vertical"
+				android:id="@+id/outerTextContainer"
+				android:layout_toRightOf="@+id/actionblockImg"
+				android:layout_centerVertical="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+			<TextView
+				android:id="@+id/actiontitle"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"				
+				android:textColor="#fff"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:text="@string/empty_string" 
+			/>	
+			
+			<TextView
+				android:id="@+id/actiondescription"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#fff"
+				android:textSize="15sp"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:paddingBottom="3dp"
+				android:includeFontPadding="true"
+				android:text="@string/description" 
+				/>			
+	            
+			<TextView
+	            android:id="@+id/actionStatus"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/suggestion_green"
+	            android:textSize="15sp"
+	            android:paddingBottom="3dp"
+	           />
+         </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

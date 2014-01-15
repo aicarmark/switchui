@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+    *                          Motorola Confidential Proprietary
+    *                 Copyright (C) 2009 Motorola, Inc.  All Rights Reserved.
+    *
+    *
+    * Revision History:
+    *                           Modification    Tracking
+    * Author                      Date          Number     Description of Changes
+    * ~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~    ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~
+    *  vhj374                    2009-04-27   ...LIByyXXXXX   First Version for CityClock
+    */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="clock_style_entries">
+        <item>Analógico</item>
+        <item>Digital</item>
+    </string-array>
+
+</resources>

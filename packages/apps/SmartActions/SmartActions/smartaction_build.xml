@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SmartActions-build-customization">
+
+    <!-- This macro signs in.package and outputs it to out.package using in.certificate.class. 
+         Used by release target. -->
+    <macrodef name="sign-helper">
+        <attribute name="in.package" />
+        <attribute name="out.package" />
+        <attribute name="in.certificate.class" />
+        <sequential>
+            <echo>Signing apk with '@{in.certificate.class}' certificate-class...</echo>
+            <java jar="${signjar}" fork="true">
+                <arg value="${certificate.path}/@{in.certificate.class}.x509.pem"/>
+                <arg value="${certificate.path}/@{in.certificate.class}.pk8"/>
+                <arg value="@{in.package}"/>
+                <arg value="@{out.package}"/>
+            </java>
+        </sequential>
+    </macrodef>
+
+    <!-- This macro builds application customized for in.carrier. Used by release target. -->
+    <macrodef name="customize-for-carrier-helper">
+        <attribute name="in.carrier" />
+        <sequential>
+            <echo>--------------------------------------------</echo>
+            <echo>Customizing '${ant.project.name}' build for '@{in.carrier}'</echo>
+            <echo>--------------------------------------------</echo>
+
+            <!-- Make copy of application manifest for customization -->
+            <move file="AndroidManifest.xml" tofile="AndroidManifest.xml_ORIGINAL_" preservelastmodified="true" />
+            <copy file="AndroidManifest.xml_ORIGINAL_" tofile="AndroidManifest.xml" />
+
+            <!-- Replace application package in manifest with carrier specific one -->
+            <replace file="AndroidManifest.xml" 
+                token="package=&quot;${app.package}&quot;" 
+                value="package=&quot;${app.package}.@{in.carrier}&quot;" 
+                failOnNoReplacements="true" />
+
+            <!-- Copy all res files to a temporary location -->
+            <property name="local.tmpresdir" value="_TEMP_RES_" />
+            <delete dir="${local.tmpresdir}" quiet="true" failonerror="false" />
+            <mkdir dir="${local.tmpresdir}" />
+            <copy todir="${local.tmpresdir}">
+                <fileset dir="${resource.absolute.dir}" />
+            </copy>
+            <move file="${resource.absolute.dir}" tofile="${resource.absolute.dir}_ORIGINAL_" preservelastmodified="true" />
+            <move file="${local.tmpresdir}" tofile="${resource.absolute.dir}" />
+        
+            <!-- Overwrite default application icon resource with carrier's -->
+            <copy todir="${resource.absolute.dir}" overwrite="true">
+                <fileset dir="${resource.absolute.dir}-@{in.carrier}" />
+            </copy>
+        
+            <!-- Copy all src files to a temporary location -->
+            <property name="local.tmpsrcdir" value="_TEMP_SRC_" />
+            <delete dir="${local.tmpsrcdir}" quiet="true" failonerror="false" />
+            <mkdir dir="${local.tmpsrcdir}" />
+            <copy todir="${local.tmpsrcdir}">
+                <fileset dir="${source.dir}" />
+            </copy>
+            <move file="${source.dir}" tofile="${source.dir}_ORIGINAL_" preservelastmodified="true" />
+            <move file="${local.tmpsrcdir}" tofile="${source.dir}" />
+        
+            <!-- Replace package name for R class import statements --> 
+            <replace dir="${source.dir}"
+                token="import ${app.package}.R;" 
+                value="import ${app.package}.@{in.carrier}.R;">
+                <include name="**/*.java" />
+            </replace>
+ 
+            <echo>----------------------------------</echo>
+            <echo>Building '${ant.project.name}' for '@{in.carrier}'</echo>
+            <echo>----------------------------------</echo>
+            <antcall target="release">
+                <param name="carrier" value="@{in.carrier}"/>
+            </antcall>
+
+            <!-- Clean up -->
+            <antcall target="carrier-clean-up" />
+        </sequential>
+    </macrodef>
+
+    <!-- Clean up temporary changes done by carrier build -->
+    <target name="carrier-clean-up">
+        <!-- Delete temporary files/directories used for carrier build and restore original ones -->
+        <if>
+            <condition>
+                <resourceexists>
+                    <file file="${resource.absolute.dir}_ORIGINAL_"/>
+                </resourceexists>
+            </condition>
+            <then>
+                <delete dir="${resource.absolute.dir}" quiet="false" failonerror="false"/>
+                <move file="${resource.absolute.dir}_ORIGINAL_" tofile="${resource.absolute.dir}" preservelastmodified="true" failonerror="false" />
+            </then>
+        </if>
+        <if>
+            <condition>
+                <resourceexists>
+                    <file file="${source.dir}_ORIGINAL_"/>
+                </resourceexists>
+            </condition>
+            <then>
+                <delete dir="${source.dir}" quiet="false" failonerror="false"/>
+                <move file="${source.dir}_ORIGINAL_" tofile="${source.dir}" preservelastmodified="true" failonerror="false" />
+            </then>
+        </if>
+        <if>
+            <condition>
+                <resourceexists>
+                    <file file="AndroidManifest.xml_ORIGINAL_"/>
+                </resourceexists>
+            </condition>
+            <then>
+                <move file="AndroidManifest.xml_ORIGINAL_" tofile="AndroidManifest.xml" preservelastmodified="true" failonerror="false" />
+            </then>
+        </if>
+    </target>
+
+    <!-- Customization of the release target from <SDK>/tools/ant/build.xml to sign apk using Motorola cert -->
+    <target name="release"
+                depends="-pre-set-release-mode, -set-release-mode, -release-obfuscation-check, -package">
+
+        <!-- only create apk if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not create apk..." >
+            <sequential>
+                <property name="out.unaligned.file" location="${out.absolute.dir}/${ant.project.name}-release-unaligned.apk" />
+
+                <!-- Set release APK file name -->
+                <property name="carrier" value="default" />
+                <if>
+                    <condition>
+                        <equals arg1="${carrier}" arg2="default"/>
+                    </condition>
+                    <then>
+                         <property name="release-apk-file" location="${out.absolute.dir}/${ant.project.name}.apk" />
+                    </then>
+                    <else>
+                        <property name="release-apk-file" location="${out.absolute.dir}/${ant.project.name}-${carrier}.apk" />
+                    </else>
+                </if>
+
+                <!-- Signs the APK -->
+                <sign-helper in.package="${out.packaged.file}"
+                             out.package="${out.unaligned.file}"
+                             in.certificate.class="${certificate.class}" />
+                <delete file="${out.packaged.file}" />
+
+                <!-- Zip aligns the APK -->
+                <zipalign-helper in.package="${out.unaligned.file}"
+                                 out.package="${release-apk-file}" />
+                <delete file="${out.unaligned.file}" />
+
+                <echo>------------------------------------</echo>
+                <echo>Release Package: ${release-apk-file}</echo>
+                <echo>------------------------------------</echo>
+            </sequential>
+        </do-only-if-not-library>
+        <record-build-info />
+    </target>
+
+    <target name="installr" depends="-pre-set-release-mode, install"
+            description="Installs (only) the release package." />
+
+    <!-- debug target has been customized to match release target, so this has to match too -->
+    <target name="installd" depends="installr"
+            description="Installs (only) the debug package." />
+
+    <target name="findbugs" depends="release">
+        <path id="antclasspath">
+            <pathelement path="${anttasks.dir}/mot/mot-taskdefs.jar"/>
+            <pathelement path="${anttasks.dir}/findbugs-1.3.9/lib/findbugs-ant.jar"/>
+        </path>
+        <taskdef name="findbugs"
+                classname="com.motorola.tools.ant.taskdefs.FindBugs"
+                classpathref="antclasspath"/>
+        <findbugs home="${anttasks.dir}/findbugs-1.3.9"
+                jvmargs="-Xmx512M"
+                output="html"
+                outputFile="Messaging-bug-report.html"
+                warningsproperty="findbugs.warnings">
+            <auxClasspath>
+                <path>
+                    <pathelement location="${sdk.dir}/platforms/android-10/android.jar"/>
+                </path>
+            </auxClasspath>
+            <class location="${out.dir}/classes"/>
+            <sourcePath>
+                <path>
+                    <pathelement location="${source.dir}"/>
+                </path>
+            </sourcePath>
+            <excludeFile>
+                <path>
+                    <pathelement location="findbugs-exclude.xml"/>
+                </path>
+            </excludeFile>
+        </findbugs>
+        <fail message="Error: Bugs found, please review findbugs report.">
+            <condition>
+                <isset property="findbugs.warnings"/>
+            </condition>
+        </fail>
+    </target>
+
+    <!-- Customization of the debug target from <SDK>/tools/ant/build.xml to make it equivalent to release target -->
+    <target name="debug" depends="release" />
+    <property name="out.debug.file" location="bin/${out.release.file.name}" />
+
+    <!-- Customization of the help target from <SDK>/tools/ant/build.xml to include new targets -->
+    <target name="help">
+        <!-- displays starts at col 13
+              |13                                                              80| -->
+        <echo>Android Ant Build. Available targets:</echo>
+        <echo>   help:      Displays this help.</echo>
+        <echo>   clean:     Removes output files created by other targets.</echo>
+        <echo>              The 'all' target can be used to clean dependencies</echo>
+        <echo>              (tested projects and libraries)at the same time</echo>
+        <echo>              using: 'ant all clean'</echo>
+        <echo>   default:   Builds the default application, not customized</echo>
+        <echo>              for any carrier.</echo>
+        <echo>   att:       Builds the application customized for att</echo>
+        <echo>              carrier.</echo>
+        <echo>   claro_generic: Builds the application customized for</echo>
+        <echo>                  claro_generic carrier.</echo>
+        <echo>   findbugs:  Builds the default application, generates</echo>
+        <echo>              the findbugs report.</echo>
+        <echo>   debug:     Builds the application and signs it with a debug key.</echo>
+        <echo>   release:   Builds the application and signs it with common</echo>
+        <echo>              certificate.</echo>
+        <echo>   instrument:Builds an instrumented package and signs it with a</echo>
+        <echo>              debug key.</echo>
+        <echo>   test:      Runs the tests. Project must be a test project and</echo>
+        <echo>              must have been built. Typical usage would be:</echo>
+        <echo>                  ant [emma] debug installt test</echo>
+        <echo>   emma:      Transiently enables code coverage for subsequent</echo>
+        <echo>              targets.</echo>
+        <echo>   install:   Installs the newly build package. Must either be used</echo>
+        <echo>              in conjunction with a build target (debug/release/</echo>
+        <echo>              instrument) or with the proper suffix indicating</echo>
+        <echo>              which package to install (see below).</echo>
+        <echo>              If the application was previously installed, the</echo>
+        <echo>              application is reinstalled if the signature matches.</echo>
+        <echo>   install-system: Installs package to device system partition.</echo>
+        <echo>   installd:  Installs (only) the debug package.</echo>
+        <echo>   installr:  Installs (only) the release package.</echo>
+        <echo>   installi:  Installs (only) the instrumented package.</echo>
+        <echo>   installt:  Installs (only) the test and tested packages.</echo>
+        <echo>   uninstall: Uninstalls the application from a running emulator or</echo>
+        <echo>              device.</echo>
+
+    </target>
+
+    <!-- Build default application, not customized for any carrier --> 
+    <target name="default" depends="release" />
+
+    <!-- Build application customized for att carrier --> 
+    <target name="att" depends="carrier-clean-up">
+        <customize-for-carrier-helper in.carrier="att" />
+    </target>
+
+    <!-- Build application customized for claro_generic carrier --> 
+    <target name="claro_generic" depends="carrier-clean-up">
+        <customize-for-carrier-helper in.carrier="claro_generic" />
+    </target>
+
+    <!-- Fix release apk name -->
+    <target name="-pre-set-release-mode" depends="-set-mode-check">
+        <property name="out.final.file" location="${out.absolute.dir}/${ant.project.name}.apk" />
+    </target>
+
+    <!-- Install package to device system partition -->
+    <target name="install-system" depends="-pre-set-release-mode">
+        <echo>Remount 'USB device' system partition to read-write...</echo>
+        <exec executable="${adb}" failonerror="true">
+            <arg value="-d"/>
+            <arg value="remount"/>
+        </exec>
+        <echo>Install ${out.final.file} onto 'USB device' system partition...</echo>
+        <exec executable="${adb}" failonerror="true">
+            <arg value="-d"/>
+            <arg value="shell"/>
+            <arg value="rm /system/app/${ant.project.name}.*"/>
+        </exec>
+        <exec executable="${adb}" failonerror="true">
+            <arg value="-d"/>
+            <arg value="push"/>
+            <arg value="${out.final.file}"/>
+            <arg value="/system/app"/>
+        </exec>
+    </target>
+
+</project>

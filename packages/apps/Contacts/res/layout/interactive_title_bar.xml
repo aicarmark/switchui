@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/interactive_title_bar"
+    android:height="42dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:stretchColumns="0"
+
+    android:background="@android:drawable/screen_background_dark"
+    >
+
+    <!-- Optional text that is not present by default. -->
+    <!-- This element also provides any negative space beside the buttons. -->
+    <TextView android:id="@+id/interactive_title_bar_label"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_weight="1"
+    />
+
+    <!-- Divider #1 -->
+    <ImageView
+		android:id="@+id/divider1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/zz_moto_header_divider"
+    />
+
+    <!-- Button #1 -->
+    <ImageButton android:id="@+id/list_header_groups"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/int_titlebar_btn_bkg"
+        android:src="@drawable/ic_control_title_groups"
+    />
+
+    <!-- Divider #2 -->
+    <ImageView
+		android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/zz_moto_header_divider"
+    />
+
+    <!-- Button #2 -->
+    <ImageButton android:id="@+id/list_header_search"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/int_titlebar_btn_bkg"
+        android:src="@drawable/ic_control_title_search"
+    />
+
+    <!-- Divider #3 -->
+    <ImageView
+		android:id="@+id/divider3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:background="@drawable/zz_moto_header_divider"
+    />
+
+    <!-- Button #3 -->
+    <ImageButton android:id="@+id/list_header_add_contact"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/int_titlebar_btn_bkg"
+        android:src="@drawable/ic_control_add"
+    />
+
+	<!--CheckBox #1 -->
+	<LinearLayout 
+	    android:id="@+id/checkboxContainer"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="6dp"
+	    android:background="@drawable/int_titlebar_btn_bkg"
+	    android:clickable="true"
+	    android:gravity="center"
+		android:visibility="gone"
+        >
+		<CheckBox android:id="@+id/checkbox"
+			style="?android:attr/checkableBehavior"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:clickable="false"
+	    />
+	</LinearLayout>
+	
+</LinearLayout>
+

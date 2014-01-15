@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2009 Motorola Inc.
+ -->
+
+<resources>
+    <!-- CityClockSettings -->
+    <dimen name="city_bottom_margin">1dp</dimen>
+    <dimen name="date_bottom_margin">16dp</dimen>
+
+    <dimen name="analog_ampm_text_size">11sp</dimen>
+    <dimen name="analog_city_text_size">14sp</dimen>
+    <dimen name="analog_date_text_size">12sp</dimen>
+    <dimen name="analog_no_city_text_size">14sp</dimen>
+    <dimen name="analog_ampm_bottom_margin">27dp</dimen>
+    <dimen name="analog_clock_left_margin">12dp</dimen>
+    <dimen name="analog_datecity_left_margin">10dp</dimen>
+
+    <dimen name="digital_time_text_size">40sp</dimen>
+    <dimen name="digital_ampm_text_size">11sp</dimen>
+    <dimen name="digital_city_text_size">14sp</dimen>
+    <dimen name="digital_date_text_size">12sp</dimen>
+    <dimen name="digital_no_city_text_size">14sp</dimen>
+    <dimen name="digital_time_bottom_margin">2dp</dimen>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingLeft="4dip" >
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip" android:gravity="right">
+
+<TextView android:text="@string/location_sdcard" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dip"
+    android:textColor="#ffffff"/>
+    
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_name" 
+    android:textColor="#ffffff"/>
+ 
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip" android:gravity="right">
+
+    
+<TextView android:text="@string/type_removealbe_memory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dip"
+    android:textColor="#ffffff"/>         
+    
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_type" 
+    android:textColor="#ffffff"/>         
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip" android:gravity="right">
+
+<TextView android:id="@+id/prop_used_space"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dip"
+    android:textColor="#ffffff"/>  
+    
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_used_space" 
+    android:textColor="#ffffff"/>       
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip" android:gravity="right">
+
+    
+<TextView android:id="@+id/prop_free_space"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dip"
+    android:textColor="#ffffff"/>     
+    
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_free_space" 
+    android:textColor="#ffffff"/>             
+
+</LinearLayout>
+
+</LinearLayout>

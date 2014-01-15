@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  /*  * Copyright (C) 2012 Motorola, Inc.  * All Rights Reserved  *  */ -->
+<resources>
+    <string name="app_name">聽覺警告</string>
+    <string name="title">媒體音量</string>
+    <string name="warning_text">長時間高分貝聆聽，可能有損您的聽力。\n\n請以建議等級調整您的音樂音量。</string>
+</resources>

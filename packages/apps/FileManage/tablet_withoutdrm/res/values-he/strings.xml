@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/* * Copyright (c) 2010 Motorola, Inc. * All Rights Reserved * * The
+    contents of this file are Motorola Confidential Restricted (MCR). *
+    Revision history (newest first): * * Date CR Author Description *
+    2010-03-23 IKSHADOW-2425 A20815 initial */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- no translation found for local_tab_lable -->
+    <skip/>
+    <!-- no translation found for Remote_tab_lable -->
+    <skip/>
+    <string name="Cloud_tab_lable">מחשב מרוחק</string>
+    <string name="Usb_tab_lable">Usb</string>
+    <!-- no translation found for filename_dup -->
+    <skip/>
+    <!-- no translation found for app_name -->
+    <skip/>
+    <!-- no translation found for add_server -->
+    <skip/>
+    <!-- no translation found for alert_dialog_ok -->
+    <skip/>
+    <!-- no translation found for alert_dialog_cancel -->
+    <skip/>
+    <!-- no translation found for add_samba_server_title -->
+    <skip/>
+    <!-- no translation found for edit_samba_server_title -->
+    <skip/>
+    <!-- no translation found for add_server_hostname -->
+    <skip/>
+    <!-- no translation found for add_server_username -->
+    <skip/>
+    <!-- no translation found for add_server_password -->
+    <skip/>
+    <!-- no translation found for server_display_name -->
+    <skip/>
+    <string name="server_logon_failure">ההתחברות נכשלה</string>
+    <!-- no translation found for server_reauth_title -->
+    <skip/>
+    <!-- no translation found for server_logon_failure_indication -->
+    <skip/>
+    <!-- no translation found for file_manager -->
+    <skip/>
+    <!-- no translation found for remote_files -->
+    <skip/>
+    <!-- no translation found for phone_files -->
+    <skip/>
+    <string name="usb_files">כונן USB</string>
+    <!-- no translation found for menu_edit -->
+    <skip/>
+    <!-- no translation found for menu_remove -->
+    <skip/>
+    <!-- no translation found for scanning_for_servers -->
+    <skip/>
+    <string name="file_transfer">מעביר</string>
+    <!-- no translation found for file_transfer_complete -->
+    <skip/>
+    <string name="transfer_result">ההעברה הושלמה: %dקובצ/י</string>
+    <!-- no translation found for transferring_file_to -->
+    <skip/>
+    <!-- no translation found for host_name_empty_indicator -->
+    <skip/>
+    <!-- no translation found for not_found_network_name -->
+    <skip/>
+    <!-- no translation found for server_not_reachable -->
+    <skip/>
+    <!-- no translation found for no_group_found -->
+    <skip/>
+    <string name="external_sdcard">SD חיצוני</string>
+    <string name="internal_memory">‏‏זיכרון פנימי</string>
+    <!-- no translation found for context_menu_title_file -->
+    <skip/>
+    <!-- no translation found for context_menu_title_folder -->
+    <skip/>
+    <!-- no translation found for context_menu_title_server -->
+    <skip/>
+    <!-- no translation found for menu_new_folder -->
+    <skip/>
+    <!-- no translation found for menu_delete -->
+    <skip/>
+    <!-- no translation found for menu_rename -->
+    <skip/>
+    <!-- no translation found for menu_send -->
+    <skip/>
+    <!-- no translation found for menu_open -->
+    <skip/>
+    <!-- no translation found for menu_move -->
+    <skip/>
+    <!-- no translation found for menu_copy -->
+    <skip/>
+    <!-- no translation found for menu_info -->
+    <skip/>
+    <string name="menu_print">הדפסה</string>
+    <!-- no translation found for menu_sort_by -->
+    <skip/>
+    <!-- no translation found for menu_sort_by_name -->
+    <skip/>
+    <!-- no translation found for menu_sort_by_type -->
+    <skip/>
+    <!-- no translation found for menu_sort_by_time -->
+    <skip/>
+    <!-- no translation found for menu_sort_by_size -->
+    <skip/>
+    <!-- no translation found for menu_add_server -->
+    <skip/>
+    <string name="menu_unzip">חלץ</string>
+    <string name="menu_zip">Zip</string>
+    <!-- no translation found for menu_view_list -->
+    <skip/>
+    <!-- no translation found for menu_view_grid -->
+    <skip/>
+    <!-- no translation found for menu_select_all -->
+    <skip/>
+    <!-- no translation found for menu_unselect_all -->
+    <skip/>
+    <!-- no translation found for menu_multi_select -->
+    <skip/>
+    <!-- no translation found for menu_copy_selected -->
+    <skip/>
+    <!-- no translation found for menu_rename_selected -->
+    <skip/>
+    <string name="menu_zip_selected">Zip</string>
+    <!-- no translation found for menu_open_selected -->
+    <skip/>
+    <!-- no translation found for menu_info_selected -->
+    <skip/>
+    <!-- no translation found for select_file -->
+    <skip/>
+    <!-- no translation found for select -->
+    <skip/>
+    <!-- no translation found for cancel -->
+    <skip/>
+    <!-- no translation found for file_info_title -->
+    <skip/>
+    <string name="file_info_title_dir">מאפייני מדריך כתובות</string>
+    <!-- no translation found for create_new_folder -->
+    <skip/>
+    <string name="create_new_zip_file">קובץ Zip חדש</string>
+    <!-- no translation found for delet -->
+    <skip/>
+    <!-- no translation found for folder_name -->
+    <skip/>
+    <!-- no translation found for file_name -->
+    <skip/>
+    <!-- no translation found for this_folder_is_empty -->
+    <skip/>
+    <!-- no translation found for make_sure_sd_card -->
+    <skip/>
+    <string name="make_sure_usb_disk">אנא הכנס מחדש דיסק usb.</string>
+    <!-- no translation found for sd_is_used_by_other -->
+    <skip/>
+    <!-- no translation found for emmc_is_used_by_other -->
+    <skip/>
+    <!-- no translation found for really_delete -->
+    <skip/>
+    <!-- no translation found for file_renamed -->
+    <skip/>
+    <!-- no translation found for folder_renamed -->
+    <skip/>
+    <!-- no translation found for move_sucess -->
+    <skip/>
+    <!-- no translation found for copy_sucessfully -->
+    <skip/>
+    <!-- no translation found for copy_failed -->
+    <skip/>
+    <string name="file_delet_sucessfully">הקובץ נמחק.</string>
+    <string name="files_delet_sucessfully">הקבצים נמחקו.</string>
+    <string name="folder_delet_sucessfully">התיקיה נמחקה.</string>
+    <string name="delet_failed">לא ניתן למחוק את הקובץ.</string>
+    <string name="delet_failed_multiple">לא ניתן היה למחוק קובץ אחד או יותר.</string>
+    <!-- no translation found for really_delete_folder -->
+    <skip/>
+    <!-- no translation found for really_delete_selected -->
+    <skip/>
+    <!-- no translation found for paste_button -->
+    <skip/>
+    <!-- no translation found for move_button -->
+    <skip/>
+    <!-- no translation found for delete_button -->
+    <skip/>
+    <!-- no translation found for cancel_button -->
+    <skip/>
+    <!-- no translation found for select_folder -->
+    <skip/>
+    <!-- no translation found for copied_file_name -->
+    <skip/>
+    <string name="copied_file_name_2">עותק %1$d מתוך %2$s</string>
+    <!-- no translation found for home -->
+    <skip/>
+    <!-- no translation found for loading -->
+    <skip/>
+    <string name="deleting">אנא המתן לביצוע המחיקה</string>
+    <!-- no translation found for cancle -->
+    <skip/>
+    <!-- no translation found for open_wifi -->
+    <skip/>
+    <!-- no translation found for wifi -->
+    <skip/>
+    <!-- no translation found for wifi_unavaiable -->
+    <skip/>
+    <!-- no translation found for check_wifi -->
+    <skip/>
+    <!-- no translation found for shared_folders -->
+    <skip/>
+    <!-- no translation found for wifi_is_avaiable -->
+    <skip/>
+    <!-- no translation found for sd_card -->
+    <skip/>
+    <!-- no translation found for sd_missing -->
+    <skip/>
+    <!-- no translation found for error_creating_new_folder -->
+    <skip/>
+    <!-- no translation found for error_renaming_file -->
+    <skip/>
+    <!-- no translation found for error_renaming_folder -->
+    <skip/>
+    <string name="error_moving">לא ניתן להעביר את הקובץ.</string>
+    <string name="error_moving_multiple">לא ניתן היה להעביר קובץ אחד או יותר.</string>
+    <!-- no translation found for error_file_does_not_exists -->
+    <skip/>
+    <!-- no translation found for send_not_available -->
+    <skip/>
+    <!-- no translation found for application_not_available -->
+    <skip/>
+    <!-- no translation found for copy_text -->
+    <skip/>
+    <!-- no translation found for ok -->
+    <skip/>
+    <!-- no translation found for anonymous -->
+    <skip/>
+    <!-- no translation found for no_server_found -->
+    <skip/>
+    <!-- no translation found for Yes -->
+    <skip/>
+    <!-- no translation found for No -->
+    <skip/>
+    <!-- no translation found for Extract_Zip_File -->
+    <skip/>
+    <string name="Overwrite_File">האם להחליף את הספרייה הקיימת?</string>
+    <string name="Overwrite_Zip_File">האם להחליף את קובץ ה-zip הקיים?</string>
+    <string name="Overwrite_Contents">האם להחליף את תוכן התיקייה הקיימת?</string>
+    <string name="enter_zip_file_name">הזן שם קובץ zip.</string>
+    <string name="Unzipping">מחלץ...</string>
+    <string name="Zipping">יוצר קובץ Zip...</string>
+    <string name="zip_file_name">שם קובץ Zip:</string>
+    <string name="create">צור</string>
+    <string name="extract">חלץ</string>
+    <string name="overwrite">החלפה</string>
+    <string name="error_zipping_file">אירעה שגיאה ביצירת קובץ Zip.</string>
+    <string name="error_unzip_file">אירעה שגיאה בחילוץ הקובץ.</string>
+    <string name="filename_cannot_be_blank">שם הקובץ אינו יכול להיות ריק.</string>
+    <!-- no translation found for Invalid_Zip_File -->
+    <skip/>
+    <!-- no translation found for tpye_folder -->
+    <skip/>
+    <!-- no translation found for folder -->
+    <skip/>
+    <string name="contains">מכילה: %1$s תיקיות ו-%2$s קבצים.</string>
+    <!-- no translation found for smb_folder_contains -->
+    <skip/>
+    <!-- no translation found for type_file -->
+    <skip/>
+    <string name="type_image">סוג: תמונה</string>
+    <string name="type_audio">סוג: שמע</string>
+    <string name="type_video">סוג: וידאו</string>
+    <string name="type_text">סוג: טקסט</string>
+    <string name="type_doc">סוג: Doc</string>
+    <string name="type_zip">סוג: Zip</string>
+    <string name="size">גודל: </string>
+    <!-- no translation found for last_modified_at -->
+    <skip/>
+    <!-- no translation found for readable_yes -->
+    <skip/>
+    <!-- no translation found for readable_no -->
+    <skip/>
+    <!-- no translation found for writable_yes -->
+    <skip/>
+    <!-- no translation found for writable_no -->
+    <skip/>
+    <!-- no translation found for hidden_yes -->
+    <skip/>
+    <!-- no translation found for hidden_no -->
+    <skip/>
+    <!-- no translation found for download_dialog_title -->
+    <skip/>
+    <!-- no translation found for transfer_complete -->
+    <skip/>
+    <!-- no translation found for transfer_progress -->
+    <skip/>
+    <string name="to">אל: </string>
+    <string name="file_size">גודל: </string>
+    <!-- no translation found for total_complete -->
+    <skip/>
+    <!-- no translation found for hundred_percent -->
+    <skip/>
+    <!-- no translation found for items -->
+    <skip/>
+    <!-- no translation found for size_kb -->
+    <skip/>
+    <string name="crop_Image_error">‏‏אין תמיכה בסוג הקובץ! </string>
+    <string name="usbdisk">דיסק נשלף</string>
+    <string name="usbdisk_missing">דיסק USB לא מחובר. חבר דיסק USB כדי לקרוא את הקבצים.</string>
+    <!-- no translation found for internal_phone_storage -->
+    <skip/>
+    <string name="unknown">לא ידוע</string>
+    <string name="sd_unmounted">כרטיס SD מנותק. טען כרטיס SD כדי לקרוא את הקבצים.</string>
+    <!-- no translation found for internal_phone_storage_unmounted -->
+    <skip/>
+    <!-- no translation found for protected_content -->
+    <skip/>
+    <!-- no translation found for protected_content_fail -->
+    <skip/>
+    <string name="item">פריט</string>
+    <!-- no translation found for size_k -->
+    <skip/>
+    <!-- no translation found for renaming_file_empty -->
+    <skip/>
+    <!-- no translation found for renaming_folder_empty -->
+    <skip/>
+    <string name="default_group">‏‏קבוצה לא ידועה</string>
+    <string name="search_title">חפש</string>
+    <string name="search_hint">חפש קבצים</string>
+    <string name="menu_search">חפש</string>
+    <string name="search_folder">בחר תיקייה לחיפוש</string>
+    <string name="sd_missing_search">כרטיס זיכרון חסר. חבר כרטיס זיכרון כדי לחפש קבצים.</string>
+    <string name="search_progess">מחפש "</string>
+    <string name="search_in"> ב- "</string>
+    <string name="settings_description">קבצים ותיקיות</string>
+    <string name="matches_for">תוצאות חיפוש עבור</string>
+    <string name="found_in">ב-</string>
+    <string name="empty_search_result">לא נמצאו תוצאות עבור</string>
+    <string name="renaming_folder_exist">שם התיקייה קיים, בחר שם אחר</string>
+    <string name="remote_computers">מחשבי MotoConnect</string>
+    <string name="remote_pc">גישת מחשב מרוחקת</string>
+    <string name="remote_pc_info">מידע אודות גישת מחשב מרוחקת</string>
+    <string name="edit_info">שינויים שתבצע בקובץ זה יישמרו בכרטיס ה-SD שלך</string>
+    <string name="read_only">קריאה-בלבד</string>
+    <string name="online">מקוון</string>
+    <string name="offline">לא מקוון</string>
+    <string name="menu_download">הורד</string>
+    <string name="menu_upload">העלאה מ-</string>
+    <string name="temp_download">הורדה זמנית</string>
+    <string name="temp_download_info">הקבצים נשמרו באופן זמני בתיקיית ההורדות שלך</string>
+    <string name="enter_Credentials">הזן אישורים</string>
+    <string name="name">שם</string>
+    <string name="date">תאריך</string>
+    <string name="size_v">גודל</string>
+    <string name="type">סוג</string>
+    <string name="typ_folder">תיקייה</string>
+    <string name="typ_file">קובץ</string>
+    <string name="typ_image">תמונה</string>
+    <string name="typ_audio">שמע</string>
+    <string name="typ_video">וידאו</string>
+    <string name="typ_text">טקסט</string>
+    <string name="typ_doc">מסמך</string>
+    <string name="typ_zip">Zip</string>
+    <string name="typ_ppt">מצגת</string>
+    <string name="blank_size">-</string>
+    <!-- no translation found for zip_encryption_type -->
+    <skip/>
+    <!-- no translation found for show_password -->
+    <skip/>
+    <!-- no translation found for password_protected_zip -->
+    <skip/>
+    <!-- no translation found for password_cannot_be_blank -->
+    <skip/>
+    <!-- no translation found for stop_zip_file -->
+    <skip/>
+    <!-- no translation found for stop_unzip_file -->
+    <skip/>
+    <!-- no translation found for Zip_Cancelling -->
+    <skip/>
+    <!-- no translation found for Unzip_Cancelling -->
+    <skip/>
+    <!-- no translation found for Zip_Existing_Zip_File -->
+    <skip/>
+
+</resources>

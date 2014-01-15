@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>التعيينات المسبقة للبطارية</item>
+    <item>إعدادات مخصصة</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 دقيقة</item>
+    <item>30 دقيقة</item>
+    <item>45 دقيقة</item>
+    <item>60 دقيقة</item>
+    <item>الاحتفاظ بالتشغيل دائمًا</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>"15 دقيقة"</item>
+    <item>"30 دقيقة"</item>
+    <item>"45 دقائق"</item>
+    <item>60 دقيقة</item>
+  </string-array>
+</resources>

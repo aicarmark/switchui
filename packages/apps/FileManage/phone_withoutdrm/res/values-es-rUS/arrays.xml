@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Ingresar nombre o IP</item>
+        <item>Buscar servidor</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Agregar servidor</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Buscando dominios...</item>
+        <item>Buscando servidores...</item>
+        <item>Conectando con el servidor...</item>
+        <item>Cargando...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Nombre</item>
+        <item>Tipo</item>
+        <item>Fecha</item>
+        <item>Tamaño</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Sin encriptación</item>
+        <item>Encriptación heredada (Zip 2.0)</item>
+        <item>Encriptación AES de 128 bits</item>
+        <item>Encriptación AES de 256 bits</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Almac. interno tel.</item>
+        <item>Tarjeta SD</item>
+    </string-array>
+
+</resources>

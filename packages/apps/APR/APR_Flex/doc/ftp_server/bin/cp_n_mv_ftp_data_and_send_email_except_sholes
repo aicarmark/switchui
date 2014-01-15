@@ -1,0 +1,372 @@
+#!/bin/bash
+
+# Revision history by Paul Lee
+#
+# 2010.06.25. Send email except Sholes
+# 2010.07.07. Check index in the package_list.txt before sending email.
+# 2010.07.09. Increment the index in the server after 1 hour from the first index error
+#
+################################################################################################
+# Setup the defaults.  Enter all global Variables Here
+################################################################################################
+# The name of this script
+script_name=$0
+
+# Whether or not debugging of the script is enabled
+debug=false
+
+# Declare arrays
+declare -a indexes
+declare -a messages
+
+# Declare as integer
+typeset -i index_from_phone
+typeset -i index_in_server
+typeset -i index_error_time
+typeset -i index_error_max
+
+#Define maximum waiting time for a missing index before giving up the index number.
+#60sec*60min=3600: 1 hour
+index_error_max=3600
+
+# contents valid
+contents_valid=false
+contents_maybe=false
+need_index=false
+index_order_ok=false
+
+delimeter=-
+root_directory=/home/aprupload/ftp
+backup_directory=/home/aprdata/ftp
+target_directory=/var/www
+
+# email subject
+SUBJECT="Subject: APR report"
+SUBJECT_ERROR="Subject: APR Error"
+SUBJECT_RESET="Subject: Index Increment"
+
+# Email To ?
+TO="panicdt@motorola.com"
+
+# Report index error to
+#REPORT_TO="w42725@motorola.com"
+REPORT_TO="aprerror@gmail.com"
+
+# Email From ?
+SERVER="@motorola.com"
+#SERVER="@motoapr.servebbs.com"
+
+# Email text/message
+EMAILMESSAGE="/tmp/emailmessage.txt"
+
+################################################################################################
+# Parse the Input to the script.
+################################################################################################
+let counter=1
+# For each input paramter, examine the parameter
+for parameter in `echo $*`
+do
+    # pre increment the counter (to allow us to refer to the following command line parameter)
+    let counter=$counter+1
+
+    # load up the next parameter
+    next_parameter=`echo $* | cut  -f$counter -d' '`
+
+################################################################################################
+# Example of a parameter check, that takes a following argument
+################################################################################################
+
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-r" ]; then
+	if [ $next_parameter ]; then
+	  root_directory=$next_parameter
+	else
+	  echo "Please Specify a root directory."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-d" ]; then
+	if [ $next_parameter ]; then
+	  delimeter=$next_parameter
+          echo "the -d option is not functional"
+	else
+	  echo "Please Specify a root directory."
+	  $script_name -h | more
+	  exit 0
+        fi
+    fi
+
+################################################################################################
+# Example of a parameter check that takes no following argument
+################################################################################################
+    # Check if this command line parameter is the port name 
+    if [ $parameter = "-host" ]; then
+	keep_symbols_on_host=true
+    fi
+
+    # Check for (and execute) the help information
+    if [ $parameter = "-h" ]; then
+	echo "Usage: \n\n$script_name [-h] <options>"
+	echo " "
+	echo " Description: Parses existing directories, and moves them based upon a delimiter."
+	echo ""
+	echo "  Unix Prompt> $script_name [-h] <options> "
+	echo ""
+	echo "Options:"
+	echo "                 -h: print this help file"
+	echo "                 -r: specify a root directory"
+	echo "                 -d: specify a delimiter (not working. default is -)."
+	echo "                 "
+	echo "                 "
+	exit 0
+    fi
+done
+
+echo --------------------------------------------------------
+echo Parameters Specified to Execute Script $script_name
+echo --------------------------------------------------------
+echo Debugging Enabled: $debug
+echo Root Directory   : $root_directory
+echo Delimter         : -
+echo --------------------------------------------------------
+
+# Here's the Body of the Script...
+
+ls $root_directory | grep $delimeter > /tmp/listing.txt
+
+for line in `cat /tmp/listing.txt` 
+do
+
+   #line is the package name, file is the list in the package
+
+   contents_valid=false
+   contents_maybe=false
+   need_index=false
+   index_order_ok=false
+
+   ls $root_directory/$line > /tmp/sub_listing.txt
+
+   #check if the package includes 'done.txt'
+   for file in `cat /tmp/sub_listing.txt`
+   do
+      if [ $file = "done.txt" ]; then
+         echo $file FOUND!!!
+         contents_maybe=true
+      fi
+   done
+
+   #check if the package includes 'package_list.txt'
+   if [ $contents_maybe = true ]; then
+     for file in `cat /tmp/sub_listing.txt`
+     do
+        if [ $file = "package_list.txt" ]; then
+           echo $file FOUND!!!
+           contents_valid=true
+        fi
+     done
+   fi
+
+   #move directory if 'done.txt' and 'package_list.txt' exist in the direcory
+   if [ $contents_valid = true ]; then
+
+      #make dir for software version
+      dir1=`echo $line | cut -f1 -d'-'`
+      mkdir -p $target_directory/$dir1
+      echo "CREATED DIR1: $target_directory/$dir1"
+
+      #make dir for build crc under the software version
+      dir2=`echo $line | cut -f2 -d'-'`
+      mkdir -p $target_directory/$dir1/$dir2
+      echo "CREATED DIR2: $target_directory/$dir1/$dir2"
+
+      #make dir for barcode under the build crc
+      dir3=`echo $line | cut -f3 -d'-'`
+      mkdir -p $target_directory/$dir1/$dir2/$dir3
+      echo "CREATED DIR3: $target_directory/$dir1/$dir2/$dir3"
+
+      #read package_list and get indexes and messages
+      count=0
+      exec<$root_directory/$line/package_list.txt
+      while read one_line
+      do
+         if [ ${one_line:0:5} = "Index" ]; then
+            need_index=true
+            #echo "one_line: $one_line"
+            #echo "count: $count"
+            indexes[$count]=`echo $one_line | sed -e 's/.*Index: //' | sed -e 's/ Base64MsgBody.*//'`
+            #echo "Index: ${indexes[$count]}"
+            messages[$count]=`echo $one_line | sed -e 's/.*Base64MsgBody: //'`
+            #echo "Msg: ${messages[$count]}"
+            count="$(($count+1))"
+         fi
+      done
+
+      #if there are indexes in the packages
+      if [ $need_index = true ]; then
+
+         #Sorting of indexes
+         for (( i = 0; i < $count ; i++ ))
+         do
+            for (( j = $i; j < $count ; j++ ))
+            do
+               if [ ${indexes[$i]} -gt ${indexes[$j]} ]; then
+                    t=${indexes[$i]}
+                    tt=${messages[$i]}
+                    indexes[$i]=${indexes[$j]}
+                    messages[$i]=${messages[$j]}
+                    indexes[$j]=$t
+                    messages[$j]=$tt
+               fi
+            done
+         done
+
+         for (( i = 0; i < $count ; i++ ))
+         do
+            echo "Index: ${indexes[$i]}"
+            echo "Msg: ${messages[$i]}"
+         done
+
+         #read index from the package_list.txt
+         index_from_phone=${indexes[0]}
+         echo "Index from the phone: $index_from_phone"
+
+         index_file="$target_directory/index/$dir3.txt"
+         index_error_file="$target_directory/index_error/$dir3.txt"
+
+         #check if index_file exists
+         if [ -f $index_file ]; then
+           echo "index file exists."
+           index_in_server=`cat $index_file`
+           echo "Index in the server: $index_in_server"
+           index_in_server=`expr $index_in_server + 1`
+
+           #check if the index is in order
+           if [ $index_from_phone -eq $index_in_server ]; then
+             echo "Index is in order"
+             index_order_ok=true
+             echo "${indexes[$count-1]}" > $index_file
+           fi
+
+           # check if the index is 0
+           if [ $index_from_phone -eq 0 ]; then
+             echo "Index is in order"
+             index_order_ok=true
+             echo "${indexes[$count-1]}" > $index_file
+           fi
+         else
+           echo "Index file doesn't exist."
+           index_order_ok=true
+           echo "${indexes[$count-1]}" > $index_file
+         fi
+        
+      #if there is not index in the packages
+      else
+          index_order_ok=true
+      fi
+
+      if [ $index_order_ok = true ]; then
+         echo "index_order_ok is true"
+
+         #copy the uploaded dir to the backup directory /home/aprdata/ftp
+         cp -r $root_directory/$line $backup_directory
+
+         #change owner to aprdata
+         chown -R aprdata:aprdata $backup_directory/$line
+
+         #move the uploaded dir to /web_root/software_version/build_crc/barcode
+         #mv $root_directory/$line $target_directory/$dir1/$dir2/$dir3
+         cp -r $root_directory/$line $target_directory/$dir1/$dir2/$dir3
+         rm -r $root_directory/$line
+
+         #send email for the panic message to APR server
+         if [ $? == 0 ]; then
+            phonenumber=`cat $target_directory/$dir1/$dir2/$dir3/$line/package_list.txt | grep From | sed -e 's/.*(PhoneNumber)//' | sed -e 's/ (.*//'`
+            FROM="$phonenumber$SERVER"
+
+            if [ $need_index = true ]; then
+               for (( i = 0; i < $count ; i++ ))
+               do
+                  echo $SUBJECT > $EMAILMESSAGE
+                  echo ${messages[$i]} >> $EMAILMESSAGE
+                  echo "SW to send email: $dir1 ${dir1:0:5}"
+                  if [ ${dir1:0:5} != "SHOLS" ]; then
+                     echo "SW sent: $dir1 ${dir1:0:5}"
+                     /usr/sbin/sendmail -f "$FROM" "$TO" < $EMAILMESSAGE
+                     #wait 5 seconds after sending a ordered message
+                     sleep 5
+                  fi
+               done
+            else
+               for email_body in `cat $target_directory/$dir1/$dir2/$dir3/$line/package_list.txt | grep Base64MsgBody | sed 's/Base64MsgBody: //'`
+               do
+                 echo $SUBJECT > $EMAILMESSAGE
+                 echo $email_body >> $EMAILMESSAGE
+                 echo "SW to send email: $dir1 ${dir1:0:5}"
+                 if [ ${dir1:0:5} != "SHOLS" ]; then
+                   echo "SW sent: $dir1 ${dir1:0:5}"
+                   /usr/sbin/sendmail -f "$FROM" "$TO" < $EMAILMESSAGE
+                 fi
+               done
+            fi
+         fi
+
+      #if the indexes are not in order
+      else
+         echo "index_order_ok is false"
+
+         #read current time in seconds since 1970-01-01 00:00:00 UTC
+         current_time=`date +"%s"`
+
+         #check if index_error_file exists
+         if [ -f $index_error_file ]; then
+            #read the time when the index error happens first time.
+            index_error_time=`cat $index_error_file`
+         else
+           #create index_error_file with the current time.
+            echo "$current_time" > $index_error_file
+            index_error_time=$current_time
+            echo "Index time and current time: $index_error_time"
+         fi
+
+         #add maximum wait time for a missing index
+         index_error_time=`expr $index_error_time + $index_error_max`
+
+         #set the sender
+         phonenumber=`cat $root_directory/$line/package_list.txt | grep From | sed -e 's/.*(PhoneNumber)//' | sed -e 's/ (.*//'`
+         FROM="$phonenumber$SERVER"
+
+         if [ $current_time -gt $index_error_time ]; then
+            #Store the incremented index
+            echo "$index_in_server" > $index_file
+
+            #Delete index_error_file
+            /bin/rm $index_error_file
+
+            echo $SUBJECT_RESET $dir3 > $EMAILMESSAGE
+            echo $root_directory/$line/package_list.txt >> $EMAILMESSAGE
+            echo "Index from the phone: $index_from_phone" >> $EMAILMESSAGE
+            echo "Index is increased to: $index_in_server" >> $EMAILMESSAGE
+
+         else
+            index_in_server=`expr $index_in_server - 1`
+
+            echo $SUBJECT_ERROR $dir3 > $EMAILMESSAGE
+            echo $root_directory/$line/package_list.txt >> $EMAILMESSAGE
+            echo "Index from the phone: $index_from_phone" >> $EMAILMESSAGE
+            echo "Index in the server: $index_in_server" >> $EMAILMESSAGE
+         fi
+
+         #send an email
+         /usr/sbin/sendmail -f "$FROM" "$REPORT_TO" < $EMAILMESSAGE
+      
+      #end of if [ $index_order_ok = true ]
+      fi
+
+   #end of if [ $contents_valid = true ]
+   fi
+
+done
+

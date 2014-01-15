@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.motorola.mmsp.activitygraph"
+    android:versionCode="1"
+    android:versionName="SWITCHUI2.5B" >
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <!-- 2012-11-19, Added for 	SWITCHUITWO-30 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-sdk android:minSdkVersion="8"/> 
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />   
+
+    <application
+        android:name=".ActivityGraphApplication"
+        android:allowClearUserData="false"
+        android:icon="@drawable/widget_icon"
+        android:label="@string/app_name" >
+        <receiver android:name="com.motorola.mmsp.activitygraph.activityWidget2d.ActivityProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider" />
+
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.databaseChanged"/>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click0" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click1" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click2" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click3" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click4" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click5" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click6" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click7" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click8" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click9" >
+                </action>
+                <action android:name="com.motorola.mmsp.activitywidget2d.action.click10" >
+                </action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.motorola.mmsp.activitygraph.ActivityGraphLogService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name=".ActivityGraphSettings"
+            android:label="@string/activitygraphsettings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HiddenApplications"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleTheme"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppsHidePicker"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/select_apps_to_hide"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SingleApplicationPicker"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/NoTitleTheme"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManageShortcuts"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/manage_shortcuts_label"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetSkin"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/choose_skin_label"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/welcome_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeAutoActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/welcome_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.motorola.mmsp.activitygraph.activityWidget2d.ConfigureActivity"
+            android:theme="@style/NoTitleTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+             </intent-filter>
+        </activity>
+        <provider
+            android:name=".ActivityGraphProvider"
+            android:authorities="com.motorola.appgraphy" />
+
+        <receiver android:name=".ActivityGraphModel" >
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.activitygraph.COUNT_APP" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.motorola.mmsp.activitygraph.DAY_PASS" />
+                <action android:name="com.motorola.mmsp.activitygraph.ACTIVITY_NOT_FOUND" />
+                <action android:name="com.motorola.mmsp.activitygraph.OUT_OF_BOX" />
+                <action android:name="com.motorola.mmsp.activitygraph.RESET_FOR_OUT_OF_BOX" />
+                <action android:name="com.android.music.metachanged" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

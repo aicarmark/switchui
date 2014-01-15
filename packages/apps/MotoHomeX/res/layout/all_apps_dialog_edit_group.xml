@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_apps_dialog_edit_group_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="9dip"
+    android:paddingBottom="3dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="1dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="@string/edit_name"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/all_apps_dialog_edit_group_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip"
+        android:hint="@string/group_name"
+        android:imeActionLabel="@string/save"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:selectAllOnFocus="false"
+        android:gravity="left|center_vertical"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginBottom="20dip"
+        android:orientation="horizontal" >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/select_icon"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:singleLine="true" />
+            <ImageView
+                android:id="@+id/all_apps_dialog_edit_group_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/spinner_background_holo_dark"
+                android:src="@drawable/ic_filter_app_group_generic_off"
+                android:scaleType="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDividerAlertDialog"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip" />
+
+    <LinearLayout
+        android:id="@+id/all_apps_dialog_edit_group_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/all_apps_dialog_edit_group_button_parent"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="54dip"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/all_apps_dialog_edit_group_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_gravity="left"
+                android:text="@android:string/cancel"  />
+            <Button
+                android:id="@+id/all_apps_dialog_edit_group_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_gravity="right"
+                android:text="@string/done" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

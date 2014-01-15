@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:orientation="vertical"
+         android:layout_width="fill_parent"
+         android:baselineAligned="false"
+         android:layout_height="fill_parent">
+         
+	<LinearLayout android:orientation="vertical"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_weight="0">       
+		
+	    <!-- Edit box for the URL -->
+		<EditText android:id="@+id/website_url"        					
+        		  android:layout_width="fill_parent" 
+        		  android:layout_height="wrap_content"
+        		  android:ellipsize="end"
+        		  android:singleLine="true"
+        		  android:hint="@string/enter_url"
+        		  android:layout_marginTop="10dip"
+        		  android:layout_marginLeft="7dip"        		
+        		  android:layout_marginRight="7dip"/>
+	     
+		<!-- Divider -->
+		<ImageView android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   android:src="@android:drawable/divider_horizontal_dim_dark"
+                   android:contentDescription="@string/line_divider_image_desc"/>
+	     
+		<!-- Timing -->
+		<ListView android:id="@android:id/list"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginRight="10dp"
+		          android:drawSelectorOnTop="false">
+     	</ListView>        
+
+		<!-- Divider -->
+        <ImageView android:id="@+id/bottom_divider"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:scaleType="fitXY"
+                   android:src="@android:drawable/divider_horizontal_dim_dark"
+                   android:contentDescription="@string/line_divider_image_desc"
+                   android:visibility="gone"/>
+    
+	</LinearLayout>
+		 
+	<!-- Bookmarks List -->    
+	<LinearLayout
+             android:id="@+id/bookmarks_container"
+	         android:orientation="vertical"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="5">
+			
+	    <!-- Bookmarks Divider -->
+                 <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:text="@string/bookmarks"
+                android:textSize="14sp"
+                android:textColor="@color/ics_blue"
+                android:gravity = "center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="10dip"
+                />
+
+            <View
+              android:id="@+id/account_filter_header_bottom_divider"
+              android:layout_height="1dip"
+              android:layout_marginRight="7dip"
+              android:layout_marginLeft="7dip"
+              style="@style/SectionDivider" />
+	    
+		<!-- Bookmarks List -->
+		<ListView android:id="@+id/link_list"
+             	  android:layout_width="match_parent"
+                  android:layout_height="match_parent"              
+                  android:drawSelectorOnTop="false"/>
+	</LinearLayout>
+		 
+	<!-- Bottom Action Bar -->    
+	<LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+</LinearLayout>

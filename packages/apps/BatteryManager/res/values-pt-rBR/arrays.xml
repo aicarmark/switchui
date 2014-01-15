@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/** 
+ * Copyright (C) 2009, Motorola, Inc, 
+ * All Rights Reserved 
+ * Description: Contains array resources for the Battery Manager app 
+ * 
+ * Modification History: 
+ **********************************************************
+ * Date           Author       Comments
+ * 11-11-09       A24178       Created file
+ **********************************************************
+ */
+-->
+<resources>
+    <string-array name="options_list">
+        <item>Pré-definições da bateria</item>
+        <item>Personalizar configurações</item>
+    </string-array>
+
+    <string-array name="smart_batt_timeout_entries">
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>45 minutos</item>
+        <item>60 minutos</item>
+        <item>Manter sempre ligado</item>
+    </string-array>
+
+    <!-- Do not translate -->
+    <integer-array name="batt_timeout_values">
+        <!-- Do not translate -->
+        <item>15</item>
+        <!-- Do not translate -->
+        <item>30</item>
+        <!-- Do not translate -->
+        <item>45</item>
+        <!-- Do not translate -->
+        <item>60</item>
+        <!-- Do not translate -->
+        <item>-1</item>
+    </integer-array>
+
+    <string-array name="smart_batt_offpeak_timeout_entries">
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>45 minutos</item>
+        <item>60 minutos</item>
+    </string-array>
+</resources>

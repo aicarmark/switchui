@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Widget RSS</string>
+    <string name="feedaddtips">Por favor, agrega una noticia.</string>
+    <string name="empty_article_list">No hay artículos.</string>
+    <string name="nullstring" translatable="false"></string>
+    <string name="rss" translatable="false">RSS</string>
+    <string name="rsssettings_prefenrence">Config. RSS</string>
+    <string name="rsssettings_disclaimer">Aviso</string>
+    <string name="rsssettings_data_traffic_tips">La activación de la aplicación podría generar tráfico de datos. Para conocer las tarifas estándares por tráfico de datos, consulta a tu operador local.</string>
+    <string name="rsssettings_never_show">No mostrar de nuevo.</string>
+    <string name="addfeed_prefenrence">Agregar noticia</string>
+    <string name="customfeed">Personalizar noticias</string>
+    <string name="customfeed_enterrssaddress">Ingresa una dirección RSS: </string>
+    <string name="customfeed_tip">Consejo:  Para copiar una noticia del navegador, mantén presionado el vínculo de la noticia y selecciona &quot;Copiar URL del vínculo&quot;.</string>
+    <string name="customforaddfeedurl">Personalizar noticia: noticia RSS</string>
+    <string name="customforaddfeedurl_title">Fuentes contribuyentes de noticias: </string>
+    <string name="recent_added">Agregadas recientemente</string>
+    <string name="subscribe">Suscribirse</string>
+    <string name="customsubscribe_des">Suscribiéndose a: noticia RSS</string>
+    <string name="feeds">Canales</string>
+    <string name="title_input_frequency">Frecuencia de actualización</string>
+    <string name="title_input_duration">Mostrar elementos por</string>
+    <string name="ok">Aceptar</string>
+    <string name="error">Error</string>
+    <string name="tryagain">Intenta de nuevo más tarde.</string>
+    <string name="addbybundlestitle">Categorías</string>
+    <string name="addbyhistorytitle">Actualizar con historia agregada</string>
+    <string name="done">Listo</string>
+    <string name="oneday">1 día</string>
+    <string name="twodays">2 días</string>
+    <string name="threedays">3 días</string>
+    <string name="oneweek">1 semana</string>
+    <string name="onemonth">1 mes</string>
+    <string name="never">Nunca</string>
+    <string name="onehour">1 hora</string>
+    <string name="threehours">3 horas</string>
+    <string name="sixhours">6 horas</string>
+    <string name="twelvehours">12 horas</string>
+    
+    <string name="refresh">Actualizar</string>
+    <string name="settings">Configuración</string>
+    
+    <string name="share">Compartir</string>
+    <string name="viewOriginal">Ver\noriginal</string>
+    <string name="articlelist">Lista de\nartículos</string>
+    <string name="empty_article_detail">No hay noticias.</string>
+    <string name="listloadingtips">La lista de artículos se está cargando...</string>
+    <string name="articlerefreshtips">Actualizando...</string>
+    
+    
+    <string name="previous_page">Anterior</string>
+    <string name="next_page">Siguiente</string>
+    <string name="next_step">Siguiente</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    
+    <string name="subscribing">Por favor, espera. Se están agregando las noticias a las que te suscribiste...</string>
+    <string name="feedaddednumtips">¡Oops! ¡Oops! Sólo puedes mostrar hasta 50 noticias en el widget.</string>
+    <string name="removefeedconfirm">¿Remover esta noticia?</string>
+    <string name="remove">Remover</string>
+    
+    <string name="widgetname">Nombre del widget</string>  
+    <string name="showitmefor">Mostrar elementos por</string>  
+    <string name="updatefrequency">Frecuencia</string> 
+    <string name="loading">Cargando ... </string>
+    <string name="article_loading">Los detalles de artículos se están cargando...</string> 
+  	<string name="title">Título</string> 
+  	<string name="date">Fecha</string> 
+  	<string name="url">URL</string>
+    
+    <string name="network_not_available">La conexión de datos no está disponible. Intenta después. </string>
+    <string name="cannot_add_subscription">No es posible agregar suscripción a noticias ahora.  La conexión de datos no está disponible. Intenta después.</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/cities_activity_add"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:background="@drawable/silver_bg"
+	    android:paddingRight="10px"
+	    >
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="13dp"
+		    android:text="@string/add_city"
+		    android:gravity="center_vertical"
+		    android:textSize="20sp"
+		    android:textColor="@android:color/white"
+		    />
+		<ImageView 
+		 	android:layout_width="33dip"
+		    android:layout_height="fill_parent"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip"
+		    android:src="@drawable/city_add"
+		    android:adjustViewBounds="true"
+		    android:scaleType="centerInside"
+			/>
+			
+    </LinearLayout>
+    <com.motorola.mmsp.weather.sinaweather.app.DragList
+    	android:id="@+id/cities_list"
+    	android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_weight="1"
+    	/>
+    <TextView 
+		android:id="@+id/setting_item_bottom"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="20sp">
+	</TextView>
+   <!--  
+    <Button 
+    	android:id="@+id/cities_activity_ok"
+    	android:text="@android:string/ok"
+    	android:layout_width="100dip" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom|center_horizontal"/>
+   -->
+</LinearLayout>

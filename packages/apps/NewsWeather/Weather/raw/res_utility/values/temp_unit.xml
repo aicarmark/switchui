@@ -1,0 +1,4 @@
+<resources>
+   <string name = "unit_c">℃</string>
+   <string name = "unit_f">℉</string>
+</resources>

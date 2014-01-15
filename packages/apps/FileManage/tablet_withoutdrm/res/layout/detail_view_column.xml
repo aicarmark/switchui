@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.motorola.filemanager.ui.ResizableView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:resizableview="http://schemas.android.com/apk/res/com.motorola.filemanager"
+  android:id="@+id/split_view" android:orientation="horizontal"
+  android:layout_width="350dp" android:layout_height="fill_parent"
+  resizableview:handle="@+id/divider" resizableview:content="@+id/column_detview">
+  <FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_weight="1">
+    <include android:layout_width="350dp" android:layout_weight="1"
+      layout="@layout/filemanager_details_view" android:id="@id/column_detview" />
+  </FrameLayout>
+  <ImageView android:layout_width="20dp" android:id="@id/divider"
+    android:layout_height="fill_parent" android:src="@drawable/column_divider_holo"
+    android:scaleType="fitXY" />
+</com.motorola.filemanager.ui.ResizableView>
+  

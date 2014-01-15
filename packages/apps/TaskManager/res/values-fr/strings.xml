@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Gestionnaire des tâches</string>
+  <string name="tabTasks">Applications</string>
+  <string name="tabProcesses">Processus</string>
+  <string name="buttonEnd">Fin</string>
+  <string name="buttonRefresh">Actualiser</string>
+  <string name="menuSwitch">Basculer vers</string>
+  <string name="menuEndTask">Terminer la tâche</string>
+  <string name="menuCancel">Annuler</string>
+  <string name="textAvailableMemory">Mémoire disponible :</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Nombre d\'applications :</string>
+  <string name="loading">Chargement\u2026</string>
+</resources>

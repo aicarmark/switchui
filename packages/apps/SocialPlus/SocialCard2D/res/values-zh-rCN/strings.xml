@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">名称</string>
+    <string name="app_name">SocialGraph</string>
+    <string name="manage_contacts_lable_name">管理联系人</string>
+    
+   	<string name="take_photo">拍照</string>
+   	<string name="pick_photo">从图库中选择照片</string>
+   	<string name="use_avatar">使用化名</string>
+	<string name="attachToContact">联系人图标</string>
+	<string name="photoPickerNotFoundText">手机上没有照片。</string>
+	
+	<string name="manage_contact_introduce">使用下面的图形可选择 9 个联系人来填充小部件。您将可在主屏面板上轻松访问这些联系人。</string>
+	<string name="title_settings">社交图设置</string>	
+	
+	<string name="automatic_setup_mode">自动设置模式</string>
+	<string name="turn_off_auto_mode">关闭以手动将联系人添加到小部件。</string>
+	<string name="turn_on_auto_mode">打开以自动用最常用的联系人填充小部件。</string>
+	<string name="hide_contacts">隐藏联系人</string>
+	<string name="hide_contacts_prompt">选择您不想在小部件上显示的联系人。</string>
+	<string name="manage_contacts">管理联系人</string>
+	<string name="manage_contacts_prompt">手动选择联系人以填充小部件。</string>
+	<string name="history_settings">历史记录设置</string>
+	<string name="history_settings_prompt">管理想要为每个联系人存储的条目数。</string>
+	<string name="stretch_contacts_pictures">拉伸联系人图片</string>
+	<string name="trun_off_stretch_contacts_pictures_prompt">关闭以按实际大小使用联系人图片。</string>
+	<string name="turn_on_stretch_contacts_pictures_prompt">打开以拉伸联系人图片，使之适合方框尺寸。</string>
+	
+	<string name="set_skin">设置外观</string>
+	<string name="set_skin_prompt">颜色和质感将用作快捷方式的背景。</string>
+	<string name="widget_reset">小部件重置</string>
+	<string name="widget_reset_prompt">清除小部件上的所有联系人。</string>
+	
+	<string name="display_5_events">显示 5 个事件</string>
+	<string name="display_10_events">显示 10 个事件</string>
+	<string name="display_15_events">显示 15 个事件</string>
+	<string name="display_30_events">显示 30 个事件</string>
+	
+	<string name="widget_reset_message">此操作将重置小部件，清除所有联系人快捷方式。重置小部件？</string>
+	<string name="widget_reset_reset">重置</string>
+
+	<string name="hidden_contacts">隐藏的联系人</string>
+	<string name="set_skin_button">设置外观</string>
+	
+	<string name="clear">清除</string>
+	<string name="history_with">与 %s 的历史记录</string>
+	
+	<string name="clear_history">清除历史记录</string>
+	<string name="clear_history_prompt">此操作将清除您与该联系人的所有通信历史记录。清除历史记录？</string>
+	
+	<string name="last_contact">最后的联系人</string>
+	<string name="call">呼叫</string>
+	<string name="message">信息</string>
+	<string name="email">电子邮件</string>
+	
+	<string name="clear_message_checkbox">删除锁定信息</string>
+	<string name="delete_unlocked">删除锁定信息</string>
+	<string name="history_empty">未知</string>
+	
+	<string name="menu_clear_history">清除历史记录</string>
+	<string name="menu_hide_contact">隐藏</string>
+	<string name="menu_remove_contact">删除</string>
+	<string name="menu_setting">设置</string>
+	
+	<string name="hidden_contact">隐藏的联系人</string>
+	<string name="choose_avatar">选择化名</string>
+	
+	<string name="bricks">砖块</string>
+	<string name="grayscale">灰阶</string>
+	<string name="vivid_colors">彩虹</string>
+	<string name="pale_colors">浅色</string>
+	<string name="natural">自然</string>
+	<string name="patchwork">拼缀</string>
+	<string name="pinboard">插板</string>
+	<string name="steel">钢铁</string>
+	<string name="textile">织物</string>
+	
+	<string name="no_phone_number">无电话号码</string>
+	<string name="no_email_address">无电子邮件地址</string>	
+	<string name="btn_add">添加</string>
+	<string name="btn_change">更改</string>
+	
+	<string name="welcome_title">欢迎</string>
+<string name="welcome_info">这是社交图小部件，一种访问联系人的简单方式。</string>
+<string name="auto_info1">您已选择自动设置。从您开始呼叫和向联系人发送信息起，此小部件将自动根据您最常联系的好友进行更新。</string>
+<string name="auto_info2">您可以在小部件设置中更改此首选项。可通过小部件右上角的小部件设置按钮找到小部件设置。</string>
+<string name="manual_info1">点按以开始将联系人添加到小部件。</string>
+<string name="manual_info2">点按住以转到小部件设置。</string>
+    
+<string name="multiple_contact_picker">选择联系人以隐藏</string>
+<string name="none_contact_pick">无</string>
+<string name="widget_label">社交图</string>
+<string name="set_skin_lable_name">选择外观</string>
+<string name="email_activity_not_found">未找到电子邮件应用程序</string>
+    
+<string name="welcome_info1">这是社交图小部件，让您能够从主屏上轻松找到最常用的联系人</string>
+<string name="welcome_info2">您可以选择填充此小部件的首选方式：</string>
+<string name="welcome_auto">自动设置</string>
+<string name="continue_button">继续</string>
+<string name="finish">完成</string>
+<string name="back">返回</string>
+<string name="auto_radio_button_label">自动。这将自动填充您最常用的联系人</string>
+<string name="manual_radio_button_label">手动。您将手动将联系人添加到小部件</string>
+    
+    <!-- new add  -->
+<string name="search_hint">输入后搜索</string>
+    
+<string name="air">天空</string>
+	<string name="blue">蓝色</string>
+	<string name="camera_light">灯光</string>
+	<string name="dream">梦幻</string>
+	<string name="sunny">晴</string>		
+<string name="please_wait">请稍候...</string>
+<string name="loading">正在加载...</string>
+	
+	<string name="pick_photo_new">使用现有照片</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<EditText android:id="@+id/patternNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:gravity="center_vertical"
+                android:inputType = "phone"
+                android:singleLine="true" />
+
+        <TextView android:text="@string/pattern_help"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_below="@id/patternNumber"
+                android:gravity="center_vertical" />
+
+<!-- BEGIN Motorola, qknr64 , 2011-4-14 , IKSF-4973
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@android:drawable/bottom_bar"
+        >
+            <Button android:id="@+id/doneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/button_done"
+                android:minWidth="120dip"
+                android:minHeight="48dip"
+            />
+
+            <Button android:id="@+id/revertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/button_revert"
+                android:minWidth="120dip"
+                android:minHeight="48dip"
+            />
+        </RelativeLayout>-->
+       <com.motorola.firewall.MotoActionBar
+           android:id="@+id/action_bar"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true" />
+       <!--END IKSF-4973-->
+</RelativeLayout>

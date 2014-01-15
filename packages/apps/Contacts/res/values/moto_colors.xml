@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="black">#000000</color>
+    <color name="listAccelerator_alphalist">@*android:color/white</color>
+    <color name="listAccelerator_alphaexist">#ff4d4d4d</color>
+    <color name="listAccelerator_alphanotexist">#c0c0c0</color>
+    <color name="listAccelerator_alphaespecial">#c0c0c0</color>
+</resources>

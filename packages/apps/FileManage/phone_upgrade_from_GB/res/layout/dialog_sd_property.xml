@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingLeft="4dip" >
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip">
+
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_name" 
+    android:paddingRight="8dip"/>         
+
+<TextView android:id="@+id/card_name" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+ 
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip">
+
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_type" 
+    android:paddingRight="8dip"/>         
+
+<TextView android:id="@+id/card_type"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>         
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip">
+
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_used_space" 
+    android:paddingRight="8dip"/>         
+
+<TextView android:id="@+id/prop_used_space"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>         
+
+</LinearLayout>
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:orientation="horizontal" android:paddingTop="6dip">
+
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/property_free_space" 
+    android:paddingRight="8dip"/>         
+
+<TextView android:id="@+id/prop_free_space"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>         
+
+</LinearLayout>
+
+</LinearLayout>

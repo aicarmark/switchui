@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="auto_update_interval_text">
+    <item>1个月</item>
+    <item>3个月</item>
+    <item>6个月</item>
+</string-array>
+<string-array name="auto_update_interval_value">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+</string-array>
+<string-array name="municipalityNameArray">
+    <item>北京</item>
+    <item>上海</item>
+    <item>天津</item>
+    <item>重庆</item>
+</string-array>
+</resources>

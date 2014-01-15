@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Taken beheren"</string>
+  <string name="tabTasks">"Apps"</string>
+  <string name="tabProcesses">"Processen"</string>
+  <string name="buttonEnd">"Beëindigen"</string>
+  <string name="buttonRefresh">"Vernieuwen"</string>
+  <string name="menuSwitch">"Schakelen naar"</string>
+  <string name="menuEndTask">"Taak beëindigen"</string>
+  <string name="menuCancel">"Annuleren"</string>
+  <string name="textAvailableMemory">"Beschikbaar geheugen:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Aantal apps:"</string>
+  <string name="loading">"Laden\u2026"</string>
+</resources>

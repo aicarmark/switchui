@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Test for BP Panics
+bp_panic_script_pascal 1
+bp_panic_script_pascal 2
+bp_panic_script_pascal 3
+bp_panic_script_pascal 4
+bp_panic_script_pascal 5
+

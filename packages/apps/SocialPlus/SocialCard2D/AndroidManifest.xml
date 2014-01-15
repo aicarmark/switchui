@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.motorola.mmsp.socialGraph"
+    android:versionCode="1"
+    android:versionName="SWITCHUI2.0">  
+    
+    <supports-screens android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:anyDensity="true"/>
+    
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/> 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>  
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>  
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <application android:name=".SocialGraphApp"
+    	android:icon="@drawable/widget_icon" 
+    	android:label="@string/widget_label"
+		android:taskAffinity="android.task.socialGraph"
+		android:allowClearUserData="false"
+
+		android:theme="@android:style/Theme.Holo"
+    	android:debuggable="false">
+    	
+    	<activity
+            android:name=".socialGraphServiceGED.TestActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+        
+        <activity android:name=".socialGraphWidget.ui.ContactHistoryActivity"
+				  android:configChanges="navigation|orientation|keyboardHidden|screenSize"
+				  android:theme="@style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_CONTACT_HISTORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity android:name=".socialGraphWidget.ui.ContactsManageActivity"
+				android:launchMode="singleTask"
+				android:excludeFromRecents="true"
+				android:screenOrientation="portrait"
+        		android:configChanges="navigation|keyboardHidden"
+                android:label="@string/manage_contacts_lable_name">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.CONTACTS_MANAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".socialGraphWidget.ui.SettingActivity"
+				  android:launchMode="singleTask"
+        		  android:configChanges="navigation|keyboardHidden"
+				  android:label="@string/title_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--  action android:name="com.motorola.mmsp.socialGraph.SETTING" />-->
+            </intent-filter>
+        </activity>    
+        
+        <activity android:name=".socialGraphWidget.ui.HideContactsActivity"
+				  android:configChanges="navigation|orientation|keyboardHidden|screenSize"
+				  android:windowSoftInputMode="stateHidden"
+				  android:theme="@style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.HIDE_CONTACTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name=".socialGraphWidget.ui.MultipleContactsPickerActivity"
+				  android:configChanges="navigation|orientation|keyboardHidden|screenSize"
+				  android:label="@string/multiple_contact_picker"
+				  android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.MULTIPLE_CONTACTS_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name=".socialGraphWidget.ui.SingleContactsPickerActivity"
+				  android:configChanges="navigation|orientation|keyboardHidden|screenSize"
+				  android:windowSoftInputMode="stateHidden"
+				  android:theme="@style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.SINGLE_CONTACTS_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+
+        <activity android:name=".socialGraphWidget.ui.SetSkinActivity"
+				  android:screenOrientation="portrait"
+				  android:configChanges="navigation|orientation|keyboardHidden|screenSize"
+                  android:label="@string/set_skin_lable_name">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.SET_SKIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+        
+        <activity android:name=".socialGraphWidget.ui.HistoryDialogActivity"
+        		  android:configChanges="navigation|keyboardHidden"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.Transparence">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.VIEW_HISTORY_DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".socialGraphWidget.ui.WelcomeActivity"
+				  android:label="@string/welcome_title"
+                  android:configChanges="locale|navigation|orientation|keyboardHidden|screenSize"
+                  >
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.socialGraph.WELCOME_INFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name=".socialGraphWidget.ui.WelcomeAutoActivity"
+                  android:label="@string/welcome_title"
+                  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity> 
+          
+        <receiver android:name=".socialGraphWidget.AppReceiver" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.intent.action.SHORTCUT_UPDATE_ACTION" />
+                <action android:name="com.motorola.mmsp.socialGraph.SETTING_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+   		<provider android:name=".socialGraphWidget.providers.SocialProvider"
+			android:authorities="com.motorola.mmsp.socialGraphWidget.provider"/>
+   		
+        <receiver android:name=".socialGraphServiceGED.ServiceReceiver" android:enabled="true">
+            <intent-filter>            
+                <action android:name="com.motorola.mmsp.intent.action.test" />
+                <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+            </intent-filter>
+            <intent-filter> 
+            	<action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+            	<data android:scheme="package"></data>
+            </intent-filter>
+    	</receiver>
+    	
+    	<receiver android:name=".socialGraphServiceGED.dataHandleCenter.SocialMessageReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.intent.action.CALL_ACTION" />
+                <action android:name="com.motorola.mmsp.intent.action.CONTACTS_ACTION" />
+                <action android:name="com.motorola.mmsp.intent.action.MESSAGE_ACTION" />                
+            </intent-filter>
+    	</receiver>
+        
+        <service 
+            android:name=".socialGraphServiceGED.SocialDataService" 
+        	android:enabled="true">
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.intent.action.SOCIAL_SERVICE_ACTION" />
+                <action android:name="com.motorola.mmsp.intent.action.CONTACTS_CLEAR_ACTION" />
+            </intent-filter>
+        </service>
+    
+        <provider
+            android:name=".socialGraphServiceGED.provider.SocialGraphProvider"
+            android:authorities="com.motorola.mmsp.socialgraphservice.provider"
+            android:multiprocess="true"/>
+
+        <receiver android:name="com.motorola.mmsp.socialGraph.socialwidget2D.SocialGraph2DProvider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_provider" />
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.action.click0"></action>
+                <action android:name="com.motorola.mmsp.action.click1"></action>
+                <action android:name="com.motorola.mmsp.action.click2"></action>
+                <action android:name="com.motorola.mmsp.action.click3"></action>
+                <action android:name="com.motorola.mmsp.action.click4"></action>
+                <action android:name="com.motorola.mmsp.action.click5"></action>
+                <action android:name="com.motorola.mmsp.action.click6"></action>
+                <action android:name="com.motorola.mmsp.action.click7"></action>
+                <action android:name="com.motorola.mmsp.action.click8"></action>
+                <action android:name="com.motorola.mmsp.action.click9"></action>
+                <action android:name="com.motorola.mmsp.action.click10"></action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                
+                <action android:name="com.motorola.mmsp.socialGraph.WIDGET_SKIN_CHANGE" />
+                <action android:name="com.motorola.mmsp.socialGraph.WIDGET_SHORTCUT_CHANGE" />
+                <action android:name="com.motorola.mmsp.socialGraph.WIDGET_CONTACT_CHANGE" />
+                <action android:name="com.motorola.mmsp.socialGraph.OUT_OF_BOX" />
+		        <action android:name="com.motorola.mmsp.socialGraph.WIDGET_MODE_CHANGE" />
+		        <action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+		        <action android:name="com.motorola.mmsp.socialGraph.UPDATE" />
+            </intent-filter>
+        </receiver>        
+        
+        <activity android:name=".socialwidget2D.SocialWidget2DConfigActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="navigation|orientation|keyboardHidden|screenSize" >
+             <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+             </intent-filter>
+         </activity>
+              
+    </application>
+
+</manifest> 

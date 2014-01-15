@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="Skin"> 
+    	 <attr name="name" format="reference|string"/>
+    	 <attr name="thumbnail_image" format="reference|integer"/>
+    	 <attr name="bar_bg_1" format="reference|integer"/>
+    	 <attr name="bar_bg_2" format="reference|integer"/>
+    	 <attr name="bar_bg_3" format="reference|integer"/>
+    	 <attr name="bar_bg_4" format="reference|integer"/>
+    	 <attr name="bar_bg_5" format="reference|integer"/>
+    	 <attr name="bar_bg_6" format="reference|integer"/>
+    	 <attr name="bar_bg_7" format="reference|integer"/>
+    	 <attr name="bar_bg_8" format="reference|integer"/>
+    	 <attr name="bar_bg_9" format="reference|integer"/>
+    	 <attr name="bg_image_1" format="reference|integer"/>
+    	 <attr name="bg_image_2" format="reference|integer"/>
+    	 <attr name="bg_image_3" format="reference|integer"/>
+    	 <attr name="bg_image_4" format="reference|integer"/>
+    	 <attr name="bg_image_5" format="reference|integer"/>
+    	 <attr name="bg_image_6" format="reference|integer"/>
+    	 <attr name="bg_image_7" format="reference|integer"/>
+    	 <attr name="bg_image_8" format="reference|integer"/>    
+    	 <attr name="bg_image_9" format="reference|integer"/>	 
+     </declare-styleable> 
+</resources>

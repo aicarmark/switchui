@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/bg_transparency">
+   <TextView  
+                android:layout_width="fill_parent"             
+                android:layout_height="wrap_content"   
+                android:text="@string/welcome_auto"
+                android:textSize="16px"
+				android:gravity="center"
+                android:layout_marginTop="14px"
+                android:textColor="#ff000000"              
+                > </TextView>
+   <TextView  
+                android:layout_width="fill_parent"             
+                android:layout_height="wrap_content"   
+                android:text="@string/auto_info1"
+                android:textSize="16px"
+                android:layout_marginLeft="24px"
+				android:layout_marginRight="24px"
+                android:layout_marginTop="14px"
+                android:textColor="#ff000000"  
+				android:gravity="center"				
+                > </TextView>
+
+    <TextView  
+                android:layout_width="fill_parent"             
+                android:layout_height="wrap_content"   
+                android:text="@string/auto_info2"
+                android:textSize="16px"
+                android:layout_marginLeft="24px"
+				android:layout_marginRight="24px"
+                android:layout_marginTop="14px"
+                android:textColor="#ff000000"   
+				android:gravity="center"				
+                > </TextView>
+
+ <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        
+        <Button android:text="@string/back" 
+            android:id="@+id/back" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+        <Button android:text="@string/ok" 
+            android:id="@+id/finish" 
+            android:layout_weight="1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

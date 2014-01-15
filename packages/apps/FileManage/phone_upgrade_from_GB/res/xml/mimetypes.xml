@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date       CR                Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+
+<MimeTypes>
+    <!-- Image types -->
+    <type extension=".png" mimetype="image/png" />
+    <type extension=".gif" mimetype="image/gif" />
+    <type extension=".jpg" mimetype="image/jpg" />
+    <type extension=".jpeg" mimetype="image/jpeg" />
+    <type extension=".bmp" mimetype="image/bmp" />
+
+    <!-- Audio types -->
+    <type extension=".mp3" mimetype="audio/mp3" />
+    <type extension=".wav" mimetype="audio/wav" />
+    <type extension=".ogg" mimetype="audio/x-ogg" />
+    <type extension=".mid" mimetype="audio/mid" />
+    <type extension=".midi" mimetype="audio/midi" />
+    <type extension=".amr" mimetype="audio/AMR" />
+    <type extension=".imy" mimetype="audio/imy" />
+    <type extension=".aac" mimetype="audio/aac" />
+    <type extension=".qcp" mimetype="audio/qcp" />
+    <type extension=".ra" mimetype="audio/x-realaudio" />
+
+    <!-- Video types -->
+    <type extension=".mpeg" mimetype="video/mpeg" />
+    <type extension=".3gp" mimetype="video/3gpp" />
+    <type extension=".rm" mimetype="video/rm" />
+    <type extension=".rmvb" mimetype="video/rmvb" />
+    <type extension=".mkv" mimetype="video/x-matroska" />
+    <type extension=".webm" mimetype="video/webm" />
+
+    <!-- Package types -->
+    <type extension=".jar" mimetype="application/java-archive" />
+    <type extension=".zip" mimetype="application/zip" />
+    <type extension=".rar" mimetype="application/x-rar-compressed" />
+    <type extension=".gz" mimetype="application/gzip" />
+
+    <!-- Web browser types -->
+    <type extension=".htm" mimetype="text/html" />
+    <type extension=".html" mimetype="text/html" />
+    <type extension=".php" mimetype="text/php " />
+
+    <!-- Text types -->
+    <type extension=".txt" mimetype="text/plain" />
+    <type extension=".csv" mimetype="text/csv" />
+    <type extension=".xml" mimetype="text/xml" />
+
+    <!-- MicroSoft types -->
+    <type extension=".xla" mimetype="application/vnd.ms-excel" />
+    <type extension=".xlam" mimetype="application/vnd.ms-excel" />
+    <type extension=".xlsm" mimetype="application/vnd.ms-excel" />
+    <type extension=".xltm" mimetype="application/vnd.ms-excel" />
+
+    <!-- Android specific -->
+    <type extension=".apk" mimetype="application/vnd.android.package-archive" />
+
+</MimeTypes>

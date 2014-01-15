@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/call_log_list_contact_photo_size"
+    android:id="@+id/speedDialEditAdapterHandle" 
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+    <!-- number type label -->
+    <!-- Speed Dial Position -->
+
+    <ImageView android:id="@+id/pickerPosition"
+        android:layout_marginTop="5dip" 
+        android:layout_marginBottom="5dip"
+        android:scaleType="centerInside" 
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content" />
+
+    <LinearLayout android:id="@+id/addSpeedDialClickArea"
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground">
+        <ImageView android:id="@+id/pickerImage"
+            android:layout_width="@dimen/call_log_list_contact_photo_size"
+            android:layout_height="@dimen/call_log_list_contact_photo_size"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dip" />
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dip">
+
+            <!-- label name -->
+            <TextView android:layout_marginTop="5dip" 
+                android:id="@+id/pickerName"
+                style="@style/Contacts.SpeedDialNameEditSingleLine" />
+
+            <!-- label number -->
+            <TextView android:id="@+id/pickerNumber"
+                style="@style/Contacts.SpeedDialNumberEditSingleLine" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/removeSpeedDialClickArea"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_notify_clear" />
+</LinearLayout>

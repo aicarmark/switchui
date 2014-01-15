@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources>
+    <!-- Flag indicating whether Contacts app is allowed to import contacts from SDCard -->
+    <bool name="config_allow_import_from_sdcard">true</bool>
+    <!-- If true, all vcard files are imported from SDCard without asking a user.
+    If not, dialog shows to let the user to select whether all vcard files are imported or not.
+    If the user selects "not", then the application ask the user to select a file.-->
+    <bool name="config_import_all_vcard_from_sdcard_automatically">false</bool>
+    <!-- If true, vcard importer shows a dialog which asks the user whether the user wants
+    to import all vcard files in SDCard or select one vcard file. If false, the dialog is
+    skipped and the importer asks the user to choose one vcard file.
+    If config_import_all_vcard_from_sdcard_automatically is set true, this configuration
+    is ignored. -->
+    <bool name="config_allow_users_select_all_vcard_import">true</bool>
+
+    <!-- Flag indicating whether Contacts app is allowed to export contacts to SDCard -->
+    <bool name="config_allow_export_to_sdcard">true</bool>
+
+    <!-- Flag indicating whether Contacts app is allowed to share contacts with devices outside -->
+    <bool name="config_allow_share_visible_contacts">true</bool>
+
+    <!-- If true, enable vibration (haptic feedback) for dialer key presses.
+         The pattern is set on a per-platform basis using config_virtualKeyVibePattern.
+         TODO: If enough users are annoyed by this, we might eventually
+         need to make it a user preference rather than a per-platform
+         resource. -->
+    <bool name="config_enable_dialer_key_vibration">true</bool>
+
+    <!-- The type of vcard for improt. If the vcard importer cannot guess the exact type
+    of a vCard type, the improter uses this type. -->
+    <string name="config_import_vcard_type" translatable="false">default</string>
+
+    <!-- The type of VCard for export. If you want to let the app emit vCard which is
+    specific to some vendor (like DoCoMo), specify this type (e.g. "docomo") -->
+    <string name="config_export_vcard_type" translatable="false">default</string>
+
+    <!-- Directory in which exported VCard file is stored -->
+    <string name="config_export_dir" translatable="false">/mnt/sdcard</string>
+
+    <!-- Prefix of exported VCard file -->
+    <string name="config_export_file_prefix" translatable="false"></string>
+
+    <!-- Suffix of exported VCard file. Attached before an extension -->
+    <string name="config_export_file_suffix" translatable="false"></string>
+
+    <!-- Extension for exported VCard files -->
+    <string name="config_export_file_extension" translatable="false">vcf</string>
+
+    <!-- Minimum number of exported VCard file index -->
+    <integer name="config_export_file_min_index">1</integer>
+
+    <!-- Maximum number of exported VCard file index -->
+    <integer name="config_export_file_max_index">99999</integer>
+
+    <!-- The list (separated by ',') of extensions should be checked in addition to
+     config_export_extension. e.g. If "aaa" is added to here and 00001.vcf and 00002.aaa
+     exist in a target directory, 00003.vcf becomes a next file name candidate.
+     Without this configuration, 00002.vcf becomes the candidate.-->
+    <string name="config_export_extensions_to_consider" translatable="false"></string>
+
+    <!-- If true, show an onscreen "Dial" button in the dialer.
+         In practice this is used on all platforms even the ones with hard SEND/END
+         keys, but for maximum flexibility it's controlled by a flag here
+         (which can be overridden on a per-product basis.) -->
+    <bool name="config_show_onscreen_dial_button">true</bool>
+
+    <!-- If true, an option is shown in Display Options UI to choose a sort order -->
+    <bool name="config_sort_order_user_changeable">true</bool>
+
+    <!-- If true, the default sort order is primary (i.e. by given name) -->
+    <bool name="config_default_sort_order_primary">true</bool>
+
+    <!-- If true, an option is shown in Display Options UI to choose a name display order -->
+    <bool name="config_display_order_user_changeable">true</bool>
+
+    <!-- If true, the default sort order is primary (i.e. by given name) -->
+    <bool name="config_default_display_order_primary">true</bool>
+
+    <!-- If true, the order of name fields in the editor is primary (i.e. given name first) -->
+    <bool name="config_editor_field_order_primary">true</bool>
+
+    <!-- If true, phonetic name is included in the contact editor by default -->
+    <bool name="config_editor_include_phonetic_name">false</bool>
+
+    <!-- If true, Contacts uses two panes: List and Detail. If false, Details are
+         shown in their own screens. This flag must be in sync with the layout definitions. -->
+    <bool name="config_use_two_panes">false</bool>
+
+    <!-- If true, the "home" icon on the action bar will be shown. -->
+    <bool name="show_home_icon">false</bool>
+
+    <!--
+      If true, the "view updates from group" button in the action bar will be
+      shown. Otherwise it will be part of the content on the group detail page.
+    -->
+    <bool name="config_show_group_action_in_action_bar">false</bool>
+
+    <!-- Width of a tab in the tab carousel as a percentage of the current screen width on the
+         contact detail page -->
+    <item name="tab_width_screen_width_percentage" type="fraction">75%</item>
+
+    <!-- Height of the tab carousel as a percentage of the current screen width on the
+         contact detail page -->
+    <item name="tab_height_screen_width_percentage" type="fraction">50%</item>
+
+    <!-- Regular expression for prohibiting certain phone numbers in dialpad.
+         Ignored if empty. -->
+    <string name="config_prohibited_phone_number_regexp"></string>
+
+    <!-- If true, enable the "import contacts from SIM" feature if the device
+         has an appropriate SIM or ICC card.
+         Setting this flag to false in a resource overlay allows you to
+         entirely disable SIM import on a per-product basis. -->
+    <bool name="config_allow_sim_import">true</bool>
+
+    <!-- MOT MOD BEGIN - IKPIM-876, add Backup Assistant as Optionmenu -->
+    <string name="contact_backup_assistant_optionmenu_intent_action">com.motorola.BackupAssistanceClient.ACTION_MAIN</string>
+    <string name="contact_backup_assistant_optionmenu_title">com.motorola.BackupAssistanceClient:string/vzw_backup_assistant</string>
+    <string name="contact_backup_assistant_optionmenu_icon">com.motorola.BackupAssistanceClient:drawable/ic_menu_ba</string>
+    <string name="contact_backup_assistant_optionmenu_res_package">com.motorola.BackupAssistanceClient</string>
+    <!-- MOT MOD END -->
+
+    <!-- ################### MOTO Dialer Code Start ##################### -->
+    <!--IKSTABLETWO-6839 Viewing Missed call from notification curtain show wrong contact detail view not missed call list
+      Change the lanuch mode from 0(standard) to 2 (singletask)
+    -->
+    <string name="RecentCallLaunchMode">2</string>
+    <string name="RecentCallClearTask">false</string>
+    <string name="FrequentLaunchMode">0</string>
+
+    <!-- MOTO Dialer Code Start -->
+    <!-- FDN/SDN lookup -->        
+    <bool name="fdn_sdn_lookup">false</bool>
+
+    <!-- IKMAIN-10554, a19591    
+    Flag indicating CNAP support (Feature 34425) in Dialer & Recent Calls history    
+    CNAP_OFF = 0; will indicate that CNAP feature will be OFF    
+    CNAP_PRIORITY = 1; will indicate that CNAP name takes priority over address book entry    
+    CNAP_CONTACT_PRIORITY = 2; will indicate that address book entry takes priority over CNAP name    -->    
+    <integer name="ftr_cnap">2</integer>
+    
+    <!-- MOT FID 35631-sprint feature IKMAIN-29869 -->
+    <bool name="ftr_35631_sprint_feature">false</bool>
+
+    <string name="vvmPackageName">com.motorola.vvm</string>
+    <string name="vvmActivityName">com.motorola.vvm.ui.VvmMainActivity</string>
+
+
+    <!-- MOT Calling code CR - IKSTABLETWO-1038 -->
+    <!-- This string is the locale list supported by voice dialer,delimits by ',' -->
+    <string name="voice_dialer_supported_locales">en_US,es_US</string>
+    <!-- MOT Calling end -->
+    <!--MOT calling code- IKPIM-161-->
+    <bool name="smart_dialer_qwerty_support">true</bool>
+
+    <!-- MOT Calling Code Begin - IKPIM-384 -->
+    <!-- Determine whether we want ME.-->
+    <bool name="ftr_36344_meaningful_event_log">true</bool>
+
+    <!-- MOT FID 35413-DialerLocalization IKCBS-2014 -->
+    <bool name="ftr_35413_use_message_button">false</bool>
+
+    <!-- MOT FID 36927-Speeddial#1 IKCBS-2013 -->
+    <bool name="ftr_36927_exclude_voicemail">false</bool>
+
+    <!-- MOT Calling Code CR - IKSHADOW-422 -->
+    <!-- Flag indicating if support assisted dialing feature -->
+    <bool name="ftr_28651_assisted_dialing">true</bool>
+
+    <!-- Motorola, w21071, 2011-12-21, IKCBS-2736
+         FID 36876 Change the format of call time on recent calls list
+         from the relative time format to the date and time format -->
+    <bool name="ftr_36876_call_time_display_by_date_time_format">false</bool>
+    <!--  IKHSS7-2681, Motorola, tkwj46, 2012-01-02, Motorola Korea requirement - do not show IMEI -->
+    <bool name="mmi_imei_display">true</bool>
+
+    <!-- Motorola, pxkq63, 2012/1/3, IKHSS7-2761, FID 35964 Call Setting for kor -->
+    <bool name="ftr_35964_call_setting_for_kor">false</bool>
+
+    <!-- Motorola, IKHSS6UPGR-7991, VZW enhancement -->
+    <bool name="config_enable_contacts_search_in_phone">false</bool>
+    <!-- End of IKHSS7-17870 -->
+    <!-- ################### MOTO Dialer Code End ##################### -->
+
+    <!--Begin Motorola, vnxm46 02/07/2012 IKSPYLA-1849 Hyphenation not working correctly-->
+    <string name="portuguese">português</string>
+    <!--End IKSPYLA-1849-->
+    <bool name="ftr_36093_roamingcall">false</bool>
+    <bool name="ftr_36094_roaming_callback">false</bool>
+</resources>

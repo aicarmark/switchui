@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Az alábbi diagrammal válasszon ki 7 névjegyet a widget benépesítésére. A kezdőképernyőn könnyen hozzáférhet majd ezekhez a névjegyekhez.</string>
+</resources>

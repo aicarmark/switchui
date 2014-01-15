@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="quicknote_app_name">Quick Notes</string>
+    <string name="sketcher_app_name">Sketcher</string>
+
+    <!-- for test menu... -->
+    <!--
+    string name="capture_and_see">CanNSee</string>
+    <string name="capture_and_send">CanNsend</string>
+    <string name="change">change</string>
+    <string name="sketch">Sketch</string>
+    <string name="tester_screenshot">Tester-screenshot</string>
+    <string name="note_edit">Note Edit</string>
+    <string name="note_detail">Note Detail</string>
+    <string name="notes_list">Notes List</string
+    -->
+    <string name="delete_note">Delete?</string>
+    <string name="menu_delete">Delete</string>
+    <string name="no_file">Media file is not available</string>
+
+    <!-- needed by QuickNote..really.. -->
+    <string name="save">Save</string>
+    <string name="create_note">Create note</string>
+    <string name="update">Update</string>
+    <string name="discard">Discard</string>
+    <string name="discard_exit">Discard &amp; Exit</string>
+    <string name="done">Done</string>
+    <string name="revert">Revert</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirm">Are you sure you want to delete this note?</string>
+    <string name="delete_progress_text">Delete QuickNotes...</string>
+    <string name="delete_progress_deleted"><xliff:g id="deleted">%s</xliff:g> of <xliff:g id="to_be_deleted">%s</xliff:g> deleted</string>
+    <string name="menu_deleteQuickNotes">Delete QuickNote</string>
+    <string name="show_discard_dialog_message">Are you sure you want to discard the content?</string>
+    <string name="show_discard_dialog_message_exit">Are you sure you want to discard the content and exit?</string>
+    <string name="sketch_saved">Sketch saved.</string>
+    <!-- string name="bg_color">Background color</string -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="text_note">Text Note</string>
+    <string name="picture_note">Picture Note</string>
+    <string name="sketch_note">Sketch Note</string>
+    <string name="voice_note">Voice Note</string>
+    <string name="add_note">Add Note</string>
+    <string name="snapshot_info_text">\nThe current screen has been captured.\n</string>
+    <string name="snapshotflip_info_text">\nThe current screen has been captured.\nOpen flip to continue.\n</string>
+    <string name="snapshot_btn_save">Save</string>
+    <string name="snapshot_btn_create">Save as note</string>
+    <string name="snapshot_btn_discard">Discard</string>
+    <string name="snapshot_title">Capture screen</string>
+    <!--
+    string name="pen_color">Pen Color</string>
+    <string name="pen_color_summary">Set default pen color</string>
+    <string name="pen_thickness">Pen Thickness</string>
+    <string name="pen_thickness_summary">Set default pen thickness</string>
+    <string name="eraser_thickness">Eraser Thickness</string>
+    <string name="eraser_thickness_summary">Set default eraser thickness</string>
+    <string name="background_color">Background Color</string>
+    <string name="background_color_summary">Set default background color</string
+    -->
+
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+    <string name="share">Share</string>
+    <string name="share_via">Share quicknote via</string>
+    <string name="share_error">The quicknote cannot be shared.</string>
+    <string name="edit">Edit</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="thumbnail_view">All Notes</string>
+    <string name="no_sd_snapshot">Please mount phone storage before using the snap shot.</string>
+    <string name="no_sd_createnote">Please mount phone storage before create Quick Note.</string>
+    <string name="no_sd_createsketcher">Please mount phone storage before create Sketcher.</string>
+    <string name="not_enough_free_space_sd_for_sketcher">There is not enough free space in phone storage. Sketcher requires at least 1MBytes free space in phone storage.</string>
+    <string name="not_enough_free_space_sd">There is not enough free space in phone storage. QuickNote requires at least 1MBytes free space in phone storage.</string>
+    <string name="load_failed">Phone storage is not available or unknown error</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_text_note">Enter text note</string>
+    <string name="tap_to_sketch">Tap to sketch</string>
+    <string name="discard_title">Discard</string>
+    <string name="discard_msg">The current sketch will be discarded</string>
+    <string name="warning">Warning</string>
+    <string name="empty_name">Please input the file name</string>
+    <string name="file_exist">File already exists, do you want to overwrite it?</string>
+    <string name="illegal_name">The filename contains illegal characters</string>
+    <string name="open">Open</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="grid_delete">Delete Note</string>
+    <string name="grid_delete_confirm">The selected notes will be deleted.</string>
+    <string name="text_copied">Text copied to clipboard</string>
+
+    <!-- Reminder -->
+    <string name="set_reminder">Set Reminder</string>
+    <string name="set_date_time">Set date&amp;time</string>
+    <string name="set_date">Set date</string>
+    <string name="set_time">Set time</string>
+    <string name="set_date_time_summary">Note reminder at specific date and time</string>
+    <string name="waring_toast">Warning: Reminder set at <xliff:g id="TIME" example="Year/Month/Day Hour:Minute">%s</xliff:g> is in the past!</string>
+    <string name="failure_toast">Setting Failure: Reminder set at <xliff:g id="TIME" example="Year/Month/Day Hour:Minute">%s</xliff:g> is not an effective time!</string>
+    <string name="notification_multiple">QuickNote Alert</string>
+    <string name="no_title_label">(No subject)</string>
+    <string name="alert_title">QuickNote notifications</string>
+    <string name="type_text">text</string>
+    <string name="type_image">image</string>
+    <string name="type_audio">audio</string>
+    <string name="type_unknown">unknown</string>
+    <string name="notenotfound_toast">Related Note has been deleted!</string>
+    <string name="default_page_title">Add new notes</string>
+    <string name="fail_to_read_file_toast">Fail to read/write file.</string>
+    <string name="memeory_not_enough">There is not enough memory.</string>
+    <string name="widget_description_quicknote">Create and view multimedia notes</string>
+    <string name="internal_full_exit">Internal storage full, please to delete some files before launch QuickNote</string>
+    <string name="sdcard_full_exit">Phone storage full, please to delete some files before launch QuickNote</string>
+    <string name="tips_content">Short press \"Power key\" and \"VolumeDown key\" simultaneously to trigger snapshot function</string>
+    <string name="snapshoting">Snapshot in progress, please wait...</string>
+    <string name="snapshot_failed">Snapshot failed</string>
+    <string name="file_too_long_cut">File content is larger than QuickNote allows. The redundant content will not be shown!</string>
+    <string name="image_process">Image processing in progress, please wait...</string>
+    <string name="image_process_failed">Image processing failed</string>
+    <string name="snapshot_save_failed">Failed to save the screen capture in file</string>
+    <string name="add_subject">Add subject</string>
+    <string name="note_selected">{0} item selected</string>
+    <string name="notes_selected">{0} items selected</string>
+    <string name="contact_unknown">Unknown</string>
+    <string name="menu_select_all">Select all</string>
+    <string name="menu_unselect_all">Unselect all</string>
+    <string name="note_update_failed">Fail to update the note</string>
+    <string name="unexpected_failure">QuickNote meets unexpected errors, pls try it later!</string>
+    <string name="note_saved">QuickNote is saved.</string>
+    <string name="title_maxLength">Subject has reached the max length.</string>
+    <!-- 2012-10-8, add by amt_sunzhao for SWITCHUITWOV-246 -->
+    <string name="data_processing_wait">Data processing, please wait ...</string>
+    <!-- 2012-10-8, add end -->
+</resources>

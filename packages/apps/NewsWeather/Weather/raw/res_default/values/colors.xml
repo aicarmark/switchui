@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="dragndrop_background">#e0103010</color>
+
+<color name="normal_text_1">#ffffff</color>
+<color name="normal_text_2">#000000</color>
+<color name="normal_text_3">#ffffff</color>
+
+<color name="outdoor_text_1">#00346a</color>
+<color name="outdoor_text_2">#000000</color>
+<color name="outdoor_text_3">#274e00</color>
+<drawable name="whiteplan">#FFFFFF</drawable>
+<drawable name="blackplan">#4e4e4e</drawable>
+
+<color name="transparent_background">#00000000 </color>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:batterymanager="http://schemas.android.com/apk/res/com.motorola.batterymanager">
+  <PreferenceCategory
+    android:key="presets_catg"
+    android:title="@string/preset_title">
+  </PreferenceCategory>
+	  <com.motorola.batterymanager.MyPreference
+	    android:key="preset_maxbatt_saver"
+	    android:persistent="false"
+	    android:layout="@layout/preset_maxbatt">
+	  </com.motorola.batterymanager.MyPreference>
+	  <com.motorola.batterymanager.MyPreference
+	    android:key="preset_nighttime_saver"
+	    android:persistent="false"
+	    android:layout="@layout/preset_nighttime">
+	  </com.motorola.batterymanager.MyPreference>
+	  <com.motorola.batterymanager.MyPreference
+	    android:key="preset_perfmode_saver"
+	    android:persistent="false"
+	    android:layout="@layout/preset_perfmode">
+	  </com.motorola.batterymanager.MyPreference>
+  <PreferenceCategory
+    android:key="customs_catg"
+    android:title="@string/customs_title">
+  </PreferenceCategory>
+	  <com.motorola.batterymanager.MyPreference
+	    android:key="custom_saver"
+	    android:persistent="false"
+	    android:layout="@layout/customs">
+	  </com.motorola.batterymanager.MyPreference>
+</PreferenceScreen>

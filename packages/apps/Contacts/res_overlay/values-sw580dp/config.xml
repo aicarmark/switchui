@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Contacts app resources that may need to be customized
+    for different hardware or product builds.
+-->
+<resources>
+    <bool name="contacts_show_dialpad_menu">false</bool>
+</resources>

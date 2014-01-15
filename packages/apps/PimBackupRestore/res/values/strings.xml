@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2009 Motorola
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+<!-- Main UI -->
+<string name="sdcard_backup_restore">Data Backup</string>
+<string name="backup_title">Auto Backup</string>
+<string name="backup_summary">Auto backup Contact/Message/Quick NoteBook/Calendar/Installed Application</string>
+<string name="restore_title">Auto Restore</string>
+<string name="restore_summary">Auto restore Contact/Message/Quick NoteBook/Calendar/Application</string>
+<string name="import3rd_title">Import From Files</string>
+<string name="import3rd_summary">Import Contact/Message/Quick NoteBook/Calendar from file(s)</string>
+<string name="ExportByAccount_title">Export Contacts</string>
+<string name="ExportByAccount_summary">Export Contacts from phone/mobile phone card/Exchange account and etc</string>
+
+<string name="contacts">Contact</string>
+<string name="sms">Message</string>
+<string name="quicknote">Quick NoteBook</string>
+<string name="calendar">Calendar</string>
+<string name="installed_app">Installed Application</string>
+<string name="bookmark">Bookmark</string>
+<string name="available_backup_file">available backup files</string>
+<string name="file">Import Contact/Message/Quick NoteBook/Calendar from one file</string>
+<string name="folder">Import Contact/Message/Quick NoteBook/Calendar from one folder</string>
+<string name="select_account">Please Select A Specified Account</string>
+<string name="local_contacts">Phone Contact</string>
+<string name="cCard_contacts">CDMA Card Contact</string>
+<string name="gCard_contacts">SIM Card Contact</string>
+<string name="gAccount_contacts">Gmail Account Contact</string>
+<string name="eAccount_contacts">Exchange Account Contact</string>
+<string name="account">Accounts</string>
+<string name="google">Google</string>
+<string name="mobile">Phone</string>
+<string name="local">Local</string>
+<string name="corporate">Corporate</string>
+<string name="app">Application</string>
+
+<string name="inner_storage">Internal phone storage</string>
+<string name="outer_storage">SD card</string>
+<string name="all_storage">Internal phone storage and SD card</string>
+
+<string name="back">Back</string>
+<string name="items">item(s)</string>
+<string name="files">file(s)</string>
+
+<string name="summary_contact">Contact(s)</string>
+<string name="summary_sms">Message(s)</string>
+<string name="summary_quicknote">Note(s)</string>
+<string name="summary_calendar">Event(s)</string>
+<string name="summary_app">Application(s)</string>
+<string name="summary_bookmark">Bookmark(s)</string>
+
+<string name="items_num_show"><xliff:g id="items_num">%s</xliff:g> <xliff:g id="item_type">%s</xliff:g></string>
+<string name="no_item">no <xliff:g id="items_type">%s</xliff:g></string>
+
+<!-- Backup to SD card -->
+<string name="backup">Backup</string>
+<string name="backup_to_sdcard">Backup <xliff:g id="contentType">%s</xliff:g> to <xliff:g id="storageType">%s</xliff:g></string>
+<string name="backup_content">Backup <xliff:g id="contentType">%s</xliff:g></string>
+<string name="backuping">Backuping <xliff:g id="contentType">%s</xliff:g></string>
+
+<!-- Restore to phone -->
+<string name="restore">Restore</string>
+<string name="restore_to_phone">Restore <xliff:g id="contentType">%s</xliff:g> to phone</string>
+<string name="restore_content">Restore <xliff:g id="contentType">%s</xliff:g></string>
+<string name="restoring">Restoring <xliff:g id="contentType">%s</xliff:g></string>
+
+<!-- Import3rd -->
+<string name="import3rd">Import</string>
+<string name="import3rd_from_sd">Import <xliff:g id="contentType">%s</xliff:g> to the phone</string>
+<string name="import3rd_content">Import from <xliff:g id="storageType">%s</xliff:g><xliff:g id="contentType">%s</xliff:g></string>
+<string name="import3rding0">Importing <xliff:g id="type">%s</xliff:g> file (<xliff:g id="currentCount">%s</xliff:g>/<xliff:g id="totalCount">%s</xliff:g>): <xliff:g id="fileName">%s</xliff:g></string>
+<string name="import3rding">Importing <xliff:g id="type">%s</xliff:g> file <xliff:g id="fname">%s</xliff:g></string>
+
+<!-- Export By Account -->
+<string name="export">Export</string>
+<string name="export_to_sdcard">Export <xliff:g id="contentType">%s</xliff:g>to <xliff:g id="storageType">%s</xliff:g></string>
+<string name="export_content">Export <xliff:g id="contentType">%s</xliff:g></string>
+<string name="exporting">Exporting <xliff:g id="type">%s</xliff:g></string>
+
+<!-- Dialog title -->
+<string name="delete_backup_folder">Previous <xliff:g id="contentType">%s</xliff:g> backup files will be deleted. Would you like to continue?</string>
+<string name="replace_old_backup_file">Previous backup files existed are list below. Do you want to replace?<xliff:g id="item_list">%s</xliff:g></string>
+<string name="progressbar_title">Under progress</string>
+<string name="no_content_found">In your <xliff:g id="storageType">%s</xliff:g>, no <xliff:g id="contentType">%s</xliff:g> found﹒ </string>
+<string name="phone">phone</string>
+<string name="sdcard">SD card</string>
+<string name="would_like_to_do_operation_only">Would you like to only <xliff:g id="opeartionType">%s</xliff:g> <xliff:g id="contentType">%s</xliff:g>?</string>
+<string name="contacts_and_sms">Contact and Message</string>
+
+<!-- Dialog button -->
+<string name="delete">Delete</string>
+<string name="replace">Replace</string>
+<string name="setting">Settings</string>
+<string name="proceed">Proceed</string>
+<string name="cancel_button_text">Cancel</string>
+
+<!-- File suffix -->
+<string name="vcard_suffix">.vcf</string>
+<string name="vmg_suffix">.vmg</string>
+
+<!-- Status messages -->
+<string name="no_sdcard">SD card is not available!</string>
+<string name="no_sdcard_and_internal_sdcard">SD card and Internal phone storage are not available!</string>
+<string name="read_sdcard_error">Read file failed.</string>
+<string name="read_phone_db_error">Read phone database failed.</string>
+<string name="write_sdcard_error">Write file failed.</string>
+<string name="write_phone_db_error">Write on phone database failed.</string>
+<string name="sdcard_readonly">File system is write-protected or backup folders is read-only.</string>
+<string name="unknown_error">Unknown error.</string>
+<string name="insufficient_space">Insufficient space on the <xliff:g id="storageType">%s</xliff:g>.</string>
+<string name="service_busy">Backup and restore service is busy, please try later.</string>
+<string name="copy_files_failed">Copy file(s) failed</string>
+<string name="sdcard_is_unavailable">SD card is not available, Data will be backed up in internal phone storage</string>
+<string name="encryption_is_enable">For security, your phone is set to encrypt all data on memory card. The data selected to be backed up will be affected, and will not be restored properly on other devices.</string>
+<string name="prohibit_install">Install blocked</string>
+<string name="non_market_app">For security, your phone is set to block installation of applications not obtained from Play Store.  If you want to change it, please press "Settings";, check "Unknown sources";, then back and install applications.</string>
+
+<string name="final_success_result"><xliff:g id="operationType">%s</xliff:g> following data <xliff:g id="from_or_to">%s</xliff:g> <xliff:g id="storageType">%s</xliff:g> <xliff:g id="path">%s</xliff:g>:"\r\n"<xliff:g id="itemList">%s</xliff:g></string>
+<string name="final_failed_result"><xliff:g id="operationType">%s</xliff:g> following data failed:"\r\n"<xliff:g id="itemList">%s</xliff:g></string>
+<string name="from">from</string>
+<string name="to">to</string>
+<string name="item_list"><xliff:g id="item_type">%s</xliff:g>: <xliff:g id="result">%s</xliff:g></string>
+<string name="done"><xliff:g id="actual">%s</xliff:g> <xliff:g id="piece_type">%s</xliff:g> item(s) is done, totally <xliff:g id="total">%s</xliff:g> <xliff:g id="piece_type">%s</xliff:g> item(s).</string>
+<string name="cancel">Canceled.&#160;</string>
+
+<string name="operation_cancel"><xliff:g id="operationType">%s</xliff:g> <xliff:g id="contentType">%s</xliff:g> has been cancelled.</string>
+<string name="cancel_finished_single"><xliff:g id="actual">%s</xliff:g> of <xliff:g id="total">%s</xliff:g> <xliff:g id="contentType">%s</xliff:g> <xliff:g id="items">%s</xliff:g> finished.</string>
+<string name="cancel_finished_both"><xliff:g id="actual">%s</xliff:g> of <xliff:g id="total">%s</xliff:g> <xliff:g id="contentType">%s</xliff:g> <xliff:g id="items">%s</xliff:g> and <xliff:g id="actual">%s</xliff:g> of <xliff:g id="total">%s</xliff:g> <xliff:g id="contentType">%s</xliff:g> <xliff:g id="items">%s</xliff:g> finished.</string>
+<string name="sdcard_file_contents_error">Sorry, the file format error, operation stop!</string>
+<string name="sdcard_file_type_error">Sorry, the file format error, please select the file with the suffix <xliff:g id="file_suffix">%s</xliff:g></string>
+<string name="out_of_memory_error">Sorry, mobile out of memory error, operation stop!</string>
+<string name="dir_not_exist">Sorry the folder <xliff:g id="default_folder">%s</xliff:g> does not exist. Please specify a file or folder to import contacts or messages.</string>
+<string name="operation_is_cancelling">Cancelling...</string>
+<string name="operation_is_doing">Ongoing...</string>
+<string name="prepare_for_backup">Preparing...</string>
+<string name="mms_default_string">MMS</string>
+<string name="more_string_display">&#160;...</string>
+<string name="is_calculating">calculating ...</string>
+
+<string name="not_support_unsaved_vcard_file">Please save the contacts file before view it.</string>
+<string name="caution">Cautions</string>
+<string name="not_show_anymore">Don\'t show next time</string>
+<string name="disclaimer_content">SD card is not available, Data will be backed up in internal phone storage which will be removed by Factory Reset</string>
+
+<!-- Popup alert dialog after click notification -->
+<string name="popup_cancel_ongoing_title">Cancel ongoing operation</string>
+<string name="popup_complete_result_title">&#160;completed</string>
+<string name="popup_cancel_ongoing_body">Do you want to cancel the ongoing operation?</string>
+<string name="popup_cancel_button">Yes, cancel it</string>
+<string name="yes">Yes</string>
+<string name="no">No</string>
+<string name="importVCardDesription">Import vCard</string>
+
+</resources>

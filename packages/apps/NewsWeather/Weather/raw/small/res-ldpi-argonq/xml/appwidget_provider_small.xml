@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:ww="http://schemas.android.com/apk/res/com.motorola.mmsp.locationwidget.small"  
+    android:minWidth="248px" android:minHeight="100px"   
+    android:updatePeriodMillis="5000" 
+    android:initialLayout="@layout/init_layout"> 
+    <appwidget-preview
+        ww:preview="@drawable/preview_4x1" />
+</appwidget-provider> 
+<!-- 
+android:configure="com.motorola.mmsp.locationwidget.small.Configure"
+ -->

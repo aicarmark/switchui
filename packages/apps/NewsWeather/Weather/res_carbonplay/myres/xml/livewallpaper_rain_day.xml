@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:render="http://schemas.android.com/apk/res/com.motorola.mmsp.weather">
+	<PlayerConfigInfo render:frame_time="50" />
+	<AnimationTag>
+		<MotoAnimationSet render:id="@+id/animation_set"
+			render:ordering="together" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_01"
+				render:type="translate_x" render:affect_type="delta" render:from="0"
+				render:to="-100" render:duration="2000" />
+			<MotoLinearAnimation render:id="@+id/animation_01"
+				render:type="translate_y" render:affect_type="delta" render:from="0"
+				render:to="1100" render:duration="2000" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set1"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="500" />
+			<MotoAnimationSet render:id="@+id/animation"
+				render:ordering="together" render:repeat_count="1">
+				<MotoLinearAnimation render:id="@+id/animation_00"
+					render:type="alpha" render:affect_type="set" render:from="255"
+					render:to="255" render:duration="2000" />
+				<MotoAccelerationAnimation render:id="@+id/animation_01"
+					render:type="translate_y" render:affect_type="delta" render:from="0"
+					render:init_velocity="random(30, 150)" render:duration="3000" />
+			</MotoAnimationSet>
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set2"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="1500" />
+			<MotoAnimationSet render:id="@+id/animation"
+				render:ordering="together" render:repeat_count="1">
+				<MotoLinearAnimation render:id="@+id/animation_00"
+					render:type="alpha" render:affect_type="set" render:from="255"
+					render:to="255" render:duration="2000" />
+				<MotoAccelerationAnimation render:id="@+id/animation_01"
+					render:type="translate_y" render:affect_type="delta" render:from="0"
+					render:init_velocity="random(30, 150)" render:duration="3000" />
+			</MotoAnimationSet>
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set3"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="2000" />
+			<MotoAnimationSet render:id="@+id/animation"
+				render:ordering="together" render:repeat_count="1">
+				<MotoLinearAnimation render:id="@+id/animation_00"
+					render:type="alpha" render:affect_type="set" render:from="255"
+					render:to="255" render:duration="2000" />
+				<MotoAccelerationAnimation render:id="@+id/animation_01"
+					render:type="translate_y" render:affect_type="delta" render:from="0"
+					render:init_velocity="random(30, 150)" render:duration="3000" />
+			</MotoAnimationSet>
+		</MotoAnimationSet>
+
+
+		<MotoAnimationSet render:id="@+id/animation_set71"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="300" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set7"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="200" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set8"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="200" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="100" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set9"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="300" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="100" />
+		</MotoAnimationSet>
+
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_0"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="10000" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_1"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="500" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="9600" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_2"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="900" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="9200" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_3"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="1300" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="8800" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_4"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="1700" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="8400" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_5"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="2100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="8000" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_6"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="2500" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="7600" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_7"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="2900" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="7200" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_8"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="3300" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="6800" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_9"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="3700" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="6400" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_10"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="4100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="6000" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_11"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="4500" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="5600" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_12"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="4900" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="5200" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_13"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="5300" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="4800" />
+		</MotoAnimationSet>
+		<MotoAnimationSet render:id="@+id/animation_set_group_14"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="5700" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="4400" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_15"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="6100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="4000" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_16"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="6500" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="3600" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_17"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="6900" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="3200" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_18"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="7300" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="2800" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_19"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="7700" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="2400" />
+		</MotoAnimationSet>
+
+		<MotoAnimationSet render:id="@+id/animation_set_group_20"
+			render:ordering="sequentially" render:repeat_count="-1">
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="0"
+				render:to="0" render:duration="8100" />
+			<MotoLinearAnimation render:id="@+id/animation_00"
+				render:type="alpha" render:affect_type="set" render:from="255"
+				render:to="255" render:duration="2000" />
+		</MotoAnimationSet>
+
+
+	</AnimationTag>
+
+<Texture render:id="@+id/rain_l" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="0" 
+render:width="186" 
+render:height="421" /> 
+
+<Texture render:id="@+id/rain_m" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="421" 
+render:width="162" 
+render:height="200" /> 
+
+<Texture render:id="@+id/rain_s" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="621" 
+render:width="180" 
+render:height="180" /> 
+
+<Texture render:id="@+id/bubble_smallgroup_c" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="801" 
+render:width="126" 
+render:height="89" /> 
+
+<Texture render:id="@+id/bubble_smallgroup_b" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="890" 
+render:width="110" 
+render:height="78" /> 
+
+<Texture render:id="@+id/bubble_smallgroup_a" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="0" 
+render:width="100" 
+render:height="80" /> 
+
+<Texture render:id="@+id/bubble_smallgroup_d" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="80" 
+render:width="78" 
+render:height="102" /> 
+
+<Texture render:id="@+id/bubble_2" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="182" 
+render:width="56" 
+render:height="88" /> 
+
+<Texture render:id="@+id/bubble_3" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="270" 
+render:width="42" 
+render:height="95" /> 
+
+<Texture render:id="@+id/bubble_1" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="365" 
+render:width="42" 
+render:height="72" /> 
+
+<Texture render:id="@+id/bubble_a" 
+render:bitmap="@drawable/rainypng" 
+render:x="0" 
+render:y="968" 
+render:width="46" 
+render:height="39" /> 
+
+<Texture render:id="@+id/bubble_b" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="437" 
+render:width="38" 
+render:height="35" /> 
+
+<Texture render:id="@+id/bubble_c" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="472" 
+render:width="32" 
+render:height="32" /> 
+
+<Texture render:id="@+id/bubble_d" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="504" 
+render:width="24" 
+render:height="27" /> 
+
+<Texture render:id="@+id/bubble_e" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="531" 
+render:width="26" 
+render:height="23" /> 
+
+<Texture render:id="@+id/bubble_f" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="554" 
+render:width="22" 
+render:height="22" /> 
+
+<Texture render:id="@+id/bubble_g" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="576" 
+render:width="22" 
+render:height="20" /> 
+
+<Texture render:id="@+id/bubble_h" 
+render:bitmap="@drawable/rainypng" 
+render:x="186" 
+render:y="596" 
+render:width="18" 
+render:height="18" /> 
+
+<Texture render:id="@+id/bg_new" 
+render:bitmap="@drawable/rainyjpg" 
+render:x="0" 
+render:y="0" 
+render:width="480" 
+render:height="708" /> 
+
+<Texture render:id="@+id/ripple1" 
+render:bitmap="@drawable/rainyjpg" 
+render:x="0" 
+render:y="708" 
+render:width="480" 
+render:height="146" /> 
+
+<Texture render:id="@+id/ripple2" 
+render:bitmap="@drawable/rainyjpg" 
+render:x="0" 
+render:y="854" 
+render:width="480" 
+render:height="146" /> 
+
+<Texture render:id="@+id/ripple3" 
+render:bitmap="@drawable/rainyjpg" 
+render:x="480" 
+render:y="0" 
+render:width="480" 
+render:height="146" /> 
+
+<Texture render:id="@+id/ripple4" 
+render:bitmap="@drawable/rainyjpg" 
+render:x="480" 
+render:y="146" 
+render:width="480" 
+render:height="146" /> 
+
+
+
+
+
+
+
+
+
+	<PictureTag>
+		<MotoPictureGroup>
+
+
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(0,50)"
+				 render:y="random(-1100,100)"
+				render:instance="1" render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(50,100)"
+				render:instance="1" render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(100,150)"
+			render:instance="1"	 render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(150,200)"
+			render:instance="1"	 render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(200,250)"
+			render:instance="1"	 render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(250,300)"
+			render:instance="1"	 render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(300,350)"
+			render:instance="1"	 render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+			<MotoPicture render:bitmap="@id/rain_l" render:x="random(350,400)"
+				render:instance="1" render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+				<MotoPicture render:bitmap="@id/rain_l" render:x="random(400,480)"
+				render:instance="1" render:y="random(-1100,100)"
+				render:seek_animation_to="random(0,1)" render:animation_set="@id/animation_set" />
+				
+
+
+
+			<MotoPicture render:bitmap="@id/rain_m" render:x="random(0,480)"
+				render:instance="7" render:y="random(280,400)" render:seek_animation_to="random(0,1)"
+				render:animation_set="@id/animation_set" />
+
+			<MotoPicture render:bitmap="@id/rain_s" render:x="random(0,480)"
+				render:instance="7" render:y="random(280,400)" render:seek_animation_to="random(0,1)"
+				render:animation_set="@id/animation_set" />
+
+
+
+
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_d"
+				render:x="5" render:y="5" render:animation_set="@id/animation_set_group_0" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="150" render:y="120" render:animation_set="@id/animation_set_group_1" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_b"
+				render:x="150" render:y="10" render:animation_set="@id/animation_set_group_2" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_b"
+				render:x="10" render:y="200" render:animation_set="@id/animation_set_group_2" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="200" render:y="230" render:animation_set="@id/animation_set_group_3" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="320" render:y="230" render:animation_set="@id/animation_set_group_3" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_c"
+				render:x="420" render:y="100" render:animation_set="@id/animation_set_group_4" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_c"
+				render:x="280" render:y="130" render:animation_set="@id/animation_set_group_5" />
+			<MotoPicture render:bitmap="@id/bubble_d" render:x="440"
+				render:y="120" render:animation_set="@id/animation_set_group_5" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_c"
+				render:x="400" render:y="10" render:animation_set="@id/animation_set_group_6" />
+			<MotoPicture render:bitmap="@id/bubble_b" render:x="40"
+				render:y="180" render:animation_set="@id/animation_set_group_6" />
+			<MotoPicture render:bitmap="@id/bubble_a" render:x="250"
+				render:y="40" render:animation_set="@id/animation_set_group_7" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_d"
+				render:x="280" render:y="280" render:animation_set="@id/animation_set_group_8" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="400" render:y="300" render:animation_set="@id/animation_set_group_9" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_c"
+				render:x="30" render:y="300" render:animation_set="@id/animation_set_group_9" />
+
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_c"
+				render:x="100" render:y="320" render:animation_set="@id/animation_set_group_10" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="250" render:y="40" render:animation_set="@id/animation_set_group_10" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_d"
+				render:x="450" render:y="320" render:animation_set="@id/animation_set_group_10" />
+			<MotoPicture render:bitmap="@id/bubble_g" render:x="30"
+				render:y="350" render:animation_set="@id/animation_set_group_11" />
+
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_b"
+				render:x="300" render:y="350" render:animation_set="@id/animation_set_group_12" />
+
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_a"
+				render:x="40" render:y="100" render:animation_set="@id/animation_set_group_13" />
+			<MotoPicture render:bitmap="@id/bubble_smallgroup_b"
+				render:x="120" render:y="180" render:animation_set="@id/animation_set_group_13" />
+
+			<MotoPicture render:bitmap="@id/bubble_d" render:x="40"
+				render:y="250" render:animation_set="@id/animation_set_group_14" />
+			<MotoPicture render:bitmap="@id/bubble_h" render:x="300"
+				render:y="100" render:animation_set="@id/animation_set_group_14" />
+			<MotoPicture render:bitmap="@id/bubble_c" render:x="250"
+				render:y="180" render:animation_set="@id/animation_set_group_14" />
+
+			<MotoPicture render:bitmap="@id/bubble_d" render:x="200"
+				render:y="100" render:animation_set="@id/animation_set_group_15" />
+			<MotoPicture render:bitmap="@id/bubble_b" render:x="120"
+				render:y="80" render:animation_set="@id/animation_set_group_15" />
+
+			<MotoPicture render:bitmap="@id/bubble_d" render:x="180"
+				render:y="250" render:animation_set="@id/animation_set_group_16" />
+			<MotoPicture render:bitmap="@id/bubble_c" render:x="250"
+				render:y="320" render:animation_set="@id/animation_set_group_16" />
+
+			<MotoPicture render:bitmap="@id/bubble_c" render:x="120"
+				render:y="180" render:animation_set="@id/animation_set_group_17" />
+			<MotoPicture render:bitmap="@id/bubble_c" render:x="400"
+				render:y="230" render:animation_set="@id/animation_set_group_17" />
+
+			<MotoPicture render:bitmap="@id/bubble_b" render:x="400"
+				render:y="80" render:animation_set="@id/animation_set_group_19" />
+			<MotoPicture render:bitmap="@id/bubble_d" render:x="100"
+				render:y="250" render:animation_set="@id/animation_set_group_19" />
+
+			<MotoPicture render:bitmap="@id/bubble_e" render:x="350"
+				render:y="70" render:animation_set="@id/animation_set_group_20" />
+			<MotoPicture render:bitmap="@id/bubble_g" render:x="380"
+				render:y="320" render:animation_set="@id/animation_set_group_20" />
+
+
+
+			<MotoPicture render:bitmap="@id/bubble_1" render:x="random(10, 430)"
+				render:instance="1" render:y="random(-100,600)"
+				render:animation_set="@id/animation_set1" />
+			<MotoPicture render:bitmap="@id/bubble_2" render:x="random(10, 430)"
+				render:instance="1" render:y="random(-100,600)"
+				render:animation_set="@id/animation_set2" />
+			<MotoPicture render:bitmap="@id/bubble_3" render:x="random(10, 430)"
+				render:instance="1" render:y="random(-100,600)"
+				render:animation_set="@id/animation_set3" />
+
+			<MotoPicture render:bitmap="@id/ripple1" render:x="0"
+				render:y="710" render:animation_set="@id/animation_set71" />
+			<MotoPicture render:bitmap="@id/ripple2" render:x="0"
+				render:y="710" render:animation_set="@id/animation_set7" />
+			<MotoPicture render:bitmap="@id/ripple3" render:x="0"
+				render:y="710" render:animation_set="@id/animation_set8" />
+			<MotoPicture render:bitmap="@id/ripple4" render:x="0"
+				render:y="710" render:animation_set="@id/animation_set9" />
+
+			<MotoPicture render:bitmap="@id/bg_new" render:x="0"
+				render:y="0" />
+			<MotoPicture render:x="180" render:y="180" render:id="@+id/pic_text" />
+		</MotoPictureGroup>
+	</PictureTag>
+</Config>

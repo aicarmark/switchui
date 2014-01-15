@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<plugin-info 
+  minWidth="380"
+  minHeight="60"
+  icon="@drawable/preview_4x1"
+  previewImage="@drawable/preview_4x1"
+  label="@string/widgetname"
+  >
+</plugin-info>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggle Widgets</string>
+    <string name="gps_app_name">GPS टॉगल</string>
+    <string name="airplane_app_name">एयरप्लेन मोड टॉगल</string>
+    <string name="wifi_app_name">वाई-फाई टॉगल</string>
+    <string name="bluetooth_app_name">Bluetooth टॉगल</string>
+    <string name="apn_app_name">APN टॉगल</string>
+    <string name="data_app_name">डेटा टॉगल</string>
+    <string name="widget_description">एयरप्लेन मोड की स्थिति देखें और नियंत्रित करें</string>
+    <string name="widget_description_bt">Bluetooth की स्थिति देखें और नियंत्रित करें</string>
+    <string name="widget_description_wifi">वाई-फाई की स्थिति देखें और नियंत्रित करें</string>
+    <string name="widget_description_gps">GPS की स्थिति देखें और नियंत्रित करें</string>
+    <string name="StatusOn">चालू</string>
+    <string name="StatusOff">बंद</string>
+    <string name="StatusIntermediate"></string>
+    <string name="AirplanetoastText">एयरप्लेन मोड अनुपलब्ध है</string>
+    <string name="BluetoothtoastText">Bluetooth अनुपलब्ध है</string>
+    <string name="GPStoastText">GPS अनुपलब्ध है</string>
+    <string name="WifitoastText">वाई-फाई अनुपलब्ध है</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+    <string name="location_restriction_enabled">स्थान प्रतिबंध सक्षम है.</string>
+    <!-- END IKPITTSBURGH-473 -->
+    <string name="apncontrol_app_name">APN नियंत्रण</string>
+    <string name="no_apn">कोई APN उपलब्ध नहीं</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="manageshortcuts_hint" >使用图形来选择 9 个应用程序以填充您的小部件。您将能够在主屏面板上轻松访问这些应用程序。</string>
+</resources>

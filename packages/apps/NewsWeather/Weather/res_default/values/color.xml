@@ -1,0 +1,17 @@
+<resources>
+   
+    <color name="city_color">#FFFFFFFF</color>
+    <color name="date_color">#FFFFFFFF</color>
+    <color name="time_color">#FFFFFFFF</color>
+    <color name="temperature_color">#FFFFFFFF</color>
+    <color name="shadow_color">#C0000000</color>
+    
+    <color name="news_cue">#FF8C8C8C</color>
+    <color name="news_title">#FF000000</color>
+    <color name="news_content">#FF000000</color>
+    <color name="news_date">#FF000000</color>
+     
+  	<color name="transparent_blackground">#00000000</color>
+  	<color name="black">#ff000000</color>
+    
+</resources>

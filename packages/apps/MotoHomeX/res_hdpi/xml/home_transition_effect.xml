@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Transition Effect Settings" >
+    <!-- add by bvq783 for entering transition -->
+    <ListPreference
+        android:key="entering_transition_effect"
+        android:title="@string/entry_transition_effect"
+        android:entries="@array/entry_tansition_effect_entries"
+        android:entryValues="@array/entry_tansition_effect_values">
+    </ListPreference>
+    <!-- add by bvq783 end -->
+
+    <ListPreference
+        android:key="workspace_transition_effect"
+        android:title="@string/home_transition_effect"
+        android:entries="@array/workspace_tansition_effect_entries"
+        android:entryValues="@array/workspace_tansition_effect_values">
+    </ListPreference>
+
+    <ListPreference
+        android:key="apps_transition_effect"
+        android:title="@string/main_menu_transition_effect"
+        android:entries="@array/apps_tansition_effect_entries"
+        android:entryValues="@array/apps_tansition_effect_values">
+    </ListPreference>
+
+</PreferenceScreen>

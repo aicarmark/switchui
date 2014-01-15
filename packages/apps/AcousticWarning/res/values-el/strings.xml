@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Ένταση ήχου πολυμέσων</string>
+  <string name="warning_text">Αν η ένταση του ήχου είναι υψηλή για μεγάλο χρονικό διάστημα, μπορεί να προκαλέσει βλάβες στην ακοή σας.\n\nΗ ένταση της μουσικής έχει προσαρμοστεί κάτω από το προτεινόμενο επίπεδο.</string>
+</resources>

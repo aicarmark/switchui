@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">קבצים</string>
+    <string name="add_server">הוסף שרת</string>
+    <string name="add_samba_server_title">שרת Samba חדש</string>
+    <string name="edit_samba_server_title">ערוך שרת Samba</string>
+    <string name="add_server_hostname">שם או IP של השרת</string>
+    <string name="add_server_username">שם משתמש</string>
+    <string name="add_server_password">סיסמה</string>
+    <string name="confirm_password">אשר סיסמה</string>
+    <string name="server_display_name">שם:</string>
+    <string name="server_logon_failure">ההתחברות נכשלה</string>
+    <string name="server_reauth_title">הזן נתוני אימות</string>
+    <string name="server_logon_failure_indication">הזן נתוני אימות.</string>
+    <string name="remote_files">תיקיות מרוחקות</string>
+    <string name="menu_edit">ערוך</string>
+    <string name="menu_remove">הסר</string>
+    <string name="file_transfer">מעביר</string>
+    <string name="file_transfer_complete">העברת קובץ הושלמה:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">ההעברה הושלמה: קובץ %d</item>
+        <item quantity="other">ההעברה הושלמה: %d קבצים</item>
+    </plurals>
+    <string name="host_name_empty_indicator">אנא הזן שם מארח.</string>
+    <string name="not_found_network_name">שם הרשת לא נמצא.</string>
+    <string name="server_not_reachable">לא ניתן לגשת לשרת.</string>
+    <string name="no_group_found">לא נמצאה קבוצה. אנא נסה שוב.</string>
+    <string name="external_sdcard">SD חיצוני</string>
+    <string name="menu_new_folder">תיקייה חדשה</string>
+    <string name="menu_delete">מחק</string>
+    <string name="menu_rename">שנה שם</string>
+    <string name="menu_send">שתף</string>
+    <string name="menu_open">פתח</string>
+    <string name="menu_move">העבר</string>
+    <string name="menu_copy">העתק</string>
+    <string name="menu_info">מידע</string>
+    <string name="menu_print">הדפס</string>
+    <string name="menu_compress">דחס</string>
+    <string name="menu_paste">העתק</string>
+    <string name="menu_sort_by">מיין לפי</string>
+    <string name="menu_sort_by_name">לפי שם</string>
+    <string name="menu_sort_by_type">לפי סוג</string>
+    <string name="menu_sort_by_date">לפי תאריך</string>
+    <string name="menu_sort_by_size">לפי גודל</string>
+    <string name="menu_unzip">חלץ</string>
+    <string name="menu_view_list">תצוגה כרשימה</string>
+    <string name="menu_view_grid">תצוגת רשת</string>
+    <string name="menu_view_column">תצוגת עמודות</string>
+    <string name="menu_unselect_all">בטל בחירה של הכל</string>
+    <string name="select_file">בחירת קובץ</string>
+    <string name="select">בחר</string>
+    <string name="file_info_title">מאפייני קובץ</string>
+    <string name="file_info_title_dir">מאפייני מדריך כתובות</string>
+    <string name="create_new_folder">צור תיקייה חדשה</string>
+    <string name="create_new_zip_file">קובץ Zip חדש</string>
+    <string name="create_compress_encryption_file">דחיסה והצפנה</string>
+    <string name="compress_encryption_file">הגדר סיסמה כדי ליצור קובץ zip מוגן בסיסמה.</string>
+    <string name="folder_name">שם תיקייה</string>
+    <string name="file_name">שם קובץ</string>
+    <string name="this_folder_is_empty">‏‏תיקייה זו ריקה.</string>
+    <string name="sd_is_used_by_other">כרטיס זיכרון נמצא במצב התקן USB בנפח גדול. צא ממצב זה כדי לגשת לכרטיס זיכרון.</string>
+    <string name="file_renamed">הוחלף שם הקובץ.</string>
+    <string name="folder_renamed">הוחלף שם התיקייה.</string>
+    <plurals name="move_success">
+        <item quantity="one">פריט %1$d הועבר</item>
+        <item quantity="other">%1$d פריטים הועברו</item>
+    </plurals>
+    <string name="error_moving">אירעה שגיאה במהלך ההעברה.</string>
+    <plurals name="copy_success">
+        <item quantity="one">פריט %1$d הועתק</item>
+        <item quantity="other">%1$d פריטים הועתקו</item>
+    </plurals>
+    <string name="error_copying">אירעה שגיאה במהלך ההעתקה.</string>
+    <plurals name="delete_success">
+        <item quantity="one">פריט %1$d נמחק</item>
+        <item quantity="other">%1$d פריטים נמחקו</item>
+    </plurals>
+    <string name="delete_failed">אירעה שגיאה במהלך המחיקה.</string>
+    <string name="really_delete_selected">כל הפריטים והתוכן שנבחרו יימחקו. האם אתה בטוח שברצונך להמשיך?</string>
+    <string name="paste_button">הדבק</string>
+    <string name="place_button">מקום</string>
+    <string name="select_folder">בחירת תיקייה</string>
+    <string name="copied_file_name">עותק של %s</string>
+    <string name="copied_file_name_2">עותק %1$d מתוך %2$s</string>
+    <string name="loading">"טוען..."</string>
+    <string name="deleting">מוחק...</string>
+    <string name="open_wifi">פתח את Wi-Fi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">Wi-Fi אינו מחובר. האם ברצונך להתחבר כעת?</string>
+    <string name="check_wifi">בדוק את חיבור Wi-Fi.</string>
+    <string name="shared_folders">תיקיות מרוחקות</string>
+    <string name="sd_card">כרטיס SD</string>
+    <string name="sd_missing">כרטיס זיכרון חסר. חבר כרטיס זיכרון כדי לקרוא את הקבצים.</string>
+    <string name="error_creating_new_folder">אין אפשרות ליצוא תיקייה חדשה.</string>
+    <string name="error_renaming_file">אין אפשרות להחליף את שם הקובץ.</string>
+    <string name="error_renaming_folder">אין אפשרות להחליף את שם התיקייה.</string>
+    <string name="error_file_does_not_exists">הקובץ אינו קיים.</string>
+    <string name="send_not_available">אין אפשרות לשלוח את סוג הקובץ הזה.</string>
+    <string name="application_not_available">לא ניתן לפתוח את סוג הקובץ הזה.</string>
+    <string name="copy_text">העתק טקסט</string>
+    <string name="anonymous">אנונימי</string>
+    <string name="no_server_found">לא נמצא שרת. אנא נסה שוב.</string>
+    <string name="Overwrite_Zip_File">האם להחליף את קובץ ה-zip הקיים?</string>
+    <string name="Overwrite_Contents">האם להחליף את תוכן התיקייה הקיימת?</string>
+    <string name="Unzipping">מחלץ...</string>
+    <string name="Zipping">יוצר קובץ Zip...</string>
+    <string name="zip_file_name">שם קובץ</string>
+    <string name="create">צור</string>
+    <string name="extract">חלץ</string>
+    <string name="overwrite">החלפה</string>
+    <string name="error_zipping_file">אירעה שגיאה ביצירת קובץ Zip.</string>
+    <string name="error_unzip_file">אירעה שגיאה בחילוץ הקובץ.</string>
+    <string name="invalid_zip_name">לא ניתן לחלץ את %1$s. שנה את שם הקובץ לשם חוקי (לדוגמה, %2$sשםקובץ) ונסה שוב.</string>
+    <string name="folder">תיקייה: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">מכיל: פריט %1$d.</item>
+        <item quantity="other">מכיל: %1$d פריטים.</item>
+    </plurals>
+    <string name="size">גודל: </string>
+    <string name="last_modified_at">השתנה ב-: </string>
+    <string name="readable_yes">ניתנים לקריאה: כן</string>
+    <string name="readable_no">ניתנים לקריאה: לא</string>
+    <string name="writable_yes">ניתן לכתיבה: כן</string>
+    <string name="writable_no">ניתן לכתיבה: לא</string>
+    <string name="hidden_yes">מוסתר: כן</string>
+    <string name="hidden_no">מוסתר: לא</string>
+    <string name="download_dialog_title">העברת קבצים</string>
+    <string name="transfer_complete">ההעברה הושלמה</string>
+    <string name="transfer_progress">התקדמות ההעברה</string>
+    <string name="to">אל: </string>
+    <string name="hundred_percent">100%</string>
+    <string name="size_kb">%1$s KB</string>
+    <string name="crop_Image_error">‏‏אין תמיכה בסוג הקובץ!</string>
+    <string name="internal_device_storage">אחסון פנימי במכשיר</string>
+    <string name="unknown">"לא ידוע"</string>
+    <string name="sd_unmounted">כרטיס SD מנותק. טען כרטיס SD כדי לקרוא את הקבצים.</string>
+    <string name="internal_device_storage_unmounted">שטח אחסון פנימי של המכשיר מנותק. טען שטח אחסון פנימי של המכשיר כדי לקרוא את הקבצים.</string>
+    <string name="protected_content">תוכן מוגן</string>
+    <plurals name="item">
+        <item quantity="one">פריט %1$d</item>
+        <item quantity="other">%1$d פריטים</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">שינוי השם נכשל</string>
+    <string name="renaming_exist">השם %s כבר בשימוש. בחר שם אחר.</string>
+    <string name="renaming_empty">לא הוזן שם.</string>
+    <string name="renaming_invalid">השם שהוזן מכיל תו אחד לא חוקי, או מספר תווים לא חוקיים. בחר שם אחר.</string>
+    <string name="renaming_file_empty">שם הקובץ לא חוקי. הזן שם קובץ הכולל אותיות ומספרים.</string>
+    <string name="renaming_folder_empty">שם התיקייה לא חוקי. הזן שם קובץ הכולל אותיות ומספרים.</string>
+    <string name="default_group">‏‏קבוצה לא ידועה</string>
+    <string name="search_hint">חפש קבצים</string>
+    <string name="menu_search">"חפש"</string>
+    <string name="search_folder">בחר תיקייה לחיפוש</string>
+    <string name="sd_missing_search">כרטיס זיכרון חסר. חבר כרטיס זיכרון כדי לחפש קבצים.</string>
+    <string name="search_progess">מחפש את %1$s ב-%2$s"</string>
+    <string name="settings_description">קבצים ותיקיות</string>
+    <string name="search_result">תוצאות בתוך \"%s\"</string>
+    <string name="empty_search_result">לא נמצאו תוצאות</string>
+    <string name="renaming_folder_exist">שם התיקייה קיים, בחר שם אחר</string>
+    <string name="enter_Credentials">הזן אישורים</string>
+    <string name="name">"שם"</string>
+    <string name="date">תאריך</string>
+    <string name="size_v">גודל</string>
+    <string name="type">סוג</string>
+    <string name="typ_folder">תיקייה</string>
+    <string name="typ_file">קובץ</string>
+    <string name="typ_image">תמונה</string>
+    <string name="typ_audio">שמע</string>
+    <string name="typ_video">וידאו</string>
+    <string name="typ_text">טקסט</string>
+    <string name="typ_doc">מסמך</string>
+    <string name="typ_zip">Zip</string>
+    <string name="typ_ppt">מצגת</string>
+    <string name="typ_xml">גיליון אלקטרוני</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">דף אינטרנט</string>
+    <string name="typ_msg">הודעה</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">סוג הצפנה</string>
+    <string name="zip_encryption_type_normal">ללא הצפנה</string>
+    <string name="zip_encryption_type_legacy">הצפנת מדור קודם (Zip 2.0) </string>
+    <string name="zip_encryption_type_128">הצפנת AES‏ 128 </string>
+    <string name="zip_encryption_type_256">הצפנת AES‏ 256 </string>
+    <string name="show_password">"הצג סיסמה"</string>
+    <string name="password_protected_zip">מוגן בסיסמה. הזן סיסמה כדי לחלץ.</string>
+    <string name="password_cannot_be_blank">סיסמה לא יכולה להיות ריקה</string>
+    <string name="stop_zip_file">הדחיסה בוטלה.</string>
+    <string name="stop_unzip_file">החילוץ בוטל.</string>
+    <string name="zip_canceling">מבטל דחיסה...</string>
+    <string name="unzip_canceling">מבטל את החילוץ...</string>
+    <string name="zip_existing_zip_file">הבחירה כוללת קובץ zip קיים. קובץ ה-zip הקיים לא ייכלל בקובץ ה-zip החדש.</string>
+    <string name="menu_multimode">בחר פריטים מרובים</string>
+    <string name="selected">%d נבחרו</string>
+    <string name="copied">%d הועתקו</string>
+    <string name="usb_storage">אמצעי אחסון מסוג USB</string>
+    <string name="devices">התקנים</string>
+    <string name="shortcuts">תיקיות קיצור דרך</string>
+    <string name="recentfile">קבצים אחרונים</string>
+    <string name="moving">מעביר...</string>
+    <string name="copying">מעתיק...</string>
+    <string name="menu_add_shortcut">הוסף לתיקיות קיצור הדרך</string>
+    <string name="recent_file_deleted">הפריט המקורי לא נמצא.</string>
+    <string name="shortcut_deleted">הפריט המקורי לא נמצא. האם ברצונך למחוק את קיצור הדרך?</string>
+    <string name="shortcut_storage_unmount">הפריט המקורי לא נמצא משום שהתקן האחסון מנותק. האם ברצונך למחוק את קיצור הדרך?</string>
+    <string name="recent_file_storage_unmount">הפריט המקורי לא נמצא משום שהתקן האחסון מנותק.</string>
+    <string name="menu_delete_shorcut">הסר מתיקיות קיצור הדרך</string>
+    <string name="menu_rename_shorcut">שנה את שם תיקיית קיצור הדרך</string>
+    <string name="message_delete_shorcut">האם ברצונך להסיר את תיקיית קיצור הדרך מרשימת תיקיות קיצור הדרך? הסרת תיקיית קיצור הדרך לא משפיעה על התיקייה המקורית.</string>
+    <string name="message_rename_shorcut">שינוי השם של תיקיית קיצור הדרך לא משפיע על התיקייה המקורית.</string>
+    <string name="availmem_gb">שטח זמין: %1$s GB</string>
+    <string name="move_shadow">העבר</string>
+    <string name="no_tranfer_item">כרגע אין פריט להעברה.</string>
+    <string name="done_button">בוצע</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">מעתיק פריט %1$d אל:</item>
+        <item quantity="other">מעתיק %1$d פריטים אל:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">מעביר פריט %1$d אל:</item>
+        <item quantity="other">מעביר %1$d פריטים אל:</item>
+    </plurals>
+    <string name="waiting">ממתין</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">מבטל...</string>
+    <string name="confirm_delete">אשר מחיקה</string>
+    <string name="size_mb">%1$s MB</string>
+    <string name="error_occurred">הופסק עקב שגיאה</string>
+    <string name="copy_stopped">ההעתקה הופסקה</string>
+    <string name="move_stopped">ההעברה הופסקה</string>
+    <string name="compress_using">דחס באמצעות</string>
+
+</resources>

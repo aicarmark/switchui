@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView android:id="@+id/title_search" android:layout_width="match_parent"
+	    android:layout_marginTop="25dp" android:layout_marginLeft="5dp"
+
+		android:layout_height="wrap_content" android:text="@string/title_search_help" android:textAppearance="?android:attr/textAppearanceMedium"/>
+	<LinearLayout android:layout_width="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		android:layout_height="60dp" android:id="@+id/linearLayout_search"
+		android:orientation="horizontal" android:layout_marginTop="2dp">
+		<EditText android:id="@+id/actvnumberlocation"
+			android:singleLine="true" android:numeric="integer"
+			android:layout_height="60dp" android:layout_width="439dp"
+			android:layout_alignParentLeft="true" android:layout_toLeftOf="@+id/btnSearch"
+			android:textStyle="bold" android:textSize="26dip"
+			android:layout_weight="1" />
+		<ImageButton android:id="@+id/btnSearch"
+			android:layout_height="55dp" android:layout_width="55dp"
+			android:background="@drawable/btn_background" android:layout_alignParentLeft="false"
+			android:layout_toRightOf="@+id/actvnumberlocation"
+			android:layout_alignParentRight="true" android:layout_weight="0" />
+	</LinearLayout>
+	<TextView android:id="@+id/title_search_city_code" android:layout_width="match_parent"
+	    android:layout_marginTop="20dp" android:layout_marginLeft="5dp"
+		android:layout_height="wrap_content" android:text="@string/title_search_help_city_code" android:textAppearance="?android:attr/textAppearanceMedium" />
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="60dp" android:id="@+id/linearLayout_search"
+		android:orientation="horizontal" android:layout_marginTop="2dp"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_weight="0">
+        <AutoCompleteTextView android:id="@+id/actvnumberlocationcitycode"
+            android:completionThreshold="1"
+            android:popupBackground = "@android:color/white"
+            android:dropDownVerticalOffset="2dp"
+			android:singleLine="true" android:layout_height="60dp"
+			android:layout_width="439dp" android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@+id/btnSearchCityCode" android:textSize="24dip"
+      android:layout_weight="1"
+      android:imeOptions="actionNext"/>
+		<ImageButton android:id="@+id/btnSearchCityCode"
+			android:layout_height="55dp" android:layout_width="55dp"
+			android:background="@drawable/btn_background" android:layout_alignParentLeft="false"
+			android:layout_toRightOf="@+id/actvnumberlocationCityCode"
+			android:layout_alignParentRight="true" android:layout_weight="0" />
+	</LinearLayout>
+
+	<TextView android:id="@+id/title_search_country_code" android:layout_width="match_parent"
+	    android:layout_marginTop="20dp" android:layout_marginLeft="5dp"
+		android:layout_height="wrap_content" android:text="@string/title_search_help_country_code" android:textAppearance="?android:attr/textAppearanceMedium" />
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="60dp" android:id="@+id/linearLayout_search"
+		android:orientation="horizontal" android:layout_marginTop="2dp"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_weight="0">
+        <AutoCompleteTextView android:id="@+id/actvnumberlocationcountrycode"
+        android:completionThreshold="1"
+        android:popupBackground = "@android:color/white"
+        android:dropDownVerticalOffset="2dp"
+			android:singleLine="true" android:layout_height="60dp"
+			android:layout_width="439dp" android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@+id/btnSearchCountryCode" android:textSize="24dip"
+      android:layout_weight="1"
+      android:imeOptions="actionDone"/>
+		<ImageButton android:id="@+id/btnSearchCountryCode"
+			android:layout_height="55dp" android:layout_width="55dp"
+			android:background="@drawable/btn_background" android:layout_alignParentLeft="false"
+			android:layout_toRightOf="@+id/actvnumberlocationCountryCode"
+			android:layout_alignParentRight="true" android:layout_weight="0" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout_result"
+		android:orientation="vertical" android:layout_weight="1">
+	</LinearLayout>
+	</LinearLayout>
+</ScrollView>

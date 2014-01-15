@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Data Collection</string>
+    <string name="permission_perf_stats_write_label">Write performance stats settings</string>
+    <string name="permission_perf_stats_write_desc">Allows application to write performance stats settings.</string>
+</resources>

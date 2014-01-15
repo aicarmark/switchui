@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Fichiers</string>
+    <string name="add_server">Ajouter un serveur</string>
+    <string name="add_samba_server_title">Nouveau serveur Samba</string>
+    <string name="edit_samba_server_title">Modifier le serveur Samba</string>
+    <string name="add_server_hostname">Nom ou adresse IP du serveur</string>
+    <string name="add_server_username">Nom d\'utilisateur</string>
+    <string name="add_server_password">Mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="server_display_name">Nom :</string>
+    <string name="server_logon_failure">Échec de l\'identification</string>
+    <string name="server_reauth_title">Saisissez vos identifiants.</string>
+    <string name="server_logon_failure_indication">Saisissez les informations d\'authentification.</string>
+    <string name="remote_files">Dossiers distants</string>
+    <string name="menu_edit">Modifier</string>
+    <string name="menu_remove">Supprimer</string>
+    <string name="file_transfer">Transfert de fichier :</string>
+    <string name="file_transfer_complete">Transfert fichier terminé :</string>
+    <plurals name="transfer_result">
+        <item quantity="one">Transfert terminé : %d fichier</item>
+        <item quantity="other">Transfert terminé : %d fichiers</item>
+    </plurals>
+    <string name="host_name_empty_indicator">Veuillez saisir un nom d\'hôte.</string>
+    <string name="not_found_network_name">Nom du réseau introuvable.</string>
+    <string name="server_not_reachable">Serveur non accessible.</string>
+    <string name="no_group_found">Aucun groupe n\'a été trouvé. Veuillez réessayer.</string>
+    <string name="external_sdcard">SD externe</string>
+    <string name="menu_new_folder">Nouveau dossier</string>
+    <string name="menu_delete">Supprimer</string>
+    <string name="menu_rename">Renommer</string>
+    <string name="menu_send">Partager</string>
+    <string name="menu_open">Ouvrir</string>
+    <string name="menu_move">Déplacer</string>
+    <string name="menu_copy">Copier</string>
+    <string name="menu_info">Infos</string>
+    <string name="menu_print">Imprimer</string>
+    <string name="menu_compress">Compresser</string>
+    <string name="menu_paste">Copier</string>
+    <string name="menu_sort_by">Trier par</string>
+    <string name="menu_sort_by_name">Par nom</string>
+    <string name="menu_sort_by_type">Par type</string>
+    <string name="menu_sort_by_date">Par date</string>
+    <string name="menu_sort_by_size">Par taille</string>
+    <string name="menu_unzip">Extraire</string>
+    <string name="menu_view_list">Vue liste</string>
+    <string name="menu_view_grid">Vue grille</string>
+    <string name="menu_view_column">Vue colonne</string>
+    <string name="menu_unselect_all">Tout désélectionner</string>
+    <string name="select_file">Sélectionner un fichier</string>
+    <string name="select">Sélectionner</string>
+    <string name="file_info_title">Propriétés du fichier</string>
+    <string name="file_info_title_dir">Propriétés du répertoire</string>
+    <string name="create_new_folder">Créer un dossier</string>
+    <string name="create_new_zip_file">Nouveau fichier Zip</string>
+    <string name="create_compress_encryption_file">Compression et cryptage</string>
+    <string name="compress_encryption_file">Définissez un mot de passe pour créer un fichier Zip protégé par mot de passe.</string>
+    <string name="folder_name">Nom de dossier</string>
+    <string name="file_name">Nom de fichier</string>
+    <string name="this_folder_is_empty">Ce dossier est vide.</string>
+    <string name="sd_is_used_by_other">La carte mémoire est en mode Périphérique de stockage USB. Vous devez quitter ce mode pour accéder à la carte mémoire.</string>
+    <string name="file_renamed">Fichier renommé.</string>
+    <string name="folder_renamed">Dossier renommé.</string>
+    <plurals name="move_success">
+        <item quantity="one">%1$d élément déplacé</item>
+        <item quantity="other">%1$d éléments déplacés</item>
+    </plurals>
+    <string name="error_moving">Une erreur est survenue en cours de déplacement.</string>
+    <plurals name="copy_success">
+        <item quantity="one">%1$d élément copié</item>
+        <item quantity="other">%1$d éléments copiés</item>
+    </plurals>
+    <string name="error_copying">Une erreur est survenue en cours de copie.</string>
+    <plurals name="delete_success">
+        <item quantity="one">%1$d élément supprimé</item>
+        <item quantity="other">%1$d éléments supprimés</item>
+    </plurals>
+    <string name="delete_failed">Une erreur est survenue en cours de suppression.</string>
+    <string name="really_delete_selected">Tous les éléments sélectionnés ainsi que leur contenu seront supprimés. Voulez-vous vraiment continuer ?</string>
+    <string name="paste_button">Coller</string>
+    <string name="place_button">Placer</string>
+    <string name="select_folder">Sélectionner un dossier</string>
+    <string name="copied_file_name">Copie de %s</string>
+    <string name="copied_file_name_2">Copie de %1$d sur %2$s</string>
+    <string name="loading">Chargement...</string>
+    <string name="deleting">Suppression...</string>
+    <string name="open_wifi">Ouvrir Wi-Fi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">Wi-Fi non connecté. Connecter maintenant ?</string>
+    <string name="check_wifi">Vérifiez la connexion Wi-Fi.</string>
+    <string name="shared_folders">Dossiers distants</string>
+    <string name="sd_card">Carte SD</string>
+    <string name="sd_missing">Carte mémoire manquante. Insérez une carte mémoire pour lire des fichiers.</string>
+    <string name="error_creating_new_folder">Impossible de créer le dossier.</string>
+    <string name="error_renaming_file">Impossible de renommer le fichier.</string>
+    <string name="error_renaming_folder">Impossible de renommer le dossier.</string>
+    <string name="error_file_does_not_exists">Fichier inexistant.</string>
+    <string name="send_not_available">Impossible d\'envoyer ce type de fichier.</string>
+    <string name="application_not_available">Impossible d\'ouvrir ce type de fichier.</string>
+    <string name="copy_text">Copier le texte</string>
+    <string name="anonymous">Anonyme</string>
+    <string name="no_server_found">Serveur introuvable. Veuillez réessayer.</string>
+    <string name="Overwrite_Zip_File">Remplacer le fichier Zip existant ?</string>
+    <string name="Overwrite_Contents">Remplacer le contenu du dossier existant ?</string>
+    <string name="Unzipping">Extraction en cours...</string>
+    <string name="Zipping">Compression en cours...</string>
+    <string name="zip_file_name">Nom de fichier</string>
+    <string name="create">Créer</string>
+    <string name="extract">Extraire</string>
+    <string name="overwrite">Remplacer</string>
+    <string name="error_zipping_file">Une erreur s\'est produite lors de la compression du fichier.</string>
+    <string name="error_unzip_file">Une erreur s\'est produite lors de l\'extraction du fichier.</string>
+    <string name="invalid_zip_name">Impossible d\'extraire %1$s. Renommez le fichier avec un nom valide (par ex., nom de fichier %2$s), puis réessayez.</string>
+    <string name="folder">Dossier : </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">Contient : %1$d élément.</item>
+        <item quantity="other">Contient : %1$d élément(s).</item>
+    </plurals>
+    <string name="size">Taille : </string>
+    <string name="last_modified_at">Modifié le : </string>
+    <string name="readable_yes">Lecture : oui</string>
+    <string name="readable_no">Lecture : non</string>
+    <string name="writable_yes">Écriture : oui</string>
+    <string name="writable_no">Écriture : non</string>
+    <string name="hidden_yes">Masqué : oui</string>
+    <string name="hidden_no">Masqué : non</string>
+    <string name="download_dialog_title">Transfert de fichier</string>
+    <string name="transfer_complete">Transfert terminé</string>
+    <string name="transfer_progress">Progression du transfert</string>
+    <string name="to">À : </string>
+    <string name="hundred_percent">100 %</string>
+    <string name="size_kb">%1$s ko</string>
+    <string name="crop_Image_error">Type de fichier non pris en charge !</string>
+    <string name="internal_device_storage">"Mémoire interne de l\'appareil"</string>
+    <string name="unknown">Inconnu</string>
+    <string name="sd_unmounted">La carte SD est désactivée. Activez la carte SD pour lire les fichiers.</string>
+    <string name="internal_device_storage_unmounted">La mémoire interne de l\'appareil est désactivée. Activez la mémoire interne de l\'appareil pour lire les fichiers.</string>
+    <string name="protected_content">Contenu protégé</string>
+    <plurals name="item">
+        <item quantity="one">%1$d élément</item>
+        <item quantity="other">%1$d élément(s)</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">Échec de la modification du nom</string>
+    <string name="renaming_exist">Le nom %s existe déjà. Choisissez un autre nom.</string>
+    <string name="renaming_empty">Aucun nom saisi.</string>
+    <string name="renaming_invalid">Le nom saisi comporte un ou plusieurs caractères non valides. Sélectionnez un nom différent.</string>
+    <string name="renaming_file_empty">Le nom du fichier n\'est pas valide. Saisissez un nom de fichier composé de lettres et de chiffres.</string>
+    <string name="renaming_folder_empty">Le nom du dossier n\'est pas valide. Saisissez un nom de dossier composé de lettres et de chiffres.</string>
+    <string name="default_group">Groupe inconnu</string>
+    <string name="search_hint">Chercher dans fichiers</string>
+    <string name="menu_search">Rechercher</string>
+    <string name="search_folder">Sélectionner le dossier dans lequel effectuer la recherche</string>
+    <string name="sd_missing_search">Carte mémoire manquante. Insérez une carte mémoire pour rechercher des fichiers.</string>
+    <string name="search_progess">Recherche de %1$s dans %2$s</string>
+    <string name="settings_description">Fichiers et dossiers</string>
+    <string name="search_result">Résultats dans \"%s\"</string>
+    <string name="empty_search_result">Aucun résultat trouvé</string>
+    <string name="renaming_folder_exist">Ce nom de dossier existe déjà. Choisissez un autre nom</string>
+    <string name="enter_Credentials">Saisir les identifiants</string>
+    <string name="name">"Nom"</string>
+    <string name="date">"Date"</string>
+    <string name="size_v">Taille</string>
+    <string name="type">"Type"</string>
+    <string name="typ_folder">Dossier</string>
+    <string name="typ_file">Fichier</string>
+    <string name="typ_image">Image</string>
+    <string name="typ_audio">Audio</string>
+    <string name="typ_video">Vidéo</string>
+    <string name="typ_text">Texte</string>
+    <string name="typ_doc">Document</string>
+    <string name="typ_zip">Zip</string>
+    <string name="typ_ppt">Présentation</string>
+    <string name="typ_xml">Tableur</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">Page Web</string>
+    <string name="typ_msg">Message</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">Type de cryptage</string>
+    <string name="zip_encryption_type_normal">Aucun cryptage</string>
+    <string name="zip_encryption_type_legacy">Cryptage traditionnel (Zip 2.0)</string>
+    <string name="zip_encryption_type_128">Cryptage 128 AES</string>
+    <string name="zip_encryption_type_256">Cryptage 256 AES</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="password_protected_zip">Protégé par mot de passe. Saisissez un mot de passe pour l\'extraction.</string>
+    <string name="password_cannot_be_blank">Le champ du mot de passe ne peut pas être vierge</string>
+    <string name="stop_zip_file">Compression annulée.</string>
+    <string name="stop_unzip_file">Extraction annulée.</string>
+    <string name="zip_canceling">Annulation de la compression...</string>
+    <string name="unzip_canceling">Annulation de l\'extraction...</string>
+    <string name="zip_existing_zip_file">La sélection comprend un fichier Zip existant. Le fichier Zip existant ne sera pas inclus dans le nouveau fichier Zip.</string>
+    <string name="menu_multimode">Sélection multiple</string>
+    <string name="selected">%d sélectionné(s)</string>
+    <string name="copied">%d copié(s)</string>
+    <string name="usb_storage">Stockage USB</string>
+    <string name="devices">Périphériques</string>
+    <string name="shortcuts">Dossier de raccourcis</string>
+    <string name="recentfile">Fichiers récents</string>
+    <string name="moving">Déplacement en cours...</string>
+    <string name="copying">Copie...</string>
+    <string name="menu_add_shortcut">Ajouter au dossier de raccourcis</string>
+    <string name="recent_file_deleted">Impossible de trouver l\'élément original.</string>
+    <string name="shortcut_deleted">Impossible de trouver l\'élément original. Voulez-vous supprimer ce raccourci ?</string>
+    <string name="shortcut_storage_unmount">Impossible de trouver l\'élément original car le périphérique de stockage est déconnecté. Voulez-vous supprimer ce raccourci ?</string>
+    <string name="recent_file_storage_unmount">Impossible de trouver l\'élément original car le périphérique de stockage est déconnecté.</string>
+    <string name="menu_delete_shorcut">Supprimer du dossier de raccourcis</string>
+    <string name="menu_rename_shorcut">Renommer le dossier de raccourcis</string>
+    <string name="message_delete_shorcut">Voulez-vous supprimer ce dossier de raccourcis de la liste des dossiers de raccourcis ? La suppression du dossier de raccourcis n\'affecte pas le dossier original.</string>
+    <string name="message_rename_shorcut">Si vous renommez le dossier de raccourcis, le dossier original n\'en sera pas affecté.</string>
+    <string name="availmem_gb">%1$s Go disponibles</string>
+    <string name="move_shadow">Déplacer</string>
+    <string name="no_tranfer_item">Aucun élément à transférer pour le moment.</string>
+    <string name="done_button">Terminé</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">Copie de %1$d élément vers :</item>
+        <item quantity="other">Copie de %1$d éléments vers :</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">Transfert de %1$d élément vers :</item>
+        <item quantity="other">Transfert de %1$d éléments vers :</item>
+    </plurals>
+    <string name="waiting">En attente</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">Annulation en cours...</string>
+    <string name="confirm_delete">Confirmer la suppression</string>
+    <string name="size_mb">%1$s Mo</string>
+    <string name="error_occurred">Arrêté suite à une erreur</string>
+    <string name="copy_stopped">Copie arrêtée</string>
+    <string name="move_stopped">Déplacement arrêté</string>
+    <string name="compress_using">Compresser avec</string>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- For *all* edit text elements in SMS pickers, set default allowed text message length to be 160 chars-->
+    <!-- Note that by default edit text allows 160 characters-->
+    <integer name="SMS_picker_character_limit">160</integer>
+</resources>

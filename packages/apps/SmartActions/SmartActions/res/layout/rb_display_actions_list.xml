@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		      android:orientation="vertical"
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent">
+
+    <!--  Failed View -->
+    <include android:id="@+id/ml_error_view" layout="@layout/list_fail_message"/>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dip"
+        android:gravity = "center_vertical"
+        android:paddingTop="7dip"
+        android:paddingBottom="7dip"
+        android:paddingRight="22dip"
+        android:paddingLeft="22dip"
+        android:textSize="20sp"
+        android:background="@drawable/rule_header"
+        />
+
+	<!-- List -->
+    <ListView android:id="@android:id/list"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:scrollbarStyle="outsideOverlay"
+	          android:longClickable="true"
+	          android:layout_weight="1"/>   
+	          
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    
+</LinearLayout>
+  

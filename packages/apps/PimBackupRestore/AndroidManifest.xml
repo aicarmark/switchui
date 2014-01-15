@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.motorola.sdcardbackuprestore"
+      android:versionCode="2"
+      android:versionName="2.8.6">
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+     
+    <application android:label="@string/sdcard_backup_restore" 
+		 android:icon="@drawable/sd_card"
+		 android:theme="@android:style/Theme.Holo"
+		 android:largeHeap="true" >
+        <!-- Main UI -->
+        <activity android:name=".MainUI"
+                  android:label="@string/sdcard_backup_restore"
+                  android:clearTaskOnLaunch="true"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Backup UI --> 
+         <activity android:name=".Backup" android:label="@string/backup_title"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+        
+        <!-- Restore UI --> 
+         <activity android:name=".Restore" android:label="@string/restore_title"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+        
+        <!-- Import3rd UI --> 
+         <activity android:name=".Import3rd" android:label="@string/import3rd_title"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+
+        <!-- ExportByAccount UI -->
+        <activity
+            android:name=".ExportByAccount"
+            android:configChanges="orientation|keyboardHidden|locale|screenSize"
+            android:label="@string/ExportByAccount_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Transparent Backup UI -->
+         <activity android:name=".Backup2" android:label="@string/backup_title"
+                   android:excludeFromRecents="true"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize"
+                   android:theme="@style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.motorola.action.sdcardbackup" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+
+        <!-- Transparent Restore UI -->
+         <activity android:name=".Restore2" android:label="@string/restore_title"
+                   android:excludeFromRecents="true"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize" 
+                   android:theme="@style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.motorola.action.sdcardrestore" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+
+        <!-- Transparent Import3rd UI --> 
+         <activity android:name=".Import3rd2" android:label="@string/import3rd_title"
+                   android:launchMode="singleTask"
+                   android:excludeFromRecents="true"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize" 
+                   android:theme="@style/Theme.Translucent">
+           <intent-filter>
+               <action android:name="com.motorola.action.import3rd" />
+               <data android:mimeType="text/vcard" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="com.motorola.action.import3rd" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+           <intent-filter android:label="@string/importVCardDesription">
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="text/directory" />
+                <data android:mimeType="text/vcard" />
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/x-vCard" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+         
+         <!-- Transparent ExportByAccount UI --> 
+         <activity android:name=".ExportByAccount2" android:label="@string/ExportByAccount_title"
+                   android:excludeFromRecents="true"
+                   android:configChanges="orientation|keyboardHidden|locale|screenSize" 
+                   android:theme="@style/Theme.Translucent">
+           <intent-filter>
+               <action android:name="com.motorola.action.exportbyaccount" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+         </activity>
+		
+		 <!-- show activity from clicking Notification --> 
+         <activity android:name=".NotificationResultActivity"
+                   android:label="@string/import3rd_title"
+                   android:launchMode="singleInstance"
+                   android:excludeFromRecents="true"
+                   android:theme="@*android:style/Theme.Dialog.Alert">
+           <intent-filter>
+             <action android:name="com.motorola.sdcardbackup.action.result" />
+             <category android:name="android.intent.category.DEFAULT" />
+             <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+         </activity>
+
+        <!-- Backup Restore service -->
+         <service android:name=".BackupRestoreService" >
+           <intent-filter>
+                <action android:name="com.motorola.sdcardbackuprestore.action.BACKUP_SERVICE" />
+                <action android:name="com.motorola.sdcardbackuprestore.action.RESTORE_SERVICE" />
+                <action android:name="com.motorola.sdcardbackuprestore.action.IMPORT3RD_SERVICE" />
+                <action android:name="com.motorola.sdcardbackuprestore.action.EXPORTBYACCOUNT_SERVICE" />
+            </intent-filter> 
+         </service>
+    <!--  
+    <uses-library android:name="com.android.vcard" />
+    -->
+	
+	<!-- ************* File Manager ************************************************************************* -->
+	<!--
+    <uses-library android:name="com.zecter.droid.services_lib"
+                  android:required="true" />
+    -->
+    <!--<uses-library android:name="com.motorola.android.storage" />-->
+    
+    <!-- If no phone internal SD card products, set activity translucent-->
+    <activity android:name="com.motorola.filemanager.multiselect.FileManager" android:launchMode="singleTop"
+              android:configChanges="keyboardHidden|orientation|screenSize" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.mot.FileManagerIntents.ACTION_MULTISELECTFILE" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.motorola.filemanager.multiselect.FileManagerContent" android:launchMode="singleTop"
+              android:configChanges="keyboardHidden|orientation|screenSize">
+      <intent-filter>
+        <action android:name="com.motorola.FileManagerIntents.COPY" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.motorola.filemanager.multiselect.local.FileManagerActivity"
+              android:launchMode="singleTop"
+              android:configChanges="keyboardHidden|orientation|screenSize">
+    </activity>
+
+    <!-- EDM IKFOURV-9424 - Start -->
+    <!--<receiver android:name="com.motorola.filemanager.EdmReceiver">
+      <intent-filter>
+        <action android:name="com.motorola.intent.action.DELETEPATTERN" />
+      </intent-filter>
+    </receiver>-->
+    <!--  EDM IKFOURV-9424 -End -->
+
+    <provider android:name="com.motorola.filemanager.multiselect.local.FileManagerProvider"
+              android:authorities="com.motorola.filemanager.multiselect" />
+    <provider android:name="com.motorola.filemanager.multiselect.local.SearchSuggestionsProvider"
+              android:authorities="com.motorola.filemanager.multiselect.local.SearchSuggestionsProvider" />
+	<!-- ***********End File Manager************************************************************* -->
+
+    </application>
+
+<!--
+<style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+  <item name="android:windowBackground">@drawable/translucent_background</item>
+  <item name="android:windowNoTitle">true</item>
+  <item name="android:colorForeground">#fff</item>
+  <item name="android:windowContentOverlay">@null</item>
+</style>
+
+<drawable name="translucent_background">#7f040000</drawable>    
+-->
+
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+<uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+<uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+
+<!-- *************** File Manager *************************************** -->
+<supports-screens android:smallScreens="true"
+                    android:normalScreens="true"
+                    android:largeScreens="true" />
+
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+<uses-permission android:name="android.permission.MASTER_CLEAR" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+<!-- *************** End File Manager ************************************ -->
+
+
+
+</manifest> 

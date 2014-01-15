@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="AppWidgetLayout">
+        <attr name="minSpanX" format="integer"/>
+        <attr name="maxSpanX" format="integer"/>
+        <attr name="minSpanY" format="integer"/>
+        <attr name="maxSpanY" format="integer"/>
+        <attr name="sizeInitialLayout" format="reference"/>
+	</declare-styleable>
+	
+	<declare-styleable	name="AppWidgetPreview">
+		<attr	name="preview"	format="reference"/>
+	</declare-styleable>
+	
+	<declare-styleable name="Config">
+        <attr name="id" format="reference|integer" />
+        <attr name="bitmap" format="reference|integer" />
+        <attr name="view" format="reference|integer" />
+        <attr name="animation_set" format="reference|integer" />
+        <attr name="interaction_set" format="reference|integer" />
+        <attr name="type" format="reference|string" />
+        <attr name="offset_x_rate" format="reference|float" />
+        <attr name="offset_y_rate" format="reference|float" />
+        <attr name="values" format="reference|string" />
+        <attr name="repeat_count" format="reference|string" />
+        <attr name="start_frame" format="reference|string" />
+        <attr name="end_frame" format="reference|string" />
+        <attr name="name" format="reference|string" />
+        <attr name="from" format="reference|string" />
+        <attr name="to" format="reference|string" />
+        <attr name="acceleration" format="reference|string" />
+        <attr name="init_velocity" format="reference|string" />
+        <attr name="duration" format="reference|integer" />
+        <attr name="property_type" format="reference|integer" />
+        <attr name="affect_type" format="reference|string" />
+        <attr name="ordering" format="reference|string" />
+        <attr name="speed" format="reference|string" />
+        <attr name="frame_time" format="reference|integer" />
+        <attr name="copy" format="reference|integer" />
+        <attr name="bind_animation_frame" format="reference|string" />
+        <attr name="seek_animation_to" format="reference|string" />
+        <attr name="res_package_name" format="reference|string" />
+        <attr name="res_id" format="reference|integer" />
+        <attr name="x" format="reference|string" />
+        <attr name="y" format="reference|string" />
+        <attr name="z" format="reference|string" />
+        <attr name="alpha" format="reference|string" />
+        <attr name="rotate" format="reference|string" />
+        <attr name="rotate_px" format="reference|string" />
+        <attr name="rotate_py" format="reference|string" />
+        <attr name="rotatexy_offset_angle" format="reference|string" />
+        <attr name="rotate_x" format="reference|string" />
+        <attr name="rotate_x_py" format="reference|string" />
+        <attr name="rotate_y" format="reference|string" />
+        <attr name="rotate_y_px" format="reference|string" />
+        <attr name="scale_x" format="reference|string" />
+        <attr name="scale_y" format="reference|string" />
+        <attr name="visible" format="reference|string" />
+        <attr name="intercept_event" format="reference|string" />
+        <attr name="handle_event" format="reference|string" />
+        <attr name="start_animation" format="reference|integer" />
+        <attr name="block_animation" format="reference|string" />
+        <attr name="animation_follow" format="reference|integer" />
+        <attr name="tag" format="reference|string" />
+        <attr name="instance" format="reference|string" />
+        <attr name="width" format="reference|integer" />
+        <attr name="height" format="reference|integer" />
+        <attr name="fps" format="reference|string"/>
+        <attr name="level" format="reference|string"/>
+    </declare-styleable>
+	
+</resources>
+

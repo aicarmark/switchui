@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2009 Motorola
+  -->
+<resources>
+
+    <!-- Backup/restore operation result -->
+    <item type="id" name="success"/>
+    <item type="id" name="no_sdcard"/>
+    <item type="id" name="sdcard_file_contents_error"/>
+    <item type="id" name="radio_file"/>
+    <item type="id" name="radio_folder"/>
+    <item type="id" name="text_file"/>
+    <item type="id" name="text_folder"/>
+    <item type="id" name="cancel"/>
+    <item type="id" name="back"/>
+    <item type="id" name="remove_dialog"/>
+    <item type="id" name="read_phone_db_error"/>
+    <item type="id" name="read_sdcard_error"/>
+    <item type="id" name="write_phone_db_error"/>
+    <item type="id" name="write_sdcard_error"/>
+    <item type="id" name="sdcard_read_only"/>
+    <item type="id" name="insufficient_space"/>
+    <item type="id" name="nonempty_folder"/>
+    <item type="id" name="exist_old_backup_file"/>
+    <item type="id" name="empty_storage"/>
+    <item type="id" name="unknown_error"/>
+    <item type="id" name="out_of_memory_error"/>
+    <item type="id" name="update_notification_activity"/>
+    <item type="id" name="directory_not_exist"/>
+    <item type="id" name="final_result"/>
+    <item type="id" name="copy_files_failed"/>
+  
+  
+    <!-- Messages Category -->
+    <item type="id" name="under_progress"/>
+    <item type="id" name="status"/>
+    <item type="id" name="confirmation"/>
+    <item type="id" name="message_length"/>
+    <item type="id" name="service_busy"/>
+</resources>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ *                          Motorola Confidential Proprietary
+ *                 Copyright (C) 2009 Motorola, Inc.  All Rights Reserved.
+ *   
+ *
+ * Revision History:
+ *                           Modification    Tracking
+ * Author                      Date          Number     Description of Changes
+ * ~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~    ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~
+ *  nwg643                    2009-05-05                   created
+ */
+-->
+
+<resources>
+	<integer name="default_worldclock_city_number">2</integer>
+</resources>

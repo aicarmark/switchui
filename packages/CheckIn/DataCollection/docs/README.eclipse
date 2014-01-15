@@ -1,0 +1,34 @@
+Tested on Eclipse Indigo from http://www.eclipse.org/downloads/
+
+Make sure that ADT is uptodate. See http://developer.android.com/sdk/eclipse-adt.html
+
+Download corresponding OS specific dev_sdk from Hudson. e.g. platform_dev_sdk_main-dev-ics_osx_daily
+ In Eclipse->Preferences->Android, Set "SDK Location" to where the above SDK was extracted
+ In Eclipse->Preferences->Android->Build, Set "Custom debug keystore" to the path of
+       "motorola/platform.keystore" in the above SDK
+
+In Eclipse Indigo
+  Use File->Import->General->Preferences->Next to load the EclipsePreferences.epf file.
+    The above command is the same as manually setting the following
+    -----------------------------------------
+                In Eclipse->Preferences->General->Editors->Text Editors
+                  Tick "Insert Spaces for tabs"
+                  Tick "Show print margin"
+                  Set "Print margin column" to 100
+                  Tick "Show line numbers"
+                Untick Eclipse->Preferences->Android->Build->"Skip packaging and dexing..."
+                In Eclipse->Preferences->Java->Code Style->Formatter
+                  New, Profile Name = DataCollection, OK, Indentation, Tab policy = "Spaces only" OK
+                Set Eclipse->Preferences->Java->Compiler->Errors/Warnings->
+                          Deprecated and restricted API->Forbidden Reference = Ignore
+    -----------------------------------------
+
+In File->Import->General->"Existing Projects into Workspace"->Next
+  Specify the base of the DataCollection git for "Select root directory" and load all 4 Projects
+
+If any progress bars are displayed on the bottom status bar, wait for it to complete.
+Project->Clean->"Clean all projects"->OK
+Project->Clean->"Clean all projects"->OK once more
+
+If errors about java compiler conformance are being reported, exit and relaunch exlipse,
+ wait for progress bars at bottom status bar to completer, and then clean the project twice as above.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Uklj/isklj widgete</string>
+  <string name="gps_app_name">Uklj/isklj GPS veze</string>
+  <string name="airplane_app_name">Uklj/isklj avio-načina</string>
+  <string name="wifi_app_name">Uključivanje/isključivanje Wi-Fi veze</string>
+  <string name="bluetooth_app_name">Uklj/isklj Bluetooth-a</string>
+  <string name="apn_app_name">Uklj/isklj APN naziva</string>
+  <string name="data_app_name">Uklj/isklj podataka</string>
+  <string name="widget_description">Pregled i kontrola statusa načina rada u zrakoplovu</string>
+  <string name="widget_description_bt">Pregled i kontrola statusa Bluetooth veze</string>
+  <string name="widget_description_wifi">Pregled i kontrola statusa Wi-Fi mreže</string>
+  <string name="widget_description_gps">Pregled i kontrola statusa GPS veze</string>
+  <string name="StatusOn">ON</string>
+  <string name="StatusOff">OFF</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Način rada u zrakoplovu nije dostupan</string>
+  <string name="BluetoothtoastText">Bluetooth veza nije dostupna</string>
+  <string name="GPStoastText">GPS veza nije dostupna</string>
+  <string name="WifitoastText">Wi-Fi mreža nije dostupna</string>
+  <string name="location_restriction_enabled">Omogućeno je ograničenje lokacije.</string>
+  <string name="apncontrol_app_name">Kontrola APN-a</string>
+  <string name="no_apn">Nema dostupnog APN-a</string>
+</resources>

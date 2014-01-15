@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Slå av/på miniprogrammer</string>
+  <string name="gps_app_name">Slå av/på GPS</string>
+  <string name="airplane_app_name">Slå av/på flymodus</string>
+  <string name="wifi_app_name">Wi-Fi-veksling</string>
+  <string name="bluetooth_app_name">Slå av/på Bluetooth</string>
+  <string name="apn_app_name">APN-veksling</string>
+  <string name="data_app_name">Dataveksling</string>
+  <string name="widget_description">Vis og kontroller flymodusstatus</string>
+  <string name="widget_description_bt">Vis og kontroller Bluetooth-status</string>
+  <string name="widget_description_wifi">Vis og kontroller Wi-Fi-status</string>
+  <string name="widget_description_gps">Vis og kontroller GPS-status</string>
+  <string name="StatusOn">PÅ</string>
+  <string name="StatusOff">AV</string>
+  <string name="StatusIntermediate">""</string>
+  <string name="AirplanetoastText">Flymodus er utilgjengelig</string>
+  <string name="BluetoothtoastText">Bluetooth er utilgjengelig</string>
+  <string name="GPStoastText">GPS er utilgjengelig</string>
+  <string name="WifitoastText">Wi-Fi er utilgjengelig</string>
+  <string name="location_restriction_enabled">Plasseringsbegrensning er aktivert.</string>
+  <string name="apncontrol_app_name">APN-kontroll</string>
+  <string name="no_apn">Ingen APN er tilgjengelig</string>
+</resources>

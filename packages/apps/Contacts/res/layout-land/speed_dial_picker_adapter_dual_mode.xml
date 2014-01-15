@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/speedDialPickerAdapterHandle">
+    <!-- Display view when no contact assigned to  speed dial number-->
+    <ImageView android:id="@+id/pickerPosition"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="visible"/>
+    <!-- Display view after a contact assigned to this speed dial number-->
+    <RelativeLayout android:id="@+id/speedDialContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sd_det_ic_marginTop"
+        android:layout_marginBottom="@dimen/sd_det_ic_marginBottom"
+        android:layout_marginLeft="@dimen/sd_det_ic_marginLeft"
+        android:layout_marginRight="@dimen/sd_det_ic_marginRight"
+        android:visibility="invisible">
+        <ImageView android:id="@+id/pickerImage"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/sd_edit_image_width"/>
+        <RelativeLayout android:id="@+id/dialButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sd_edit_contact_height"
+            android:layout_alignLeft="@id/pickerImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sd_dual_mode_dialer_bg">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView android:id="@+id/callByCDMA"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sd_dual_mode_dual_sim_c_highlight"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"/>
+                <ImageView android:id="@+id/callByGSM"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sd_dual_mode_dual_sim_g"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+                <ImageView android:id="@+id/callByCOrG"
+                    android:background="@drawable/sd_dual_mode_dual_sim_c_highlight"
+                    android:scaleType="fitXY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sd_edit_contact_height"
+            android:layout_toLeftOf="@id/pickerImage"
+            android:background="@drawable/sd_bg_contact_info"
+            android:layout_alignTop="@id/dialButtonGroup"
+            android:paddingLeft="4dip"
+            android:paddingRight="2dip"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true">
+            <!-- label name -->
+            <TextView android:id="@+id/pickerName"
+                android:textStyle="bold"
+                android:includeFontPadding="false"
+                android:textSize="12dip"
+                style="@style/Contacts.SpeedDialNameEditSingleLine"/>
+            <!-- label number -->
+            <TextView android:id="@+id/pickerNumber"
+                android:includeFontPadding="false"
+                android:textSize="10dip"
+                style="@style/Contacts.SpeedDialNumberEditSingleLine"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/pickerPosition_upper"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+</RelativeLayout>

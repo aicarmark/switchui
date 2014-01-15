@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Используйте график ниже для выбора 7 контактов с целью заполнения виджета. Вы получите беспрепятственный доступ к этим контактам непосредственно с панели начального экрана.</string>
+</resources>

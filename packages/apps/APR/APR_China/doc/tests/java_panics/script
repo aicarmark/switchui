@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Test for Traces
+adb push traces.txt /data/data/com.motorola.motoapr.service/tracesbck20.txt
+adb push traces_not_anr.txt /data/anr/traces.txt

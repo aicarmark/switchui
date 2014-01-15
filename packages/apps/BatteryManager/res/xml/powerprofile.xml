@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pref_root"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+  <com.motorola.batterymanager.BatteryUsePreference
+    android:key="batteryuse"
+    android:persistent="false"
+    android:layout="@layout/batteryuse">
+  </com.motorola.batterymanager.BatteryUsePreference>
+
+  <PreferenceCategory
+    android:key="settings_catg"
+    android:title="@string/battery_setting">
+  </PreferenceCategory>
+
+    <PreferenceScreen
+        android:title="@string/batt_manager_mode"
+        android:key="pref_profile_settings">
+            <intent
+               android:targetPackage="com.motorola.batterymanager"
+               android:targetClass="com.motorola.batterymanager.BatteryProfileUi" />
+        </PreferenceScreen>
+</PreferenceScreen>

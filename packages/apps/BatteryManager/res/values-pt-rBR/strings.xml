@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (C) 2009, Motorola, Inc,
+ * All Rights Reserved
+ * Description: Contains array resources for the Battery Manager app
+ *
+ * Modification History:
+ **********************************************************
+ * Date           Author       Comments
+ * 11-11-09       A24178       Created file
+ * 02-15-10       A24178       String changes for smart mode default
+ **********************************************************
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="batt_manager_mode">Modo de bateria</string>
+    <string name="preset_title">Pré-definições</string>
+    <string name="customs_title">Personalizar</string>
+
+    <string name="preset_maxbatt_title">Economizador máximo</string>
+    <string name="preset_maxbatt_shortdesc">Melhor forma de economia de bateria. Atualizações de dados menos automáticas.</string>
+
+    <string name="preset_nighttime_title">Economizador noturno</string>
+    <string name="preset_nighttime_shortdesc">Operação normal durante o dia. Economia de bateria durante a noite.</string>
+
+    <string name="preset_perfmode_title">Modo de desempenho</string>
+    <string name="preset_perfmode_shortdesc">O dispositivo sincroniza sem restrições. Não há economia de bateria.</string>
+
+    <string name="customs_mode_title">Modo personalizado</string>
+    <string name="customs_mode_shortdesc">Crie seu próprio perfil de economia de bateria.</string>
+
+    <string name="moreinfo_text">Mais informações</string>
+
+    <string name="presets_perfmode_desc">O telefone sincroniza sem restrições durante o dia.</string>
+    <string name="presets_maxsaver_desc">&quot;Enquanto o telefone não estiver conectado a um carregador:\n\n\<li>Para a sincronização de dados após 15 minutos de inatividade durante o dia e a noite.</li>\n\n<li>Escurece a tela.</li>&quot;</string>
+    <string name="presets_nighttime_desc">&quot;Enquanto o telefone não estiver conectado a um carregador:\n\n\<li>Para a sincronização de dados após 15 minutos de inatividade durante os horários fora de pico (22:00 \ 05:00) A sincronização é retomada ao pressionar qualquer botão.</li>\n\n<li>Sincroniza sem restrições durante os horários de pico.</li>&quot;</string>
+    <string name="presets_nighttime_desc_24">&quot;Enquanto o telefone não estiver conectado a um carregador:\n\n\<li>Para a sincronização de dados após 15 minutos de inatividade durante os horários fora de pico (22:00 \ 05:00) A sincronização é retomada ao pressionar qualquer botão.</li>\n\n<li>Sincroniza sem restrições durante os horários de pico.</li>&quot;</string>
+
+    <string name="customs_description">O modo personalizado lhe dá controle completo sobre as funções\
+    de economia de bateria do seu telefone. Estas configurações serão aplicadas somente quando o dispositivo não estiver sendo carregado.</string>
+
+    <string name="customs_offpeak_title"><bold>Horários fora de pico</bold></string>
+    <string name="customs_start_text">Início:</string>
+    <string name="customs_end_text">Término:</string>
+    <string name="customs_data_text">Desligar dados após:</string>
+    <string name="customs_peak_title"><bold>Horários de pico</bold></string>
+    <string name="customs_displayopt_title"><bold>Brilho da tela</bold></string>
+    <string name="customs_disp_text">Se o nível da bateria estiver abaixo de 30%, definir brilho da tela para:</string>
+
+    <string name="but_ok_text">OK</string>
+    <string name="but_cancel_text">Cancelar</string>
+
+    <string name="time_unit_minutes">minutos</string>
+    <string name="time_unit_hour">hora</string>
+    <string name="never_timeout">Sempre ativado</string>
+    <string name="disp_text_min">minuto(s)</string>
+    <string name="disp_text_max">máx.</string>
+    <string name="disp_text_curr">Brilho atual da tela</string>
+
+    <string name="battery_manager_setting">Ger. de bateria</string>
+    <string name="battery_manager_settings_summary">Configurações para economizar bateria</string>
+
+    <!-- Generic -->
+    <string name="powerprofile_app_name">Perfil da bateria</string>
+    <string name="powerprofile_svc_name">Serviço de perfil de energia</string>
+    <string name="powerprofile_rcv_name">Receptor do perfil de energia</string>
+    
+    <!-- Logging -->
+    <string name="logtitle">Durações da desativação dos dados: \n</string>
+    <string name="logs">Ver log</string>
+  
+    <string name="pref_user_max_timeout">Desativar dados após</string> 
+    <string name="remote_mgmt_text">Este modo pode desativar sua conexão de dados após um período de inatividade, durante o qual o telefone não sincronizará dados.\n\nQuando as conexões estiverem sendo compartilhadas, a reprodução de mídia por streaming será interrompida.\n</string>
+    <string name="remote_mgmt_title">Aviso</string>
+    <string name="lightsensorctrl">O brilho da tela é agora controlado automaticamente pelo sensor de luz.</string>
+
+    <!-- Fuel Gauge string -->
+    <!-- Activity title for App Fuel Gauge summary -->
+    <string name="power_usage_summary_title">Uso da bateria</string>
+    <!-- Activity title summary for App Fuel Gauge summary -->
+    <string name="power_usage_summary">O que está consumindo a bateria</string>
+
+    <string name="notice_profile_select">Definimos horário de pico das 22:00 às 05:00 para aumentar a duração da bateria.</string>
+    <string name="configure_text">Configurar</string>
+
+    <!-- New prompts -->
+    <string name="pwrup_notice_title">Gerenciador de bateria definido como Modo economizador noturno</string>
+    <string name="pwrup_notice_subtext">Clique para mais detalhes</string>
+    <string name="pwrup_notice_desc">O gerenciador de bateria está definido para Modo noturno para conservar a bateria.\n\n O economizador noturno interromperá a conexão de dados após 15 minutos de inatividade entre às 22:00 \ 05:00, quando o telefone não estiver sendo carregado.\n\nQuando as conexões de dados estiverem compartilhadas, seu telefone \
+não sincronizará ou reproduzirá mídia por streaming.\n\nPara alterar este comportamento, pressione \&quot;Configurar\&quot; agora ou visite o \ Gerenciador de bateria em Todos os APLICATIVOS.\n</string>
+
+    <string name="battery_setting">Configurações de bateria</string>
+    <string name="bu_level_label">Bateria restante:</string>
+    <string name="bu_entry_label">Toque para ver estatísticas de uso</string>
+    <string name="bu_pct_text" translatable="false"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+</resources>

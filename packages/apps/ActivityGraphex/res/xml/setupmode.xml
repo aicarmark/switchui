@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:title="@string/activitygraphsettings">
+<CheckBoxPreference android:key="auto setup mode" 
+android:summaryOff="@string/auto_setup_mode_Summary_off" 
+android:disableDependentsState="false" 
+android:title="@string/auto_setup_mode_title" 
+android:summaryOn="@string/auto_setup_mode_Summary_on">
+</CheckBoxPreference>
+<PreferenceScreen 
+    android:title="@string/hidden_applications_title" 
+    android:key="hide applications" 
+    android:summary="@string/hide_applications_summary">
+    <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.motorola.mmsp.activitygraph"
+            android:targetClass="com.motorola.mmsp.activitygraph.HiddenApplications" />
+    </PreferenceScreen>
+<PreferenceScreen 
+    android:title="@string/manage_shortcuts_title" 
+    android:key="manage shortcuts" 
+    android:summary="@string/manage_shortcuts_summary">
+    <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.motorola.mmsp.activitygraph"
+            android:targetClass="com.motorola.mmsp.activitygraph.ManageShortcuts" />
+    </PreferenceScreen>
+<PreferenceScreen 
+    android:title="@string/set_skin_title" 
+    android:key="set skin" 
+    android:summary="@string/set_skin_summary">
+    <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.motorola.mmsp.activitygraph"
+            android:targetClass="com.motorola.mmsp.activitygraph.SetSkin" />
+    </PreferenceScreen>
+    
+<PreferenceScreen 
+    android:title="@string/reset_title" 
+    android:key="reset" 
+    android:summary="@string/reset_summary">
+
+</PreferenceScreen>
+</PreferenceScreen>

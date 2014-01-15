@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Alternar widgets</string>
+  <string name="gps_app_name">Botón GPS</string>
+  <string name="airplane_app_name">Botón Modo avión</string>
+  <string name="wifi_app_name">Botón Wi-Fi</string>
+  <string name="bluetooth_app_name">Botón Bluetooth</string>
+  <string name="apn_app_name">Botón APN</string>
+  <string name="data_app_name">Botón de datos</string>
+  <string name="widget_description">Visualiza y controla el estado del modo avión</string>
+  <string name="widget_description_bt">Visualiza y controla el estado de Bluetooth</string>
+  <string name="widget_description_wifi">Visualiza y controla el estado de la conexión Wi-Fi</string>
+  <string name="widget_description_gps">Visualiza y controla el estado del GPS</string>
+  <string name="StatusOn">SÍ</string>
+  <string name="StatusOff">NO</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">El modo avión no está disponible</string>
+  <string name="BluetoothtoastText">Bluetooth no está disponible</string>
+  <string name="GPStoastText">GPS no está disponible</string>
+  <string name="WifitoastText">La conexión Wi-Fi no está disponible</string>
+  <string name="location_restriction_enabled">La restricción de ubicaciones está activada.</string>
+  <string name="apncontrol_app_name">Control de APN</string>
+  <string name="no_apn">No hay ningún APN disponible</string>
+</resources>

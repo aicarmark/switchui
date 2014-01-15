@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2011 Motorola
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<string name="default_folder_name" translatable="false">moto_backup</string>
+<string name="can_phone_sdcard_erase" translatable="false">1</string>
+
+</resources>

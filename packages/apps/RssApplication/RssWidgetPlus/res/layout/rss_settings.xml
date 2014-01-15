@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <ListView
+            android:id="@+id/addfeeds_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp" 
+            android:layout_marginBottom="47dp"
+            android:divider="#00000000"
+            />
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+	    <View
+	        style="@style/button_line"
+	        />
+	   <Button
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"
+	       android:textColor="@android:color/white"
+	       android:onClick="onSubmit"
+	       android:text="@string/done" 
+	       android:background="@drawable/button_background"
+        >
+    </Button>
+
+	</LinearLayout>
+</RelativeLayout>

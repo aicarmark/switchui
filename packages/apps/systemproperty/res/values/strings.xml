@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Performance Master</string>
+    <string name="MemeryInfo">Memory</string>
+    <string name="raminfo_title">RAM</string>
+    <string name="ramtotal">Total: </string>
+    <string name="ramfree">Free : </string>
+    <string name="ramused">Used: </string>
+    <string name="rominfo_title">ROM</string>
+    <string name="romtotal">Total: </string>
+    <string name="romfree">Free : </string>
+    <string name="romused">Used: </string>
+    <string name="sdtotal">Total: </string>
+    <string name="sdfree">Free : </string>
+    <string name="sdused">Used: </string>
+    <string name="sdinfo_title">SD Card</string>
+    <string name="MEM_MB">MB </string>
+    <string name="MEM_GB">GB </string>
+    <string name="BatteryInfo">Battery</string>
+    <string name="clear">Clear</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="clickcleaner">1 CLICK CLEANER</string>
+    <string name="dialogtital">Notifications</string>
+    <string name="oneclean_context">Are you will clean all caches?</string>
+    <string name="opda_global_ok">OK</string>
+    <string name="opda_global_cancel">Cancel</string>
+    <string name="running_application">Running APP</string>
+    <string name="stayresident_application">Stay-resident APP</string>
+    <string name="no_cache">No cache files need to clear.</string>
+    <string name="no_apps">No running apps need to clear.</string>
+    <string name="app_loading">Scanning cache files...</string>
+    <string name="cleancache_title">To be clean up cache files</string>
+    <string name="stay_resident_head">You could click item to manually force stop the App</string>
+    <string name="user_process">User process</string>
+    <string name="system_process">System process</string>
+    <string name="oneclean_result">Data cleaner successfully</string>
+
+    <!-- text to display the number of backgroup apps size of mem to delete -->
+    <string name="cache_head_rom">You could get</string>
+    <string name="cache_back_rom">rom free, if you clear the cache which is the temporary files generated when app is running</string>
+    <string name="process_head_ram">	    You could get </string>
+    <string name="process_back_ram">	    ram free, if you clear the selected items</string>
+    <!-- text to display the number of running apps size of mem to delete -->
+    <string name="runningapps">Running Apps:<xliff:g id="numprocess">%1$d</xliff:g></string>
+
+    <!-- Descriptive text of ram free number/total number of mem -->
+    <string name="ram_free_total">Ram:<xliff:g id="numfree">%1$s</xliff:g>/<xliff:g id="numtotal">%2$s</xliff:g></string>
+
+    <!-- Descriptive text of rom free number/total number of mem -->
+    <string name="rom_free_total">Rom:<xliff:g id="numfree">%1$s</xliff:g>/<xliff:g id="numtotal">%2$s</xliff:g></string>
+
+    <!-- Battery -->
+    <string name="battery_health_str">Health</string>
+    <string name="battery_voltage_str">Voltage</string>
+    <string name="battery_temperature_str">Temp</string>
+    <string name="battery_health_dead_str">Dead</string>
+    <string name="battery_health_good_str">Good</string>
+    <string name="battery_health_overheat_str">Over Heat</string>
+    <string name="battery_health_overvoltage_str">Over Voltage</string>
+    <string name="battery_health_unknown_str">Unknown</string>
+    <string name="battery_health_failure_str">Unspecified Failure</string>
+    <string name="str_battery_remaining">Remaining time:</string>
+    <string name="str_battery_usage">Battery usage:</string>
+    <string name="str_battery_percent">100%</string>
+    <string name="str_battery_remaining_time">24h 0m</string>
+    <string name="str_battery_mode_optimize">MODE OPTIMIZE</string>
+    <string name="str_battery_voltage">Voltage: 4.0V</string>
+    <string name="str_battery_temperature">Temperature: 25C</string>
+    <string name="str_battery_current_mode">Current Battery mode:</string>
+    <string name="str_battery_general_mode">General Mode</string>
+
+    <!-- Actionbar back to TAB -->
+    <string name="str_action_bar_title">Action Bar Title</string>
+    <string name="str_action_bar_back_to_cpu">CPU</string>
+    <string name="str_action_bar_back_to_memory">Memory</string>
+    <!-- TAB -->
+    <string name="CPUInfo">CPU</string>
+
+    <!-- units -->
+    <string name="str_cpu_freq_units">MHz</string>
+
+    <!-- Cpu information -->
+    <string name="str_cpu_model">Model</string>
+    <string name="str_cpu_freq">Core freq</string>
+    <string name="str_cpu_min_freq">Min: </string>
+    <string name="str_cpu_max_freq">Max: </string>
+    <string name="str_cpu_usage_usr">Usr: </string>
+    <string name="str_cpu_usage_sys">Sys: </string>
+    <string name="str_cpu_usage_idle">Idle: </string>
+    <string name="str_cpu_usage">CPU Usage</string>
+    <string name="str_usr_process">Usr process</string>
+    <string name="str_sys_process">System process</string>
+    <string name="str_cpu_label_1">CPU1</string>
+    <string name="str_cpu_label_2">CPU2</string>
+    <string name="str_cpu_label_1_rename">CPU</string>
+    <string name="str_dialog_message">Please wait while loading...</string>
+    <string name="str_default_usage">0%</string>
+    <string name="str_percent_symbol">%</string>
+    <string name="str_cpu_unknown">Unknown</string>
+    <string name="str_no_process">No running process need to display.</string>
+
+    <!-- memory cleaner gkp864 -->
+    <string name="ReleaseMemory">Release Memory</string>
+    <string name="UpdateStep">%</string>
+    <string name="MemoryCleaner">Memory Cleaner</string>
+    <string name="MemoryCleaned">Memory has released to the best</string>
+
+    <!-- Battery Manager -->
+    <string name="but_ok_text">OK</string>
+    <string name="battery_manager_setting">Battery Manager</string>
+
+    <!-- New prompts -->
+    <string name="bm_parm_brightness">Brightness</string>
+    <string name="bm_parm_timeout">Timeout</string>
+    <string name="bm_parm_wifi">WiFi</string>
+    <string name="bm_parm_bluetooth">Bluetooth</string>
+    <string name="bm_parm_mobiledata">Mobile Data</string>
+    <string name="bm_parm_sync">Sync</string>
+    <string name="bm_parm_haptic">Haptic</string>
+    <string name="bm_parm_vibration">Vibration</string>
+    <string name="bm_parm_rotation">Rotation</string>
+    <string name="bm_mode_general">General</string>
+    <string name="bm_mode_saver">Battery saver</string>
+    <string name="bm_mode_night">Super saver</string>
+    <string name="bm_mode_performance">Performance</string>
+    <string name="bm_select_mode">Select Battery mode:</string>
+    <string name="bm_add_mode">Add a customized mode</string>
+    <string name="bm_warning">Warning</string>
+    <string name="bm_save">Save</string>
+    <string name="bm_cancel">Cancel</string>
+    <string name="bm_delete">Delete</string>
+    <string name="bm_warning_hint">Are you sure that you want to remove %s from your battery mode list?</string>
+    <string name="bm_hour">h</string>
+    <string name="bm_minute">m</string>
+    <string name="bm_status_on">On</string>
+    <string name="bm_status_off">Off</string>
+    <string name="bm_brightness_auto">Auto</string>
+    <string name="bm_second">s</string>
+    <string name="bm_timeout_never">Never</string>
+    <string name="bm_mode_switching">Switching to battery mode: %s </string>
+    <string name="bm_voltage_unit">V</string>
+    <string name="bm_mode_prefix">MyMode-</string>
+    <string name="bm_name_length_zero">Mode name length can not be 0</string>
+    <string name="bm_name_same">The mode name has been used</string>
+    <string name="bm_disclaimer_text">A friendly reminder, the battery remaining time information shown in this application is only for your reference, the detail values will change based on your actual phone usage.</string>
+    <string name="bm_disclaimer_title">Disclaimer</string>
+    <string name="bm_set">Set</string>
+    <string name="bm_switching">Switching...</string>
+    <string name="bm_saving">Saving...</string>
+    <string name="bm_mode_max">Only support 10 battery modes.</string>
+    <string name="bm_setting_mode">Mode setting</string>
+    <string name="bm_airplane_mode">In airplane mode</string>
+    <string name="bm_bt_fail">Turn Bluetooth fail</string>
+    <string name="bm_airplane_on">Airplane mode on ...</string>
+    <string name="bm_airplane_off">Airplane mode off ...</string>
+    <string name="bm_wifi_fail">Turn WiFi fail</string>
+
+</resources>

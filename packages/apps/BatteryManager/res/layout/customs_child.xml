@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+-->
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ichild_custom"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <!-- 
+  <com.motorola.batterymanager.MyListView
+    android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    android:choiceMode="none"
+    android:scrollbars="none"
+    android:id="@+id/customs_list">
+  </com.motorola.batterymanager.MyListView>
+  -->
+  
+  <com.motorola.batterymanager.MyListView
+    android:layout_width="fill_parent"
+    android:layout_height="575dip"
+    android:choiceMode="none"
+    android:footerDividersEnabled="false"
+    android:id="@+id/customs_list">
+  </com.motorola.batterymanager.MyListView>
+<!--
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_below="@id/customs_list"
+    android:id="@+id/custom_buttons">
+        <Button
+            android:id="@+id/custom_positive"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/but_ok_text">
+        </Button>
+        <Button
+            android:id="@+id/custom_negative"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/but_cancel_text">
+        </Button>
+  </LinearLayout>
+-->
+</RelativeLayout>
+<!--
+</ScrollView>
+-->

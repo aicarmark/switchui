@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:minWidth="600dip">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dip">
+
+        <SeekBar android:id="@+id/volume_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dip" />
+
+       <CheckBox android:id="@+id/ringer_silent"
+  		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:text="@string/silent"
+		         android:textAppearance="?android:attr/textAppearanceSmall"
+		         android:layout_marginTop="6dip"
+		         android:layout_marginLeft="20dip"
+		         android:layout_marginRight="20dip" />
+
+       <CheckBox android:id="@+id/ringer_vibrate"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/vibrate"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:layout_marginTop="6dip"
+                 android:layout_marginLeft="20dip"
+                 android:layout_marginRight="20dip" />
+
+    </LinearLayout>
+</ScrollView>

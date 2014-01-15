@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>Angi navn eller IP</item>
+        <item>Skann etter server</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>Legg til server</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>Skanner etter domener ...</item>
+        <item>Skanner etter servere ...</item>
+        <item>Kobler til server ...</item>
+        <item>Laster inn ...</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>Etter navn</item>
+        <item>Etter type</item>
+        <item>Etter tid</item>
+        <item>Etter størrelse</item>
+    </string-array>
+    <string-array name="zip_encryption_type_selector">
+        <item>Ingen kryptering</item>
+        <item>Eldre kryptering (ZIP 2.0)</item>
+        <item>128-biters AES-kryptering</item>
+        <item>256-biters AES-kryptering</item>
+    </string-array>
+    <string-array name="search_storage_selector">
+        <item>Telefonens interne lagringsminne</item>
+        <item>SD-kort</item>
+    </string-array>
+
+</resources>

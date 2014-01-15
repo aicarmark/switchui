@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+>
+    
+ <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="48px">
+            
+            <ImageView android:id="@+id/badge" 
+                android:layout_width="fill_parent"             
+                android:layout_height="48px"
+                 >
+            </ImageView>
+            <TextView  
+                android:layout_width="fill_parent"             
+                android:layout_height="wrap_content"   
+                android:text="@string/hidden_applications_title"
+                android:textSize="28px"
+                android:textColor="#ffffffff" 
+                    
+    	        android:layout_alignLeft="@id/badge"
+    	        android:layout_marginTop="10px"
+                android:layout_marginLeft="11px">
+                
+            </TextView>
+            <Button android:id="@+id/btn_select_to_hide" 
+                android:layout_width="48px"             
+                android:layout_height="48px"
+                android:background="@drawable/ic_add" 
+                android:layout_alignRight="@id/badge"
+                android:layout_marginRight="16px"
+                android:layout_marginTop="7px"
+                 >
+            </Button>
+            
+  </RelativeLayout> 
+
+  <include layout="@layout/searchpicker_layout"/>
+
+</LinearLayout>

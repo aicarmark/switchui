@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/reminder"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/ics_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/account_filter_header_bottom_divider"
+                style="@style/SectionDivider"
+                android:layout_height="1dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip" />
+
+            <EditText
+                android:id="@+id/enter_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:hint="@string/hint_text"
+                android:inputType="textMultiLine|textCapSentences" />
+
+            <CheckBox
+                android:id="@+id/vibrate_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/vibrate" />
+
+            <CheckBox
+                android:id="@+id/sound_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/play_sound" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dim_dark" />
+
+            <!-- TODO: Need to check if this is still being used -->
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="64dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawSelectorOnTop="false" >
+            </ListView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/line_divider_image_desc"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dim_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/edit_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</LinearLayout>

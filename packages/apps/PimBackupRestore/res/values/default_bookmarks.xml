@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="default_bookmarks" translatable="false">
+        <item>http://www.monternet.com</item>
+        <item>http://music.10086.cn/</item>
+        <item>http://12580.10086.cn/</item>
+        <item>http://shequ.10086.cn/</item>
+        <item>http://feixin.10086.cn/</item>
+        <item>http://mm.10086.cn/</item>
+        <item>http://s.139.com</item>
+    </string-array>
+    <string-array name="default_bookmarks_for_HK_TWN" translatable="false">
+    </string-array>
+</resources>

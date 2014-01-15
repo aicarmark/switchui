@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Kaitalioti valdiklius</string>
+  <string name="gps_app_name">GPS perjungimas</string>
+  <string name="airplane_app_name">Lėktuvo režimas perjungimas</string>
+  <string name="wifi_app_name">\"Wi-Fi\" perjungimas</string>
+  <string name="bluetooth_app_name">\"Bluetooth\" perjungimas</string>
+  <string name="apn_app_name">APN perjungimas</string>
+  <string name="data_app_name">Duomenų perjungimas</string>
+  <string name="widget_description">Žiūrėti ir valdyti lėktuvo režimo būseną</string>
+  <string name="widget_description_bt">Žiūrėti ir valdyti \"Bluetooth\" būseną</string>
+  <string name="widget_description_wifi">Žiūrėti ir valdyti \"Wi-Fi\" ryšio būseną</string>
+  <string name="widget_description_gps">Žiūrėti ir valdyti GPS būseną</string>
+  <string name="StatusOn">ĮJ</string>
+  <string name="StatusOff">IŠJ</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Lėktuvo režimas negalimas</string>
+  <string name="BluetoothtoastText">\"Bluetooth\" įrenginys negalimas</string>
+  <string name="GPStoastText">GPS atmintinė nepasiekiama</string>
+  <string name="WifitoastText">\"Wi-Fi\" atmintinė nepasiekiama</string>
+  <string name="location_restriction_enabled">Vietos nustatymo apribojimas suaktyvintas.</string>
+  <string name="apncontrol_app_name">APN valdymas</string>
+  <string name="no_apn">APN negalimas</string>
+</resources>

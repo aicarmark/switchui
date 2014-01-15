@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">"Менеджер завдань"</string>
+  <string name="tabTasks">"Програми"</string>
+  <string name="tabProcesses">"Процеси"</string>
+  <string name="buttonEnd">"Завершити"</string>
+  <string name="buttonRefresh">"Оновити"</string>
+  <string name="menuSwitch">"Перемкнути на"</string>
+  <string name="menuEndTask">"Завершити завдання"</string>
+  <string name="menuCancel">"Скасувати"</string>
+  <string name="textAvailableMemory">"Доступний об\’єм пам\’яті:"</string>
+  <string name="textAvailableMemoryUnit">"M"</string>
+  <string name="textNumOfApplications">"Кількість програм:"</string>
+  <string name="loading">"Завант-ня…"</string>
+</resources>

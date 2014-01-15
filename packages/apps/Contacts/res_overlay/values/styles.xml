@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Moto Mod Begin, IKHSS7-647, change UI to dark style-->
+    <style name="DetailActivityTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
+        <item name="android:actionBarItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <!-- Moto Mod Begin, IKHSS7-647, change UI to dark style-->
+    <style name="EditorActivityTheme" parent="@android:style/Theme.Holo">
+        <!-- Moto Mod Begin, IKHSS7-4528, changes actionBar style to android:style/Widget.Holo.ActionBar-->
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar</item>
+        <!-- Moto Mod End, IKHSS7-4528-->
+        <item name="android:actionBarItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    <!-- Moto Mod End, IKHSS7-647 -->
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <!-- Moto Mod Begin, IKHSS7-647, change UI to dark style-->
+    <style name="BackgroundOnlyTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- Moto Mod Begin, IKHSS7-647, change UI to dark style-->
+    <style name="Theme.QuickContact" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <!-- Moto Mod Begin, IKHSS7-647, change UI to dark style-->
+    <style name="PeopleTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/DialtactsActionBarStyle</item>
+        <item name="android:actionBarItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarTabStyle">@android:style/Widget.Holo.ActionBar.TabView</item>
+    <!-- Moto Mod End, IKHSS7-647 -->
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
+        <item name="activated_background">@drawable/list_item_activated_background</item>
+        <item name="section_header_background">@drawable/list_title_holo</item>
+        <item name="list_section_header_height">24dip</item>
+        <item name="list_item_divider">?android:attr/listDivider</item>
+        <item name="list_item_padding_top">0dip</item>
+        <item name="list_item_padding_right">0dip</item>
+        <item name="list_item_padding_bottom">0dip</item>
+        <item name="list_item_padding_left">0dip</item>
+        <item name="list_item_gap_between_image_and_text">8dip</item>
+        <item name="list_item_gap_between_label_and_data">5dip</item>
+        <item name="list_item_call_button_padding">14dip</item>
+        <item name="list_item_vertical_divider_margin">5dip</item>
+        <item name="list_item_presence_icon_margin">4dip</item>
+        <item name="list_item_presence_icon_size">16dip</item>
+        <item name="list_item_photo_size">@dimen/contact_browser_list_item_photo_size</item>
+        <item name="list_item_profile_photo_size">70dip</item>
+        <item name="list_item_prefix_highlight_color">#99cc00</item>
+        <item name="list_item_header_text_color">@color/people_app_theme_color</item>
+        <item name="list_item_header_text_size">14sp</item>
+        <item name="list_item_header_height">26dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        <item name="list_item_header_underline_color">@color/people_app_theme_color</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="list_item_contacts_count_text_color">@color/contact_count_text_color</item>
+        <item name="list_item_header_text_indent">8dip</item>
+        <item name="contact_browser_list_padding_left">16dip</item>
+        <item name="contact_browser_list_padding_right">0dip</item>
+        <item name="contact_browser_background">@android:color/transparent</item>
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <item name="list_item_contacts_count_text_size">12sp</item>
+        <!-- Favorites -->
+        <item name="favorites_padding_bottom">0dip</item>
+    </style>
+
+    <style name="ContactsActionBarStyle" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:subtitleTextStyle">@style/GroupSubtitleTextStyle</item>
+        <item name="android:background">@drawable/ab_solid_custom_blue_inverse_holo</item>
+        <item name="android:backgroundStacked">@drawable/ab_solid_custom_blue_inverse_holo</item>
+        <item name="android:displayOptions"></item>
+    </style>
+
+    <style name="ContactsPreferencesTheme" parent="@android:Theme.Holo">
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <style name="ContactListFilterTheme" parent="@android:Theme.Holo">
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <style name="NonPhoneDialogTheme" parent="@android:Theme.Holo.Dialog">
+    </style>
+
+    <style name="ConfirmAddDetailDialogTheme" parent="@android:style/Theme.Holo.Dialog.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="ContactEditorAccountsChangedActivityTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:textColorPrimary">@color/primary_text_color</item>
+        <item name="android:textColorSecondary">@color/secondary_text_color</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+</resources>

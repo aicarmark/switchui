@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.motohomex.AppsCustomizeSearchBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/apps_customize_tab_bar_height" >
+
+    <RelativeLayout
+        android:id="@+id/apps_customize_back_to_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical" 
+        android:onClick="onClickAppsCustomizeBackButton"
+        android:background="@drawable/tab_widget_indicator_selector">
+
+        <ImageView
+            android:id="@+id/apps_customize_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="14dip"
+            android:paddingTop="14dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/apps_customize_back_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/apps_customize_back_icon"
+            android:src="@drawable/apps_customize_back_to_menu_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_toLeftOf="@+id/right_icon"
+        android:layout_toRightOf="@id/apps_customize_back_to_menu_icon" >
+
+        <EditText
+            android:id="@+id/apps_customize_search_key"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:inputType="text|textAutoComplete|textNoSuggestions"
+            android:paddingRight="32dip"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/clear_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_widget_indicator_selector"
+                android:visibility="gone"
+                android:src="@drawable/ic_launcher_clear_normal_holo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/apps_customize_voice_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_widget_indicator_selector"
+            android:onClick="onClickVoiceButton"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/ic_home_voice_search_holo" />
+    </RelativeLayout>
+
+</com.motorola.mmsp.motohomex.AppsCustomizeSearchBar>

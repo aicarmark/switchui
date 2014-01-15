@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/SliderContainer"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:baselineAligned="false"
+	android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/rb_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    
+	<RelativeLayout
+		android:id="@+id/include_ones"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="0dp">
+
+		<include
+			layout="@layout/titlebar_header"
+			android:id="@+id/include_top_row"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/top_level_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1.0">
+
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/blocksScrollView"
+			android:cacheColorHint="#FF000000"
+			android:layout_below="@+id/include_top_row"
+			android:scrollbars="vertical"
+			android:fillViewport="true">
+
+			<LinearLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal"
+				android:id="@+id/outerbarNblocks"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+
+				<LinearLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:orientation="vertical"
+					android:id="@+id/barNblocks"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<include
+						layout="@layout/section_header_trigger"
+						android:id="@+id/trigger_header"
+						android:layout_width="fill_parent"
+						android:layout_height="30dp"
+						android:layout_marginTop="15dp"
+						android:layout_marginBottom="3dp"/>
+					
+				    <View android:id="@+id/trigger_divider"
+				          android:layout_height="1dip"
+				          android:layout_marginRight="7dip"
+				          android:layout_marginLeft="10dip"
+				          android:layout_marginBottom="10dip" 
+				          android:layout_alignParentBottom="true"
+				          android:layout_below="@id/trigger_header"
+				          style="@style/SectionDivider" />	
+
+					<TextView
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:id="@+id/empty_trigger"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/trigger_text"
+						android:textSize="18sp"
+						android:paddingLeft="10dp"
+						android:paddingRight="10dp"
+						android:paddingBottom="40dp"
+                        android:layout_marginLeft="20dp" />
+
+					<com.motorola.contextual.smartrules.rulesbuilder.BlockLayout
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher"
+						android:id="@+id/pc_drag_layer"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0" />
+
+					<include
+						layout="@layout/section_header_action"
+						android:id="@+id/action_header"
+						android:layout_width="fill_parent"
+						android:layout_height="30dp"
+						android:layout_marginTop="20dp"
+						android:layout_marginBottom="3dp"/>
+
+				    <View android:id="@+id/action_divider"
+				          android:layout_height="1dip"
+				          android:layout_marginRight="7dip"
+				          android:layout_marginLeft="10dip"
+				          android:layout_marginBottom="10dip" 
+				          android:layout_alignParentBottom="true"
+				          android:layout_below="@id/action_header"
+				          style="@style/SectionDivider" />	
+				          					
+					<TextView
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:id="@+id/empty_action"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/action_text"
+						android:textSize="18sp"
+						android:paddingLeft="10dp"
+						android:paddingRight="10dp"
+						android:layout_marginLeft="20dp"  />
+
+					<com.motorola.contextual.smartrules.rulesbuilder.BlockLayout
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher"
+						android:id="@+id/action_drag_layer"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:layout_below="@+id/pc_drag_layer" />
+				</LinearLayout>
+
+			</LinearLayout>
+		</ScrollView>
+
+		<ImageView
+			android:id="@+id/connectorBar"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:background="@drawable/sr_bar"
+			android:contentDescription="@string/block_connector_bar_image_desc"
+			android:layout_marginLeft="4dp" />
+
+	</RelativeLayout>
+</LinearLayout>

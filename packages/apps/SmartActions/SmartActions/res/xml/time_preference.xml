@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/add_time_frame">
+        <com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameNamePreference
+                android:key="@string/timeframe_name_preference"
+                android:title="@string/time_frame_name_title"
+                android:dialogTitle="@string/time_frame_name_title"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:persistent="false"
+                android:singleLine="true"/>
+
+        <com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameTimePreference
+                android:persistent="false"
+                android:key="@string/s_time"
+                android:title="@string/start_time" />
+
+
+        <com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameTimePreference
+                android:key="@string/e_time"
+                android:persistent="false"
+                android:title="@string/end_time"/>
+
+        <CheckBoxPreference
+                android:key="@string/all_day_event_pref"
+                android:title="@string/all_day_event" />
+
+        <com.motorola.contextual.smartprofile.sensors.timesensor.TimeFrameRepeatPreference
+                android:persistent="false"
+                android:key="@string/repeat_pref"
+                android:title="@string/timeframe_repeat" />
+
+
+
+</PreferenceScreen>

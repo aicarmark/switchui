@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SMART RULES -->
+    <color name="black">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#2E2E2E</color>
+    <color name="battery_rule_grey">#BBBBBB</color>
+    <color name="light_gray">#ffb0b0b0</color>
+    <color name="block_status_gray">#979797</color>
+    <color name="disable_gray">#9B9C9C</color>
+    <color name="active_blue">#33B5E5</color>
+    <color name="error_orange">#FF8800</color>
+    <color name="suggestion_green">#99CC00</color>
+    <color name="manual_gray">#9B9C9C</color>
+    <color name="ics_blue">#34B4E3</color>
+    <color name="first_line">#E6E6E6</color>
+    <color name="second_line">#9B9C9C</color>
+    <color name="disable_pub_gray">#5A5A5A</color>
+    <color name="transparent">#00000000</color>
+    <color name="version_gray">#99999999</color>
+
+    <!-- calendareventsensor changes start> -->
+    <color name="agenda_item_declined">#88ffffff</color>
+    <!-- calendareventsensor changes end> -->
+
+    <!-- DRIVE MODE WIDGET -->
+     <color name="white_65_alpha">#A5FFFFFF</color>
+     <color name="white_80_alpha">#CCFFFFFF</color>
+     <color name="white_30_alpha">#4cFFFFFF</color>
+
+     <!-- Guided pickers related colors -->
+     <color name="list_item_desc_green">#99CC00</color>
+</resources>

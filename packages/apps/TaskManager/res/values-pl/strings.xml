@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Menedżer zadań</string>
+  <string name="tabTasks">Aplikacje</string>
+  <string name="tabProcesses">Procesy</string>
+  <string name="buttonEnd">Zakończ</string>
+  <string name="buttonRefresh">Odśwież</string>
+  <string name="menuSwitch">Przełącz na</string>
+  <string name="menuEndTask">Zakończ zadanie</string>
+  <string name="menuCancel">Anuluj</string>
+  <string name="textAvailableMemory">Dostępna pamięć:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Liczba aplikacji:</string>
+  <string name="loading">Ładowanie\u2026</string>
+</resources>

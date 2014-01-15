@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/drivemode_widget_bg" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/drive_mode_icon_off_bg"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_drivemode_car_off" />
+
+    <RelativeLayout
+        android:id="@+id/ruleEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@drawable/drive_mode_bg"
+        android:clickable="true" >
+                
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/centerAligner"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/sg_drivemode_title"
+            android:textAppearance="@style/DriveModeText.normal" />
+
+        <TextView
+            android:id="@+id/centerAligner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/centerAligner"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="@style/DriveModeText.smallGreyed" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/settings"
+            android:paddingRight="2dp"
+            android:src="@drawable/ic_smart_actions" />
+    </RelativeLayout>
+</RelativeLayout>

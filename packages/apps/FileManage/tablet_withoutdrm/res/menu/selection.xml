@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/Selectall" android:title="@android:string/selectAll"/>
+  <item android:id="@+id/Unselectall" android:title="@string/menu_unselect_all"/>
+</menu>

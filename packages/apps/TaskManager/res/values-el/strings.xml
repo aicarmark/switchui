@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Διαχείριση εργασιών</string>
+  <string name="tabTasks">Εφαρμογές</string>
+  <string name="tabProcesses">Διεργασίες</string>
+  <string name="buttonEnd">Τερματισμός</string>
+  <string name="buttonRefresh">Ανανέωση</string>
+  <string name="menuSwitch">Αλλαγή σε</string>
+  <string name="menuEndTask">Τερματισμός εργασίας</string>
+  <string name="menuCancel">Άκυρο</string>
+  <string name="textAvailableMemory">Διαθέσιμη μνήμη:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Αριθμός εφαρμογών:</string>
+  <string name="loading">Φόρτωση\u2026</string>
+</resources>

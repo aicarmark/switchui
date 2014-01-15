@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date       CR                Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="select_add_server_way">
+        <item>이름 또는 IP 입력</item>
+        <item>서버 스캔</item>
+    </string-array>
+    <string-array name="add_server_indicater">
+        <item>서버 추가</item>
+    </string-array>
+    <string-array name="progress_dialog_indicater">
+        <item>도메인 스캔 중입니다. 기다려 주십시오.</item>
+        <item>서버 스캔 중입니다. 기다려 주십시오.</item>
+        <item>서버에 연결 중입니다. 기다려 주십시오.</item>
+        <item>로딩 중입니다. 기다려 주십시오.</item>
+    </string-array>
+    <string-array name="sort_by_method_selector">
+        <item>이름 순</item>
+        <item>형식 순</item>
+        <item>시간 순</item>
+        <item>크기 순</item>
+    </string-array>
+
+    <string-array name="zip_encryption_type_selector">
+        <item>암호화 하지 않음</item>
+        <item>Legacy (Zip 2.0) 암호화</item>
+        <item>128-bit AES 암호화</item>
+        <item>256-bit AES 암호화</item>
+    </string-array>
+
+    <string-array name="search_storage_selector">
+        <item>내장 메모리</item>
+        <item>외장 SD카드</item>
+    </string-array>
+</resources>

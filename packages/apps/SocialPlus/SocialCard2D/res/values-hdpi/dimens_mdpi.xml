@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <dimen name="l_size_mdpi">107px</dimen>
+    <dimen name="m_size_mdpi">86px</dimen>
+    <dimen name="s_size_mdpi">67px</dimen>
+
+    <dimen name="land9_y_mdpi">69px</dimen>
+    
+<!-- ==================================================== -->
+
+    <dimen name="port0_x_mdpi">110px</dimen>
+    <dimen name="port0_y_mdpi">70px</dimen>
+    
+    <dimen name="port1_x_mdpi">24px</dimen>
+    <dimen name="port1_y_mdpi">70px</dimen>
+    
+    <dimen name="port2_x_mdpi">43px</dimen>
+    <dimen name="port2_y_mdpi">156px</dimen>
+    
+    <dimen name="port3_x_mdpi">110px</dimen>
+    <dimen name="port3_y_mdpi">177px</dimen>
+    
+    <dimen name="port4_x_mdpi">196px</dimen>
+    <dimen name="port4_y_mdpi">177px</dimen>
+    
+    <dimen name="port5_x_mdpi">217px</dimen>
+    <dimen name="port5_y_mdpi">110px</dimen>
+    
+    <dimen name="port6_x_mdpi">217px</dimen>
+    <dimen name="port6_y_mdpi">43px</dimen>
+    
+<!-- ==================================================== -->
+    
+    <dimen name="land0_x_mdpi">116px</dimen>
+    <dimen name="land0_y_mdpi">15px</dimen>
+    
+    <dimen name="land1_x_mdpi">30px</dimen>
+    <dimen name="land1_y_mdpi">15px</dimen>
+    
+    <dimen name="land2_x_mdpi">49px</dimen>
+    <dimen name="land2_y_mdpi">101px</dimen>
+    
+    <dimen name="land3_x_mdpi">116px</dimen>
+    <dimen name="land3_y_mdpi">122px</dimen>
+    
+    <dimen name="land4_x_mdpi">202px</dimen>
+    <dimen name="land4_y_mdpi">122px</dimen>
+    
+    <dimen name="land5_x_mdpi">223px</dimen>
+    <dimen name="land5_y_mdpi">55px</dimen>
+    
+    <dimen name="land6_x_mdpi">290px</dimen>
+    <dimen name="land6_y_mdpi">55px</dimen>
+</resources>

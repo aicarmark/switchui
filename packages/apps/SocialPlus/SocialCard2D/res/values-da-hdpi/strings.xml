@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="manage_contact_introduce">Brug grafen nedenfor til at vælge 9 kontakter til at fylde din widget med. Du får nem adgang til disse kontakter fra din startskærm.</string>
+</resources>

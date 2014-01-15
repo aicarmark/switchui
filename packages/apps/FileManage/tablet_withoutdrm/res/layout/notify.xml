@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal" android:baselineAligned="false"
+  android:gravity="center_vertical" android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout01" android:orientation="horizontal"
+    android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/Icon01" android:layout_height="wrap_content"
+      android:layout_width="wrap_content" android:layout_gravity="left|center_vertical"
+      android:layout_below="@+id/TextView01" />
+
+  </LinearLayout>
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_toRightOf="@+id/Layout01" android:orientation="vertical"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <LinearLayout android:orientation="horizontal"
+      android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+      <TextView android:id="@+id/DescriptionText1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/copy_text" android:textStyle="bold"
+        android:ellipsize="none" android:singleLine="true"
+        android:paddingLeft="@dimen/prog_bar_padding_left" />
+
+      <TextView android:id="@+id/DescriptionText2"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/copy_text" android:textStyle="bold"
+        android:ellipsize="start" android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ProgressBarContainer"
+      android:orientation="horizontal" android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ProgressBar android:id="@+id/ProgressBar01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/prog_bar_width_notify"
+        android:layout_height="wrap_content" android:max="100"
+        android:progress="0" android:layout_below="@+id/TextView01"
+        android:layout_toRightOf="@+id/ProgressPercent"
+        android:layout_alignBottom="@+id/ProgressPercent"
+        android:paddingLeft="@dimen/prog_bar_padding_left" />
+
+      <TextView android:id="@+id/ProgressPercent"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical" android:textStyle="bold"
+        android:ellipsize="end" android:singleLine="true" />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/FileInfo" android:layout_width="wrap_content"
+      android:layout_height="wrap_content" android:layout_gravity="left|center_vertical"
+      android:ellipsize="end" android:singleLine="true"
+      android:paddingLeft="@dimen/prog_bar_padding_left" />
+
+
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >任务管理器</string>
+ <string name="tabTasks" >任务</string>
+ <string name="tabProcesses" >进程</string>
+ <string name="buttonEnd" >终止</string>
+ <string name="buttonRefresh" >刷新</string>
+ <string name="menuSwitch" >切换至</string>
+ <string name="menuEndTask" >终止任务</string>
+ <string name="menuCancel" >取消</string>
+ <string name="textAvailableMemory" >剩余内存:</string>
+ <string name="textAvailableMemoryUnit" >兆</string>
+ <string name="textNumOfApplications" >任务数量:</string>
+ <string name="loading" >正在载入...</string>
+</resources>

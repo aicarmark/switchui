@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <dimen name="l_size">119dp</dimen>
+    <dimen name="m_size">91dp</dimen>
+    <dimen name="s_size">67dp</dimen>
+    <dimen name="size2">91dp</dimen>
+    <dimen name="size7">67dp</dimen>
+    <dimen name="size8">67dp</dimen>
+    
+<!-- ==================================================== -->
+
+    <dimen name="x0">94.5dp</dimen>
+    <dimen name="y0">93dp</dimen>
+    
+    <dimen name="x1">122.5dp</dimen>
+    <dimen name="y1">2dp</dimen>
+    
+    <dimen name="x2">31dp</dimen>
+    <dimen name="y2">2dp</dimen>
+    
+    <dimen name="x3">3dp</dimen>
+    <dimen name="y3">93dp</dimen>
+    
+    <dimen name="x4">27dp</dimen>
+    <dimen name="y4">184.5dp</dimen>
+    
+    <dimen name="x5">94.5dp</dimen>
+    <dimen name="y5">212.5dp</dimen>
+    
+    <dimen name="x6">162dp</dimen>
+    <dimen name="y6">212.5dp</dimen>
+
+    <dimen name="x7">214dp</dimen>
+    <dimen name="y7">145dp</dimen>
+
+    <dimen name="x8">214dp</dimen>
+    <dimen name="y8">78dp</dimen>
+
+    <dimen name="x9">64dp</dimen>
+    <dimen name="y9">63dp</dimen>
+    
+    <dimen name="x10">214dp</dimen>
+    <dimen name="y10">46.5dp</dimen>
+    
+    <dimen name="setting_width">67dp</dimen>
+    <dimen name="setting_height">31dp</dimen>
+    
+<!-- ==================================================== -->
+    
+    <dimen name="shadow_l_size">123dp</dimen>
+    <dimen name="shadow_m_size">97dp</dimen>
+    <dimen name="shadow_s_size">82dp</dimen>
+    <dimen name="shadow_size7">97dp</dimen>
+    <dimen name="shadow_size8">82dp</dimen>
+
+<!-- ==================================================== -->
+
+    <dimen name="shadow_x0">107dp</dimen>
+    <dimen name="shadow_y0">89dp</dimen>
+
+    <dimen name="shadow_x1">128dp</dimen>
+    <dimen name="shadow_y1">0dp</dimen>
+    
+    <dimen name="shadow_x2">44dp</dimen>
+    <dimen name="shadow_y2">0dp</dimen>
+    
+    <dimen name="shadow_x3">20dp</dimen>
+    <dimen name="shadow_y3">83dp</dimen>
+    
+    <dimen name="shadow_x4">35dp</dimen>
+    <dimen name="shadow_y4">168dp</dimen>
+    
+    <dimen name="shadow_x5">103dp</dimen>
+    <dimen name="shadow_y5">193dp</dimen>
+    
+    <dimen name="shadow_x6">172dp</dimen>
+    <dimen name="shadow_y6">193dp</dimen>
+
+    <dimen name="shadow_x7">213dp</dimen>
+    <dimen name="shadow_y7">124dp</dimen>
+
+    <dimen name="shadow_x8">213dp</dimen>
+    <dimen name="shadow_y8">56dp</dimen>
+</resources>

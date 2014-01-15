@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="recent_call_types">
+        <item>"全部呼叫"</item>
+        <item>"未接电话"</item>
+        <item>"已接电话"</item>
+        <item>"呼出电话"</item>
+        <item>"语音信箱"</item>
+    </string-array>
+    <string-array name="recent_call_types_without_voicemail">
+        <item>"全部呼叫"</item>
+        <item>"未接电话"</item>
+        <item>"已接电话"</item>
+        <item>"呼出电话"</item>
+    </string-array>
+
+    <string-array name="contact_typeModes">
+        <item>"手机"</item>
+        <item>"我的联系人"</item>
+        <item>"C 卡"</item>
+        <item>"G 卡"</item>
+    </string-array>
+    <string-array name="network_types">
+        <item>"所有网络"</item>
+        <item>"CDMA 网络"</item>
+        <item>"GSM 网络"</item>
+    </string-array>
+    <string-array name="call_types">
+        <item>"全部呼叫"</item>
+        <item>"已接电话"</item>
+        <item>"呼出电话"</item>
+        <item>"未接电话"</item>
+    </string-array>
+    <string-array name="select_copy_dialog_items">
+        <item>"手机至C卡"</item>
+        <item>"手机至G卡"</item>
+        <item>"C卡至手机"</item>
+        <item>"G卡至手机"</item>
+    </string-array>
+    <string-array name="select_copy_dialog_items_single">
+        <item>"手机至UIM卡"</item>
+        <item>"手机至SIM卡"</item>
+        <item>"UIM卡至手机"</item>
+        <item>"SIM卡至手机"</item>
+    </string-array>
+    <string-array name="title_copy_progress_items">
+        <item>"复制至C卡"</item>
+        <item>"复制至G卡"</item>
+        <item>"复制至手机"</item>
+        <item>"复制至手机"</item>
+    </string-array>
+    <string-array name="title_copy_progress_items_single">
+        <item>"复制至UIM卡"</item>
+        <item>"复制至SIM卡"</item>
+        <item>"复制至手机"</item>
+        <item>"复制至手机"</item>
+    </string-array>
+    <string-array name="text_copy_progress_items">
+        <item>"正在复制联系人至C卡"</item>
+        <item>"正在复制联系人至G卡"</item>
+        <item>"正在复制联系人至手机"</item>
+        <item>"正在复制联系人至手机"</item>
+    </string-array>
+    <string-array name="text_copy_progress_items_single">
+        <item>"正在复制联系人至UIM卡"</item>
+        <item>"正在复制联系人至SIM卡"</item>
+        <item>"正在复制联系人至手机"</item>
+        <item>"正在复制联系人至手机"</item>
+    </string-array>
+
+</resources>

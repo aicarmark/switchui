@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>"15 δευτερόλεπτα"</item>
+        <item>"30 δευτερόλεπτα"</item>
+        <item>"1 λεπτό"</item>
+        <item>"2 λεπτά"</item>
+        <item>"10 λεπτά"</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Κλήσεις και μηνύματα κειμένου</item>
+        <item>Μόνο κλήσεις</item>
+        <item>Μόνο μηνύματα κειμένου</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Όλοι οι αριθμοί</item>
+        <item>Όλες οι επαφές του τηλ. καταλόγου</item>
+        <item>Επιλεγμένες επαφές</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Το μήνυμα θα σταλεί σε όλους τους αριθμούς τηλεφώνου.</item>
+        <item>Το μήνυμα θα σταλεί σε όλους τους αριθμούς του τηλ. καταλόγου.</item>
+        <item>Το μήνυμα θα σταλεί μόνο στους επιλεγμένους αριθμούς.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Μέγιστη</item>
+        <item>Υψηλή</item>
+        <item>Μεσαία</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Αποστολέας μηνύματος κειμένου</item>
+        <item>Όνομα καλούντος εισερχόμενης κλήσης</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Οικία</item>
+        <item>Εργασία</item>
+        <item>Σχολείο</item>
+        <item>Προσαρμοσμένο</item>
+    </string-array>
+
+</resources>

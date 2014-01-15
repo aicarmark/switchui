@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="launcherDialer" msgid="8636288196618486553">"Telefone"</string>
+    <!-- Motorola qhpn87 <string name="people" msgid="1048457247435785074">Motorola Localization change to Google string</string> -->
+    <string name="people" msgid="1048457247435785074">"Contactos"</string>
+    <string name="contactsList" msgid="8661624236494819731">"Contactos"</string>
+    <string name="shortcutContact" msgid="749243779392912958">"Contacto"</string>
+    <!-- Motorola qhpn87 <string name="shortcutDialContact" msgid="746622101599186779">Motorola Localization change to Google string</string> -->
+    <string name="shortcutDialContact" msgid="746622101599186779">"Marcao direta"</string>
+    <!-- Motorola qhpn87 <string name="shortcutMessageContact" msgid="2460337253595976198">Motorola Localization change to Google string</string> -->
+    <string name="shortcutMessageContact" msgid="2460337253595976198">"Mensagem direta"</string>
+    <!-- Motorola qhpn87 <string name="shortcutActivityTitle" msgid="6642877210643565436">Motorola Localization change to Google string</string> -->
+    <string name="shortcutActivityTitle" msgid="6642877210643565436">"Selecionar um atalho de contacto"</string>
+    <!-- Motorola qhpn87 <string name="callShortcutActivityTitle" msgid="6065749861423648991">Motorola Localization change to Google string</string> -->
+    <string name="callShortcutActivityTitle" msgid="6065749861423648991">"Selecionar um nmero a marcar"</string>
+    <!-- Motorola qhpn87 <string name="messageShortcutActivityTitle" msgid="3084542316620335911">Motorola Localization change to Google string</string> -->
+    <string name="messageShortcutActivityTitle" msgid="3084542316620335911">"Selecionar um nmero para enviar mensagem"</string>
+    <!-- Motorola qhpn87 <string name="contactPickerActivityTitle">Motorola Localization change to Google string</string> -->
+    <string name="contactPickerActivityTitle">"Escolher contacto"</string>
+    <string name="contactMultiplePickerActivityTitle">Selecionar contactos</string>
+    <!-- Motorola kqvw87 <string name="starredList" msgid="4817256136413959463">Motorola Localization change to Google string</string> -->
+    <string name="starredList" msgid="4817256136413959463">"Marcados com estrela"</string>
+    <string name="frequentList" msgid="7154768136473953056">"Frequentes"</string>
+    <string name="strequentList" msgid="5640192862059373511">"Favoritos"</string>
+    <string name="viewContactTitle" msgid="7989394521836644384">"Detalhes de contacto"</string>
+    <!-- Motorola kqvw87 <string name="viewContactDesription" msgid="214186610887547860">Motorola Localization change to Google string</string> -->
+    <string name="viewContactDesription" msgid="214186610887547860">"Ver contacto"</string>
+    <string name="editContactDescription" msgid="2947202828256214947">"Editar contacto"</string>
+    <string name="insertContactDescription" msgid="4709878105452681987">"Criar contacto"</string>
+    <string name="editGroupDescription" msgid="6321161304201540561">"Editar grupo"</string>
+    <string name="insertGroupDescription" msgid="5658512271662210139">"Criar grupo"</string>
+    <string name="contactDetailAbout" msgid="5430408883907061400">"Acerca de"</string>
+    <!-- Motorola kqvw87 <string name="contactDetailUpdates" msgid="3780588624763446941">Motorola Localization change to Google string</string> -->
+    <string name="contactDetailUpdates" msgid="3780588624763446941">"Atualizaes"</string>
+    <!-- Motorola qhpn87 <string name="searchHint" msgid="8482945356247760701">Motorola Localization change to Google string</string> -->
+    <string name="searchHint" msgid="8482945356247760701">"Procurar contactos"</string>
+    <!-- Motorola qhpn87 <string name="menu_search" msgid="9147752853603483719">Motorola Localization change to Google string</string> -->
+    <string name="menu_search" msgid="9147752853603483719">"Procurar"</string>
+    <string name="menu_newContact" msgid="1209922412763274638">"Novo contacto"</string>
+    <!-- Motorola kqvw87 <string name="menu_viewContact" msgid="2795575601596468581">Motorola Localization change to Google string</string> -->
+    <string name="menu_viewContact" msgid="2795575601596468581">"Ver contacto"</string>
+    <!-- Motorola kqvw87 <string name="menu_callNumber" msgid="5142851348489387516">Motorola Localization change to Google string</string> -->
+    <string name="menu_callNumber" msgid="5142851348489387516">"Ligar a <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="menu_addStar" msgid="2908478235715404876">"Adicionar aos favoritos"</string>
+    <string name="menu_removeStar" msgid="5844227078364227030">"Remover dos favoritos"</string>
+    <string name="menu_editContact" msgid="9042415603857662633">"Editar"</string>
+    <string name="menu_deleteContact" msgid="6788644058868189393">"Eliminar"</string>
+    <string name="menu_call" msgid="3992595586042260618">"Ligar para contacto"</string>
+    <string name="menu_sendSMS" msgid="5535886767547006515">"Enviar SMS/MMS para contacto"</string>
+    <string name="menu_splitAggregate" msgid="8368636463748691868">"Separar"</string>
+    <string name="menu_editGroup" msgid="5062005185370983720">"Editar"</string>
+    <string name="menu_sendSms">Enviar mensagem</string>
+    <string name="menu_sendEmail">Enviar e-mail</string>
+    <string name="menu_createEvent">Criar evento</string>
+    <string name="menu_deleteGroup" msgid="3486380004411482874">"Eliminar"</string>
+    <string name="menu_new_contact_action_bar" msgid="8887818026717394343">"Novo"</string>
+    <string name="menu_new_group_action_bar" msgid="5055346725617932394">"Novo"</string>
+    <!-- Motorola qhpn87 <string name="splitConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="splitConfirmation_title">"Separar contacto?"</string>
+    <!-- Motorola qhpn87 <string name="splitConfirmation">Motorola Localization change to Google string</string> -->
+    <string name="splitConfirmation">"Este contacto ser dividido em vrios contactos."</string>
+    <string name="menu_joinAggregate" msgid="5027981918265667970">"Associar"</string>
+    <string name="titleJoinContactDataWith" msgid="7684875775798635354">"Associar contactos"</string>
+    <!-- Motorola qhpn87 <string name="blurbJoinContactDataWith">Motorola Localization change to Google string</string> -->
+    <string name="blurbJoinContactDataWith">"Escolha o contacto que pretende associar a <xliff:g id="name">%s</xliff:g>."</string>
+    <string name="showAllContactsJoinItem" msgid="2189695051430392383">"Mostrar todos os contactos"</string>
+    <string name="separatorJoinAggregateSuggestions" msgid="2831414448851313345">"Contactos sugeridos"</string>
+    <string name="separatorJoinAggregateAll" msgid="7939932265026181043">"Todos os contactos"</string>
+    <!-- Motorola qhpn87 <string name="contactsJoinedMessage" msgid="7208148163607047389">Motorola Localization change to Google string</string> -->
+    <string name="contactsJoinedMessage" msgid="7208148163607047389">"Contactos associados."</string>
+    <!-- Motorola qhpn87 <string name="deleteConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="deleteConfirmation_title">"Eliminar contacto?"</string>
+    <string name="menu_set_ring_tone" msgid="8728345772068064946">"Definir toque"</string>
+    <!-- Motorola kqvw87 <string name="menu_redirect_calls_to_vm" msgid="4181789196416396656">Motorola Localization change to Google string</string> -->
+    <string name="menu_redirect_calls_to_vm" msgid="4181789196416396656">"S para correio de voz"</string>
+    <!-- Motorola qhpn87 <string name="readOnlyContactWarning">Motorola Localization change to Google string</string> -->
+    <string name="readOnlyContactWarning">"No pode eliminar contactos de contas s de leitura, mas pode ocult-los nas suas listas de contactos."</string>
+    <string name="readOnlyContactDeleteConfirmation" msgid="2137170726670196909">"Este contacto contm informaes de vrias contas. As informaes de contas s de leitura sero ocultadas nas suas listas de contactos, mas no eliminadas."</string>
+    <!-- Motorola qhpn87 <string name="multipleContactDeleteConfirmation" msgid="938900978442960800">Motorola Localization change to Google string</string> -->
+    <string name="multipleContactDeleteConfirmation" msgid="938900978442960800">"Ao eliminar este contacto, sero eliminadas informaes de vrias contas."</string>
+    <string name="deleteConfirmation" msgid="811706994761610640">"Este contacto ser eliminado."</string>
+    <string name="menu_done" msgid="796017761764190697">"Concludo"</string>
+    <string name="menu_doNotSave" msgid="58593876893538465">"Cancelar"</string>
+    <string name="menu_discard" msgid="6456087569315685632">"Rejeitar"</string>
+    <string name="label_notes" msgid="8337354953278341042">"Notas"</string>
+    <!-- Motorola kqvw87 <string name="label_sip_address" msgid="124073911714324974">Motorola Localization change to Google string</string> -->
+    <string name="label_sip_address" msgid="124073911714324974">"Chamada Internet"</string>
+    <string name="ghostData_company" msgid="5414421120553765775">"Empresa"</string>
+    <string name="ghostData_title" msgid="7496735200318496110">"Ttulo"</string>
+    <!-- Motorola qhpn87 <string name="invalidContactMessage">Motorola Localization change to Google string</string> -->
+    <string name="invalidContactMessage">"O contacto no existe."</string>
+    <string name="pickerNewContactHeader" msgid="7750705279843568147">"Criar novo contacto"</string>
+    <!-- Motorola qhpn87 <string name="pickerNewContactText" msgid="6166997164401048211">Motorola Localization change to Google string</string> -->
+    <string name="pickerNewContactText" msgid="6166997164401048211">"Criar novo contacto"</string>
+    <string name="phoneLabelsGroup" msgid="6468091477851199285">"Telefone"</string>
+    <string name="emailLabelsGroup" msgid="8389931313045344406">"E-mail"</string>
+    <string name="imLabelsGroup" msgid="3898238486262614027">"MI"</string>
+    <!-- Motorola kqvw87 <string name="postalLabelsGroup" msgid="3487738141112589324">Motorola Localization change to Google string</string> -->
+    <string name="postalLabelsGroup" msgid="3487738141112589324">"Morada"</string>
+  <string-array name="otherLabels">
+    <item msgid="8287841928119937597">"Organizao"</item>
+    <item msgid="7196592230748086755">"Nota"</item>
+  </string-array>
+    <string name="photoPickerNotFoundText" product="tablet" msgid="6247290728908599701">"No existem imagens disponveis no tablet."</string>
+    <string name="photoPickerNotFoundText" product="default" msgid="431331662154342581">"No existem imagens disponveis no telefone."</string>
+    <!-- Motorola qhpn87 <string name="attach_photo_dialog_title" msgid="5599827035558557169">Motorola Localization change to Google string</string> -->
+    <string name="attach_photo_dialog_title" msgid="5599827035558557169">"Fotografia de contacto"</string>
+    <string name="customLabelPickerTitle" msgid="1081475101983255212">"Nome da etiqueta personalizada"</string>
+    <!-- Motorola kqvw87 <string name="send_to_voicemail_checkbox" msgid="9001686764070676353">Motorola Localization change to Google string</string> -->
+    <string name="send_to_voicemail_checkbox" msgid="9001686764070676353">"Enviar as chamadas diretamente para o correio de voz"</string>
+    <string name="removePhoto" msgid="4898105274130284565">"Remover fotografia"</string>
+    <!-- Motorola qhpn87 <string name="noContacts">Motorola Localization change to Google string</string> -->
+    <string name="noContacts">"Sem contactos."</string>
+    <!-- Motorola qhpn87 <string name="noGroups">Motorola Localization change to Google string</string> -->
+    <string name="noGroups">"Sem grupos."</string>
+    <!-- Motorola qhpn87 <string name="noAccounts">Motorola Localization change to Google string</string> -->
+    <string name="noAccounts">"Para criar grupos,  necessrio ter uma conta."</string>
+    <string name="noMatchingContacts" msgid="4266283206853990471">"No foram encontrados contactos correspondentes."</string>
+    <string name="noContactsWithPhoneNumbers" msgid="1605457050218824269">"Sem contactos com nmeros de telefone."</string>
+    <!-- Motorola qhpn87 <string name="emptyGroup" msgid="7502116218697177370">Motorola Localization change to Google string</string> -->
+    <string name="emptyGroup" msgid="7502116218697177370">"No existem pessoas neste grupo."</string>
+    <!-- Motorola qhpn87 <string name="addPeopleToGroup" msgid="7879585947222263516">Motorola Localization change to Google string</string> -->
+    <string name="addPeopleToGroup" msgid="7879585947222263516">"Para adicionar alguns, edite o grupo."</string>
+    <string name="savingContact" msgid="4075751076741924939">"A guardar contacto..."</string>
+    <string name="savingDisplayGroups" msgid="2133152192716475939">"A guardar opes de visualizao..."</string>
+    <!-- Motorola qhpn87 <string name="contactSavedToast">Motorola Localization change to Google string</string> -->
+    <string name="contactSavedToast">"Contacto guardado."</string>
+    <!-- Motorola qhpn87 <string name="contactSavedErrorToast">Motorola Localization change to Google string</string> -->
+    <string name="contactSavedErrorToast">"No foi possvel guardar as alteraes ao contacto."</string>
+    <!-- Motorola qhpn87 <string name="groupSavedToast">Motorola Localization change to Google string</string> -->
+    <string name="groupSavedToast">"Grupo guardado."</string>
+    <!-- Motorola qhpn87 <string name="groupSavedErrorToast">Motorola Localization change to Google string</string> -->
+    <string name="groupSavedErrorToast">"No foi possvel guardar as alteraes ao grupo."</string>
+    <string name="moto_group_confirm_assignment">Confirmar atribuies:</string>
+    <string name="moto_group_select_number">Selecione um nmero:</string>
+    <string name="moto_group_select_email">Selecione um e-mail:</string>
+    <string name="noNumbers">Sem nmeros</string>
+    <string name="noEmails">Sem e-mails</string>
+    <string name="moto_do_not_send_message">No enviar mensagem</string>
+    <string name="moto_do_not_email">No enviar e-mail</string>
+    <string name="give_name_to_new_group">Atribuir nome ao novo grupo:</string>
+    <string name="new_group">Nome do grupo</string>
+    <string name="group_exist">O nome do grupo j existe.</string>
+    <string name="group_name_cant_empty">O nome do grupo no pode estar vazio.</string>
+    <string name="group_message_limit">Apenas podem ser criadas mensagens para grupos com menos de 300 destinatrios!</string>
+    <string name="item_contact_id">ID de contacto do item</string>
+    <string name="view_holder">visualizar Proprietrio</string>
+  <plurals name="listTotalPhoneContacts">
+    <item quantity="one" msgid="3015357862286673986">"1 contacto com nmero de telefone"</item>
+    <item quantity="other" msgid="3299954047880968205">"<xliff:g id="COUNT">%d</xliff:g> contactos com nmeros de telefone"</item>
+  </plurals>
+    <string name="listTotalPhoneContactsZero" msgid="6968813857632984319">"Sem contactos com nmeros de telefone"</string>
+  <plurals name="listTotalAllContacts">
+    <item quantity="one" msgid="3405747744700823280">"1 contacto"</item>
+    <item quantity="other" msgid="3578469907265375314">"<xliff:g id="COUNT">%d</xliff:g> contactos"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZero">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZero">"Sem contactos."</string>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZeroCustom">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZeroCustom">"Sem contactos visveis."</string>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZeroStarred">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZeroStarred">"Sem favoritos."</string>
+    <!-- Motorola qhpn87 <string name="listTotalAllContactsZeroGroup" msgid="5448979458248027615">Motorola Localization change to Google string</string> -->
+    <string name="listTotalAllContactsZeroGroup" msgid="5448979458248027615">"Sem contactos <xliff:g example="Friends" id="name">%s</xliff:g>"</string>
+    <!-- Motorola qhpn87 <string name="listAllContactsInAccount" msgid="7496143179265311758">Motorola Localization change to Google string</string> -->
+    <string name="listAllContactsInAccount" msgid="7496143179265311758">"Contactos <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="listSingleContact" msgid="6067813698903535563">"Contacto nico"</string>
+    <string name="listCustomView" msgid="6950713892532194050">"Contactos na vista personalizada"</string>
+  <plurals name="listFoundAllContacts">
+    <item quantity="one" msgid="5517063038754171134">"1 encontrado"</item>
+    <!-- Motorola kqvw87 <item quantity="other" msgid="3852668542926965042">Motorola Localization change to Google string</item> -->
+    <item quantity="other" msgid="3852668542926965042">"<xliff:g id="COUNT">%d</xliff:g> encontrados"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="foundTooManyContacts">Motorola Localization change to Google string</string> -->
+    <string name="foundTooManyContacts">"Foram encontrados mais de <xliff:g id="count">%d</xliff:g>."</string>
+    <!-- Motorola qhpn87 <string name="listFoundAllContactsZero">Motorola Localization change to Google string</string> -->
+    <string name="listFoundAllContactsZero">"Nenhum encontrado."</string>
+  <plurals name="searchFoundContacts">
+    <item quantity="one" msgid="4826918429708286628">"1 encontrado"</item>
+    <!-- Motorola kqvw87 <item quantity="other" msgid="7988132539476575389">Motorola Localization change to Google string</item> -->
+    <item quantity="other" msgid="7988132539476575389">"<xliff:g id="COUNT">%d</xliff:g> encontrados"</item>
+  </plurals>
+    <string name="contactsAllLabel">Contactos</string>
+    <string name="contactsGroupsLabel" msgid="2841971472518003524">"Grupos"</string>
+    <string name="contactsFavoritesLabel" msgid="8417039765586853670">"Favoritos"</string>
+    <!-- Motorola kqvw87 <string name="menu_sendTextMessage" msgid="6937343460284499306">Motorola Localization change to Google string</string> -->
+    <string name="menu_sendTextMessage" msgid="6937343460284499306">"Enviar SMS/MMS"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_callNumber" msgid="1756372533999226126">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_callNumber" msgid="1756372533999226126">"Ligar a <xliff:g id="NAME">%s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_editNumberBeforeCall" msgid="7756171675833267857">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_editNumberBeforeCall" msgid="7756171675833267857">"Editar nmero antes de ligar"</string>
+    <!-- Motorola qhpn87 <string name="recentCalls_addToContact" msgid="1429899535546487008">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_addToContact" msgid="1429899535546487008">"Adicionar a Contactos"</string>
+    <!-- Motorola qhpn87 <string name="recentCalls_removeFromRecentList" msgid="401662244636511330">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_removeFromRecentList" msgid="401662244636511330">"Remover do registo"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_deleteAll" msgid="6352364392762163704">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_deleteAll">Limpar lista</string>
+    <string name="recentCalls_trashVoicemail" msgid="7604696960787435655">"Eliminar correio de voz"</string>
+    <string name="recentCalls_shareVoicemail" msgid="1416112847592942840">"Partilhar correio de voz"</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogConfirmation_title">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogConfirmation_title">"Limpar registo de chamadas?"</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogConfirmation">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogConfirmation">"Todos os registos de chamadas sero eliminados."</string>
+    <!-- Motorola qhpn87 <string name="clearCallLogProgress_title">Motorola Localization change to Google string</string> -->
+    <string name="clearCallLogProgress_title">"A limpar o registo de chamadas\u2026"</string>
+    <string name="imei" msgid="3045126336951684285">"IMEI"</string>
+    <string name="meid" msgid="6210568493746275750">"MEID"</string>
+    <string name="voicemail" msgid="3851469869202611441">"Correio de voz"</string>
+    <string name="unknown" msgid="740067747858270469">"Desconhecido"</string>
+    <string name="private_num" msgid="6374339738119166953">"Nmero particular"</string>
+    <string name="payphone" msgid="4864313342828942922">"Telefone pblico"</string>
+    <string name="dialerKeyboardHintText" msgid="5401660096579787344">"Utilizar o teclado para marcar"</string>
+    <!-- Motorola qhpn87 <string name="dialerDialpadHintText" msgid="5824490365898349041">Motorola Localization change to Google string</string> -->
+    <string name="dialerDialpadHintText" msgid="5824490365898349041">"Marcar nmero"</string>
+    <string name="simContacts_emptyLoading" msgid="6700035985448642408">"A carregar a partir do carto SIM..."</string>
+    <string name="simContacts_title" msgid="27341688347689769">"Contactos no carto SIM"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpTextWithSyncForCreateShortcut" msgid="801504710275614594">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpTextWithSyncForCreateShortcut" msgid="801504710275614594">"No existem contactos a apresentar. Se acabou de adicionar uma conta, a sincronizao de contactos pode demorar alguns minutos."</string>
+    <string name="noContactsHelpTextForCreateShortcut" msgid="3081286388667108335">"No existem contactos a apresentar."</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpText" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpText" product="tablet">"No tem contactos para apresentar.\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o tablet\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>" "\n<li><font fgcolor="#ffffffff"><b>Importar/exportar</b></font> " para importar contactos do SIM ou do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpText" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpText" product="default">"No tem contactos para apresentar.\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o telefone\n</li>\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do SIM ou do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpTextWithSync" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpTextWithSync" product="tablet">"No tem contactos para apresentar. (Se acabou de adicionar uma conta, a sincronizao dos contactos pode demorar alguns minutos).\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o tablet\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Opes de visualizao"</b></font> para definir quais so os contactos que ficam visveis\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do SIM ou do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsHelpTextWithSync" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsHelpTextWithSync" product="default">"No tem contactos para apresentar. (Se acabou de adicionar uma conta, a sincronizao dos contactos pode demorar alguns minutos).\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o telefone\n</li>\n<li><font fgcolor="#ffffffff"><b>"Opes de visualizao"</b></font> para definir quais so os contactos que ficam visveis\n</li>\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do SIM ou do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpText" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpText" product="tablet">"No tem contactos para apresentar.\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o tablet\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpText" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpText" product="default">"No tem contactos para apresentar.\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o telefone\n</li>\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpTextWithSync" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpTextWithSync" product="tablet">"No tem contactos para apresentar. (Se acabou de adicionar uma conta, a sincronizao dos contactos pode demorar alguns minutos).\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o tablet\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Opes de visualizao"</b></font> para definir quais so os contactos que ficam visveis\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>" "\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do carto SD"\n</li>"</string>
+    <!-- Motorola qhpn87 <string name="noContactsNoSimHelpTextWithSync" product="default">Motorola Localization change to Google string</string> -->
+    <string name="noContactsNoSimHelpTextWithSync" product="default">"No tem contactos para apresentar. (Se acabou de adicionar uma conta, a sincronizao dos contactos pode demorar alguns minutos.)\n\nPara adicionar contactos, toque em <font fgcolor="#ffffffff"><b>"Menu"</b></font>e, de seguida, em:\n \n<li><font fgcolor="#ffffffff"><b>"Contas"</b></font> para adicionar ou configurar uma conta com contactos que possam ser sincronizados com o telefone\n</li>\n<li><font fgcolor="#ffffffff"><b>Opes de visualizao</b></font> para definir quais so os contactos que ficam visveis\n</li>\n<li><font fgcolor="#ffffffff"><b>"Novo contacto"</b></font> para criar um novo contacto do incio\n</li>\n<li><font fgcolor="#ffffffff"><b>"Importar/Exportar"</b></font> " para importar contactos do carto SD"\n</li>"</string>
+    <string name="noFavoritesHelpText" msgid="3744655776704833277">"No tem favoritos."\n\n"Para adicionar um contacto  sua lista de favoritos:"\n\n"        "<li>"Toque no separador "<b>"Contactos"</b>" "\n</li>" "\n<li>"Toque no contacto que pretende adicionar aos favoritos"\n</li>" "\n<li>"Toque na estrela junto ao nome do contacto"\n</li></string>
+    <string name="dialer_useDtmfDialpad" msgid="1707548397435075040">"Utilizar teclado numrico com tons de toque"</string>
+    <string name="dialer_returnToInCallScreen" msgid="3719386377550913067">"Voltar  chamada em curso"</string>
+    <!-- Motorola kqvw87 <string name="dialer_addAnotherCall" msgid="4205688819890074468">Motorola Localization change to Google string</string> -->
+    <string name="dialer_addAnotherCall" msgid="4205688819890074468">"Adicionar"</string>
+    <string name="callDetailTitle" msgid="5340227785196217938">"Detalhes da chamada"</string>
+    <string name="toast_call_detail_error" msgid="7200975244804730096">"No foi possvel ler os detalhes da chamada solicitada."</string>
+    <string name="type_incoming" msgid="6502076603836088532">"Chamada recebida"</string>
+    <!-- Motorola kqvw87 <string name="type_outgoing" msgid="343108709599392641">Motorola Localization change to Google string</string> -->
+    <string name="type_outgoing" msgid="343108709599392641">"Chamada efetuada"</string>
+    <string name="type_missed" msgid="2720502601640509542">"Chamada no atendida"</string>
+    <string name="type_voicemail" msgid="5153139450668549908">"Correio de voz"</string>
+    <string name="actionIncomingCall" msgid="6028930669817038600">"Chamadas recebidas"</string>
+    <!-- Motorola kqvw87 <string name="callBack" msgid="5498224409038809224">Motorola Localization change to Google string</string> -->
+    <string name="callBack" msgid="5498224409038809224">"Chamada de resposta"</string>
+    <string name="callAgain" msgid="3197312117049874778">"Ligar novamente"</string>
+    <string name="returnCall" msgid="8171961914203617813">"Devolver chamada"</string>
+    <string name="favoritesFrequentContacted" msgid="6184232487472425690">"Contactos frequentes"</string>
+    <string name="favoritesFrequentCalled" msgid="6128306889600696124">"Nmeros de marcao frequente"</string>
+    <string name="add_contact_dlg_title" msgid="2896685845822146494">"Adicionar contacto"</string>
+    <!-- Motorola qhpn87 <string name="add_contact_dlg_message_fmt" msgid="7986472669444326576">Motorola Localization change to Google string</string> -->
+    <string name="add_contact_dlg_message_fmt" msgid="7986472669444326576">"Adicionar \"<xliff:g id="EMAIL">%s</xliff:g>\" a Contactos?"</string>
+    <string name="description_image_button_one" msgid="1740638037139856139">"um"</string>
+    <string name="description_image_button_two" msgid="5882638439003731308">"dois"</string>
+    <string name="description_image_button_three" msgid="8709731759376015180">"trs"</string>
+    <string name="description_image_button_four" msgid="3530239685642246130">"quatro"</string>
+    <string name="description_image_button_five" msgid="1182465427501188413">"cinco"</string>
+    <string name="description_image_button_six" msgid="2093656269261415475">"seis"</string>
+    <string name="description_image_button_seven" msgid="2450357020447676481">"sete"</string>
+    <string name="description_image_button_eight" msgid="6969435115163287801">"oito"</string>
+    <string name="description_image_button_nine" msgid="7857248695662558323">"nove"</string>
+    <string name="description_image_button_star" msgid="3365919907520767866">"estrela"</string>
+    <string name="description_image_button_zero" msgid="4133108949401820710">"zero"</string>
+    <string name="description_image_button_pound" msgid="3039765597595889230">"libra"</string>
+    <string name="description_voicemail_button" msgid="3402506823655455591">"correio de voz"</string>
+    <!-- Motorola kqvw87 <string name="description_search_button" msgid="3660807558587384889">Motorola Localization change to Google string</string> -->
+    <string name="description_search_button" msgid="3660807558587384889">"procurar"</string>
+    <string name="description_dial_button" msgid="1274091017188142646">"marcar"</string>
+    <string name="description_delete_button" msgid="6263102114033407382">"retrocesso"</string>
+    <string name="description_digits_edittext" msgid="8760207516497016437">"nmero a marcar"</string>
+    <string name="description_contact_photo" msgid="3387458082667894062">"fotografia do contacto"</string>
+    <string name="description_minus_button" msgid="387136707700230172">"menos"</string>
+    <string name="description_plus_button" msgid="515164827856229880">"mais"</string>
+    <string name="description_view_contact_detail" msgid="9133251213656414807">"Ver contacto"</string>
+    <!-- Motorola kqvw87 <string name="no_sdcard_title" product="nosdcard" msgid="8543619259870877473">Motorola Localization change to Google string</string> -->
+    <string name="no_sdcard_title" product="nosdcard" msgid="8543619259870877473">"Disco indisponvel"</string>
+    <string name="no_sdcard_title" product="tablet">Nenhum carto SD</string>
+    <!-- Motorola qhpn87 <string name="no_sdcard_title" product="default" msgid="5911758680339949273">Motorola Localization change to Google string</string> -->
+    <string name="no_sdcard_title" product="default" msgid="5911758680339949273">"Sem carto SD"</string>
+    <string name="no_sdcard_message" product="tablet">Carto SD no detetado</string>
+    <!-- Motorola qhpn87 <string name="no_sdcard_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="no_sdcard_message" product="default">"Nenhum carto SD encontrado."</string>
+    <string name="searching_vcard_title" msgid="4970508055399376813">"A procurar vCard"</string>
+    <string name="import_from_sim" msgid="3859272228033941659">"Importar do carto SIM"</string>
+    <string name="export_to_sim">Exportar para carto SIM</string>
+    <string name="delete_from_sim">Eliminar contactos do SIM</string>
+    <string name="import_from_sdcard" product="tablet">Importar do armazenamento</string>
+    <string name="import_from_sdcard" product="default" msgid="8668347930577565175">"Importar do armazenamento"</string>
+    <string name="export_to_sdcard" product="tablet">Exportar para o armazenamento</string>
+    <!-- Motorola kqvw87 <string name="export_to_sdcard" product="default" msgid="6092815580965201089">Motorola Localization change to Google string</string> -->
+    <string name="export_to_sdcard" product="default" msgid="6092815580965201089">"Exportar para armazenamento"</string>
+    <string name="share_visible_contacts" msgid="890150378880783797">"Partilhar contactos visveis"</string>
+    <string name="import_one_vcard_string" msgid="9059163467020328433">"Importar um ficheiro VCard"</string>
+    <string name="import_multiple_vcard_string" msgid="3810226492811062392">"Importar vrios ficheiros vCard"</string>
+    <string name="import_all_vcard_string" msgid="5518136113853448474">"Importar todos os ficheiros VCard"</string>
+    <string name="searching_vcard_message" product="tablet">A procurar dados de vCard no carto SD</string>
+    <!-- Motorola qhpn87 <string name="searching_vcard_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="searching_vcard_message" product="default">"A procurar dados de vCard no carto SD\u2026"</string>
+    <string name="scanning_sdcard_failed_title" product="nosdcard" msgid="4944932641334764942">"No foi possvel analisar o armazenamento"</string>
+    <string name="scanning_sdcard_failed_title" product="tablet">Falha ao analisar carto SD</string>
+    <string name="scanning_sdcard_failed_title" product="default" msgid="6664940444476572612">"No foi possvel analisar o carto SD"</string>
+    <string name="scanning_sdcard_failed_message" product="tablet">Falha na procura no carto SD (Motivo: \"<xliff:g id="fail_reason">%s</xliff:g>\")"</string>
+    <!-- Motorola qhpn87 <string name="scanning_sdcard_failed_message" product="default">Motorola Localization change to Google string</string> -->
+    <string name="scanning_sdcard_failed_message" product="default">"No foi possvel analisar o carto SD. (Causa: \"<xliff:g id="fail_reason">%s</xliff:g>\")"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_io_error">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_io_error">"Erro E/S"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_low_memory_during_import">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_low_memory_during_import">"Memria insuficiente. O ficheiro pode ser demasiado grande."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_vcard_parse_error">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_vcard_parse_error">"No foi possvel interpretar o vCard por causa inesperada."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_not_supported">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_not_supported">"O formato no  suportado."</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_failed">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_failed">"No foi possvel importar o vCard."</string>
+    <!-- Motorola qhpn87 <string name="import_failure_no_vcard_file" product="nosdcard">Motorola Localization change to Google string</string> -->
+    <string name="import_failure_no_vcard_file" product="nosdcard">"Nenhum ficheiro vCard encontrado no armazenamento."</string>
+    <string name="import_failure_no_vcard_file" product="tablet">Nenhum ficheiro vCard encontrado no carto SD</string>
+    <!-- Motorola qhpn87 <string name="import_failure_no_vcard_file" product="default">Motorola Localization change to Google string</string> -->
+    <string name="import_failure_no_vcard_file" product="default">"Nenhum ficheiro vCard encontrado no carto SD."</string>
+    <string name="fail_reason_failed_to_collect_vcard_meta_info" msgid="6427931733267328564">"No foi possvel recolher meta informaes de determinado(s) ficheiro(s) vCard."</string>
+    <string name="fail_reason_failed_to_read_files" msgid="5823434810622484922">"No foi possvel importar um ou mais ficheiros (%s)."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_unknown">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_unknown">"Erro desconhecido"</string>
+    <!-- Motorola qhpn87 <string name="select_vcard_title">Motorola Localization change to Google string</string> -->
+    <string name="select_vcard_title">"Escolher ficheiro vCard"</string>
+    <!-- Motorola qhpn87 <string name="caching_vcard_title">Motorola Localization change to Google string</string> -->
+    <string name="caching_vcard_title">"A colocar em cache"</string>
+    <!-- Motorola qhpn87 <string name="caching_vcard_message">Motorola Localization change to Google string</string> -->
+    <string name="caching_vcard_message">"A colocar o(s) vCard(s) em armazenamento temporrio local. A importao efetiva comear brevemente."</string>
+    <string name="progress_notifier_message" msgid="2311011466908220528">"A importar <xliff:g id="CURRENT_NUMBER">%s</xliff:g>/<xliff:g id="TOTAL_NUMBER">%s</xliff:g>: <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="importing_vcard_description" msgid="4245275224298571351">"A importar <xliff:g id="NAME">%s</xliff:g>"</string>
+    <string name="reading_vcard_failed_title" msgid="4251647443358422855">"No foi possvel ler dados do vCard"</string>
+    <!-- Motorola qhpn87 <string name="reading_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="reading_vcard_canceled_title">"A leitura de dados de vCard foi cancelada"</string>
+    <!-- Motorola kqvw87 <string name="importing_vcard_finished_title" msgid="3341541727268747967">Motorola Localization change to Google string</string> -->
+    <string name="importing_vcard_finished_title" msgid="3341541727268747967">"<xliff:g id="FILENAME">%s</xliff:g> importado."</string>
+    <!-- Motorola qhpn87 <string name="importing_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="importing_vcard_canceled_title">"A importao de <xliff:g example="import.vcf" id="filename">%s</xliff:g> foi cancelada."</string>
+    <string name="vcard_import_will_start_message" msgid="2804911199145873396">"<xliff:g id="FILENAME">%s</xliff:g> ser importado em breve."</string>
+    <string name="vcard_import_will_start_message_with_default_name" msgid="1022969530654129470">"O ficheiro ser importado em breve."</string>
+    <!-- Motorola qhpn87 <string name="vcard_import_request_rejected_message">Motorola Localization change to Google string</string> -->
+    <string name="vcard_import_request_rejected_message">"O pedido de importao de vCard foi rejeitado. Tente mais tarde."</string>
+    <string name="vcard_export_will_start_message" msgid="2210241345252081463">"<xliff:g id="FILENAME">%s</xliff:g> ser exportado em breve."</string>
+    <!-- Motorola qhpn87 <string name="vcard_export_request_rejected_message">Motorola Localization change to Google string</string> -->
+    <string name="vcard_export_request_rejected_message">"O pedido de exportao de vCard foi rejeitado. Tente mais tarde."</string>
+    <string name="vcard_unknown_filename" msgid="7171709890959915954">"contacto"</string>
+    <string name="percentage" msgid="34897865327092209">"%s%%"</string>
+    <!-- Motorola qhpn87 <string name="confirm_export_title">Motorola Localization change to Google string</string> -->
+    <string name="confirm_export_title">"Exportar contactos?"</string>
+    <!-- Motorola qhpn87 <string name="confirm_export_message">Motorola Localization change to Google string</string> -->
+    <string name="confirm_export_message">"A lista de contactos ser exportada para o ficheiro: <xliff:g id="vcard_filename">%s</xliff:g>."</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_failed_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_failed_title">"No foi possvel exportar"</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_failed_message">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_failed_message">"Os dados de contactos no foram exportados.\nCausa: \"<xliff:g id="fail_reason">%s</xliff:g>\"</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_no_exportable_contact">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_no_exportable_contact">"No existe nenhum contacto exportvel."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_many_vcard" product="nosdcard">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_many_vcard" product="nosdcard">"Existem demasiados ficheiros vCard no armazenamento."</string>
+    <string name="fail_reason_too_many_vcard" product="tablet">Existem demasiados ficheiros vCard no carto SD</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_many_vcard" product="default">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_many_vcard" product="default">"Existem demasiados ficheiros vCard no carto SD."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_too_long_filename">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_too_long_filename">"O nome de ficheiro necessrio  muito longo (\"<xliff:g id="filename">%s</xliff:g>\")."</string>
+    <!-- Motorola qhpn87 <string name="exporting_vcard_finished_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_vcard_finished_title">"A exportao de <xliff:g example="export.vcf" id="filename">%s</xliff:g> terminou"</string>
+    <!-- Motorola qhpn87 <string name="exporting_vcard_canceled_title">Motorola Localization change to Google string</string> -->
+    <string name="exporting_vcard_canceled_title">"A exportao de <xliff:g example="export.vcf" id="filename">%s</xliff:g> foi cancelada."</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_list_title" msgid="9072240631534457415">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_list_title" msgid="9072240631534457415">"A exportar dados de contactos"</string>
+    <!-- Motorola qhpn87 <string name="exporting_contact_list_message">Motorola Localization change to Google string</string> -->
+    <string name="exporting_contact_list_message">"Os seus dados de contactos esto a exportados para: <xliff:g id="file_name">%s</xliff:g>."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_could_not_initialize_exporter">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_could_not_initialize_exporter">"No foi possvel iniciar o exportador: \"<xliff:g id="exact_reason">%s</xliff:g>\"."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_error_occurred_during_export">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_error_occurred_during_export">"Ocorreu um erro durante a exportao: \"<xliff:g id="exact_reason">%s</xliff:g>\"."</string>
+    <!-- Motorola qhpn87 <string name="composer_failed_to_get_database_infomation">Motorola Localization change to Google string</string> -->
+    <string name="composer_failed_to_get_database_infomation">"No foi possvel obter a informao da base de dados."</string>
+    <!-- Motorola qhpn87 <string name="composer_has_no_exportable_contact" product="tablet">Motorola Localization change to Google string</string> -->
+    <string name="composer_has_no_exportable_contact" product="tablet">"No existem contactos exportveis. Se tem mesmo alguns contactos no tablet,  possvel que o seu fornecedor de dados no permita a exportao de contactos do tablet."</string>
+    <!-- Motorola qhpn87 <string name="composer_has_no_exportable_contact" product="default">Motorola Localization change to Google string</string> -->
+    <string name="composer_has_no_exportable_contact" product="default">"No existem contactos exportveis. Se tem mesmo alguns contactos no telefone,  possvel que o seu fornecedor de dados no permita a exportao de contactos do telefone."</string>
+    <!-- Motorola qhpn87 <string name="composer_not_initialized">Motorola Localization change to Google string</string> -->
+    <string name="composer_not_initialized">"O compositor de vCard no foi iniciado corretamente."</string>
+    <!-- Motorola qhpn87 <string name="fail_reason_could_not_open_file">Motorola Localization change to Google string</string> -->
+    <string name="fail_reason_could_not_open_file">"No foi possvel abrir \"<xliff:g id="file_name">%s</xliff:g>\": <xliff:g id="exact_reason">%s</xliff:g>."</string>
+    <string name="exporting_contact_list_progress" msgid="560522409559101193">"<xliff:g id="CURRENT_NUMBER">%s</xliff:g> de <xliff:g id="TOTAL_NUMBER">%s</xliff:g> contactos"</string>
+    <string name="cancel_import_confirmation_title" msgid="5578683596010294836">"A cancelar importao do vCard"</string>
+    <!-- Motorola qhpn87 <string name="cancel_import_confirmation_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_import_confirmation_message">"Cancelar a importao de <xliff:g example="import.vcf" id="filename">%s</xliff:g>?"</string>
+    <string name="cancel_export_confirmation_title" msgid="6516467140276768528">"A cancelar exportao do vCard"</string>
+    <!-- Motorola qhpn87 <string name="cancel_export_confirmation_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_export_confirmation_message">"Cancelar a exportao de <xliff:g example="export.vcf" id="filename">%s</xliff:g>?"</string>
+    <!-- Motorola kqvw87 <string name="cancel_vcard_import_or_export_failed" msgid="6139900383366166706">Motorola Localization change to Google string</string> -->
+    <string name="cancel_vcard_import_or_export_failed" msgid="6139900383366166706">"Impossvel cancelar importao/exportao"</string>
+    <string name="search_settings_description" msgid="2675223022992445813">"Nomes dos contactos"</string>
+    <!-- Motorola kqvw87 <string name="add_2sec_pause" msgid="9214012315201040129">Motorola Localization change to Google string</string> -->
+    <string name="add_2sec_pause" msgid="9214012315201040129">"Adicionar pausa de 2 seg"</string>
+    <string name="add_wait" msgid="3360818652790319634">"Adicionar espera"</string>
+    <string name="call_disambig_title" msgid="1911302597959335178">"Ligar utilizando"</string>
+    <string name="call_settings" msgid="7666474782093693667">"Definies"</string>
+    <string name="sms_disambig_title" msgid="4675399294513152364">"Enviar SMS utilizando"</string>
+    <string name="make_primary" msgid="5829291915305113983">"Memorizar esta escolha"</string>
+    <!-- Motorola qhpn87 <string name="quickcontact_missing_app">Motorola Localization change to Google string</string> -->
+    <string name="quickcontact_missing_app">"Sem aplicaes disponveis para executar esta ao."</string>
+    <!-- Motorola qhpn87 <string name="missing_name">Motorola Localization change to Google string</string> -->
+    <string name="missing_name">"(Sem nome)"</string>
+    <string name="menu_accounts" msgid="8499114602017077970">"Contas"</string>
+    <string name="menu_contacts_filter" msgid="2165153460860262501">"Contactos a apresentar"</string>
+    <!-- Motorola qhpn87 <string name="menu_import_export">Motorola Localization change to Google string</string> -->
+    <string name="menu_import_export">"Importar/Exportar"</string>
+    <!-- Motorola qhpn87 <string name="dialog_import_export">Motorola Localization change to Google string</string> -->
+    <string name="dialog_import_export">"Importar/Exportar contactos"</string>
+    <string name="menu_share" msgid="943789700636542260">"Partilhar"</string>
+    <string name="menu_all_contacts" msgid="5101735431586050711">"Todos os contactos"</string>
+    <!-- Motorola qhpn87 <string name="share_via" msgid="563121028023030093">Motorola Localization change to Google string</string> -->
+    <string name="share_via" msgid="563121028023030093">"Partilhar contacto por"</string>
+    <!-- Motorola qhpn87 <string name="share_error">Motorola Localization change to Google string</string> -->
+    <string name="share_error">"No  possvel partilhar este contacto."</string>
+    <string name="nameLabelsGroup" msgid="2034640839640477827">"Nome"</string>
+    <!-- Motorola kqvw87 <string name="nicknameLabelsGroup" msgid="2891682101053358010">Motorola Localization change to Google string</string> -->
+    <string name="nicknameLabelsGroup" msgid="2891682101053358010">"Alcunha"</string>
+    <string name="organizationLabelsGroup" msgid="2478611760751832035">"Organizao"</string>
+    <string name="websiteLabelsGroup" msgid="4202998982804009261">"Web site"</string>
+    <string name="eventLabelsGroup" msgid="3695433812142818803">"Eventos"</string>
+    <!-- Motorola qhpn87 <string name="relationLabelsGroup" msgid="1854373894284572781">Motorola Localization change to Google string</string> -->
+    <string name="relationLabelsGroup" msgid="1854373894284572781">"Relao"</string>
+    <string name="groupsLabel" msgid="8573535366319059326">"Grupos"</string>
+    <!-- Motorola qhpn87 <string name="dialog_new_contact_account" msgid="9044704073286262197">Motorola Localization change to Google string</string> -->
+    <string name="dialog_new_contact_account" msgid="9044704073286262197">"Criar contacto na conta"</string>
+    <string name="dialog_new_group_account" msgid="2318032089273496830">"Criar grupo na conta"</string>
+    <string name="menu_sync_remove" msgid="3266725887008450161">"Remover grupo de sincronizao"</string>
+    <string name="dialog_sync_add" msgid="8267045393119375803">"Adicionar grupo de sincronizao"</string>
+    <string name="display_more_groups" msgid="2682547080423434170">"Mais grupos..."</string>
+    <!-- Motorola qhpn87 <string name="display_ungrouped">Motorola Localization change to Google string</string> -->
+    <string name="display_ungrouped">"Todos os outros contactos"</string>
+    <!-- Motorola qhpn87 <string name="display_all_contacts">Motorola Localization change to Google string</string> -->
+    <string name="display_all_contacts">"Todos os contactos"</string>
+    <!-- Motorola qhpn87 <string name="display_warn_remove_ungrouped">Motorola Localization change to Google string</string> -->
+    <string name="display_warn_remove_ungrouped">"Ao remover \"<xliff:g example="Starred" id="group">%s</xliff:g>\" da sincronizao, tambm remover da sincronizao quaisquer contactos no agrupados."</string>
+    <!-- Motorola kqvw87 <string name="account_phone" product="tablet" msgid="7946049152658522054">Motorola Localization change to Google string</string> -->
+    <string name="account_phone" product="tablet" msgid="7946049152658522054">"Tablet (sem sincronizao)"</string>
+    <!-- Motorola kqvw87 <string name="account_phone" product="default" msgid="3682950835276226870">Motorola Localization change to Google string</string> -->
+    <string name="account_phone" product="default" msgid="3682950835276226870">"Telefone (sem sincronizao)"</string>
+    <string name="call_custom" msgid="7756571794763171802">"Ligar para <xliff:g id="CUSTOM">%s</xliff:g>"</string>
+    <string name="call_home" msgid="1990519474420545392">"Ligar para residncia"</string>
+    <string name="call_mobile" msgid="7502236805487609178">"Ligar para telemvel"</string>
+    <string name="call_work" msgid="5328785911463744028">"Ligar para emprego"</string>
+    <string name="call_fax_work" msgid="7467763592359059243">"Ligar para fax do emprego"</string>
+    <string name="call_fax_home" msgid="8342175628887571876">"Ligar para o fax da residncia"</string>
+    <string name="call_pager" msgid="9003902812293983281">"Ligar para pager"</string>
+    <string name="call_other" msgid="8563753966926932052">"Ligar"</string>
+    <!-- Motorola kqvw87 <string name="call_callback" msgid="1910165691349426858">Motorola Localization change to Google string</string> -->
+    <string name="call_callback" msgid="1910165691349426858">"Ligar chamada de resposta"</string>
+    <string name="call_car" msgid="3280537320306436445">"Ligar para automvel"</string>
+    <string name="call_company_main" msgid="6105120947138711257">"Ligar para telefone principal da empresa"</string>
+    <string name="call_isdn" msgid="1541590690193403411">"Ligar para RDIS"</string>
+    <string name="call_main" msgid="6082900571803441339">"Ligar para telefone principal"</string>
+    <!-- Motorola kqvw87 <string name="call_other_fax" msgid="5745314124619636674">Motorola Localization change to Google string</string> -->
+    <string name="call_other_fax" msgid="5745314124619636674">"Ligar para fax"</string>
+    <string name="call_radio" msgid="8296755876398357063">"Ligar para rdio"</string>
+    <string name="call_telex" msgid="2223170774548648114">"Ligar para telex"</string>
+    <string name="call_tty_tdd" msgid="8951266948204379604">"Ligar para telefone TTY/TDD"</string>
+    <string name="call_work_mobile" msgid="8707874281430105394">"Ligar para telemvel do emprego"</string>
+    <string name="call_work_pager" msgid="3419348514157949008">"Ligar para pager do emprego"</string>
+    <string name="call_assistant" msgid="2141641383068514308">"Ligar a <xliff:g id="ASSISTANT">%s</xliff:g>"</string>
+    <string name="call_mms" msgid="6274041545876221437">"Ligar MMS"</string>
+    <string name="sms_custom" msgid="5932736853732191825">"Enviar SMS a <xliff:g id="CUSTOM">%s</xliff:g>"</string>
+    <string name="sms_home" msgid="7524332261493162995">"Enviar SMS para residncia"</string>
+    <string name="sms_mobile" msgid="5200107250451030769">"Enviar SMS para telemvel"</string>
+    <string name="sms_work" msgid="2269624156655267740">"Enviar SMS para emprego"</string>
+    <string name="sms_fax_work" msgid="8028189067816907075">"Enviar SMS para fax do emprego"</string>
+    <string name="sms_fax_home" msgid="9204042076306809634">"Enviar SMS para fax da residncia"</string>
+    <string name="sms_pager" msgid="7730404569637015192">"Enviar SMS para pager"</string>
+    <!-- Motorola kqvw87 <string name="sms_other" msgid="806127844607642331">Motorola Localization change to Google string</string> -->
+    <string name="sms_other" msgid="806127844607642331">"SMS"</string>
+    <string name="sms_callback" msgid="5004824430094288752">"Enviar SMS de resposta"</string>
+    <string name="sms_car" msgid="7444227058437359641">"Enviar SMS para automvel"</string>
+    <string name="sms_company_main" msgid="118970873419678087">"Enviar SMS para telefone principal da empresa"</string>
+    <string name="sms_isdn" msgid="8153785037515047845">"SMS para RDIS"</string>
+    <string name="sms_main" msgid="8621625784504541679">"Enviar SMS para telefone principal"</string>
+    <!-- Motorola kqvw87 <string name="sms_other_fax" msgid="3888842199855843152">Motorola Localization change to Google string</string> -->
+    <string name="sms_other_fax" msgid="3888842199855843152">"SMS para fax"</string>
+    <string name="sms_radio" msgid="3329166673433967820">"Enviar SMS para rdio"</string>
+    <string name="sms_telex" msgid="9034802430065267848">"Enviar SMS para telex"</string>
+    <string name="sms_tty_tdd" msgid="6782284969132531532">"Enviar SMS para telefone TTY/TDD"</string>
+    <string name="sms_work_mobile" msgid="2459939960512702560">"Enviar SMS para telemvel do emprego"</string>
+    <string name="sms_work_pager" msgid="5566924423316960597">"Enviar SMS para pager do emprego"</string>
+    <string name="sms_assistant" msgid="2773424339923116234">"Enviar SMS para <xliff:g id="ASSISTANT">%s</xliff:g>"</string>
+    <string name="sms_mms" msgid="4069352461380762677">"Enviar MMS"</string>
+    <!-- Motorola kqvw87 <string name="sms" msgid="1756857139634224222">Motorola Localization change to Google string</string> -->
+    <string name="sms" msgid="1756857139634224222">"SMS/MMS"</string>
+    <string name="email_home" msgid="8573740658148184279">"Enviar e-mail para residncia"</string>
+    <string name="email_mobile" msgid="2042889209787989814">"Enviar e-mail para telemvel"</string>
+    <string name="email_work" msgid="2807430017302722689">"Enviar e-mail para emprego"</string>
+    <string name="email_other" msgid="3454004077967657109">"E-mail"</string>
+    <string name="email_custom" msgid="7548003991586214105">"Enviar e-mail a <xliff:g id="CUSTOM">%s</xliff:g>"</string>
+    <string name="email" msgid="5668400997660065897">"E-mail"</string>
+    <string name="map_home" msgid="1243547733423343982">"Ver endereo da residncia"</string>
+    <string name="map_work" msgid="1360474076921878088">"Ver endereo do emprego"</string>
+    <string name="map_other" msgid="3817820803587012641">"Ver endereo"</string>
+    <string name="map_custom" msgid="6184363799976265281">"Ver endereo de <xliff:g id="CUSTOM">%s</xliff:g>"</string>
+    <string name="chat_aim" msgid="2588492205291249142">"Chat utilizando AIM"</string>
+    <string name="chat_msn" msgid="8041633440091073484">"Chat utilizando Windows Live"</string>
+    <string name="chat_yahoo" msgid="6629211142719943666">"Chat utilizando Yahoo"</string>
+    <string name="chat_skype" msgid="1210045020427480566">"Chat utilizando Skype"</string>
+    <string name="chat_qq" msgid="4294637812847719693">"Chat utilizando QQ"</string>
+    <string name="chat_gtalk" msgid="981575737258117697">"Chat atravs do Google Talk"</string>
+    <string name="chat_icq" msgid="8438405386153745775">"Chat utilizando ICQ"</string>
+    <string name="chat_jabber" msgid="7561444230307829609">"Chat utilizando Jabber"</string>
+    <string name="chat" msgid="9025361898797412245">"Chat"</string>
+    <!-- Motorola qhpn87 <string name="audio_chat">Motorola Localization change to Google string</string> -->
+    <string name="audio_chat">"Chat por voz"</string>
+    <string name="video_chat" msgid="1872255818640336072">"Chat de vdeo"</string>
+    <!-- Motorola kqvw87 <string name="postal_address" msgid="8765560217149624536">Motorola Localization change to Google string</string> -->
+    <string name="postal_address" msgid="8765560217149624536">"Morada"</string>
+    <string name="postal_street" msgid="8133143961580058972">"Rua"</string>
+    <string name="postal_pobox" msgid="4431938829180269821">"Apartado"</string>
+    <string name="postal_neighborhood" msgid="1450783874558956739">"Vizinhana"</string>
+    <string name="postal_city" msgid="6597491300084895548">"Cidade"</string>
+    <string name="postal_region" msgid="6045263193478437672">"Regio"</string>
+    <string name="postal_postcode" msgid="572136414136673751">"Cdigo postal"</string>
+    <string name="postal_country" msgid="7638264508416368690">"Pas"</string>
+    <string name="full_name" msgid="6602579550613988977">"Nome"</string>
+    <!-- Motorola qhpn87 <string name="name_given" msgid="1687286314106019813">Motorola Localization change to Google string</string> -->
+    <string name="name_given" msgid="1687286314106019813">"Nome prprio"</string>
+    <!-- Motorola qhpn87 <string name="name_family" msgid="3416695586119999058">Motorola Localization change to Google string</string> -->
+    <string name="name_family" msgid="3416695586119999058">"Apelido"</string>
+    <!-- Motorola qhpn87 <string name="name_prefix" msgid="59756378548779822">Motorola Localization change to Google string</string> -->
+    <string name="name_prefix" msgid="59756378548779822">"Ttulo acadmico/profissional"</string>
+    <!-- Motorola qhpn87 <string name="name_middle" msgid="8467433655992690326">Motorola Localization change to Google string</string> -->
+    <string name="name_middle" msgid="8467433655992690326">"Segundo nome"</string>
+    <!-- Motorola qhpn87 <string name="name_suffix" msgid="3855278445375651441">Motorola Localization change to Google string</string> -->
+    <string name="name_suffix" msgid="3855278445375651441">"Ttulo honorfico/eclesistico"</string>
+    <!-- Motorola kqvw87 <string name="name_phonetic_given" msgid="6853570431394449191">Motorola Localization change to Google string</string> -->
+    <string name="name_phonetic_given" msgid="6853570431394449191">"Fontica do nome prprio"</string>
+    <!-- Motorola kqvw87 <string name="name_phonetic_middle" msgid="8643721493320405200">Motorola Localization change to Google string</string> -->
+    <string name="name_phonetic_middle" msgid="8643721493320405200">"Fontica do segundo nome"</string>
+    <!-- Motorola kqvw87 <string name="name_phonetic_family" msgid="462095502140180305">Motorola Localization change to Google string</string> -->
+    <string name="name_phonetic_family" msgid="462095502140180305">"Fontica do apelido"</string>
+    <!-- Motorola kqvw87 <string name="name_phonetic" msgid="4259595234312430484">Motorola Localization change to Google string</string> -->
+    <string name="name_phonetic" msgid="4259595234312430484">"Fontica do nome"</string>
+    <string name="connections" msgid="8098440723172028350">"Ligaes"</string>
+    <string name="add_connection_button" msgid="4861308615789601727">"Adicionar ligao"</string>
+    <!-- Motorola qhpn87 <string name="recent" msgid="2659189233141493004">Motorola Localization change to Google string</string> -->
+    <string name="recent" msgid="2659189233141493004">"Recentes"</string>
+    <!-- Motorola qhpn87 <string name="recent_updates">Motorola Localization change to Google string</string> -->
+    <string name="recent_updates">"Atualizaes recentes"</string>
+    <!-- Motorola kqvw87 <string name="account_type_format" msgid="718948015590343010">Motorola Localization change to Google string</string> -->
+    <string name="account_type_format" msgid="718948015590343010">"<xliff:g id="SOURCE">%1$s</xliff:g>"</string>
+    <string name="from_account_format">"<xliff:g example="user@gmail.com" id="source">%1$s</xliff:g>"</string>
+    <string name="use_photo_as_primary" msgid="8807110122951157246">"Utilizar esta fotografia"</string>
+    <!-- Motorola qhpn87 <string name="contact_read_only">Motorola Localization change to Google string</string> -->
+    <string name="contact_read_only">"No  editvel com esta aplicao."</string>
+    <!-- Motorola qhpn87 <string name="no_contact_details">Motorola Localization change to Google string</string> -->
+    <string name="no_contact_details">"No h informaes adicionais para este contacto."</string>
+    <!-- Motorola qhpn87 <string name="group_read_only">Motorola Localization change to Google string</string> -->
+    <string name="group_read_only">"No  editvel neste dispositivo."</string>
+    <string name="display_options_sort_list_by" msgid="6080091755852211076">"Ordenar lista por"</string>
+    <string name="display_options_sort_by_given_name" msgid="184916793466387067">"Nome prprio"</string>
+    <string name="display_options_sort_by_family_name" msgid="7857986975275712622">"Apelido"</string>
+    <!-- Motorola qhpn87 <string name="display_options_view_names_as" msgid="18022868169627979">Motorola Localization change to Google string</string> -->
+    <string name="display_options_view_names_as" msgid="18022868169627979">"Apresentao de nomes de contactos"</string>
+    <string name="display_options_view_given_name_first" msgid="6968288511197363292">"Nome prprio em primeiro lugar"</string>
+    <string name="display_options_view_family_name_first" msgid="1447288164951453714">"Apelido em primeiro lugar"</string>
+    <!-- Motorola qhpn87 <string name="search_bar_hint" msgid="1012756309632856553">Motorola Localization change to Google string</string> -->
+    <string name="search_bar_hint" msgid="1012756309632856553">"Procurar contactos"</string>
+    <string name="take_photo" msgid="7496128293167402354">"Tirar fotografia"</string>
+    <string name="take_new_photo" msgid="7341354729436576304">"Tirar nova fotografia"</string>
+    <!-- Motorola qhpn87 <string name="pick_photo">Motorola Localization change to Google string</string> -->
+    <string name="pick_photo">"Escolher fotografia da Galeria"</string>
+    <!-- Motorola kqvw87 <string name="pick_new_photo" msgid="7962368009197147617">Motorola Localization change to Google string</string> -->
+    <string name="pick_new_photo" msgid="7962368009197147617">"Nova fotografia da Galeria"</string>
+    <!-- Motorola kqvw87 <string name="locale_change_in_progress" msgid="7583992153091537467">Motorola Localization change to Google string</string> -->
+    <string name="locale_change_in_progress" msgid="7583992153091537467">"A lista de contactos est a ser atualizada em funo da alterao do idioma."</string>
+    <!-- Motorola kqvw87 <string name="upgrade_in_progress" msgid="474511436863451061">Motorola Localization change to Google string</string> -->
+    <string name="upgrade_in_progress" msgid="474511436863451061">"A lista de contactos est a ser atualizada."</string>
+    <!-- Motorola qhpn87 <string name="upgrade_out_of_memory">Motorola Localization change to Google string</string> -->
+    <string name="upgrade_out_of_memory">"Os contactos esto a ser atualizados. \n\nPara concluir a atualizao, so necessrios aproximadamente <xliff:g id="size_in_megabytes">%s</xliff:g> MB no armazenamento interno.\n\nEscolha uma das seguintes opes:"</string>
+    <string name="upgrade_out_of_memory_uninstall" msgid="1721798828992091432">"Desinstalar algumas aplicaes"</string>
+    <!-- Motorola qhpn87 <string name="upgrade_out_of_memory_retry" msgid="8431289830472724609">Motorola Localization change to Google string</string> -->
+    <string name="upgrade_out_of_memory_retry" msgid="8431289830472724609">"Repetir atualizao"</string>
+    <!-- Motorola qhpn87 <string name="search_results_searching">Motorola Localization change to Google string</string> -->
+    <string name="search_results_searching">"A procurar\u2026"</string>
+    <!-- Motorola kqvw87 <string name="menu_display_selected" msgid="6470001164297969034">Motorola Localization change to Google string</string> -->
+    <string name="menu_display_selected" msgid="6470001164297969034">"Mostrar selecionados"</string>
+    <string name="menu_display_all" msgid="8887488642609786198">"Mostrar tudo"</string>
+    <!-- Motorola kqvw87 <string name="menu_select_all" msgid="621719255150713545">Motorola Localization change to Google string</string> -->
+    <string name="menu_select_all" msgid="621719255150713545">"Selecionar tudo"</string>
+    <string name="menu_select_none" msgid="7093222469852132345">"Desmarcar tudo"</string>
+    <string name="no_contacts_selected" msgid="5877803471037324613">"Nenhum contacto selecionado."</string>
+    <string name="add_field" msgid="2384260056674995230">"Adicionar outro campo"</string>
+    <string name="add_new_entry_for_section" msgid="5223080690667565044">"Adicionar novo"</string>
+    <!-- Motorola kqvw87 <string name="add_organization" msgid="7311893231158291197">Motorola Localization change to Google string</string> -->
+    <string name="add_organization" msgid="7311893231158291197">"Adicionar organizao"</string>
+    <string name="event_edit_field_hint_text" msgid="5794424930242630477">"Data"</string>
+    <string name="group_edit_field_hint_text" msgid="3966441850870457808">"Nome do grupo"</string>
+    <string name="contact_status_update_attribution" msgid="752179367353018597">"atravs do <xliff:g id="SOURCE">%1$s</xliff:g>"</string>
+    <string name="contact_status_update_attribution_with_date" msgid="7358045508107825068">"<xliff:g id="DATE">%1$s</xliff:g> atravs do <xliff:g id="SOURCE">%2$s</xliff:g>"</string>
+    <string name="description_star" msgid="2605854427360036550">"favorito"</string>
+    <string name="edit_contact" msgid="7529281274005689512">"Editar contacto"</string>
+  <plurals name="merge_info">
+    <!-- Motorola kqvw87 <item quantity="one" msgid="148365587896371969">Motorola Localization change to Google string</item> -->
+    <item quantity="one" msgid="148365587896371969">"no unido(s)"</item>
+    <!-- Motorola kqvw87 <item quantity="other" msgid="425683718017380845">Motorola Localization change to Google string</item> -->
+    <item quantity="other" msgid="425683718017380845">"criado a partir de <xliff:g id="COUNT">%0$d</xliff:g> fontes"</item>
+  </plurals>
+    <string name="local_invisible_directory" msgid="6046691709127661065">"Outro"</string>
+    <!-- Motorola kqvw87 <string name="aggregation_suggestion_join_dialog_title" msgid="5276699501316246253">Motorola Localization change to Google string</string> -->
+    <string name="aggregation_suggestion_join_dialog_title" msgid="5276699501316246253">"Juntar contactos"</string>
+    <!-- Motorola kqvw87 <string name="aggregation_suggestion_join_dialog_message" msgid="3842757977671434836">Motorola Localization change to Google string</string> -->
+    <string name="aggregation_suggestion_join_dialog_message" msgid="3842757977671434836">"Juntar o contacto atual ao contacto selecionado?"</string>
+    <!-- Motorola kqvw87 <string name="aggregation_suggestion_edit_dialog_title" msgid="1064042382692091314">Motorola Localization change to Google string</string> -->
+    <string name="aggregation_suggestion_edit_dialog_title" msgid="1064042382692091314">"Editar contactos selecionados"</string>
+    <!-- Motorola kqvw87 <string name="aggregation_suggestion_edit_dialog_message" msgid="6549585283910518095">Motorola Localization change to Google string</string> -->
+    <string name="aggregation_suggestion_edit_dialog_message" msgid="6549585283910518095">"Mudar para edio do contacto selecionado? As informaes introduzidas at agora sero copiadas."</string>
+    <!-- Motorola qhpn87 <string name="menu_copyContact">Motorola Localization change to Google string</string> -->
+    <string name="menu_copyContact">"Copiar para os meus contactos"</string>
+    <!-- Motorola qhpn87 <string name="add_to_my_contacts">Motorola Localization change to Google string</string> -->
+    <string name="add_to_my_contacts">"Adicionar aos meus contactos"</string>
+    <!-- Motorola kqvw87 <string name="contact_directory_description" msgid="683398073603909119">Motorola Localization change to Google string</string> -->
+    <string name="contact_directory_description" msgid="683398073603909119">"Diretrio <xliff:g id="TYPE">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="directory_search_label" msgid="1887759056597975053">Motorola Localization change to Google string</string> -->
+    <string name="directory_search_label" msgid="1887759056597975053">"Diretrio"</string>
+    <string name="local_search_label" msgid="2551177578246113614">"Todos os contactos"</string>
+    <!-- Motorola qhpn87 <string name="toast_making_personal_copy">Motorola Localization change to Google string</string> -->
+    <string name="toast_making_personal_copy">"A criar uma cpia pessoal\u2026"</string>
+    <string name="list_filter_all_accounts" msgid="8908683398914322369">"Todos os contactos"</string>
+    <!-- Motorola kqvw87 <string name="list_filter_all_starred" msgid="5031734941601931356">Motorola Localization change to Google string</string> -->
+    <string name="list_filter_all_starred" msgid="5031734941601931356">"Marcados com estrela"</string>
+    <string name="list_filter_custom" msgid="8910173055702057002">"Personalizado"</string>
+    <!-- Motorola qhpn87 <string name="list_filter_customize">Motorola Localization change to Google string</string> -->
+    <string name="list_filter_customize">"Personalizar"</string>
+    <!-- Motorola qhpn87 <string name="list_filter_phones" msgid="735313795643493365">Motorola Localization change to Google string</string> -->
+    <string name="list_filter_phones" msgid="735313795643493365">"Todos os contactos com n. telefone"</string>
+    <string name="list_filter_single" msgid="5871400283515893087">"Contacto"</string>
+    <string name="custom_list_filter" msgid="7836035257402013957">"Definir vista personalizada"</string>
+    <!-- Motorola qhpn87 <string name="contact_list_loading">Motorola Localization change to Google string</string> -->
+    <string name="contact_list_loading">"A carregar\u2026"</string>
+    <string name="activity_title_settings" msgid="5464130076132770781">"Definies"</string>
+    <string name="activity_title_contacts_filter" msgid="8275542497615516969">"Contactos a apresentar"</string>
+    <string name="menu_settings" msgid="377929915873428211">"Definies"</string>
+    <string name="preference_displayOptions" msgid="1341720270148252393">"Opes de visualizao"</string>
+    <string name="organization_company_and_title" msgid="6718207751363732025">"<xliff:g id="COMPANY_0">%2$s</xliff:g>, <xliff:g id="COMPANY_1">%1$s</xliff:g>"</string>
+    <string name="hint_findContacts" msgid="1808681193458772072">"Localizar contactos"</string>
+    <string name="non_phone_caption" msgid="1541655052330027380">"Nmero de telefone"</string>
+    <!-- Motorola qhpn87 <string name="non_phone_add_to_contacts" msgid="6590985286250471169">Motorola Localization change to Google string</string> -->
+    <string name="non_phone_add_to_contacts" msgid="6590985286250471169">"Adicionar a Contactos"</string>
+    <!-- Motorola qhpn87 <string name="activity_title_confirm_add_detail" msgid="4065089866210730616">Motorola Localization change to Google string</string> -->
+    <string name="activity_title_confirm_add_detail" msgid="4065089866210730616">"Adicionar a contacto"</string>
+    <string name="non_phone_close" msgid="7608506439725515667">"Fechar"</string>
+    <string name="widget_name_and_phonetic" msgid="8739586586600099979">"<xliff:g id="DISPLAY_NAME">%1$s</xliff:g> (<xliff:g id="PHONETIC_NAME">%2$s</xliff:g>)"</string>
+    <!-- Motorola qhpn87 <string name="date_year_toggle" msgid="7356532842767854606">Motorola Localization change to Google string</string> -->
+    <string name="date_year_toggle" msgid="7356532842767854606">"Apresentar ano"</string>
+    <string name="social_widget_label" msgid="6378905543028924592">"Contacto"</string>
+    <!-- Motorola qhpn87 <string name="social_widget_loading">Motorola Localization change to Google string</string> -->
+    <string name="social_widget_loading">"A carregar\u2026"</string>
+    <string name="contacts_unavailable_create_contact" msgid="7014525713871959208">"Criar novo contacto"</string>
+    <string name="contacts_unavailable_add_account" msgid="7911101713860139754">"Iniciar sesso numa conta"</string>
+    <string name="contacts_unavailable_import_contacts" msgid="4456440183590517471">"Importar contactos de um ficheiro"</string>
+    <string name="create_group_dialog_title" msgid="6874527142828424475">"Criar novo grupo"</string>
+    <string name="create_group_item_label" msgid="5218022006186243310">"[Criar novo grupo]"</string>
+    <string name="delete_group_dialog_title" msgid="7368429698398624427">"Eliminar grupo"</string>
+  <plurals name="num_groups_in_account">
+    <item quantity="one" msgid="2944819210288517794">"1 grupo"</item>
+    <item quantity="other" msgid="1276758425904917367">"<xliff:g id="COUNT">%0$d</xliff:g> grupos"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="delete_group_dialog_message">Motorola Localization change to Google string</string> -->
+    <string name="delete_group_dialog_message">"Eliminar o grupo \"<xliff:g example="Friends" id="group_label">%1$s</xliff:g>\"? Os contactos no sero eliminados."</string>
+  <plurals name="num_contacts_in_group">
+    <item quantity="one" msgid="1352418549951013448">"<xliff:g id="COUNT_0">%1$d</xliff:g> pessoa de <xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g>"</item>
+    <item quantity="other" msgid="8146027769011086349">"<xliff:g id="COUNT_0">%1$d</xliff:g> pessoas de <xliff:g id="ACCOUNT_TYPE">%2$s</xliff:g>"</item>
+  </plurals>
+  <plurals name="group_list_num_contacts_in_group">
+    <item quantity="one" msgid="3323065321661972446">"<xliff:g id="COUNT">%1$d</xliff:g> pessoa"</item>
+    <item quantity="other" msgid="6251996206137048525">"<xliff:g id="COUNT">%1$d</xliff:g> pessoas"</item>
+  </plurals>
+    <!-- Motorola qhpn87 <string name="toast_join_with_empty_contact">Motorola Localization change to Google string</string> -->
+    <string name="toast_join_with_empty_contact">"Introduza o nome do contacto antes de o associar a outro."</string>
+    <!-- Motorola kqvw87 <string name="copy_text" msgid="3257145021583508761">Motorola Localization change to Google string</string> -->
+    <string name="copy_text" msgid="3257145021583508761">"Copiar para rea de transferncia"</string>
+    <string name="set_default" msgid="4417505153468300351">"Definir a predefinio"</string>
+    <string name="clear_default" msgid="7193185801596678067">"Limpar predefinio"</string>
+    <!-- Motorola kqvw87 <string name="toast_text_copied" msgid="5143776250008541719">Motorola Localization change to Google string</string> -->
+    <string name="toast_text_copied" msgid="5143776250008541719">"Texto copiado."</string>
+    <string name="cancel_confirmation_dialog_title" msgid="3950463632415908534">"Rejeitar alteraes"</string>
+    <!-- Motorola qhpn87 <string name="cancel_confirmation_dialog_message">Motorola Localization change to Google string</string> -->
+    <string name="cancel_confirmation_dialog_message">"Rejeitar as alteraes?"</string>
+    <!-- Motorola kqvw87 <string name="call_type_and_date" msgid="1766269584078149149"></string> -->
+    <string name="call_type_and_date" msgid="1766269584078149149"><xliff:g example="Friends" id="call_type">%1$s</xliff:g>  <xliff:g example="Friends" id="call_short_date">%2$s</xliff:g></string>
+    <string name="profile_display_name" msgid="4127389543625918771">"Configurar o meu perfil"</string>
+    <string name="ice_display_title">ECE</string>
+    <!-- Motorola qhpn87 <string name="enter_contact_name" msgid="1738391320566349924">Motorola Localization change to Google string</string> -->
+    <string name="enter_contact_name" msgid="1738391320566349924">"Introduzir nome da pessoa"</string>
+    <string name="view_updates_from_group" msgid="1782685984905600034">"Ver atualizaes"</string>
+  <plurals name="notification_voicemail_title">
+    <item quantity="one" msgid="1746619685488504230">"Correio de voz"</item>
+    <!-- Motorola kqvw87 <item quantity="other" msgid="5513481419205061254">Motorola Localization change to Google string</item> -->
+    <item quantity="other" msgid="5513481419205061254">"<xliff:g id="COUNT">%1$d</xliff:g> mensagens de correio de voz"</item>
+  </plurals>
+    <!-- Motorola kqvw87 <string name="notification_voicemail_callers_list" msgid="1153954809339404149">Motorola Localization change to Google string</string> -->
+    <string name="notification_voicemail_callers_list" msgid="1153954809339404149">"<xliff:g id="NEWER_CALLERS">%1$s</xliff:g>, <xliff:g id="OLDER_CALLER">%2$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="notification_new_voicemail_ticker" msgid="895342132049452081">Motorola Localization change to Google string</string> -->
+    <string name="notification_new_voicemail_ticker" msgid="895342132049452081">"Nova mensagem correio voz de <xliff:g id="CALLER">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="voicemail_playback_error" msgid="1811242131549854624">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_playback_error" msgid="1811242131549854624">"Impossvel reproduzir correio de voz."</string>
+    <string name="voicemail_buffering" msgid="738287747618697097">"A colocar na memria intermdia..."</string>
+    <string name="voicemail_fetching_content" msgid="877911315738258780">"A obter correio de voz..."</string>
+    <string name="voicemail_fetching_timout" msgid="6691792377574905201">"No foi possvel obter correio de voz."</string>
+    <!-- Motorola kqvw87 <string name="call_log_new_header" msgid="846546437517724715">Motorola Localization change to Google string</string> -->
+    <string name="call_log_new_header" msgid="846546437517724715">"Novos"</string>
+    <!-- Motorola kqvw87 <string name="call_log_old_header" msgid="6262205894314263629">Motorola Localization change to Google string</string> -->
+    <string name="call_log_old_header" msgid="6262205894314263629">"+ antigos"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_voicemail_not_available">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_voicemail_not_available">"No foi possvel ligar ao servidor de correio de voz."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_messages_waiting">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_messages_waiting">"No foi possvel ligar ao servidor de correio de voz. H novas mensagens em espera."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_configure_voicemail">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_configure_voicemail">"Configurar o correio de voz."</string>
+    <string name="voicemail_status_audio_not_available" msgid="3369618334553341626">"O udio no est disponvel."</string>
+    <!-- Motorola qhpn87 <string name="voicemail_status_action_configure">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_action_configure">"Configurar"</string>
+    <!-- Motorola kqvw87 <string name="voicemail_status_action_call_server" msgid="1824816252288551794">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_status_action_call_server" msgid="1824816252288551794">"Ligar para correio de voz"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_slowest">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_slowest">"Super lento"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_slower">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_slower">"Lento"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_normal">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_normal">"Normal"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_faster">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_faster">"Rpido"</string>
+    <!-- Motorola qhpn87 <string name="voicemail_speed_fastest">Motorola Localization change to Google string</string> -->
+    <string name="voicemail_speed_fastest">"Super rpido"</string>
+    <string name="call_log_item_count_and_date" msgid="7641933305703520787">"(<xliff:g id="COUNT">%1$d</xliff:g>) <xliff:g id="DATE">%2$s</xliff:g>"</string>
+    <!-- Motorola qhpn87 <string name="group_name_hint">Motorola Localization change to Google string</string> -->
+    <string name="group_name_hint">"Nome do grupo"</string>
+    <string name="nfc_vcard_file_name" msgid="2823095213265993609">"Contacto recebido atravs de NFC"</string>
+    <!-- Motorola kqvw87 <string name="menu_show_voicemails_only" msgid="1898421289561435703">Motorola Localization change to Google string</string> -->
+    <string name="menu_show_voicemails_only" msgid="1898421289561435703">"Mostrar s correio de voz"</string>
+    <string name="menu_show_all_calls" msgid="7560347482073345885">"Mostrar todas as chamadas"</string>
+    <!-- Motorola kqvw87 <string name="status_available" msgid="5586870015822828392">Motorola Localization change to Google string</string> -->
+    <string name="status_available" msgid="5586870015822828392">"Disponvel"</string>
+    <string name="status_away" msgid="1838861100379804730">"Ausente"</string>
+    <!-- Motorola kqvw87 <string name="status_busy" msgid="9147992455450257136">Motorola Localization change to Google string</string> -->
+    <string name="status_busy" msgid="9147992455450257136">"Ocupado"</string>
+    <string name="description_call_log_play_button" msgid="651182125650429846">"Reproduzir mensagem de correio de voz"</string>
+    <string name="description_call_log_incoming_call" msgid="4485427487637250143">"Chamada recebida"</string>
+    <string name="description_call_log_outgoing_call" msgid="604831756853471658">"Chamada efetuada"</string>
+    <string name="description_call_log_missed_call" msgid="2242805209983708825">"Chamada no atendida"</string>
+    <string name="description_call_log_voicemail" msgid="4600798771975158948">"Correio de voz"</string>
+    <string name="description_add_contact" msgid="3103414772502485851">"Adicionar contacto"</string>
+    <string name="description_view_contact" msgid="5205669345700598415">"Ver o contacto <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="description_call" msgid="3443678121983852666">"Ligar a <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="description_send_text_message" msgid="7803126439934046891">Motorola Localization change to Google string</string> -->
+    <string name="description_send_text_message" msgid="7803126439934046891">"Enviar SMS/MMS para <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="description_call_log_unheard_voicemail" msgid="118101684236996786">"Mensagem de correio de voz ainda no ouvida"</string>
+    <string name="description_send_message" msgid="6046623392322890962">"Enviar mensagem para <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="description_dial_phone_number" msgid="8831647331642648637">Motorola Localization change to Google string</string> -->
+    <string name="description_dial_phone_number" msgid="8831647331642648637">"Ligar a <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="description_quick_contact_for" msgid="6737516415168327789">"Contacto rpido de <xliff:g id="NAME">%1$s</xliff:g>"</string>
+    <string name="call_log_empty_gecode" msgid="5588904744812100846">"-"</string>
+    <string name="user_profile_contacts_list_header" msgid="5582421742835006940">"Eu"</string>
+    <string name="local_profile_title" msgid="2021416826991393684">"O meu perfil local"</string>
+    <string name="external_profile_title" msgid="8034998767621359438">"O meu perfil do <xliff:g id="EXTERNAL_SOURCE">%1$s</xliff:g>"</string>
+    <!-- Motorola kqvw87 <string name="toast_displaying_all_contacts" msgid="2737388783898593875">Motorola Localization change to Google string</string> -->
+    <string name="toast_displaying_all_contacts" msgid="2737388783898593875">"A apresentar todos os contactos."</string>
+    <!-- Motorola kqvw87 <string name="no_account_prompt" msgid="7061052512446855192">Motorola Localization change to Google string</string> -->
+    <string name="no_account_prompt" msgid="7061052512446855192">"A aplicao Contactos funciona melhor com uma Conta Google."\n\n" Aceda  Conta Google a partir de qualquer browser."\n" Faa uma cpia de segurana dos seus contactos de forma segura."</string>
+    <!-- Motorola kqvw87 <string name="generic_no_account_prompt" msgid="7218827704367325460">Motorola Localization change to Google string</string> -->
+    <string name="generic_no_account_prompt" msgid="7218827704367325460">"Guarde os seus contactos em segurana, mesmo se perder o telefone: sincronize-os com um servio online."</string>
+    <string name="generic_no_account_prompt_title" msgid="753783911899054860">"Adicionar uma conta"</string>
+    <!-- Motorola kqvw87 <string name="contact_editor_prompt_zero_accounts" msgid="1785345895691886499">Motorola Localization change to Google string</string> -->
+    <string name="contact_editor_prompt_zero_accounts" msgid="1785345895691886499">"No ser efetuada cpia de segurana do novo contacto. Adicionar uma conta que efetua a cpia de segurana dos contactos online?"</string>
+    <string name="contact_editor_prompt_one_account" msgid="8669032699767375976">"O novo contacto ser sincronizado com <xliff:g id="ACCOUNT_NAME">%1$s</xliff:g>."</string>
+    <string name="contact_editor_prompt_multiple_accounts" msgid="611828200100438242">"Pode sincronizar o novo contacto com uma das seguintes contas. Qual a conta que deseja utilizar?"</string>
+    <string name="keep_local" msgid="1258761699192993322">"Manter localmente"</string>
+    <string name="add_account" msgid="8201790677994503186">"Adicionar conta"</string>
+    <string name="add_new_account" msgid="5748627740680940264">"Adicionar nova conta"</string>
+    <string name="dialog_phone_call_prohibited_title" msgid="2111395432187079579">"Chamada no efetuada"</string>
+    <string name="dialog_voicemail_not_ready_title" msgid="7258109862329777060">"Nmero do correio de voz indisponvel"</string>
+    <!-- Motorola qhpn87 <string name="dialog_voicemail_not_ready_message">Motorola Localization change to Google string</string> -->
+    <string name="dialog_voicemail_not_ready_message">"Para configurar o correio de voz, aceda a Menu &gt; Definies."</string>
+    <string name="option_select_all">Selecionar tudo</string>
+    <string name="option_unselect_all">Desmarcar tudo</string>
+    <string name="option_share">Partilhar</string>
+    <string name="toast_please_wait">Aguarde...</string>
+    <string name="preference_contactstorage">Armazenamento de contactos</string>
+    <string name="contact_storage_account_to_store">Conta de armazenamento contactos</string>
+    <string name="contact_storage_choose_account">Escolher conta onde armazenar novos contactos</string>
+    <string name="contact_storage_remember_choice">Memorizar esta escolha</string>
+    <string name="contact_storage_remember_choice_summary">Altere esta opo nas definies de Contactos -&gt; Armazenamento de contactos</string>
+    <string name="add_favorite_text">Para adicionar o seu Widget de Favoritos, selecione uma pessoa e toque na estrela no canto superior direito.</string>
+    <string name="do_not_remind_again">No voltar a lembrar-me</string>
+    <string name="previewVCardDesription">Ver vCard</string>
+    <string name="importVCardDesription">Importar vCard</string>
+    <string name="reading_vcard_message">A ler ficheiro vCard</string>
+    <string name="not_able_view_save_vcf">Erro ao ler o ficheiro vCard. No  possvel ver ou guardar o vCard</string>
+    <string name="menu_back">Anterior</string>
+    <string name="menu_next">Seguinte</string>
+    <string name="previewVCardTitle">Detalhes do vCard</string>
+    <string name="menu_save">Guardar</string>
+    <string name="menu_share_contacts">Partilhar contactos</string>
+    <string name="share_contacts_error">Os contactos no podem ser partilhados.</string>
+    <string name="no_account_dispaly">No h contas disponveis. Contacto(s) sero armazenados apenas no tablet, no sincronizados.</string>
+    <string name="menu_launch_dialpad">Iniciar o Marcador</string>
+    <string name="speedDial_setup">Configurar marcao rpida</string>
+    <string name="speedDialPickerLabel">Marcao rpida</string>
+    <string name="speedial_provider_label">Marcao rpida</string>
+    <string name="shortcutDialerApp">Telefone</string>
+    <string name="cancelButton">"Cancelar"</string>
+    <string name="menu_addToSpeedDial">Adicionar  marcao rpida</string>
+    <string name="menu_deleteFromSpeedDial">Remover da marcao rpida</string>
+    <string name="ok">"OK"</string>
+    <string name="speedDial_add">"Adicionar"</string>
+    <string name="speedDialAssignSpeedDial">Atribuir marcao rpida</string>
+    <string name="speedDialAssignmentFromDialer">Pretende atribuir um contacto de marcao rpida ao nmero %1$s?</string>
+    <string name="speedDialVoiceDialRewriteMessage">No  possvel substituir o nmero de correio de voz na lista de marcao rpida.</string>
+    <string name="speedDialAddAvailable">Adicionar marcao rpida</string>
+    <string name="speedDialSpinner">Nmero de marcao rpida</string>
+    <string name="speedDial_numberAlreadyExists">O nmero \"%1$s\" j existe na lista de marcao rpida.</string>
+    <string name="speedDialRewrite">Est prestes a reatribuir o nmero de marcao rpida %1$s a %2$s.</string>
+    <string name="speedDialOverwrite">"Substituir"</string>
+    <string name="speedDial_addConfirmation">%1$s adicionado ao nmero de marcao rpida %2$s.</string>
+    <string name="speedDial_deleteConfirmation">%2$s deixou de ser o nmero de marcao rpida %1$s.</string>
+    <string name="delete">Eliminar</string>
+    <string name="select_conversations">Selecionar</string>
+    <!-- Motorola kqvw87 <string name="callDetailsDurationFormat" msgid="8157706382818184268">Motorola Localization change to Google string</string> -->
+    <string name="callDetailsDurationFormat"><xliff:g example="42" id="minutes">%1$s</xliff:g> %2$s <xliff:g example="28" id="seconds">%3$s</xliff:g> %4$s</string>
+    <plurals name="mins">
+        <item quantity="one">min</item>
+        <item quantity="other">min</item>
+    </plurals>
+    <plurals name="secs">
+        <item quantity="one">seg</item>
+        <item quantity="other">seg</item>
+    </plurals>
+    <string name="call_log_item_count">(<xliff:g id="count">%1$d</xliff:g>) </string>
+    <string name="remember_choice">"Memorizar esta escolha"</string>
+    <string name="cancel">Cancelar</string>
+    <string name="recent_calls_filter_prompt">"Ver"</string>
+    <!-- Motorola kqvw87 <string name="recentCalls_empty" msgid="247053222448663107">Motorola Localization change to Google string</string> -->
+    <string name="recentCalls_empty">Sem chamadas recentes.\nPor que no liga a algum agora?</string>
+    <string name="missedCalls_empty">Nenhuma chamada no atendida</string>
+    <string name="receivedCalls_empty">Nenhuma chamada recebida</string>
+    <string name="outgoingCalls_empty">Nenhuma chamada efetuada</string>
+    <string name="speedDialRewriteMessage">No  possvel substituir o nmero na lista de marcao rpida.</string>
+    <string name="call">Chamada %1$s</string>
+    <string name="task_failed">Tarefa falhou</string>
+    <string name="failed_to_add_tasks">No foi possvel adicionar a tarefa %1$s  aplicao Tarefas.</string>
+    <string name="add_to_the_tasks_application">A tarefa Devolver chamada %1$s foi adicionada  aplicao Tarefas.</string>
+    <string name="menu_addcallbackremindertotasks">Adicionar a Tarefas</string>
+    <string name="speedDial_availableSlot">"Disponvel"</string>
+    <string name="sw_version_dialog_title">Verso do software</string>
+    <string name="hw_version_dialog_title">Verso do hardware</string>
+    <string name="voice_dial">Marcao por voz</string>
+    <string name="search_contacts">Procurar contactos</string>
+    <string name="addToContactsTitle">ADICIONAR AOS CONTACTOS</string>
+    <string name="addToContactsDialog">Adicionar nmero \"%1$s\" a um contacto existente ou novo.</string>
+    <string name="newContact">"Novo"</string>
+    <string name="existingContact">Existente</string>
+    <string name="dp_star">*</string>
+    <string name="dp_pound">#</string>
+    <string name="dp_two_alpha">"ABC"</string>
+    <string name="dp_three_alpha">DEF</string>
+    <string name="dp_four_alpha">GHI</string>
+    <string name="dp_five_alpha">JKL</string>
+    <string name="dp_six_alpha">MNO</string>
+    <string name="dp_seven_alpha">PQRS</string>
+    <string name="dp_eight_alpha">TUV</string>
+    <string name="dp_nine_alpha">WXYZ</string>
+    <string name="dp_zero_alpha">+</string>
+    <string name="shortcutDialer">Marcador</string>
+    <string name="shortcutRecCallsList">Lista de chamadas recentes</string>
+    <string name="ad_assisted_dialing">Marcao assistida</string>
+    <string name="voicemail_choose_type_title">Escolher correio de voz</string>
+    <string name="visual_voicemail">Correio de voz visual</string>
+    <string name="Data_roaming_title">Roaming de dados</string>
+    <string name="Data_roaming_msg">Poder ter custos adicionais por utilizar correio de voz visual.\n\nPretende utilizar correio de voz visual ou correio de voz normal?</string>
+    <string name="sd_most_recent">ltima</string>
+    <string name="sd_matches">correspondncias</string>
+    <string name="sd_match">correspondncia</string>
+    <string name="sd_empty_recent">Introduzir para procurar</string>
+    <string name="sd_no_result">"Sem correspondncias"</string>
+    <string name="recentCalls_deleteDialog">Tem a certeza de que pretende limpar a lista de chamadas recentes?</string>
+    <string name="recentCalls_confirmdelete">Limpar</string>
+    <string name="message">Enviar SMS/MMS</string>
+    <string name="addtocontact">Adicionar a contacto</string>
+    <string name="viewcontact">Ver contacto</string>
+    <string name="editbeforecall">Editar nmero antes da chamada</string>
+    <string name="addtotask">Adicionar a tarefas</string>
+    <string name="dialerLabel">Marcador</string>
+    <string name="recentCallsLabel">Recentes</string>
+    <string name="callvoicemail">Ligar</string>
+    <string name="phonebookLabel">Lista telefnica</string>
+    <string name="description_voiceCommands_button">comandos de voz</string>
+    <string name="description_message_button">mensagem</string>
+</resources>

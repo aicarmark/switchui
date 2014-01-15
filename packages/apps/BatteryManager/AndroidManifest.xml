@@ -1,0 +1,130 @@
+﻿<?xml version="1.1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.motorola.batterymanager"        
+    android:versionCode="2" android:versionName="BatteryManager_2.1.14">
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.DEVICE_POWER"></uses-permission>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"></uses-permission>
+
+    <!-- Start: Device Statistics -->
+    <uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"></uses-permission>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <!--<uses-permission android:name="com.motorola.blur.contacts.permission.SOCIAL_CONTACT_READ"></uses-permission> 
+    <uses-permission android:name="com.motorola.blur.setupprovider.Permissions.ACCESS_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="com.motorola.blur.service.email.Permissions.INTERACT"></uses-permission>-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL"></uses-permission>
+    <!-- End: Device Statistics -->
+
+    <application  android:label="@string/battery_manager_setting"
+                  android:persistent="true"
+                  android:theme="@android:style/Theme.Holo"
+                  android:icon="@drawable/ic_batterymanager">
+        <activity android:name=".PowerProfileUi"
+                  android:label="@string/battery_manager_setting"
+                  android:clearTaskOnLaunch="true"
+                  android:launchMode="singleTop"
+                  android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.motorola.batterymanager.action.BATTERY_SAVER"></action>
+                <action android:name="android.intent.action.batteryprofile.ACT_START"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".BatteryProfileUi"
+                  android:label="@string/batt_manager_mode">
+        </activity>
+
+        <activity android:name=".CustomSettingsUi"
+                  android:label="@string/customs_mode_title"
+                  android:configChanges="orientation|screenSize"
+                  android:noHistory="true">
+        </activity>
+
+        <activity android:name=".ModeInfoUi"
+                  android:noHistory="true">
+        </activity>
+
+        <activity android:name=".PowerProfileNotifyUi"
+                  android:noHistory="true"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:screenOrientation="sensor"
+                  android:configChanges="orientation">
+        </activity>
+
+         <activity android:name=".LogActivity"
+                  android:label="@string/powerprofile_app_name">
+             <intent-filter>
+                <action android:name="android.intent.action.batteryprofile.LOG_ACT_START"></action>
+            </intent-filter>
+        </activity>
+
+        <!-- Services and broadcast receivers -->
+        <service android:name=".PowerProfileSvc"
+            android:label="@string/powerprofile_svc_name">
+            <intent-filter>
+                <action android:name="android.intent.action.batteryprofile.SVC_START"></action>
+                <action android:name="android.intent.action.batteryprofile.CHK_ALRM"></action>
+                <action android:name="android.intent.action.batteryprofile.DATA_ALRM"></action>
+                <action android:name="android.intent.action.batteryprofile.SCR_ON"></action>
+                <action android:name="android.intent.action.batteryprofile.SCR_OFF"></action>
+                <action android:name="android.intent.action.batteryprofile.PLUG_ON"></action>
+                <action android:name="android.intent.action.batteryprofile.PLUG_OFF"></action>
+                <action android:name="android.intent.action.batteryprofile.DATA_CHECK"></action>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".PowerProfileRcv"
+            android:label="@string/powerprofile_rcv_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.batteryprofile.KEEP_DATA_ON_ALRM"></action>
+            </intent-filter>
+        </receiver>
+
+        <!-- Start: Device Stats  -->
+        <service android:name=".wlmonitor.WakelockMonitorService"
+                 android:process=":deviceStats">
+        </service>
+
+        <service android:name=".devicestatistics.DeviceStatisticsSvc"
+                 android:process=":deviceStats">
+        </service>
+
+        <receiver android:name=".devicestatistics.DeviceStatisticsRcv"
+                  android:process=":deviceStats">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.devicestatistics.CHECKIN_STATS_ALARM"></action>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+        <!-- End: Device Stats  -->
+
+        <!-- Start: BatteryManager Service -->
+        <service android:name=".BatteryManagerSvc">
+            <intent-filter>
+                <action android:name="com.motorola.batterymanager.START_BATTERY_MANAGER"></action>
+            </intent-filter>
+        </service>
+        <!-- End: BatteryManager Service -->
+
+    </application>
+</manifest>

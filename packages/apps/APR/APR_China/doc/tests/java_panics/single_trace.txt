@@ -1,0 +1,54 @@
+
+
+----- pid 1503 at 2009-08-02 12:22:51 -----
+Cmd line: com.android.settings
+
+DALVIK THREADS:
+"main" prio=5 tid=3 WAIT
+  | group="main" sCount=1 dsCount=0 s=N obj=0x4001a9c8 self=0xbd58
+  | sysTid=1503 nice=0 sched=0/0 handle=-1344005484
+  at java.lang.Object.wait(Native Method)
+  - waiting on <0x27ae98> (a android.os.MessageQueue)
+  at java.lang.Object.wait(Object.java:288)
+  at android.os.MessageQueue.next(MessageQueue.java:148)
+  at android.os.Looper.loop(Looper.java:110)
+  at android.app.ActivityThread.main(ActivityThread.java:4195)
+  at java.lang.reflect.Method.invokeNative(Native Method)
+  at java.lang.reflect.Method.invoke(Method.java:521)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+  at dalvik.system.NativeStart.main(Native Method)
+
+"Binder Thread #3" prio=5 tid=15 NATIVE
+  | group="main" sCount=1 dsCount=0 s=N obj=0x44966df8 self=0x851d8
+  | sysTid=1509 nice=0 sched=0/0 handle=509840
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder Thread #2" prio=5 tid=13 NATIVE
+  | group="main" sCount=1 dsCount=0 s=N obj=0x449620b8 self=0x83d70
+  | sysTid=1508 nice=0 sched=0/0 handle=544992
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Binder Thread #1" prio=5 tid=11 NATIVE
+  | group="main" sCount=1 dsCount=0 s=N obj=0x44961ff8 self=0x144ca8
+  | sysTid=1507 nice=0 sched=0/0 handle=506776
+  at dalvik.system.NativeStart.run(Native Method)
+
+"JDWP" daemon prio=5 tid=9 VMWAIT
+  | group="system" sCount=1 dsCount=0 s=N obj=0x449612a0 self=0x84ae8
+  | sysTid=1506 nice=0 sched=0/0 handle=1329096
+  at dalvik.system.NativeStart.run(Native Method)
+
+"Signal Catcher" daemon prio=5 tid=7 RUNNABLE
+  | group="system" sCount=0 dsCount=0 s=N obj=0x449611e8 self=0x7dcd8
+  | sysTid=1505 nice=0 sched=0/0 handle=1334192
+  at dalvik.system.NativeStart.run(Native Method)
+
+"HeapWorker" daemon prio=5 tid=5 VMWAIT
+  | group="system" sCount=1 dsCount=0 s=N obj=0x43394d00 self=0x1444f8
+  | sysTid=1504 nice=0 sched=0/0 handle=510912
+  at dalvik.system.NativeStart.run(Native Method)
+
+----- end 1503 -----
+
+

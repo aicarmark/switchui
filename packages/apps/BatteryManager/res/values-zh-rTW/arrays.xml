@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/** 
+ * Copyright (C) 2009, Motorola, Inc, 
+ * All Rights Reserved 
+ * Description: Contains array resources for the Battery Manager app 
+ * 
+ * Modification History: 
+ **********************************************************
+ * Date           Author       Comments
+ * 11-11-09       A24178       Created file
+ **********************************************************
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="options_list">
+        <item>"電池預置"</item>
+        <item>"自定義設置"</item>
+    </string-array>
+    <string-array name="smart_batt_timeout_entries">
+        <item>"15 分鐘"</item>
+        <item>"30 分鐘"</item>
+        <item>"45 分鐘"</item>
+        <item>"60 分鐘"</item>
+        <item>"總是開啟"</item>
+    </string-array>
+    <string-array name="smart_batt_offpeak_timeout_entries">
+        <item>"15 分鐘"</item>
+        <item>"30 分鐘"</item>
+        <item>"45 分鐘"</item>
+        <item>"60 分鐘"</item>
+    </string-array>
+
+</resources>

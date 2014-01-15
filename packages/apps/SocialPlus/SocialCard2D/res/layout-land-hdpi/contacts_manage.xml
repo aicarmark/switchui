@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<LinearLayout android:id="@+id/mainlay"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:layout_weight="1"
+				android:orientation="horizontal">
+
+				<include android:id="@+id/ringlayout" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						layout="@layout/ringlayout_manage_screen"/>
+
+				<TextView android:id="@+id/text" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:layout_gravity="center_vertical"
+						android:text="@string/manage_contact_introduce"/>
+
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/buttonPanel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="48dip"
+				android:orientation="vertical"
+				android:divider="?android:attr/dividerHorizontal"
+				android:showDividers="beginning"
+				android:dividerPadding="0dip">
+				<LinearLayout
+						style="?android:attr/buttonBarStyle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:measureWithLargestChild="true">
+						<TextView 
+								android:id="@+id/ok"
+								android:text="@android:string/ok"
+								android:layout_width="0dip"
+								android:layout_gravity="left"
+								android:layout_weight="1"
+								android:maxLines="2"
+								style="?android:attr/buttonBarButtonStyle"
+								android:textSize="14sp"
+								android:minHeight="48dip"
+								android:layout_height="wrap_content" />
+						<TextView 
+								android:id="@+id/cancel"
+								android:text="@android:string/cancel"
+								android:layout_width="0dip"
+								android:layout_gravity="right"
+								android:layout_weight="1"
+								android:maxLines="2"
+								android:minHeight="48dip"
+								style="?android:attr/buttonBarButtonStyle"
+								android:textSize="14sp"
+								android:layout_height="wrap_content" />
+				</LinearLayout>
+		</LinearLayout>
+
+</LinearLayout>
+

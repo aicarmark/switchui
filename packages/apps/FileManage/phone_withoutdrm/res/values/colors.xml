@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ */
+-->
+<resources>
+  <color name="dialog_new_folder_background">#fff</color>
+  <color name="fileinfo_textcolor">@android:color/primary_text_dark</color>
+  <color name="homesync_text_backgroud">#555</color>
+  <color name="movecancel_panel_background">#555</color>
+  <color name="filechooser_panel_backgroud">#555</color>
+  <color name="filelist_background">#555</color>
+  <color name="notify_dialog_backgroud">@android:color/white</color>
+  <color name="mc_intro_title_textcolor">#E6E6E6</color>
+  <color name="mc_intro_textcolor">#E6E6E6</color>
+
+  <drawable name="stat_sys_download_done">@drawable/stat_sys_download_done_static</drawable>
+  <drawable name="stat_sys_upload_done">@drawable/stat_sys_upload_anim0</drawable>
+</resources>

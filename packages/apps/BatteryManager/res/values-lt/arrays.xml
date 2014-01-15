@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="options_list">
+    <item>Išankstinės akumuliatoriaus nuostatos</item>
+    <item>Pritaikytos nuostatos</item>
+  </string-array>
+  <string-array name="smart_batt_timeout_entries">
+    <item>15 min.</item>
+    <item>30 min.</item>
+    <item>45 min.</item>
+    <item>60 min.</item>
+    <item>Visada laikyti įjungtą</item>
+  </string-array>
+  <string-array name="smart_batt_offpeak_timeout_entries">
+    <item>15 min.</item>
+    <item>30 min.</item>
+    <item>45 min.</item>
+    <item>60 min.</item>
+  </string-array>
+</resources>

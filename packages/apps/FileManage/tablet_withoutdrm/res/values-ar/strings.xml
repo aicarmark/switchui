@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ملفات</string>
+    <string name="add_server">إضافة خادم</string>
+    <string name="add_samba_server_title">خادم Samba جديد</string>
+    <string name="edit_samba_server_title">تحرير خادم Samba</string>
+    <string name="add_server_hostname">اسم الخادم أو IP</string>
+    <string name="add_server_username">اسم المستخدم</string>
+    <string name="add_server_password">كلمة المرور</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="server_display_name">الاسم:</string>
+    <string name="server_logon_failure">فشل تسجيل الدخول</string>
+    <string name="server_reauth_title">إدخال معلومات المصادقة</string>
+    <string name="server_logon_failure_indication">يرجى إدخال معلومات المصادقة.</string>
+    <string name="remote_files">مجلدات بعيدة</string>
+    <string name="menu_edit">"تعديل"</string>
+    <string name="menu_remove">إزالة</string>
+    <string name="file_transfer">جارٍ النقل</string>
+    <string name="file_transfer_complete">إكمال نقل الملف:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">اكتمل النقل: ‎%d ملف</item>
+        <item quantity="other">اكتمل النقل: ‎%d ملفات</item>
+    </plurals>
+    <string name="host_name_empty_indicator">رجاء إدخال اسم مضيف.</string>
+    <string name="not_found_network_name">اسم الشبكة غير موجود.</string>
+    <string name="server_not_reachable">لا يمكن الوصول للخادم.</string>
+    <string name="no_group_found">‏‏لم يتم العثور على أية مجموعات. رجاء إعادة المحاولة.</string>
+    <string name="external_sdcard">بطاقة SD خارجية</string>
+    <string name="menu_new_folder">مجلد جديد</string>
+    <string name="menu_delete">حذف</string>
+    <string name="menu_rename">إعادة تسمية</string>
+    <string name="menu_send">مشاركة</string>
+    <string name="menu_open">فتح</string>
+    <string name="menu_move">نقل</string>
+    <string name="menu_copy">نسخ</string>
+    <string name="menu_info">معلومات</string>
+    <string name="menu_print">طباعة</string>
+    <string name="menu_compress">ضغط</string>
+    <string name="menu_paste">نسخ</string>
+    <string name="menu_sort_by">فرز حسب</string>
+    <string name="menu_sort_by_name">حسب الاسم</string>
+    <string name="menu_sort_by_type">حسب النوع</string>
+    <string name="menu_sort_by_date">حسب التاريخ</string>
+    <string name="menu_sort_by_size">حسب الحجم</string>
+    <string name="menu_unzip">استخراج</string>
+    <string name="menu_view_list">عرض القائمة</string>
+    <string name="menu_view_grid">عرض الشبكة</string>
+    <string name="menu_view_column">عرض العمود</string>
+    <string name="menu_unselect_all">إلغاء تحديد الكل</string>
+    <string name="select_file">تحديد ملف</string>
+    <string name="select">تحديد</string>
+    <string name="file_info_title">خصائص الملف</string>
+    <string name="file_info_title_dir">خصائص الدليل</string>
+    <string name="create_new_folder">إنشاء مجلد جديد</string>
+    <string name="create_new_zip_file">ملف Zip جديد</string>
+    <string name="create_compress_encryption_file">الضغط والتشفير</string>
+    <string name="compress_encryption_file">تعيين كلمة مرور لإنشاء ملف zip محمي بكلمة مرور.</string>
+    <string name="folder_name">"اسم المجلد"</string>
+    <string name="file_name">اسم الملف</string>
+    <string name="this_folder_is_empty">هذا المجلد فارغ.</string>
+    <string name="sd_is_used_by_other">بطاقة الذاكرة في وضع تخزين USB الكلي. الرجاء الخروج من هذا الوضع للوصول إلى بطاقة الذاكرة.</string>
+    <string name="file_renamed">تمت إعادة تسمية الملف.</string>
+    <string name="folder_renamed">تمت إعادة تسمية المجلد.</string>
+    <plurals name="move_success">
+        <item quantity="one">تم نقل ‎%1$d عنصر</item>
+        <item quantity="other">\u200fتم نقل %1$d عناصر</item>
+    </plurals>
+    <string name="error_moving">حدث خطأ أثناء النقل.</string>
+    <plurals name="copy_success">
+        <item quantity="one">تم نسخ ‎%1$d عنصر</item>
+        <item quantity="other">تم نسخ ‎%1$d عناصر</item>
+    </plurals>
+    <string name="error_copying">حدث خطأ أثناء النسخ.</string>
+    <plurals name="delete_success">
+        <item quantity="one">تم حذف ‎%1$d عنصر</item>
+        <item quantity="other">تم حذف ‎%1$d عنصر</item>
+    </plurals>
+    <string name="delete_failed">حدث خطأ أثناء الحذف.</string>
+    <string name="really_delete_selected">سيتم حذف كل المجلدات المحددة وجميع محتوياتها. هل تريد بالتأكيد الاستمرار في ذلك؟</string>
+    <string name="paste_button">لصق</string>
+    <string name="place_button">وضع</string>
+    <string name="select_folder">"تحديد مجلد"</string>
+    <string name="copied_file_name">نسخ من %s</string>
+    <string name="copied_file_name_2">\u200fنسخ %1$d من %2$s</string>
+    <string name="loading">جارٍ التحميل...</string>
+    <string name="deleting">جارٍ الحذف...</string>
+    <string name="open_wifi">فتح Wi-Fi</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">\u200fWi-Fi غير متصلة. هل ترغب في الاتصال الآن؟</string>
+    <string name="check_wifi">رجاء تفحص اتصال Wi-Fi.</string>
+    <string name="shared_folders">مجلدات بعيدة</string>
+    <string name="sd_card">بطاقة SD</string>
+    <string name="sd_missing">بطاقة الذاكرة مفقودة. إدخال بطاقة ذاكرة لقراءة الملفات.</string>
+    <string name="error_creating_new_folder">تعذر إنشاء مجلد جديد.</string>
+    <string name="error_renaming_file">تعذر إعادة تسمية الملف.</string>
+    <string name="error_renaming_folder">تعذر إعادة تسمية المجلد.</string>
+    <string name="error_file_does_not_exists">الملف غير موجود.</string>
+    <string name="send_not_available">تعذر إرسال هذا النوع من الملفات.</string>
+    <string name="application_not_available">تعذر فتح هذا النوع من الملفات.</string>
+    <string name="copy_text">نسخ نص</string>
+    <string name="anonymous">مجهول</string>
+    <string name="no_server_found">‏‏لم يتم العثور على أية خوادم. رجاء إعادة المحاولة.</string>
+    <string name="Overwrite_Zip_File">هل تريد الكتابة فوق ملف zip الموجود؟</string>
+    <string name="Overwrite_Contents">هل تريد الكتابة فوق المحتويات الخاصة بالمجلد الموجود؟</string>
+    <string name="Unzipping">استخراج...</string>
+    <string name="Zipping">جارٍ الضغط...</string>
+    <string name="zip_file_name">اسم الملف</string>
+    <string name="create">إنشاء</string>
+    <string name="extract">استخراج</string>
+    <string name="overwrite">كتابة</string>
+    <string name="error_zipping_file">حدث خطأ أثناء ضغط الملف.</string>
+    <string name="error_unzip_file">حدث خطأ أثناء استخراج الملف.</string>
+    <string name="invalid_zip_name">لا يمكن استخراج ‎%1$s. أعد تسمية الملف باسم صالح (مثل اسم الملف‎%2$s) وحاول مجددًا.</string>
+    <string name="folder">المجلد: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">يحتوي على: ‎%1$d عنصر.</item>
+        <item quantity="other">يحتوي على: ‎%1$d عناصر.</item>
+    </plurals>
+    <string name="size">الحجم: </string>
+    <string name="last_modified_at">تاريخ التعديل: </string>
+    <string name="readable_yes">قابل للكتابة: نعم</string>
+    <string name="readable_no">قابل للكتابة: لا</string>
+    <string name="writable_yes">قابل للكتابة: نعم</string>
+    <string name="writable_no">قابل للكتابة: لا</string>
+    <string name="hidden_yes">مخفي: نعم</string>
+    <string name="hidden_no">مخفي: لا</string>
+    <string name="download_dialog_title">نقل ملف</string>
+    <string name="transfer_complete">‏‏اكتمل النقل</string>
+    <string name="transfer_progress">تقدم عملية النقل</string>
+    <string name="to">إلى: </string>
+    <string name="hundred_percent">100%</string>
+    <string name="size_kb">\u200f%1$s ك ب</string>
+    <string name="crop_Image_error">نوع الملف غير مدعوم!</string>
+    <string name="internal_device_storage">"سعة تخزين الجهاز الداخلية"</string>
+    <string name="unknown">"غير معروف"</string>
+    <string name="sd_unmounted">لم يتم تحميل بطاقة SD. قم بتحميل بطاقة SD لقراءة الملفات.</string>
+    <string name="internal_device_storage_unmounted">تم إلغاء تحميل التخزين الداخلي للجهاز. قم بتحميل التخزين الداخلي للجهاز لقراءة الملفات.</string>
+    <string name="protected_content">محتوى محمي</string>
+    <plurals name="item">
+        <item quantity="one">\u200f%1$d عنصر</item>
+        <item quantity="other">\u200f%1$d عناصر</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">فشلت إعادة التسمية</string>
+    <string name="renaming_exist">سبق أن تم أخذ الاسم ‎%s. اختر اسمًا مختلفًا.</string>
+    <string name="renaming_empty">لم يتم إدخال أي اسم.</string>
+    <string name="renaming_invalid">يحتوي الاسم الذي أدخلته على رمزٍ غير صالح أو أكثر. اختر اسمًا مختلفًا.</string>
+    <string name="renaming_file_empty">اسم الملف غير صالح. يرجى إدخال اسم ملف يتضمن أحرفًا أو أرقامًا.</string>
+    <string name="renaming_folder_empty">اسم المجلد غير صالح. يرجى إدخال اسم ملف يتضمن أحرفًا أو أرقامًا.</string>
+    <string name="default_group">مجموعة غير معروفة</string>
+    <string name="search_hint">بحث عن ملفات</string>
+    <string name="menu_search">"بحث"</string>
+    <string name="search_folder">تحديد مجلد للبحث عن</string>
+    <string name="sd_missing_search">بطاقة الذاكرة مفقودة. إدخال بطاقة ذاكرة للبحث عن ملفات.</string>
+    <string name="search_progess">البحث عن ‎%1$s في ‎%2$s"</string>
+    <string name="settings_description">ملفات ومجلدات</string>
+    <string name="search_result">النتائج في خلال \"‎%s\"</string>
+    <string name="empty_search_result">لم يتم العثور على نتائج</string>
+    <string name="renaming_folder_exist">اسم المجلد موجود، الرجاء اختيار اسم آخر</string>
+    <string name="enter_Credentials">أدخل بيانات الاعتماد</string>
+    <string name="name">"الاسم"</string>
+    <string name="date">التاريخ</string>
+    <string name="size_v">الحجم</string>
+    <string name="type">"النوع"</string>
+    <string name="typ_folder">"مجلد"</string>
+    <string name="typ_file">ملف</string>
+    <string name="typ_image">صورة</string>
+    <string name="typ_audio">صوت</string>
+    <string name="typ_video">فيديو</string>
+    <string name="typ_text">نص</string>
+    <string name="typ_doc">مستند</string>
+    <string name="typ_zip">Zip</string>
+    <string name="typ_ppt">عرض تقديمي</string>
+    <string name="typ_xml">جدول بيانات</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">صفحة ويب</string>
+    <string name="typ_msg">الرسالة</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">نوع التشفير</string>
+    <string name="zip_encryption_type_normal">لا تشفير</string>
+    <string name="zip_encryption_type_legacy">تشفير ملف قديم (Zip 2.0)</string>
+    <string name="zip_encryption_type_128">تشفير 128-بت‏ AES</string>
+    <string name="zip_encryption_type_256">تشفير 256-بت‏ AES</string>
+    <string name="show_password">"إظهار كلمة المرور"</string>
+    <string name="password_protected_zip">كلمة مرور محمية. أدخل كلمة المرور للاستخراج.</string>
+    <string name="password_cannot_be_blank">لا يمكن أن تكون كلمة المرور خالية</string>
+    <string name="stop_zip_file">تم إلغاء عملية الضغط.</string>
+    <string name="stop_unzip_file">تم إلغاء عملية الاستخراج.</string>
+    <string name="zip_canceling">جارٍ إلغاء عملية الضغط...</string>
+    <string name="unzip_canceling">جارٍ إلغاء عملية الاستخراج...</string>
+    <string name="zip_existing_zip_file">يتضمّن الاختيار ملف zip موجود. لن يتم تضمين ملف zip الموجود هذا في ملف zip الجديد.</string>
+    <string name="menu_multimode">تحديد متعدد</string>
+    <string name="selected">"تم تحديد %d"</string>
+    <string name="copied">تم نسخ ‎%d</string>
+    <string name="usb_storage">تخزين USB</string>
+    <string name="devices">الأجهزة</string>
+    <string name="shortcuts">مجلدات الاختصار</string>
+    <string name="recentfile">أحدث الملفات</string>
+    <string name="moving">جارٍ النقل...</string>
+    <string name="copying">جارٍ النسخ...</string>
+    <string name="menu_add_shortcut">إضافة إلى مجلدات الاختصار</string>
+    <string name="recent_file_deleted">لا يمكن العثور على العنصر الأصلي.</string>
+    <string name="shortcut_deleted">لا يمكن العثور على العنصر الأصلي. هل تريد حذف هذا الاختصار؟</string>
+    <string name="shortcut_storage_unmount">لا يمكن العثور على العنصر الأصلي بسبب انقطاع اتصال جهاز التخزين. هل تريد حذف مجلد الاختصار هذا؟</string>
+    <string name="recent_file_storage_unmount">لا يمكن العثور على العنصر الأصلي بسبب انقطاع اتصال جهاز التخزين.</string>
+    <string name="menu_delete_shorcut">الإزالة من مجلدات الاختصار</string>
+    <string name="menu_rename_shorcut">إعادة تسمية مجلد الاختصار</string>
+    <string name="message_delete_shorcut">هل تريد إزالة مجلد الاختصار هذا من قائمة مجلدات الاختصار؟ لا تؤثر إزالة مجلد الاختصار على المجلد الأصلي.</string>
+    <string name="message_rename_shorcut">لا تؤثر إعادة تسمية مجلد الاختصار على المجلد الأصلي.</string>
+    <string name="availmem_gb">يتوفر ‎%1$s غيغابايت</string>
+    <string name="move_shadow">نقل</string>
+    <string name="no_tranfer_item">حاليًا، لا يوجد أي عنصر نقل.</string>
+    <string name="done_button">تم</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">نقل ‎%1$d عنصر إلى:</item>
+        <item quantity="other">نقل ‎%1$d عناصر إلى:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">نقل ‎%1$d عنصر إلى:</item>
+        <item quantity="other">نقل ‎%1$d عناصر إلى:</item>
+    </plurals>
+    <string name="waiting">انتظار</string>
+    <string name="progress_precentage">\u200f%1$d %%</string>
+    <string name="canceling">إلغاء...</string>
+    <string name="confirm_delete">تأكيد الحذف</string>
+    <string name="size_mb">\u200f%1$s ميغابايت</string>
+    <string name="error_occurred">توقف بسبب حدوث خطأ</string>
+    <string name="copy_stopped">توقف النسخ</string>
+    <string name="move_stopped">توقف النقل</string>
+    <string name="compress_using">الضغط باستخدام</string>
+
+</resources>

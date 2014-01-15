@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-07-05      IKENTPR-235   w17952      initial
+ */-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="@dimen/dialog_layout_width"
+  android:layout_height="wrap_content">
+
+  <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:padding="@dimen/padding_margin"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/type"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:orientation="vertical" android:visibility="gone">
+
+      <TextView style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin" android:text="@string/compress_encryption_file" />
+
+      <TextView style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin" android:text="@string/zip_file_name" />
+
+      <EditText android:id="@+id/foldername"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:singleLine="true" android:inputType="textNoSuggestions" />
+
+      <TextView style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin" android:text="@string/add_server_password" />
+
+      <EditText android:id="@+id/password"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:singleLine="true" android:password="true" />
+
+      <TextView style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin" android:text="@string/confirm_password" />
+
+      <EditText android:id="@+id/confirmpassword"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:singleLine="true" android:password="true" />
+
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

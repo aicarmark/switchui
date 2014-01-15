@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Görev Yöneticisi</string>
+  <string name="tabTasks">Uygulamalar</string>
+  <string name="tabProcesses">İşlemler</string>
+  <string name="buttonEnd">Sonlandır</string>
+  <string name="buttonRefresh">Yenile</string>
+  <string name="menuSwitch">Geçiş Yap</string>
+  <string name="menuEndTask">Görevi Sonlandır</string>
+  <string name="menuCancel">İptal</string>
+  <string name="textAvailableMemory">Kullanılabilir Hafıza:</string>
+  <string name="textAvailableMemoryUnit">M</string>
+  <string name="textNumOfApplications">Uygulama Sayısı:</string>
+  <string name="loading">Yükleniyor\u2026</string>
+</resources>

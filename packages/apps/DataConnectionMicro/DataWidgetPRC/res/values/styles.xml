@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<style name="statusTextStyle">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/statusTextSize</item>
+	</style>
+
+</resources>

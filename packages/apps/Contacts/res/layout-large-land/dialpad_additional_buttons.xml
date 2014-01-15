@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpadAdditionalButtons"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="0.227"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:layout_marginBottom="2dip"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal" >
+    <RelativeLayout android:layout_width="0dip"
+        android:layout_weight="0.800"
+        android:layout_height="match_parent" >
+        <LinearLayout android:id="@+id/one_call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton android:id="@+id/overflow_menu"
+                android:layout_width="0dip"
+                android:layout_weight="0.190"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu_overflow"
+                android:contentDescription="@*android:string/action_menu_overflow_description"
+                android:background="?android:attr/selectableItemBackground" />
+            <View android:id="@+id/menu_callButton_divider"
+                android:layout_width="@dimen/dialpad_vertical_margin"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dialer_separater_margin"
+                android:layout_marginBottom="@dimen/dialer_separater_margin"
+                android:background="@drawable/phone_divider_horz_holo" />
+            <RelativeLayout android:layout_width="0dip"
+                android:layout_weight="0.810"
+                android:layout_marginLeft="4dip"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:id="@+id/two_call_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <ImageButton
+                        android:id="@+id/callByCDMA"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/dial_btn_smart_c_src"
+                        android:visibility="invisible" />
+                    <View
+                        android:id="@+id/dual_call_btn_divider"
+                        android:layout_width="@dimen/dialpad_vertical_margin"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dialer_separater_margin"
+                        android:layout_marginTop="@dimen/dialer_separater_margin"
+                        android:background="@drawable/phone_divider_horz_holo"
+                        android:visibility="invisible" />
+                    <ImageButton
+                        android:id="@+id/callByGSM"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/dial_btn_smart_g_src"
+                        android:visibility="invisible" />
+                </LinearLayout>
+                <ImageButton android:id="@+id/dialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dial_btn_smart_single_src"
+                    android:visibility="invisible"
+                    android:background="?android:attr/selectableItemBackground" />
+                <ImageButton android:id="@+id/rightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:src="@drawable/dial_btn_smart_single_src"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_toRightOf="@id/dialButton" />
+                <ImageButton android:id="@+id/callByEmergency"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:src="@drawable/dial_btn_smart_emergency_src"
+                    android:background="?android:attr/selectableItemBackground" />
+            </RelativeLayout>
+         </LinearLayout>
+        <ImageButton android:id="@+id/videocall"
+            android:layout_width="82dip"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:src="@drawable/ic_control_videocall"
+            android:background="?android:attr/selectableItemBackground" />
+        <ImageButton android:id="@+id/voicecall"
+            android:layout_width="162dip"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dial_btn_smart_single_src"
+            android:background="?android:attr/selectableItemBackground" />
+    </RelativeLayout>
+    <View android:layout_width="@dimen/dialpad_vertical_margin"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dialer_separater_margin"
+        android:layout_marginBottom="@dimen/dialer_separater_margin"
+        android:background="@drawable/phone_divider_horz_holo"/>
+    <ImageView android:id="@+id/handle_click"
+        android:layout_width="0dip"
+        android:layout_weight="0.160"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dip"
+        android:focusable="true"
+        android:clickable="true"
+        android:scaleType="center"
+        android:gravity="center"
+        android:src="@drawable/dial_btn_smart_pad_hide" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout android:id="@+id/mainlay"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="horizontal">
+
+				<LinearLayout android:id="@+id/ringlay"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:orientation="horizontal">
+
+						<include android:id="@+id/ringlayout" 
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								layout="@layout/ringlayout_skin_screen" />
+
+				</LinearLayout>
+
+				<LinearLayout android:id="@+id/gallerylay"
+						android:layout_width="100dp"
+						android:layout_height="match_parent"
+						android:layout_marginRight="20dp"
+						android:orientation="horizontal">
+
+						<ListView android:id="@+id/gallery_land"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:scrollbars="none"
+								android:divider="#00000000"
+								android:dividerHeight="10dp"
+								android:background="@drawable/skin_thumbnail_bg_landscape" 
+								android:listSelector="#00000000"
+								android:cacheColorHint="#00000000"/>	  	  	
+
+				</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/buttonPanel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="48dip"
+				android:orientation="vertical"
+				android:divider="?android:attr/dividerHorizontal"
+				android:showDividers="beginning"
+				android:dividerPadding="0dip">
+				<LinearLayout
+						style="?android:attr/buttonBarStyle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:measureWithLargestChild="true">
+						<TextView 
+								android:id="@+id/set_skin"
+								android:text="@string/set_skin_button"
+								android:layout_width="0dip"
+								android:layout_gravity="center_horizontal"
+								android:layout_weight="1"
+								android:maxLines="2"
+								style="?android:attr/buttonBarButtonStyle"
+								android:textSize="14sp"
+								android:minHeight="48dip"
+								android:layout_height="wrap_content" />
+				</LinearLayout>
+		</LinearLayout>
+
+</LinearLayout>

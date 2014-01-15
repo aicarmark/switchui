@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/zz_moto_actionbar_right_bkg_bottom"/>
+    <item>
+        <bitmap android:src="@drawable/zz_moto_actionbar_right_bkg_middle_repeat" android:gravity="center" android:tileMode="repeat"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/zz_moto_actionbar_right_bkg_top" android:dither="false"/>
+    </item>
+</layer-list>

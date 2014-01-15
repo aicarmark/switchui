@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical" 
+   android:layout_width="fill_parent" 
+   android:layout_height="fill_parent" 
+    >
+  
+  
+  
+  <TextView android:id="@+id/carrier_text"
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content" 
+  />
+  
+  <CheckBox android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:text="@string/apr_enabled" 
+     android:id="@+id/apr_enabled_checkbox">
+  </CheckBox><Spinner android:id="@+id/carrier_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+  
+  <TextView 
+     android:id="@+id/labeloutput"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:text="@string/output" 
+     />
+
+  <TextView 
+     android:id="@+id/output"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:layout_marginTop="15px"
+     android:layout_marginBottom="15px" 
+     />
+  
+  <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rescan_button" android:text="@string/rescan_content"></Button><LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     >
+
+    <Button 
+       android:id="@+id/echo_button"
+       android:layout_width="100sp" 
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal" 
+       android:text="@string/send_email"
+       />
+    
+    <Button 
+       android:layout_height="wrap_content"
+       android:id="@+id/store_button" 
+       android:layout_width="100sp" 
+       android:text="@string/store_test_crash" 
+       android:layout_gravity="center_horizontal">
+    </Button>
+
+    <Button 
+       android:layout_height="wrap_content" 
+       android:layout_width="100sp" 
+       android:layout_gravity="center_horizontal" 
+       android:id="@+id/ddb_button" 
+       android:text="@string/toggle_speed">
+    </Button>
+
+  </LinearLayout>
+  
+  <TextView 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:id="@+id/LabDisp" 
+     android:text="@string/database_output">
+  </TextView>
+  
+  <TextView 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:layout_marginBottom="15px" 
+     android:layout_marginTop="15px" 
+     android:id="@+id/ddb_output">
+  </TextView>
+
+  
+
+
+
+
+
+
+</LinearLayout>
+

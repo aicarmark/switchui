@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/wclock_base_4x2">
+
+    <!-- City 1 -->
+    <LinearLayout android:id="@+id/Clock1"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/analogwithampm1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/analog1_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dial"/>
+
+                <TextView android:id="@+id/analogAMPM1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/analog1"
+                    android:layout_marginBottom="@dimen/analog_ampm_bottom_margin"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/ampm_default"
+                    android:shadowColor="@color/shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="2.0"
+                    android:background="@drawable/ampmbase"
+                    android:textSize="@dimen/analog_ampm_text_size">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/analog1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView android:id="@+id/City1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/city_bottom_margin"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/city_default"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:textSize="@dimen/analog_city_text_size"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView android:id="@+id/Date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/date_bottom_margin"
+            android:textColor="@color/date_default"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:textSize="@dimen/analog_date_text_size">
+        </TextView>
+    </LinearLayout>
+
+    <TextView android:id="@+id/CityNotSelected1"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/city_default"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="0"
+        android:shadowDy="1.0"
+        android:shadowRadius="2.0"
+        android:textSize="@dimen/analog_no_city_text_size"
+        android:text="@string/Touch_to_select_a_city">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/wclock_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/wclock_divider_4x2">
+    </ImageView>
+
+    <!-- City 2 -->
+    <LinearLayout android:id="@+id/Clock2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/analogwithampm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/analog2_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dial"/>
+
+                <TextView android:id="@+id/analogAMPM2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/analog2"
+                    android:layout_marginBottom="@dimen/analog_ampm_bottom_margin"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/ampm_default"
+                    android:shadowColor="@color/shadow_color"
+                    android:shadowDx="0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="2.0"
+                    android:background="@drawable/ampmbase"
+                    android:textSize="@dimen/analog_ampm_text_size">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/analog2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView android:id="@+id/City2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/city_bottom_margin"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/city_default"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:textSize="@dimen/analog_city_text_size"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView android:id="@+id/Date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/date_bottom_margin"
+            android:textColor="@color/date_default"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:textSize="@dimen/analog_date_text_size">
+        </TextView>
+    </LinearLayout>
+
+    <TextView android:id="@+id/CityNotSelected2"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/city_default"
+        android:shadowColor="@color/shadow_color"
+        android:shadowDx="0"
+        android:shadowDy="1.0"
+        android:shadowRadius="2.0"
+        android:textSize="@dimen/analog_no_city_text_size"
+        android:text="@string/Touch_to_select_a_city">
+    </TextView>
+</LinearLayout>

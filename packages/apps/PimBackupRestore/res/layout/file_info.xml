@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2010-03-23   IKSHADOW-2425   A20815      initial
+ */
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_padding_left"
+                android:paddingRight="@dimen/layout_padding_right"
+                android:paddingTop="@dimen/layout_padding_top"
+                android:paddingBottom="@dimen/layout_padding_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" >
+      <ImageView android:id="@+id/item_info_icon"
+                 android:layout_width="@dimen/info_icon_dimen"
+                 android:layout_height="@dimen/info_icon_dimen" />
+      <TextView android:id="@+id/item_name"
+                android:singleLine="true"
+                android:textColor="@color/fileinfo_textcolor"
+                android:paddingLeft="@dimen/item_name_padding_left"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle" />
+    </LinearLayout>
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="@dimen/separator_height"
+               android:layout_margin="@dimen/separator_margin"
+               android:background="@drawable/seperator_bar" />
+
+    <TextView android:id="@+id/item_type"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <TextView android:id="@+id/item_folder"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <TextView android:id="@+id/item_size"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <TextView android:id="@+id/item_last_modified"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="@dimen/separator_height"
+               android:layout_margin="@dimen/separator_margin"
+               android:background="@drawable/seperator_bar" />
+
+    <TextView android:id="@+id/read_auth"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <TextView android:id="@+id/write_auth"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    <TextView android:id="@+id/hidden_status"
+              android:singleLine="true"
+              android:textColor="@color/fileinfo_textcolor"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="@dimen/separator_height"
+               android:layout_margin="@dimen/separator_margin"
+               android:visibility="gone"
+               android:background="@drawable/seperator_bar" />
+
+    <Button android:id="@+id/item_info_ok"
+            android:text="@string/ok"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_gravity="center_horizontal" />
+  </LinearLayout>
+</ScrollView>

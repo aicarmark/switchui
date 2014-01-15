@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-11-04                    XQH748      initial
+ */-->
+<com.motorola.filemanager.ui.ResizableView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:resizableview="http://schemas.android.com/apk/res/com.motorola.filemanager"
+  android:id="@+id/split_view" android:orientation="horizontal"
+  android:layout_width="@dimen/column_width" android:layout_height="fill_parent"
+  resizableview:handle="@+id/divider" resizableview:content="@+id/column_listview">
+  <FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_weight="1">
+    <ListView android:id="@id/column_listview"
+      android:layout_width="wrap_content" android:layout_weight="1"
+      android:layout_height="fill_parent" />
+    <TextView android:id="@+id/empty_text"
+      android:layout_width="fill_parent" android:layout_height="fill_parent"
+      android:text="@string/this_folder_is_empty"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:gravity="center" />
+  </FrameLayout>
+  <RelativeLayout android:id="@+id/div"
+    android:layout_height="fill_parent" android:layout_width="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:id="@+id/arrow_left"
+      android:layout_height="wrap_content" android:src="@drawable/column_divider_move_left_holo"
+      android:layout_alignParentTop="true" android:paddingTop="@dimen/arrow_padding"
+      android:visibility="gone" android:scaleType="fitXY" />
+
+    <ImageView android:layout_width="wrap_content" android:id="@+id/arrow_left2"
+      android:layout_height="wrap_content" android:src="@drawable/column_divider_move_left_holo"
+      android:layout_alignParentBottom="true" android:paddingBottom="@dimen/arrow_padding"
+      android:visibility="gone" android:scaleType="fitXY" />
+
+    <ImageView android:layout_width="wrap_content" android:id="@id/divider"
+      android:layout_height="fill_parent" android:src="@drawable/column_divider_holo"
+      android:scaleType="fitXY" android:layout_toRightOf="@id/arrow_left" />
+
+    <ImageView android:layout_width="wrap_content" android:id="@+id/arrow_right"
+      android:layout_height="wrap_content" android:src="@drawable/column_divider_move_right_holo"
+      android:layout_alignParentTop="true" android:paddingTop="@dimen/arrow_padding"
+      android:scaleType="fitXY" android:layout_toRightOf="@id/divider"
+      android:visibility="gone" />
+
+    <ImageView android:layout_width="wrap_content" android:id="@+id/arrow_right2"
+      android:layout_height="wrap_content" android:src="@drawable/column_divider_move_right_holo"
+      android:layout_alignParentBottom="true" android:paddingBottom="@dimen/arrow_padding"
+      android:scaleType="fitXY" android:layout_toRightOf="@id/divider"
+      android:visibility="gone" />
+
+  </RelativeLayout>
+</com.motorola.filemanager.ui.ResizableView>
+

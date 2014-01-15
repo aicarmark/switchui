@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="?android:attr/listPreferredItemHeight" >
+    <ImageView android:id="@+id/for_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dip"
+        android:gravity="center_vertical" >
+    </ImageView>
+    <ImageView android:id="@+id/for_call"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/for_sms"
+        android:layout_marginRight="8dip"
+        android:gravity="center_vertical" >
+    </ImageView>
+    <TextView android:id="@+id/Contacttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:layout_toLeftOf="@id/for_call"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center_vertical"
+        android:singleLine="true">
+    </TextView>
+        <TextView android:id="@+id/Contactname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_toLeftOf="@id/Contacttype"
+        android:singleLine="true">
+    </TextView>
+
+    <TextView android:id="@+id/Phonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/Contactname"
+        android:layout_toLeftOf="@id/for_call"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dip"
+        android:layout_alignWithParentIfMissing="true"
+        android:singleLine="true">
+    </TextView>
+</RelativeLayout>

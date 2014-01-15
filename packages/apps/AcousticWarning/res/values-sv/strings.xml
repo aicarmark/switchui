@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">AcousticWarning</string>
+  <string name="title">Mediavolym</string>
+  <string name="warning_text">Det kan vara skadligt för hörseln att lyssna på hög volym under lång tid.\n\nMusikvolymen har justerats under den rekommenderade nivån.</string>
+</resources>

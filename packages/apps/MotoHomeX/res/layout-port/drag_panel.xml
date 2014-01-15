@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_add"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trash_area"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_add"
+            android:layout_width="@dimen/trash_ic_size"
+            android:layout_height="@dimen/trash_ic_size"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/panel_add"
+	    android:background="@null"></ImageButton>
+        <TextView android:id="@+id/tv_add"
+	    android:text="@string/menu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/trash_ic_size"
+            android:gravity="center"
+            android:textSize="20sp"></TextView>              
+    </LinearLayout>
+    
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/layout_remove"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/trash_area"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imgbtn_remove"
+            android:layout_width="@dimen/trash_ic_size"
+            android:layout_height="@dimen/trash_ic_size"
+	    android:src="@drawable/panel_trash" ></ImageView>
+        <TextView android:id="@+id/tv_remove"
+	    android:text="@string/delete_zone_label_workspace" 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/trash_ic_size"
+            android:gravity="center"
+            android:textSize="20sp"></TextView>        
+    </LinearLayout>
+
+    <!--2012-6-25, modify and add by bvq783 for switchui-1581-->
+    <!--TextView
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/-->
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/transition_icon"
+        android:layout_width="380px"
+        android:layout_height="48dp"
+        android:text="@string/set_transition"        
+        android:layout_centerInParent="true"
+        android:background="@drawable/transition_icon_bg"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+    </RelativeLayout>
+    <!--2012-6-25, modify and add by bvq783 end-->
+</RelativeLayout>

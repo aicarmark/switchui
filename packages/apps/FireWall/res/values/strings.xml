@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+<string name="app_name">FireWall</string>
+<string name="appwidget_name">VIP mode</string>
+<string name="widget_description_vip">View and control VIP mode</string>
+<string name="log_title">Firewall log</string>
+<string name="calllog_title">Call firewall log</string>
+<string name="smslog_title">Message firewall log</string>
+<string name="incoming_call_setting_title">Incoming call firewall settings</string>
+<string name="incoming_call_on_title">Incoming call firewall</string>
+<string name="incoming_sms_setting_title">Message firewall settings</string>
+<string name="incoming_sms_on_title">Message firewall</string>
+<string name="whitescreen_title">VIP list</string>
+<string name="white_pattern_screen_title">Pattern based VIP list</string>
+<string name="white_number_screen_title">Number based VIP list</string>
+<string name="white_name_screen_title">Name based VIP list</string>
+<string name="white_black_screen_title">VIP list and Black list</string>
+<string name="in_block_call_type_title">Incoming call firewall mode</string>
+<string name="in_block_sms_type_title">Message firewall mode</string>
+<string name="incoming_call_on_sum">Turn on/off incoming call firewall</string>
+<string name="incoming_sms_on_sum">Turn on/off incoming SMS firewall</string>
+<string name="blackscreen_title">Black list</string>
+<string name="black_pattern_screen_title">Pattern based black list</string>
+<string name="black_number_screen_title">Number based black list</string>
+<string name="black_name_screen_title">Name based black list</string>
+<string name="outgoing_call_setting_title">Outgoing call firewall settings</string>
+<string name="pattern_title">Pattern</string>
+<string name="switch_to_vipmode">In VIP mode it will only accept call and message from VIP.</string>
+<string name="vipmode">VIP Mode</string>
+
+
+<string name="in_reject_type_title">Block type</string>
+<string name="outgoing_call_on_title">Outgoing call firewall</string>
+<string name="outgoing_call_on_sum">Turn on/off outgoing call firewall</string>
+<string name="out_block_call_type_title">Outgoing call firewall mode</string>
+
+
+<string name="menu_insert_white_list">Add VIP number</string>
+<string name="menu_insert_black_list">Add black list number</string>
+<string name="menu_insert_white_pattern">Add new VIP pattern</string>
+<string name="menu_insert_black_pattern">Add new black pattern</string>
+<string name="menu_delete">Delete</string>
+<string name="menu_delete_all">Delete All</string>
+<string name="menu_pick_pim">Pick from contacts</string>
+<string name="menu_pick_recall">Pick from call log</string>
+<string name="menu_restore">Restore back to SMS</string>
+<string name="menu_edit">Edit</string>
+<string name="button_done">Done</string>
+<string name="button_revert">Revert</string>
+<string name="title_edit">Edit name list</string>
+<string name="title_create">Create new name list</string>
+<string name="error_title">Error</string>
+<string name="error_message">Error Message</string>
+<string name="recentCalls_empty">Call log is empty.</string>
+<string name="all_log_empty">All firewall log is empty.</string>
+<string name="call_log_empty">Call firewall log is empty.</string>
+<string name="sms_log_empty">SMS firewall log is empty.</string>
+<string name="white_name_empty">VIP list based on name is empty. \nPress menu to add.</string>
+<string name="white_number_empty">VIP list based on number is empty. \nPress menu to add.</string>
+<string name="white_pattern_empty">VIP list based on pattern is empty. \nPress menu to add.</string>
+<string name="black_name_empty">Black list based on name is empty. \nPress menu to add.</string>
+<string name="black_number_empty">Black list based on number is empty. \nPress menu to add.</string>
+<string name="black_pattern_empty">Black list based on pattern is empty. \nPress menu to add.</string>
+<string name="firewall_service_started">Firewall started</string>
+<string name="firewall_vip_mode_started">VIP mode started</string>
+<string name="firewall_call_intercepted">Firewall intercepted Call from </string>
+<string name="firewall_sms_intercepted">Firewall intercepted SMS from </string>
+<string name="sum_no_item">Empty</string>
+<plurals name="sum_items">
+    <item quantity="one">1 item</item>
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> items</item>
+</plurals>
+<string name="alert_dialog_ok">OK</string>
+<string name="alert_dialog_pattern_content">The maximum number of patterns is 3, you need delete an older one to add a new one.</string>
+<string name="alert_dialog_name_content">The maximum number of VIP/black name list is 1000, you need delete an older one to add a new one.</string>
+<string name="alert_dialog_number_null">The number saved should be valid and should not be null.</string>
+<string name="alert_dialog_unknow_number">Can\'t pick up unknow number from Recent call.</string>
+<string name="alert_dialog_invalid_number">Can\'t pick up invalid number.</string>
+<string name="alert_dialog_dup_number_white_list">The same number already exist in the VIP list.</string>
+<string name="alert_dialog_dup_number_white_pattern">The same pattern already exist in the VIP pattern list.</string>
+<string name="alert_dialog_dup_number_black_list">The same number already exist in the black list.</string>
+<string name="alert_dialog_dup_number_black_pattern">The same pattern already exist in the balck pattern list.</string>
+<string name="alert_dialog_error_pattern">Invalid pattern number.</string>
+<string name="alert_dialog_error_number">Invalid phone number.</string>
+<string name="alert_dialog_dup_name_white_list">The same name already exist in the VIP list.</string>
+<string name="alert_dialog_dup_name_black_list">The same name already exist in the black list.</string>
+<string name="alert_dialog_name_nonumber">The contact don\'t have phone number.</string>
+<string name="alert_dialog_dup_numbers_white_list">Some numbers already exist in the VIP list.</string>
+<string name="alert_dialog_dup_numbers_black_list">Some numbers already exist in the black list.</string>
+<string name="call_log_on_title">Keep call firewall log</string>
+<string name="call_log_on_sum">Turn on/off call firewall log</string>
+<string name="sms_log_on_title">Keep message firewall log</string>
+<string name="sms_log_on_sum">Turn on/off  message firewall log</string>
+<!-- String used to display calls from unknown numbers in the call log -->
+<string name="unknown">Unknown</string>
+
+<!-- String used to display calls from private numbers in the call log -->
+<string name="private_num">Private number</string>
+
+<!-- String used to display calls from pay phone in the call log -->
+<string name="payphone">Pay phone</string>
+<string name="ext_add_black_number_toast">The number has been added in black list successfully.</string>
+<string name="ext_add_white_number_toast">The number has been added in VIP list successfully.</string>
+<string name="ext_add_black_name_toast">The name has been added in black list successfully.</string>
+<string name="ext_add_white_name_toast">The name has been added in VIP list successfully.</string>
+<string name="ext_add_black_name_number_toast">The contact\'s numbers have been added in black list successfully.</string>
+<string name="ext_add_white_name_number_toast">The contact\'s numbers have been added in VIP list successfully.</string>
+<string name="vip_mode_on_toast">In VIP mode it will only accept incoming call and message from VIP.</string>
+<string name="pattern_help">For example : \'189\' will match any number which start with 189, and \'512#\' will match any number which end with 512.</string>
+<string name="number_for_pattern">Set as pattern</string>
+<string name="number_for_call">Apply for Call firewall</string>
+<string name="number_for_sms">Apply for SMS firewall</string>
+<string name="number_for_call_black">Block incoming calls from this number</string>
+<string name="number_for_sms_black">Block messages from this number</string>
+<string name="number_for_call_white">Accept incoming calls from this number</string>
+<string name="number_for_sms_white">Accept messages from this number</string>
+
+<string name="setting_tab">Setting</string>
+<string name="list_tab">VIP/Black List</string>
+<string name="call_log_tab">Call Log</string>
+<string name="sms_log_tab">SMS Log</string>
+<string name="black_list_tab">Black List</string>
+<string name="white_list_tab">VIP</string>
+<string name="firewall_log_tab">Firewall Log</string>
+
+<string name="alert_dialog_calllog_delete_all">All blocked Call log will be deleted.</string>
+<string name="alert_dialog_smslog_delete_all">All blocked SMS log will be deleted.</string>
+<string name="alert_dialog_alllog_delete_all">All blocked log will be deleted.</string>
+<string name="alert_dialog_white_number_delete_all">All number based VIP list will be deleted.</string>
+<string name="alert_dialog_white_pattern_delete_all">All pattern based VIP list will be deleted.</string>
+<string name="alert_dialog_black_number_delete_all">All number based black list will be deleted.</string>
+<string name="alert_dialog_black_pattern_delete_all">All pattern based black list will be deleted.</string>
+<string name="alert_dialog_white_name_delete_all">All name based VIP list will be deleted.</string>
+<string name="alert_dialog_black_name_delete_all">All name based black list will be deleted.</string>
+<string name="alert_dialog_white_number_pattern_delete_all">All number based VIP list will be deleted.</string>
+<string name="alert_dialog_black_number_pattern_delete_all">All number and pattern based black list will be deleted.</string>
+<string name="alert_dialog_add_white_list_confirm">This number will be added to the VIP list.</string>
+<string name="alert_dialog_add_black_list_confirm">This number will be added to the black list.</string>
+<string name="alert_dialog_add_white_name_confirm">This contact\'s numbers will be added to the VIP list.</string>
+<string name="alert_dialog_add_black_name_confirm">This contact\'s numbers will be added to the black list.</string>
+
+
+<string name="message_keywords_filter_title">Message keywords filter</string>
+<string name="keywords_filter_on_title">Keywords filter</string>
+<string name="keywords_filter_info">Provided by 360 Mobile Safe</string>
+<string name="keywords_manager_on_title">Keywords manager</string>
+<string name="keywords_manager_info">Customized keywords, Auto keywords sync settings</string>
+
+<string name="select_log_type_prompt">Choose firewall log type</string>
+<string name="is_dup_in_white_list">%s \n already exists in VIP list</string>
+<string name="is_dup_in_black_list">%s \n already exists in black list</string>
+<string name="added_to_white_list">%s \n be added to VIP list</string>
+<string name="added_to_black_list">%s \n be added to black list</string>
+
+<string name="network_firewall_setting">Network firewall setting</string>
+<string name="in_call_reject_cdma">Block calls on CDMA</string>
+<string name="in_call_reject_gsm">Block calls on GSM</string>
+<string name="in_sms_reject_cdma">Block messages on CDMA</string>
+<string name="in_sms_reject_gsm">Block messages on GSM</string>
+<string name="in_call_reject_cdma_sum">Block all incoming calls to CDMA card</string>
+<string name="in_call_reject_gsm_sum">Block all incoming calls to GSM card</string>
+<string name="in_sms_reject_cdma_sum">Block all messages to CDMA card</string>
+<string name="in_sms_reject_gsm_sum">Block all messages to GSM card</string>
+
+    <string-array name="incoming_call_block_list">
+        <item>Only accept call from contacts</item>
+        <item>Block all incoming calls</item>
+        <item>Only accept call from VIP</item>
+        <item>Block calls from black list</item>
+    </string-array>
+
+    <!-- Do not translate -->
+    <string-array name="incoming_call_block_list_value" translatable="false">
+        <item>in_call_pimlist</item>
+        <item>in_call_rejectall</item>
+        <item>in_call_whitelist</item>
+        <item>in_call_blacklist</item>
+    </string-array>
+    
+    <string-array name="incoming_sms_block_list">
+        <item>Only accept SMS from contacts</item>
+        <item>Block all incoming SMS</item>
+        <item>Only accept SMS from VIP</item>
+        <item>Block SMS from Black list</item>
+    </string-array>
+
+    <!-- Do not translate -->
+    <string-array name="incoming_sms_block_list_value" translatable="false">
+        <item>in_sms_pimlist</item>
+        <item>in_sms_rejectall</item>
+        <item>in_sms_whitelist</item>
+        <item>in_sms_blacklist</item>
+    </string-array>
+    
+    <string-array name="white_black_list_title">
+        <item>Number based VIP list</item>
+        <item>Pattern based VIP list</item>
+        <item>Number based black list</item>
+        <item>Pattern based black list</item>
+        <item>Name based VIP list</item>
+        <item>Name based black list</item>
+    </string-array>
+    
+    <string-array name="white_black_editor_title">
+        <item>Add new VIP list number</item>
+        <item>Add new VIP pattern number</item>
+        <item>Add new black list number</item>
+        <item>Add new black pattern number</item>
+        <item>Add new VIP list number</item>
+        <item>Add new black list number or pattern</item>
+        <item>Edit VIP list number</item>
+        <item>Edit black list number</item>
+        <item>Edit VIP list pattern</item>
+        <item>Edit black list pattern</item>
+    </string-array>
+    
+    <string-array name="outgoing_call_block_list">
+        <item>Only allow call to contacts</item>
+        <item>Prohibit all outgoing calls</item>
+        <item>VIP list</item>
+        <item>Black list</item>
+    </string-array>
+
+    <!-- Do not translate -->
+    <string-array name="outgoing_call_block_list_value" translatable="false">
+        <item>out_call_pimlist</item>
+        <item>out_call_banall</item>
+        <item>out_call_whitelist</item>
+        <item>out_call_blacklist</item>
+    </string-array>
+    
+    <string-array name="in_reject_type">
+        <item>Ignore call</item>
+        <item>Reject call</item>
+    </string-array>
+    
+    <!-- Do not translate -->
+    <string-array name="in_reject_type_value" translatable="false">
+        <item>ignore_block</item>
+        <item>reject_block</item>
+    </string-array>
+
+    <string-array name="firewall_log_type">
+        <item>All firewall log</item>
+        <item>Call firewall log</item>
+        <item>SMS firewall log</item>
+    </string-array>
+</resources>

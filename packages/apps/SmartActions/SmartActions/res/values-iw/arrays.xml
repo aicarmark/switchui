@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>\u200f15 שניות</item>
+        <item>\u200f30 שניות</item>
+        <item>דקה 1</item>
+        <item>\u200f2 דקות</item>
+        <item>\u200f10 דקות</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>שיחות והודעות טקסט</item>
+        <item>שיחות בלבד</item>
+        <item>הודעות טקסט בלבד</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>כל המספרים</item>
+        <item>כל אנשי הקשר בספר הטלפונים</item>
+        <item>אנשי קשר נבחרים</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>ההודעה תישלח לכל מספרי הטלפון.</item>
+        <item>ההודעה תישלח לכל המספרים שנשמרו בספר הטלפונים שלך.</item>
+        <item>ההודעה תישלח למספרים נבחרים בלבד.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>מקסימום</item>
+        <item>גבוה</item>
+        <item>בינוני</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>שם שולח הודעת הטקסט</item>
+        <item>שם מתקשר בשיחה נכנסת</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>בית</item>
+        <item>עבודה</item>
+        <item>בית ספר</item>
+        <item>מותאם אישית</item>
+    </string-array>
+
+</resources>

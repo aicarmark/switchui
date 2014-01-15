@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_wrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo_image_desc"
+        android:paddingTop="30dp"
+        android:src="@drawable/sa_branding1"/>
+
+     <!-- Version Layout -->
+    <LinearLayout
+        android:id="@+id/about_version_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/about_version_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:text="@string/about_version"
+            android:textSize="14sp" 
+            android:color="@color/version_gray" />
+
+        <TextView
+            android:id="@+id/about_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/about_copyright"
+            android:textSize="14sp" 
+            android:color="@color/version_gray" />
+    </LinearLayout>
+
+    <!-- Lower Layout -->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/about_text"
+            android:textSize="16sp"
+            android:textColor="@color/first_line" />
+
+        <LinearLayout
+            android:id="@+id/button_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/learn_more_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:background="@drawable/about_layout_button"
+                android:text="@string/learn_more"
+                android:textColor="@color/first_line" />
+
+            <Button
+                android:id="@+id/get_started_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:background="@drawable/about_layout_next_button"
+                android:text="@string/get_started"
+                android:textColor="@color/first_line" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

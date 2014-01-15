@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >"工作管理員"</string>
+ <string name="tabTasks" >"應用程式"</string>
+ <string name="tabProcesses" >"程序"</string>
+ <string name="buttonEnd" >"結束"</string>
+ <string name="buttonRefresh" >"重新整理"</string>
+ <string name="menuSwitch" >"切換至"</string>
+ <string name="menuEndTask" >"結束工作"</string>
+ <string name="menuCancel" >"取消"</string>
+ <string name="textAvailableMemory" >"可用記憶體："</string>
+ <string name="textAvailableMemoryUnit" >"M"</string>
+ <string name="textNumOfApplications" >"應用程式數目："</string>
+ <string name="loading" >"正在載入\u2026"</string>
+</resources>

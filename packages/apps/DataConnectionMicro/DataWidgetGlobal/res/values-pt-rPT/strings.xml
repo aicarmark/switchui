@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Widgets de ligação</string>
+  <string name="gps_app_name">Ligação GPS</string>
+  <string name="airplane_app_name">Ativação modo avião</string>
+  <string name="wifi_app_name">Comutar Wi-Fi</string>
+  <string name="bluetooth_app_name">Ligação Bluetooth</string>
+  <string name="apn_app_name">Ligação NPA</string>
+  <string name="data_app_name">Comutador dados</string>
+  <string name="widget_description">Ver e controlar o estado do modo de avião</string>
+  <string name="widget_description_bt">Ver e controlar o estado de Bluetooth</string>
+  <string name="widget_description_wifi">Ver e controlar o estado Wi-Fi</string>
+  <string name="widget_description_gps">Ver e controlar o estado de GPS</string>
+  <string name="StatusOn">Sim</string>
+  <string name="StatusOff">Não</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">Modo de avião indisponível</string>
+  <string name="BluetoothtoastText">Bluetooth indisponível</string>
+  <string name="GPStoastText">GPS indisponível</string>
+  <string name="WifitoastText">Wi-Fi indisponível</string>
+  <string name="location_restriction_enabled">Restrição de localização ativada.</string>
+  <string name="apncontrol_app_name">Controlo NPA</string>
+  <string name="no_apn">Nenhum NPA disponível</string>
+</resources>

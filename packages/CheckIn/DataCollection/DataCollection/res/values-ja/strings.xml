@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">データ収集</string>
+    <string name="permission_perf_stats_write_label">パフォーマンス統計情報設定を書き込み</string>
+    <string name="permission_perf_stats_write_desc">アプリケーションによるパフォーマンス統計情報設定の書き込みを許可します。</string>
+
+</resources>

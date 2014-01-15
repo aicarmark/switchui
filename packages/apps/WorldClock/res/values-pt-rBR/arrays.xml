@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    /*
+    *                          Motorola Confidential Proprietary
+    *                 Copyright (C) 2009 Motorola, Inc.  All Rights Reserved.
+    *
+    *
+    * Revision History:
+    *                           Modification    Tracking
+    * Author                      Date          Number     Description of Changes
+    * ~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~    ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~
+    *  vhj374                    2009-04-27   ...LIByyXXXXX   First Version for CityClock
+    */
+-->
+
+<resources>
+    <!-- CityClockSettings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Clock style options. -->
+    <string-array name="clock_style_entries">
+        <item>Analógico</item>
+        <item>Digital</item>
+    </string-array>
+
+    <!-- Values for clock style options. Do not translate. -->
+    <string-array name="clock_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

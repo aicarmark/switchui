@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:gravity="center_vertical"
+	android:layout_height="fill_parent"
+	android:baselineAligned="false"
+	android:paddingLeft="30dp">
+
+	<RelativeLayout
+		android:id="@+id/action_left_wrapper"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+
+		<!-- Section Title -->
+		<TextView
+			android:id="@+id/action_section_header"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:text="@string/actions"
+			android:textColor="@color/ics_blue"
+			android:textAllCaps="true"
+			android:textStyle="bold"
+			android:layout_alignParentLeft="true"/>			
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/action_right_wrapper"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentRight="true"
+		android:layout_weight="0"
+		android:layout_marginRight="7dp"
+		android:gravity="center_vertical">
+
+		<Button
+			android:id="@+id/add_action_button"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/ic_add_block" 
+		/>			
+	</LinearLayout>    
+</LinearLayout>		    
+  

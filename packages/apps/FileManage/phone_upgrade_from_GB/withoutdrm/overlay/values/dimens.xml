@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ */
+-->
+<resources>
+  <!-- file_manager.xml -->
+  <dimen name="homesync_layout_height">1dip </dimen>
+  <dimen name="filechooser_panel_margintop">3dip </dimen>
+
+
+  <!-- Content File List xml -->
+  <dimen name="zero_dp">0dip</dimen>
+  <dimen name="movecancel_button_width">150dip</dimen>
+  <dimen name="movecancel_button_margin">3dip</dimen>
+
+  <dimen name="rel_layout_type_padding_left">22dip</dimen>
+  <dimen name="curr_type_padding_left">15dip</dimen>
+  <dimen name="view_height">1dip</dimen>
+
+  <item name="weight_one" type="fraction">1.0</item>
+
+
+  <!-- dialog_new_folder.xml -->
+  <dimen name="dialog_margin">20dip</dimen>
+
+  <!-- file_info.xml -->
+  <dimen name="layout_padding_left">10dip</dimen>
+  <dimen name="layout_padding_right">10dip</dimen>
+  <dimen name="layout_padding_top">5dip</dimen>
+  <dimen name="layout_padding_bottom">5dip</dimen>
+  <dimen name="info_icon_dimen">36dip</dimen>
+  <dimen name="item_name_padding_left">10dip</dimen>
+  <dimen name="separator_height">2dip</dimen>
+  <dimen name="separator_margin">5dip</dimen>
+  <dimen name="button_width">100dip</dimen>
+  <dimen name="button_height">50dip</dimen>
+  <dimen name="margin">5dip</dimen>
+
+  <!-- filelist_item.xml -->
+  <dimen name="list_ticker_dimen">32dip</dimen>
+  <dimen name="list_icon_dimen">48dip</dimen>
+  <dimen name="list_layout_margin_left">8dip</dimen>
+  <dimen name="list_layout_margin_right">12dip</dimen>
+
+  <!-- filelist.xml -->
+  <dimen name="folder_icon_dimen">55dip</dimen>
+  <dimen name="flist_layout_height">55dip</dimen>
+  <dimen name="flist_layout_padding">2dip</dimen>
+  <dimen name="flist_framelayout_height">0dip</dimen>
+  <dimen name="flist_grid_columnwidth">100dip</dimen>
+  <dimen name="flist_grid_verticalspacing">20dip</dimen>
+  <dimen name="multi_button_width">100dip</dimen>
+  <dimen name="multi_button_margin">3dip</dimen>
+  <dimen name="mc_button_width">150dip</dimen>
+  <dimen name="mc_button_margin">3dip</dimen>
+
+  <!--grid_item.xml -->
+  <dimen name="grid_layout_margin_left">8dip</dimen>
+  <dimen name="grid_layout_margin_right">12dip</dimen>
+  <dimen name="rel_layout_width">72dip</dimen>
+  <dimen name="rel_layout_height">72dip</dimen>
+  <dimen name="grid_icon_dimen">64dip</dimen>
+  <dimen name="grid_ticker_dimen">22dip</dimen>
+
+  <!-- motoconnect_download_dialog.xml -->
+  <dimen name="mc_download_minheight">45dip</dimen>
+  <dimen name="mc_download_icon_dimen">55dip</dimen>
+  <dimen name="mc_download_title_height">55dip</dimen>
+
+  <!-- motoconnect_tmp_download.xml -->
+  <dimen name="mc_tmp_info_margin_left">20dip</dimen>
+  <dimen name="mc_tmp_info_margin_right">20dip</dimen>
+  <dimen name="mc_tmp_info_padding_top">4dip</dimen>
+  <dimen name="mc_tmp_info_padding_bottom">4dip</dimen>
+  <dimen name="mc_tmp_progbar_margin_left">25dip</dimen>
+  <dimen name="mc_tmp_progbar_margin_right">25dip</dimen>
+  <dimen name="mc_tmp_progbar_padding_top">4dip</dimen>
+  <dimen name="mc_tmp_progbar_padding_bottom">4dip</dimen>
+
+  <!-- motoconnect_intro.xml -->
+  <dimen name="mc_intro_space_holder_1">20dip</dimen>
+  <dimen name="mc_intro_space_holder_2">14dip</dimen>
+  <dimen name="mc_intro_space_holder_3">50dip</dimen>
+  <dimen name="mc_intro_padding_left">10dip</dimen>
+  <dimen name="mc_intro_padding_right">10dip</dimen>
+
+  <!-- notify.xml -->
+  <dimen name="notify_rl_padding_left">5dip</dimen>
+  <dimen name="notify_ll_width">37dip</dimen>
+  <dimen name="notify_text_padding_left">22dip</dimen>
+  <dimen name="notify_progress_text_padding_left">4dip</dimen>
+  <dimen name="notify_padding_top">8dip</dimen>
+  <dimen name="prog_bar_width_notify">240dip</dimen>
+  <dimen name="prog_bar_padding_left">10dip</dimen>
+  <dimen name="prog_bar_padding_right">8dip</dimen>
+
+  <!-- pending_download_result.xml -->
+  <dimen name="down_layout_padding_left">3dip</dimen>
+  <dimen name="down_layout_padding_right">1dip</dimen>
+  <dimen name="down_layout_padding_top">9dip</dimen>
+  <dimen name="down_layout_padding_bottom">3dip</dimen>
+
+  <dimen name="textview_height">40dip</dimen>
+  <dimen name="result_text_padding_top"> 5dip</dimen>
+  <dimen name="result_text_padding_left"> 2dip</dimen>
+  <dimen name="result_text_padding_right"> 2dip</dimen>
+  <dimen name="button_panel_min_height"> 54dip</dimen>
+  <dimen name="lin_layout_padding_left">2dip</dimen>
+  <dimen name="lin_layout_padding_right">2dip</dimen>
+  <dimen name="lin_layout_padding_top">4dip</dimen>
+  <dimen name="spacer_width">0dip</dimen>
+
+  <item name="spacer_weight" type="fraction">0.5</item>
+
+  <!-- pending_download.xml -->
+  <dimen name="pend_layout_padding_left">3dip</dimen>
+  <dimen name="pend_layout_padding_right">1dip</dimen>
+  <dimen name="pend_layout_padding_top">9dip</dimen>
+  <dimen name="pend_layout_padding_bottom">3dip</dimen>
+
+  <dimen name="lin_layout1_padd_left"> 10dip</dimen>
+  <dimen name="textview_padding_top"> 4dip</dimen>
+  <dimen name="textview_padding_left"> 2dip</dimen>
+  <dimen name="textview_padding_right"> 2dip</dimen>
+
+  <dimen name="file_mime_icon_dimen"> 45dip</dimen>
+  <dimen name="trans_status_padding_top"> 25dip</dimen>
+
+  <dimen name="lin_layout_prog_padding_left">20dip</dimen>
+  <dimen name="lin_layout_prog_padding_right">20dip</dimen>
+  <dimen name="lin_layout_prog_padding_top">10dip</dimen>
+  <dimen name="lin_layout_prog_padding_bottom">10dip</dimen>
+  <dimen name="prog_button_width">10dip</dimen>
+  <dimen name="prog_bar_width_result">180dip</dimen>
+
+  <!-- reauth_info.xml -->
+  <dimen name="reauth_text_view_margin">20dip</dimen>
+
+  <!--alert_dialog_new_server.xml -->
+  <dimen name="new_server_margin">20dip</dimen>
+
+  <!--zip_dialog.xml -->
+  <dimen name="zip_dialog_width">300sp</dimen>
+  <dimen name="zip_dialog_padding">8dip</dimen>
+  <dimen name="zip_prompt_margin">8dip</dimen>
+  <dimen name="zip_password_margin">4dip</dimen>
+
+  <!-- To be used in FileManagerApp.java getDialogSize(). These values are copied
+       from frameworks/base/core/res/res/layout/alert_dialog.xml so that the dialog
+       size made with Theme.Dialog will be same as if we were to create a dialog -->
+  <item name="alert_dialog_portrait_width" type="fraction">0.9</item>
+  <item name="alert_dialog_landscape_width" type="fraction">0.65</item>
+</resources>

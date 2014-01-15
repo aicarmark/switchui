@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ *
+ * Date         CR              Author      Description
+ * 2011-05-23   IKTABLETMAIN-348    XQH748      initial
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Bestanden</string>
+    <string name="add_server">Server toevoegen</string>
+    <string name="add_samba_server_title">Nieuwe Samba-server</string>
+    <string name="edit_samba_server_title">Samba-server bewerken</string>
+    <string name="add_server_hostname">Servernaam of IP-adres</string>
+    <string name="add_server_username">Gebruikersnaam</string>
+    <string name="add_server_password">Wachtwoord</string>
+    <string name="confirm_password">Bevestig wachtwoord</string>
+    <string name="server_display_name">Naam:</string>
+    <string name="server_logon_failure">Aanmeldingsfout</string>
+    <string name="server_reauth_title">Verificatiegegevens invoeren</string>
+    <string name="server_logon_failure_indication">Voer verificatie-info in.</string>
+    <string name="remote_files">Externe mappen</string>
+    <string name="menu_edit">Bewerken</string>
+    <string name="menu_remove">Verwijderen</string>
+    <string name="file_transfer">Bestandsoverdracht:</string>
+    <string name="file_transfer_complete">Bestandsoverdracht voltooid:</string>
+    <plurals name="transfer_result">
+        <item quantity="one">Overdracht voltooid: %d bestand</item>
+        <item quantity="other">Overdracht voltooid: %d bestanden</item>
+    </plurals>
+    <string name="host_name_empty_indicator">Voer een hostnaam in.</string>
+    <string name="not_found_network_name">De netwerknaam is niet gevonden.</string>
+    <string name="server_not_reachable">Server is niet bereikbaar.</string>
+    <string name="no_group_found">Er is geen groep gevonden. Probeer het opnieuw.</string>
+    <string name="external_sdcard">Externe SD</string>
+    <string name="menu_new_folder">Nieuwe map</string>
+    <string name="menu_delete">Verwijderen</string>
+    <string name="menu_rename">Naam wijzigen</string>
+    <string name="menu_send">Delen</string>
+    <string name="menu_open">Openen</string>
+    <string name="menu_move">Verplaatsen</string>
+    <string name="menu_copy">Kopiëren</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_print">Afdrukken</string>
+    <string name="menu_compress">Comprimeren</string>
+    <string name="menu_paste">Kopiëren</string>
+    <string name="menu_sort_by">Sorteren op</string>
+    <string name="menu_sort_by_name">Op naam</string>
+    <string name="menu_sort_by_type">Op type</string>
+    <string name="menu_sort_by_date">Op datum</string>
+    <string name="menu_sort_by_size">Op grootte</string>
+    <string name="menu_unzip">Uitpakken</string>
+    <string name="menu_view_list">Lijstweergave</string>
+    <string name="menu_view_grid">Rasterweergave</string>
+    <string name="menu_view_column">Kolomweergave</string>
+    <string name="menu_unselect_all">Alles deselecteren</string>
+    <string name="select_file">Bestand selecteren</string>
+    <string name="select">Selecteren</string>
+    <string name="file_info_title">Bestandseigenschappen</string>
+    <string name="file_info_title_dir">Mapeigenschappen</string>
+    <string name="create_new_folder">Nieuwe map maken</string>
+    <string name="create_new_zip_file">Nieuw ZIP-bestand</string>
+    <string name="create_compress_encryption_file">Comprimeren en coderen</string>
+    <string name="compress_encryption_file">Stel een wachtwoord in om een met een wachtwoord beveiligd ZIP-bestand te maken.</string>
+    <string name="folder_name">Mapnaam</string>
+    <string name="file_name">Bestandsnaam</string>
+    <string name="this_folder_is_empty">Deze map is leeg.</string>
+    <string name="sd_is_used_by_other">De geheugenkaart is in USB-massaopslagmodus. Sluit deze modus af om toegang te krijgen tot de geheugenkaart.</string>
+    <string name="file_renamed">Bestandsnaam gewijzigd.</string>
+    <string name="folder_renamed">Mapnaam gewijzigd.</string>
+    <plurals name="move_success">
+        <item quantity="one">%1$d item verplaatst</item>
+        <item quantity="other">%1$d items verplaatst</item>
+    </plurals>
+    <string name="error_moving">Er is een fout opgetreden tijdens het verplaatsen.</string>
+    <plurals name="copy_success">
+        <item quantity="one">%1$d item gekopieerd</item>
+        <item quantity="other">%1$d items gekopieerd</item>
+    </plurals>
+    <string name="error_copying">Er is een fout opgetreden tijdens het kopiëren.</string>
+    <plurals name="delete_success">
+        <item quantity="one">%1$d item verwijderd</item>
+        <item quantity="other">%1$d items verwijderd</item>
+    </plurals>
+    <string name="delete_failed">Er is een fout opgetreden tijdens het verwijderen.</string>
+    <string name="really_delete_selected">Alle geselecteerde items en alle inhoud worden verwijderd. Weet u zeker dat u wilt doorgaan?</string>
+    <string name="paste_button">Plakken</string>
+    <string name="place_button">Plaatsen</string>
+    <string name="select_folder">Map selecteren</string>
+    <string name="copied_file_name">Kopie van %s</string>
+    <string name="copied_file_name_2">Kopie %1$d van %2$s</string>
+    <string name="loading">Laden...</string>
+    <string name="deleting">Verwijderen...</string>
+    <string name="open_wifi">Wi-Fi openen</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="wifi_unavaiable">Wi-Fi is niet verbonden. Wilt u nu verbinding maken?</string>
+    <string name="check_wifi">Controleer de Wi-Fi-verbinding.</string>
+    <string name="shared_folders">Externe mappen</string>
+    <string name="sd_card">SD-kaart</string>
+    <string name="sd_missing">Geheugenkaart ontbreekt. Plaats geheugenkaart om bestanden te lezen.</string>
+    <string name="error_creating_new_folder">Kan geen nieuwe map maken.</string>
+    <string name="error_renaming_file">Kan bestandsnaam niet wijzigen.</string>
+    <string name="error_renaming_folder">Kan mapnaam niet wijzigen.</string>
+    <string name="error_file_does_not_exists">Bestand bestaat niet.</string>
+    <string name="send_not_available">Kan dit bestandstype niet verzenden.</string>
+    <string name="application_not_available">Kan dit bestandstype niet openen.</string>
+    <string name="copy_text">Tekst kopiëren</string>
+    <string name="anonymous">Anoniem</string>
+    <string name="no_server_found">Er is geen server gevonden. Probeer het opnieuw.</string>
+    <string name="Overwrite_Zip_File">Bestaand ZIP-bestand overschrijven?</string>
+    <string name="Overwrite_Contents">Inhoud van bestaande map overschrijven?</string>
+    <string name="Unzipping">Uitpakken...</string>
+    <string name="Zipping">Inpakken...</string>
+    <string name="zip_file_name">Bestandsnaam</string>
+    <string name="create">Maken</string>
+    <string name="extract">Uitpakken</string>
+    <string name="overwrite">Overschrijven</string>
+    <string name="error_zipping_file">Er is een fout opgetreden tijdens het inpakken van uw bestand.</string>
+    <string name="error_unzip_file">Er is een fout opgetreden tijdens het uitpakken van uw bestand.</string>
+    <string name="invalid_zip_name">%1$s kan niet worden uitgepakt. Geef het bestand een geldige naam (zoals bestandsnaam%2$s) en probeer het opnieuw.</string>
+    <string name="folder">Map: </string>
+    <plurals name="smb_folder_contains">
+        <item quantity="one">Contains: %1$d item.</item>
+        <item quantity="other">Contains: %1$d items.</item>
+    </plurals>
+    <string name="size">Grootte: </string>
+    <string name="last_modified_at">Gewijzigd op: </string>
+    <string name="readable_yes">Leesbaar: ja</string>
+    <string name="readable_no">Leesbaar: nee</string>
+    <string name="writable_yes">Beschrijfbaar: ja</string>
+    <string name="writable_no">Beschrijfbaar: nee</string>
+    <string name="hidden_yes">Verborgen: ja</string>
+    <string name="hidden_no">Verborgen: nee</string>
+    <string name="download_dialog_title">Bestandsoverdracht</string>
+    <string name="transfer_complete">Overdracht voltooid</string>
+    <string name="transfer_progress">Voortgang van overdracht</string>
+    <string name="to">Aan </string>
+    <string name="hundred_percent">100%</string>
+    <string name="size_kb">%1$s kB</string>
+    <string name="crop_Image_error">Bestandstype wordt niet ondersteund.</string>
+    <string name="internal_device_storage">Intern apparaatgeheugen</string>
+    <string name="unknown">Onbekend</string>
+    <string name="sd_unmounted">SD-kaart is ontkoppeld. Koppel SD-kaart om de bestanden te lezen.</string>
+    <string name="internal_device_storage_unmounted">Intern apparaatgeheugen is ontkoppeld. Koppel het interne apparaatgeheugen om de bestanden te lezen.</string>
+    <string name="protected_content">Beveiligde inhoud</string>
+    <plurals name="item">
+        <item quantity="one">%1$d item</item>
+        <item quantity="other">%1$d items</item>
+    </plurals>
+    <string name="size_k">k</string>
+    <string name="rename_failed_title">Naam wijzigen mislukt</string>
+    <string name="renaming_exist">De naam %s is al in gebruik. Kies een andere naam.</string>
+    <string name="renaming_empty">Er is geen naam ingevoerd.</string>
+    <string name="renaming_invalid">De ingevoerde naam bevat een of meerdere ongeldige tekens. Kies een andere naam.</string>
+    <string name="renaming_file_empty">Bestandsnaam is ongeldig. Voer een bestandsnaam in die bestaat uit letters en cijfers.</string>
+    <string name="renaming_folder_empty">Mapnaam is ongeldig. Voer een bestandsnaam in die bestaat uit letters en cijfers.</string>
+    <string name="default_group">Onbekende groep</string>
+    <string name="search_hint">Bestanden zoeken</string>
+    <string name="menu_search">Zoeken</string>
+    <string name="search_folder">Map selecteren om te doorzoeken</string>
+    <string name="sd_missing_search">De geheugenkaart ontbreekt. Plaats de geheugenkaart om bestanden te zoeken.</string>
+    <string name="search_progess">Zoeken naar %1$s in %2$s"</string>
+    <string name="settings_description">Bestanden en mappen</string>
+    <string name="search_result">Resultaten binnen %s</string>
+    <string name="empty_search_result">Geen resultaten gevonden</string>
+    <string name="renaming_folder_exist">Mapnaam bestaat al, kies een andere naam</string>
+    <string name="enter_Credentials">Voeg referenties in</string>
+    <string name="name">"Naam"</string>
+    <string name="date">Datum:</string>
+    <string name="size_v">Grootte</string>
+    <string name="type">"Type"</string>
+    <string name="typ_folder">Map</string>
+    <string name="typ_file">Bestand</string>
+    <string name="typ_image">Afbeelding</string>
+    <string name="typ_audio">Audio</string>
+    <string name="typ_video">Video</string>
+    <string name="typ_text">Tekst</string>
+    <string name="typ_doc">Document</string>
+    <string name="typ_zip">ZIP</string>
+    <string name="typ_ppt">Presentatie</string>
+    <string name="typ_xml">Spreadsheet</string>
+    <string name="typ_pdf">PDF</string>
+    <string name="typ_html">Webpagina</string>
+    <string name="typ_msg">Bericht</string>
+    <string name="blank_size">-</string>
+    <string name="zip_encryption_type">Type codering</string>
+    <string name="zip_encryption_type_normal">Geen codering</string>
+    <string name="zip_encryption_type_legacy">Verouderde codering (Zip 2.0)</string>
+    <string name="zip_encryption_type_128">128 AES-codering</string>
+    <string name="zip_encryption_type_256">256 AES-codering</string>
+    <string name="show_password">Wachtwoord weergeven</string>
+    <string name="password_protected_zip">Met wachtwoord beveiligd. Voer wachtwoord in om uit te pakken.</string>
+    <string name="password_cannot_be_blank">Het wachtwoord mag niet leeg zijn</string>
+    <string name="stop_zip_file">Inpakken geannuleerd.</string>
+    <string name="stop_unzip_file">Uitpakken geannuleerd.</string>
+    <string name="zip_canceling">Inpakken annuleren...</string>
+    <string name="unzip_canceling">Uitpakken annuleren...</string>
+    <string name="zip_existing_zip_file">De selectie bevat een bestaand ZIP-bestand. Het bestaande ZIP-bestand wordt niet toegevoegd aan het nieuwe ZIP-bestand.</string>
+    <string name="menu_multimode">Meerdere selecteren</string>
+    <string name="selected">%d geselecteerd</string>
+    <string name="copied">%d gekopieerd</string>
+    <string name="usb_storage">USB-opslag</string>
+    <string name="devices">Apparaten</string>
+    <string name="shortcuts">Mappen met snelkoppelingen</string>
+    <string name="recentfile">Recente bestanden</string>
+    <string name="moving">Verplaatsen...</string>
+    <string name="copying">Kopiëren...</string>
+    <string name="menu_add_shortcut">Toevoegen aan Mappen met snelkoppelingen</string>
+    <string name="recent_file_deleted">Kan het oorspronkelijke item niet vinden.</string>
+    <string name="shortcut_deleted">Kan het oorspronkelijke item niet vinden. Wilt u deze snelkoppeling verwijderen?</string>
+    <string name="shortcut_storage_unmount">Kan het oorspronkelijke item niet vinden omdat het opslagapparaat is verwijderd. Wilt u deze snelkoppeling verwijderen?</string>
+    <string name="recent_file_storage_unmount">Kan het oorspronkelijke item niet vinden omdat het opslagapparaat is verwijderd.</string>
+    <string name="menu_delete_shorcut">Verwijderen uit Mappen met snelkoppelingen</string>
+    <string name="menu_rename_shorcut">Naam van map met snelkoppelingen wijzigen</string>
+    <string name="message_delete_shorcut">Wilt u deze map met snelkoppelingen verwijderen uit de lijst Mappen met snelkoppelingen? Het verwijderen van de map met snelkoppelingen heeft geen gevolgen voor de oorspronkelijke map.</string>
+    <string name="message_rename_shorcut">Het wijzigen van de naam van de map met snelkoppelingen heeft geen gevolgen voor de oorspronkelijke map.</string>
+    <string name="availmem_gb">%1$s GB beschikbaar</string>
+    <string name="move_shadow">Verplaatsen</string>
+    <string name="no_tranfer_item">Er is momenteel geen te verplaatsen item.</string>
+    <string name="done_button">Gereed</string>
+    <plurals name="copy_items_to">
+        <item quantity="one">%1$d item kopiëren naar:</item>
+        <item quantity="other">%1$d items kopiëren naar:</item>
+    </plurals>
+    <plurals name="move_items_to">
+        <item quantity="one">%1$d item verplaatsen naar:</item>
+        <item quantity="other">%1$d items verplaatsen naar:</item>
+    </plurals>
+    <string name="waiting">Wachten</string>
+    <string name="progress_precentage">%1$d %%</string>
+    <string name="canceling">Annuleren...</string>
+    <string name="confirm_delete">Verwijderen bevestigen</string>
+    <string name="size_mb">%1$s MB</string>
+    <string name="error_occurred">Gestopt vanwege een opgetreden fout</string>
+    <string name="copy_stopped">Kopiëren gestopt</string>
+    <string name="move_stopped">Verplaatsen gestopt</string>
+    <string name="compress_using">Comprimeren met</string>
+
+</resources>

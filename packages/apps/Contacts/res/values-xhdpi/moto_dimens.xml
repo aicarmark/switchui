@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="land_dialpad_width">320dip</dimen>
+	<dimen name="dialer_separater_margin">20dip</dimen>
+	<dimen name="hintDialerDigitsSize">12dip</dimen>
+	<dimen name="largeDialerDigitsSize">16dip</dimen>
+	<dimen name="smallDialerDigitsSize">14dip</dimen>
+	<dimen name="dialer_drawer_height">426dip</dimen>
+	<dimen name="dialer_drawer_header_height">92dip</dimen>
+	<dimen name="dialer_location_height">26dip</dimen>
+	<dimen name="dialer_digits_height">66dip</dimen>
+	<dimen name="dialer_drawer_body_height">334dip</dimen>
+	<dimen name="dialer_drawer_dialpad_height">260dip</dimen>
+	<dimen name="dialer_drawer_addition_height">74dip</dimen>
+	<dimen name="dialer_drawer_key_height">61dip</dimen>
+	<dimen name="dialer_digits_text_width">260dip</dimen>
+	<dimen name="dialpad_del_btn_width">67dip</dimen>
+    <dimen name="dialpad_del_btn_marginLeft">25dip</dimen>
+</resources>

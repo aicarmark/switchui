@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:clipChildren="true"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+  <LinearLayout android:id="@+id/content_page"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+    <FrameLayout android:id="@+id/content"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="@fraction/weight_one" />
+    <LinearLayout android:id="@+id/move_n_cancel"
+                  android:orientation="horizontal"
+                  android:background="@color/movecancel_panel_background"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:visibility="gone" >
+      <Button android:id="@+id/paste_button"
+              android:layout_width="0dip"
+              android:layout_weight="1"
+              android:layout_height="wrap_content" />
+      <Button android:id="@+id/cancel_button"
+              android:layout_width="0dip"
+              android:layout_weight="1"
+              android:layout_height="wrap_content" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout android:id="@+id/file_chooser_panel"
+                android:orientation="horizontal"
+                android:background="@color/filechooser_panel_backgroud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" >
+    <Button android:id="@+id/file_chooser_cancel"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/filechooser_panel_margintop"
+            android:text="@android:string/cancel"
+            android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

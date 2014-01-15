@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="batt_manager_mode" >Mode batterie</string>
+ <string name="preset_title" >Préréglages</string>
+ <string name="customs_title" >Personnalisé</string>
+ <string name="preset_maxbatt_title" >Économie d\'énergie maximale</string>
+ <string name="preset_maxbatt_shortdesc" >Meilleure économie d\'énergie. Limitation des mises à jour automatiques des données.</string>
+ <string name="preset_nighttime_title" >Économie nocturne</string>
+ <string name="preset_nighttime_shortdesc" >Fonctionnement normal le jour. Économie d\'énergie la nuit.</string>
+ <string name="preset_perfmode_title" >Mode performances</string>
+ <string name="preset_perfmode_shortdesc" >L\'appareil se synchronise sans restriction. Aucune économie d\'énergie.</string>
+ <string name="customs_mode_title" >Économie d\'énergie personnalisée</string>
+ <string name="customs_mode_shortdesc" >Créez votre propre profil d\'économie d\'énergie.</string>
+ <string name="moreinfo_text" >Plus d\'infos</string>
+ <string name="presets_perfmode_desc" >Le téléphone se synchronise sans restriction pendant la journée.</string>
+ <string name="presets_maxsaver_desc" >"Lorsque le téléphone n\'est pas connecté à un chargeur :\n\n<li >La synchronisation des données s\'arrête après 15 minutes d\'inactivité, tant le jour que la nuit. </li>\n\n<li >L\'écran s\'assombrit.</li>"</string>
+ <string name="presets_nighttime_desc" >"Lorsque le téléphone n\'est pas connecté à un chargeur :\n\n<li >La synchronisation des données s\'arrête après 15 minutes d\'inactivité en dehors des heures de pointe (de 22 h à 5 h). La synchronisation reprend lorsque vous appuyez sur un bouton.</li>\n\n<li >Synchronisation sans restriction pendant les heures de pointe.</li>"</string>
+ <string name="presets_nighttime_desc_24" >"Lorsque le téléphone n\'est pas connecté à un chargeur :\n\n<li >La synchronisation des données s\'arrête après 15 minutes d\'inactivité en dehors des heures de pointe (de 22 h à 5 h). La synchronisation reprend lorsque vous appuyez sur un bouton.</li>\n\n<li >Synchronisation sans restriction pendant les heures de pointe.</li>"</string>
+ <string name="customs_description" >Le mode personnalisé vous donne le plein contrôle sur les fonctions\
+    d\'économie d\'énergie de votre téléphone. Ces paramètres ne sont pas actifs lorsque votre appareil est en cours de charge.</string>
+ <string name="customs_offpeak_title" ><bold >Heures creuses</bold></string>
+ <string name="customs_start_text" >Début :</string>
+ <string name="customs_end_text" >Fin :</string>
+ <string name="customs_data_text" >Désactiver les données après :</string>
+ <string name="customs_peak_title" ><bold >Heures de pointe</bold></string>
+ <string name="customs_displayopt_title" ><bold >Luminosité de l\'écran</bold></string>
+ <string name="customs_disp_text" >Si le niveau de la batterie &lt; 30 %, régler la luminosité de l\'écran à :</string>
+ <string name="but_ok_text" >OK</string>
+ <string name="but_cancel_text" >Annuler</string>
+ <string name="time_unit_minutes" >minutes</string>
+ <string name="time_unit_hour" >heure</string>
+ <string name="never_timeout" >Toujours activé</string>
+ <string name="disp_text_min" >min</string>
+ <string name="disp_text_max" >max.</string>
+ <string name="disp_text_curr" >Paramètres actuels de luminosité</string>
+ <string name="battery_manager_setting" >Gestionn. batt.</string>
+ <string name="battery_manager_settings_summary" >Paramètres d\'économie d\'énergie</string>
+ <string name="powerprofile_app_name" >Profil de batterie</string>
+ <string name="powerprofile_svc_name" >Service de profil d\'alimentation</string>
+ <string name="powerprofile_rcv_name" >Récepteur de profil d\'alimentation</string>
+ <string name="logtitle" >Durée de la désactivation de données : \n</string>
+ <string name="logs" >Afficher le journal</string>
+ <string name="pref_user_max_timeout" >Désactiver les données après</string>
+ <string name="remote_mgmt_text" >Ce mode peut désactiver votre connexion aux données cellulaires après une période d\'inactivité, pendant laquelle le téléphone ne synchronise aucune donnée.\n\nLorsque la connexion est rompue, la lecture multimédia en continu est interrompue.</string>
+ <string name="remote_mgmt_title" >Avis</string>
+ <string name="lightsensorctrl" >La luminosité de l\'écran est maintenant réglée automatiquement par le capteur de lumière</string>
+ <string name="power_usage_summary_title" >Utilisation de la batterie</string>
+ <string name="power_usage_summary" >Répartition de l\'utilisation de la batterie</string>
+ <string name="notice_profile_select" >Pour améliorer la durée de vie de la batterie, nous avons réglé la période creuse entre 22 h et 5 h.</string>
+ <string name="configure_text" >Configurer</string>
+ <string name="pwrup_notice_title" >Gestionnaire de batterie en mode d\'économie nocturne</string>
+ <string name="pwrup_notice_subtext" >Cliquez pour plus de détails</string>
+ <string name="pwrup_notice_desc" >Le gestionnaire de batterie est en mode d\'économie nocturne pour préserver l\'énergie de la batterie.\n\n\
+Le mode d\'économie nocturne interrompt les connexions de données après 15 minutes d\'inactivité entre 22 h et
+et 5 h, si l\'appareil n\'est pas en cours de charge.\n\nDurant cette période, votre appareil \
+ne fait pas la synchronisation ni la lecture de contenu multimédia en continu.\n\nPour changer ce réglage, appuyez sur \"Configurer\" maintenant ou ouvrez le \
+Gestionnaire de batterie dans Toutes les applications.\n</string>
+ <string name="battery_setting" >Paramètres de batterie</string>
+ <string name="bu_level_label" >Niveau de charge :</string>
+ <string name="bu_entry_label" >Appuyez ici pour connaître les statistiques d\'utilisation</string>
+ <string name="bu_pct_text" ><xliff:g id ="number" >%d</xliff:g><xliff:g id ="percent" >%%</xliff:g></string>
+</resources>

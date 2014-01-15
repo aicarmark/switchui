@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:render="http://schemas.android.com/apk/res/com.motorola.mmsp.weather"	
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/city_weather" android:focusable="false">
+
+	<LinearLayout 
+			android:id="@+id/weather_animation_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			>
+	</LinearLayout>
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:id="@+id/city_weathers">
+
+		<com.motorola.mmsp.weather.sinaweather.app.MyGallery
+			xmlns:android="http://schemas.android.com/apk/res/android"
+
+			android:id="@+id/city_weather_gallery" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:focusable="true"
+			android:spacing="0dip" android:hapticFeedbackEnabled="false"
+			android:listSelector="#00000000" android:background="#00000000"
+			android:fadingEdge="none" />
+
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"  
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="92.5dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+		android:layout_height="5dp" 
+		android:id="@+id/city_weather_tab_layout">
+		<TabWidget android:id="@+id/city_weather_tab"
+			android:layout_width="fill_parent" android:layout_marginTop="2dip"
+			android:clickable="false" android:longClickable="false"
+			android:layout_height="wrap_content" android:tabStripEnabled="false"
+			android:gravity="center_horizontal" android:background="@drawable/hotseat_track_holo">
+
+		</TabWidget>
+	</LinearLayout>
+
+	<com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout android:layout_x="0dip" android:layout_y="0dip" android:id="@+id/current_image"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/city_weather_tab_layout"
+		android:layout_marginBottom="5dp">
+		
+		<LinearLayout android:gravity="center|center_vertical"
+			android:orientation="horizontal" android:id="@+id/LinearLayoutloadingfooter"
+			android:visibility="gone" android:layout_width="fill_parent"
+			android:layout_height="50.0dip">
+			
+		    <ProgressBar android:id="@+id/footLoading"
+				android:layout_width="20dip" android:layout_height="20dip"
+				style="@style/creategroupdialog1" />
+
+			<TextView android:textColor="@android:color/white"
+				android:id="@+id/loading" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/loading" />
+		</LinearLayout>
+</com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout>
+
+</com.motorola.mmsp.weather.sinaweather.app.MyRelativeLayout>

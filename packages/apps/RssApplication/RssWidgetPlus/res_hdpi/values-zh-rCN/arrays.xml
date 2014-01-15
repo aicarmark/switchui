@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Used in Bundles -->
+<string-array name="bundle_rss">This array no need to translate
+	    <item>新浪新闻</item>
+	    <item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=news</item>
+		<item>新浪财经</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=finance</item>
+		<item>新浪体育</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=sports</item>
+		<item>新浪军事</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=mil</item>
+		<item>新浪汽车</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=auto</item>
+		<item>新浪房产</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=house</item>
+		<item>新浪科技</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=tech</item>
+		<item>新浪博客</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=blog</item>
+		<item>新浪娱乐</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=ent</item>
+		<item>新浪女性</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=eladies</item>
+		<item>新浪星座</item>
+		<item>http://data.3g.sina.com.cn/oem/index.php?wm=b009&amp;ch=ast</item>
+		<item>瑞丽服饰</item>
+		<item>http://www.rayli.com.cn/rss/moto/fashion.xml</item>
+		<item>瑞丽美容</item>
+		<item>http://www.rayli.com.cn/rss/moto/beauty.xml</item>
+		<item>瑞丽格调</item>
+		<item>http://www.rayli.com.cn/rss/moto/style.xml</item>
+		<item>和讯房产头条</item>
+		<item>http://news.hexun.com/waprss/house_rss.xml</item>
+		<item>和讯头条</item>
+		<item>http://news.hexun.com/waprss/www_rss.xml</item>
+		<item>和讯理财投资</item>
+		<item>http://news.hexun.com/waprss/lcdd.xml</item>
+		<item>和讯股市直播</item>
+		<item>http://news.hexun.com/waprss/broadcast.xml</item>
+		<item>前程无忧职场气象</item>
+		<item>http://wap.51job.com/my/wap/wap_getnewslist.php?type=7101&amp;infotype=rss&amp;partner=monternet&amp;pagenum=10&amp;page=1</item>
+		<item>前程无忧劳动法苑</item>
+		<item>http://wap.51job.com/my/wap/wap_getnewslist.php?type=7102&amp;infotype=rss&amp;partner=monternet&amp;pagenum=10&amp;page=1</item>
+		<item>前程无忧无忧指数</item>
+		<item>http://wap.51job.com/my/wap/wap_getnewslist.php?type=7103&amp;infotype=rss&amp;partner=monternet&amp;pagenum=10&amp;page=1</item>
+		<item>前程无忧无忧专题</item>
+		<item>http://wap.51job.com/my/wap/wap_getnewslist.php?type=7104&amp;infotype=rss&amp;partner=monternet&amp;pagenum=10&amp;page=1</item>
+		<item>国内新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=143746653&amp;pgs=20&amp;page=1&amp;fr=jinli01</item>
+		<item>社会新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=143746651&amp;pgs=20&amp;page=1&amp;fr=jinli02</item>
+		<item>各地要闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=212846065&amp;pgs=20&amp;page=1&amp;fr=jinli03</item>
+		<item>事态万象</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=213377553&amp;pgs=20&amp;page=1&amp;fr=jinli04</item>
+		<item>国际新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=143746652&amp;pgs=20&amp;page=1&amp;fr=jinli05</item>
+		<item>军事新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=270452900&amp;pgs=20&amp;page=1&amp;fr=jinli06</item>
+		<item>国内财经</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=200108731&amp;pgs=20&amp;page=1&amp;fr=jinli08</item>
+		<item>国际财经</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=200108735&amp;pgs=20&amp;page=1&amp;fr=jinli09</item>
+		<item>全球股市</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=259055548&amp;pgs=20&amp;page=1&amp;fr=jinli10</item>
+		<item>新股快讯</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=257612859&amp;pgs=20&amp;page=1&amp;fr=jinli11</item>
+		<item>股市快报</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=257611804&amp;pgs=20&amp;page=1&amp;fr=jinli12</item>
+		<item>IT 国内</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=203663552&amp;pgs=20&amp;page=1&amp;fr=jinli13</item>
+		<item>IT 国际</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=203663588&amp;pgs=20&amp;page=1&amp;fr=jinli14</item>
+		<item>3G 频道 </item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=240164931&amp;pgs=20&amp;page=1&amp;fr=jinli15</item>
+		<item>数码要闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=277105678&amp;pgs=20&amp;page=1&amp;fr=jinli16</item>
+		<item>IT 界</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=203663511&amp;pgs=20&amp;page=1&amp;fr=jinli17</item>
+		<item>汽车资讯</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=200423397&amp;pgs=20&amp;page=1&amp;fr=jinli18</item>
+		<item>房产</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=259025347&amp;pgs=20&amp;page=1&amp;fr=jinli19</item>
+		<item>综合体育热点新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=267235042&amp;pgs=20&amp;page=1&amp;fr=jinli20</item>
+		<item>体育频道热点新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=249900276&amp;pgs=20&amp;page=1&amp;fr=jinli21</item>
+		<item>综合体育</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=204186936&amp;pgs=20&amp;page=1&amp;fr=jinli22</item>
+		<item>娱乐新闻汇总</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=246373040&amp;pgs=20&amp;page=1&amp;fr=jinli23</item>
+		<item>女人天下</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=220754821&amp;pgs=20&amp;page=1&amp;fr=jinli26</item>
+		<item>男人情感</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=257608144&amp;pgs=20&amp;page=1&amp;fr=jinli27</item>
+		<item>文化新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=244610607&amp;pgs=20&amp;page=1&amp;fr=jinli28</item>
+		<item>健康饮食</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=212462850&amp;pgs=20&amp;page=1&amp;fr=jinli30</item>
+		<item>女性健康</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=212457560&amp;pgs=20&amp;page=1&amp;fr=jinli31</item>
+		<item>教育动态</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=200312987&amp;pgs=20&amp;page=1&amp;fr=jinli33</item>
+		<item>教育频道每日精彩推荐</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=249971372&amp;pgs=20&amp;page=1&amp;fr=jinli34</item>
+		<item>教育新闻</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=200312983&amp;pgs=20&amp;page=1&amp;fr=jinli35</item>
+		<item>国内旅游</item>
+		<item>http://wap.sohu.com/interfaces/news/listrss.jsp?pid=224920722&amp;pgs=20&amp;page=1&amp;fr=jinli36</item>
+	</string-array>
+    
+    <string-array name="add_feed_ways">
+        <item>绑定</item>
+        <item>自定义</item>
+        <item>添加的订阅源历史记录</item>
+    </string-array>
+    <string-array name="feed_summary">
+        <item>绑定是新闻订阅源的集合。</item>
+        <item>通过输入 RSS 订阅源地址，添加自定义订阅源。</item>
+        <item>从最近添加项中添加订阅源。</item>
+    </string-array>
+    <!-- Used in RssSetings -->
+    <string-array name="setting_name">
+        <item>小部件名称</item>
+        <item>显示条目为</item>
+        <item>更新频率</item>
+    </string-array>
+    <string-array name="show_item_for">
+        <item>1 天</item>
+        <item>2 天</item>
+        <item>3 天</item>
+        <item>1 周</item>
+        <item>1 个月</item>
+    </string-array>
+    <string-array name="update_frequency">
+        <item>从不</item>
+        <item>1 小时</item>
+        <item>3 小时</item>
+        <item>6 小时</item>
+        <item>12 小时</item>
+        <item>1 天</item>
+    </string-array>
+
+</resources>

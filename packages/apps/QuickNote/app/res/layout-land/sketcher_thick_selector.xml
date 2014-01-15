@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.quicknote.QNSelector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quicknote="http://schemas.android.com/apk/res/com.motorola.quicknote"
+    quicknote:selector_mode="tab" >
+
+    <LinearLayout
+        android:id="@+id/selector_item_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.motorola.quicknote.QNSelectorItem
+            android:id="@+id/thick_bar_thick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            quicknote:index="2"
+            quicknote:src_down="@drawable/pen_size_large_active"
+            quicknote:src_up="@drawable/pen_size_large" />
+
+        <com.motorola.quicknote.QNSelectorItem
+            android:id="@+id/thick_bar_medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            quicknote:index="1"
+            quicknote:src_down="@drawable/pen_size_medium_active"
+            quicknote:src_up="@drawable/pen_size_medium" />
+
+        <com.motorola.quicknote.QNSelectorItem
+            android:id="@+id/thick_bar_thin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.0"
+            quicknote:index="0"
+            quicknote:src_down="@drawable/pen_size_small_active"
+            quicknote:src_up="@drawable/pen_size_small" />
+    </LinearLayout>
+
+</com.motorola.quicknote.QNSelector>

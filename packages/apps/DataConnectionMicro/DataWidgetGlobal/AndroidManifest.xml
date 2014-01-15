@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.motorola.mmsp.togglewidgets" android:versionCode="1" android:versionName="SWITCHUI2.0">
+
+        <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="9"/>
+
+
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission
+		android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission
+		android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission
+		android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission
+		android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<application android:icon="@drawable/ic_widget_toggler"
+                android:persistent="true"
+		android:label="@string/app_name">
+		<!--  activity android:name=".TestActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>-->
+		<receiver android:name=".AirplaneModeToggle"
+			android:label="@string/airplane_app_name"
+			android:icon="@drawable/ic_widget_airplane_mode">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+                                <action android:name="android.intent.action.SERVICE_STATE"/>
+
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_servicetoggle" />
+		</receiver>
+
+		<receiver android:name=".WifiToggle"
+			android:label="@string/wifi_app_name"
+			android:icon="@drawable/ic_widget_wifi">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+				<action
+					android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_servicetoggle_wifi" />
+		</receiver>
+		<receiver android:name=".DataToggle"
+			android:label="@string/data_app_name"
+			android:icon="@drawable/ic_widget_data">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+				<action android:name="android.intent.action.AIRPLANE_MODE" />
+
+			</intent-filter>
+                        <!--begin: IKDOMINO-1428, kbg374, change the meta resource, 2011-07-25-->
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_servicetoggle_data" />
+                        <!--end: IKDOMINO-1428, kbg374, change the meta resource, 2011-07-25-->
+		</receiver>
+		<receiver android:name=".BluetoothToggle"
+			android:label="@string/bluetooth_app_name"
+			android:icon="@drawable/ic_widget_bluetooth">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET" />
+				<action
+					android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_servicetoggle_bt" />
+		</receiver>
+		<!--  receiver android:name=".APNToggle"
+			android:label="@string/apn_app_name"
+			android:icon="@drawable/ic_widget_wifi">
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/widget_servicetoggle_apn" />
+		</receiver>
+
+        <receiver android:name=".ApnControlWidgetProvider"
+        android:icon="@drawable/icon"
+        android:label="@string/apncontrol_app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_servicetoggle_apncontrol" />
+        </receiver>
+
+        <service android:name=".ApnControlWidgetService"
+            android:label="@string/apncontrol_app_name" />-->
+	</application>
+
+
+</manifest>

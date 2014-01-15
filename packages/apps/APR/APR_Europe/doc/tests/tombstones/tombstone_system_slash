@@ -1,0 +1,191 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'unknown'
+pid: 1035, tid: 1035  >>> /system/bin/vold <<<
+signal 11 (SIGSEGV), fault addr 00000014
+ r0 00012220  r1 00000000  r2 00000000  r3 00000000
+ r4 00012220  r5 000052d2  r6 00012250  r7 0000bee1
+ r8 00000000  r9 00000000  10 00000000  fp 00000000
+ ip 00011304  sp bea82b40  lr 0000b929  pc 0000bee8  cpsr 00000030
+         #00  pc 0000bee8  /system/bin/vold
+         #01  pc 0000b926  /system/bin/vold
+         #02  pc 0000be28  /system/bin/vold
+         #03  pc 00009bac  /system/bin/vold
+         #04  pc 00009aa6  /system/bin/vold
+         #05  pc 00009b34  /system/bin/vold
+         #06  pc 0000999e  /system/bin/vold
+         #07  pc 0000bf66  /system/lib/libc.so
+         #08  pc b00016d0  /system/bin/linker
+code:
+ 0000bed8   ffffe54d ffffe598 6b83b5f8 4d121c04
+ 0000bee8   f7fe6958 6aa1ff3d f7ff1c06 447dfa33
+stack:
+    bea82b00  00000002  
+    bea82b04  afe0eca8  /system/lib/libc.so
+    bea82b08  00000000  
+    bea82b0c  00012380  [heap]
+    bea82b10  00000000  
+    bea82b14  00012380  [heap]
+    bea82b18  000103b3  /system/bin/vold
+    bea82b1c  afe11861  /system/lib/libc.so
+    bea82b20  000111cc  /system/bin/vold
+    bea82b24  bea82b44  [stack]
+    bea82b28  00012380  [heap]
+    bea82b2c  0000db71  /system/bin/vold
+    bea82b30  afe05f68  /system/lib/libc.so
+    bea82b34  7665642f  
+    bea82b38  df002777  
+    bea82b3c  e3a070ad  
+#00 bea82b40  00000001  
+    bea82b44  00012220  [heap]
+    bea82b48  000111cc  /system/bin/vold
+    bea82b4c  00012250  [heap]
+    bea82b50  0000bee1  /system/bin/vold
+    bea82b54  0000b929  /system/bin/vold
+#01 bea82b58  61006b63  
+    bea82b5c  735f7373  
+    bea82b60  61726f74  
+    bea82b64  00000000  
+    bea82b68  00012250  [heap]
+    bea82b6c  00000000  
+    bea82b70  00012220  [heap]
+    bea82b74  000111cc  /system/bin/vold
+    bea82b78  00012250  [heap]
+    bea82b7c  00012220  [heap]
+    bea82b80  000111cc  /system/bin/vold
+    bea82b84  00012250  [heap]
+    bea82b88  0000e7f0  /system/bin/vold
+    bea82b8c  0000be2d  /system/bin/vold
+#02 bea82b90  00012220  [heap]
+    bea82b94  000111cc  /system/bin/vold
+    bea82b98  00000001  
+    bea82b9c  0000f737  /system/bin/vold
+    bea82ba0  00000000  
+    bea82ba4  000111cc  /system/bin/vold
+    bea82ba8  00011344  /system/bin/vold
+    bea82bac  bea82bdc  [stack]
+    bea82bb0  0000e9eb  /system/bin/vold
+    bea82bb4  00009bb1  /system/bin/vold
+#03 bea82bb8  000111cc  /system/bin/vold
+    bea82bbc  00009aa9  /system/bin/vold
+#04 bea82bc0  00000000  
+    bea82bc4  000111cc  /system/bin/vold
+    bea82bc8  0000000a  
+    bea82bcc  0000000b  
+    bea82bd0  bea82bdc  [stack]
+    bea82bd4  00009b39  /system/bin/vold
+#05 bea82bd8  00000000  
+    bea82bdc  62616e65  
+    bea82be0  755f656c  
+    bea82be4  0000736d  
+    bea82be8  64732f3a  
+    bea82bec  64726163  
+    bea82bf0  00000000  
+    bea82bf4  000095f9  /system/bin/vold
+    bea82bf8  afe41c28  
+    bea82bfc  0000fc05  /system/bin/vold
+    bea82c00  000122b8  [heap]
+    bea82c04  00009655  /system/bin/vold
+    bea82c08  756c6f76  
+    bea82c0c  6e5f656d  
+    bea82c10  64656d6f  
+    bea82c14  2f3a6169  
+    bea82c18  61636473  
+    bea82c1c  00006472  
+    bea82c20  000121a8  [heap]
+    bea82c24  000122b8  [heap]
+    bea82c28  00012250  [heap]
+    bea82c2c  bea82c08  [stack]
+    bea82c30  00000000  
+    bea82c34  afe0eca8  /system/lib/libc.so
+    bea82c38  000111cc  /system/bin/vold
+    bea82c3c  00012220  [heap]
+    bea82c40  00012250  [heap]
+    bea82c44  46e630ae  
+    bea82c48  bea82c90  [stack]
+    bea82c4c  000111cc  /system/bin/vold
+    bea82c50  00011340  /system/bin/vold
+    bea82c54  0000000a  
+    bea82c58  00000080  
+    bea82c5c  000099a3  /system/bin/vold
+#06 bea82c60  bea82d1c  [stack]
+    bea82c64  b00005c7  /system/bin/linker
+    bea82c68  00000008  
+    bea82c6c  bea82c90  [stack]
+    bea82c70  00000006  
+    bea82c74  bea82d1c  [stack]
+    bea82c78  00000e10  
+    bea82c7c  00000040  
+    bea82c80  00000000  
+    bea82c84  00000400  
+    bea82c88  00000000  
+    bea82c8c  bea82d24  [stack]
+    bea82c90  00000080  
+    bea82c94  00000000  
+    bea82c98  00000000  
+    bea82c9c  00000000  
+    bea82ca0  00000000  
+    bea82ca4  00000000  
+    bea82ca8  00000000  
+    bea82cac  00000000  
+    bea82cb0  00000000  
+    bea82cb4  00000000  
+    bea82cb8  00000000  
+    bea82cbc  00000000  
+    bea82cc0  00000000  
+    bea82cc4  00000000  
+    bea82cc8  00000000  
+    bea82ccc  00000000  
+    bea82cd0  00000000  
+    bea82cd4  00000000  
+    bea82cd8  00000000  
+    bea82cdc  00000000  
+    bea82ce0  00000000  
+    bea82ce4  00000000  
+    bea82ce8  00000000  
+    bea82cec  00000000  
+    bea82cf0  00000000  
+    bea82cf4  00000000  
+    bea82cf8  00000000  
+    bea82cfc  00000000  
+    bea82d00  00000000  
+    bea82d04  00000000  
+    bea82d08  00000000  
+    bea82d0c  00000000  
+    bea82d10  00000010  
+    bea82d14  0000040b  
+    bea82d18  ffffffff  
+    bea82d1c  00000e0f  
+    bea82d20  0002dfe1  
+    bea82d24  00000002  
+    bea82d28  00010000  /system/bin/vold
+    bea82d2c  00000001  
+    bea82d30  00000000  
+    bea82d34  00000000  
+    bea82d38  00000000  
+    bea82d3c  46e630ae  
+    bea82d40  00000000  
+    bea82d44  00000000  
+    bea82d48  00000000  
+    bea82d4c  00000000  
+    bea82d50  00000000  
+    bea82d54  afe0bf69  /system/lib/libc.so
+#07 bea82d58  00000000  
+    bea82d5c  b00016d5  /system/bin/linker
+#08 bea82d60  00000001  
+    bea82d64  bea82e3d  [stack]
+    bea82d68  00000000  
+    bea82d6c  bea82e4e  [stack]
+    bea82d70  bea82e7f  [stack]
+    bea82d74  bea82e9b  [stack]
+    bea82d78  bea82eae  [stack]
+    bea82d7c  bea82ec3  [stack]
+    bea82d80  bea82ede  [stack]
+    bea82d84  bea82ef1  [stack]
+    bea82d88  bea82f0a  [stack]
+    bea82d8c  bea82fb1  [stack]
+    bea82d90  bea82fd4  [stack]
+    bea82d94  00000000  
+    bea82d98  00000010  
+    bea82d9c  000010d7  
+    bea82da0  00000006  
+    bea82da4  00001000  

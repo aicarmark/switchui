@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:orientation="vertical"
+    android:paddingLeft="12dip" android:paddingRight="12dip">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_name_group_msg"
+        android:gravity="left"
+        android:text="@string/give_name_to_new_group"
+        android:layout_marginBottom="12dip" />
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoText="true"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:id="@+id/dialog_name_group_edit"/>
+
+</LinearLayout>

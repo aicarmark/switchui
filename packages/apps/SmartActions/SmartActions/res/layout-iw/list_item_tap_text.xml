@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.contextual.pickers.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View android:id="@+id/list_item_color_chip"
+        android:layout_width="@dimen/list_item_tap_text_list_item_color_chip_width"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/list_item_tap_text_list_item_color_chip_marginRight"
+        android:visibility="gone"/>
+    <ImageView android:id="@+id/list_item_icon"
+        android:contentDescription="@string/list_item_icon_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/list_item_text_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_tap_text_list_item_text_area_min_height"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/list_item_tap_text_list_item_text_area_padding"
+        android:paddingBottom="@dimen/list_item_tap_text_list_item_text_area_padding"
+        android:paddingRight="@dimen/list_item_tap_text_list_item_text_area_padding"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView android:id="@+id/list_item_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"/>
+        <TextView android:id="@+id/list_item_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_item_tap_text_list_item_desc_font_size"
+            android:visibility="gone"/>
+        <SeekBar android:id="@+id/seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="@dimen/list_item_tap_text_divider_width"
+        android:layout_height="fill_parent"
+        android:background="@drawable/divider_vertical_white"
+        android:visibility="gone" />
+
+    <CheckedTextView android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_item_tap_text_checked_text_view_marginLeft"
+        android:layout_marginRight="@dimen/list_item_tap_text_checked_text_view_marginRight"/>
+</com.motorola.contextual.pickers.CustomLinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ * Copyright (c) 2011 Motorola, Inc.
+ * All Rights Reserved
+ *
+ * The contents of this file are Motorola Confidential Restricted (MCR).
+ * Revision history (newest first):
+ */-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal" android:baselineAligned="false"
+  android:gravity="center_vertical" android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView android:id="@+id/filetransfer_item_icon"
+    android:layout_height="wrap_content" android:layout_width="wrap_content"
+    android:layout_gravity="center_vertical" />
+
+  <LinearLayout android:id="@+id/filetransfer_text_and_progress"
+    android:orientation="vertical" android:layout_width="400dp"
+    android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp" android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout android:orientation="horizontal"
+      android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+      <TextView android:id="@+id/filetransfer_description_text_1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ellipsize="none" android:singleLine="true" />
+
+      <TextView android:id="@+id/filetransfer_description_text_2"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:ellipsize="start" android:singleLine="true" />
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/filetransfer_progress_container"
+      android:orientation="horizontal" android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+      <ProgressBar android:id="@+id/filetransfer_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp" android:layout_height="wrap_content"
+        android:max="100" android:progress="0" />
+
+      <TextView android:id="@+id/filetransfer_precentage_text"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:singleLine="true" />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/filetransfer_info_text"
+      android:layout_width="fill_parent" android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:ellipsize="none" android:singleLine="true" />
+
+  </LinearLayout>
+
+  <LinearLayout android:id="@+id/filetransfer_cancel_button_container"
+    android:orientation="horizontal" android:layout_gravity="center_vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/filetransfer_cancel_button"
+      android:layout_height="wrap_content" android:layout_width="wrap_content"
+      android:src="@drawable/ic_control_cancel" android:layout_gravity="left|center_vertical" />
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.motorola.mmsp.weather"
+    android:versionCode="1" 
+    android:versionName="00.00.0003I">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	
+<!--    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="9"/> -->
+	<supports-screens 
+		android:largeScreens="true" 
+		android:smallScreens="true" 
+		android:anyDensity="true" 
+		android:normalScreens="true" android:resizeable="true">
+	</supports-screens>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application 
+    	android:name=".locationwidget.small.WidgetApplication"
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name_widget"
+    	android:debuggable="false">
+     <!-- 
+    <activity android:name=".Configure"
+    	android:label = "@string/app_name_original"
+    	android:theme = "@android:style/Theme.Dialog">
+        <intent-filter>
+             <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+        </intent-filter>
+    </activity>
+       
+    -->    
+    <receiver android:name=".locationwidget.small.WeatherNewsProvider">
+            <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/appwidget_provider_small"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.motorola.mmsp.home.ACTION_MMSP_WIDGET"/>
+    			               
+                <action android:name="com.motorola.mmsp.motoswitch.action.weatherdetailview.exit" />
+                <action android:name="com.motorola.mmsp.weather.updated.response" />
+                <action android:name="com.motorola.mmsp.weather.cities.updating"/>
+                <action android:name="com.motorola.mmsp.weather.cities.updated.response" />
+                
+            </intent-filter>      
+    </receiver>
+    
+    <service android:name=".locationwidget.small.WidgetUpdateService"
+    />
+    
+     <service  android:name=".sinaweather.service.UpdateService">
+        	<intent-filter>
+        		<!-- 
+        		<action android:name="com.motorola.mmsp.weather.updating" />
+        		<action android:name="com.motorola.mmsp.weather.cities.add"/>
+        		<action android:name="com.motorola.mmsp.weather.cities.delete"/>
+        		<action android:name="com.motorola.mmsp.weather.widget.peroid"/>
+        		<action android:name="com.motorola.mmsp.weather.cities.updating"/>
+        		<action android:name="com.motorola.mmsp.weather.update.frequency"/> 
+        		<action android:name="motorola.intent.action.START_WEATHER_SERVICE"/>
+        		-->
+                        <action android:name="motorola.intent.action.START_WEATHER_SERVICE"/>
+                        <action android:name="com.motorola.mmsp.weather.tick" />
+        		<action android:name="com.motorola.mmsp.weather.search.city.request"/>
+        		<action android:name="com.motorola.mmsp.weather.cities.add.request"/>
+        		<action android:name="com.motorola.mmsp.weather.cities.delete.request"/>
+        		<action android:name="com.motorola.mmsp.accuweather.cities.rearranged"/>
+        		<action android:name="com.motorola.mmsp.weather.updating.request"/>
+        		<action android:name="com.motorola.mmsp.weather.enalbe_server_update"/>
+        		<action android:name="com.motorola.mmsp.weather.weather.request"/>
+        		<action android:name="com.motorola.mmsp.weather.update.frequency"/>
+        		<action android:name="com.motorola.mmsp.weather.external.query"/>
+        		<action android:name="com.motorola.mmsp.weather.cities.rearranged"/>
+        	</intent-filter>
+        </service>
+		
+		<provider android:name=".sinaweather.service.WeatherProvider" android:authorities="com.motorola.mmsp.weather.service.WeatherProvider"/>
+		
+		<receiver android:name=".sinaweather.app.WeatherInfoFromServiceReceiver">
+            <intent-filter> 
+            	<action android:name="com.motorola.mmsp.weather.updated.response"/>
+            	<action android:name="com.motorola.mmsp.weather.cities.updated.response"/>
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter> 
+            	<action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+            	<data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+        
+        <activity android:name=".sinaweather.app.MotoWeather" 
+                  android:label="@string/widget_name">
+   			<!--  
+            <intent-filter>           
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />           
+            </intent-filter>
+          	-->
+        </activity>
+       
+        <activity android:name=".sinaweather.app.MoreWeatherActivity"  android:launchMode="singleTask" 
+            	android:screenOrientation="portrait"
+            	android:hardwareAccelerated="false"
+        	  	android:theme="@style/TransparentMoreActivity" android:excludeFromRecents="true">
+            <intent-filter>           
+                <action android:name="motorola.weather.action.MoreWeatherActivity" />
+                <action android:name="com.motorola.mmsp.weather.app.WeatherDetailActivity"/>
+                <category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>
+	    </activity>
+        
+        <activity android:name=".sinaweather.app.WeatherSettingActivity" 
+        	  android:configChanges="navigation|orientation|keyboardHidden|screenSize" android:excludeFromRecents="true" android:theme="@style/Theme.NoTitleBar">
+            <intent-filter>           
+                <action android:name="motorola.intent.action.START_WEATHER_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>        	
+        </activity>	
+        
+        <activity android:name=".sinaweather.app.SearchCityActivity" 
+        	  android:configChanges="navigation|orientation|keyboardHidden|screenSize" android:excludeFromRecents="true" android:theme="@style/Theme.NoTitleBar"/>
+		
+        <activity android:name=".sinaweather.app.CitiesActivity"   android:launchMode="singleTask" android:taskAffinity="com.motorola.hasweather" 
+		      android:configChanges="navigation|orientation|keyboardHidden|screenSize" android:excludeFromRecents="true" android:theme="@style/Theme.NoTitleBar">	
+	        <intent-filter>           
+                <action android:name="motorola.weather.action.CitiesActivity" />
+                <category android:name="android.intent.category.DEFAULT" /> 
+            </intent-filter>
+	    </activity>
+	
+        <activity android:name=".sinaweather.app.BrandingInfo" android:label="@string/about"/>
+        
+        
+        <service
+            android:label="@string/wallpaper_cube1"
+            android:name=".livewallpaper.weatherlivewallpaper.LiveWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER"   
+            android:configChanges="orientation|keyboard"       
+            android:description="@string/description">
+            <intent-filter>      
+                <action android:name="android.service.wallpaper.WallpaperService" />       
+			</intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/cube1" />
+        </service>
+        
+	 	<receiver android:name=".livewallpaper.weatherlivewallpaper.WeatherReceiver"> 
+	 	    <meta-data android:name="android.appwidget.provider"
+                    android:resource="@xml/cube1">
+	 	    </meta-data>
+	 	    <intent-filter>  
+    			<action android:name="com.motorola.mmsp.weather.updated.response" />
+    			<action android:name="com.motorola.mmsp.weather.cities.updated.response" />		
+            </intent-filter>
+	 	</receiver>
+        
+        <activity android:label="@string/livewallpaper_settings"
+  		    android:name=".livewallpaper.weatherlivewallpaper.LiveWallpaperSettings"
+   		    android:exported="true"
+            android:icon="@drawable/icon"
+            android:theme="@android:style/Theme.Holo">
+  		</activity>
+  		
+  		<activity
+            android:name=".livewallpaper.weatherlivewallpaper.LivewallpaperCityList"
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+
+  		<!-- added by sun yinwei -->
+  		
+  		<activity android:name="com.motorola.mmsp.newsweather.locationwidget.small.WeatherRssConfig">  
+        	<intent-filter>
+        	     <action android:name="com.motorola.mmsp.plugin.CONFIGURE" />
+        	</intent-filter>  	
+    	</activity>
+    	
+  		<receiver android:name="com.motorola.mmsp.weather.locationwidget.small.WeatherProviderUsePlugin">
+    		<meta-data android:name="com.motorola.mmsp.plugin" 
+    			android:resource="@xml/widget_info"/>
+            <intent-filter>
+                <action android:name="com.motorola.mmsp.plugin.HOSTHOME" />
+                <category android:name="com.motorola.mmsp.plugin.WIDGET" />
+            </intent-filter>
+    	</receiver>
+    	
+  		<!-- <provider android:name="com.motorola.mmsp.weather.locationwidget.small.WeatherWidgetContentProvider"
+                  android:authorities="com.motorola.mmsp.weather.locationwidget.small">
+    	</provider> -->
+  	<!-- added by sun yinwei -->
+    
+    </application>
+</manifest>

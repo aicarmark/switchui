@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!--
+      Maximum dimension (height or width) of contact display photos or
+      photos from the social stream.
+    -->
+    <integer name="config_max_display_photo_dim">256</integer>
+
+    <!-- Maximum dimension (height or width) of contact photo thumbnails -->
+    <integer name="config_max_thumbnail_photo_dim">96</integer>
+
+    <!-- MOT MOD BEGIN - IKHSS7-2985 -->
+    <!-- whether feature 35412 phone# middle search is on -->
+    <bool name="config_fid35412_on">false</bool>
+    <!-- MOT MOD END - IKHSS7-2985 -->
+
+    <!-- MOT MOD BEGIN - IKHSS6UPGR-7347 -->
+    <!-- whether feature 26391 (Flexible feature to support different caller ID searches) is on -->
+    <bool name="config_fid26391_on">false</bool>
+    <!-- MOT MOD END - IKHSS6UPGR-7347 -->
+    <!-- Carrier name: CT, CU, CMCC -->
+    <string name="carrier_name"></string>
+
+    <!-- Set true if it's CMCC OT candidate build -->
+    <bool name="cmcc_ot">false</bool>
+
+</resources>

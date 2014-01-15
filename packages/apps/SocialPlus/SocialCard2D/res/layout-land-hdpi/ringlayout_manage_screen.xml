@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.motorola.mmsp.socialGraph.socialGraphWidget.ui.RingLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="521px" android:layout_height="250px"
+		android:background="@drawable/bg_manage_landscape">
+
+		<RelativeLayout android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<RelativeLayout android:id="@+id/shortcut3"
+						android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+						android:layout_marginTop="27dp" android:layout_marginLeft="11dp">
+
+						<LinearLayout android:id="@+id/imagelayout3"
+								android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+								android:gravity="center">
+
+								<ImageView android:id="@+id/image3" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+
+						<TextView android:id="@+id/text3" android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout3"
+								android:layout_alignRight="@id/imagelayout3">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/medium_size_land" android:id="@+id/bg_IM_3"
+								android:layout_height="@dimen/medium_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout3"
+								android:layout_alignRight="@id/imagelayout3">
+						</ImageView>
+
+						<LinearLayout android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/medium_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button3"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext3" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button3"
+								android:background="@drawable/contects_icon02" android:layout_width="21dp"
+								android:layout_height="19dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout3"
+								android:layout_alignRight="@id/imagelayout3">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut2"
+						android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+						android:layout_toRightOf="@id/shortcut3" android:layout_alignBottom="@id/shortcut3">
+
+						<LinearLayout android:id="@+id/imagelayout2"
+								android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image2" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+
+						<TextView android:id="@+id/text2" android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout2"
+								android:layout_alignRight="@id/imagelayout2">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/medium_size_land" android:id="@+id/bg_IM_2"
+								android:layout_height="@dimen/medium_size_land" android:visibility="invisible" 
+								android:layout_alignBottom="@id/imagelayout2"
+								android:layout_alignRight="@id/imagelayout2">
+						</ImageView>
+
+						<LinearLayout android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/medium_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button2"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext2" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button2"
+								android:background="@drawable/contects_icon02" android:layout_width="21dp"
+								android:layout_height="19dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout2"
+								android:layout_alignRight="@id/imagelayout2">
+						</ImageButton>
+				</RelativeLayout>
+
+				<View android:id="@+id/shortcut1_stub"
+						android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/large_size_land"
+						android:layout_toRightOf="@id/shortcut2" android:layout_alignBottom="@id/shortcut2">
+				</View>
+
+				<RelativeLayout android:id="@+id/shortcut4"
+						android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+						android:layout_alignLeft="@id/shortcut2" android:layout_below="@id/shortcut2">
+
+						<LinearLayout android:id="@+id/imagelayout4"
+								android:layout_width="@dimen/medium_size_land" android:layout_height="@dimen/medium_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image4" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+
+						<TextView android:id="@+id/text4" android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout4"
+								android:layout_alignRight="@id/imagelayout4">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/medium_size_land" android:id="@+id/bg_IM_4"
+								android:layout_height="@dimen/medium_size_land" android:visibility="invisible"
+								android:layout_alignTop="@id/imagelayout4"
+								android:layout_alignLeft="@id/imagelayout4">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/medium_size_land"
+								android:layout_height="@dimen/medium_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button4"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext4" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button4"
+								android:background="@drawable/contects_icon02" android:layout_width="21dp"
+								android:layout_height="19dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout4"
+								android:layout_alignRight="@id/imagelayout4">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut5"
+						android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+						android:layout_below="@id/shortcut1_stub" android:layout_toRightOf="@id/shortcut4">
+
+						<LinearLayout android:id="@+id/imagelayout5"
+								android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image5" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+
+						<TextView android:id="@+id/text5" android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout5"
+								android:layout_alignRight="@id/imagelayout5">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/small_size_land"  android:id="@+id/bg_IM_5"
+								android:layout_height="@dimen/small_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout5"
+								android:layout_alignRight="@id/imagelayout5">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/small_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button5"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext5" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button5"
+								android:background="@drawable/contects_icon03" android:layout_width="15dp"
+								android:layout_height="11dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout5"
+								android:layout_alignRight="@id/imagelayout5">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut6"
+						android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+						android:layout_below="@id/shortcut1_stub" android:layout_toRightOf="@id/shortcut5">
+
+						<LinearLayout android:id="@+id/imagelayout6"
+								android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image6" android:layout_width="fill_parent"
+										android:layout_height="fill_parent">
+								</ImageView>
+						</LinearLayout>
+						<TextView android:id="@+id/text6" android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout6"
+								android:layout_alignRight="@id/imagelayout6">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/small_size_land" android:id="@+id/bg_IM_6"
+								android:layout_height="@dimen/small_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout6"
+								android:layout_alignRight="@id/imagelayout6">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/small_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button6"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext6" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button6"
+								android:background="@drawable/contects_icon03" android:layout_width="15dp"
+								android:layout_height="11dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout6"
+								android:layout_alignRight="@id/imagelayout6">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut7"
+						android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+						android:layout_toRightOf="@+id/shortcut6" android:layout_alignTop="@id/shortcut6">
+
+						<LinearLayout android:id="@+id/imagelayout7"
+								android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image7" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+						<TextView android:id="@+id/text7" android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout7"
+								android:layout_alignRight="@id/imagelayout7">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/small_size_land" android:id="@+id/bg_IM_7"
+								android:layout_height="@dimen/small_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout7"
+								android:layout_alignRight="@id/imagelayout7">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/small_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button7"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext7" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button7"
+								android:background="@drawable/contects_icon03" android:layout_width="15dp"
+								android:layout_height="11dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout7"
+								android:layout_alignRight="@id/imagelayout7">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut8"
+						android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+						android:layout_alignBottom="@id/shortcut1_stub" android:layout_toRightOf="@id/shortcut1_stub">
+
+						<LinearLayout android:id="@+id/imagelayout8"
+								android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image8" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+						<TextView android:id="@+id/text8" android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout8"
+								android:layout_alignRight="@+id/imagelayout8">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/small_size_land" android:id="@+id/bg_IM_8"
+								android:layout_height="@dimen/small_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout8"
+								android:layout_alignRight="@id/imagelayout8">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/small_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button8"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext8" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button8"
+								android:background="@drawable/contects_icon03" android:layout_width="15dp"
+								android:layout_height="11dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout8"
+								android:layout_alignRight="@id/imagelayout8">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut9"
+						android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+						android:layout_toRightOf="@id/shortcut8" android:layout_alignTop="@id/shortcut8">
+
+						<LinearLayout android:id="@+id/imagelayout9"
+								android:layout_width="@dimen/small_size_land" android:layout_height="@dimen/small_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image9" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+						<TextView android:id="@+id/text9" android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout9"
+								android:layout_alignRight="@id/imagelayout9">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/small_size_land" android:id="@+id/bg_IM_9"
+								android:layout_height="@dimen/small_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout9"
+								android:layout_alignRight="@id/imagelayout9">
+						</ImageView>
+						<LinearLayout android:layout_width="@dimen/small_size_land"
+								android:layout_height="@dimen/small_size_land" android:orientation="vertical"
+								android:gravity="center">
+								<ImageButton android:id="@+id/button9"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext9" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button9"
+								android:background="@drawable/contects_icon03" android:layout_width="15dp"
+								android:layout_height="11dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout9"
+								android:layout_alignRight="@id/imagelayout9">
+						</ImageButton>
+
+				</RelativeLayout>
+
+				<RelativeLayout android:id="@+id/shortcut1"		
+						android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/large_size_land"
+						android:layout_toRightOf="@+id/shortcut2" android:layout_above="@id/shortcut5">
+
+						<LinearLayout android:id="@+id/imagelayout1"
+								android:layout_width="@dimen/large_size_land" android:layout_height="@dimen/large_size_land"
+								android:gravity="center">
+								<ImageView android:id="@+id/image1" android:layout_width="wrap_content"
+										android:layout_height="wrap_content">
+								</ImageView>
+						</LinearLayout>
+
+						<TextView android:id="@+id/text1" android:layout_width="@dimen/large_size_land"
+								android:layout_height="@dimen/bar_height_land" android:gravity="center"
+								android:textSize="15sp" android:textColor="#ffffffff"
+								android:singleLine="true" android:ellipsize="end"
+								android:layout_alignBottom="@id/imagelayout1"
+								android:layout_alignRight="@id/imagelayout1">
+						</TextView>
+
+						<ImageView android:layout_width="@dimen/large_size_land" android:id="@+id/bg_IM_1"
+								android:layout_height="@dimen/large_size_land" android:visibility="invisible"
+								android:layout_alignBottom="@id/imagelayout1"
+								android:layout_alignRight="@id/imagelayout1">
+						</ImageView>
+
+						<LinearLayout android:layout_width="@dimen/large_size_land"
+								android:layout_height="@dimen/large_size_land" android:orientation="vertical"
+								android:layout_alignRight="@+id/imagelayout1"
+								android:layout_alignBottom="@id/imagelayout1" android:gravity="center">
+								<ImageButton android:id="@+id/button1"
+										android:background="@drawable/ic_add_big" android:layout_width="25dp"
+										android:layout_height="25dp"></ImageButton>
+								<TextView android:id="@+id/btntext1" android:text="@string/btn_add"
+										android:layout_width="fill_parent" android:layout_height="20dp"
+										android:singleLine="true" android:ellipsize="end"
+										android:gravity="center" android:textSize="15sp" android:textColor="#ffffffff">
+								</TextView>
+						</LinearLayout>
+						<ImageButton android:id="@+id/change_button1"
+								android:background="@drawable/contects_icon01" android:layout_width="26dp"
+								android:layout_height="19dp"
+								android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+								android:layout_alignTop="@id/imagelayout1"
+								android:layout_alignRight="@id/imagelayout1">
+						</ImageButton>
+
+				</RelativeLayout>
+
+		</RelativeLayout>
+</com.motorola.mmsp.socialGraph.socialGraphWidget.ui.RingLayout>   
+

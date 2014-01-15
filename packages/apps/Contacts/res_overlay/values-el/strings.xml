@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2010 Motorola Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="private_num">Περιορισμένος αριθμός</string>
+    <string name="visual_voicemail">Οπτικός τηλεφωνητής</string>
+    <string name="Data_roaming_msg">Ενδέχεται να επιβαρυνθείτε με πρόσθετα έξοδα για τη χρήση του οπτικού τηλεφωνητή.\n\nΘέλετε να χρησιμοποιήσετε τον οπτικό τηλεφωνητή ή τον τηλεφωνητή;</string>
+
+</resources>

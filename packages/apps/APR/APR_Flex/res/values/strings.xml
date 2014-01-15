@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">APR</string>
+    <string name="APRApp">Automatic Panic Recording - 4.1.7</string>
+    <string name="output">Output:</string>
+    <string name="send_email">Send Test Email</string>
+    <string name="store_test_crash">Store Test Crash</string>
+    <string name="display_database">Display Database</string>
+    <string name="toggle_speed">Toggle Speed</string>
+    <string name="database_output">Database Output:</string>
+    <string name="apr_enabled">Enable APR</string>
+    <string name="apr_updating">APR Updating...</string>
+    <string name="rescan_content">Rescan Phone Info</string>
+
+</resources>
+

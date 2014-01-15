@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="preferences_setting"
+		android:title="@string/preferences_setting_title">
+		<CheckBoxPreference android:key="preferences_auto_update"
+			android:defaultValue="false" android:title="@string/title_preferences_auto_update"
+			android:persistent="true" />
+		<ListPreference android:key="preferences_set_update_interval"
+			android:dependency="preferences_auto_update" android:title="@string/title_auto_update_inteval"
+			android:entries="@array/auto_update_interval_text"
+			android:entryValues="@array/auto_update_interval_value"
+			android:persistent="true" android:defaultValue="1"
+			android:summary="@string/title_auto_update_inteval_default" />
+	</PreferenceCategory>
+	<PreferenceCategory android:key="preferences_upgrade_info"
+		android:title="@string/preferences_upgrade_info_title">
+		<Preference android:key="preferences_last_upgrade_timestamp"
+			android:title="@string/title_last_upgrade_timestamp"
+			android:persistent="true" android:summary="@string/title_last_upgrade_timestamp_default" />
+		<Preference android:key="preferences_database_version"
+			android:title="@string/title_database_version" android:persistent="true"
+			android:summary="@string/title_database_version_default" />
+	</PreferenceCategory>
+</PreferenceScreen>

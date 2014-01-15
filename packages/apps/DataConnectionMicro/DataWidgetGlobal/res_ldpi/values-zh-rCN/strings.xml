@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="app_name" >切换小部件</string>
+ <string name="gps_app_name" >GPS 开关</string>
+ <string name="airplane_app_name" >飞行模式开关</string>
+<string name="wifi_app_name">WLAN 开关</string>
+ <string name="bluetooth_app_name" >蓝牙开关</string>
+ <string name="apn_app_name" >APN 开关</string>
+ <string name="data_app_name" >数据开关</string>
+ <string name="widget_description" >查看和控制飞行模式状态</string>
+ <string name="widget_description_bt" >查看和控制蓝牙状态</string>
+<string name="widget_description_wifi">查看和控制 WLAN 状态</string>
+ <string name="widget_description_gps" >查看和控制 GPS 状态</string>
+<string name="StatusOn">打开</string>
+<string name="StatusOff">关闭</string>
+    <string name="StatusIntermediate"></string>
+ <string name="AirplanetoastText" >飞行模式不可用</string>
+ <string name="BluetoothtoastText" >蓝牙不可用</string>
+ <string name="GPStoastText" >GPS 不可用</string>
+<string name="WifitoastText">WLAN 不可用</string>
+    <!-- BEGIN Motorola, amz095, 12/15/2009, IKPITTSBURGH-473, Added for feature 33041 -->
+<string name="location_restriction_enabled">位置限制已启用</string>
+    <!-- END IKPITTSBURGH-473 -->
+ <string name="apncontrol_app_name" >APN 控制</string>
+ <string name="no_apn" >无 APN 可用</string>
+</resources>

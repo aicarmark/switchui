@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This comes from 'blur/apps/Home.. -->
+<resources>
+
+    <dimen name="cell_width">60px</dimen>
+    <dimen name="cell_height">62px</dimen>
+    <dimen name="workspace_hori_padding">0px</dimen>
+    <dimen name="workspace_vert_padding">53px</dimen>
+
+</resources>

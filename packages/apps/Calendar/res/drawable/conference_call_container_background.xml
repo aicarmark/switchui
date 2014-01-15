@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This background is needed for the Read Addressing widget and the minimal padding below
+    is needed to draw something.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#c5c5c5"/>
+    <padding android:left="0px" android:top="0px" android:right="0px" android:bottom="0px"/>
+    <corners android:radius="4dip"/>
+</shape>

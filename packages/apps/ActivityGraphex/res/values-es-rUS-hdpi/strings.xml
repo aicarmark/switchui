@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ <string name="manageshortcuts_hint" >Usa el gráfico para escoger 9 aplicaciones para llenar tu widget. Tendrás acceso rápido a estas aplicaciones en el panel de tu pantalla principal. </string>
+</resources>

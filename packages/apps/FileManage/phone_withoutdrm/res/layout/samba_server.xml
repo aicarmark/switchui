@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2010 Motorola, Inc.
+   * All Rights Reserved
+   *
+   * The contents of this file are Motorola Confidential Restricted (MCR).
+   * Revision history (newest first):
+   *
+   *  Date            CR                Author               Description
+   */
+-->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/SavedSmbDevice"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical" >
+  <!-- TextView android:id="@+id/samba_server_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/shared_folders" />  -->
+  <include layout="@layout/title_display_layout" />
+
+  <TextView android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+  <ListView android:id="@+id/SavedServerList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawSelectorOnTop="false" />
+
+  <ListView android:id="@+id/SambaServerPref"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="#0000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawSelectorOnTop="false" />
+
+  <TextView android:layout_width="fill_parent"
+            android:layout_height="@dimen/view_height"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>

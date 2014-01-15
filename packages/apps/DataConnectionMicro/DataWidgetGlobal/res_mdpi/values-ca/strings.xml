@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Commuta ginys</string>
+  <string name="gps_app_name">Commutació de GPS</string>
+  <string name="airplane_app_name">Commutació mode d\'avió</string>
+  <string name="wifi_app_name">Commutació de Wi-Fi</string>
+  <string name="bluetooth_app_name">Commutació de Bluetooth</string>
+  <string name="apn_app_name">Commutació d\'APN</string>
+  <string name="data_app_name">Commutació de dades</string>
+  <string name="widget_description">Visualitza i controla l\'estat del mode d\'avió</string>
+  <string name="widget_description_bt">Visualitza i controla l\'estat del Bluetooth</string>
+  <string name="widget_description_wifi">Visualitza i controla l\'estat de la Wi-Fi</string>
+  <string name="widget_description_gps">Visualitza i controla l\'estat de GPS</string>
+  <string name="StatusOn">SÍ</string>
+  <string name="StatusOff">NO</string>
+  <string name="StatusIntermediate"></string>
+  <string name="AirplanetoastText">El mode d\'avió no està disponible</string>
+  <string name="BluetoothtoastText">El Bluetooth no està disponible</string>
+  <string name="GPStoastText">El GPS no està disponible</string>
+  <string name="WifitoastText">La Wi-Fi no està disponible</string>
+  <string name="location_restriction_enabled">S\'ha activat la restricció d\'ubicació.</string>
+  <string name="apncontrol_app_name">Control d\'APN</string>
+  <string name="no_apn">No hi ha cap APN disponible</string>
+</resources>

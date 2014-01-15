@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="screen_timeout_entries">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minutt</item>
+        <item>2 minutter</item>
+        <item>10 minutter</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_event">
+        <item>Anrop og tekstmeldinger</item>
+        <item>Bare anrop</item>
+        <item>Bare tekstmeldinger</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts">
+        <item>Alle numre</item>
+        <item>Alle telefonbokkontakter</item>
+        <item>Valgte kontakter</item>
+    </string-array>
+    <string-array name="auto_sms_respond_to_contacts_desc">
+        <item>Meldingen sendes til alle telefonnumrene.</item>
+        <item>Meldingen sendes til alle numrene som er lagret i telefonboken.</item>
+        <item>Meldingen sendes bare til de valgte numrene.</item>
+    </string-array>
+    <string-array name="volume_levels">
+        <item>Maks</item>
+        <item>Høy</item>
+        <item>Middels</item>
+    </string-array>
+    <string-array name="voice_announce_items">
+        <item>Navn for sender av SMS/MMS</item>
+        <item>Navn for innkommende anrop</item>
+    </string-array>
+    <string-array name="location_names">
+        <item>Hjem</item>
+        <item>Arbeid</item>
+        <item>Skole</item>
+        <item>Egendefinert</item>
+    </string-array>
+
+</resources>
